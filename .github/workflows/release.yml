@@ -1,3 +1,28 @@
+# ReleaseBuld Workflow
+#
+# This GitHub Actions workflow is designed to be called from other repositories. 
+# It sets up the environment, clones the smart-html repository, downloads necessary dependencies,
+# and performs the publication process for a FHIR IG Release 
+#
+# When the workflow is triggered, it generates a preview of the site to be published
+# and places it in the 'gh-pages' branch under the "website" folder.
+#
+# Usage:
+# 1. Create a workflow file in your repository and define a 'workflow_call' trigger to call this workflow.
+#    For example, you can call this workflow from your repository's workflow file like this:
+#    ```
+#    jobs:
+#      call_build: 
+#        uses: WorldHealthOrganization/smart-html/.github/workflows/release.yml@main
+#    ```
+# 
+# 3. Create a branch in your ig called "release-candidate"
+# 4. Create the file `publication-request.json` in that branch
+#
+# For more information, see the accompanying README.md.
+#
+# For questions or assistance, please contact the repository maintainers.
+
 name: ReleaseBuld
 
 on:
