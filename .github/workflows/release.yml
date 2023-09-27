@@ -1,0 +1,108 @@
+name: ReleaseBuld
+
+on:
+  workflow_call: # Reusable by other workflows
+#  push:
+#    branches-ignore:
+#      - 'gh-pages'
+#  pull_request:
+#  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: hl7fhir/ig-publisher-base:latest
+    steps:
+      - name: Gather prerequisites
+        run: >
+          gosu publisher /home/publisher/bin/with-latest-sushi.sh &&
+          curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o "./publisher.jar" --create-dirs
+
+      - name: Checkout current repo to ./source
+        uses: actions/checkout@v2
+        with:
+          path: source
+          fetch-depth: 0  # Fetch all history for all branches and tags.
+
+      - name: Checkout HL7/fhir-ig-history-template to ./history-template
+        uses: actions/checkout@v2
+        with:
+          repository: HL7/fhir-ig-history-template
+          path: history-template
+
+      - name: Checkout WorldHealthOrganization/smart-html to ./webroot
+        uses: actions/checkout@v2
+        with:
+          repository: WorldHealthOrganization/smart-html
+          path: webroot
+          fetch-depth: 0  # Fetch all history for all branches and tags.
+
+          
+      - name: Checkout FHIR/ig-registry to ./ig-registry
+        uses: actions/checkout@v2
+        with:
+          repository: FHIR/ig-registry
+          path: ig-registry
+
+      - name: Create folder
+        run: "mkdir -p ./fhir-package-cache && chown 1001:127 ./fhir-package-cache"
+
+      - name: Run publisher command
+        run: java -jar ./publisher.jar publisher -ig source -package-cache-folder ./fhir-package-cache
+
+      - name: Run publisher command for publishing release
+        run: java -Dfile.encoding=UTF-8 -jar publisher.jar -go-publish -package-cache-folder ./fhir-package-cache -source source -web $(pwd)/webroot -registry ./ig-registry/fhir-ig-list.json -history ./history-template -templates $(pwd)/webroot/templates
+
+      - name: Install rsync 📚
+        run: |
+          apt-get update && apt-get install -y rsync
+          
+      - name: debug- List dirs
+        run: find . -type d
+
+      - name: Configure git to trust the workspace despite the different owner
+        run:
+          git config --global --add safe.directory ./webroot
+
+
+#      - name: Deploy main
+#        uses: JamesIves/github-pages-deploy-action@v4.4.3
+#        with:
+#          branch: gh-pages # The branch the action should deploy to.
+#          folder: ./webroot # The folder the action should deploy.
+#          token: ${{ secrets.GITHUB_TOKEN }}
+#          target-folder: website
+#          commit-message: Deploy website preview
+#          single-commit: true
+#          clean: false
+
+        
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./webroot
+          destination_dir: website
+
+
+      # - name: Deploy to gh-pages
+      #   run: |
+      #     cd webroot
+      #     git fetch
+      #     git checkout gh-pages
+      #     mkdir -p website
+      #     cp -r ./webroot/* ./website/
+      #     git add website
+          
+      #     # Check if there are changes to commit
+      #     if git diff --staged --quiet; then
+      #       echo "No changes to commit"
+      #     else
+      #       git commit --message "Deploy website preview" --author "GitHub Actions <actions@github.com>"
+      #       git push
+      #     fi
+      #   env:
+      #     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     GIT_COMMITTER_NAME: GitHub Actions
+      #     GIT_COMMITTER_EMAIL: actions@github.com
