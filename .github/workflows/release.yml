@@ -1,4 +1,4 @@
-# ReleaseBuld Workflow
+# ReleaseBuild Workflow
 #
 # This GitHub Actions workflow is designed to be called from other repositories. 
 # It sets up the environment, clones the smart-html repository, downloads necessary dependencies,
@@ -23,7 +23,7 @@
 #
 # For questions or assistance, please contact the repository maintainers.
 
-name: ReleaseBuld
+name: ReleaseBuild
 
 on:
   workflow_call: # Reusable by other workflows
