@@ -42,4 +42,3 @@ The ReleaseBuld workflow performs the following actions:
 
 For questions or assistance with this workflow, please contact the repository maintainers.
 
-Author: \[Your Name\]
