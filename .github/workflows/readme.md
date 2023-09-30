@@ -45,10 +45,10 @@ This workflow performs the following actions:
 
 6. Deploys the generated preview to the `gh-pages` branch under the `website` folder.
 
-## Contact
-
-For questions or assistance with this workflow, please contact the repository maintainers.
-
 
 ![IG Release Publication](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/main/docs/release-publication.plantuml)
 
+
+## Contact
+
+For questions or assistance with this workflow, please contact the repository maintainers.
