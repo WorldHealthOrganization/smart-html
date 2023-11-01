@@ -1,14 +1,14 @@
 {
   "website" : {
     "style" : "fhir.layout",
-    "url" : "http://smart.who.int/ig",
+    "url" : "http://smart.who.int",
     "server" : "apache",
     "org" : "WHO",
     "index-template":"index.template"
   },
     "layout-rules" : [{
       "npm" : "who.smart.*",
-      "canonical" : "http://smart.who.int/ig/{3}",
+      "canonical" : "http://smart.who.int/{3}",
       "destination" : "/{3}"
     }]  
 }
