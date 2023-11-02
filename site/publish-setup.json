@@ -7,7 +7,7 @@
     "index-template":"index.template"
   },
     "layout-rules" : [{
-      "npm" : "who.smart.*",
+      "npm" : "who.fhir.*",
       "canonical" : "http://smart.who.int/{3}",
       "destination" : "/{3}"
     }]  
