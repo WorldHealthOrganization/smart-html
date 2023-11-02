@@ -77,7 +77,7 @@ jobs:
         run: java -Xmx4g -jar ./publisher.jar publisher -ig source -package-cache-folder ./fhir-package-cache
 
       - name: Run publisher command for publishing release
-        run: java -Xmx4g -Dfile.encoding=UTF-8 -jar publisher.jar -go-publish -package-cache-folder ./fhir-package-cache -source source -web $(pwd)/webroot -registry ./ig-registry/fhir-ig-list.json -history ./history-template -templates $(pwd)/webroot/templates
+        run: java -Xmx4g -Dfile.encoding=UTF-8 -jar publisher.jar -go-publish -package-cache-folder ./fhir-package-cache -source source -web $(pwd)/webroot/site -registry ./ig-registry/fhir-ig-list.json -history ./history-template -templates $(pwd)/webroot/site/templates
 
       - name: Install rsync 📚
         run: |
@@ -107,7 +107,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./webroot
+          publish_dir: ./webroot/site
           destination_dir: website
 
 
