@@ -74,10 +74,10 @@ jobs:
         run: "mkdir -p ./fhir-package-cache && chown 1001:127 ./fhir-package-cache"
 
       - name: Run publisher command
-        run: java -jar ./publisher.jar publisher -ig source -package-cache-folder ./fhir-package-cache
+        run: java -Xmx4g -jar ./publisher.jar publisher -ig source -package-cache-folder ./fhir-package-cache
 
       - name: Run publisher command for publishing release
-        run: java -Dfile.encoding=UTF-8 -jar publisher.jar -go-publish -package-cache-folder ./fhir-package-cache -source source -web $(pwd)/webroot -registry ./ig-registry/fhir-ig-list.json -history ./history-template -templates $(pwd)/webroot/templates
+        run: java -Xmx4g -Dfile.encoding=UTF-8 -jar publisher.jar -go-publish -package-cache-folder ./fhir-package-cache -source source -web $(pwd)/webroot -registry ./ig-registry/fhir-ig-list.json -history ./history-template -templates $(pwd)/webroot/templates
 
       - name: Install rsync 📚
         run: |
