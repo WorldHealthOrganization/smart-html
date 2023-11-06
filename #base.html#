@@ -1,0 +1,761 @@
+ <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+     <base href="https://who.int/"/>
+     <meta charset="utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title> SMART Guidelines </title>
+     <link rel="shortcut icon" href="/favicon.ico"/>
+     <link rel="manifest" href="/manifest.json"/>
+     <link rel="apple-touch-icon" href="/apple-touch-icon-precomposed.png"/>
+     <meta name="theme-color" content="#007eb4" />
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link rel="preconnect" href="https://use.fontawesome.com" crossorigin />
+     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+     <link rel="dns-prefetch" href="https://kendo.cdn.telerik.com" />
+     <link rel="prefetch" href="https://kendo.cdn.telerik.com/2021.1.119/js/kendo.all.min.js">
+     <link rel="prefetch" href="https://kendo.cdn.telerik.com/2021.1.119/js/kendo.timezones.min.js">
+     <link rel="preconnect" href="https://cdn.who.int" />
+     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+     <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" type="text/css" />
+     <link rel="stylesheet" href="/ResourcePackages/WHO/assets/dist/styles/grid.min.css?v=14.0.7729.17453">
+     <link rel="stylesheet" href="/ResourcePackages/WHO/assets/dist/styles/origin.min.css?v=14.0.7729.17453">
+     <link rel="stylesheet" href="/ResourcePackages/WHO/assets/dist/styles/main.min.css?v=14.0.7729.17453">
+     <link rel="stylesheet" href="/ResourcePackages/WHO/assets/dist/styles/print.min.css?v=14.0.7729.17453" media="print">
+     <script>
+       var lang = document.documentElement.lang;
+       window.dataLayer = window.dataLayer || [];
+       window.dataLayer.push({
+         'language': lang
+       });
+       window.dataLayer.push({
+         "pagetype": "webpage",
+         "targetaudience": "general-audience",
+         "targetcountry": "global",
+         "publishingoffice": "digital-health-and-innovation",
+         "healthtopic": "digital-health"
+       });
+     </script>
+     <script>
+       (function() {
+         function deleteCookie(cookieName, domain) {
+           document.cookie = cookieName + '=;expires=Mon Jan 01 1900 00:00:00 ; path=/; domain=' + domain;
+         }
+
+         function loadAndTrack(canTrack) {
+           if (!canTrack) {
+             var domain = location.hostname.replace(/^www\./i, '.');
+             //GA
+             deleteCookie('_ga', domain);
+             deleteCookie('_gat', domain);
+             deleteCookie('_gid', domain);
+             //Clarity
+             deleteCookie('_clck', domain);
+             deleteCookie('_clsk', domain);
+             //Google Adsense
+             deleteCookie('_gcl_au', domain);
+           } else {
+             //Fire GTM
+             //Google Tag Manager
+             (function(w, d, s, l, i) {
+               w[l] = w[l] || [];
+               w[l].push({
+                 'gtm.start': new Date().getTime(),
+                 event: 'gtm.js'
+               });
+               var f = d.getElementsByTagName(s)[0],
+                 j = d.createElement(s),
+                 dl = l != 'dataLayer' ? '&l=' + l : '';
+               j.async = true;
+               j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+               f.parentNode.insertBefore(j, f);
+             })(window, document, 'script', 'dataLayer', 'GTM-5QFSQRT');
+             //End Google Tag Manager
+           }
+           return;
+         }
+         if (window.TrackingConsentManager) {
+           TrackingConsentManager.addEventListener('ConsentChanged', loadAndTrack);
+           loadAndTrack(TrackingConsentManager.canTrackCurrentUser());
+         } else {
+           loadAndTrack(true);
+         }
+       })();
+     </script>
+     <meta property="og:locale" content="en_US" />
+     <meta property="og:title" content="SMART Guidelines" />
+     <meta property="og:description" content="As a landmark effort to accelerating the digitization of global public health resources, digitalizing the countries increasingly invest in digital technologies for health, WHO  need to build support for digital health across its core functions. To date, there is no documentation of procedures for systematically translating WHO’s recommendations into digital health systems in a software-neutral manner. " />
+     <style type="text/css" media="all">
+       .row-flex {
+         display: flex;
+         flex-direction: row
+       }
+
+       .row-flex .card {
+         flex-grow: 1
+       }
+
+       .row-flex .sf_colsIn {
+         display: flex;
+         flex-direction: column;
+         flex-grow: 1
+       }
+
+       .row-flex .card__content-group {
+         display: flex;
+         flex-direction: column;
+         flex-grow: 1
+       }
+
+       .row-flex .card__content {
+         display: flex;
+         flex-grow: 1
+       }
+
+       .qa-details__content .sf-accordion__content p a {
+         outline: 0;
+         color: var(--l2-neutralForegroundRest);
+         border-bottom: 1px solid var(--l2-neutralForegroundRest);
+         text-decoration: none
+       }
+
+       .qa-details__content .sf-accordion__content p a:focus {
+         outline: 0;
+         color: var(--l2-accentFillHover);
+         background-color: var(--l2-neutralFillStealthHover);
+         border-bottom: 3px solid var(--l2-neutralFocus);
+         text-decoration: none
+       }
+
+       .qa-details__content .sf-accordion__content p a:hover {
+         outline: 0;
+         color: var(--l2-neutralForegroundRest);
+         background-color: var(--l2-neutralFillStealthHover);
+         border-bottom: 3px solid var(--l2-neutralFocus);
+         text-decoration: none
+       }
+
+       .mdc-card.mdc-card--background .card-media--item {
+         background: 0 0;
+         background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, .5) 25%, #000 100%)
+       }
+
+       .mdc-card.mdc-card--background a .item--title,
+       .mdc-card.mdc-card--background a:active .item--title,
+       .mdc-card.mdc-card--background a:focus .item--title,
+       .mdc-card.mdc-card--background a:hover .item--title {
+         text-decoration: none
+       }
+
+       .mdc-card a:visited .item--title,
+       .mdc-card.mdc-card--background .item--title {
+         color: #fff
+       }
+
+       .card--solid.bg-dark:hover {
+         color: #fff;
+         background-color: #20313b;
+         border: 2px solid #fff
+       }
+
+       .card--solid.bg-dark a {
+         color: #fff;
+         background-color: #20313b;
+         border: 2px solid #20313b
+       }
+
+       .card--solid.bg-dark a:hover {
+         color: #20313b;
+         background-color: #fff;
+         border: 2px solid #20313b
+       }
+
+       .card--solid.bg-dark:focus-within {
+         color: #fff;
+         background-color: #20313b;
+         border: 2px solid var(--l4-neutralFocus)
+       }
+
+       .mdc-card a .item--title,
+       .mdc-card a:visited .item--title {
+         color: var(--l4-neutralForegroundRest)
+       }
+
+       .mdc-card a:visited .item--title {
+         color: var(--l4-neutralForegroundRest) !important
+       }
+
+       .-sf-integrated-app body,
+       .sfPageContainer .RadDock .rdContent a.sfAddContentLnk,
+       .zeContentMode .sfPageContainer .RadDock .rdContent,
+       .zeLayoutMode .sfPageContainer .RadDock .rdContent,
+       .zeSettingsMode .sfPageContainer .RadDock .rdContent,
+       .zeThemesMode .sfPageContainer .RadDock .rdContent {
+         font-family: Arial, Verdana, sans-serif !important
+       }
+
+       #navigationToScrape .content-block a,
+       .alphabetical-nav--list .alphabetical-nav--list-item a,
+       .alphabetical-nav--list a,
+       .nav--list a {
+         text-decoration: none !important
+       }
+
+       .sf-events-wrapper .vertical-list-item:focus,
+       .sf-events-wrapper .vertical-list-item:focus-within {
+         outline: 2px solid var(--l4-neutralFocus) !important
+       }
+
+       .sf-events-wrapper .vertical-list-item a:focus-within,
+       .sf-events-wrapper .vertical-list-item:focus {
+         outline: 0
+       }
+
+       .top-header li.active>a,
+       .top-header li.open>a,
+       .top-header li.selected>a,
+       .top-header li:hover>a {
+         background-color: var(--d-l4-accentFillHover)
+       }
+
+       .webinars-listing .sf-multimedia-item__container {
+         aspect-ratio: 16/9;
+         width: 100%;
+         height: auto !important;
+         min-height: 304px;
+       }
+
+       .webinar-episodes.vertical-list .vertical-list-item .thumb {
+         min-height: 131px;
+         aspect-ratio: 16/9;
+         height: auto;
+         width: 100%;
+       }
+
+       @media screen and (max-width:768px) {
+         .webinar-episodes.vertical-list .vertical-list-item .thumb {
+           display: none;
+         }
+       }
+
+       .webinar-episodes-details .sf-multimedia-item__container {
+         height: 390px;
+         aspect-ratio: 16/9;
+         height: auto;
+       }
+
+       .mdc-card--background a:visited .item--title {
+         color: #fff !important;
+       }
+     </style>
+     <meta name="twitter:card" content="summary_large_image" />
+     <meta name="Generator" content="Sitefinity 14.3.8028.0 DX" />
+     <link rel="canonical" href="https://www.who.int/teams/digital-health-and-innovation/smart-guidelines" />
+     <meta name="description" content="As a landmark effort to accelerating the digitization of global public health resources, digitalizing the countries increasingly invest in digital technologies for health, WHO  need to build support for digital health across its core functions. To date, there is no documentation of procedures for systematically translating WHO’s recommendations into digital health systems in a software-neutral manner. " />
+   </head>
+   <body class="sf-body ">
+
+
+     
+       <section class="sf-content content" role="main">
+         <div id="PageContent_TD76DC2B8003_Col00" class="sf_colsIn container" data-sf-element="Container" data-placeholder-label="Container">
+           <div class="row" data-sf-element="Row">
+             <div id="PageContent_TD76DC2B8004_Col00" class="sf_colsIn col-md-12" data-sf-element="Column 1" data-placeholder-label="Drop Teams widget with Team view">
+               <div class="row" data-sf-element="Row">
+                 <div id="PageContent_C050_Col00" class="sf_colsIn col-md-12" data-sf-element="Column 1" data-placeholder-label="Column 1">
+                   <div class="hero-image--wrapper hero-image--high-wrapper high " data-url>
+                     <div class="inner responsive-background-image high-2009605995">
+                       <img sizes="(max-width: 768px) 200px,
+                        (max-width: 1024px) 700px,
+                        (max-width: 1366px) 1000px,
+                        1920px" srcset="/images/default-source/digital-health/smart-guidelines47c54c059c8b4cbf91d499a129baf1a9.tmb-768v.jpg?Culture=en&amp;sfvrsn=424e0013_1 768w,
+                        /images/default-source/digital-health/smart-guidelines47c54c059c8b4cbf91d499a129baf1a9.tmb-1024v.jpg?Culture=en&amp;sfvrsn=424e0013_1 1024w,
+                        /images/default-source/digital-health/smart-guidelines47c54c059c8b4cbf91d499a129baf1a9.tmb-1366v.jpg?Culture=en&amp;sfvrsn=424e0013_1 1366w,
+                        /images/default-source/digital-health/smart-guidelines47c54c059c8b4cbf91d499a129baf1a9.tmb-1920v.jpg?Culture=en&amp;sfvrsn=424e0013_1 1920w" alt="SMART Guidelines" />
+                       <div class="sf_colsIn container">
+                         <div class="hero-image--content bg-text-light text-left">
+                           <h1 class="title">
+                             <span>SMART Guidelines</span>
+                           </h1>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <div class="row" data-sf-element="Row">
+             <div id="PageContent_TD76DC2B8005_Col00" class="sf_colsIn col-md-12" data-sf-element="Column 1" data-placeholder-label="Main content">
+               <div id="PageContent_C075_Col00" class="sf_colsIn container" data-sf-element="Container" data-placeholder-label="Container">
+                 <div class="row" data-sf-element="Row">
+                   <div id="PageContent_C049_Col00" class="sf_colsIn col-md-8" data-sf-element="Column 1" data-placeholder-label="Column 1">
+                     <div class="sf-content-block content-block">
+                       <div>
+                         <p>
+                         <p>WHO envisions a future where everyone in the world benefits fully and immediately from clinical, public health, and data-use recommendations. SMART Guidelines are a new approach to systematize and accelerate the consistent application of recommended, life-saving interventions in the digital age. <br>
+                         </p>
+                         <p>
+                           <strong>Why is this important?</strong>
+                           <strong></strong>
+                         </p>
+                         <p>WHO guidelines articulate and endorse rigorously tested recommendations for health interventions to be adopted within country programs. When applied correctly and consistently, guideline recommendations save lives. <br>
+                         </p>
+                         <p>Countries are investing heavily in digital systems to accelerate the adoption of these recommended clinical, public health, and data interventions. The design, functionality, and content of digital tools and systems &mdash; that collect, exchange, and use patient data to drive health practices and coordination of care within health systems &mdash; can ensure adherence to national guidelines and lead to improved quality of care. <strong></strong>
+                           <br>
+                         </p>
+                         <p>To implement WHO recommendations in country settings, governments and technology partners must interpret and then adapt the content in line with local policies, procedures, and digital tools. The process of translating and incorporating recommendations into digital systems can be challenging, time-consuming, and prone to error. There is currently a lack of technical documentation and standards for accurate incorporation, resulting in digital implementations inconsistent with recommended data and health practices.​ Member States and their implementation partners need specifications for digitizing guidelines and making health investments consistent with WHO data, interoperability, and guideline recommendations.</p>
+                         <p>&nbsp;</p>
+                         <p>
+                           <img src="https://cdn.who.int/media/images/default-source/digital-health/image-web-1.png?sfvrsn=1c897f8f_5&amp;Status=Master" alt sf-size="258453">
+                         </p>
+                         <p>
+                           <strong>&nbsp;</strong>
+                         </p>
+                         <p>
+                           <strong></strong>
+                           <strong>What are SMART Guidelines?</strong>
+                           <strong></strong>&nbsp;
+                         </p>
+                         <p>SMART Guidelines &mdash; <strong>S</strong>tandards-based, <strong>M</strong>achine-readable, <strong>A</strong>daptive, <strong>R</strong>equirements-based, and <strong>T</strong>estable -- are a comprehensive set of reusable digital health components (e.g., interoperability standards, code libraries, algorithms, technical and operational specifications) that transform the guideline adaptation and implementation process to preserve fidelity and accelerate uptake. SMART Guidelines provide a five-step pathway to advance the adoption of best clinical and data practices, even if a country is not yet fully digital. </p>
+                         <p>&nbsp;</p>
+                         <p>
+                           <img src="https://cdn.who.int/media/images/default-source/digital-health/image-web-2.png?sfvrsn=2c510fd6_5&amp;Status=Master" alt sf-size="555051">
+                         </p>
+                         <p>&nbsp;</p>
+                         <p>The five SMART guidelines layers comprise documentation, procedures, and digital health components to steer guideline localization and implementation through digital systems.</p>
+                         <p>They inform:</p>
+                         <ul>
+                           <li>
+                             <strong>Guideline developers</strong> on how to translate recommendations into specifications and standards;
+                           </li>
+                           <li>
+                             <strong>Technologists</strong> on how to integrate recommendations into updatable digital systems; and
+                           </li>
+                           <li>
+                             <strong>Countries</strong> on how to localize, make interoperable, institutionalize, and update digital systems consistent with evidence-based recommendations.
+                           </li>
+                         </ul>
+                         <p>
+                           <br>
+                         </p>
+                         <p>SMART Guidelines content is &mdash; by design &mdash; software-neutral, formulated for adaptation into whichever software platforms a country has elected to use, within an exchanged digital health enterprise architecture. <strong>&nbsp;</strong>
+                           <br>
+                         </p>
+                         <p>
+                           <strong>What are the benefits?</strong>
+                           <strong></strong>
+                           <br>
+                         </p>
+                         <p>SMART guidelines help countries to more efficiently and accurately adopt, and benefit from, WHO health and data recommendations through digital systems. <br>
+                         </p>
+                         <p>Use of SMART guidelines results in standards-based, interoperable systems that can share accurate data and become part of stronger, more sustainable health information systems. In digital systems, they improve quality of health content and facilitate consistent, standardized collection of data, appropriate decision support, and calculation of indicators across geographies. SMART guidelines reduce the risks associated with digital investments. They lower the cost of related software development, equipping governments with SMART software specifications to ensure vendors provide a minimum of functionality and quality content, in turn reducing potential for vendor lock-in.</p>
+                         <p>&nbsp;</p>
+                         <p>
+                           <img src="https://cdn.who.int/media/images/default-source/digital-health/image-web-3.png?sfvrsn=6ed29f7d_5&amp;Status=Master" alt sf-size="369745">
+                         </p>
+                         <p>&nbsp;</p>
+                         <p>This WHO mechanism aims to facilitate improved global access to software and systems that interoperate across care pathways, facilities, and providers, delivering functionality and content aligned with evidence-based guidelines and recommended data standards. SMART Guidelines will be fundamental in the digital acceleration towards country health systems&rsquo; achievement of universal health coverage goals. <br>
+                         </p>
+                         <p>The WHO Antenatal Care SMART Guidelines, are <a href="https://www.srhr.org/antenatalcare/#Tools" target="_blank" data-sf-ec-immutable>available here</a>.&nbsp;SMART Guidelines for HIV, STI, family planning,&nbsp;immunization,&nbsp;child health and humanitarian emergencies are in development and will be released soon.  &nbsp; <br>
+                         </p>
+                         <p>The&nbsp;SMART Guideline programme of work is led by the Science Division&nbsp;and&nbsp;overseen by the&nbsp;Department of Digital health and innovation in&nbsp;partnership&nbsp;with the&nbsp;Department of Quality Assurance of Norms and Standards,&nbsp;and&nbsp;supported by&nbsp;the&nbsp;Division of Data, Analytics and Delivery for Impact.&nbsp; <br>
+                         </p>
+                         <p>A journal article providing an overview of the programme of work, and an accompanying presentation, are available for download <a href="https://www.thelancet.com/journals/landig/article/PIIS2589-7500(21)00038-8/fulltext" target="_blank" data-sf-ec-immutable>here</a> and <a href="https://cdn.who.int/media/docs/default-source/digital-health-documents/who-smart-guidelines_deckforlandingpage_final.pptx?sfvrsn=821aa3dd_14"></a>
+                           <a href="https://cdn.who.int/media/docs/default-source/digital-health-documents/who-smart-guidelines_deckforlandingpage_final.pptx?sfvrsn=821aa3dd_14">here.</a>&nbsp;
+                         </p>
+                         <p>For more information: <a href="/cdn-cgi/l/email-protection#7c111914101b3c0b141352151208">
+                             <span class="__cf_email__" data-cfemail="4e232b2622290e3926216027203a">[email&#160;protected]</span>
+                           </a>
+                         </p>
+                         <p>&nbsp;</p>
+                         <p>&nbsp;</p>
+                         <p>&nbsp;</p>
+                         </p>
+                       </div>
+                     </div>
+                   </div>
+                   <div id="PageContent_C049_Col01" class="sf_colsIn col-md-4" data-sf-element="Column 2" data-placeholder-label="Column 2">
+                     <div class="sf-content-block content-block">
+                       <div>
+                         <div class="arrowed-link">
+                           <a href="/teams/digital-health-and-innovation">Digital Health and Innovation</a>
+                         </div>
+                         <div class="arrowed-link">
+                           <a href="/teams/digital-health-and-innovation/governance">Strategy and Governance</a>
+                         </div>
+                         <div class="arrowed-link">
+                           <a href="/teams/digital-health-and-innovation/health-technologies">Public Digital Health Technology</a>
+                         </div>
+                         <div class="arrowed-link">
+                           <a href="/initiatives/behealthy">Be He@lthy, Be Mobile</a>
+                         </div>
+                         <div class="arrowed-link">
+                           <a href="/teams/digital-health-and-innovation/who-innovation-hub" data-sf-ec-immutable>WHO Innovation Hub</a>
+                         </div>
+                         <div class="arrowed-link">
+                           <a href="/teams/digital-health-and-innovation/digital-channels">Digital Channels</a>
+                         </div>
+                         <div class="arrowed-link">
+                           <a href="/teams/digital-health-and-innovation/capacity-building">Capacity building and collaboration</a>
+                         </div>
+                         <div class="arrowed-link">
+                           <a href="/groups/dh-tag-membership">WHO Digital Health Technical Advisory Group</a>
+                         </div>
+                       </div>
+                     </div>
+                     <div class="sf-content-block content-block">
+                       <div>&nbsp; &nbsp;</div>
+                     </div>
+                     <div class="section-heading">
+                       <h2>Journal articles</h2>
+                     </div>
+                     <style>
+                       .margin-top {
+                         margin-top: 16px;
+                       }
+                     </style>
+                     <div class="sf-list-vertical sf-list-vertical__bottom-border">
+                       <a class="sf-list-vertical__item" href="https://informatics.bmj.com/content/30/1/e100691.full">
+                         <h4 class="sf-list-vertical__title">
+                           <span class="full-title" aria-hidden="true" style="display: none">Experiences in aligning WHO SMART guidelines to classification and terminology standards</span>
+                           <span class="trimmed">Experiences in aligning WHO SMART guidelines to classification and terminology standards</span>
+                         </h4>
+                         <div class="sf-list-vertical__date margin-top">
+                           <span>BMJ Journals</span>
+                         </div>
+                       </a>
+                       <a class="sf-list-vertical__item" href="https://www.ghspjournal.org/content/early/2023/07/26/GHSP-D-22-00439">
+                         <h4 class="sf-list-vertical__title">
+                           <span class="full-title" aria-hidden="true" style="display: none">Digitalizing Clinical Guidelines: Experiences in the Development of Clinical Decision Support Algorithms for Management of Childhood Illness in Resource-Constrained Settings</span>
+                           <span class="trimmed">Digitalizing Clinical Guidelines: Experiences in the Development of Clinical Decision Support Algorithms for Management of Childhood Illness in Resource-Constrained Settings</span>
+                         </h4>
+                         <div class="sf-list-vertical__date margin-top">
+                           <span>Global Health: Science and Practice</span>
+                         </div>
+                       </a>
+                       <a class="sf-list-vertical__item" href="https://www.ghspjournal.org/content/early/2022/02/10/GHSP-D-21-00320">
+                         <h4 class="sf-list-vertical__title">
+                           <span class="full-title" aria-hidden="true" style="display: none">Transitioning to digital systems: The role of World Health Organization’s digital adaptation kits in operationalizing recommendations and interoperability standards</span>
+                           <span class="trimmed">Transitioning to digital systems: The role of World Health Organization’s digital adaptation kits in operationalizing recommendations and interoperability standards</span>
+                         </h4>
+                         <div class="sf-list-vertical__date margin-top">
+                           <span>Global Health: Science and Practice</span>
+                         </div>
+                       </a>
+                       <a class="sf-list-vertical__item" href="https://www.thelancet.com/journals/landig/article/PIIS2589-7500(21)00038-8/fulltext">
+                         <h4 class="sf-list-vertical__title">
+                           <span class="full-title" aria-hidden="true" style="display: none">WHO SMART guidelines: optimising country-level use of guideline recommendations in the digital age</span>
+                           <span class="trimmed">WHO SMART guidelines: optimising country-level use of guideline recommendations in the digital age</span>
+                         </h4>
+                         <div class="sf-list-vertical__date margin-top">
+                           <span>The Lancet</span>
+                         </div>
+                       </a>
+                       <a class="sf-list-vertical__item" href="https://pubmed.ncbi.nlm.nih.gov/34450285/">
+                         <h4 class="sf-list-vertical__title">
+                           <span class="full-title" aria-hidden="true" style="display: none">Enhancing narrative clinical guidance with computer-readable artifacts: Authoring FHIR implementation guides based on WHO recommendations</span>
+                           <span class="trimmed">Enhancing narrative clinical guidance with computer-readable artifacts: Authoring FHIR implementation guides based on WHO recommendations</span>
+                         </h4>
+                         <div class="sf-list-vertical__date margin-top">
+                           <span>PubMed</span>
+                         </div>
+                       </a>
+                     </div>
+                     <style>
+                       .margin-top {
+                         margin-top: 16px;
+                       }
+                     </style>
+                     <div class="sf-list-vertical sf-list-vertical__bottom-border">
+                       <a class="sf-list-vertical__item" href="https://journals.sagepub.com/doi/10.1177/20552076221076256">
+                         <h4 class="sf-list-vertical__title">
+                           <span class="full-title" aria-hidden="true" style="display: none">Integration of new digital antenatal care tools using the WHO SMART guideline approach: Experiences from Rwanda and Zambia</span>
+                           <span class="trimmed">Integration of new digital antenatal care tools using the WHO SMART guideline approach: Experiences from Rwanda and Zambia</span>
+                         </h4>
+                         <div class="sf-list-vertical__date margin-top">
+                           <span>SAGE Journals</span>
+                         </div>
+                       </a>
+                     </div>
+                     <div class="sf-content-block content-block">
+                       <div>&nbsp; &nbsp;</div>
+                     </div>
+                     <div class="section-heading">
+                       <h2>Publications</h2>
+                     </div>
+                     <div class="sf-meeting-report-list sf-list-vertical sf-list-vertical__bottom-border ">
+                       <a class="sf-meeting-report-list__item sf-list-vertical__item" href="/publications/i/item/9789240054424">
+                         <div class="sf-meeting-report-list__data sf-list-vertical__data">
+                           <span>29 July 2022 </span>
+                         </div>
+                         <h4 class="sf-meeting-report-list__title sf-list-vertical__title">
+                           <span class="full-title" aria-hidden="true" style="display: none">Digital adaptation kit for HIV: operational requirements for implementing WHO recommendations and standards within digital systems</span>
+                           <span class="trimmed">Digital adaptation kit for HIV: operational requirements for implementing WHO recommendations and standards within digital systems</span>
+                         </h4>
+                       </a>
+                       <a class="sf-meeting-report-list__item sf-list-vertical__item" href="/publications/i/item/9789240029743">
+                         <div class="sf-meeting-report-list__data sf-list-vertical__data">
+                           <span>25 June 2021 </span>
+                         </div>
+                         <h4 class="sf-meeting-report-list__title sf-list-vertical__title">
+                           <span class="full-title" aria-hidden="true" style="display: none">Digital Adaptation Kit for Family Planning: Operational requirements for implementing WHO recommendations in digital systems</span>
+                           <span class="trimmed">Digital Adaptation Kit for Family Planning: Operational requirements for implementing WHO recommendations in digital systems</span>
+                         </h4>
+                       </a>
+                       <a class="sf-meeting-report-list__item sf-list-vertical__item" href="/publications/i/item/9789240020306">
+                         <div class="sf-meeting-report-list__data sf-list-vertical__data">
+                           <span>17 February 2021 </span>
+                         </div>
+                         <h4 class="sf-meeting-report-list__title sf-list-vertical__title">
+                           <span class="full-title" aria-hidden="true" style="display: none">Digital Adaptation Kit for Antenatal Care: Operational requirements for implementing WHO recommendations in digital systems</span>
+                           <span class="trimmed">Digital Adaptation Kit for Antenatal Care: Operational requirements for implementing WHO recommendations in digital systems</span>
+                         </h4>
+                       </a>
+                     </div>
+                     <div class="sf-content-block content-block">
+                       <div>&nbsp; &nbsp;</div>
+                     </div>
+                     <div class="section-heading">
+                       <h2>Related links</h2>
+                     </div>
+                     <div class="sf-content-block content-block">
+                       <div>
+                         <div class="arrowed-link">
+                           <a href="/teams/digital-health-and-innovation/smart-guidelines/fhir-based-smart-guidelines">Enabling FHIR-based SMART guidelines natively on Android devices</a>
+                         </div>
+                         <div class="arrowed-link">
+                           <a href="https://www.srhr.org/antenatalcare/#Tools" target="_blank" data-sf-ec-immutable>Antenatal Care SMART Guidelines</a>
+                         </div>
+                         <div class="arrowed-link">
+                           <a href="https://cdn.who.int/media/docs/default-source/digital-health-documents/who_dak_twopager_l5.pdf?sfvrsn=1f75b771_5">Two-page summary of Digital Adaptation Kits</a>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </section>
+       <footer id="sf-footer">
+         <div class="main-footer">
+           <div id="Footer_TD9F2A204001_Col00" class="sf_colsIn container" data-sf-element="Container" data-placeholder-label="Container">
+             <div class="row" data-sf-element="Row">
+               <div id="Footer_T75121FDA153_Col00" class="sf_colsIn col-md-9" data-sf-element="Column 1" data-placeholder-label="Column 1">
+                 <div class="main-navigation--wrapper">
+                   <ul class="main-navigation navVertical">
+                     <li class>
+                       <a href="/redirect-pages/footer/regions" target="_self">Regions</a>
+                       <ul class="sub-level">
+                         <li class>
+                           <a href="/redirect-pages/footer/regions/africa" target="_blank">Africa</a>
+                         </li>
+                         <li class>
+                           <a href="/redirect-pages/footer/regions/americas" target="_blank">Americas</a>
+                         </li>
+                         <li class>
+                           <a href="/redirect-pages/footer/regions/eastern-mediterranen" target="_self">Eastern Mediterranean</a>
+                         </li>
+                         <li class>
+                           <a href="/redirect-pages/footer/regions/europe" target="_self">Europe</a>
+                         </li>
+                         <li class>
+                           <a href="/redirect-pages/footer/regions/south-east-asia" target="_self">South-East Asia</a>
+                         </li>
+                         <li class>
+                           <a href="/redirect-pages/footer/regions/western-pacific" target="_self">Western Pacific</a>
+                         </li>
+                       </ul>
+                     </li>
+                     <li class>
+                       <a href="/redirect-pages/footer/who-policies" target="_self">Policies</a>
+                       <ul class="sub-level">
+                         <li class>
+                           <a href="/redirect-pages/footer/who-policies/cyber-security" target="_self">Cyber security</a>
+                         </li>
+                         <li class>
+                           <a href="/redirect-pages/footer/who-policies/ethics" target="_self">Ethics</a>
+                         </li>
+                         <li class>
+                           <a href="/redirect-pages/footer/who-policies/permissions-and-licensing" target="_self">Permissions and licensing</a>
+                         </li>
+                         <li class>
+                           <a href="/redirect-pages/footer/who-policies/preventing-sexual-exploitation" target="_self">Preventing sexual exploitation</a>
+                         </li>
+                         <li class>
+                           <a href="/redirect-pages/footer/who-policies/terms-of-use" target="_self">Terms of use</a>
+                         </li>
+                       </ul>
+                     </li>
+                     <li class>
+                       <a href="/redirect-pages/footer/about-us" target="_self">About us</a>
+                       <ul class="sub-level">
+                         <li class>
+                           <a href="/redirect-pages/footer/about-us/careers" target="_self">Careers</a>
+                         </li>
+                         <li class>
+                           <a href="/redirect-pages/footer/about-us/library" target="_self">Library</a>
+                         </li>
+                         <li class>
+                           <a href="/redirect-pages/footer/about-us/procurement" target="_self">Procurement</a>
+                         </li>
+                         <li class>
+                           <a href="/redirect-pages/footer/about-us/publications" target="_self">Publications</a>
+                         </li>
+                         <li class>
+                           <a href="/redirect-pages/footer/about-us/frequently-asked-questions" target="_self">Frequently asked questions</a>
+                         </li>
+                         <li class>
+                           <a href="/redirect-pages/footer/about-us/contact-us" target="_self">Contact us</a>
+                         </li>
+                       </ul>
+                     </li>
+                   </ul>
+                 </div>
+               </div>
+               <div id="Footer_T75121FDA153_Col01" class="sf_colsIn col-sm-3 col-md-3 centered-on-mobile" data-sf-element="Column 2" data-placeholder-label="Column 2">
+                 <div class="sf-content-block content-block">
+                   <div>
+                     <div class="button button-dark-background" style="text-align:center;">
+                       <a href="/news-room/newsletters">Subscribe to our newsletters</a>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="row" data-sf-element="Row">
+               <div id="Footer_T75121FDA199_Col00" class="sf_colsIn col-md-12" data-sf-element="Column 1" data-placeholder-label="Column 1"></div>
+             </div>
+           </div>
+           <div class="footer-logo">
+             <a href="/" title="Home">
+               <img src="/ResourcePackages/WHO/assets/dist/images/logos/en/h-logo-white.svg" alt="Home" class="logo" />
+             </a>
+           </div>
+         </div>
+         <div class="bottom-footer">
+           <div class="container">
+             <div class="row">
+               <div class="col-md-4">
+                 <div class="sf-content-block content-block">
+                   <div>
+                     <a href="/about/policies/privacy">Privacy policy</a>
+                   </div>
+                 </div>
+               </div>
+               <div class="col-md-4">
+                 <div class="sf-content-block content-block socialmedia-icons">
+                   <div>
+                     <a href="https://www.youtube.com/user/who?sub_confirmation=1" title="Follow WHO on Youtube" target="_blank" data-sf-ec-immutable>
+                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                         <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" fill="white"></path>
+                       </svg>
+                     </a>
+                     <a href="https://twitter.com/intent/follow?source=followbutton&amp;variant=1.0&amp;screen_name=who" title="Follow WHO on Twitter" target="_blank" data-sf-ec-immutable>
+                       <svg width="1200" height="1227" viewBox="0 0 1200 1227" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z" fill="white"></path>
+                       </svg>
+                     </a>
+                     <a href="https://www.facebook.com/WHO" title="Follow WHO on Facebook" target="_blank" data-sf-ec-immutable>
+                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                         <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" fill="white"></path>
+                       </svg>
+                     </a>
+                     <a href="https://instagram.com/who" title="Follow WHO on Instagram" target="_blank" data-sf-ec-immutable>
+                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                         <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" fill="white"></path>
+                       </svg>
+                     </a>
+                     <a href="https://www.linkedin.com/company/world-health-organization" title="Follow WHO on LinkedIn" target="_blank" data-sf-ec-immutable>
+                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                         <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" fill="white"></path>
+                       </svg>
+                     </a>
+                     <a href="https://www.snapchat.com/add/who" title="Follow WHO on Snapchat" target="_blank" data-sf-ec-immutable>
+                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                         <path d="M496.926,366.6c-3.373-9.176-9.8-14.086-17.112-18.153-1.376-.806-2.641-1.451-3.72-1.947-2.182-1.128-4.414-2.22-6.634-3.373-22.8-12.09-40.609-27.341-52.959-45.42a102.889,102.889,0,0,1-9.089-16.12c-1.054-3.013-1-4.724-.248-6.287a10.221,10.221,0,0,1,2.914-3.038c3.918-2.591,7.96-5.22,10.7-6.993,4.885-3.162,8.754-5.667,11.246-7.44,9.362-6.547,15.909-13.5,20-21.278a42.371,42.371,0,0,0,2.1-35.191c-6.2-16.318-21.613-26.449-40.287-26.449a55.543,55.543,0,0,0-11.718,1.24c-1.029.224-2.059.459-3.063.72.174-11.16-.074-22.94-1.066-34.534-3.522-40.758-17.794-62.123-32.674-79.16A130.167,130.167,0,0,0,332.1,36.443C309.515,23.547,283.91,17,256,17S202.6,23.547,180,36.443a129.735,129.735,0,0,0-33.281,26.783c-14.88,17.038-29.152,38.44-32.673,79.161-.992,11.594-1.24,23.435-1.079,34.533-1-.26-2.021-.5-3.051-.719a55.461,55.461,0,0,0-11.717-1.24c-18.687,0-34.125,10.131-40.3,26.449a42.423,42.423,0,0,0,2.046,35.228c4.105,7.774,10.652,14.731,20.014,21.278,2.48,1.736,6.361,4.24,11.246,7.44,2.641,1.711,6.5,4.216,10.28,6.72a11.054,11.054,0,0,1,3.3,3.311c.794,1.624.818,3.373-.36,6.6a102.02,102.02,0,0,1-8.94,15.785c-12.077,17.669-29.363,32.648-51.434,44.639C32.355,348.608,20.2,352.75,15.069,366.7c-3.868,10.528-1.339,22.506,8.494,32.6a49.137,49.137,0,0,0,12.4,9.387,134.337,134.337,0,0,0,30.342,12.139,20.024,20.024,0,0,1,6.126,2.741c3.583,3.137,3.075,7.861,7.849,14.78a34.468,34.468,0,0,0,8.977,9.127c10.019,6.919,21.278,7.353,33.207,7.811,10.776.41,22.989.881,36.939,5.481,5.778,1.91,11.78,5.605,18.736,9.92C194.842,480.951,217.707,495,255.973,495s61.292-14.123,78.118-24.428c6.907-4.24,12.872-7.9,18.489-9.758,13.949-4.613,26.163-5.072,36.939-5.481,11.928-.459,23.187-.893,33.206-7.812a34.584,34.584,0,0,0,10.218-11.16c3.434-5.84,3.348-9.919,6.572-12.771a18.971,18.971,0,0,1,5.753-2.629A134.893,134.893,0,0,0,476.02,408.71a48.344,48.344,0,0,0,13.019-10.193l.124-.149C498.389,388.5,500.708,376.867,496.926,366.6Zm-34.013,18.277c-20.745,11.458-34.533,10.23-45.259,17.137-9.114,5.865-3.72,18.513-10.342,23.076-8.134,5.617-32.177-.4-63.239,9.858-25.618,8.469-41.961,32.822-88.038,32.822s-62.036-24.3-88.076-32.884c-31-10.255-55.092-4.241-63.239-9.858-6.609-4.563-1.24-17.211-10.341-23.076-10.739-6.907-24.527-5.679-45.26-17.075-13.206-7.291-5.716-11.8-1.314-13.937,75.143-36.381,87.133-92.552,87.666-96.719.645-5.046,1.364-9.014-4.191-14.148-5.369-4.96-29.189-19.7-35.8-24.316-10.937-7.638-15.748-15.264-12.2-24.638,2.48-6.485,8.531-8.928,14.879-8.928a27.643,27.643,0,0,1,5.965.67c12,2.6,23.659,8.617,30.392,10.242a10.749,10.749,0,0,0,2.48.335c3.6,0,4.86-1.811,4.612-5.927-.768-13.132-2.628-38.725-.558-62.644,2.84-32.909,13.442-49.215,26.04-63.636,6.051-6.932,34.484-36.976,88.857-36.976s82.88,29.92,88.931,36.827c12.611,14.421,23.225,30.727,26.04,63.636,2.071,23.919.285,49.525-.558,62.644-.285,4.327,1.017,5.927,4.613,5.927a10.648,10.648,0,0,0,2.48-.335c6.745-1.624,18.4-7.638,30.4-10.242a27.641,27.641,0,0,1,5.964-.67c6.386,0,12.4,2.48,14.88,8.928,3.546,9.374-1.24,17-12.189,24.639-6.609,4.612-30.429,19.343-35.8,24.315-5.568,5.134-4.836,9.1-4.191,14.149.533,4.228,12.511,60.4,87.666,96.718C468.629,373.011,476.119,377.524,462.913,384.877Z" fill="white"></path>
+                       </svg>
+                     </a>
+                     <a href="https://www.tiktok.com/@who?lang=en" title="Follow WHO on TikTok" target="_blank" data-sf-ec-immutable>
+                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                         <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" fill="white"></path>
+                       </svg>
+                     </a>
+                   </div>
+                 </div>
+               </div>
+               <div class="col-md-4 copyright">
+                 <span> © </span> 2023 <div class="sf-content-block content-block">
+                   <div>
+                     <a href="/about/policies/terms-of-use">WHO</a>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </footer>
+     </div>
+     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+     <script>
+       window.__define = window.define;
+       window.__require = window.require;
+       window.define = undefined;
+       window.require = undefined;
+     </script>
+     <script src="https://kendo.cdn.telerik.com/2021.1.119/js/kendo.all.min.js" type="text/javascript"></script>
+     <script src="https://kendo.cdn.telerik.com/2021.1.119/js/kendo.timezones.min.js" type="text/javascript"></script>
+     <script src="/ResourcePackages/WHO/assets/dist/scripts/responsivelylazy.min.js" type="text/javascript"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" type="text/javascript"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js" type="text/javascript"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js" type="text/javascript"></script>
+     <script src="/ResourcePackages/WHO/assets/dist/scripts/parallax.min.js?package=WHO" type="text/javascript"></script>
+     <script src="/Frontend-Assembly/Telerik.Sitefinity.Frontend.Search/Mvc/Scripts/SearchBox/Search-box.min.js?package=WHO&amp;v=NDkyOTAwNTk1" type="text/javascript"></script>
+     <script src="/Frontend-Assembly/Telerik.Sitefinity.Frontend.Navigation/Mvc/Scripts/LanguageSelector/language-selector.min.js?package=WHO&amp;v=MTQuMy44MDI4LjA%3d" type="text/javascript"></script>
+     <script src="/Mvc/Scripts/ContentBlock/content-block.min.js?package=WHO" type="text/javascript"></script>
+     <script src="/Mvc/Scripts/HeroImage/responsive-background-image.min.js?package=WHO" type="text/javascript"></script>
+     <script type="application/json" id="PersonalizationTracker">
+       {
+         "IsPagePersonalizationTarget": false,
+         "IsUrlPersonalizationTarget": false,
+         "PageId": "ad09bbea-5975-45ae-b1f7-b76ed6eb71fd"
+       }
+     </script>
+     <script type="text/javascript" src="/WebResource.axd?d=Oiw5o8i74rDb2VpVaCaMStPoJ1dBeSniQ1UcN-tajp7S6UQI4QFVCojlg1ewuf339ZIyq0NtnQlSiEw1RQXcWIVwl_-LxzVLlNCkT-5fM3qvVhZCKMRq6X6cWc42Aw4Db6sa87yi7j5Hio4wozQZMklgyIbXX4yGQn_Sh0nCPeRw8nypcGpUIdT0MqtRIOGgRLfw327mU3tc3-bA3UOOd_v176Q1&amp;t=638309030020000000"></script>
+     <input data-sf-role="en" type="hidden" value="https://www.who.int/teams/digital-health-and-innovation/smart-guidelines">
+     <script type="text/javascript" src="/ResourcePackages/WHO/assets/dist/scripts/lib/slicknav.min.js?v=14.0.7729.17453"></script>
+     <script type="text/javascript" src="/ResourcePackages/WHO/assets/dist/scripts/lib/auto-complete.min.js?v=14.0.7729.17453"></script>
+     <script type="text/javascript" src="/ResourcePackages/WHO/assets/dist/scripts/lib/match-height.min.js?v=14.0.7729.17453"></script>
+     <script type="text/javascript" src="/ResourcePackages/WHO/assets/dist/scripts/lib/lazy.min.js?v=14.0.7729.17453"></script>
+     <script type="text/javascript" src="/ResourcePackages/WHO/assets/dist/scripts/lib/modernizr-custom.js?v=14.0.7729.17453"></script>
+     <script type="text/javascript" src="/ResourcePackages/WHO/assets/dist/scripts/lib/select2.full.min.js?v=14.0.7729.17453"></script>
+     <script type="text/javascript" src="/ResourcePackages/WHO/assets/dist/scripts/accordion-footer-list.min.js?v=14.0.7729.17453"></script>
+     <script type="text/javascript" src="/ResourcePackages/WHO/assets/dist/scripts/main.min.js?v=14.0.7729.17453"></script>
+     <script type="text/javascript" src="/ResourcePackages/WHO/assets/dist/scripts/main-navigation.min.js?v=14.0.7729.17453"></script>
+     <script type="text/javascript" src="/ResourcePackages/WHO/assets/dist/scripts/geo-navigation.min.js?v=14.0.7729.17453"></script>
+     <script type="text/javascript" src="/ResourcePackages/WHO/assets/dist/scripts/image-resolution.min.js?v=14.0.7729.17453"></script>
+     <script type="application/ld+json">
+       {
+         "@context": "http://schema.org",
+         "@type": "WebPage",
+         "name": "SMART Guidelines",
+         "description": "As a landmark effort to accelerating the digitization of global public health resources, digitalizing the countries increasingly invest in digital technologies for health, WHO  need to build support for digital health across its core functions. To date, there is no documentation of procedures for systematically translating WHO’s recommendations into digital health systems in a software-neutral manner. "
+       }
+     </script>
+     <script>
+       // Picture element HTML5 shiv
+       document.createElement("picture");
+     </script>
+     <script type="text/javascript" src="/ResourcePackages/WHO/assets/dist/scripts/lib/picturefill.min.js?v=14.0.7729.17453"></script>
+     <script>
+       window.define = window.__define;
+       window.require = window.__require;
+       window.__define = undefined;
+       window.__require = undefined;
+     </script>
+   </body>
+ </html>
+BB
