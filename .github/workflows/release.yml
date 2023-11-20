@@ -103,12 +103,37 @@ jobs:
 #          clean: false
 
         
+      - name: Prepare Deployment Folder
+        run: |
+          mkdir ./deploy
+          rsync -av --exclude='website/ig-build-zips/*' ./webroot/site/ ./deploy/
+
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./webroot/site
+          publish_dir: ./deploy
           destination_dir: website
+
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          draft: true
+          prerelease: true
+
+#      - name: Upload Release Assets
+#        run: |
+#          for file in ./webroot/site/website/ig-build-zips/*; do
+#            curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -H "Content-Type: $(file -b --mime-type $file)" --data-binary @$file "https://uploads.github.com/repos/${{ github.repository }}/releases/${{ steps.create_release.outputs.id }}/assets?name=$(basename $file)"
+#          done
+#          curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -H "Content-Type: application/gzip" --data-binary @./webroot/site/website/package.tgz "https://uploads.github.com/repos/${{ github.repository }}/releases/${{ steps.create_release.outputs.id }}/assets?name=package.tgz"
+
 
 
       # - name: Deploy to gh-pages
