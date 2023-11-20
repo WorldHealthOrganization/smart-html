@@ -103,7 +103,7 @@ jobs:
 #          clean: false
 
         
-      - name: Prepare Deployment Folder
+      - name: Prepare Deployment Folder (excluding ZIPs)
         run: |
           mkdir ./deploy
           rsync -av --exclude='website/ig-build-zips/*' ./webroot/site/ ./deploy/
