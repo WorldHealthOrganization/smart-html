@@ -84,7 +84,7 @@ jobs:
           apt-get update && apt-get install -y rsync
           
       - name: debug- List dirs
-        run: find . -type d
+        run: find . 
 
       - name: Configure git to trust the workspace despite the different owner
         run:
