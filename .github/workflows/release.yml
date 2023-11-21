@@ -106,7 +106,7 @@ jobs:
       - name: Prepare Deployment Folder (excluding ZIPs)
         run: |
           mkdir ./deploy
-          rsync -av --exclude='website/ig-build-zips/*' ./webroot/site/ ./deploy/
+          rsync -av --exclude='./webroot/site/ig-build-zips/*' ./webroot/site/ ./deploy/
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
