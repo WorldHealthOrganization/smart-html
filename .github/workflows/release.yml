@@ -109,7 +109,7 @@ jobs:
           rsync -av --exclude='./webroot/site/ig-build-zips/*' ./webroot/site/ ./deploy/
           
       - name: debug- List dirs
-        run: find . -type d
+        run: find ./deploy -type d
 
         
       - name: Deploy to gh-pages
