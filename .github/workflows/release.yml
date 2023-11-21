@@ -107,7 +107,11 @@ jobs:
         run: |
           mkdir ./deploy
           rsync -av --exclude='./webroot/site/ig-build-zips/*' ./webroot/site/ ./deploy/
+          
+      - name: debug- List dirs
+        run: find . -type d
 
+        
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
