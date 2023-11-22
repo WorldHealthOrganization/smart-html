@@ -106,7 +106,7 @@ jobs:
       - name: Prepare Deployment Folder (excluding ZIPs)
         run: |
           mkdir ./deploy
-          rsync -av --exclude='./webroot/site/ig-build-zips/*' ./webroot/site/ ./deploy/
+          rsync -av --exclude='ig-build-zips/*' ./webroot/site/ ./deploy/
           
       - name: debug- List dirs
         run: find ./deploy -type d
