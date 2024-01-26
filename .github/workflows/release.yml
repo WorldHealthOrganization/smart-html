@@ -104,13 +104,15 @@ jobs:
           destination_dir: sitepreview
 
 
-      - name: Copy contents to WHO repository and create a new branch
+      - name: Update WHO repository and create a new branch
         run: |
-          git -C ./webroot checkout -b "update-site-content-${{ github.run_id }}"
-          rsync -av --delete ./deploy/ ./webroot/
-          git -C ./webroot add .
-          git -C ./webroot commit -m "Update site content"
-          git -C ./webroot push origin "update-site-content-${{ github.run_id }}"
+          cd ./webroot
+          git checkout gh-pages
+          git checkout -b "update-site-content-${{ github.run_id }}"
+          rsync -av --delete ../deploy/ ./
+          git add .
+          git commit -m "Update site content"
+          git push origin "update-site-content-${{ github.run_id }}"
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
@@ -123,7 +125,6 @@ jobs:
           base: gh-pages
           head: "update-site-content-${{ github.run_id }}"
           repository: WorldHealthOrganization/smart-html
-
 
 
 
