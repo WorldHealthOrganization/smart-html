@@ -90,27 +90,11 @@ jobs:
         run:
           git config --global --add safe.directory ./webroot
 
-
-#      - name: Deploy main
-#        uses: JamesIves/github-pages-deploy-action@v4.4.3
-#        with:
-#          branch: gh-pages # The branch the action should deploy to.
-#          folder: ./webroot # The folder the action should deploy.
-#          token: ${{ secrets.GITHUB_TOKEN }}
-#          target-folder: website
-#          commit-message: Deploy website preview
-#          single-commit: true
-#          clean: false
-
         
       - name: Prepare Deployment Folder (excluding ZIPs)
         run: |
           mkdir ./deploy
           rsync -av --exclude='ig-build-zips/*' ./webroot/site/ ./deploy/
-          
-      - name: debug- List dirs
-        run: find ./deploy -type d
-
         
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
@@ -118,6 +102,31 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./deploy
           destination_dir: sitepreview
+
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: Update site content
+          title: "Update site content"
+          body: "This is an automated pull request to update the site content"
+          branch: "update-site-content-${{ github.run_id }}"
+          base: gh-pages  # Set to gh-pages branch
+          path: deploy
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
       - name: Create Release
