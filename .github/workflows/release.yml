@@ -103,17 +103,27 @@ jobs:
           publish_dir: ./deploy
           destination_dir: sitepreview
 
-
+      
       - name: Update WHO repository and create a new branch
         run: |
+          pwd  # Print the current working directory for debugging
           cd ./webroot
+          pwd  # Print the working directory after changing to webroot
+          ls -la  # List the contents of the current directory to check for .git
+          git status  # This will help confirm if you're in a Git repository
           git fetch --all
-          git checkout gh-pages || git checkout -b gh-pages
+          if git branch -r | grep -qw "origin/gh-pages"; then
+            git checkout gh-pages
+          else
+            git checkout -b gh-pages
+          fi
           git checkout -b "update-site-content-${{ github.run_id }}"
           rsync -av --delete ../deploy/ ./
           git add .
+          git status  # Check the status to ensure changes are staged
           git commit -m "Update site content"
           git push --set-upstream origin "update-site-content-${{ github.run_id }}"
+
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
