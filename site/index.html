@@ -444,46 +444,97 @@
 
 			 <p>To implement WHO recommendations in country settings, governments and technology partners must interpret and then adapt the content in line with local policies, procedures, and digital tools. The process of translating and incorporating recommendations into digital systems can be challenging, time-consuming, and prone to error. There is currently a lack of technical documentation and standards for accurate incorporation, resulting in digital implementations inconsistent with recommended data and health practices.​ Member States and their implementation partners need specifications for digitizing guidelines and making health investments consistent with WHO data, interoperability, and guideline recommendations.</p>
             
-             <h3>What are SMART Guidelines?</h3>
+       <h3>What are SMART Guidelines?</h3>
 
-            <p>SMART Guidelines — <strong>S</strong>tandards-based, <strong>M</strong>achine-readable, <strong>A</strong>daptive, <strong>R</strong>equirements-based, and <strong>T</strong>estable - are a comprehensive set of reusable digital health components (e.g., interoperability standards, code libraries, algorithms, technical and operational specifications) that transform the guideline adaptation and implementation process to preserve fidelity and accelerate uptake. SMART Guidelines provide a five-step pathway to advance the adoption of best clinical and data practices, even if a country is not yet fully digital. </p>
-          
-            <img src="/img/SMART Guideline Layers.jpg" alt="SMART Guideline layers visual">
+       <p>SMART Guidelines — <strong>S</strong>tandards-based, <strong>M</strong>achine-readable, <strong>A</strong>daptive, <strong>R</strong>equirements-based, and <strong>T</strong>estable - are a comprehensive set of reusable digital health components (e.g., interoperability standards, code libraries, algorithms, technical and operational specifications) that transform the guideline adaptation and implementation process to preserve fidelity and accelerate uptake. SMART Guidelines provide a five-step pathway to advance the adoption of best clinical and data practices, even if a country is not yet fully digital. </p>
 
-            <p>More information available here: <a href="https://www.who.int/teams/digital-health-and-innovation/smart-guidelines">https://www.who.int/teams/digital-health-and-innovation/smart-guidelines</a></p>
-			<h3>Published SMART Guideline</h3>
-			 L2: Digital Adaptation Kits
-			 
-			 L3 : FHIR Implementation Guides
-			 <ul>
-			   <li>
-			     Antenatal Care
-			     <ul>
-			       <li><a href="https://www.who.int/publications/i/item/9789240020306">L2</a></li>
-			       <li><a href="https://smart.who.int/smart-anc">L3 </a></li>
-			     </ul>
-			   </li>
-			   <li>
-			     Digital Documentation of COVID-19 Certificates (DDCC)
-			     <ul>
-			       <li><a href="https://www.who.int/publications/i/item/WHO-2019-nCoV-Digital_certificates-vaccination-2021.1">L2</a></li>
-			       <li><a href="https://smart.who.int/ddcc">L3</a></li>
-			     </ul>
-			   </li>
-			   <li>
-			     Family Planning
-			     <ul>
-			       <li><a href="https://www.who.int/publications/i/item/9789240029743">L2</a></li>
-			     </ul>
-			   </li>
-			   <li>
-			     Trust for the
-			     <a href="https://www.who.int/initiatives/global-digital-health-certification-network">Global Digital Health Certification Network (GDHCN)</a>
-			     <ul>
-			       <li><a href="https://smart.who.int/trust">L3 (FHIR Implementation Guide)</a></li>
-			     </ul>
-			   </li>
-			 </ul>
+       <img src="assets/img/SMART Guidelines Layers.jpg" alt="SMART Guidelines layers visual">
+
+       <p>More information available here: <a href="https://www.who.int/teams/digital-health-and-innovation/smart-guidelines">https://www.who.int/teams/digital-health-and-innovation/smart-guidelines</a></p>
+			 <h3>Published SMART Guideline</h3>
+       <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>L2: Digital Adaptation Kits</th>
+            <th>L3 : FHIR Implementation Guides</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Antenatal Care</td>
+            <td><ul> 
+              <li><a href="https://www.who.int/publications/i/item/9789240020306">Digital Adaptation Kit for Antenatal Care: Operational requirements for implementing WHO recommendations in digital systems</a></li>
+              <li><a href="https://apps.who.int/iris/bitstream/handle/10665/339740/WHO-SRH-21.1-eng.xlsx">Core data dictionary</a></li> 
+              <li><a href="https://apps.who.int/iris/bitstream/handle/10665/339741/WHO-SRH-21.2-eng.xlsx">Decision support logic</a></li>
+              <li><a href="https://apps.who.int/iris/bitstream/handle/10665/339742/WHO-SRH-21.3-eng.xlsx">Indicator table</a></li> 
+              <li><a href="https://apps.who.int/iris/bitstream/handle/10665/339744/WHO-SRH-21.4-eng.xlsx">Functional and non-functional requirements</a></li>
+            </ul></td>
+            <td><a href="https://build.fhir.org/ig/WorldHealthOrganization/smart-anc/">WHO Antenatal Care Guideline Implementation Guide</a></td>
+          </tr>
+          <tr>
+            <td>Family Planning</td>
+            <td><ul> 
+              <li><a href="https://www.who.int/publications/i/item/9789240029743">Digital Adaptation Kit for Family Planning: Operational requirements for implementing WHO recommendations in digital systems</a></li>
+              <li><a href="https://apps.who.int/iris/bitstream/handle/10665/341998/WHO-SRH-21.13-eng.xlsx">Core data dictionary</a></li> 
+              <li><a href="https://apps.who.int/iris/bitstream/handle/10665/341999/WHO-SRH-21.14-eng.xlsx">Decision support logic</a></li>
+              <li><a href="https://apps.who.int/iris/bitstream/handle/10665/342000/WHO-SRH-21.15-eng.xlsx">Indicator table</a></li> 
+              <li><a href="https://apps.who.int/iris/bitstream/handle/10665/342001/WHO-SRH-21.16-eng.xlsx">Functional and non-functional requirements</a></li>
+            </ul></td>
+            <td>Coming soon!</td>
+          </tr>
+          <tr>
+            <td>HIV, second edition</td>
+            <td><ul> 
+              <li><a href="https://www.who.int/publications/i/item/9789240085138">Digital Adaptation Kit for HIV, second edition: Operational requirements for implementing WHO recommendations in digital systems</a></li>
+              <li><a href="https://iris.who.int/bitstream/handle/10665/375056/WHO-UCN-HHS-SIA-2023.27-eng.xlsx">Core data dictionary</a></li> 
+              <li><a href="https://iris.who.int/bitstream/handle/10665/375057/WHO-UCN-HHS-SIA-2023.28-eng.xlsx">Decision support logic</a></li>
+              <li><a href="https://iris.who.int/bitstream/handle/10665/375058/WHO-UCN-HHS-SIA-2023.29-eng.xlsx">Indicator table</a></li> 
+              <li><a href="https://iris.who.int/bitstream/handle/10665/375059/WHO-UCN-HHS-SIA-2023.30-eng.xlsx">Functional and non-functional requirements</a></li>
+            </ul></td>
+            <td>Coming soon!</td>
+          </tr>
+          <tr>
+            <td>Digital Documentation of COVID-19 Certificates: Vaccination status (DDCC:VS)</td>
+            <td><ul> 
+              <li><a href="https://www.who.int/publications/i/item/WHO-2019-nCoV-Digital_certificates-vaccination-2021.1">Digital documentation of COVID-19 certificates: vaccination status: technical specifications and implementation guidance, 27 August 2021</a></li>
+              <li><a href="https://www.who.int/publications-detail-redirect/WHO-2019-nCoV-Digital_certificates-vaccination-data_dictionary-2021.1">Core data dictionary</a></li>
+              <li><a href="https://www.who.int/publications-detail-redirect/WHO-2019-nCoV-Digital_certificates-vaccination-technical_briefing-2021.1">Technical briefing, 27 August 2021</a></li>
+            </ul></td>
+            <td><a href="https://smart.who.int/ddcc/">WHO Digital Documentation of COVID-19 Certificates (DDCC)</a></td>
+          </tr>
+          <tr>
+            <td>Digital Documentation of COVID-19 Certificates: Test results (DDCC:TR)</td>
+            <td><ul> 
+              <li><a href="https://www.who.int/publications/i/item/WHO-2019-nCoV-Digital_certificates_diagnostic_test_results-2022.1">Digital documentation of COVID-19 certificates: test result: technical specifications and implementation guidance, 31 March 2022</a></li>
+              <li><a href="https://www.who.int/publications/i/item/WHO-2019-nCoV-Digital_certificates-diagnostic_test_results-data_dictionary-2022.1">Core data dictionary</a></li>
+            </ul></td>
+            <td><a href="https://smart.who.int/ddcc/">WHO Digital Documentation of COVID-19 Certificates (DDCC)</a></td>
+          </tr>
+          <tr>
+            <td>GDHCN</td>
+            <td>Trust for the
+              <a href="https://www.who.int/initiatives/global-digital-health-certification-network">Global Digital Health Certification Network (GDHCN)</a></td>
+            <td>Coming soon!</td>
+            <td><a href="https://smart.who.int/trust">WHO SMART Trust</a></td>
+          </tr>
+          <tr>
+            <td>TB</td>
+            <td>Coming soon!</td>
+            <td>Coming soon!</td>
+          </tr>
+          <tr>
+            <td>CCC</td>
+            <td>Coming soon!</td>
+            <td>Coming soon!</td>
+          </tr>
+          <tr>
+            <td>Immunizations</td>
+            <td>Coming soon!</td>
+            <td>Coming soon!</td>
+          </tr>
+        </tbody>
+        </table>
 		       </div>
 		     </div>
 		   </div>
