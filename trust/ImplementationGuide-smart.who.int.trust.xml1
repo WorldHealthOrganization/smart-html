@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="http://smart.who.int/trust/ImplementationGuide/smart.who.int.trust"/>
-  <version value="1.0.0"/>
+  <version value="1.1.2"/>
   <name value="trust"/>
   <title value="WHO SMART Trust"/>
   <status value="active"/>
-  <date value="2024-01-26"/>
+  <date value="2024-04-12"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -75,7 +75,7 @@
         <valueString value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="1.0.0"/>
+        <valueString value="v1.1.2"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -278,7 +278,7 @@
         <valueCode value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="1.0.0"/>
+        <valueString value="v1.1.2"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -506,7 +506,7 @@
         <reference value="StructureDefinition/HCert"/>
       </reference>
       <name value="Health Certificate"/>
-      <description value="Logical Model for the HCERT"/>
+      <description value="Logical Model for the HCERT&#xA;&#xA;The full data structure and encoding mechanisms for HCERT are defined here: [Electronic Health Certificate Specification](/smart-trust/hcert_spec.html)&#xA;&#xA;An HCERT is claim -260 within the [CBOR Web Token (CWT) Claim](https://www.rfc-editor.org/rfc/rfc8392.html).&#xA;&#xA;Note for subclaims:&#xA;- subclaims 0 and above are reserved by WHO to be assigned, a new sub claim can be requested for by requesting to create a new trust domain&#xA;- subclaims for negative integer values are for development purposes and are free to use&#xA;- While this logical model mentions assigned subclaims (below), the ones listed in the Electronic Health Certificate Specification are considered authoritative"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>
@@ -523,174 +523,214 @@
         <nameUrl value="index.html"/>
         <title value="Home"/>
         <generation value="html"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="actors.html"/>
-        </extension>
-        <nameUrl value="actors.html"/>
-        <title value="Actors"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="adapting_guidelines.html"/>
-        </extension>
-        <nameUrl value="adapting_guidelines.html"/>
-        <title value="Adapting Guidelines"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="background.html"/>
-        </extension>
-        <nameUrl value="background.html"/>
-        <title value="Background"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="business_process.html"/>
-        </extension>
-        <nameUrl value="business_process.html"/>
-        <title value="Business Process"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="changes.html"/>
-        </extension>
-        <nameUrl value="changes.html"/>
-        <title value="Changes"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="checklist.html"/>
-        </extension>
-        <nameUrl value="checklist.html"/>
-        <title value="Checklist"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="community.html"/>
-        </extension>
-        <nameUrl value="community.html"/>
-        <title value="Community"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="concepts.html"/>
-        </extension>
-        <nameUrl value="concepts.html"/>
-        <title value="Concepts"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="concepts_certificate_governance.html"/>
-        </extension>
-        <nameUrl value="concepts_certificate_governance.html"/>
-        <title value="Concepts Certificate Governance"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="concepts_CertificatePreperation.html"/>
-        </extension>
-        <nameUrl value="concepts_CertificatePreperation.html"/>
-        <title value="Concepts Certificate Preperation"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="concepts_did.html"/>
-        </extension>
-        <nameUrl value="concepts_did.html"/>
-        <title value="Concepts Did"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="concepts_governance.html"/>
-        </extension>
-        <nameUrl value="concepts_governance.html"/>
-        <title value="Concepts Governance"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="concepts_onboarding.html"/>
-        </extension>
-        <nameUrl value="concepts_onboarding.html"/>
-        <title value="Concepts Onboarding"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="concepts_onboarding_checklist.html"/>
-        </extension>
-        <nameUrl value="concepts_onboarding_checklist.html"/>
-        <title value="Concepts Onboarding Checklist"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="concepts_onboarding_initialguideline_full.html"/>
-        </extension>
-        <nameUrl value="concepts_onboarding_initialguideline_full.html"/>
-        <title value="Concepts Onboarding Initialguideline Full"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="concepts_onboarding_initialprocess_full.html"/>
-        </extension>
-        <nameUrl value="concepts_onboarding_initialprocess_full.html"/>
-        <title value="Concepts Onboarding Initialprocess Full"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="concepts_onboarding_process_full.html"/>
-        </extension>
-        <nameUrl value="concepts_onboarding_process_full.html"/>
-        <title value="Concepts Onboarding Process Full"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="content_profiles.html"/>
-        </extension>
-        <nameUrl value="content_profiles.html"/>
-        <title value="Content Profiles"/>
-        <generation value="markdown"/>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="changes.html"/>
+          </extension>
+          <nameUrl value="changes.html"/>
+          <title value="Changes"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="dependencies.html"/>
+          </extension>
+          <nameUrl value="dependencies.html"/>
+          <title value="Dependencies"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="references.html"/>
+          </extension>
+          <nameUrl value="references.html"/>
+          <title value="References"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="adapting_guidelines.html"/>
+          </extension>
+          <nameUrl value="adapting_guidelines.html"/>
+          <title value="Adapting Guidelines for Country use"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="faq.html"/>
+          </extension>
+          <nameUrl value="faq.html"/>
+          <title value="Frequently Asked Questions"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="requirements.html"/>
+          </extension>
+          <nameUrl value="requirements.html"/>
+          <title value="Business Requirements"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="concepts.html"/>
+          </extension>
+          <nameUrl value="concepts.html"/>
+          <title value="Concepts"/>
+          <generation value="markdown"/>
+          <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+              <valueUrl value="concepts_certificate_governance.html"/>
+            </extension>
+            <nameUrl value="concepts_certificate_governance.html"/>
+            <title value="Concepts Certificate Governance"/>
+            <generation value="markdown"/>
+          </page>
+          <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+              <valueUrl value="concepts_CertificatePreperation.html"/>
+            </extension>
+            <nameUrl value="concepts_CertificatePreperation.html"/>
+            <title value="Concepts Certificate Preparation"/>
+            <generation value="markdown"/>
+          </page>
+          <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+              <valueUrl value="concepts_did.html"/>
+            </extension>
+            <nameUrl value="concepts_did.html"/>
+            <title value="Concepts Did"/>
+            <generation value="markdown"/>
+          </page>
+          <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+              <valueUrl value="concepts_governance.html"/>
+            </extension>
+            <nameUrl value="concepts_governance.html"/>
+            <title value="Concepts Governance"/>
+            <generation value="markdown"/>
+          </page>
+          <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+              <valueUrl value="concepts_onboarding.html"/>
+            </extension>
+            <nameUrl value="concepts_onboarding.html"/>
+            <title value="Concepts Onboarding"/>
+            <generation value="markdown"/>
+          </page>
+          <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+              <valueUrl value="concepts_onboarding_checklist.html"/>
+            </extension>
+            <nameUrl value="concepts_onboarding_checklist.html"/>
+            <title value="Concepts Onboarding Checklist"/>
+            <generation value="markdown"/>
+          </page>
+          <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+              <valueUrl value="concepts_onboarding_initialguideline_full.html"/>
+            </extension>
+            <nameUrl value="concepts_onboarding_initialguideline_full.html"/>
+            <title value="Concepts Onboarding Initial Guidance Full"/>
+            <generation value="markdown"/>
+          </page>
+          <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+              <valueUrl value="concepts_onboarding_initialprocess_full.html"/>
+            </extension>
+            <nameUrl value="concepts_onboarding_initialprocess_full.html"/>
+            <title value="Concepts Onboarding Initial Process Full"/>
+            <generation value="markdown"/>
+          </page>
+          <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+              <valueUrl value="concepts_onboarding_process_full.html"/>
+            </extension>
+            <nameUrl value="concepts_onboarding_process_full.html"/>
+            <title value="Concepts Onboarding Process Full"/>
+            <generation value="markdown"/>
+          </page>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="use_cases.html"/>
+          </extension>
+          <nameUrl value="use_cases.html"/>
+          <title value="Use Cases"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="decision_support.html"/>
+          </extension>
+          <nameUrl value="decision_support.html"/>
+          <title value="Decision Support Logic"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="functional.html"/>
+          </extension>
+          <nameUrl value="functional.html"/>
+          <title value="Functional Requirements"/>
+          <generation value="markdown"/>
+        </page>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
           <valueUrl value="data_exchange.html"/>
         </extension>
         <nameUrl value="data_exchange.html"/>
-        <title value="Data Exchange"/>
+        <title value="Data Models and Exchange"/>
         <generation value="html"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="decision_support.html"/>
-        </extension>
-        <nameUrl value="decision_support.html"/>
-        <title value="Decision Support"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="dependencies.html"/>
-        </extension>
-        <nameUrl value="dependencies.html"/>
-        <title value="Dependencies"/>
-        <generation value="html"/>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="actors.html"/>
+          </extension>
+          <nameUrl value="actors.html"/>
+          <title value="System Actors"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="transactions.html"/>
+          </extension>
+          <nameUrl value="transactions.html"/>
+          <title value="Transactions"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="workflows.html"/>
+          </extension>
+          <nameUrl value="workflows.html"/>
+          <title value="Workflows"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="content_profiles.html"/>
+          </extension>
+          <nameUrl value="content_profiles.html"/>
+          <title value="Content profiles"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="hcert_spec.html"/>
+          </extension>
+          <nameUrl value="hcert_spec.html"/>
+          <title value="Electronic Health Certificate Specification"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="trust_network_gateway_architecture.html"/>
+          </extension>
+          <nameUrl value="trust_network_gateway_architecture.html"/>
+          <title value="Trust Network Gateway Architecture"/>
+          <generation value="markdown"/>
+        </page>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
@@ -699,198 +739,70 @@
         <nameUrl value="deployment.html"/>
         <title value="Deployment"/>
         <generation value="html"/>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="video_tutorial.html"/>
+          </extension>
+          <nameUrl value="video_tutorial.html"/>
+          <title value="Video Tutorials"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="security_privacy.html"/>
+          </extension>
+          <nameUrl value="security_privacy.html"/>
+          <title value="Security and Privacy Considerations"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="testing.html"/>
+          </extension>
+          <nameUrl value="testing.html"/>
+          <title value="Testing"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="reference_implementation.html"/>
+          </extension>
+          <nameUrl value="reference_implementation.html"/>
+          <title value="Reference Implementations"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="downloads.html"/>
+          </extension>
+          <nameUrl value="downloads.html"/>
+          <title value="Downloads"/>
+          <generation value="html"/>
+        </page>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="dictionary.html"/>
+          <valueUrl value="indices.html"/>
         </extension>
-        <nameUrl value="dictionary.html"/>
-        <title value="Dictionary"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="disclaimer.html"/>
-        </extension>
-        <nameUrl value="disclaimer.html"/>
-        <title value="Disclaimer"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="downloads.html"/>
-        </extension>
-        <nameUrl value="downloads.html"/>
-        <title value="Downloads"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="feedback.html"/>
-        </extension>
-        <nameUrl value="feedback.html"/>
-        <title value="Feedback"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="functional.html"/>
-        </extension>
-        <nameUrl value="functional.html"/>
-        <title value="Functional"/>
+        <nameUrl value="indices.html"/>
+        <title value="Indices"/>
         <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="history.html"/>
-        </extension>
-        <nameUrl value="history.html"/>
-        <title value="History"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="indicators.html"/>
-        </extension>
-        <nameUrl value="indicators.html"/>
-        <title value="Indicators"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="instructions.html"/>
-        </extension>
-        <nameUrl value="instructions.html"/>
-        <title value="Instructions"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="intro.html"/>
-        </extension>
-        <nameUrl value="intro.html"/>
-        <title value="Intro"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="layers.html"/>
-        </extension>
-        <nameUrl value="layers.html"/>
-        <title value="Layers"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="license.html"/>
-        </extension>
-        <nameUrl value="license.html"/>
-        <title value="License"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="maps.html"/>
-        </extension>
-        <nameUrl value="maps.html"/>
-        <title value="Maps"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="nonfunctional.html"/>
-        </extension>
-        <nameUrl value="nonfunctional.html"/>
-        <title value="Nonfunctional"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="personas.html"/>
-        </extension>
-        <nameUrl value="personas.html"/>
-        <title value="Personas"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="reference_implementation.html"/>
-        </extension>
-        <nameUrl value="reference_implementation.html"/>
-        <title value="Reference Implementation"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="references.html"/>
-        </extension>
-        <nameUrl value="references.html"/>
-        <title value="References"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="requirements.html"/>
-        </extension>
-        <nameUrl value="requirements.html"/>
-        <title value="Requirements"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="security_privacy.html"/>
-        </extension>
-        <nameUrl value="security_privacy.html"/>
-        <title value="Security Privacy"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="support.html"/>
-        </extension>
-        <nameUrl value="support.html"/>
-        <title value="Support"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="testing.html"/>
-        </extension>
-        <nameUrl value="testing.html"/>
-        <title value="Testing"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="transactions.html"/>
-        </extension>
-        <nameUrl value="transactions.html"/>
-        <title value="Transactions"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="trust_network_gateway_architecture.html"/>
-        </extension>
-        <nameUrl value="trust_network_gateway_architecture.html"/>
-        <title value="Trust Network Gateway Architecture"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="use_cases.html"/>
-        </extension>
-        <nameUrl value="use_cases.html"/>
-        <title value="Use Cases"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="workflows.html"/>
-        </extension>
-        <nameUrl value="workflows.html"/>
-        <title value="Workflows"/>
-        <generation value="markdown"/>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="artifacts.html"/>
+          </extension>
+          <nameUrl value="artifacts.html"/>
+          <title value="Artifact Index"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="maps.html"/>
+          </extension>
+          <nameUrl value="maps.html"/>
+          <title value="Mappings"/>
+          <generation value="html"/>
+        </page>
       </page>
     </page>
     <parameter>

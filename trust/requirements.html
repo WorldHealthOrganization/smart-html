@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Requirements - WHO SMART Trust v1.0.0</title>
+    <title>Business Requirements - WHO SMART Trust v1.1.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"40"}
-    h3,h4,h5,h6{--heading-prefix:"40"}</style>
+    <style type="text/css">h2{--heading-prefix:"1.6"}
+    h3,h4,h5,h6{--heading-prefix:"1.6"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
 
       <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
@@ -60,55 +60,108 @@
               </button>
               <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
               <div class="nav-collapse collapse navbar-inverse-collapse">
-                <ul class="nav navbar-nav">
-  
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="index.html" class="dropdown-toggle">Home<b class="caret"></b></a>
-    <ul class="dropdown-menu">
-      <li><a href="index.html">Summary</a></li>
-      <li><a href="changes.html">Changes</a></li>
-      <li><a href="dependencies.html">Dependencies</a></li>
-      <li><a href="references.html">References</a></li>
-	  <li><a href="adapting_guidelines.html">Adapting Guidelines for Country Use</a></li>
-    </ul>
-  </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="requirements.html" class="dropdown-toggle">Business Requirements<b class="caret"></b></a>
-    <ul class="dropdown-menu">
-      <li><a href="concepts.html">Concepts</a></li>
-      <li><a href="use_cases.html">Use Cases</a></li>
-      <li><a href="decision_support.html">Decision Support Logic</a></li>
-      <li><a href="functional.html">Functional Requirements</a></li>    
-    </ul>
-  </li>
+                  <!-- menu.xml -->
 
+<ul class="nav navbar-nav">
   <li class="dropdown">
-    <a data-toggle="dropdown" href="data_exchange.html" class="dropdown-toggle">Data Models and Exchange<b class="caret"></b></a>
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Home
+      <b class="caret"></b>
+    </a>
     <ul class="dropdown-menu">
-      <li><a href="actors.html">System Actors</a></li>
-      <li><a href="transactions.html">Transactions</a></li>
-      <li><a href="workflows.html">Workflows</a></li>
-      <li><a href="content_profiles.html">Content Profiles</a></li>
+      <li>
+        <a href="index.html">Summary</a>
+      </li>
+      <li>
+        <a href="changes.html">Changes</a>
+      </li>
+      <li>
+        <a href="dependencies.html">Dependencies</a>
+      </li>
+      <li>
+        <a href="references.html">References</a>
+      </li>
+      <li>
+        <a href="adapting_guidelines.html">Adapting Guidelines for Country use</a>
+      </li>
+      <li>
+        <a href="faq.html">Frequently Asked Questions</a>
+      </li>
     </ul>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="deployment.html" class="dropdown-toggle"> Deployment<b class="caret"></b></a>
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Business Requirements
+      <b class="caret"></b>
+    </a>
     <ul class="dropdown-menu">
-      <li><a href="security_privacy.html">Security and Privacy Considerations</a></li>
-      <li><a href="testing.html">Testing</a></li>
-	  <li><a href="reference_implementation.html">Reference Implementations</a></li>
-      <li><a href="downloads.html">Downloads</a></li>
+      <li>
+        <a href="concepts.html">Concepts</a>
+      </li>
+      <li>
+        <a href="use_cases.html">Use Cases</a>
+      </li>
+      <li>
+        <a href="decision_support.html">Decision Support Logic</a>
+      </li>
+      <li>
+        <a href="functional.html">Functional Requirements</a>
+      </li>
     </ul>
   </li>
-	<li class="dropdown">
-		<a data-toggle="dropdown" href="deployment.html" class="dropdown-toggle"> Indices<b class="caret"></b></a>
-		<ul class="dropdown-menu">
-		  <li><a href="artifacts.html">Artifact Index</a></li>
-		   <li><a href="maps.html">Maps</a></li>
-		</ul>
-	</li>
-</ul>      
-
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Data Models and Exchange
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="actors.html">System Actors</a>
+      </li>
+      <li>
+        <a href="transactions.html">Transactions</a>
+      </li>
+      <li>
+        <a href="workflows.html">Workflows</a>
+      </li>
+      <li>
+        <a href="content_profiles.html">Content Profiles</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Deployment
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="video_tutorial.html">Video Tutorials</a>
+      </li>
+      <li>
+        <a href="security_privacy.html">Security and Privacy Considerations</a>
+      </li>
+      <li>
+        <a href="testing.html">Testing</a>
+      </li>
+      <li>
+        <a href="reference_implementation.html">Reference Implementations</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Indices
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Artifact Index</a>
+      </li>
+      <li>
+        <a href="maps.html">Mappings</a>
+      </li>
+    </ul>
+  </li>
+</ul>
               </div>    <!-- /.nav-collapse -->
 
               <div data-placeholder-label="Language Selector and Search" style="display: flex; justify-content: flex-end; align-items: center;" class="sf_colsIn col-md-8  navbar-right-container" data-sf-element="LanguageSelectorSearch">
@@ -150,7 +203,7 @@
         <div id="ig-status" class="ig-status-active">
           <p><span style="font-size:12pt;font-weight:bold">WHO SMART Trust</span>
             <br/>
-            <span style="display:inline-block;">1.0.0 - 1.0.0
+            <span style="display:inline-block;">1.1.2 - v1.1.2
 
 
 
@@ -169,7 +222,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Requirements</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="index.html"><b>Home</b></a></li><li><b>Business Requirements</b></li>
 
         </ul>
       </div>    <!-- /container -->
@@ -189,8 +242,8 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">This page is part of the Trust (v1.0.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/trust/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
-  <h2>Requirements</h2>
+    <!-- ReleaseHeader --><p id="publish-box">This page is part of the Trust (v1.1.2: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/trust/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Business Requirements</h2>
   
   
   
@@ -201,9 +254,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <ul>
       <li><a href="concepts.html">Key Concepts</a></li>
       <li><a href="functional.html">Functional Requirements</a></li>   
-      <li><a name="l386">​</a><a href="usecases.html">Use Cases</a></li>
-      <li><a href="personas.html">Personas</a></li>
-      <li><a href="dictionary.html">Data Dictionary</a></li>
+      <li><a name="l447">​</a><a href="usecases.html">Use Cases</a></li>
+      <li><a name="l451">​</a><a href="personas.html">Personas</a></li>
+      <li><a name="l455">​</a><a href="dictionary.html">Data Dictionary</a></li>
     </ul>
 
     
@@ -230,12 +283,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.trust#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 29, 2024 21:35+0000">2024-01-29</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.trust#1.1.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 12, 2024 08:01+0000">2024-04-12</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)">
+          <span style="color: var(--footer-highlight-text-color)"><a name="l511">​</a>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
-                 
+                  | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/WorldHealthOrganization/smart-ig-empty/projects/1" target="_blank">Issues</a>
                 
 | <a style="color: #81BEF7" href="http://smart.who.int/trust/history.html" target="_blank">Version History</a> | <a rel="license" style="color: #81BEF7" href="license.html">License</a>
           </span>
@@ -265,6 +318,88 @@ anchors.add()</script>
   <!-- v0.1, 2021-01-09 -->
 
 
+  
+    
+    <script type="text/javascript">
+     /*   <!-- [CDATA[ */
+        $(':header[id]').each(function() { // apply this to each heading
+          var id = $(this).attr('id');
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';  // The feedback label is a string
+            
+
+            
+              var parameterFieldId = '';
+              var parameterVariableName = '';
+              var parameterValue = '';
+              parameterFieldId = 'entry.'+parseInt(1353807103).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
+              parameterVariableName = 'pageTitle';
+
+              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+                default:
+                    console.log("Parameter value not supported");
+                    break;
+                  case "pageTitle":
+                    parameterValue = encodeURIComponent($(document).attr('title'));
+                    break;
+                  case "sectionId":
+                    parameterValue = id;
+                    break;
+                  case "sectionName":
+                    parameterValue = document.getElementById(id).textContent;
+                    break;
+              }
+/* <![CDATA[ */
+              feedbackurl = feedbackurl + '&';
+              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
+/* ]] --> */
+            
+              var parameterFieldId = '';
+              var parameterVariableName = '';
+              var parameterValue = '';
+              parameterFieldId = 'entry.'+parseInt(247644557).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
+              parameterVariableName = 'sectionName';
+
+              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+                default:
+                    console.log("Parameter value not supported");
+                    break;
+                  case "pageTitle":
+                    parameterValue = encodeURIComponent($(document).attr('title'));
+                    break;
+                  case "sectionId":
+                    parameterValue = id;
+                    break;
+                  case "sectionName":
+                    parameterValue = document.getElementById(id).textContent;
+                    break;
+              }
+/*   <!-- [CDATA[ */
+              feedbackurl = feedbackurl + '&';
+              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
+/* ]] --> */
+            
+            
+          if (id) { //To make sure the element has an id
+            $(this).append(function () {
+              return $('<a></a>', {
+                id,
+                href: feedbackurl,
+                text: feedbacklabel+' ' ,
+                class: 'feedback',
+                target: '_blank',
+                onclick: 'window.open('+feedbackurl+',\'newwindow\',\'width=300,height=250\');return false;'
+        
+              });
+            });
+          }
+        }) 
+/* ]]&gt; */
+      </script>  
+    
   
 
 

@@ -7,14 +7,14 @@
       "sequence" : "ci-build"
     },
     {
-      "version" : "1.0.0",
-      "path" : "http://smart.who.int/trust/1.0.0",
+      "version" : "1.1.2",
+      "path" : "http://smart.who.int/trust/v1.1.2",
       "status" : "release",
       "sequence" : "Releases",
       "fhirversion" : "4.0.1",
-      "date" : "2024-01-29",
+      "date" : "2024-04-12",
       "current" : true,
-      "desc" : "First stable release"
+      "descmd" : "v1.1.2 release  \n\nHCert Logical Model and specification updated with subclaim details and notes  \n\nRapid assessment template for proposing new trust domains added  \n\nContent Profiles include details about Trust Domain  \n\nFAQ page added  \n\n Country participation status added"
     }
   ],
   "package-id" : "smart.who.int.trust",
