@@ -118,7 +118,7 @@ jobs:
             git checkout -b gh-pages
           fi
           git checkout -b "update-site-content-${{ github.run_id }}"
-          rsync -av --delete ../deploy/ ./
+          rsync -av  --exclude='.git/' --delete ../deploy/ ./
           git add .
           git status  # Check the status to ensure changes are staged
           git commit -m "Update site content"
