@@ -77,7 +77,7 @@ jobs:
         run: java -Xmx4g -jar ./publisher.jar publisher -ig source -package-cache-folder ./fhir-package-cache
 
       - name: Find package-list.json
-        run: find /tmp/web-root/run-20240425/trust -name "package-list.json"
+        run: find / -name "package-list.json"
 
       - name: Find package-list.json
         run: find . -name "package-list.json"
