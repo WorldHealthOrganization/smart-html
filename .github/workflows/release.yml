@@ -84,7 +84,7 @@ jobs:
 
 
       - name: Run publisher command for publishing release
-        run: java -Xmx4g -Dfile.encoding=UTF-8 -jar publisher.jar -go-publish -package-cache-folder ./fhir-package-cache -source $(pwd)/source -web $(pwd)/webroot/site -temp $(pwd)/temp -registry ./ig-registry/fhir-ig-list.json -history ./history-template -templates $(pwd)/webroot/site/templates
+        run: java -Xmx4g -Dfile.encoding=UTF-8 -jar publisher.jar -go-publish -package-cache-folder ./fhir-package-cache -source $(pwd)/source -web $(pwd)/webroot -temp $(pwd)/temp -registry ./ig-registry/fhir-ig-list.json -history ./history-template -templates $(pwd)/webroot/site/templates
 
       - name: Install rsync 📚
         run: |
