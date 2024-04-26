@@ -76,8 +76,15 @@ jobs:
       - name: Run publisher command
         run: java -Xmx4g -jar ./publisher.jar publisher -ig source -package-cache-folder ./fhir-package-cache
 
+      - name: Find package-list.json
+        run: find / -name "package-list.json"
+
+      - name: Find package-list.json
+        run: find . -name "package-list.json"
+
+
       - name: Run publisher command for publishing release
-        run: java -Xmx4g -Dfile.encoding=UTF-8 -jar publisher.jar -go-publish -package-cache-folder ./fhir-package-cache -source source -web $(pwd)/webroot/site -registry ./ig-registry/fhir-ig-list.json -history ./history-template -templates $(pwd)/webroot/site/templates
+        run: java -Xmx4g -Dfile.encoding=UTF-8 -jar publisher.jar -go-publish -package-cache-folder ./fhir-package-cache -source $(pwd)/source -web $(pwd)/webroot -temp $(pwd)/temp -registry ./ig-registry/fhir-ig-list.json -history ./history-template -templates $(pwd)/webroot/templates
 
       - name: Install rsync 📚
         run: |
@@ -94,7 +101,7 @@ jobs:
       - name: Prepare Deployment Folder (excluding ZIPs)
         run: |
           mkdir ./deploy
-          rsync -av --exclude='ig-build-zips/*' ./webroot/site/ ./deploy/
+          rsync -av --exclude='ig-build-zips/*' ./webroot/ ./deploy/
         
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
@@ -152,12 +159,12 @@ jobs:
 
       - name: Upload Release Assets
         run: |
-          for file in ./webroot/site/ig-build-zips/*; do
+          for file in ./webroot/ig-build-zips/*; do
             echo "Uploading file: $file"
             curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -H "Content-Type: $(file -b --mime-type $file)" --data-binary @$file "https://uploads.github.com/repos/${{ github.repository }}/releases/${{ steps.create_release.outputs.id }}/assets?name=$(basename $file)"
           done
-#          echo "Uploading file: ./webroot/site/package.tgz"
-#          curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -H "Content-Type: application/gzip" --data-binary @./webroot/site/website/package.tgz "https://uploads.github.com/repos/${{ github.repository }}/releases/${{ steps.create_release.outputs.id }}/assets?name=package.tgz"
+#          echo "Uploading file: ./webroot/package.tgz"
+#          curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -H "Content-Type: application/gzip" --data-binary @./webroot/website/package.tgz "https://uploads.github.com/repos/${{ github.repository }}/releases/${{ steps.create_release.outputs.id }}/assets?name=package.tgz"
 
 
 
