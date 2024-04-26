@@ -3,14 +3,14 @@
   "id" : "smart.who.int.trust",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>trust</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/trust/ImplementationGuide/smart.who.int.trust</pre><div><p>SMART Trust Implementation Guide</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SMART_WHO_INT_TRUST</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/trust/ImplementationGuide/smart.who.int.trust</pre><div><p>SMART Trust Implementation Guide</p>\n</div></div>"
   },
   "url" : "http://smart.who.int/trust/ImplementationGuide/smart.who.int.trust",
-  "version" : "1.1.2",
-  "name" : "trust",
+  "version" : "1.1.3",
+  "name" : "SMART_WHO_INT_TRUST",
   "title" : "WHO SMART Trust",
   "status" : "active",
-  "date" : "2024-04-12",
+  "date" : "2024-04-25",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",
@@ -37,7 +37,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "5.3.0"
+    "version" : "5.5.0"
   },
   {
     "id" : "hl7ext",
@@ -56,15 +56,15 @@
     "version" : "1.1.0"
   },
   {
-    "id" : "who_ddcc",
-    "uri" : "http://smart.who.int/ddcc/ImplementationGuide/who.ddcc",
-    "packageId" : "who.ddcc",
+    "id" : "who_base",
+    "uri" : "http://smart.who.int/base/ImplementationGuide/who.base",
+    "packageId" : "who.base",
     "version" : "dev"
   },
   {
-    "id" : "who_ips_pilgrimage",
-    "uri" : "http://smart.who.int/ips-pilgrimage/ImplementationGuide/who.ips-pilgrimage",
-    "packageId" : "who.ips-pilgrimage",
+    "id" : "who_ddcc",
+    "uri" : "http://smart.who.int/ddcc/ImplementationGuide/who.ddcc",
+    "packageId" : "who.ddcc",
     "version" : "dev"
   }],
   "definition" : {
@@ -86,7 +86,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "v1.1.2"
+        "valueString" : "v1.1.3"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -365,7 +365,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "v1.1.2"
+        "valueString" : "v1.1.3"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -661,13 +661,157 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActorDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActorDefinition/Credential.Holder"
+      },
+      "name" : "Credential.Holder",
+      "description" : "Credential Holder",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActorDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActorDefinition/Credential.Issuer"
+      },
+      "name" : "Credential.Issuer",
+      "description" : "Credential Issuer",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActorDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActorDefinition/GDHCN"
+      },
+      "name" : "GDHCN",
+      "description" : "WHO Global Digital Health Certification Network",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
         "reference" : "StructureDefinition/HCert"
       },
       "name" : "Health Certificate",
-      "description" : "Logical Model for the HCERT\n\nThe full data structure and encoding mechanisms for HCERT are defined here: [Electronic Health Certificate Specification](/smart-trust/hcert_spec.html)\n\nAn HCERT is claim -260 within the [CBOR Web Token (CWT) Claim](https://www.rfc-editor.org/rfc/rfc8392.html).\n\nNote for subclaims:\n- subclaims 0 and above are reserved by WHO to be assigned, a new sub claim can be requested for by requesting to create a new trust domain\n- subclaims for negative integer values are for development purposes and are free to use\n- While this logical model mentions assigned subclaims (below), the ones listed in the Electronic Health Certificate Specification are considered authoritative",
+      "description" : "Logical Model for the HCERT",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical:abstract"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SchemeInformation"
+      },
+      "name" : "Scheme Information",
+      "description" : "Logical Model for Information on the trusted list and its issuing scheme",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SmartHealthLink"
+      },
+      "name" : "Smart Health Link (DRAFT)",
+      "description" : "Smart Health Link URI (DRAFT)\n\nLogical Model to represent a SMART Health Link as its URI.  It is generated from the content of the SMART Health Link Payload.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SmartHealthLinkPayload"
+      },
+      "name" : "Smart Health Link Payload (DRAFT)",
+      "description" : "Smart Health Link Payload (DRAFT)\n\nThis logical model was taken from the SMART Health Link documentation <https://docs.smarthealthit.org/smart-health-links/spec#construct-a-shlink-payload> as if 30 November 2023.\n\nA [[ SMART Health Link]] is generated from this payload according to the algorithm documented here <https://docs.smarthealthit.org/smart-health-links/spec#example-shlink-generation> to create a \n\nIt is generated",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActorDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActorDefinition/TNG"
+      },
+      "name" : "TNG",
+      "description" : "Trust Network Gateway",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActorDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActorDefinition/TNP"
+      },
+      "name" : "TNP",
+      "description" : "Trust Network Participant",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/WHO.TRUST.KEYUSAGE"
+      },
+      "name" : "TRUST.KEYUSAGE ValueSet of key usage codes ",
+      "description" : "ValueSet of codes for key usage codes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/WHO.TRUST.DOMAIN"
+      },
+      "name" : "WHO SMART Trust Domains",
+      "description" : "Health credential type",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/WHO.TRUST.DOMAIN"
+      },
+      "name" : "WHO SMART Trust Domains",
+      "description" : "Controlled vocabulary used to define WHO SMART Trust network service provider characteristics.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/WHO.TRUST.KEYUSAGE"
+      },
+      "name" : "WHO.TRUST.KEYUSAGE CodeSystem",
+      "description" : "CodeSystem for TRUST.KEYUSAGE that has usage codes for verification keys published to the Trust Network as defined by the [certificate governance](concepts_certificate_governance.html)",
       "exampleBoolean" : false
     }],
     "page" : {

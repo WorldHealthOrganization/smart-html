@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Artifact Index - WHO SMART Trust v1.1.2</title>
+    <title>Artifact Index - WHO SMART Trust v1.1.3</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -203,7 +203,7 @@
         <div id="ig-status" class="ig-status-active">
           <p><span style="font-size:12pt;font-weight:bold">WHO SMART Trust</span>
             <br/>
-            <span style="display:inline-block;">1.1.2 - v1.1.2
+            <span style="display:inline-block;">1.1.3 - v1.1.3
 
 
 
@@ -242,7 +242,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">This page is part of the Trust (v1.1.2: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/trust/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">This page is part of the Trust (v1.1.3: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/trust/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Artifact Index</h2>
   
   
@@ -252,6 +252,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <ul>
       <li>
          <a href="#1">Structures: Logical Models</a>
+      </li>
+      <li>
+         <a href="#2">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#3">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#4">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -293,17 +302,134 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Logical Model for the HCERT</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SchemeInformation.html" title="StructureDefinition/SchemeInformation">Scheme Information</a>
+            </td>
+            <td>
+<p>Logical Model for Information on the trusted list and its issuing scheme</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SmartHealthLink.html" title="StructureDefinition/SmartHealthLink">Smart Health Link (DRAFT)</a>
+            </td>
+            <td>
+<p>Smart Health Link URI (DRAFT)</p>
 
-<p><a name="l529">​</a>The full data structure and encoding mechanisms for HCERT are defined here: <a href="/smart-trust/hcert_spec.html">Electronic Health Certificate Specification</a></p>
+<p>Logical Model to represent a SMART Health Link as its URI.  It is generated from the content of the SMART Health Link Payload.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SmartHealthLinkPayload.html" title="StructureDefinition/SmartHealthLinkPayload">Smart Health Link Payload (DRAFT)</a>
+            </td>
+            <td>
+<p>Smart Health Link Payload (DRAFT)</p>
 
-<p>An HCERT is claim -260 within the <a href="https://www.rfc-editor.org/rfc/rfc8392.html">CBOR Web Token (CWT) Claim</a>.</p>
+<p>This logical model was taken from the SMART Health Link documentation &lt;https://docs.smarthealthit.org/smart-health-links/spec#construct-a-shlink-payload&gt; as if 30 November 2023.</p>
 
-<p>Note for subclaims:</p>
-<ul>
-  <li>subclaims 0 and above are reserved by WHO to be assigned, a new sub claim can be requested for by requesting to create a new trust domain</li>
-  <li>subclaims for negative integer values are for development purposes and are free to use</li>
-  <li>While this logical model mentions assigned subclaims (below), the ones listed in the Electronic Health Certificate Specification are considered authoritative</li>
-</ul>
+<p>A [[ SMART Health Link]] is generated from this payload according to the algorithm documented here &lt;https://docs.smarthealthit.org/smart-health-links/spec#example-shlink-generation&gt; to create a</p>
+
+<p>It is generated</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-WHO.TRUST.KEYUSAGE.html" title="ValueSet/WHO.TRUST.KEYUSAGE">TRUST.KEYUSAGE ValueSet of key usage codes </a>
+            </td>
+            <td>
+<p>ValueSet of codes for key usage codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-WHO.TRUST.DOMAIN.html" title="ValueSet/WHO.TRUST.DOMAIN">WHO SMART Trust Domains</a>
+            </td>
+            <td>
+<p>Health credential type</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-WHO.TRUST.DOMAIN.html" title="CodeSystem/WHO.TRUST.DOMAIN">WHO SMART Trust Domains</a>
+            </td>
+            <td>
+<p>Controlled vocabulary used to define WHO SMART Trust network service provider characteristics.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-WHO.TRUST.KEYUSAGE.html" title="CodeSystem/WHO.TRUST.KEYUSAGE">WHO.TRUST.KEYUSAGE CodeSystem</a>
+            </td>
+            <td>
+<p>CodeSystem for TRUST.KEYUSAGE that has usage codes for verification keys published to the Trust Network as defined by the <a href="concepts_certificate_governance.html">certificate governance</a></p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ActorDefinition-Credential.Holder.html" title="ActorDefinition/Credential.Holder">Credential.Holder</a>
+            </td>
+            <td>
+<p>Credential Holder</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ActorDefinition-Credential.Issuer.html" title="ActorDefinition/Credential.Issuer">Credential.Issuer</a>
+            </td>
+            <td>
+<p>Credential Issuer</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ActorDefinition-GDHCN.html" title="ActorDefinition/GDHCN">GDHCN</a>
+            </td>
+            <td>
+<p>WHO Global Digital Health Certification Network</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ActorDefinition-TNG.html" title="ActorDefinition/TNG">TNG</a>
+            </td>
+            <td>
+<p>Trust Network Gateway</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ActorDefinition-TNP.html" title="ActorDefinition/TNP">TNP</a>
+            </td>
+            <td>
+<p>Trust Network Participant</p>
 </td>
          </tr>
       </tbody>
@@ -319,22 +445,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      if(window.location.hash != "") {
-          $('a[href="' + window.location.hash + '"]').click()
-      }
-    });
-  </script>
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
   <a name="bottom"> </a>
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.trust#1.1.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 12, 2024 08:01+0000">2024-04-12</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.trust#1.1.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 25, 2024 23:34+0000">2024-04-25</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"><a name="l610">​</a>
+          <span style="color: var(--footer-highlight-text-color)"><a name="l847">​</a>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                   | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/WorldHealthOrganization/smart-ig-empty/projects/1" target="_blank">Issues</a>
@@ -360,101 +480,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
   <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
   <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
-  <script>anchors.options.visible = 'hover'
-anchors.add()</script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
   
-  <!-- feedback form - Google forms -->
-  <!-- v0.1, 2021-01-09 -->
-
-
-  
-    
-    <script type="text/javascript">
-     /*   <!-- [CDATA[ */
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            
-
-            
-              var parameterFieldId = '';
-              var parameterVariableName = '';
-              var parameterValue = '';
-              parameterFieldId = 'entry.'+parseInt(1353807103).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
-              parameterVariableName = 'pageTitle';
-
-              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
-                default:
-                    console.log("Parameter value not supported");
-                    break;
-                  case "pageTitle":
-                    parameterValue = encodeURIComponent($(document).attr('title'));
-                    break;
-                  case "sectionId":
-                    parameterValue = id;
-                    break;
-                  case "sectionName":
-                    parameterValue = document.getElementById(id).textContent;
-                    break;
-              }
-/* <![CDATA[ */
-              feedbackurl = feedbackurl + '&';
-              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
-/* ]] --> */
-            
-              var parameterFieldId = '';
-              var parameterVariableName = '';
-              var parameterValue = '';
-              parameterFieldId = 'entry.'+parseInt(247644557).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
-              parameterVariableName = 'sectionName';
-
-              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
-                default:
-                    console.log("Parameter value not supported");
-                    break;
-                  case "pageTitle":
-                    parameterValue = encodeURIComponent($(document).attr('title'));
-                    break;
-                  case "sectionId":
-                    parameterValue = id;
-                    break;
-                  case "sectionName":
-                    parameterValue = document.getElementById(id).textContent;
-                    break;
-              }
-/*   <!-- [CDATA[ */
-              feedbackurl = feedbackurl + '&';
-              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
-/* ]] --> */
-            
-            
-          if (id) { //To make sure the element has an id
-            $(this).append(function () {
-              return $('<a></a>', {
-                id,
-                href: feedbackurl,
-                text: feedbacklabel+' ' ,
-                class: 'feedback',
-                target: '_blank',
-                onclick: 'window.open('+feedbackurl+',\'newwindow\',\'width=300,height=250\');return false;'
-        
-              });
-            });
-          }
-        }) 
-/* ]]&gt; */
-      </script>  
-    
-  
-
-
-
-  <!-- / feedback form -->
-
     <!-- Analytics Below
   ================================================== -->
   </body>
