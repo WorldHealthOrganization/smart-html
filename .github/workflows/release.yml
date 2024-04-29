@@ -135,6 +135,7 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
+          delete-branch: true
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: Update site content
           title: "Update site content"
