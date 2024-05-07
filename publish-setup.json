@@ -12,8 +12,8 @@
       "destination" : "/{4}"
     },{
       "npm" : "smart.who.int.dak.*",
-      "canonical" : "http://smart.who.int/dak/{5}",
-      "destination" : "/dak/{5}"
+      "canonical" : "http://smart.who.int/dak-{5}",
+      "destination" : "/dak-{5}"
     }
   ]  
 }
