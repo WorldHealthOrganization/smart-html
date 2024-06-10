@@ -39,11 +39,15 @@ jobs:
     container:
       image: hl7fhir/ig-publisher-base:latest
     steps:
-      - name: Gather prerequisites
-        run: >
-          gosu publisher /home/publisher/bin/with-latest-sushi.sh &&
-          curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o "./publisher.jar" --create-dirs
+      - name: Ensure script has execute permissions
+        run: chmod +x /home/publisher/bin/with-latest-sushi.sh
 
+      - name: Run with-latest-sushi.sh directly
+        run: /home/publisher/bin/with-latest-sushi.sh
+
+      - name: Download publisher.jar
+        run: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o "./publisher.jar" --create-dirs
+  
       - name: Checkout current repo to ./source
         uses: actions/checkout@v2
         with:
