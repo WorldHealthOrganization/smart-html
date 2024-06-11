@@ -6,14 +6,14 @@
   },
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SMART_WHO_INT_DAK_TB</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/dak-tb/ImplementationGuide/smart.who.int.dak-tb</pre><div><p>TB DAK</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>DakTb</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/dak-tb/ImplementationGuide/smart.who.int.dak-tb</pre><div><p>TB DAK</p>\n</div></div>"
   },
   "url" : "http://smart.who.int/dak-tb/ImplementationGuide/smart.who.int.dak-tb",
-  "version" : "0.9.9",
-  "name" : "SMART_WHO_INT_DAK_TB",
+  "version" : "1.0.0",
+  "name" : "DakTb",
   "title" : "SMART DAK TB",
-  "status" : "draft",
-  "date" : "2024-05-08T07:30:40+00:00",
+  "status" : "active",
+  "date" : "2024-06-10",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",
@@ -71,7 +71,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "draft"
+        "valueString" : "release"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -350,7 +350,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "draft"
+        "valueString" : "release"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },

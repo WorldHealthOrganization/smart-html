@@ -1,54 +1,44 @@
 {
-  "date" : "Wed, 08 May, 2024 07:30:40 +0000",
+  "date" : "Tue, 11 Jun, 2024 13:49:20 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [
     {
       "name" : "/fsh-generated/resources/ImplementationGuide-smart.who.int.dak-tb.json",
-      "size" : 7180,
+      "size" : 7192,
       "processes" : [
         {
           "activity" : "load",
-          "start" : 94,
-          "length" : 36
+          "start" : 97,
+          "length" : 19
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 94,
-          "length" : 5
+          "start" : 97,
+          "length" : 4
         },
         {
           "activity" : "generateNarratives",
-          "start" : 94,
+          "start" : 97,
           "length" : 19
         },
         {
           "activity" : "validate",
-          "start" : 94,
-          "length" : 1432
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 96,
-          "length" : 1
+          "start" : 97,
+          "length" : 1582
         },
         {
           "activity" : "generate1",
-          "start" : 96,
-          "length" : 75
+          "start" : 106,
+          "length" : 74
         },
         {
           "activity" : "generate2",
-          "start" : 97,
-          "length" : 46
+          "start" : 107,
+          "length" : 42
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 105,
-          "length" : 2
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 109,
+          "start" : 117,
           "length" : 1
         }
       ]

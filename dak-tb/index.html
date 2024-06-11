@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Home - SMART DAK TB v0.9.9</title>
+    <title>Home - SMART DAK TB v1.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -207,6 +207,8 @@
         <!-- Placeholder for child template header declarations -->
 <div id="project-nav">
     <a id="who-logo" no-external="true" href="index.html">
+      
+<img height="50" style="margin:7px" alt="Welcome on standards website" src="assets/images/h-logo-blue.svg"/>
         
     </a>
 </div>
@@ -216,10 +218,10 @@
 </div> 
 
 
-        <div id="ig-status" class="ig-status-draft">
+        <div id="ig-status" class="ig-status-active">
           <p><span style="font-size:12pt;font-weight:bold">SMART DAK TB</span>
             <br/>
-            <span style="display:inline-block;">0.9.9 - draft
+            <span style="display:inline-block;">1.0.0 - release
 
 
             </span>
@@ -254,7 +256,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART DAK TB (v0.9.9: Releases Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/dak-tb/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART DAK TB (v1.0.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/dak-tb/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Home</h2>
   
 
@@ -263,13 +265,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
-  <table class="colsd">
+  <table class="colsi">
 
     <tr>
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://smart.who.int/dak-tb/ImplementationGuide/smart.who.int.dak-tb<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://smart.who.int/dak-tb/ImplementationGuide/smart.who.int.dak-tb"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.9.9<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://smart.who.int/dak-tb/ImplementationGuide/smart.who.int.dak-tb|0.9.9"/></span>
+      <span class="copy-text">1.0.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://smart.who.int/dak-tb/ImplementationGuide/smart.who.int.dak-tb|1.0.0"/></span>
       </td>
     </tr>
 
@@ -283,16 +285,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <td colspan="4">
         
-          Draft
+          Active
           
-            as of 2024-05-08
+            as of 2024-06-10
           
         
       </td>
 
 
 
-      <td><i>Computable Name</i>: <span style="font-family: monospace;">SMART_WHO_INT_DAK_TB</span></td>
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">DakTb</span></td>
     </tr>
 
 
@@ -311,7 +313,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#who-smart-guidelines" id="markdown-toc-who-smart-guidelines">WHO SMART guidelines</a></li>
+  <li><a href="#summary" id="markdown-toc-summary">Summary</a></li>
   <li><a href="#l1-narrative-guidelines" id="markdown-toc-l1-narrative-guidelines">L1 Narrative guidelines</a></li>
   <li><a href="#l2-operational-guidelines" id="markdown-toc-l2-operational-guidelines">L2 Operational guidelines</a></li>
   <li><a href="#l3-machine-readable-guidelines" id="markdown-toc-l3-machine-readable-guidelines">L3 Machine readable guidelines</a></li>
@@ -327,14 +329,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <!-- please keep only this for L2 DAK -->
 <!---Note: Remove this below div element for releasing, only to maintain for main branch -->
 
-<h3 id="who-smart-guidelines">WHO SMART guidelines</h3>
-<p><a href="https://www.who.int/teams/digital-health-and-innovation/smart-guidelines/">SMART Guidelines</a> — Standards-based, Machine-readable, Adaptive, Requirements-based, and Testable – are a comprehensive set of reusable digital health components (e.g., interoperability standards, code libraries, algorithms, technical and operational specifications) that preserve fidelity during the transformation of the guidelines into digital solutions for the adaptation, implementation and uptake of the guidelines. The operational and standardized documentation reflected within the digital adaptation kits (DAKs), as the 2nd layer of the SMART guidelines, represents one of the steps within a broader vision. Within this vision, DAKs serve as a prerequisite for developing computable, or machine-readable, guidelines, as well as executable reference software and advanced analytics for precision health. The five-step pathway to advance the adoption of best clinical and data practices for TB is presented below.</p>
+<h3 id="summary">Summary</h3>
+<p>The WHO Global Tuberculosis Programme (GTB) works towards the goal of a world free of TB, with zero deaths, disease and suffering due to the disease. One of its core functions is to develop policy options, norms and standards for TB prevention and care and facilitate their implementation. The five-step pathway to advance the adoption of best clinical and data practices for TB is presented below.</p>
 
 <h3 id="l1-narrative-guidelines">L1 Narrative guidelines</h3>
-<p>Evidence-based guideline recommendations and accompanying implementation and data guidance for TB.</p>
+<p>To guide national TB programmes in the efforts of ending the TB epidemic, GTB releases narrative guidelines on TB prevention, diagnosis and treatment based on latest available evidence. In addition to these guidelines, GTB also releases various guidance documents including TB surveillance guidance. These guidelines and guidance documents informed the development of the digital adaptation kit for TB (DAK for TB). The WHO consolidated guidelines on TB can be found <a href="https://tbksp.org/en">here</a>, and the WHO TB surveillance guidance can be found <a href="https://iris.who.int/handle/10665/376612">here</a>.</p>
 
 <h3 id="l2-operational-guidelines">L2 Operational guidelines</h3>
-<p>The L2 TB Digital adaptation kit publications and implementations tools can be found here:</p>
+<p>Digital adaptation kits are designed to facilitate the accurate reflection of WHO’s clinical, public health and data use guidelines within the digital systems countries are adopting. DAKs are operational, software-agnostic, standardized documentation that distil clinical, public health and data use guidance into a format that can be transparently incorporated into digital systems. DAKs serve as a prerequisite for developing computable, or machine-readable, guidelines, as well as executable reference software and advanced analytics for precision health.</p>
+
+<p>The DAK for TB and the associated implementation tools can be found here:</p>
 
 <!-- insert links inside the parentheses below --->
 <ul>
@@ -342,24 +346,30 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><a href="https://iris.who.int/handle/10665/376631">Published DAK Document</a></p>
   </li>
   <li>
-    <p><a href="https://smart.who.int/dak-tb/dictionary.html">Link to core data dictionary</a></p>
-  </li>
-  <li>
-    <p><a href="https://smart.who.int/dak-tb/decision-logic.html">Link to decision support logic</a></p>
-  </li>
-  <li>
-    <p><a href="https://smart.who.int/dak-tb/scheduling-logic.html">Link to scheduling logic</a></p>
-  </li>
-  <li>
-    <p><a href="https://smart.who.int/dak-tb/indicators.html">Link to indicators table</a></p>
-  </li>
-  <li>
-    <p><a href="https://smart.who.int/dak-tb/system-requirements.html">Link to functional and non functional requirements</a></p>
+    <p>Implementation tools:</p>
+
+    <ul>
+      <li>
+        <p><a href="https://smart.who.int/dak-tb/dictionary.html">Link to core data dictionary</a></p>
+      </li>
+      <li>
+        <p><a href="https://smart.who.int/dak-tb/decision-logic.html">Link to decision support logic</a></p>
+      </li>
+      <li>
+        <p><a href="https://smart.who.int/dak-tb/scheduling-logic.html">Link to scheduling logic</a></p>
+      </li>
+      <li>
+        <p><a href="https://smart.who.int/dak-tb/indicators.html">Link to indicators table</a></p>
+      </li>
+      <li>
+        <p><a href="https://smart.who.int/dak-tb/system-requirements.html">Link to functional and non functional requirements</a></p>
+      </li>
+    </ul>
   </li>
 </ul>
 
 <h3 id="l3-machine-readable-guidelines">L3 Machine readable guidelines</h3>
-<p>The L3 FHIR Implementation Guide for the TB SMART Guidelines is yet to be published. Links will be published here as soon as they’re available.</p>
+<p>The L3 FHIR Implementation Guide for the TB SMART Guidelines is yet to be developed. Links will be published here as soon as they are available.</p>
 
 <h3 id="l4-executable-guidelines">L4 Executable guidelines</h3>
 <p>Reference implementations representing the L4 layer for the TB SMART Guidelines are not yet available. Links will be published here as soon as they’re available.</p>
@@ -410,7 +420,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.dak-tb#0.9.9 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 8, 2024 07:30+0000">2024-05-08</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.dak-tb#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 11, 2024 13:49+0000">2024-06-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

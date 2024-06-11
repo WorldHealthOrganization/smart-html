@@ -6,15 +6,15 @@
     <profile value="SMARTImplementationGuide"/>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>SMART_WHO_INT_DAK_TB</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/dak-tb/ImplementationGuide/smart.who.int.dak-tb</pre><div><p>TB DAK</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>DakTb</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/dak-tb/ImplementationGuide/smart.who.int.dak-tb</pre><div><p>TB DAK</p>
 </div></div>
   </text>
   <url value="http://smart.who.int/dak-tb/ImplementationGuide/smart.who.int.dak-tb"/>
-  <version value="0.9.9"/>
-  <name value="SMART_WHO_INT_DAK_TB"/>
+  <version value="1.0.0"/>
+  <name value="DakTb"/>
   <title value="SMART DAK TB"/>
-  <status value="draft"/>
-  <date value="2024-05-08T07:30:40+00:00"/>
+  <status value="active"/>
+  <date value="2024-06-10"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -62,7 +62,7 @@
         <valueString value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="draft"/>
+        <valueString value="release"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -265,7 +265,7 @@
         <valueCode value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="draft"/>
+        <valueString value="release"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
