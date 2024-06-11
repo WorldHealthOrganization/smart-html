@@ -1,53 +1,13 @@
-# ReleaseBuild Workflow
-#
-# This GitHub Actions workflow is designed to be called from other repositories. 
-# It sets up the environment, clones the smart-html repository, downloads necessary dependencies,
-# and performs the publication process for a FHIR IG Release 
-#
-# When the workflow is triggered, it generates a preview of the site to be published
-# and places it in the 'gh-pages' branch under the "website" folder.
-#
-# Usage:
-# 1. Create a workflow file in your repository and define a 'workflow_call' trigger to call this workflow.
-#    For example, you can call this workflow from your repository's workflow file like this:
-#    ```
-#    jobs:
-#      call_build: 
-#        uses: WorldHealthOrganization/smart-html/.github/workflows/release.yml@main
-#    ```
-# 
-# 3. Create a branch in your ig called "release-candidate"
-# 4. Create the file `publication-request.json` in that branch
-#
-# For more information, see the accompanying README.md.
-#
-# For questions or assistance, please contact the repository maintainers.
-
 name: ReleaseBuild
 
 on:
-  workflow_call: # Reusable by other workflows
-#  push:
-#    branches-ignore:
-#      - 'gh-pages'
-#  pull_request:
-  workflow_dispatch:
+  push:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    container:
-      image: hl7fhir/ig-publisher-base:latest
+
     steps:
-      - name: Ensure script has execute permissions
-        run: chmod +x /home/publisher/bin/with-latest-sushi.sh
-
-      - name: Run with-latest-sushi.sh directly
-        run: /home/publisher/bin/with-latest-sushi.sh
-
-      - name: Download publisher.jar
-        run: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o "./publisher.jar" --create-dirs
-  
       - name: Checkout current repo to ./source
         uses: actions/checkout@v2
         with:
@@ -67,46 +27,60 @@ jobs:
           path: webroot
           fetch-depth: 0  # Fetch all history for all branches and tags.
 
-          
       - name: Checkout FHIR/ig-registry to ./ig-registry
         uses: actions/checkout@v2
         with:
           repository: FHIR/ig-registry
           path: ig-registry
 
-      - name: Create folder
-        run: "mkdir -p ./fhir-package-cache && chown 1001:127 ./fhir-package-cache"
+      - name: Setup publisher and install dependencies
+        run: |
+          docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest /bin/sh -c "
+            npm install -g fsh-sushi &&
+            curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./publisher.jar --create-dirs
+          "
 
-      - name: Run publisher command
-        run: java -Xmx4g -jar ./publisher.jar publisher -ig source -package-cache-folder ./fhir-package-cache
+      - name: Create package cache folder
+        run: |
+          docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest /bin/sh -c "
+            mkdir -p ./fhir-package-cache && chown 1001:127 ./fhir-package-cache
+          "
 
-      - name: Find package-list.json
-        run: find / -name "package-list.json"
+      - name: Ensure write permissions for webroot and source directories
+        run: |
+          chmod -R 777 webroot
+          chmod -R 777 source
+          chmod -R 777 fhir-package-cache
+          
+      - name: Run the IG publisher
+        run: |
+          docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest java -Xmx4g -jar ./publisher.jar publisher -ig source -package-cache-folder fhir-package-cache
 
-      - name: Find package-list.json
-        run: find . -name "package-list.json"
-
+#      - name: For debug: List contents of webroot before publishing release
+#        run: ls -la webroot
+#
+#      - name: For debug: Print working directory inside Docker before publishing release
+#        run: |
+#          docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest /bin/sh -c "
+#            pwd &&
+#            ls -la
+          "
 
       - name: Run publisher command for publishing release
-        run: java -Xmx4g -Dfile.encoding=UTF-8 -jar publisher.jar -go-publish -package-cache-folder ./fhir-package-cache -source $(pwd)/source -web $(pwd)/webroot -temp $(pwd)/temp -registry ./ig-registry/fhir-ig-list.json -history ./history-template -templates $(pwd)/webroot/templates
-
-      - name: Install rsync 📚
         run: |
-          apt-get update && apt-get install -y rsync
-          
-      - name: debug- List dirs
-        run: find . 
+          docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest /bin/sh -c "
+            ls -la /workspace/webroot &&
+            java -Xmx4g -Dfile.encoding=UTF-8 -jar /workspace/publisher.jar -go-publish -package-cache-folder /workspace/fhir-package-cache -source /workspace/source -web /workspace/webroot -temp /workspace/temp -registry /workspace/ig-registry/fhir-ig-list.json -history /workspace/history-template -templates /workspace/webroot/templates
+          "
 
-      - name: Configure git to trust the workspace despite the different owner
-        run:
-          git config --global --add safe.directory ./webroot
-
-        
-      - name: Prepare Deployment Folder (excluding ZIPs)
+      - name: Install rsync and prepare deployment folder
         run: |
-          mkdir ./deploy
-          rsync -av --exclude='ig-build-zips/*' ./webroot/ ./deploy/
-        
+          docker run --rm -v $(pwd):/workspace -w /workspace ubuntu:latest /bin/bash -c "
+            apt-get update && apt-get install -y rsync &&
+            mkdir /workspace/deploy &&
+            rsync -av --exclude='ig-build-zips/*' /workspace/webroot/ /workspace/deploy/
+          "
+
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
@@ -114,82 +88,54 @@ jobs:
           publish_dir: ./deploy
           destination_dir: sitepreview
 
-      
-      - name: Update WHO repository and create a new branch
-        run: |
-          pwd  # Print the current working directory for debugging
-          cd ./webroot
-          pwd  # Print the working directory after changing to webroot
-          ls -la  # List the contents of the current directory to check for .git
-          git status  # This will help confirm if you're in a Git repository
-          git fetch --all
-          if git branch -r | grep -qw "origin/gh-pages"; then
-            git checkout gh-pages
-          else
-            git checkout -b gh-pages
-          fi
-          git checkout -b "update-site-content-${{ github.run_id }}"
-          rsync -av  --exclude='.git/' --delete ../deploy/ ./
-          git add .
-          git status  # Check the status to ensure changes are staged
-          git commit -m "Update site content"
-          git push --set-upstream origin "update-site-content-${{ github.run_id }}"
 
+#      - name: Update WHO repository and create a new branch
+#        run: |
+#          pwd  # Print the current working directory for debugging
+#          cd ./webroot
+#          pwd  # Print the working directory after changing to webroot
+#          ls -la  # List the contents of the current directory to check for .git
+#          git status  # This will help confirm if you're in a Git repository
+#          git fetch --all
+#          if git branch -r | grep -qw "origin/gh-pages"; then
+#            git checkout gh-pages
+#          else
+#            git checkout -b gh-pages
+#          fi
+#          git checkout -b "update-site-content-${{ github.run_id }}"
+#          rsync -av  --exclude='.git/' --delete ../deploy/ ./
+#          git add .
+#          git status  # Check the status to ensure changes are staged
+#          git commit -m "Update site content"
+#          git push --set-upstream origin "update-site-content-${{ github.run_id }}"
 
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
-        with:
-          delete-branch: true
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: Update site content
-          title: "Update site content"
-          body: "This is an automated pull request to update the site content"
-          branch: "update-site-content-${{ github.run_id }}"
-          base: gh-pages
-          head: "update-site-content-${{ github.run_id }}"
-          repository: WorldHealthOrganization/smart-html
+#      - name: Create Pull Request
+#        uses: peter-evans/create-pull-request@v3
+#        with:
+#          delete-branch: true
+#          token: ${{ secrets.GITHUB_TOKEN }}
+#          commit-message: Update site content
+#          title: "Update site content"
+#          body: "This is an automated pull request to update the site content"
+#          branch: "update-site-content-${{ github.run_id }}"
+#          base: gh-pages
+#          head: "update-site-content-${{ github.run_id }}"
+#          repository: WorldHealthOrganization/smart-html
 
-
-
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
-          draft: true
-          prerelease: true
-
-      - name: Upload Release Assets
-        run: |
-          for file in ./webroot/ig-build-zips/*; do
-            echo "Uploading file: $file"
-            curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -H "Content-Type: $(file -b --mime-type $file)" --data-binary @$file "https://uploads.github.com/repos/${{ github.repository }}/releases/${{ steps.create_release.outputs.id }}/assets?name=$(basename $file)"
-          done
-#          echo "Uploading file: ./webroot/package.tgz"
-#          curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -H "Content-Type: application/gzip" --data-binary @./webroot/website/package.tgz "https://uploads.github.com/repos/${{ github.repository }}/releases/${{ steps.create_release.outputs.id }}/assets?name=package.tgz"
-
-
-
-      # - name: Deploy to gh-pages
-      #   run: |
-      #     cd webroot
-      #     git fetch
-      #     git checkout gh-pages
-      #     mkdir -p website
-      #     cp -r ./webroot/* ./website/
-      #     git add website
-          
-      #     # Check if there are changes to commit
-      #     if git diff --staged --quiet; then
-      #       echo "No changes to commit"
-      #     else
-      #       git commit --message "Deploy website preview" --author "GitHub Actions <actions@github.com>"
-      #       git push
-      #     fi
-      #   env:
-      #     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #     GIT_COMMITTER_NAME: GitHub Actions
-      #     GIT_COMMITTER_EMAIL: actions@github.com
+#      - name: Create Release
+#        id: create_release
+#        uses: actions/create-release@v1
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#        with:
+#          tag_name: ${{ github.ref }}
+#          release_name: Release ${{ github.ref }}
+#          draft: true
+#          prerelease: true
+#
+#      - name: Upload Release Assets
+#        run: |
+#          for file in ./webroot/ig-build-zips/*; do
+#            echo "Uploading file: $file"
+#            curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -H "Content-Type: $(file -b --mime-type $file)" --data-binary @$file "https://uploads.github.com/repos/${{ github.repository }}/releases/${{ steps.create_release.outputs.id }}/assets?name=$(basename $file)"
+#          done
