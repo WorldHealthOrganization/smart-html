@@ -1,7 +1,12 @@
 name: ReleaseBuild
 
 on:
-  push:
+  workflow_call: # Reusable by other workflows
+#  push:
+#    branches-ignore:
+#      - 'gh-pages'
+#  pull_request:
+  workflow_dispatch:
 
 jobs:
   build:
