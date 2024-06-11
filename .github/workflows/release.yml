@@ -69,7 +69,7 @@ jobs:
 #          docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest /bin/sh -c "
 #            pwd &&
 #            ls -la
-          "
+#          "
 
       - name: Run publisher command for publishing release
         run: |
