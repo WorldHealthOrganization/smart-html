@@ -1,0 +1,25 @@
+{
+  "list" : [
+    {
+      "version" : "current",
+      "path" : "https://worldhealthorganization.github.io/ddcc/",
+      "status" : "ci-build",
+      "sequence" : "ci-build"
+    },
+    {
+      "version" : "1.0.0",
+      "path" : "https://smart.who.int/ddcc//1.0.0",
+      "status" : "draft",
+      "sequence" : "Releases",
+      "fhirversion" : "4.0.1",
+      "date" : "2024-04-25",
+      "current" : true,
+      "descmd" : "1.0.0 release"
+    }
+  ],
+  "package-id" : "smart.who.int.ddcc",
+  "canonical" : "http://smart.who.int/ddcc",
+  "title" : "Digital Documentation of COVID-19 Certificates (DDCC)",
+  "category" : "base",
+  "introduction" : "WHO Digital Documentation of COVID-19 Certificates (DDCC)"
+}

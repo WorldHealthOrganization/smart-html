@@ -445,7 +445,17 @@ body {
 
 
 .navbar {
-  background-color: #757 !important
+  background-color: var(--navbar-bg-color) !important
+}
+
+.nav-tab::before {
+  border-bottom-width: 0px!important;
+}
+
+.nav-tabs .nav-link.active {
+  border-color: #dee2e6 #dee2e6 #f8f9fa; /* Match background color to remove the bottom border */
+  background-color: #f8f9fa; /* Ensure the active tab has the same background as the content area */
+  color: #495057; /* Adjust text color if needed */
 }
 
 #segment-navbar .navbar .container {
