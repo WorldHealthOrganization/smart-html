@@ -5,15 +5,15 @@
     "profile" : ["SMARTImplementationGuide"]
   },
   "text" : {
-    "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SMART_DAK_CCC</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/dak-ccc/ImplementationGuide/smart.who.int.dak-ccc</pre><div><p>CCC DAK</p>\n</div></div>"
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide smart.who.int.dak-ccc</b></p><a name=\"smart.who.int.dak-ccc\"> </a><a name=\"hcsmart.who.int.dak-ccc\"> </a><a name=\"smart.who.int.dak-ccc-en-US\"> </a><h2>DakCcc</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/dak-ccc/ImplementationGuide/smart.who.int.dak-ccc</pre><div><p>CCC DAK</p>\n</div></div>"
   },
   "url" : "http://smart.who.int/dak-ccc/ImplementationGuide/smart.who.int.dak-ccc",
-  "version" : "0.9.9",
-  "name" : "SMART_DAK_CCC",
+  "version" : "1.0.0",
+  "name" : "DakCcc",
   "title" : "SMART DAK CCC",
-  "status" : "draft",
-  "date" : "2024-05-08T12:42:17+00:00",
+  "status" : "active",
+  "date" : "2024-07-15T07:09:30+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",
@@ -71,7 +71,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "draft"
+        "valueString" : "release"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -350,7 +350,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "draft"
+        "valueString" : "release"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },

@@ -1,11 +1,11 @@
-SMART_DAK_CCC : Validation Results
+DakCcc : Validation Results
 =========================================
 
 err = 2, warn = 5, info = 0
-IG Publisher Version: 1.6.6
-Generated Wed May 08 12:42:30 UTC 2024. FHIR version 4.3.0 for smart.who.int.dak-ccc#0.9.9 (canonical = http://smart.who.int/dak-ccc)
+IG Publisher Version: 1.6.16
+Generated Mon Jul 15 07:09:55 UTC 2024. FHIR version 4.3.0 for smart.who.int.dak-ccc#1.0.0 (canonical = http://smart.who.int/dak-ccc)
  Build Errors : 0 / 4 / 0
- /__w/smart-dak-ccc/smart-dak-ccc/temp/smart.who.int.dak-ccc#0.9.9-milestone/fsh-generated/resources/ImplementationGuide-smart.who.int.dak-ccc : 2 / 1 / 1
+ /workspace/temp/smart.who.int.dak-ccc#1.0.0-milestone/fsh-generated/resources/ImplementationGuide-smart.who.int.dak-ccc : 2 / 1 / 1
 </table>
 == n/a ==
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
