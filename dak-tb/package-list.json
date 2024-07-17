@@ -7,13 +7,22 @@
       "sequence" : "ci-build"
     },
     {
+      "version" : "1.0.1",
+      "path" : "http://smart.who.int/dak-tb/v1.0.1",
+      "status" : "release",
+      "sequence" : "Releases",
+      "fhirversion" : "4.0.1",
+      "date" : "2024-07-17",
+      "current" : true,
+      "desc" : "1.0.1 Release"
+    },
+    {
       "version" : "1.0.0",
       "path" : "http://smart.who.int/dak-tb/v1.0.0",
       "status" : "release",
       "sequence" : "Releases",
       "fhirversion" : "4.0.1",
       "date" : "2024-06-11",
-      "current" : true,
       "desc" : "1.0.0 Release"
     },
     {
