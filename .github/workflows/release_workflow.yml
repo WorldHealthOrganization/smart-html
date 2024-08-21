@@ -1,0 +1,38 @@
+name: FHIR IG Publication Request Workflow
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  create-publication-request:
+    if: github.event.issue.title == '[IG Publication Request] Title of Your IG'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install requests pyyaml
+
+      - name: Create the publication-request.json
+        run: |
+          echo '{
+            "package-id": "<package-id>",
+            "version": "<version>",
+            "path": "<path>",
+            "ci-build": "<ci-build>",
+            "status": "<status>",
+            "sequence": "<sequence>"
+          }' > publication-request.json
+
+      - name: Log Success
+        run: echo "Success"
+
