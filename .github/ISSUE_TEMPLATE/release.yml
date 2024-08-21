@@ -1,7 +1,6 @@
 name: Custom Issue Template
 description: A template for creating issues with specific fields.
 title: "[Category] Title"
-labels: ''
 
 body:
   - type: input
