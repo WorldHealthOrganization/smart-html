@@ -6,23 +6,26 @@ on:
 
 jobs:
   create-publication-request:
-    if: contains(github.event.issue.labels.*.name, 'FHIR IG Request')
     runs-on: ubuntu-latest
 
     steps:
       - name: Check out the repository
+        if: contains(join(github.event.issue.labels.*.name, ','), 'FHIR IG Request')
         uses: actions/checkout@v3
 
       - name: Set up Python
+        if: contains(join(github.event.issue.labels.*.name, ','), 'FHIR IG Request')
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
       - name: Install dependencies
+        if: contains(join(github.event.issue.labels.*.name, ','), 'FHIR IG Request')
         run: |
           pip install requests pyyaml
 
       - name: Create the publication-request.json
+        if: contains(join(github.event.issue.labels.*.name, ','), 'FHIR IG Request')
         run: |
           echo '{
             "package-id": "<package-id>",
@@ -34,9 +37,11 @@ jobs:
           }' > publication-request.json
 
       - name: Display the publication-request.json content
+        if: contains(join(github.event.issue.labels.*.name, ','), 'FHIR IG Request')
         run: |
           echo "Content of publication-request.json:"
           cat publication-request.json
 
       - name: Log Success
+        if: contains(join(github.event.issue.labels.*.name, ','), 'FHIR IG Request')
         run: echo "Success"
