@@ -20,12 +20,12 @@ jobs:
       - name: Extract form data from issue body
         id: extract_data
         run: |
-          # Extract values using grep and regex
-          VERSION=$(echo "${{ github.event.issue.body }}" | grep -oP '(?<=Version: ).*')
-          PATH=$(echo "${{ github.event.issue.body }}" | grep -oP '(?<=IG Publication Path: ).*')
-          CI_BUILD=$(echo "${{ github.event.issue.body }}" | grep -oP '(?<=CI Build URL: ).*')
-          STATUS=$(echo "${{ github.event.issue.body }}" | grep -oP '(?<=Publication Status: ).*')
-          SEQUENCE=$(echo "${{ github.event.issue.body }}" | grep -oP '(?<=Sequence: ).*')
+          # Extract values using grep and regex with better handling for line breaks
+          VERSION=$(echo "${{ github.event.issue.body }}" | grep -oP '(?<=### Version\s+)[^\r\n]+')
+          PATH=$(echo "${{ github.event.issue.body }}" | grep -oP '(?<=### IG Publication Path\s+)[^\r\n]+')
+          CI_BUILD=$(echo "${{ github.event.issue.body }}" | grep -oP '(?<=### Continuous Integration \(CI\) Build URL\s+)[^\r\n]+')
+          STATUS=$(echo "${{ github.event.issue.body }}" | grep -oP '(?<=### Publication Status\s+)[^\r\n]+')
+          SEQUENCE=$(echo "${{ github.event.issue.body }}" | grep -oP '(?<=### Sequence\s+)[^\r\n]+')
 
           # Save extracted values as environment variables
           echo "VERSION=$VERSION" >> $GITHUB_ENV
