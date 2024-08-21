@@ -1,13 +1,13 @@
-name: Release Publication request
-description: A template for creating release publication requests.
+name: Custom Issue Template
+description: A template for creating issues with specific fields.
 title: "[Category] Title"
-# labels: ''
+labels: ''
 
 body:
   - type: input
     id: title
     attributes:
-      label: Title
+      name: Title
       description: Enter the title of the issue.
       placeholder: "Issue title"
     validations:
@@ -16,7 +16,7 @@ body:
   - type: dropdown
     id: category
     attributes:
-      label: Category
+      name: Category
       description: Select the category of the issue.
       options:
         - base
@@ -29,7 +29,7 @@ body:
   - type: textarea
     id: introduction
     attributes:
-      label: Introduction
+      name: Introduction
       description: Provide a brief introduction (2 to 3 lines).
       placeholder: "A short description of the issue."
     validations:
@@ -40,7 +40,7 @@ body:
   - type: input
     id: version
     attributes:
-      label: Version
+      name: Version
       description: Specify the version.
       placeholder: "v1.0.0"
     validations:
@@ -49,7 +49,7 @@ body:
   - type: dropdown
     id: branch
     attributes:
-      label: Branch
+      name: Branch
       description: Select the branch.
       options:
         - main
@@ -60,9 +60,9 @@ body:
       required: true
 
   - type: markdown
-    id: descmd
+    id: description
     attributes:
-      label: Description
+      name: Description
       description: Provide a detailed description (supports Markdown).
       value: "## Description \n\n"
     validations:
@@ -71,7 +71,7 @@ body:
   - type: dropdown
     id: mode
     attributes:
-      label: Mode
+      name: Mode
       description: Select the mode.
       options:
         - working
@@ -84,18 +84,18 @@ body:
   - type: dropdown
     id: first
     attributes:
-      label: First
+      name: First
       description: Is this the first time?
       options:
-        - true
-        - false
+        - "true"
+        - "false"
     validations:
       required: true
 
   - type: input
     id: path
     attributes:
-      label: Path
+      name: Path
       description: Enter the URL path.
       placeholder: "https://example.com/path"
     validations:
@@ -105,7 +105,7 @@ body:
   - type: input
     id: ci-build
     attributes:
-      label: CI Build
+      name: CI Build
       description: Enter the CI build URL.
       placeholder: "https://ci.example.com/build"
     validations:
@@ -115,7 +115,7 @@ body:
   - type: dropdown
     id: status
     attributes:
-      label: Status
+      name: Status
       description: Select the current status.
       options:
         - release
@@ -133,7 +133,7 @@ body:
   - type: input
     id: sequence
     attributes:
-      label: Sequence
+      name: Sequence
       description: Prepopulated text for the sequence.
       value: "Releases"
     validations:
