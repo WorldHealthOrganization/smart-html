@@ -6,7 +6,7 @@ on:
 
 jobs:
   create-publication-request:
-    if: github.event.issue.title == '[IG Publication Request] Title of Your IG'
+    if: contains(github.event.issue.labels.*.name, 'FHIR IG Request')
     runs-on: ubuntu-latest
 
     steps:

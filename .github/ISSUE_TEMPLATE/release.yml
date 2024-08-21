@@ -1,6 +1,7 @@
 name: FHIR IG Publication Request
 description: FHIR IG publication request.
 title: "[IG Publication Request] Title of Your IG"
+labels: ["FHIR IG Request"]
 
 body:
   - type: input
