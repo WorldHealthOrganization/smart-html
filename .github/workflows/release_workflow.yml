@@ -6,7 +6,6 @@ on:
 
 jobs:
   create-publication-request:
-#    if: contains(github.event.issue.labels.*.name, 'FHIR IG Request')
     runs-on: ubuntu-latest
 
     steps:
@@ -18,19 +17,32 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Install dependencies
+      - name: Extract form data from issue body
+        id: extract_data
         run: |
-          pip install requests pyyaml
+          # Extract values using grep and regex
+          VERSION=$(echo "${{ github.event.issue.body }}" | grep -oP '(?<=Version: ).*')
+          PATH=$(echo "${{ github.event.issue.body }}" | grep -oP '(?<=IG Publication Path: ).*')
+          CI_BUILD=$(echo "${{ github.event.issue.body }}" | grep -oP '(?<=CI Build URL: ).*')
+          STATUS=$(echo "${{ github.event.issue.body }}" | grep -oP '(?<=Publication Status: ).*')
+          SEQUENCE=$(echo "${{ github.event.issue.body }}" | grep -oP '(?<=Sequence: ).*')
+
+          # Save extracted values as environment variables
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+          echo "PATH=$PATH" >> $GITHUB_ENV
+          echo "CI_BUILD=$CI_BUILD" >> $GITHUB_ENV
+          echo "STATUS=$STATUS" >> $GITHUB_ENV
+          echo "SEQUENCE=$SEQUENCE" >> $GITHUB_ENV
 
       - name: Create the publication-request.json
         run: |
           echo '{
-            "package-id": "<package-id>",
-            "version": "<version>",
-            "path": "<path>",
-            "ci-build": "<ci-build>",
-            "status": "<status>",
-            "sequence": "<sequence>"
+            "package-id": "your-package-id",
+            "version": "'$VERSION'",
+            "path": "'$PATH'",
+            "ci-build": "'$CI_BUILD'",
+            "status": "'$STATUS'",
+            "sequence": "'$SEQUENCE'"
           }' > publication-request.json
 
       - name: Display the publication-request.json content
