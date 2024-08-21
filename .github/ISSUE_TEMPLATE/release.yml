@@ -62,9 +62,7 @@ body:
   - type: markdown
     id: description
     attributes:
-      label: Description
-      description: Provide a detailed description (supports Markdown).
-      value: "## Description \n\n"
+      value: "## Description \n\n Provide a detailed description (supports Markdown)."
     validations:
       required: true
 
