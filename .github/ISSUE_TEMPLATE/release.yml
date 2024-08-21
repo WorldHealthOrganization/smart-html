@@ -7,7 +7,7 @@ body:
   - type: input
     id: title
     attributes:
-      name: Title
+      label: Title
       description: Enter the title of the issue.
       placeholder: "Issue title"
     validations:
@@ -16,7 +16,7 @@ body:
   - type: dropdown
     id: category
     attributes:
-      name: Category
+      label: Category
       description: Select the category of the issue.
       options:
         - base
@@ -29,7 +29,7 @@ body:
   - type: textarea
     id: introduction
     attributes:
-      name: Introduction
+      label: Introduction
       description: Provide a brief introduction (2 to 3 lines).
       placeholder: "A short description of the issue."
     validations:
@@ -40,7 +40,7 @@ body:
   - type: input
     id: version
     attributes:
-      name: Version
+      label: Version
       description: Specify the version.
       placeholder: "v1.0.0"
     validations:
@@ -49,7 +49,7 @@ body:
   - type: dropdown
     id: branch
     attributes:
-      name: Branch
+      label: Branch
       description: Select the branch.
       options:
         - main
@@ -62,7 +62,7 @@ body:
   - type: markdown
     id: description
     attributes:
-      name: Description
+      label: Description
       description: Provide a detailed description (supports Markdown).
       value: "## Description \n\n"
     validations:
@@ -71,7 +71,7 @@ body:
   - type: dropdown
     id: mode
     attributes:
-      name: Mode
+      label: Mode
       description: Select the mode.
       options:
         - working
@@ -84,7 +84,7 @@ body:
   - type: dropdown
     id: first
     attributes:
-      name: First
+      label: First
       description: Is this the first time?
       options:
         - "true"
@@ -95,7 +95,7 @@ body:
   - type: input
     id: path
     attributes:
-      name: Path
+      label: Path
       description: Enter the URL path.
       placeholder: "https://example.com/path"
     validations:
@@ -105,7 +105,7 @@ body:
   - type: input
     id: ci-build
     attributes:
-      name: CI Build
+      label: CI Build
       description: Enter the CI build URL.
       placeholder: "https://ci.example.com/build"
     validations:
@@ -115,7 +115,7 @@ body:
   - type: dropdown
     id: status
     attributes:
-      name: Status
+      label: Status
       description: Select the current status.
       options:
         - release
@@ -133,7 +133,7 @@ body:
   - type: input
     id: sequence
     attributes:
-      name: Sequence
+      label: Sequence
       description: Prepopulated text for the sequence.
       value: "Releases"
     validations:
