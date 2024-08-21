@@ -1,14 +1,14 @@
-name: Release Publication request
-description: Release Publication request.
-title: "[Category] Title"
+name: FHIR IG Publication Request
+description: FHIR IG publication request.
+title: "[IG Publication Request] Title of Your IG"
 
 body:
   - type: input
     id: title
     attributes:
-      label: Title
-      description: Enter the title of the issue.
-      placeholder: "Issue title"
+      label: IG Title
+      description: Enter the title of the Implementation Guide.
+      placeholder: "Title of the IG"
     validations:
       required: true
 
@@ -16,7 +16,7 @@ body:
     id: category
     attributes:
       label: Category
-      description: Select the category of the issue.
+      description: Select the category of the IG.
       options:
         - base
         - L2
@@ -29,8 +29,8 @@ body:
     id: introduction
     attributes:
       label: Introduction
-      description: Provide a brief introduction (2 to 3 lines).
-      placeholder: "A short description of the issue."
+      description: Provide a brief introduction (2 to 3 lines) about the IG.
+      placeholder: "Brief introduction to the IG."
     validations:
       required: true
       minLength: 10
@@ -40,8 +40,8 @@ body:
     id: version
     attributes:
       label: Version
-      description: Specify the version.
-      placeholder: "v1.0.0"
+      description: Specify the version of the IG you are requesting publication for.
+      placeholder: "e.g., v1.0.0"
     validations:
       required: true
 
@@ -49,7 +49,7 @@ body:
     id: branch
     attributes:
       label: Branch
-      description: Select the branch.
+      description: Select the branch from which the IG will be published.
       options:
         - main
         - develop
@@ -61,7 +61,7 @@ body:
   - type: markdown
     id: description
     attributes:
-      value: "## Description \n\n Provide a detailed description (supports Markdown)."
+      value: "## Description \n\n Provide a detailed description of the IG, including its scope and intended use."
     validations:
       required: true
 
@@ -69,7 +69,7 @@ body:
     id: mode
     attributes:
       label: Mode
-      description: Select the mode.
+      description: Select the mode of the publication request.
       options:
         - working
         - milestone
@@ -81,8 +81,8 @@ body:
   - type: dropdown
     id: first
     attributes:
-      label: First
-      description: Is this the first time?
+      label: Is this the first time publishing this IG?
+      description: Indicate whether this is the first publication request for this IG.
       options:
         - "true"
         - "false"
@@ -92,8 +92,8 @@ body:
   - type: input
     id: path
     attributes:
-      label: Path
-      description: Enter the URL path.
+      label: IG Publication Path
+      description: Enter the URL where the IG will be hosted.
       placeholder: "https://example.com/path"
     validations:
       required: true
@@ -102,8 +102,8 @@ body:
   - type: input
     id: ci-build
     attributes:
-      label: CI Build
-      description: Enter the CI build URL.
+      label: Continuous Integration (CI) Build URL
+      description: Enter the URL of the CI build for this IG.
       placeholder: "https://ci.example.com/build"
     validations:
       required: true
@@ -112,8 +112,8 @@ body:
   - type: dropdown
     id: status
     attributes:
-      label: Status
-      description: Select the current status.
+      label: Publication Status
+      description: Select the current publication status of the IG.
       options:
         - release
         - trial-use
@@ -131,7 +131,7 @@ body:
     id: sequence
     attributes:
       label: Sequence
-      description: Prepopulated text for the sequence.
+      description: The sequence for publication (prepopulated with "Releases").
       value: "Releases"
     validations:
       required: true
