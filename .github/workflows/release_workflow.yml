@@ -33,6 +33,10 @@ jobs:
             "sequence": "<sequence>"
           }' > publication-request.json
 
+      - name: Display the publication-request.json content
+        run: |
+          echo "Content of publication-request.json:"
+          cat publication-request.json
+
       - name: Log Success
         run: echo "Success"
-
