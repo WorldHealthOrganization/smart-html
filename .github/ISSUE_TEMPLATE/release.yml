@@ -1,5 +1,5 @@
-name: Custom Issue Template
-description: A template for creating issues with specific fields.
+name: Release Publication request
+description: Release Publication request.
 title: "[Category] Title"
 
 body:
