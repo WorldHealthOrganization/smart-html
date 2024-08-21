@@ -1,7 +1,7 @@
 name: Release Publication request
 description: A template for creating release publication requests.
 title: "[Category] Title"
-labels: ''
+# labels: ''
 
 body:
   - type: input
@@ -60,7 +60,7 @@ body:
       required: true
 
   - type: markdown
-    id: description
+    id: descmd
     attributes:
       label: Description
       description: Provide a detailed description (supports Markdown).
