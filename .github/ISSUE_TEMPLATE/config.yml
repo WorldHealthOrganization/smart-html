@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
   - name: Custom Issue Template
-    url: https://github.com/your-repo/your-project/issues/new?template=custom_issue_template.md
+    url: https://github.com/your-repo/your-project/issues/new?template=release.md
     about: A template for creating issues with specific fields.
