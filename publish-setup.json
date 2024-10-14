@@ -15,7 +15,7 @@
      "canonical" : "http://smart.who.int/{4}",
      "destination" : "/{4}"
    },{
-     "npm" : "smart.*",
+     "npm" : "who.*",
      "canonical" : "http://smart.who.int/{2}",
      "destination" : "/{2}"
    },{
