@@ -2,10 +2,12 @@ name: ReleaseBuild
 
 on:
   workflow_call: # Reusable by other workflows
-#  push:
-#    branches-ignore:
-#      - 'gh-pages'
-#  pull_request:
+    inputs:
+      branch:
+        description: "Branch to checkout"
+        required: false
+        default: ""  # Empty string by default, meaning no branch specified
+        
   workflow_dispatch:
 
 jobs:
@@ -16,7 +18,7 @@ jobs:
       - name: Checkout current repo to ./source
         uses: actions/checkout@v2
         with:
-          path: source
+          ref: ${{ inputs.branch != '' && inputs.branch || github.event.repository.default_branch }}  # Use the branch if provided, otherwise default to the default branch
           fetch-depth: 0  # Fetch all history for all branches and tags.
 
       - name: Checkout HL7/fhir-ig-history-template to ./history-template
