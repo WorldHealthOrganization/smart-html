@@ -2,7 +2,7 @@ name: ReleaseBuild
 
 on:
   workflow_call:  # Reusable by other workflows
-  workflow_dispatch:
+  workflow_dispatch:  # Manual trigger by user
 
 jobs:
   build:
@@ -85,7 +85,7 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions Bot"
 
-      # Create a new branch in WorldHealthOrganization/smart-html and apply changes from webroot
+      # Use SSH or HTTPS with the user's credentials if available
       - name: Create new branch and update content in WorldHealthOrganization/smart-html
         run: |
           cd webroot
@@ -100,7 +100,7 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}  # Reuse default GitHub token
           commit-message: "Update site content from repo ${{ github.repository }}"
           title: "Update site content from repo ${{ github.repository }}"
           body: "This is an automated pull request to update the site content from ${{ github.repository }}"
