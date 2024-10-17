@@ -1,8 +1,7 @@
 name: ReleaseBuild
 
 on:
-  workflow_call: # Reusable by other workflows
-        
+  workflow_call:  # Reusable by other workflows
   workflow_dispatch:
 
 jobs:
@@ -11,26 +10,26 @@ jobs:
 
     steps:
       - name: Checkout current repo to ./source
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           path: source
           fetch-depth: 0  # Fetch all history for all branches and tags.
 
       - name: Checkout HL7/fhir-ig-history-template to ./history-template
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           repository: HL7/fhir-ig-history-template
           path: history-template
 
       - name: Checkout WorldHealthOrganization/smart-html to ./webroot
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           repository: WorldHealthOrganization/smart-html
           path: webroot
           fetch-depth: 0  # Fetch all history for all branches and tags.
 
       - name: Checkout FHIR/ig-registry to ./ig-registry
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           repository: FHIR/ig-registry
           path: ig-registry
@@ -58,16 +57,6 @@ jobs:
         run: |
           docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest java -Xmx4g -jar ./publisher.jar publisher -ig source -package-cache-folder fhir-package-cache
 
-#      - name: For debug: List contents of webroot before publishing release
-#        run: ls -la webroot
-#
-#      - name: For debug: Print working directory inside Docker before publishing release
-#        run: |
-#          docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest /bin/sh -c "
-#            pwd &&
-#            ls -la
-#          "
-
       - name: Run publisher command for publishing release
         run: |
           docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest /bin/sh -c "
@@ -90,6 +79,11 @@ jobs:
           publish_dir: ./deploy
           destination_dir: sitepreview
 
+      # Configure Git before committing changes
+      - name: Configure Git
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions Bot"
 
       # Create a new branch in WorldHealthOrganization/smart-html and apply changes from webroot
       - name: Create new branch and update content in WorldHealthOrganization/smart-html
