@@ -12,6 +12,17 @@
     <ttl>600</ttl>
   
     <item>
+      <title>WHO Digital Documentation of COVID-19 Certificates (DDCC) version 1.0.0</title>
+      <description>This is the first release of the WHO DDCC (Digital Documentation of Covid Certificates)</description>
+      <link>http://smart.who.int/ddcc/1.0.0/index.html</link>
+      <guid isPermaLink="true">http://smart.who.int/ddcc/1.0.0/index.html</guid>
+      <dc:creator>WHO</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Thu, 17 Oct 2024 06:50:09 +0000</pubDate>
+      <fhir:details>Publication run at 17/10/2024 by d88838595c56 using vVersion 1.6.31 (Git# 7c67d403c6fc). Built 2024-10-14T09:16:34.143Z (69 hours old) source id Unknown (todo) Run #1</fhir:details>
+    </item>
+    <item>
       <title>ICVP version 0.1.0</title>
       <description>0.1.0 draft release</description>
       <link>http://smart.who.int/icvp/0.1.0/index.html</link>
