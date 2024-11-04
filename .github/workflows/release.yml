@@ -4,6 +4,10 @@ on:
   workflow_call:  # Reusable by other workflows
   workflow_dispatch:  # Manual trigger by user
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
