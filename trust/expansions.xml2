@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="7fec26ab-cb4a-4996-8790-2d62afd5f944"/>
+  <id value="a6950021-7ed2-493f-afa9-6f1b2fd0cef7"/>
   <meta>
-    <lastUpdated value="2024-04-25T23:34:44.435+00:00"/>
+    <lastUpdated value="2024-11-04T12:37:06.198+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -13,10 +13,13 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-WHO.TRUST.DOMAIN.html">codesystem WHO SMART Trust Domains v1.1.3 (CodeSystem)</a>
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
             </p>
-            <p>This value set contains 2 concepts.</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-WHO.TRUST.DOMAIN.html">codesystem WHO SMART Trust Domains v1.1.4 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 2 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -31,7 +34,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---smart.who.int-trust-CodeSystem-WHO.TRUST.DOMAIN-DDCC"> </a>  
+                  <a name="x-http://smart.who.int/trust/CodeSystem/WHO.TRUST.DOMAIN-DDCC"> </a>  
                   <a href="CodeSystem-WHO.TRUST.DOMAIN.html#WHO.TRUST.DOMAIN-DDCC">DDCC</a>
                 </td>
                 <td>http://smart.who.int/trust/CodeSystem/WHO.TRUST.DOMAIN</td>
@@ -39,7 +42,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---smart.who.int-trust-CodeSystem-WHO.TRUST.DOMAIN-IPS-PILGRIMAGE"> </a>  
+                  <a name="x-http://smart.who.int/trust/CodeSystem/WHO.TRUST.DOMAIN-IPS-PILGRIMAGE"> </a>  
                   <a href="CodeSystem-WHO.TRUST.DOMAIN.html#WHO.TRUST.DOMAIN-IPS-PILGRIMAGE">IPS-PILGRIMAGE</a>
                 </td>
                 <td>http://smart.who.int/trust/CodeSystem/WHO.TRUST.DOMAIN</td>
@@ -49,12 +52,12 @@
           </div>
         </text>
         <url value="http://smart.who.int/trust/ValueSet/WHO.TRUST.DOMAIN"/>
-        <version value="1.1.3"/>
+        <version value="1.1.4"/>
         <name value="WHO_TRUST_DOMAIN"/>
         <title value="WHO SMART Trust Domains"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2024-04-25T23:34:44+00:00"/>
+        <date value="2024-11-04T12:37:06+00:00"/>
         <jurisdiction>
           <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -62,8 +65,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:db8a7008-c6a2-4417-a507-7a044aa63549"/>
-          <timestamp value="2024-04-25T23:35:12+00:00"/>
+          <identifier value="urn:uuid:f4f102a0-406b-4fcc-ba92-fc0054eed7d6"/>
+          <timestamp value="2024-11-04T12:37:32+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -80,7 +83,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://smart.who.int/trust/CodeSystem/WHO.TRUST.DOMAIN|1.1.3"/>
+            <valueUri value="http://smart.who.int/trust/CodeSystem/WHO.TRUST.DOMAIN|1.1.4"/>
           </parameter>
           <contains>
             <system value="http://smart.who.int/trust/CodeSystem/WHO.TRUST.DOMAIN"/>
@@ -103,10 +106,13 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-WHO.TRUST.KEYUSAGE.html">codesystem WHO.TRUST.KEYUSAGE CodeSystem v1.1.3 (CodeSystem)</a>
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
             </p>
-            <p>This value set contains 4 concepts.</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-WHO.TRUST.KEYUSAGE.html">codesystem WHO.TRUST.KEYUSAGE CodeSystem v1.1.4 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 4 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -124,7 +130,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---smart.who.int-trust-CodeSystem-WHO.TRUST.KEYUSAGE-SCA"> </a>  
+                  <a name="x-http://smart.who.int/trust/CodeSystem/WHO.TRUST.KEYUSAGE-SCA"> </a>  
                   <a href="CodeSystem-WHO.TRUST.KEYUSAGE.html#WHO.TRUST.KEYUSAGE-SCA">SCA</a>
                 </td>
                 <td>http://smart.who.int/trust/CodeSystem/WHO.TRUST.KEYUSAGE</td>
@@ -138,7 +144,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---smart.who.int-trust-CodeSystem-WHO.TRUST.KEYUSAGE-DSC"> </a>  
+                  <a name="x-http://smart.who.int/trust/CodeSystem/WHO.TRUST.KEYUSAGE-DSC"> </a>  
                   <a href="CodeSystem-WHO.TRUST.KEYUSAGE.html#WHO.TRUST.KEYUSAGE-DSC">DSC</a>
                 </td>
                 <td>http://smart.who.int/trust/CodeSystem/WHO.TRUST.KEYUSAGE</td>
@@ -152,7 +158,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---smart.who.int-trust-CodeSystem-WHO.TRUST.KEYUSAGE-UP"> </a>  
+                  <a name="x-http://smart.who.int/trust/CodeSystem/WHO.TRUST.KEYUSAGE-UP"> </a>  
                   <a href="CodeSystem-WHO.TRUST.KEYUSAGE.html#WHO.TRUST.KEYUSAGE-UP">UP</a>
                 </td>
                 <td>http://smart.who.int/trust/CodeSystem/WHO.TRUST.KEYUSAGE</td>
@@ -166,7 +172,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---smart.who.int-trust-CodeSystem-WHO.TRUST.KEYUSAGE-TLS"> </a>  
+                  <a name="x-http://smart.who.int/trust/CodeSystem/WHO.TRUST.KEYUSAGE-TLS"> </a>  
                   <a href="CodeSystem-WHO.TRUST.KEYUSAGE.html#WHO.TRUST.KEYUSAGE-TLS">TLS</a>
                 </td>
                 <td>http://smart.who.int/trust/CodeSystem/WHO.TRUST.KEYUSAGE</td>
@@ -182,12 +188,12 @@
           </div>
         </text>
         <url value="http://smart.who.int/trust/ValueSet/WHO.TRUST.KEYUSAGE"/>
-        <version value="1.1.3"/>
+        <version value="1.1.4"/>
         <name value="WHO_TRUST_KEYUSAGE"/>
         <title value="TRUST.KEYUSAGE ValueSet of key usage codes "/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2024-04-25T23:34:44+00:00"/>
+        <date value="2024-11-04T12:37:06+00:00"/>
         <jurisdiction>
           <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -195,8 +201,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9b22e403-419e-4cdb-afd2-b8c4a0971bf8"/>
-          <timestamp value="2024-04-25T23:35:12+00:00"/>
+          <identifier value="urn:uuid:d66abf2d-5f6d-455a-9f61-074d982d27fc"/>
+          <timestamp value="2024-11-04T12:37:32+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -213,7 +219,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://smart.who.int/trust/CodeSystem/WHO.TRUST.KEYUSAGE|1.1.3"/>
+            <valueUri value="http://smart.who.int/trust/CodeSystem/WHO.TRUST.KEYUSAGE|1.1.4"/>
           </parameter>
           <contains>
             <system value="http://smart.who.int/trust/CodeSystem/WHO.TRUST.KEYUSAGE"/>

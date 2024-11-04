@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Decision Support Logic - WHO SMART Trust v1.1.3</title>
+    <title>Decision Support Logic - WHO SMART Trust v1.1.4</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -21,6 +21,7 @@
       <!-- Placeholder for child template CSS declarations -->
     <link rel="stylesheet" href="assets/css/who.css"/>
     <link rel="stylesheet" href="assets/css/lforms.min.css"/>
+
 
     <script src="fhir-table-scripts.js" type="text/javascript"> </script>
 
@@ -41,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"1.9"}
-    h3,h4,h5,h6{--heading-prefix:"1.9"}</style>
+    <style type="text/css">h2{--heading-prefix:"1.10"}
+    h3,h4,h5,h6{--heading-prefix:"1.10"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
 
       <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
@@ -76,6 +77,9 @@
       </li>
       <li>
         <a href="dependencies.html">Dependencies</a>
+      </li>
+      <li>
+        <a href="ethical_principles.html">Ethical Considerations and Data Protection Principles</a>
       </li>
       <li>
         <a href="references.html">References</a>
@@ -203,7 +207,7 @@
         <div id="ig-status" class="ig-status-active">
           <p><span style="font-size:12pt;font-weight:bold">WHO SMART Trust</span>
             <br/>
-            <span style="display:inline-block;">1.1.3 - v1.1.3
+            <span style="display:inline-block;">1.1.4 - CI Build
 
 
 
@@ -242,7 +246,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">This page is part of the Trust (v1.1.3: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/trust/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">This page is part of the Trust (v1.1.4: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/trust/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Decision Support Logic</h2>
   
 
@@ -270,8 +274,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h3 id="background">Background</h3>
 
 <p>Business rules for health credentials are the instructions, guidelines, and regulations that
-express health policies such as “this course of vaccines meets jurisdiction entry requirements” or
-“this patient should complete their immunization schedule”. These policies can support a range of
+express health policies such as "this course of vaccines meets jurisdiction entry requirements" or
+"this patient should complete their immunization schedule". These policies can support a range of
 scenarios such as evaluating proof of vaccination or providing continuity of care.</p>
 
 <p>Applying business rules in the context of trust networks for health credentials requires a
@@ -520,7 +524,7 @@ use SNOMED CT. Mapping the clinical concepts from one format to another is accom
 A ConceptMap defines a mapping from a set of concepts in one code system to concepts in another code
 system.</p>
 
-<p><a name="l780">​</a>Using the StructureMaps to translate formats requires a
+<p><a name="l786">​</a>Using the StructureMaps to translate formats requires a
 <a href="https://confluence.hl7.org/display/FHIR/Using+the+FHIR+Mapping+Language#UsingtheFHIRMappingLanguage-MappingEngineImplementations">mapping engine</a>.
 Note that using the Java mapping engine also requires the use of a terminology server; it uses
 <a href="tx.fhir.org">tx.fhir.org</a> by default.</p>
@@ -553,7 +557,7 @@ Note that using the Java mapping engine also requires the use of a terminology s
 
 <h4 id="convert-vaccination-credentials-to-ddcc-resource-instance">Convert Vaccination Credentials to DDCC Resource Instance</h4>
 
-<p>The process starts with converting the vaccination credential to be evaluated into the DDCC FHIR model. For the examples used in this document we’ll start with an example credential payload in the SHC format, which you can download:</p>
+<p>The process starts with converting the vaccination credential to be evaluated into the DDCC FHIR model. For the examples used in this document we'll start with an example credential payload in the SHC format, which you can download:</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl https://raw.githubusercontent.com/WorldHealthOrganization/ddcc/main/structuremap-tests/fixtures/shc/example-00-b-jws-payload-expanded.json <span class="nt">--output</span> example-00-b-jws-payload-expanded.json
 </code></pre></div></div>
@@ -567,7 +571,7 @@ Note that using the Java mapping engine also requires the use of a terminology s
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">-d</span> <span class="nt">-p</span> 8080:8080 <span class="nt">--restart</span> unless-stopped eu.gcr.io/fhir-ch/matchbox:v314
 </code></pre></div></div>
 
-<p><em>NOTE: At the time of writing the latest version of Matchbox does not correctly handle the required StructureMap transformations; ensure that the version of Matchbox you’re testing with has been updated. The Matchbox docker image does not appear to have a correct <code class="language-plaintext highlighter-rouge">latest</code> tag, so be sure to specify the actual version number of the latest docker image.</em></p>
+<p><em>NOTE: At the time of writing the latest version of Matchbox does not correctly handle the required StructureMap transformations; ensure that the version of Matchbox you're testing with has been updated. The Matchbox docker image does not appear to have a correct <code class="language-plaintext highlighter-rouge">latest</code> tag, so be sure to specify the actual version number of the latest docker image.</em></p>
 
 <p>Running Matchbox in this fashion uses an in-memory data store rather than a backing database, so will not persist state across different container instantiations.</p>
 
@@ -617,7 +621,7 @@ Note that using the Java mapping engine also requires the use of a terminology s
 
 <h4 id="running-cql-against-converted-vaccination-credentials">Running CQL Against Converted Vaccination Credentials</h4>
 
-<p>Running CQL business rules against a record requires translating the CQL to the Expression Logical Model (ELM) representation and running the ELM in a CQL execution engine. For this document we’ll start with one of the <a href="https://smart.who.int/ddcc/artifacts.html#knowledge-artifacts-libraries">examples from the DDCC IG</a>:</p>
+<p>Running CQL business rules against a record requires translating the CQL to the Expression Logical Model (ELM) representation and running the ELM in a CQL execution engine. For this document we'll start with one of the <a href="https://smart.who.int/ddcc/artifacts.html#knowledge-artifacts-libraries">examples from the DDCC IG</a>:</p>
 
 <pre><code class="language-cql">// Declare the name and version of the Library of functions
 library DDCCPass version '1.0.0'
@@ -795,9 +799,9 @@ npm <span class="nb">install </span>cql-execution cql-exec-fhir
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.trust#1.1.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 25, 2024 23:34+0000">2024-04-25</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.trust#1.1.4 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 4, 2024 12:37+0000">2024-11-04</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"><a name="l2218">​</a>
+          <span style="color: var(--footer-highlight-text-color)"><a name="l2224">​</a>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                   | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/WorldHealthOrganization/smart-ig-empty/projects/1" target="_blank">Issues</a>
@@ -813,7 +817,7 @@ npm <span class="nb">install </span>cql-execution cql-exec-fhir
     <div class="container">    <!-- container -->
     </div>    <!-- /container -->
   </div>    <!-- /segment-post-footer -->
-  
+
     <!-- JS and analytics only. -->
     <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -824,7 +828,6 @@ npm <span class="nb">install </span>cql-execution cql-exec-fhir
   <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
   <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
   <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
-  
     <!-- Analytics Below
   ================================================== -->
   </body>
