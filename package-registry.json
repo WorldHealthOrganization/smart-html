@@ -75,6 +75,25 @@
         "date" : "2024-11-04",
         "path" : "http://smart.who.int/trust/1.1.4"
       }
+    },
+    {
+      "path" : "dak-immz/package-list.json",
+      "package-id" : "smart.who.int.dak-immz",
+      "title" : "SMART DAK IMMZ",
+      "canonical" : "http://smart.who.int/dak-immz",
+      "category" : "base",
+      "ci-build" : "http://worldhealthorganization.github.io/smart-dak-immz",
+      "version-count" : 1,
+      "latest" : {
+        "version" : "0.9.9",
+        "date" : "2024-11-19",
+        "path" : "http://smart.who.int/dak-immz/v0.9.9"
+      },
+      "milestone" : {
+        "version" : "0.9.9",
+        "date" : "2024-11-19",
+        "path" : "http://smart.who.int/dak-immz/v0.9.9"
+      }
     }
   ]
 }

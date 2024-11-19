@@ -10,7 +10,17 @@
     <pubDate>Thu, 03 Oct 2024 05:49:46 +0200</pubDate>
     <language>en</language>
     <ttl>600</ttl>
-  
+    <item>
+      <title>SMART DAK IMMZ version 0.9.9</title>
+      <description>0.9.9 Draft Release</description>
+      <link>http://smart.who.int/dak-immz/v0.9.9/index.html</link>
+      <guid isPermaLink="true">http://smart.who.int/dak-immz/v0.9.9/index.html</guid>
+      <dc:creator>WHO</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Tue, 19 Nov 2024 08:43:37 +0000</pubDate>
+      <fhir:details>Publication run at 19/11/2024 by 09639121ef99 using vVersion 1.7.2 (Git# a53365dccbf0). Built 2024-11-12T22:35:14.748Z (6 days old) source id Unknown (todo) Run #2</fhir:details>
+    </item>
     <item>
       <title>Trust version 1.1.4</title>
       <description>1.1.4 release</description>
