@@ -3,15 +3,15 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="smart.who.int.trust"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>SMART_WHO_INT_TRUST</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/trust/ImplementationGuide/smart.who.int.trust</pre><div><p>SMART Trust Implementation Guide</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide smart.who.int.trust</b></p><a name="smart.who.int.trust"> </a><a name="hcsmart.who.int.trust"> </a><a name="smart.who.int.trust-en-US"> </a><h2>Trust</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/trust/ImplementationGuide/smart.who.int.trust</pre><div><p>SMART Trust Implementation Guide</p>
 </div></div>
   </text>
   <url value="http://smart.who.int/trust/ImplementationGuide/smart.who.int.trust"/>
-  <version value="1.1.3"/>
-  <name value="SMART_WHO_INT_TRUST"/>
+  <version value="1.1.4"/>
+  <name value="Trust"/>
   <title value="WHO SMART Trust"/>
   <status value="active"/>
-  <date value="2024-04-25"/>
+  <date value="2024-10-28"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -36,7 +36,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="5.5.0"/>
+    <version value="6.0.2"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -44,22 +44,22 @@
     </extension>
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
-    <version value="1.0.0"/>
+    <version value="5.1.0"/>
   </dependsOn>
-  <dependsOn id="hl7_fhir_uv_ips">
-    <uri value="http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips"/>
-    <packageId value="hl7.fhir.uv.ips"/>
-    <version value="1.1.0"/>
-  </dependsOn>
-  <dependsOn id="who_base">
-    <uri value="http://smart.who.int/base/ImplementationGuide/who.base"/>
-    <packageId value="who.base"/>
-    <version value="dev"/>
+  <dependsOn id="smart_who_int_base">
+    <uri value="http://smart.who.int/base/ImplementationGuide/smart.who.int.base"/>
+    <packageId value="smart.who.int.base"/>
+    <version value="0.1.0"/>
   </dependsOn>
   <dependsOn id="who_ddcc">
     <uri value="http://smart.who.int/ddcc/ImplementationGuide/who.ddcc"/>
     <packageId value="who.ddcc"/>
-    <version value="dev"/>
+    <version value="1.0.0"/>
+  </dependsOn>
+  <dependsOn id="smart_who_int_icvp">
+    <uri value="http://smart.who.int/icvp/ImplementationGuide/smart.who.int.icvp"/>
+    <packageId value="smart.who.int.icvp"/>
+    <version value="0.1.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -75,7 +75,7 @@
         <valueString value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="v1.1.3"/>
+        <valueString value="CI Build"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -263,7 +263,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools#0.1.0"/>
+      <valueCode value="hl7.fhir.uv.tools#0.2.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -278,7 +278,7 @@
         <valueCode value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="v1.1.3"/>
+        <valueString value="CI Build"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -500,39 +500,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ActorDefinition"/>
-      </extension>
-      <reference>
-        <reference value="ActorDefinition/Credential.Holder"/>
-      </reference>
-      <name value="Credential.Holder"/>
-      <description value="Credential Holder"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ActorDefinition"/>
-      </extension>
-      <reference>
-        <reference value="ActorDefinition/Credential.Issuer"/>
-      </reference>
-      <name value="Credential.Issuer"/>
-      <description value="Credential Issuer"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ActorDefinition"/>
-      </extension>
-      <reference>
-        <reference value="ActorDefinition/GDHCN"/>
-      </reference>
-      <name value="GDHCN"/>
-      <description value="WHO Global Digital Health Certification Network"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
@@ -577,25 +544,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ActorDefinition"/>
+        <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ActorDefinition/TNG"/>
+        <reference value="ValueSet/WHO.TRUST.ACTOR"/>
       </reference>
-      <name value="TNG"/>
-      <description value="Trust Network Gateway"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ActorDefinition"/>
-      </extension>
-      <reference>
-        <reference value="ActorDefinition/TNP"/>
-      </reference>
-      <name value="TNP"/>
-      <description value="Trust Network Participant"/>
-      <exampleBoolean value="true"/>
+      <name value="TRUST.ACTOR ValueSet of key usage codes "/>
+      <description value="ValueSet of codes for key usage codes"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -605,6 +561,17 @@
         <reference value="ValueSet/WHO.TRUST.KEYUSAGE"/>
       </reference>
       <name value="TRUST.KEYUSAGE ValueSet of key usage codes "/>
+      <description value="ValueSet of codes for key usage codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/WHO.TRUST.TRANSACTION"/>
+      </reference>
+      <name value="TRUST.TRANSACTION ValueSet of key usage codes "/>
       <description value="ValueSet of codes for key usage codes"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -635,10 +602,32 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/WHO.TRUST.ACTOR"/>
+      </reference>
+      <name value="WHO.TRUST.ACTOR CodeSystem"/>
+      <description value="CodeSystem for TRUST.ACTOR that has usage codes for verification keys published to the Trust Network as defined by the [certificate governance](concepts_certificate_governance.html)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/WHO.TRUST.KEYUSAGE"/>
       </reference>
       <name value="WHO.TRUST.KEYUSAGE CodeSystem"/>
       <description value="CodeSystem for TRUST.KEYUSAGE that has usage codes for verification keys published to the Trust Network as defined by the [certificate governance](concepts_certificate_governance.html)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/WHO.TRUST.TRANSACTION"/>
+      </reference>
+      <name value="WHO.TRUST.TRANSACTION CodeSystem"/>
+      <description value="CodeSystem for TRUST.TRANSACTION that has usage codes for verification keys published to the Trust Network as defined by the [certificate governance](concepts_certificate_governance.html)"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>
@@ -670,6 +659,14 @@
           <nameUrl value="dependencies.html"/>
           <title value="Dependencies"/>
           <generation value="html"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="ethical_principles.html"/>
+          </extension>
+          <nameUrl value="ethical_principles.html"/>
+          <title value="Ethical Considerations and Data Protection Principles"/>
+          <generation value="markdown"/>
         </page>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
