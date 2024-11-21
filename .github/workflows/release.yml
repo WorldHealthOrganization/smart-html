@@ -80,8 +80,8 @@ jobs:
         run: |
           echo "Preparing deployment folder..."
           mkdir -p deploy
-          mkdir -p deploy/sitepreview
-          cp -r webroot/* deploy/sitepreview/
+          mkdir -p deploy/smart-html
+          cp -r webroot/* deploy/smart-html/
           cp -r ig-registry deploy/
 
 
