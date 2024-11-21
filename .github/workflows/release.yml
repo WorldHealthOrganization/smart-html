@@ -76,12 +76,19 @@ jobs:
             rsync -av --exclude='ig-build-zips/*' /workspace/webroot/ /workspace/deploy/
           "
 
+      - name: Prepare deployment folder
+        run: |
+          echo "Preparing deployment folder..."
+          mkdir -p deploy
+          cp -r webroot/* deploy/sitepreview/
+          cp -r ig-registry deploy/
+
+
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./deploy
-          destination_dir: sitepreview
 
 #      # Configure Git before committing changes
 #      - name: Configure Git
