@@ -83,7 +83,7 @@ jobs:
           docker run --rm -v $(pwd):/workspace -w /workspace ubuntu:latest /bin/bash -c "
             apt-get update && apt-get install -y rsync &&
             mkdir /workspace/deploy &&
-            rsync -av --exclude='ig-build-zips/*' /workspace/webroot/ /workspace/deploy/
+            rsync -av --exclude='**/ig-build-zips/*' /workspace/webroot/ /workspace/deploy/
           "
 
       - name: Prepare deployment folder
@@ -91,7 +91,7 @@ jobs:
           echo "Preparing deployment folder..."
           mkdir -p deploy
           mkdir -p deploy/smart-html
-          cp -r webroot/* deploy/smart-html/
+          mv deploy/sitepreview deploy/smart-html/
           cp -r ig-registry deploy/
 
 
