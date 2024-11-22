@@ -89,9 +89,10 @@ jobs:
       - name: Prepare deployment folder
         run: |
           echo "Preparing deployment folder..."
+          find . -type d
           mkdir -p deploy
           mkdir -p deploy/smart-html
-          mv deploy/sitepreview deploy/smart-html/
+          cp -r webroot/* deploy/smart-html/
           cp -r ig-registry deploy/
 
 
