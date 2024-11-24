@@ -48,8 +48,7 @@ jobs:
           "
 
       - name: Create package cache folder
-        run: |
-          mkdir -p ./fhir-package-cache
+        run: mkdir -p ./fhir-package-cache
 
       - name: Run the IG publisher
         run: |
@@ -61,10 +60,12 @@ jobs:
           mv webroot/* deploy/smart-html/
           mv ig-registry deploy/
 
-      - name: Install Git LFS
+      - name: Enable Git LFS for the deploy folder
         run: |
-          git lfs install
-          git lfs track "*.zip"
+          cd deploy  # Switch to the deployment directory
+          git init   # Initialize a new Git repository
+          git lfs install  # Enable Git LFS
+          git lfs track "*.zip"  # Track large zip files
           git add .gitattributes
           git commit -m "Enable Git LFS for large files"
 
