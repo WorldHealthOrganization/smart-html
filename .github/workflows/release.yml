@@ -60,6 +60,11 @@ jobs:
           mv webroot/* deploy/smart-html/
           mv ig-registry deploy/
 
+      - name: Configure Git identity
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: Enable Git LFS for the deploy folder
         run: |
           cd deploy  # Switch to the deployment directory
