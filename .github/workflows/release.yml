@@ -4,7 +4,8 @@ on:
   release:
     types: [created]  # Trigger on release creation
   workflow_dispatch:  # Manual trigger by user
-
+  workflow_call:  # Reusable by other workflows
+  
 permissions:
   contents: write
   pull-requests: write
