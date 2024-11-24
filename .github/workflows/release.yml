@@ -1,7 +1,8 @@
 name: ReleaseBuild
 
 on:
-  workflow_call:  # Reusable by other workflows
+  release:
+    types: [created]  # Trigger on release creation
   workflow_dispatch:  # Manual trigger by user
 
 permissions:
@@ -30,7 +31,7 @@ jobs:
         with:
           repository: WorldHealthOrganization/smart-html
           path: webroot
-          fetch-depth: 0  # Fetch all history for all branches and tags.
+          fetch-depth: 0
 
       - name: Checkout FHIR/ig-registry to ./ig-registry
         uses: actions/checkout@v3
@@ -47,86 +48,27 @@ jobs:
 
       - name: Create package cache folder
         run: |
-          docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest /bin/sh -c "
-            mkdir -p ./fhir-package-cache && chown 1001:127 ./fhir-package-cache
-          "
+          mkdir -p ./fhir-package-cache
 
-      - name: Ensure write permissions for webroot and source directories
-        run: |
-          chmod -R 777 webroot
-          chmod -R 777 source
-          chmod -R 777 fhir-package-cache
-          
       - name: Run the IG publisher
         run: |
           docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest java -Xmx4g -jar ./publisher.jar publisher -ig source -package-cache-folder fhir-package-cache
 
-      - name: Run publisher command for publishing release
+      - name: Move processed content to deployment folder
         run: |
-          docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest /bin/sh -c "
-            ls -la /workspace/webroot &&
-            java -Xmx4g -Dfile.encoding=UTF-8 -jar /workspace/publisher.jar -go-publish -package-cache-folder /workspace/fhir-package-cache -source /workspace/source -web /workspace/webroot -temp /workspace/temp -registry /workspace/ig-registry/fhir-ig-list.json -history /workspace/history-template -templates /workspace/webroot/templates
-          "
-
-      - name: Clean up unused files to free space
-        run: |
-          sudo rm -rf /usr/share/dotnet
-          sudo rm -rf /usr/local/lib/android
-          sudo rm -rf /opt/hostedtoolcache
-          sudo apt-get clean
-          df -h
-
-
-
-      - name: Install rsync and prepare deployment folder
-        run: |
-          docker run --rm -v $(pwd):/workspace -w /workspace ubuntu:latest /bin/bash -c "
-            apt-get update && apt-get install -y rsync &&
-            mkdir /workspace/deploy &&
-            rsync -av --exclude='**/ig-build-zips/*' /workspace/webroot/ /workspace/deploy/
-          "
-
-      - name: Prepare deployment folder
-        run: |
-          echo "Preparing deployment folder..."
-          find . -type d
-          mkdir -p deploy
           mkdir -p deploy/smart-html
           mv webroot/* deploy/smart-html/
           mv ig-registry deploy/
 
+      - name: Install Git LFS
+        run: |
+          git lfs install
+          git lfs track "*.zip"
+          git add .gitattributes
+          git commit -m "Enable Git LFS for large files"
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./deploy
-
-#      # Configure Git before committing changes
-#      - name: Configure Git
-#        run: |
-#          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-#          git config --global user.name "GitHub Actions Bot"
-#
-#      # Use SSH or HTTPS with the user's credentials if available
-#      - name: Create new branch and update content in WorldHealthOrganization/smart-html
-#        run: |
-#          cd webroot
-#          git checkout main
-#          git checkout -b "${{ github.repository }}-${{ github.run_id }}"  # Create a branch using the calling repo name
-#          rsync -av --exclude='.git/' --delete ../deploy/ ./  # Sync the deploy directory to the webroot
-#          git add .
-#          git commit -m "Update site content from repo ${{ github.repository }}"
-#          git push --set-upstream origin "${{ github.repository }}-${{ github.run_id }}"
-#
-#      # Create a pull request to merge changes into the main branch
-#      - name: Create Pull Request
-#        uses: peter-evans/create-pull-request@v3
-#        with:
-#          token: ${{ secrets.GITHUB_TOKEN }}  # Reuse default GitHub token
-#          commit-message: "Update site content from repo ${{ github.repository }}"
-#          title: "Update site content from repo ${{ github.repository }}"
-#          body: "This is an automated pull request to update the site content from ${{ github.repository }}"
-#          head: "${{ github.repository }}-${{ github.run_id }}"
-#          base: main
-#          delete-branch: true
