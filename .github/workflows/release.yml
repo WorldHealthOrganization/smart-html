@@ -92,8 +92,8 @@ jobs:
           find . -type d
           mkdir -p deploy
           mkdir -p deploy/smart-html
-          cp -r webroot/* deploy/smart-html/
-          cp -r ig-registry deploy/
+          mv webroot/* deploy/smart-html/
+          mv ig-registry deploy/
 
 
       - name: Deploy to gh-pages
