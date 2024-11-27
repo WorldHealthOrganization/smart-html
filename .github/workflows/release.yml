@@ -68,10 +68,10 @@ jobs:
             java -Xmx4g -Dfile.encoding=UTF-8 -jar /workspace/publisher.jar -go-publish -package-cache-folder /workspace/fhir-package-cache -source /workspace/source -web /workspace/webroot -temp /workspace/temp -registry /workspace/ig-registry/fhir-ig-list.json -history /workspace/history-template -templates /workspace/webroot/templates
           "
 
-      - name: Prepare deployment folder (excluding .zip files)
+      - name: Prepare deployment folder (excluding full-ig.zip)
         run: |
           mkdir -p /workspace/deploy &&
-          rsync -av --exclude="*.zip" /workspace/webroot/ /workspace/deploy/
+          rsync -av --exclude="full-ig.zip" /workspace/webroot/ /workspace/deploy/
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
@@ -80,28 +80,24 @@ jobs:
           publish_dir: ./deploy
           destination_dir: sitepreview
 
-      - name: Configure Git identity
+      - name: Upload release assets (full-ig.zip and package.tgz)
         run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "GitHub Actions Bot"
+          mkdir -p release-assets
+          mv /workspace/webroot/full-ig.zip release-assets/
+          mv /workspace/output/package.tgz release-assets/
 
-      - name: Create a new branch and update content
-        run: |
-          cd webroot
-          git checkout main
-          git checkout -b "${{ github.repository }}-${{ github.run_id }}"  # Create a branch using the calling repo name
-          rsync -av --exclude=".git/" --delete ../deploy/ ./  # Sync the deploy directory to the webroot
-          git add .
-          git commit -m "Update site content from repo ${{ github.repository }}"
-          git push --set-upstream origin "${{ github.repository }}-${{ github.run_id }}"
-
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
+      - name: Upload full-ig.zip to release
+        uses: actions/upload-release-asset@v1
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "Update site content from repo ${{ github.repository }}"
-          title: "Update site content from repo ${{ github.repository }}"
-          body: "This is an automated pull request to update the site content from ${{ github.repository }}"
-          head: "${{ github.repository }}-${{ github.run_id }}"
-          base: main
-          delete-branch: true
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ./release-assets/full-ig.zip
+          asset_name: full-ig.zip
+          asset_content_type: application/zip
+
+      - name: Upload package.tgz to release
+        uses: actions/upload-release-asset@v1
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ./release-assets/package.tgz
+          asset_name: package.tgz
+          asset_content_type: application/gzip
