@@ -46,17 +46,8 @@ jobs:
           "
 
       - name: Create package cache folder
-        run: |
-          docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest /bin/sh -c "
-            mkdir -p ./fhir-package-cache && chown 1001:127 ./fhir-package-cache
-          "
+        run: mkdir -p ./fhir-package-cache
 
-      - name: Ensure write permissions for webroot and source directories
-        run: |
-          chmod -R 777 webroot
-          chmod -R 777 source
-          chmod -R 777 fhir-package-cache
-          
       - name: Run the IG publisher
         run: |
           docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest java -Xmx4g -jar ./publisher.jar publisher -ig source -package-cache-folder fhir-package-cache
@@ -64,14 +55,14 @@ jobs:
       - name: Run publisher command for publishing release
         run: |
           docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest /bin/sh -c "
-            ls -la /workspace/webroot &&
-            java -Xmx4g -Dfile.encoding=UTF-8 -jar /workspace/publisher.jar -go-publish -package-cache-folder /workspace/fhir-package-cache -source /workspace/source -web /workspace/webroot -temp /workspace/temp -registry /workspace/ig-registry/fhir-ig-list.json -history /workspace/history-template -templates /workspace/webroot/templates
+            ls -la ./webroot &&
+            java -Xmx4g -Dfile.encoding=UTF-8 -jar ./publisher.jar -go-publish -package-cache-folder ./fhir-package-cache -source ./source -web ./webroot -temp ./temp -registry ./ig-registry/fhir-ig-list.json -history ./history-template -templates ./webroot/templates
           "
 
       - name: Prepare deployment folder (excluding full-ig.zip)
         run: |
-          mkdir -p /workspace/deploy &&
-          rsync -av --exclude="full-ig.zip" /workspace/webroot/ /workspace/deploy/
+          mkdir -p deploy &&
+          rsync -av --exclude="full-ig.zip" ./webroot/ ./deploy/
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
@@ -83,8 +74,8 @@ jobs:
       - name: Upload release assets (full-ig.zip and package.tgz)
         run: |
           mkdir -p release-assets
-          mv /workspace/webroot/full-ig.zip release-assets/
-          mv /workspace/output/package.tgz release-assets/
+          mv ./webroot/full-ig.zip release-assets/
+          mv ./output/package.tgz release-assets/
 
       - name: Upload full-ig.zip to release
         uses: actions/upload-release-asset@v1
