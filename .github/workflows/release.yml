@@ -17,6 +17,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           path: source
+        with:
           fetch-depth: 0  # Fetch all history for all branches and tags.
 
       - name: Checkout HL7/fhir-ig-history-template to ./history-template
@@ -40,28 +41,28 @@ jobs:
 
       - name: Setup publisher and install dependencies
         run: |
-          docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest /bin/sh -c "
+          docker run --rm -v $GITHUB_WORKSPACE:/workspace -w /workspace hl7fhir/ig-publisher-base:latest /bin/sh -c "
             npm install -g fsh-sushi &&
             curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./publisher.jar --create-dirs
           "
 
       - name: Create package cache folder
-        run: mkdir -p ./fhir-package-cache
+        run: mkdir -p ./source/fhir-package-cache
 
       - name: Run the IG publisher
         run: |
-          docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest java -Xmx4g -jar ./publisher.jar publisher -ig source -package-cache-folder fhir-package-cache
+          docker run --rm -v $GITHUB_WORKSPACE:/workspace -w /workspace hl7fhir/ig-publisher-base:latest java -Xmx4g -jar ./publisher.jar publisher -ig ./source -package-cache-folder ./source/fhir-package-cache
 
       - name: Run publisher command for publishing release
         run: |
-          docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest /bin/sh -c "
+          docker run --rm -v $GITHUB_WORKSPACE:/workspace -w /workspace hl7fhir/ig-publisher-base:latest /bin/sh -c "
             ls -la ./webroot &&
-            java -Xmx4g -Dfile.encoding=UTF-8 -jar ./publisher.jar -go-publish -package-cache-folder ./fhir-package-cache -source ./source -web ./webroot -temp ./temp -registry ./ig-registry/fhir-ig-list.json -history ./history-template -templates ./webroot/templates
+            java -Xmx4g -Dfile.encoding=UTF-8 -jar ./publisher.jar -go-publish -package-cache-folder ./source/fhir-package-cache -source ./source -web ./webroot -temp ./temp -registry ./ig-registry/fhir-ig-list.json -history ./history-template -templates ./webroot/templates
           "
 
       - name: Prepare deployment folder (excluding full-ig.zip)
         run: |
-          mkdir -p deploy &&
+          mkdir -p ./deploy &&
           rsync -av --exclude="full-ig.zip" ./webroot/ ./deploy/
 
       - name: Deploy to gh-pages
@@ -73,9 +74,9 @@ jobs:
 
       - name: Upload release assets (full-ig.zip and package.tgz)
         run: |
-          mkdir -p release-assets
-          mv ./webroot/full-ig.zip release-assets/
-          mv ./output/package.tgz release-assets/
+          mkdir -p ./release-assets
+          mv ./webroot/full-ig.zip ./release-assets/
+          mv ./source/output/package.tgz ./release-assets/
 
       - name: Upload full-ig.zip to release
         uses: actions/upload-release-asset@v1
