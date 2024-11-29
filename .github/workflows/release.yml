@@ -68,13 +68,14 @@ jobs:
             java -Xmx4g -Dfile.encoding=UTF-8 -jar /workspace/publisher.jar -go-publish -package-cache-folder /workspace/fhir-package-cache -source /workspace/source -web /workspace/webroot -temp /workspace/temp -registry /workspace/ig-registry/fhir-ig-list.json -history /workspace/history-template -templates /workspace/webroot/templates
           "
 
-      - name: Install rsync and prepare deployment folder
+      - name: Exclude .zip files from gh-pages and move to release-assets
         run: |
-          docker run --rm -v $(pwd):/workspace -w /workspace ubuntu:latest /bin/bash -c "
-            apt-get update && apt-get install -y rsync &&
-            mkdir /workspace/deploy &&
-            rsync -av --exclude='ig-build-zips/*' /workspace/webroot/ /workspace/deploy/
-          "
+          mkdir -p ./release-assets
+          # Move all .zip files to release-assets
+          find ./webroot/ig-build-zips -name "*.zip" -exec mv {} ./release-assets/ \;
+          # Prepare the deploy folder excluding .zip files
+          mkdir -p ./deploy
+          rsync -av --exclude="*.zip" ./webroot/ ./deploy/
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
@@ -82,6 +83,13 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./deploy
           destination_dir: sitepreview
+
+
+      - name: Upload release assets ( package.tgz)
+        run: |
+          mkdir -p ./release-assets
+          mv ./source/output/package.tgz ./release-assets/
+
 
       # Configure Git before committing changes
       - name: Configure Git
