@@ -90,13 +90,13 @@ jobs:
           mkdir -p ./release-assets
           mv ./source/output/package.tgz ./release-assets/
 
-      - name: Upload package.tgz to release
-        uses: actions/upload-release-asset@v1
-        with:
-          upload_url: ${{ github.event.release.upload_url }}
-          asset_path: ./release-assets/package.tgz
-          asset_name: package.tgz
-          asset_content_type: application/gzip
+#      - name: Upload package.tgz to release
+#        uses: actions/upload-release-asset@v1
+#        with:
+#          upload_url: ${{ github.event.release.upload_url }}
+#          asset_path: ./release-assets/package.tgz
+#          asset_name: package.tgz
+#          asset_content_type: application/gzip
 
 #      # Configure Git before committing changes
 #      - name: Configure Git
