@@ -94,6 +94,25 @@
         "date" : "2024-11-19",
         "path" : "http://smart.who.int/dak-immz/v0.9.9"
       }
+    },
+    {
+      "path" : "ig-starter-kit/package-list.json",
+      "package-id" : "smart.who.int.ig-starter-kit",
+      "title" : "SMART IG STARTER KIT",
+      "canonical" : "http://smart.who.int/ig-starter-kit",
+      "category" : "base",
+      "ci-build" : "http://worldhealthorganization.github.io/smart-ig-starter-kit",
+      "version-count" : 2,
+      "latest" : {
+        "version" : "2.0.0",
+        "date" : "2024-11-30",
+        "path" : "http://smart.who.int/ig-starter-kit/v2.0.0"
+      },
+      "milestone" : {
+        "version" : "2.0.0",
+        "date" : "2024-11-30",
+        "path" : "http://smart.who.int/ig-starter-kit/v2.0.0"
+      }
     }
   ]
 }

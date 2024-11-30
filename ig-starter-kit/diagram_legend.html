@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ArchiMate Diagrams Legend - SMART Guidelines L3 SOP v1.0.0</title>
+    <title>ArchiMate Diagrams Legend - SMART Guidelines Starter Kit v2.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.5"}
-    h3,h4,h5,h6{--heading-prefix:"3.5.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"4.5"}
+    h3,h4,h5,h6{--heading-prefix:"4.5.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
 
       <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
@@ -72,6 +72,9 @@
       <li>
         <a href="index.html">Overview</a>
       </li>
+      <li>
+        <a href="cop.html">SMART Guidelines Community</a>
+      </li>
     </ul>
   </li>
   <li class="dropdown">
@@ -94,7 +97,26 @@
     </ul>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Authoring
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">L2 Authoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="l2_authoring_overview.html">Overview</a>
+      </li>
+      <li>
+        <a href="l2_dak_authoring.html">Authoring a L2 DAK</a>
+      </li>
+      <li>
+        <a href="l2_templates.html">L2 DAK Templates</a>
+      </li>
+      <li>
+        <a href="l2_faq.html">L2 DAK FAQ</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">L3 Authoring
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
@@ -265,9 +287,9 @@
 
 
         <div id="ig-status" class="ig-status-active">
-          <p><span style="font-size:12pt;font-weight:bold">SMART Guidelines L3 SOP</span>
+          <p><span style="font-size:12pt;font-weight:bold">SMART Guidelines Starter Kit</span>
             <br/>
-            <span style="display:inline-block;">1.0.0 - release
+            <span style="display:inline-block;">2.0.0 - release
 
 
 
@@ -286,7 +308,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='authoring_overview.html'><b>Authoring</b></a></li><li><b>ArchiMate Diagrams Legend</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='authoring_overview.html'><b>L3 Authoring Overview</b></a></li><li><b>ArchiMate Diagrams Legend</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -306,7 +328,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART IG STARTER KIT (v1.0.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R5">FHIR (HL7® FHIR® Standard) v5.0.0</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/ig-starter-kit/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART IG STARTER KIT (v2.0.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R5">FHIR (HL7® FHIR® Standard) v5.0.0</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/ig-starter-kit/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>ArchiMate Diagrams Legend</h2>
   
 
@@ -335,8 +357,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>This specification uses:</p>
 
 <ol>
-  <li>ArchiMate’s layering concept, distinguishing between application and technology layers.</li>
-  <li>ArchiMate relations, namely aggregation, composition, and the labeled “related to” relationship.</li>
+  <li>ArchiMate's layering concept, distinguishing between application and technology layers.</li>
+  <li>ArchiMate relations, namely aggregation, composition, and the labeled "related to" relationship.</li>
   <li>Representation of starting artifacts as technology artifacts (e.g., files or data objects).</li>
   <li>Display of processes within the application layer, illustrating how functional processes transform L2 inputs  into L3 outputs.</li>
 </ol>
@@ -363,7 +385,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><strong>Aggregation</strong>: Illustrates that an object groups several other objects.</p>
   </li>
   <li>
-    <p><strong>Composition</strong>: Indicates that an object is composed of one or more other objects, implying a stronger, “whole-part” relationship compared to aggregation.</p>
+    <p><strong>Composition</strong>: Indicates that an object is composed of one or more other objects, implying a stronger, "whole-part" relationship compared to aggregation.</p>
   </li>
   <li>
     <p><strong>Access (Read/Write)</strong>: Indicates that a process has an artifact as input, or as output.</p>
@@ -386,7 +408,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul>
   <li>The input artifact is an L2 definition of an indicator (in a spreadsheet)</li>
   <li>The main process is to create an L3 Measure artifact</li>
-  <li>To define the Measure, there’s a subprocess where the L3 author adds population and stratifiers, by consulting the cqf-measures-guidance.</li>
+  <li>To define the Measure, there's a subprocess where the L3 author adds population and stratifiers, by consulting the cqf-measures-guidance.</li>
   <li>The next step (as part of the Create Measure process) is then to create CQL definitions</li>
   <li>Following that, the L3 author encodes CQL into libraries.</li>
   <li>The output of this is the L3 library that is referenced by the Measure resource</li>
@@ -426,7 +448,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://smart.who.int">WHO</a>.  Package smart.who.int.ig-starter-kit#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Jun 20, 2024 09:51+0000">2024-06-20</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://smart.who.int">WHO</a>.  Package smart.who.int.ig-starter-kit#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Sat, Nov 30, 2024 06:43+0000">2024-11-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -444,7 +466,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -455,7 +477,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>
