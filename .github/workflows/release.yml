@@ -48,7 +48,7 @@ jobs:
       - name: Create package cache folder
         run: |
           docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest /bin/sh -c "
-            mkdir -p ./fhir-package-cache && chown 1001:127 ./fhir-package-cache
+            mkdir -p ./fhir-package-cache && chmod 777 ./fhir-package-cache
           "
 
       - name: Ensure write permissions for webroot and source directories
