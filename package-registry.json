@@ -113,6 +113,25 @@
         "date" : "2024-11-30",
         "path" : "http://smart.who.int/ig-starter-kit/v2.0.0"
       }
+    },
+    {
+      "path" : "ddcc/package-list.json",
+      "package-id" : "who.ddcc",
+      "title" : "WHO Digital Documentation of COVID-19 Certificates (DDCC)",
+      "canonical" : "http://smart.who.int/ddcc",
+      "category" : "base",
+      "ci-build" : "http://worldhealthorganization.github.io/WorldHealthOrganization/ddcc",
+      "version-count" : 2,
+      "latest" : {
+        "version" : "1.0.1",
+        "date" : "2024-12-18",
+        "path" : "http://smart.who.int/ddcc/1.0.1"
+      },
+      "milestone" : {
+        "version" : "1.0.1",
+        "date" : "2024-12-18",
+        "path" : "http://smart.who.int/ddcc/1.0.1"
+      }
     }
   ]
 }
