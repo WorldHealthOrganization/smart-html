@@ -2,16 +2,19 @@
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="smart.who.int.trust"/>
+  <meta>
+    <profile value="http://smart.who.int/base/StructureDefinition/SGImplementationGuide"/>
+  </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide smart.who.int.trust</b></p><a name="smart.who.int.trust"> </a><a name="hcsmart.who.int.trust"> </a><a name="smart.who.int.trust-en-US"> </a><h2>Trust</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/trust/ImplementationGuide/smart.who.int.trust</pre><div><p>SMART Trust Implementation Guide</p>
 </div></div>
   </text>
   <url value="http://smart.who.int/trust/ImplementationGuide/smart.who.int.trust"/>
-  <version value="1.1.4"/>
+  <version value="1.1.6"/>
   <name value="Trust"/>
   <title value="WHO SMART Trust"/>
-  <status value="active"/>
-  <date value="2024-10-28"/>
+  <status value="draft"/>
+  <date value="2024-12-19T12:46:28+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -36,7 +39,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="6.0.2"/>
+    <version value="6.1.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -54,7 +57,7 @@
   <dependsOn id="who_ddcc">
     <uri value="http://smart.who.int/ddcc/ImplementationGuide/who.ddcc"/>
     <packageId value="who.ddcc"/>
-    <version value="1.0.0"/>
+    <version value="1.0.1"/>
   </dependsOn>
   <dependsOn id="smart_who_int_icvp">
     <uri value="http://smart.who.int/icvp/ImplementationGuide/smart.who.int.icvp"/>
@@ -263,7 +266,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools#0.2.0"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#0.3.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">

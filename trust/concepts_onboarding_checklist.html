@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Concepts Onboarding Checklist - WHO SMART Trust v1.1.4</title>
+    <title>Concepts Onboarding Checklist - WHO SMART Trust v1.1.6</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -193,8 +193,6 @@
           <!-- Placeholder for child template header declarations -->
 <div id="project-nav">
     <a no-external="true" id="who-logo" href="index.html">
-      
-<img src="assets/images/h-logo-blue.svg" alt="Welcome on standards website" style="margin:7px" height="50"/>
         
     </a>
 </div>
@@ -204,10 +202,10 @@
 </div> 
 
 
-        <div id="ig-status" class="ig-status-active">
+        <div id="ig-status" class="ig-status-draft">
           <p><span style="font-size:12pt;font-weight:bold">WHO SMART Trust</span>
             <br/>
-            <span style="display:inline-block;">1.1.4 - CI Build
+            <span style="display:inline-block;">1.1.6 - CI Build
 
 
 
@@ -246,7 +244,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">This page is part of the Trust (v1.1.4: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/trust/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">This page is part of the Trust (v1.1.5: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/trust/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Concepts Onboarding Checklist</h2>
   
 
@@ -280,8 +278,100 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>This repository contains the template for building <a href="https://github.com/WorldHealthOrganization/smart-trust/blob/main/input/pagecontent/concepts_onboarding.md">onboarding</a> information for the Smart Trust Network Attendees. This includes CSCAs, Auth information, signing information and other relevant files for onboarding a participant. Videos guides to the steps described here are available on this <a href="video_tutorial.html">page</a>.</p>
 
 <p><strong>Onboarding Process</strong></p>
-<p><a name="l507">​</a><img src="Onboarding%20Process.drawio.png" alt="Onboarding Process" style="width:60%" class="figure-img img-responsive img-rounded center-block"/></p>
+<p><a name="l505">​</a><img src="Onboarding%20Process.drawio.png" alt="Onboarding Process" style="width:60%" class="figure-img img-responsive img-rounded center-block"/></p>
 <div style="clear:both;"></div>
+
+<p><strong>Prerequisites for Onboarding</strong></p>
+
+<p>Before beginning the onboarding process, please ensure the following tools, permissions, and environment configurations are in place. This checklist is crucial for a seamless setup experience.</p>
+
+<div style="width: 100%; height: 500px; overflow: scroll;">
+  <table border="1" class="dataframe table table-striped table-bordered">
+    <thead style="position: sticky; top: 0; z-index: 100; background-color: white;">
+      <tr style="text-align: left;">
+        <th>Tools/Requirement</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody style="text-align: left; vertical-align: top;">
+      <tr>
+        <td><strong>GitHub Account</strong></td>
+        <td>
+          - Ensure you have an active GitHub account with access to the relevant repositories.<br/>
+          - <strong>Permissions</strong>: Confirm the necessary repository permissions (read/write access if required for pushing commits).
+        </td>
+      </tr>
+      <tr>
+        <td><strong>OpenSSL</strong></td>
+        <td>
+          - Required for generating and managing digital certificates.<br/>
+          - <strong>Minimum Version</strong>: 1.1.1 or higher.<br/>
+          - <strong>Verify</strong>: <code>openssl version</code>.<br/>
+          - <strong>Path Configuration</strong>: Ensure OpenSSL is correctly added to the system path.<br/>
+          - <a href="https://www.openssl.org/source/">Download OpenSSL</a>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>cURL</strong></td>
+        <td>
+          - Necessary for command-line data transfers, especially useful for API requests.<br/>
+          - <strong>Minimum Version</strong>: 7.68.0 or higher.<br/>
+          - <strong>Verify</strong>: <code>curl --version</code>.<br/>
+          - <a href="https://curl.se/download.html">Download cURL</a>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Git</strong></td>
+        <td>
+          - Essential for version control and interacting with GitHub repositories.<br/>
+          - <strong>Minimum Version</strong>: 2.28.0 or higher (recommended for improved configuration capabilities).<br/>
+          - <strong>Verify</strong>: <code>git --version</code>.<br/>
+          - <a href="https://git-scm.com/downloads">Download Git</a>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Text Editor or IDE (Optional)</strong></td>
+        <td>
+          - Use a reliable text editor or IDE such as <strong>Visual Studio Code</strong>, <strong>Sublime Text</strong>, or <strong>Notepad++</strong> for editing files.<br/>
+          - <strong>Extensions</strong>: If using VS Code, consider adding extensions for Markdown and GitHub integration.<br/>
+          - <a href="https://code.visualstudio.com/">Download Visual Studio Code</a>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Network and Firewall Permissions</strong></td>
+        <td>
+          - <strong>Network Access</strong>: Ensure network settings allow access to GitHub and other required external resources (e.g., API endpoints).<br/>
+          - <strong>Firewall Permissions</strong>: Verify firewall permissions to avoid connectivity issues.
+        </td>
+      </tr>
+      <tr>
+        <td><strong>CLI Tools and Path Configuration</strong></td>
+        <td>
+          - Confirm that all tools (e.g., <code>openssl</code>, <code>curl</code>, <code>git</code>) are available in the <strong>system PATH</strong> for easy command-line access.<br/>
+          - <strong>OS Compatibility</strong>: These instructions are applicable for Linux, macOS, and Windows.
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Environment Configuration</strong></td>
+        <td>
+          - <strong>Environment Variables</strong>: Set required environment variables (e.g., API keys, tokens, or paths) as specified.
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Additional Resources and Documentation</strong></td>
+        <td>
+          - Familiarize yourself with supplementary documentation, including API references, security guidelines, and data handling policies needed for the onboarding process.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<blockquote>
+  <p><strong>Save For Later:</strong> Be sure to securely save items like <strong>GPG Keys, Secrets, GitHub usernames, GitHub Repository URL, GitHub PAT (Personal Access Token)</strong>, and <strong>other configurations</strong> as they will be needed in upcoming steps.</p>
+</blockquote>
+
+<p><strong>Steps to Be Followed by Participant Country:</strong></p>
 
 <h3 id="git-repository">Git Repository</h3>
 
@@ -297,6 +387,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </ul>
 </blockquote>
 
+<blockquote>
+  <p><strong>Save For Later:</strong> Be sure to securely save items like <strong>GitHub usernames</strong>, and <strong>Repository Name, URL</strong> as they will be needed in upcoming steps.</p>
+</blockquote>
+
 <p><strong>Create PAT (Personal Access Token) for Github account if not created already</strong></p>
 <ul>
   <li>Go to Github profile -&gt; Settings</li>
@@ -305,6 +399,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Use Authentication code</li>
   <li>Add Note, Expiration, 'Repo' as a scope and click ‘Generate Token’</li>
 </ul>
+
+<blockquote>
+  <p><strong>Save For Later:</strong> Be sure to securely save the <strong>GitHub PAT (Personal Access Token)</strong>, as it will be needed in upcoming steps.</p>
+</blockquote>
 
 <h3 id="local-repository">Local Repository</h3>
 
@@ -396,9 +494,12 @@ Please check <a href="https://github.com/WorldHealthOrganization/smart-trust/rel
 
     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  Shell
 
-  gpg --armor --export 3AA5C34371567BD2
+  gpg --armor --export &lt;&lt; replace with your actual GPG key ID &gt;&gt;
   # Prints the GPG key ID, in ASCII armor format
 </code></pre></div>    </div>
+    <blockquote>
+      <p><strong>Save For Later:</strong> Be sure to securely save the <strong>GPG Key</strong>, as it will be needed in upcoming steps.</p>
+    </blockquote>
   </li>
   <li>Copy your GPG key, beginning with —–BEGIN PGP PUBLIC KEY BLOCK—– and ending with —–END PGP PUBLIC KEY BLOCK—–.</li>
   <li>Add the GPG key to your GitHub account.
@@ -418,71 +519,96 @@ Please check <a href="https://github.com/WorldHealthOrganization/smart-trust/rel
 <h4 id="certificate-preparation-for-dev-and-uat">Certificate Preparation for DEV and UAT</h4>
 
 <blockquote>
-  <p>Disclaimer: The script generates self-signed certificates not intended to be used on production environments.
-  for DEV and UAT environments you may use the conf files and the  <a href="https://github.com/WorldHealthOrganization/tng-participant-template/blob/main/scripts/certgen/gen_all_certs.sh">certgen bash script</a>  as a guideline according to the  <a href="https://github.com/WorldHealthOrganization/tng-participant-template/blob/main/scripts/certgen/README.md">Certificate Preparation</a></p>
+  <p><strong>Disclaimer</strong>: This script is designed to create self-signed certificates solely for non-production environments, such as DEV and UAT, not intended to be used on production environments. To use it, <strong>choose the appropriate script for your operating system</strong>:</p>
+
+  <p><strong>Unix/Linux:</strong>	Use the <a href="https://github.com/WorldHealthOrganization/tng-participant-template/blob/main/scripts/certgen/gen_all_certs.sh">gen_all_certs.sh</a> bash script on <a href="#if-your-operating-systems-is-unixlinuxmac">Linux/Unix/Mac</a> operating system.</p>
+
+  <p><strong>Windows:</strong>		Use the <a href="https://github.com/WorldHealthOrganization/tng-participant-template/blob/main/scripts/certgen/gen_all_certs.ps1">gen_all_certs.ps1</a> PowerShell script on <a href="#if-your-operating-systems-is-windows">Windows</a> operating system.</p>
+
 </blockquote>
 
-<ul>
-  <li>
-    <p>You must adapt the following default certificate parameter of <a href="https://github.com/WorldHealthOrganization/tng-participant-template/blob/main/scripts/certgen/DN_template.cnf">DN_template.cnf</a> file which will used  in gen_all_certs.sh to your needs:</p>
-  </li>
-  <li>
-    <p>Configuration Template for Certificate Generation, Modify for your own needs in DN_template.cnf file as it will be 
-used as argument while running the script "gen_all_certs.sh".</p>
+<p>These scripts, along with the provided configuration files, serve as guidelines for <a href="https://github.com/WorldHealthOrganization/tng-participant-template/blob/main/scripts/certgen/README.md">certificate preparation</a> .</p>
 
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 	export OSSL_COUNTRY_NAME="XC"
-  export OSSL_STATE_NAME="Test State"
-  export OSSL_LOCALITY_NAME="TEST"
-  export OSSL_ORGANIZATION_NAME="WHO"
-  export OSSL_ORGANIZATIONAL_UNIT_NAME="R&amp;D"
-</code></pre></div>    </div>
-  </li>
-</ul>
+<h4 id="if-your-operating-systems-is-unixlinuxmac">If your Operating Systems is Unix/Linux/Mac</h4>
+<blockquote>
+
+  <ul>
+    <li>To customize certificate parameters, update the <a href="https://github.com/WorldHealthOrganization/tng-participant-template/blob/main/scripts/certgen/DN_template.cnf">DN_template.cnf</a> file, which will be used by the <a href="https://github.com/WorldHealthOrganization/tng-participant-template/blob/main/scripts/certgen/gen_all_certs.sh">gen_all_certs.sh</a> script.</li>
+    <li>Modify the following default certificate parameters as needed.</li>
+  </ul>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export OSSL_COUNTRY_NAME="XC"
+export OSSL_STATE_NAME="Test State"
+export OSSL_LOCALITY_NAME="TEST"
+export OSSL_ORGANIZATION_NAME="WHO"
+export OSSL_ORGANIZATIONAL_UNIT_NAME="R&amp;D"
+export OSSL_COMMON_NAME="NationXC_TNP
+</code></pre></div></div>
+<blockquote>
+  <p>Note: OSSL_COUNTRY_NAME should be ISO 2 letter name of the country mapped to the name used in repository.</p>
+</blockquote>
+
+<h4 id="if-your-operating-systems-is-windows">If your Operating Systems is Windows</h4>
+<blockquote>
+
+  <p>For Windows, use the <a href="https://github.com/WorldHealthOrganization/tng-participant-template/blob/main/scripts/certgen/gen_all_certs.ps1">gen_all_certs.ps1</a> PowerShell script. You can modify the environment variables directly within the script or set them in your current PowerShell session:</p>
+</blockquote>
+
+<p>1.Open PowerShell on your Windows machine.</p>
+
+<p>2.Set the required environment variables.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$env:OSSL_COUNTRY_NAME="XC"
+$env:OSSL_STATE_NAME="Test State"
+$env:OSSL_LOCALITY_NAME="TEST"
+$env:OSSL_ORGANIZATION_NAME="WHO"
+$env:OSSL_ORGANIZATIONAL_UNIT_NAME="RND"
+$env:OSSL_COMMON_NAME="NationXC_TNP"
+</code></pre></div></div>
 
 <blockquote>
   <p>Note: OSSL_COUNTRY_NAME should be ISO 2 letter name of the country mapped to the name used in repository.</p>
 </blockquote>
 
-<ul>
-  <li>Then execute the script. It will generate all certificates and keys in a subfolder named by current datetime.</li>
-  <li>
-    <p>While execution of the "gen_all_certs.sh" script, Please provide script argument "DN_template.cnf" file<br/>
-which consists of country related information to generate all required certificates (TLS,SCA,UP)</p>
+<p>Please note that you need to have  <a href="https://slproweb.com/products/Win32OpenSSL.html">OpenSSL installed</a>  (e.g. Win64 OpenSSL v3.3.0 Light) and added to your PATH environment variable. Also you may need allow the execution by setting an execution policy.</p>
 
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  For Mac/Unix
-  cd scripts/certgen
-  ./gen_all_certs.sh DN_template.cnf	   
- 	zsh ./gen_all_certs.sh DN_template.cnf      ## If you are using Ubuntu OS
-        
-  For Windows:
-  cd scripts/certgen
-  ./gen_all_certs.ps1
-</code></pre></div>    </div>
-  </li>
-</ul>
-
-<p><strong>Execution On Windows</strong></p>
-
-<p>Windows platform you can use  <a href="https://github.com/WorldHealthOrganization/tng-participant-template/blob/main/scripts/certgen/gen_all_certs.ps1">gen_all_certs.ps1</a>  instead. Please note that you need to have  <a href="https://slproweb.com/products/Win32OpenSSL.html">OpenSSL installed</a>  (e.g. Win64 OpenSSL v3.3.0 Light) and added to your PATH environment variable. Also you may need allow the execution by setting an execution policy.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```
-Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
-```	
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
 </code></pre></div></div>
 
-<p><strong>Prepare Folders</strong></p>
+<h4 id="how-to-run-script-">How to Run Script :</h4>
+
+<ul>
+  <li>Once you execute the script. It will generate all certificates and keys in a subfolder named by current datetime.</li>
+  <li><strong>Notes</strong>: While execution of "gen_all_certs.sh" script on <strong>Unix/Linux/Mac Operating System,</strong> Please provide script argument "DN_template.cnf" file which consists of country related information to generate all required certificates (TLS,SCA,UP)</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>**For Mac/Linux/Unix**
+cd scripts/certgen
+./gen_all_certs.sh DN_template.cnf	    ## Provide DN_template.cnf file as a script argument.
+zsh ./gen_all_certs.sh DN_template.cnf      ## Use this if you are using Zsh on your Ubuntu system.
+        
+**For Windows:**
+cd scripts/certgen
+./gen_all_certs.ps1
+</code></pre></div></div>
+
+<p>This setup generates all required certificates (TLS, SCA, UP) and keys in a timestamped subfolder, based on the configuration specified in DN_template.cnf for Unix/Linux and the environment variables set in the current PowerShell session for Windows.</p>
+
+<h4 id="prepare-folders">Prepare Folders</h4>
 
 <blockquote>
-  <p>Note: keep your private keys safe and secure. Do not share them with anyone.
-Copy the generated certificates to the respective folders and change the file names to match the naming convention. For the case of self-signed TLS certificates, the CA.pem is just a copy of the TLS.pem (check to have keyCertSign in the keyUsage). The CA.pem should exist, since it is used to verify the TLS client certificate when connecting to the TNG application.
-Files to be copied in respective folders are as follows:</p>
-  <ul>
-    <li>SCA.pem -&gt; onboarding/DCC/SCA</li>
-    <li>UP.pem -&gt; onboarding/DCC/UP</li>
-    <li>CA.pem -&gt; onboarding/DCC/TLS</li>
-    <li>TLS.pem -&gt; onboarding/DCC/TLS</li>
-  </ul>
+  <p>Note: keep your private keys safe and secure. Do not share them with anyone.</p>
 </blockquote>
+
+<p>Copy the generated certificates to the respective folders and change the file names to match the naming convention. For the case of self-signed TLS certificates, the CA.pem is just a copy of the TLS.pem (check to have keyCertSign in the keyUsage). The CA.pem should exist, since it is used to verify the TLS client certificate when connecting to the TNG application.
+Files to be copied in respective folders are as follows:</p>
+<ul>
+  <li>SCA.pem -&gt; onboarding/DCC/SCA</li>
+  <li>UP.pem -&gt; onboarding/DCC/UP</li>
+  <li>CA.pem -&gt; onboarding/DCC/TLS</li>
+  <li>TLS.pem -&gt; onboarding/DCC/TLS</li>
+</ul>
 
 <blockquote>
   <p>Note: On DEV and UAT environment, if the files are generated using a script, delete the generated folder before committing the files.</p>
@@ -693,26 +819,23 @@ Please be aware that RSA is NOT RECOMMENDED for the DSC and if you want to use R
 
     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  gpg --list-key
 </code></pre></div>    </div>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  OutPut
+	  
+  gpg --list-key
+  /home/test/.gnupg/pubring.kbx
+  -----------------------------
+	
+  pub   rsa4096 2024-09-19 [SC]
+  CD822874C7862BA4BB6B950E40CC62009D9A00B0
+  uid           [ultimate] Test User1 (This GPG Key is for XXC test Country) &lt;youruser@yourdomain.com&gt;
+  sub   rsa4096 2024-09-19 [E]
+</code></pre></div>    </div>
+
+    <p><strong>Note</strong>: The PUB ID in above output is CD822874C7862BA4BB6B950E40CC62009D9A00B0 , In your case you need to 
+      replace with «&nbsp;replace with your Pub ID&nbsp;» with your actual GPG public key ID to configure Git to use a GPG 
+      key for signing commits or tags in next command.</p>
   </li>
-</ul>
-
- 	```
-  	Output
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gpg --list-key
-/home/test/.gnupg/pubring.kbx
------------------------------
-
-pub   rsa4096 2024-09-19 [SC]
-      CD822874C7862BA4BB6B950E40CC62009D9A00B0
-uid           [ultimate] Test User1 (This GPG Key is for XXC test Country) &lt;youruser@yourdomain.com&gt;
-sub   rsa4096 2024-09-19 [E]
-  	```
-**Note**: The PUB ID in above output is CD822874C7862BA4BB6B950E40CC62009D9A00B0 , In your case you need to 
-    replace with &lt;&lt; replace with your Pub ID &gt;&gt; with your actual GPG public key ID to configure Git to use a GPG 
-    key for signing commits or tags in next command.
-</code></pre></div></div>
-
-<ul>
   <li>
     <p>Configure the signing key to be used globally for Git commits and tag</p>
 
@@ -735,6 +858,10 @@ sub   rsa4096 2024-09-19 [E]
   </li>
   <li>Create a signed Git commit with a commit message,
     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  git commit -sm "added all certificates files"
+</code></pre></div>    </div>
+  </li>
+  <li>Push changes to the main branch.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> git push origin main
 </code></pre></div>    </div>
   </li>
   <li>Create a signed Git tag with a message
@@ -763,7 +890,7 @@ Signing tags and commits is great, but if you decide to use this in your normal 
   <li>Send an onboarding/participation request to gdhcn-support@who.int which contains:
     <ul>
       <li>URL of the private repository created as a prerequisite</li>
-      <li>The GPG key exported in Step <a href="#generate-gpg-key">1.8.6.4</a></li>
+      <li>The GPG key ( Beginning with —–BEGIN PGP PUBLIC KEY BLOCK—– and ending with —–END PGP PUBLIC KEY BLOCK—–) exported in Step <a href="#generate-gpg-key">1.8.6.4</a></li>
     </ul>
   </li>
 </ul>
@@ -783,7 +910,7 @@ Signing tags and commits is great, but if you decide to use this in your normal 
   <li>After onboarding in the DEV/UAT/PROD Environment, check the connectivity with the Trust Network Gateway using its <a href="https://smart.who.int/trust/openapi/">API</a>. This can be achieved with following command:</li>
 </ul>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -v https://tng-dev.who.int/trustList --cert TLS.pem --key TLS_key.pem
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -v https://tng-dev.who.int/trustList --cert TLS.pem --key TLS.key
 </code></pre></div></div>
 <p>You should see a output like:</p>
 
@@ -873,7 +1000,7 @@ An optional third argument can be provided to specify the purpose of the DSC (e.
   <li>Upload the CMS Package to the Gateway</li>
 </ul>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -v -X POST -H "Content-Type: application/cms" --cert TLS.pem --key TLS_key.pem --data @cms.b64 https://tng-dev.who.int/signerCertificate
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -v -X POST -H "Content-Type: application/cms" --cert TLS.pem --key TLS.key --data @cms.b64 https://tng-dev.who.int/signerCertificate
 </code></pre></div></div>
 
 <ul>
@@ -886,7 +1013,7 @@ An optional third argument can be provided to specify the purpose of the DSC (e.
 <blockquote>
   <p>Note: Some versions of curl don’t attach the client certificates automatically. This can be checked via curl –version Ensure that the used version is linked to OpenSSL. Especially under Windows (https://curl.se/windows/):</p>
 
-  <p><strong>Curl verson on Unix/Mac</strong>: We strongly recommend updating curl and nss to newer latest versions for full compatibility with modern cryptographic standards.The outdated version of curl or nss and may not support modern SSL/TLS protocols or elliptic curve cryptography (ECC) cipher suites properly.</p>
+  <p><strong>Curl version on Unix/Mac</strong>: We strongly recommend updating curl and nss to newer latest versions for full compatibility with modern cryptographic standards.The outdated version of curl or nss and may not support modern SSL/TLS protocols or elliptic curve cryptography (ECC) cipher suites properly.</p>
 </blockquote>
 
 <p><strong>Working Setup</strong></p>
@@ -1202,6 +1329,7 @@ cp CAprivkey.key ${subdir}/CAprivkey.key</p>
 
 
 
+
 </div>
         </div>    <!-- /inner-wrapper -->
       </div>    <!-- /row -->
@@ -1218,9 +1346,9 @@ cp CAprivkey.key ${subdir}/CAprivkey.key</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.trust#1.1.4 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 4, 2024 12:37+0000">2024-11-04</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.trust#1.1.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 19, 2024 12:46+0000">2024-12-19</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"><a name="l2014">​</a>
+          <span style="color: var(--footer-highlight-text-color)"><a name="l2368">​</a>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                   | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/WorldHealthOrganization/smart-ig-empty/projects/1" target="_blank">Issues</a>
