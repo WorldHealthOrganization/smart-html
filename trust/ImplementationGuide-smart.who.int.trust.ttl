@@ -8,22 +8,16 @@
 <http://smart.who.int/trust/ImplementationGuide/smart.who.int.trust> a fhir:ImplementationGuide ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "smart.who.int.trust"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "http://smart.who.int/base/StructureDefinition/SGImplementationGuide"^^xsd:anyURI ;
-       fhir:link <http://smart.who.int/base/StructureDefinition/SGImplementationGuide>
-     ] )
-  ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide smart.who.int.trust</b></p><a name=\"smart.who.int.trust\"> </a><a name=\"hcsmart.who.int.trust\"> </a><a name=\"smart.who.int.trust-en-US\"> </a><h2>Trust</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/trust/ImplementationGuide/smart.who.int.trust</pre><div><p>SMART Trust Implementation Guide</p>\n</div></div>"
   ] ; # 
   fhir:url [ fhir:v "http://smart.who.int/trust/ImplementationGuide/smart.who.int.trust"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.1.6"] ; # 
+  fhir:version [ fhir:v "1.1.4"] ; # 
   fhir:name [ fhir:v "Trust"] ; # 
   fhir:title [ fhir:v "WHO SMART Trust"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-12-19T12:46:28+00:00"^^xsd:dateTime] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-10-28"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "WHO"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "WHO" ] ;
@@ -53,7 +47,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "6.1.0" ]
+     fhir:version [ fhir:v "6.0.2" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -81,7 +75,7 @@
        fhir:link <http://smart.who.int/ddcc/ImplementationGuide/who.ddcc>
      ] ;
      fhir:packageId [ fhir:v "who.ddcc" ] ;
-     fhir:version [ fhir:v "1.0.1" ]
+     fhir:version [ fhir:v "1.0.0" ]
   ] [
      fhir:id [ fhir:v "smart_who_int_icvp" ] ;
      fhir:uri [
@@ -319,7 +313,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "hl7.fhir.uv.tools.r4#0.3.0" ]
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.2.0" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
