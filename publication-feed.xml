@@ -11,6 +11,17 @@
     <language>en</language>
     <ttl>600</ttl>
     <item>
+      <title>Trust version 1.1.5</title>
+      <description>1.1.5 release</description>
+      <link>http://smart.who.int/trust/v1.1.5/index.html</link>
+      <guid isPermaLink="true">http://smart.who.int/trust/v1.1.5/index.html</guid>
+      <dc:creator>WHO</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Fri, 20 Dec 2024 06:03:42 +0000</pubDate>
+      <fhir:details>Publication run at 20/12/2024 by 3a80e5c294bd using vVersion 1.8.3 (Git# 709dc76d8981). Built 2024-12-18T00:20:53.138Z (53 hours old) source id Unknown (todo) Run #3</fhir:details>
+    </item>
+    <item>
       <title>WHO Digital Documentation of COVID-19 Certificates (DDCC) version 1.0.1</title>
       <description>This is the first release of the WHO DDCC (Digital Documentation of Covid Certificates) - technical update</description>
       <link>http://smart.who.int/ddcc/1.0.1/index.html</link>
