@@ -20,13 +20,13 @@ jobs:
           fetch-depth: 0  # Fetch all history for all branches and tags.
 
       - name: Checkout HL7/fhir-ig-history-template to ./history-template
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: HL7/fhir-ig-history-template
           path: history-template
 
       - name: Checkout WorldHealthOrganization/smart-html to ./webroot
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: WorldHealthOrganization/smart-html
           path: webroot
