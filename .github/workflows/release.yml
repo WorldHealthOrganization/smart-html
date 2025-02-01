@@ -90,6 +90,20 @@ jobs:
           mkdir -p ./release-assets
           mv ./source/output/package.tgz ./release-assets/
 
+
+      - name: Upload updated fhir-ig-list.json as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: fhir-ig-list.json
+          path: ig-registry/fhir-ig-list.json
+
+      - name: Upload updated fhir-ig-list.json as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: package-feeds.json
+          path: ig-registry/package-feeds.json
+
+
 #      - name: Upload package.tgz to release
 #        uses: actions/upload-release-asset@v1
 #        with:
