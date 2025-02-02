@@ -1,16 +1,19 @@
 {
   "resourceType" : "ImplementationGuide",
   "id" : "smart.who.int.trust",
+  "meta" : {
+    "profile" : ["http://smart.who.int/base/StructureDefinition/SGImplementationGuide"]
+  },
   "text" : {
     "status" : "generated",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide smart.who.int.trust</b></p><a name=\"smart.who.int.trust\"> </a><a name=\"hcsmart.who.int.trust\"> </a><a name=\"smart.who.int.trust-en-US\"> </a><h2>Trust</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/trust/ImplementationGuide/smart.who.int.trust</pre><div><p>SMART Trust Implementation Guide</p>\n</div></div>"
   },
   "url" : "http://smart.who.int/trust/ImplementationGuide/smart.who.int.trust",
-  "version" : "1.1.4",
+  "version" : "1.1.5",
   "name" : "Trust",
   "title" : "WHO SMART Trust",
   "status" : "active",
-  "date" : "2024-10-28",
+  "date" : "2024-12-20T06:07:24+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",
@@ -37,7 +40,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.0.2"
+    "version" : "6.1.0"
   },
   {
     "id" : "hl7ext",
@@ -59,7 +62,7 @@
     "id" : "who_ddcc",
     "uri" : "http://smart.who.int/ddcc/ImplementationGuide/who.ddcc",
     "packageId" : "who.ddcc",
-    "version" : "1.0.0"
+    "version" : "1.0.1"
   },
   {
     "id" : "smart_who_int_icvp",
@@ -86,7 +89,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "CI Build"
+        "valueString" : "v1.1.5"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -345,7 +348,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools#0.2.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.3.0"
     },
     {
       "extension" : [{
@@ -365,7 +368,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "CI Build"
+        "valueString" : "v1.1.5"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },

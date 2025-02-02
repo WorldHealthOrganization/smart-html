@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Indicators - SMART Guidelines L3 SOP v1.0.0</title>
+    <title>Indicators - SMART Guidelines Starter Kit v2.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.3.11"}
-    h3,h4,h5,h6{--heading-prefix:"3.3.11"}</style>
+    <style type="text/css">h2{--heading-prefix:"4.3.11"}
+    h3,h4,h5,h6{--heading-prefix:"4.3.11"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
 
       <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
@@ -72,6 +72,9 @@
       <li>
         <a href="index.html">Overview</a>
       </li>
+      <li>
+        <a href="cop.html">SMART Guidelines Community</a>
+      </li>
     </ul>
   </li>
   <li class="dropdown">
@@ -94,7 +97,26 @@
     </ul>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Authoring
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">L2 Authoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="l2_authoring_overview.html">Overview</a>
+      </li>
+      <li>
+        <a href="l2_dak_authoring.html">Authoring a L2 DAK</a>
+      </li>
+      <li>
+        <a href="l2_templates.html">L2 DAK Templates</a>
+      </li>
+      <li>
+        <a href="l2_faq.html">L2 DAK FAQ</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">L3 Authoring
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
@@ -265,9 +287,9 @@
 
 
         <div id="ig-status" class="ig-status-active">
-          <p><span style="font-size:12pt;font-weight:bold">SMART Guidelines L3 SOP</span>
+          <p><span style="font-size:12pt;font-weight:bold">SMART Guidelines Starter Kit</span>
             <br/>
-            <span style="display:inline-block;">1.0.0 - release
+            <span style="display:inline-block;">2.0.0 - release
 
 
 
@@ -286,7 +308,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='authoring_overview.html'><b>Authoring</b></a></li><li><a href='authoring_conventions.html'><b>Authoring Conventions</b></a></li><li><b>Indicators</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='authoring_overview.html'><b>L3 Authoring Overview</b></a></li><li><a href='authoring_conventions.html'><b>Authoring Conventions</b></a></li><li><b>Indicators</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -306,7 +328,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART IG STARTER KIT (v1.0.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R5">FHIR (HL7® FHIR® Standard) v5.0.0</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/ig-starter-kit/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART IG STARTER KIT (v2.0.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R5">FHIR (HL7® FHIR® Standard) v5.0.0</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/ig-starter-kit/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Indicators</h2>
   
 
@@ -381,7 +403,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>h. Description: The long description of the indicator (i.e. the indicator description)</li>
     </ul>
   </li>
-  <li>Create an “indicator” logic library specific to the measure, e.g. IMMZIND08Logic
+  <li>Create an "indicator" logic library specific to the measure, e.g. IMMZIND08Logic
     <ul>
       <li>a. The logic library SHALL contain expressions for each population criteria appropriate to the scoring type of the measure</li>
       <li>b. The logic library SHALL make use of an IndicatorElements library to reference data elements from the guideline</li>
@@ -417,16 +439,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 ```</li>
   <li>group
     <ul>
-      <li>id = “IMMZIND08”</li>
+      <li>id = "IMMZIND08"</li>
       <li>population[0]
         <ul>
-          <li>id = “measure-population”</li>
+          <li>id = "measure-population"</li>
           <li>code = $measure-population#measure-population</li>
-          <li>description = “Number of administrations of vaccinations containing a Measles component during reporting period”</li>
+          <li>description = "Number of administrations of vaccinations containing a Measles component during reporting period"</li>
           <li>criteria
             <ul>
               <li>language = #text/cql</li>
-              <li>expression = “measure-population”
+              <li>expression = "measure-population"
 ```</li>
             </ul>
           </li>
@@ -440,11 +462,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 ```</li>
       <li>stratifier[+]
         <ul>
-          <li>id = “age-group-stratifier”</li>
+          <li>id = "age-group-stratifier"</li>
           <li>criteria
             <ul>
               <li>language = #text/cql</li>
-              <li>expression = “Age Group Stratifier”
+              <li>expression = "Age Group Stratifier"
 ```</li>
             </ul>
           </li>
@@ -474,7 +496,7 @@ Add the libraries that contain the functions</li>
 <h3 id="output-criteria--definition-of-done"><strong>Output Criteria / Definition of Done</strong></h3>
 
 <ul>
-  <li>All the input variables shall be in the measure’s <code class="language-plaintext highlighter-rouge">terms</code>.</li>
+  <li>All the input variables shall be in the measure's <code class="language-plaintext highlighter-rouge">terms</code>.</li>
   <li>
     <p>All terms shall part of the Data Dictionary</p>
   </li>
@@ -554,7 +576,7 @@ Add the libraries that contain the functions</li>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://smart.who.int">WHO</a>.  Package smart.who.int.ig-starter-kit#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Jun 20, 2024 09:51+0000">2024-06-20</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://smart.who.int">WHO</a>.  Package smart.who.int.ig-starter-kit#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Sat, Nov 30, 2024 06:43+0000">2024-11-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -572,7 +594,7 @@ Add the libraries that contain the functions</li>
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -583,7 +605,6 @@ Add the libraries that contain the functions</li>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>

@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>IG Publication - SMART Guidelines L3 SOP v1.0.0</title>
+    <title>IG Publication - SMART Guidelines Starter Kit v2.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -72,6 +72,9 @@
       <li>
         <a href="index.html">Overview</a>
       </li>
+      <li>
+        <a href="cop.html">SMART Guidelines Community</a>
+      </li>
     </ul>
   </li>
   <li class="dropdown">
@@ -94,7 +97,26 @@
     </ul>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Authoring
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">L2 Authoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="l2_authoring_overview.html">Overview</a>
+      </li>
+      <li>
+        <a href="l2_dak_authoring.html">Authoring a L2 DAK</a>
+      </li>
+      <li>
+        <a href="l2_templates.html">L2 DAK Templates</a>
+      </li>
+      <li>
+        <a href="l2_faq.html">L2 DAK FAQ</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">L3 Authoring
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
@@ -265,9 +287,9 @@
 
 
         <div id="ig-status" class="ig-status-active">
-          <p><span style="font-size:12pt;font-weight:bold">SMART Guidelines L3 SOP</span>
+          <p><span style="font-size:12pt;font-weight:bold">SMART Guidelines Starter Kit</span>
             <br/>
-            <span style="display:inline-block;">1.0.0 - release
+            <span style="display:inline-block;">2.0.0 - release
 
 
 
@@ -306,7 +328,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART IG STARTER KIT (v1.0.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R5">FHIR (HL7® FHIR® Standard) v5.0.0</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/ig-starter-kit/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART IG STARTER KIT (v2.0.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R5">FHIR (HL7® FHIR® Standard) v5.0.0</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/ig-starter-kit/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>IG Publication</h2>
   
 
@@ -342,7 +364,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="change-log">Change log</h3>
 
-<p>Each SMART guideline IG SHALL have a “changes” page that documents the changes made to each version of the IG. The page should be structured with sections for each publication version, in reverse chronological order for example:</p>
+<p>Each SMART guideline IG SHALL have a "changes" page that documents the changes made to each version of the IG. The page should be structured with sections for each publication version, in reverse chronological order for example:</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>### Second Release (v2.0.0)
 
@@ -416,20 +438,27 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Once the review process is complete and any resulting issues addressed and applied to the implementation guide, the release publication should be prepared. The release publication takes the current status of the specification, and saves it as a named release that is available for referencing.
 SMART Guidelines, when released, are published in <code class="language-plaintext highlighter-rouge">https://smart.who.int/&lt;ig_code&gt;</code>, where <code class="language-plaintext highlighter-rouge">&lt;ig_code&gt;</code> is the implementation guide code.</p>
 
+<div class="info-box must">
+  <span class="info-title">Workflow automation</span>
+    The process for publication is a sensitive process - errors can have a large impact on tooling and downstream specifications. For this reason, some of the steps are automated. Increased automation is expected as the SMART Guidelines and this guidance evolve.
+    Every WHO-published SMART Guideline is based on the <a href="https://github.com/WorldHealthOrganization/smart-ig-empty">SMART IG Empty template</a>, which includes a workflow for automation of a part of this procedure.
+</div>
+
 <p>The release publication steps are:</p>
+<figure style="width:20em">
+  <?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" preserveAspectRatio="none" version="1.1" viewBox="0 0 372 664" zoomAndPan="magnify"><defs /><g><ellipse cx="186" cy="20" fill="#222222" rx="10" ry="10" style="stroke:#222222;stroke-width:1.0;" /><rect fill="#FFFFFF" height="33.9688" rx="4.5" ry="4.5" style="stroke:#107050;stroke-width:0.5;" width="136" x="118" y="50" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="116" x="128" y="71.1387">1. Review changes</text><rect fill="#FFFFFF" height="33.9688" rx="4.5" ry="4.5" style="stroke:#107050;stroke-width:0.5;" width="253" x="59.5" y="103.9688" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="58" x="69.5" y="125.1074">2. Create</text><text fill="#000000" font-family="monospace" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="119" x="131.5" y="125.1074">release-candidate</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="44" x="258.5" y="125.1074">branch</text><rect fill="#FFFFFF" height="47.9375" rx="4.5" ry="4.5" style="stroke:#107050;stroke-width:0.5;" width="244" x="64" y="157.9375" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="224" x="74" y="179.0762">3. Update the ImplementationGuide</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="98" x="74" y="193.0449">and all artifacts</text><rect fill="#FFFFFF" height="33.9688" rx="4.5" ry="4.5" style="stroke:#107050;stroke-width:0.5;" width="250" x="61" y="225.875" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="58" x="71" y="247.0137">4. Create</text><text fill="#000000" font-family="monospace" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="168" x="133" y="247.0137">publication-request.json</text><rect fill="#FFFFFF" height="33.9688" rx="4.5" ry="4.5" style="stroke:#107050;stroke-width:0.5;" width="220" x="76" y="279.8438" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="200" x="86" y="300.9824">5. Run the normal build process</text><rect fill="#FFFFFF" height="33.9688" rx="4.5" ry="4.5" style="stroke:#107050;stroke-width:0.5;" width="194" x="89" y="333.8125" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="174" x="99" y="354.9512">6. Create a release and tag</text><rect fill="#DDFFDD" height="33.9688" rx="4.5" ry="4.5" style="stroke:#107050;stroke-width:0.5;" width="350" x="11" y="387.7813" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="326" x="21" y="408.9199">7. (Automated) Run the release publication process</text><rect fill="#FFFFFF" height="47.9375" rx="4.5" ry="4.5" style="stroke:#107050;stroke-width:0.5;" width="317" x="27.5" y="441.75" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="297" x="37.5" y="462.8887">8. Request the WHO team to check and update</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="236" x="37.5" y="476.8574">smart.who.int and the FHIR IG registry</text><rect fill="#FFFFFF" height="33.9688" rx="4.5" ry="4.5" style="stroke:#107050;stroke-width:0.5;" width="186" x="93" y="509.6875" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="166" x="103" y="530.8262">9. Merge branch if needed</text><rect fill="#FFFFFF" height="47.9375" rx="4.5" ry="4.5" style="stroke:#107050;stroke-width:0.5;" width="268" x="52" y="563.6563" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="221" x="62" y="584.7949">10. Update IG to upcoming version.</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="248" x="62" y="598.7637">If needed, revert statuses back to draft</text><ellipse cx="186" cy="642.5938" fill="none" rx="11" ry="11" style="stroke:#222222;stroke-width:1.0;" /><ellipse cx="186" cy="642.5938" fill="#222222" rx="6" ry="6" style="stroke:#111111;stroke-width:1.0;" /><line style="stroke:#107050;stroke-width:1.0;" x1="186" x2="186" y1="30" y2="50" /><polygon fill="#107050" points="182,40,186,50,190,40,186,44" style="stroke:#107050;stroke-width:1.0;" /><line style="stroke:#107050;stroke-width:1.0;" x1="186" x2="186" y1="83.9688" y2="103.9688" /><polygon fill="#107050" points="182,93.9688,186,103.9688,190,93.9688,186,97.9688" style="stroke:#107050;stroke-width:1.0;" /><line style="stroke:#107050;stroke-width:1.0;" x1="186" x2="186" y1="137.9375" y2="157.9375" /><polygon fill="#107050" points="182,147.9375,186,157.9375,190,147.9375,186,151.9375" style="stroke:#107050;stroke-width:1.0;" /><line style="stroke:#107050;stroke-width:1.0;" x1="186" x2="186" y1="205.875" y2="225.875" /><polygon fill="#107050" points="182,215.875,186,225.875,190,215.875,186,219.875" style="stroke:#107050;stroke-width:1.0;" /><line style="stroke:#107050;stroke-width:1.0;" x1="186" x2="186" y1="259.8438" y2="279.8438" /><polygon fill="#107050" points="182,269.8438,186,279.8438,190,269.8438,186,273.8438" style="stroke:#107050;stroke-width:1.0;" /><line style="stroke:#107050;stroke-width:1.0;" x1="186" x2="186" y1="313.8125" y2="333.8125" /><polygon fill="#107050" points="182,323.8125,186,333.8125,190,323.8125,186,327.8125" style="stroke:#107050;stroke-width:1.0;" /><line style="stroke:#008000;stroke-width:1.0;" x1="186" x2="186" y1="367.7813" y2="387.7813" /><polygon fill="#008000" points="182,377.7813,186,387.7813,190,377.7813,186,381.7813" style="stroke:#008000;stroke-width:1.0;" /><line style="stroke:#107050;stroke-width:1.0;" x1="186" x2="186" y1="421.75" y2="441.75" /><polygon fill="#107050" points="182,431.75,186,441.75,190,431.75,186,435.75" style="stroke:#107050;stroke-width:1.0;" /><line style="stroke:#107050;stroke-width:1.0;" x1="186" x2="186" y1="489.6875" y2="509.6875" /><polygon fill="#107050" points="182,499.6875,186,509.6875,190,499.6875,186,503.6875" style="stroke:#107050;stroke-width:1.0;" /><line style="stroke:#107050;stroke-width:1.0;" x1="186" x2="186" y1="543.6563" y2="563.6563" /><polygon fill="#107050" points="182,553.6563,186,563.6563,190,553.6563,186,557.6563" style="stroke:#107050;stroke-width:1.0;" /><line style="stroke:#107050;stroke-width:1.0;" x1="186" x2="186" y1="611.5938" y2="631.5938" /><polygon fill="#107050" points="182,621.5938,186,631.5938,190,621.5938,186,625.5938" style="stroke:#107050;stroke-width:1.0;" /></g></svg>
+</figure>
 
 <ol>
-  <li>
-    <p>Review the changes since the last release, and define if these are breaking changes or not, and update the version accordingly in the <code class="language-plaintext highlighter-rouge">sushi-config.yaml</code> or implementation guide <code class="language-plaintext highlighter-rouge">.json</code> file.<br />
-1.1. If this is the first release, review the entire content and version policy to decide if this is a first official release, or a preview, and define the version number accordingly.</p>
+  <li><strong>Review the changes since the last release, and define if these are breaking changes or not, and update the version accordingly</strong> in the <code class="language-plaintext highlighter-rouge">sushi-config.yaml</code> or implementation guide <code class="language-plaintext highlighter-rouge">.json</code> file.
+    <ul>
+      <li>If this is the first release, review the entire content and version policy to decide if this is a first official release, or a preview, and define the version number accordingly.</li>
+    </ul>
   </li>
   <li>
-    <p>Optionally, create a new branch, e.g. <code class="language-plaintext highlighter-rouge">release-candidate</code> for iterating changes.</p>
+    <p><strong>Optionally, create a new branch</strong>, e.g. <code class="language-plaintext highlighter-rouge">release-candidate</code> for iterating final publication changes.</p>
   </li>
-  <li>
-    <p>Create the <code class="language-plaintext highlighter-rouge">publication-request.json</code> file (see <a href="https://confluence.hl7.org/display/FHIR/IG+Publication+Request+Documentation">documentation</a>). This file is critical and it is important to follow the instructions correctly, as incorrect changes may cause irreparable damage to previously published and normative specifications.</p>
-  </li>
-  <li>Update the ImplementationGuide (and all conformance artifacts in the IG):
+  <li><strong>Update the ImplementationGuide (and all conformance artifacts in the IG)</strong>:
     <ul>
       <li>The <code class="language-plaintext highlighter-rouge">status</code> of the IG (and all conformance artifacts in the IG) should be <code class="language-plaintext highlighter-rouge">active</code>;</li>
       <li>The <code class="language-plaintext highlighter-rouge">version</code> of the IG should be in the format <code class="language-plaintext highlighter-rouge">0.1.0</code> and should not include a label;</li>
@@ -437,17 +466,50 @@ SMART Guidelines, when released, are published in <code class="language-plaintex
       <li>The date of the ImplementationGuide should be set to the current date</li>
     </ul>
   </li>
-  <li>
-    <p>Run the normal build process and check if all is ok</p>
+  <li><strong>Create the <code class="language-plaintext highlighter-rouge">publication-request.json</code> file</strong> (see <a href="https://confluence.hl7.org/display/FHIR/IG+Publication+Request+Documentation">documentation</a>). This file is critical and it is important to follow the instructions correctly, as incorrect changes may cause irreparable damage to previously published and normative specifications.
+    <div class="info-box should">
+   <span class="info-title">Content of publication-request.json</span>
+ <p>The publication-request.json must be in a specific form:</p>
+ <ul>
+ <li>The package name,  and version must match that in the ImplementationGuide.</li>
+ <li>The path must match the IG path defined by the canonical URL</li>
+ <li>The ci-build must point at the repository's CI build</li>
+ <li>The parameter "first" must only be true for the first publication of an IG. For all subsequent publications of that IG, "first" must be set to false.</li>
+ </ul>
+ <p>For example, for SMART-base, where &lt;ig_code&gt; is <code>base</code> and for a release 0.1.0, the publication-request should be:</p>  
+ <pre><code class="language-json"> {
+ "package-id" : "smart.who.int.base",
+ "title" : "SMART Base", 
+ "category" : "base",
+ "introduction" : "SMART Base Implementation Guide",
+ "version" : "0.1.0",
+ "desc" : "0.1.0 release",
+ "mode" : "milestone",    
+ "path" : "http://smart.who.int/base/v0.1.0",
+ "ci-build": "http://worldhealthorganization.github.io/smart-base",    
+ "first": true,
+ "status" : "draft",
+ "sequence" : "Releases"
+ } 
+   </code> </pre>
+  </div>
   </li>
   <li>
-    <p>Run the release publication process using the ImplementationGuide publisher in release publication mode (see <a href="https://confluence.hl7.org/pages/viewpage.action?pageId=81027536">HL7 page</a> for some details on the tooling)</p>
+    <p><strong>Run the normal build process</strong> and check if everything is ok</p>
   </li>
   <li>
-    <p>If all is ok and the pages are created correctly, create a release and tag with the latest changes</p>
+    <p>If all is ok and the pages are created correctly, <strong>create a release and tag</strong> with the latest changes. Tags should be in the form vX.Y.Z, where X.Y.Z is the version of the Implementation Guide. This means simply that the tag should prepend <code class="language-plaintext highlighter-rouge">v</code> to the IG version.</p>
+
+    <p><strong>All SMART Guidelines templates contain a <a href="https://github.com/WorldHealthOrganization/smart-ig-empty/blob/main/.github/workflows/release.yml">workflow</a> for automation of the next step:</strong></p>
+  </li>
+  <li>Upon creation of a release and tag, a <a href="https://github.com/WorldHealthOrganization/smart-ig-empty/blob/main/.github/workflows/release.yml">workflow</a> automates the step of running the publication process. If the publication executed successfully (which can be seen in the Actions tab of the repository), the copy of the updated smart.who.int website should be available at <code class="language-plaintext highlighter-rouge">http://WorldHealthOrganization.github.io/&lt;repo_name&gt;/sitepreview</code>. Specifically, if the publication process was successful, the ImplementationGuide will be available at <code class="language-plaintext highlighter-rouge">http://WorldHealthOrganization.github.io/&lt;repo_name&gt;/sitepreview/&lt;ig_code&gt;</code> and <code class="language-plaintext highlighter-rouge">http://WorldHealthOrganization.github.io/&lt;repo_name&gt;/sitepreview/&lt;ig_code&gt;/&lt;tag&gt;</code>.
+    <ul>
+      <li>For example <a href="https://worldhealthorganization.github.io/smart-trust/sitepreview/trust/">https://worldhealthorganization.github.io/smart-trust/sitepreview/trust/</a>.</li>
+      <li>For details about the process, see <a href="https://confluence.hl7.org/pages/viewpage.action?pageId=81027536">HL7 overview page</a> and the <a href="https://confluence.hl7.org/pages/viewpage.action?pageId=104580055">description of the publication process</a></li>
+    </ul>
   </li>
   <li>
-    <p>Make a PR of the built specification (all releases) to the repository holding the content of http://smart.who.int .</p>
+    <p>Request the WHO SMART Guidelines team (smart@who.int) to check and update the <a href="http://smart.who.int">http://smart.who.int</a> website and create of a Pull Request of the feeds and package lists, for the FHIR tooling to recognize the newly published package.</p>
   </li>
   <li>
     <p>If a branch was created in step 2, optionally merge it with any updates that have been done meanwhile.</p>
@@ -455,10 +517,11 @@ SMART Guidelines, when released, are published in <code class="language-plaintex
   <li>In the main branch, update the ImplementationGuide resource for continuing work:
     <ul>
       <li>The <code class="language-plaintext highlighter-rouge">status</code> of the IG should be set back to <code class="language-plaintext highlighter-rouge">draft</code>;</li>
-      <li>The <code class="language-plaintext highlighter-rouge">version</code> should be updated - this way it’s immediately assured that any new changes are for a new version.</li>
+      <li>The <code class="language-plaintext highlighter-rouge">version</code> should be updated - this way it's immediately assured that any new changes are for a new version.</li>
     </ul>
   </li>
 </ol>
+
 
 
 
@@ -478,7 +541,7 @@ SMART Guidelines, when released, are published in <code class="language-plaintex
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://smart.who.int">WHO</a>.  Package smart.who.int.ig-starter-kit#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Jun 20, 2024 09:51+0000">2024-06-20</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://smart.who.int">WHO</a>.  Package smart.who.int.ig-starter-kit#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Sat, Nov 30, 2024 06:43+0000">2024-11-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -496,7 +559,7 @@ SMART Guidelines, when released, are published in <code class="language-plaintex
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -507,7 +570,6 @@ SMART Guidelines, when released, are published in <code class="language-plaintex
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>

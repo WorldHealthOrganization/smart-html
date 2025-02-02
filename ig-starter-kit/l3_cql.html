@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>CQL - SMART Guidelines L3 SOP v1.0.0</title>
+    <title>CQL - SMART Guidelines Starter Kit v2.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.3.13"}
-    h3,h4,h5,h6{--heading-prefix:"3.3.13"}</style>
+    <style type="text/css">h2{--heading-prefix:"4.3.13"}
+    h3,h4,h5,h6{--heading-prefix:"4.3.13"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
 
       <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
@@ -72,6 +72,9 @@
       <li>
         <a href="index.html">Overview</a>
       </li>
+      <li>
+        <a href="cop.html">SMART Guidelines Community</a>
+      </li>
     </ul>
   </li>
   <li class="dropdown">
@@ -94,7 +97,26 @@
     </ul>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Authoring
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">L2 Authoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="l2_authoring_overview.html">Overview</a>
+      </li>
+      <li>
+        <a href="l2_dak_authoring.html">Authoring a L2 DAK</a>
+      </li>
+      <li>
+        <a href="l2_templates.html">L2 DAK Templates</a>
+      </li>
+      <li>
+        <a href="l2_faq.html">L2 DAK FAQ</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">L3 Authoring
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
@@ -265,9 +287,9 @@
 
 
         <div id="ig-status" class="ig-status-active">
-          <p><span style="font-size:12pt;font-weight:bold">SMART Guidelines L3 SOP</span>
+          <p><span style="font-size:12pt;font-weight:bold">SMART Guidelines Starter Kit</span>
             <br/>
-            <span style="display:inline-block;">1.0.0 - release
+            <span style="display:inline-block;">2.0.0 - release
 
 
 
@@ -286,7 +308,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='authoring_overview.html'><b>Authoring</b></a></li><li><a href='authoring_conventions.html'><b>Authoring Conventions</b></a></li><li><b>CQL</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='authoring_overview.html'><b>L3 Authoring Overview</b></a></li><li><a href='authoring_conventions.html'><b>Authoring Conventions</b></a></li><li><b>CQL</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -306,7 +328,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART IG STARTER KIT (v1.0.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R5">FHIR (HL7® FHIR® Standard) v5.0.0</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/ig-starter-kit/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART IG STARTER KIT (v2.0.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R5">FHIR (HL7® FHIR® Standard) v5.0.0</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/ig-starter-kit/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>CQL</h2>
   
 
@@ -612,7 +634,7 @@ parameter Today default Today()
   </thead>
   <tbody>
     <tr>
-      <td>Client’s age is less than 9 months<br />Today’s date - “Date of birth” &lt; 9 ‘month’</td>
+      <td>Client's age is less than 9 months<br />Today's date - "Date of birth" &lt; 9 'month'</td>
       <td><code class="language-plaintext highlighter-rouge">/*</code><br /><code class="language-plaintext highlighter-rouge">@input: Client's age is less than 9 months</code><br /><code class="language-plaintext highlighter-rouge">@pseudocode: Today's date - "Date of birth" &lt; 9 'month'</code><br /><code class="language-plaintext highlighter-rouge">*/</code><br /><code class="language-plaintext highlighter-rouge">define "Client's age is less than 9 months":</code><br /><code class="language-plaintext highlighter-rouge"> //Code goes here</code></td>
     </tr>
   </tbody>
@@ -705,7 +727,7 @@ To enable end-to-end testing and better understanding, The test resources should
 <ul>
   <li><code class="language-plaintext highlighter-rouge">private</code> for any expressions needed to use for whatever else (like the list of Immunizations)</li>
   <li><code class="language-plaintext highlighter-rouge">@dynamicValue:</code> for anything used as a dynamic value in the PlanDefinition.</li>
-  <li>to identify the L2 input, Add a comment tag (<code class="language-plaintext highlighter-rouge">@input:</code>) for the bolded part, and <code class="language-plaintext highlighter-rouge">@pseudocode:</code> for the code.  Also do <code class="language-plaintext highlighter-rouge">@output:</code> for bolded with <code class="language-plaintext highlighter-rouge">@pseudocode:</code> for the rest. Use <code class="language-plaintext highlighter-rouge">@guidance:</code> to include the text to display for the “alert” (CommunicationRequest). Authors should use the same <code class="language-plaintext highlighter-rouge">@output:</code> expression and appended “Guidance” for the guidance expression in cql.</li>
+  <li>to identify the L2 input, Add a comment tag (<code class="language-plaintext highlighter-rouge">@input:</code>) for the bolded part, and <code class="language-plaintext highlighter-rouge">@pseudocode:</code> for the code.  Also do <code class="language-plaintext highlighter-rouge">@output:</code> for bolded with <code class="language-plaintext highlighter-rouge">@pseudocode:</code> for the rest. Use <code class="language-plaintext highlighter-rouge">@guidance:</code> to include the text to display for the "alert" (CommunicationRequest). Authors should use the same <code class="language-plaintext highlighter-rouge">@output:</code> expression and appended "Guidance" for the guidance expression in cql.</li>
 </ul>
 
 <h3 id="criteria">Criteria:</h3>
@@ -786,7 +808,7 @@ For this, the corresponding Libraries must exist.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://smart.who.int">WHO</a>.  Package smart.who.int.ig-starter-kit#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Jun 20, 2024 09:51+0000">2024-06-20</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://smart.who.int">WHO</a>.  Package smart.who.int.ig-starter-kit#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Sat, Nov 30, 2024 06:43+0000">2024-11-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -804,7 +826,7 @@ For this, the corresponding Libraries must exist.</p>
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -815,7 +837,6 @@ For this, the corresponding Libraries must exist.</p>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>
