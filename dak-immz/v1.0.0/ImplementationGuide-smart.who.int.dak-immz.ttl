@@ -23,7 +23,7 @@
   fhir:name [ fhir:v "DakImmz"] ; # 
   fhir:title [ fhir:v "SMART DAK IMMZ"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-02-02T17:48:02+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-01-31T14:16:51+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "WHO"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "WHO" ] ;

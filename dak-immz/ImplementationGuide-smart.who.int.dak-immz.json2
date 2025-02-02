@@ -9,11 +9,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide smart.who.int.dak-immz</b></p><a name=\"smart.who.int.dak-immz\"> </a><a name=\"hcsmart.who.int.dak-immz\"> </a><a name=\"smart.who.int.dak-immz-en-US\"> </a><h2>DakImmz</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/dak-immz/ImplementationGuide/smart.who.int.dak-immz</pre><div><p>SMART DAK for Immunizations</p>\n</div></div>"
   },
   "url" : "http://smart.who.int/dak-immz/ImplementationGuide/smart.who.int.dak-immz",
-  "version" : "0.9.9",
+  "version" : "1.0.0",
   "name" : "DakImmz",
   "title" : "SMART DAK IMMZ",
-  "status" : "draft",
-  "date" : "2024-11-19T08:45:08+00:00",
+  "status" : "active",
+  "date" : "2025-01-31T14:17:49+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",
@@ -34,7 +34,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.1.0"
+    "version" : "6.2.0"
   },
   {
     "id" : "hl7ext",
@@ -71,7 +71,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "ci-build"
+        "valueString" : "release"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -350,7 +350,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "ci-build"
+        "valueString" : "release"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
