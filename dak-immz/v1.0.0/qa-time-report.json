@@ -1,0 +1,57 @@
+{
+  "date" : "Sun, 02 Feb, 2025 17:48:02 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-smart.who.int.dak-immz.json",
+      "size" : 7117,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 41,
+          "length" : 51
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 41,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 41,
+          "length" : 516
+        },
+        {
+          "activity" : "validate",
+          "start" : 41,
+          "length" : 1703
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 63,
+          "length" : 89
+        },
+        {
+          "activity" : "generate2",
+          "start" : 65,
+          "length" : 64
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 76,
+          "length" : 4
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 82,
+          "length" : 3
+        }
+      ]
+    }
+  ]
+}
