@@ -10,11 +10,11 @@
 </div></div>
   </text>
   <url value="http://smart.who.int/dak-immz/ImplementationGuide/smart.who.int.dak-immz"/>
-  <version value="1.0.0"/>
+  <version value="0.9.9"/>
   <name value="DakImmz"/>
   <title value="SMART DAK IMMZ"/>
-  <status value="active"/>
-  <date value="2025-02-02T17:49:00+00:00"/>
+  <status value="draft"/>
+  <date value="2024-11-19T08:45:08+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -33,7 +33,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="6.2.0"/>
+    <version value="6.1.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -62,7 +62,7 @@
         <valueString value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="release"/>
+        <valueString value="ci-build"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -265,7 +265,7 @@
         <valueCode value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="release"/>
+        <valueString value="ci-build"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">

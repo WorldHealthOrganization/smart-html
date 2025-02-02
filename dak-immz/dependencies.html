@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Dependencies - SMART DAK IMMZ v1.0.0</title>
+    <title>Dependencies - SMART DAK IMMZ v0.9.9</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -205,8 +205,6 @@
         <!-- Placeholder for child template header declarations -->
 <div id="project-nav">
     <a id="who-logo" no-external="true" href="index.html">
-      
-<img height="50" style="margin:7px" alt="Welcome on standards website" src="assets/images/h-logo-blue.svg"/>
         
     </a>
 </div>
@@ -216,10 +214,10 @@
 </div> 
 
 
-        <div id="ig-status" class="ig-status-active">
+        <div id="ig-status" class="ig-status-draft">
           <p><span style="font-size:12pt;font-weight:bold">SMART DAK IMMZ</span>
             <br/>
-            <span style="display:inline-block;">1.0.0 - release
+            <span style="display:inline-block;">0.9.9 - ci-build
 
 
             </span>
@@ -254,7 +252,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART DAK IMMZ (v1.0.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/dak-immz/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART DAK IMMZ (v0.9.9: Releases Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/dak-immz/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Dependencies</h2>
   
 
@@ -273,27 +271,42 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div>
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
-<p>The following standards are referenced in this implementation guide:</p>
-
-<p><em>Standardized terminologies and classifications:</em></p>
+<p>The following standards and profiles are referenced in this implementation guide:</p>
 
 <ul>
   <li>
-    <p><a href="https://www.who.int/standards/classifications">WHO Family of International Classifications</a></p>
+    <p>Integrating the Healthcare Enterprise (IHE):</p>
 
     <ul>
-      <li><a href="https://icd.who.int/browse/2024-01/mms/en">WHO International Classification of Diseases 11th Revision (ICD-11)</a>:</li>
-      <li><a href="https://icd.who.int/browse10/2019/en">International Statistical Classification of Diseases and Related Health Problems 10th Revision (ICD-10)</a></li>
-      <li><a href="https://icd.who.int/dev11/l-icf/en">International Classification of Functioning, Disability and Health (ICF)</a></li>
-      <li><a href="https://icd.who.int/dev11/l-ichi/en">International Classification of Health Interventions (ICHI)</a></li>
-      <li><a href="https://www.who.int/tools/atc-ddd-toolkit/atc-classification">Anatomical Therapeutic Chemical (ATC) Classification</a></li>
+      <li>
+        <p><a href="https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html">Audit Trail and Node Authentication (ATNA) Profile</a></p>
+      </li>
+      <li>
+        <p><a href="https://profiles.ihe.net/ITI/SVCM/index.html">Sharing Valuesets and Concept Maps (SVCM) Profile</a></p>
+      </li>
+      <li>
+        <p><a href="https://profiles.ihe.net/ITI/mCSD/index.html">Mobile Care Services Discovery (mCSD) Profile</a></p>
+      </li>
     </ul>
   </li>
   <li>
-    <p><a href="https://loinc.org/news/loinc-version-2-68-and-relma-version-7-1-are-now-available/">LOINC version 2.68</a></p>
+    <p>The International Patient Summary (IPS):</p>
+
+    <ul>
+      <li><a href="http://hl7.org/fhir/uv/ips/index.html">Health Level 7 (HL7) Fast Healthcare Interoperability Resources (FHIR) IPS Implementation Guide, published by HL7 International - Patient Care Work Group</a></li>
+    </ul>
   </li>
   <li>
-    <p><a href="https://www.snomed.org/gps">SNOMED GPS</a></p>
+    <p>World Health Organization (WHO):</p>
+
+    <ul>
+      <li>
+        <p><a href="https://icd.who.int/en">WHO International Classification of Diseases 11th Revision (ICD-11)</a></p>
+      </li>
+      <li>
+        <p><a href="https://www.who.int/standards/classifications">WHO Family of International Classifications</a></p>
+      </li>
+    </ul>
   </li>
 </ul>
 
@@ -315,7 +328,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.dak-immz#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Feb 2, 2025 17:49+0000">2025-02-02</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.dak-immz#0.9.9 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 19, 2024 08:45+0000">2024-11-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
