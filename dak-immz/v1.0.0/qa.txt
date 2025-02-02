@@ -3,7 +3,7 @@ DakImmz : Validation Results
 
 err = 1, warn = 5, info = 0
 IG Publisher Version: 1.8.10
-Generated Sun Feb 02 17:48:43 UTC 2025. FHIR version 4.0.1 for smart.who.int.dak-immz#1.0.0 (canonical = http://smart.who.int/dak-immz)
+Generated Fri Jan 31 14:17:32 UTC 2025. FHIR version 4.0.1 for smart.who.int.dak-immz#1.0.0 (canonical = http://smart.who.int/dak-immz)
  Build Errors : 0 / 4 / 0
  /workspace/temp/smart.who.int.dak-immz#1.0.0/fsh-generated/resources/ImplementationGuide-smart.who.int.dak-immz : 1 / 1 / 1
 </table>

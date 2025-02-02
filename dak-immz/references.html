@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>References - SMART DAK IMMZ v0.9.9</title>
+    <title>References - SMART DAK IMMZ v1.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -205,6 +205,8 @@
         <!-- Placeholder for child template header declarations -->
 <div id="project-nav">
     <a id="who-logo" no-external="true" href="index.html">
+      
+<img height="50" style="margin:7px" alt="Welcome on standards website" src="assets/images/h-logo-blue.svg"/>
         
     </a>
 </div>
@@ -214,10 +216,10 @@
 </div> 
 
 
-        <div id="ig-status" class="ig-status-draft">
+        <div id="ig-status" class="ig-status-active">
           <p><span style="font-size:12pt;font-weight:bold">SMART DAK IMMZ</span>
             <br/>
-            <span style="display:inline-block;">0.9.9 - ci-build
+            <span style="display:inline-block;">1.0.0 - release
 
 
             </span>
@@ -252,7 +254,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART DAK IMMZ (v0.9.9: Releases Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/dak-immz/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART DAK IMMZ (v1.0.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/dak-immz/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>References</h2>
   
 
@@ -270,49 +272,63 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#who-digital-adaptation-kit-dak-for-insert-health-domain-here" id="markdown-toc-who-digital-adaptation-kit-dak-for-insert-health-domain-here">WHO Digital Adaptation Kit (DAK) for <mark>[insert health domain here]</mark></a></li>
-  <li><a href="#who-guideline-development" id="markdown-toc-who-guideline-development">WHO guideline development</a></li>
-  <li><a href="#tutorials-and-reference-materials-for-developers" id="markdown-toc-tutorials-and-reference-materials-for-developers">Tutorials and reference materials for developers</a></li>
-  <li><a href="#additional-resources" id="markdown-toc-additional-resources">Additional resources</a></li>
+  <li><a href="#additional-information-on-who-guideline-development" id="markdown-toc-additional-information-on-who-guideline-development">Additional information on WHO guideline development</a></li>
+  <li><a href="#additional-information-on-who-smart-guidelines" id="markdown-toc-additional-information-on-who-smart-guidelines">Additional information on WHO SMART Guidelines</a></li>
+  <li><a href="#other-useful-references" id="markdown-toc-other-useful-references">Other useful references</a></li>
 </ul>
 
 </div>
-<p>This implementation guide is meant to facilitate operationalization of the World Health Organization (WHO) Digital Adaptation Kit (DAK) for <mark>[insert health domain here]</mark>. This page includes links to the published DAK for <mark>[insert health domain here]</mark>, as well as a small subset of other references.</p>
+<p>This implementation guide is meant to facilitate operationalization of the World Health Organization (WHO) Digital Adaptation Kit (DAK) for immunizations.</p>
 
-<p>For additional resources, see the <a href="dependencies.html">Dependencies</a> page, which includes the standards referenced in this implementation guide and the references section in the published DAK for <mark>[insert health domain here]</mark>.</p>
+<p>The DAK for immunizations and the associated implementation tools can be found here:</p>
 
-<h3 id="who-digital-adaptation-kit-dak-for-insert-health-domain-here">WHO Digital Adaptation Kit (DAK) for <mark>[insert health domain here]</mark></h3>
+<ul>
+  <li>
+    <p><a href="https://iris.who.int/handle/10665/380303">Published DAK Document</a></p>
+  </li>
+  <li>
+    <p>Implementation tools:</p>
 
-<blockquote>
-  <p>The Digital Adaptation Kit was published on [publication date]:</p>
+    <ul>
+      <li>
+        <p><a href="https://smart.who.int/dak-immz/dictionary.html">Link to core data dictionary</a></p>
+      </li>
+      <li>
+        <p><a href="https://smart.who.int/dak-immz/decision-logic.html">Link to decision-support and scheduling logic</a></p>
+      </li>
+      <li>
+        <p><a href="https://smart.who.int/dak-immz/indicators.html">Link to indicators and performance metrics table</a></p>
+      </li>
+      <li>
+        <p><a href="https://smart.who.int/dak-tb/system-requirements.html">Link to high-level functional and non functional requirements</a></p>
+      </li>
+    </ul>
+  </li>
+</ul>
 
-  <p>[Link to the DAK and accompanying web annexes when available]</p>
-</blockquote>
+<p>For additional resources, see the <a href="dependencies.html">Dependencies</a> page, which includes the standards referenced in this implementation guide, and the references section in the published DAK for immunizations.</p>
 
-<h3 id="who-guideline-development">WHO guideline development</h3>
+<h3 id="additional-information-on-who-guideline-development">Additional information on WHO guideline development</h3>
+
+<ul>
+  <li><a href="https://www.who.int/publications/i/item/9789241548960">WHO Handbook for guideline development</a> - provides an overview of the WHO guideline development and publication process</li>
+</ul>
+
+<h3 id="additional-information-on-who-smart-guidelines">Additional information on WHO SMART Guidelines</h3>
 
 <ul>
   <li>
     <p><a href="https://www.who.int/teams/digital-health-and-innovation/smart-guidelines">WHO SMART Guidelines</a> - provides an overview of the SMART Guidelines approach</p>
   </li>
   <li>
-    <p><a href="https://www.who.int/publications/i/item/9789241548960">WHO Handbook for guideline development</a>- provides an overview of the WHO guideline development and publication process</p>
+    <p><a href="https://smart.who.int/ig-starter-kit/">SMART Guidelines methodology</a> - provides Standard Operating Procedures (SOP) for authoring L2 DAKs and L3 Implementation Guides as per the SMART Guidelines methodology</p>
   </li>
 </ul>
 
-<h3 id="tutorials-and-reference-materials-for-developers">Tutorials and reference materials for developers</h3>
-<ul>
-  <li><a href="https://worldhealthorganization.github.io/smart-ig-starter-kit/references.html#2">References section of the SMART IG starter kit</a></li>
-</ul>
+<h3 id="other-useful-references">Other useful references</h3>
 
-<h3 id="additional-resources">Additional resources</h3>
 <ul>
-  <li>
-    <p><a href="https://www.who.int/publications/i/item/9789240010567">WHO Digital implementation investment guide (DIIG): integrating digital interventions into health programmes</a></p>
-  </li>
-  <li>
-    <p><a href="https://guides.ohie.org/arch-spec/architecture-specification/overview-of-the-architecture">Open Health Information Exchange (OpenHIE) Specification and Architecture</a></p>
-  </li>
+  <li><a href="https://guides.ohie.org/arch-spec/architecture-specification/overview-of-the-architecture">Open Health Information Exchange (OpenHIE) Specification and Architecture</a></li>
 </ul>
 
 
@@ -334,7 +350,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.dak-immz#0.9.9 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 19, 2024 08:45+0000">2024-11-19</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.dak-immz#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 31, 2025 14:17+0000">2025-01-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Adapting Guidelines for Country use - SMART DAK IMMZ v0.9.9</title>
+    <title>Adapting Guidelines for Country use - SMART DAK IMMZ v1.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -205,6 +205,8 @@
         <!-- Placeholder for child template header declarations -->
 <div id="project-nav">
     <a id="who-logo" no-external="true" href="index.html">
+      
+<img height="50" style="margin:7px" alt="Welcome on standards website" src="assets/images/h-logo-blue.svg"/>
         
     </a>
 </div>
@@ -214,10 +216,10 @@
 </div> 
 
 
-        <div id="ig-status" class="ig-status-draft">
+        <div id="ig-status" class="ig-status-active">
           <p><span style="font-size:12pt;font-weight:bold">SMART DAK IMMZ</span>
             <br/>
-            <span style="display:inline-block;">0.9.9 - ci-build
+            <span style="display:inline-block;">1.0.0 - release
 
 
             </span>
@@ -252,7 +254,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART DAK IMMZ (v0.9.9: Releases Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/dak-immz/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART DAK IMMZ (v1.0.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/dak-immz/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Adapting Guidelines for Country use</h2>
   
 
@@ -273,17 +275,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <p>The following page provides a reference to resources that can guide countries in adapting the guidelines for country use.</p>
 
-<p>To implement WHO recommendations in country settings, governments must interpret and then adapt the content in line with local policies, procedures, and digital tools.</p>
+<p>The digital adaptation kit included in this implementation guide provides the generic, software agnostic and software neutral content requirements. They are documentation of generic system requirements that need to then be adapted to local needs; and subsequently used to inform the design of digital systems implemented locally.</p>
 
-<p>This implementation guide provides the generic content required in digital systems, independently of a specific software application and with the intention that countries can adapt it to meet local needs.</p>
-
-<p>WHO guidelines articulate and endorse rigorously tested recommendations for health interventions to be adopted within country programs. When applied correctly and consistently, guideline recommendations save lives. To ensure that countries can effectively benefit from digital health investments, the SMART Guidelines approach is intended to facilitate the accurate reflection of WHO’s clinical, public health and data use guidelines in the digital systems that countries are adopting.</p>
-
-<p>For more on layers of knowledge representation and how they are used in WHO’s SMART Guidelines approach, see <a href="https://www.who.int/teams/digital-health-and-innovation/smart-guidelines">WHO’s SMART Guidelines</a> and this <a href="https://www.thelancet.com/journals/landig/article/PIIS2589-7500(21)00038-8/fulltext">Lancet article</a>.</p>
-
-<p>The standards-based technical artifacts in this implementation guide are at the third layer of knowledge representation (L3: Machine-readable recommendations). It provides code necessary for software developers to incorporate standardised logic from WHO guidelines into digital systems, testable for conformance to standards including fidelity to recommendations. A standards-based technical implementation guide builds on operational (L2) by mapping L2 content to value sets and Health Level Seven International Fast Healthcare Interoperability Resources (FHIR) standards. Alongside data standards from L2, this allows for semantic and syntactic interoperability at scale. The logic derived from guidelines, which might include clinical decision support and calculations for performance indicators, which may be encoded into Clinical Quality Language (CQL). This ensures that key indicators can be consistently extracted to support patient care, as well as case surveillance and programme monitoring. The machine-readable representations in this implementation guide are intended for adaptation into countries’ digital health service delivery and reporting systems. Digital solutions comprising L3 machine-readable recommendations may then be testable for conformance to interoperability standards.</p>
-
-<p>The fourth layer (L4: Executable—reference applications and services) focuses on software applications and services within a digital ecosystem. It is intended to include executable reference software that accurately represents the intentions, operational, and functional requirements of the WHO recommendations; addresses user and health system needs; and comprises machine-readable data and calculations within interoperability standards, as documented in the L1–L3 layers. As a fully functional application, it is intended to serve as a generic starting point, ready to be localised to the specific operational context of the users, population, and health system within which it is deployed. Additional products at this layer include terminology services to support consistent data representation for interoperability; reusable software libraries including software development kits; application programming interfaces; and function as a service to support updates to FHIR content and capabilities across subscribed digital systems.</p>
+<p>WHO guidelines articulate and endorse rigorously tested recommendations for health interventions to be adopted within country programs. When applied correctly and consistently, guideline recommendations save lives. To ensure that countries can effectively benefit from digital health investments, the SMART Guidelines approach is intended to facilitate the adoption of WHO’s clinical, public health and data use guidelines in an accurate way in the digital systems that countries are adopting.
+For more on layers of knowledge representation and how they are used in WHO’s SMART Guidelines approach, see <a href="https://www.who.int/teams/digital-health-and-innovation/smart-guidelines">WHO’s SMART Guidelines</a> and this <a href="https://www.thelancet.com/journals/landig/article/PIIS2589-7500(21)00038-8/fulltext">Lancet article</a>.</p>
 
 
 
@@ -303,7 +298,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.dak-immz#0.9.9 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 19, 2024 08:45+0000">2024-11-19</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.dak-immz#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 31, 2025 14:17+0000">2025-01-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
