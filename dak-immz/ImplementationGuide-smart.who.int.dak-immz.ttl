@@ -10,8 +10,8 @@
   fhir:id [ fhir:v "smart.who.int.dak-immz"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://smart.who.int/smart-base/ImplementationGuide-SGImplementationGuide"^^xsd:anyURI ;
-       fhir:link <http://smart.who.int/smart-base/ImplementationGuide-SGImplementationGuide>
+       fhir:v "http://smart.who.int/base/StructureDefinition/SGImplementationGuide"^^xsd:anyURI ;
+       fhir:link <http://smart.who.int/base/StructureDefinition/SGImplementationGuide>
      ] )
   ] ; # 
   fhir:text [
@@ -19,11 +19,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide smart.who.int.dak-immz</b></p><a name=\"smart.who.int.dak-immz\"> </a><a name=\"hcsmart.who.int.dak-immz\"> </a><a name=\"smart.who.int.dak-immz-en-US\"> </a><h2>DakImmz</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/dak-immz/ImplementationGuide/smart.who.int.dak-immz</pre><div><p>SMART DAK for Immunizations</p>\n</div></div>"
   ] ; # 
   fhir:url [ fhir:v "http://smart.who.int/dak-immz/ImplementationGuide/smart.who.int.dak-immz"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.9.9"] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "DakImmz"] ; # 
   fhir:title [ fhir:v "SMART DAK IMMZ"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-11-19T08:45:08+00:00"^^xsd:dateTime] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-02-03T11:17:32+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "WHO"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "WHO" ] ;
@@ -47,7 +47,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "6.1.0" ]
+     fhir:version [ fhir:v "6.2.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -85,7 +85,7 @@
          fhir:value [ fhir:v "releaselabel" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ci-build" ]
+         fhir:value [ fhir:v "release" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -313,7 +313,7 @@
          fhir:value [ fhir:v "releaselabel" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ci-build" ]
+         fhir:value [ fhir:v "release" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
