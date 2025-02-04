@@ -83,16 +83,16 @@
       "canonical" : "http://smart.who.int/dak-immz",
       "category" : "base",
       "ci-build" : "http://worldhealthorganization.github.io/smart-dak-immz",
-      "version-count" : 1,
+      "version-count" : 2,
       "latest" : {
-        "version" : "0.9.9",
-        "date" : "2024-11-19",
-        "path" : "http://smart.who.int/dak-immz/v0.9.9"
+        "version" : "1.0.0",
+        "date" : "2025-02-03",
+        "path" : "http://smart.who.int/dak-immz/v1.0.0"
       },
       "milestone" : {
-        "version" : "0.9.9",
-        "date" : "2024-11-19",
-        "path" : "http://smart.who.int/dak-immz/v0.9.9"
+        "version" : "1.0.0",
+        "date" : "2025-02-03",
+        "path" : "http://smart.who.int/dak-immz/v1.0.0"
       }
     },
     {
