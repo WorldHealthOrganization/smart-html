@@ -65,6 +65,39 @@
       <fhir:details>Publication run at 19/11/2024 by 09639121ef99 using vVersion 1.7.2 (Git# a53365dccbf0). Built 2024-11-12T22:35:14.748Z (6 days old) source id Unknown (todo) Run #2</fhir:details>
     </item>
     <item>
+      <title>smart.who.int.dak-ccc#1.0.0</title>
+      <description>1.0.0 Release</description>
+      <link>http://smart.who.int/dak-ccc/v1.0.0/package.tgz</link>
+      <guid isPermaLink="true">http://smart.who.int/dak-ccc/v1.0.0/package.tgz</guid>
+      <dc:creator>WHO</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Mon, 15 Jul 2024 08:43:37 +0000</pubDate>
+      <fhir:details>Publication run at 15/07/2024 by manual using vVersion 1.7.2 (Git# a53365dccbf0). Built 2024-11-12T22:35:14.748Z (6 days old) source id Unknown (todo) Run #2</fhir:details>
+    </item>
+    <item>
+      <title>smart.who.int.dak-tb#1.0.1</title>
+      <description>1.0.1 Release</description>
+      <link>http://smart.who.int/dak-tb/v1.0.1/package.tgz</link>
+      <guid isPermaLink="true">http://smart.who.int/dak-tb/v1.0.1/package.tgz</guid>
+      <dc:creator>WHO</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Wed, 17 Jul 2024 08:43:37 +0000</pubDate>
+      <fhir:details>Publication run at 17/07/2024 by manual using vVersion 1.7.2 (Git# a53365dccbf0). Built 2024-11-12T22:35:14.748Z (6 days old) source id Unknown (todo) Run #2</fhir:details>
+    </item>
+    <item>
+      <title>smart.who.int.ips-pilgrimage#1.0.0</title>
+      <description>1.0.0 Release</description>
+      <link>http://smart.who.int/ips-pilgrimage/1.0.0/package.tgz</link>
+      <guid isPermaLink="true">http://smart.who.int/ips-pilgrimage/1.0.0/package.tgz</guid>
+      <dc:creator>WHO</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Thu, 25 Apr 2024 08:43:37 +0000</pubDate>
+      <fhir:details>Publication run at 25/04/2024 by manual using vVersion 1.7.2 (Git# a53365dccbf0). Built 2024-11-12T22:35:14.748Z (6 days old) source id Unknown (todo) Run #2</fhir:details>
+    </item>
+    <item>
       <title>smart.who.int.trust#1.1.4</title>
       <description>1.1.4 release</description>
       <link>http://smart.who.int/trust/1.1.4/package.tgz</link>
