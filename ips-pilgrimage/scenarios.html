@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>User Scenarios - SMART Verifiable IPS for Pilgrimage v1.0.0</title>
+    <title>User Scenarios - SMART Verifiable IPS for Pilgrimage v2.0.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -21,6 +21,7 @@
     <!-- Placeholder for child template CSS declarations -->
     <link href="assets/css/who.css" rel="stylesheet"/>
     <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -58,7 +59,7 @@
                 <span class="icon-bar"> </span>
                 <span class="icon-bar"> </span>
               </button>
-              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4B/index.html">FHIR</a>
+              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
               <div class="nav-collapse collapse navbar-inverse-collapse">
                 <!-- menu.xml  -->
 
@@ -207,6 +208,8 @@
         <!-- Placeholder for child template header declarations -->
 <div id="project-nav">
     <a id="who-logo" no-external="true" href="index.html">
+      
+<img height="50" style="margin:7px" alt="Welcome on standards website" src="assets/images/h-logo-blue.svg"/>
         
     </a>
 </div>
@@ -216,10 +219,10 @@
 </div> 
 
 
-        <div id="ig-status" class="ig-status-draft">
+        <div id="ig-status" class="ig-status-active">
           <p><span style="font-size:12pt;font-weight:bold">SMART Verifiable IPS for Pilgrimage</span>
             <br/>
-            <span style="display:inline-block;">1.0.0 - ci-build
+            <span style="display:inline-block;">2.0.2 - release
 
 
             </span>
@@ -254,7 +257,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART Verifiable IPS for Pilgrimage (v1.0.0: Releases Draft) based on <a no-external="true" href="http://hl7.org/fhir/4.3.0">FHIR (HL7® FHIR® Standard) v4.3.0</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/ips-pilgrimage/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART Verifiable IPS for Pilgrimage (v2.0.2: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/ips-pilgrimage/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>User Scenarios</h2>
   
 
@@ -272,10 +275,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#10-publication-of-national-public-keys-for-verification" id="markdown-toc-10-publication-of-national-public-keys-for-verification">1.0 Publication of National Public Keys for Verification</a></li>
-  <li><a href="#20-publication-of-national-terminologies" id="markdown-toc-20-publication-of-national-terminologies">2.0 Publication of National Terminologies</a></li>
-  <li><a href="#30-clinical-encounter-for-unplanned-care" id="markdown-toc-30-clinical-encounter-for-unplanned-care">3.0 Clinical Encounter for Unplanned Care</a></li>
-  <li><a href="#40-break-the-glass-clinical-encounter" id="markdown-toc-40-break-the-glass-clinical-encounter">4.0 Break The Glass Clinical Encounter</a></li>
+  <li><a href="#publication-of-national-public-keys-for-verification" id="markdown-toc-publication-of-national-public-keys-for-verification">Publication of National Public Keys for Verification</a></li>
+  <li><a href="#publication-of-national-terminologies" id="markdown-toc-publication-of-national-terminologies">Publication of National Terminologies</a></li>
+  <li><a href="#issuance-of-health-document-at-origin-country" id="markdown-toc-issuance-of-health-document-at-origin-country">Issuance of Health Document at Origin Country</a></li>
+  <li><a href="#clinical-encounter-for-unplanned-care" id="markdown-toc-clinical-encounter-for-unplanned-care">Clinical Encounter for Unplanned Care</a></li>
+  <li><a href="#break-the-glass-clinical-encounter" id="markdown-toc-break-the-glass-clinical-encounter">Break The Glass Clinical Encounter</a></li>
 </ul>
 
 </div>
@@ -288,7 +292,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>As examples, the scenarios identify: key data elements that need to be recorded and/or calculated; decision-support logic that can be automated in the system; key functional and non-functional requirements that should be included in the system, and adolescent-specific considerations that should be accounted for.</p>
 
-<h3 id="10-publication-of-national-public-keys-for-verification">1.0 Publication of National Public Keys for Verification</h3>
+<h3 id="publication-of-national-public-keys-for-verification">Publication of National Public Keys for Verification</h3>
 <p><strong>Services</strong></p>
 <ul>
   <li>National HIE</li>
@@ -297,10 +301,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Described in the <a href="https://smart.who.int/smart-trust">SMART Trust</a> framework of the GDHCN where by a GDHCN Participant provides public keys to the WHO GDHCN Trust Network Gateway that can be used for signing health documents, in particular the <a href="https://build.fhir.org/ig/HL7/fhir-ips/">International Patient Summary (IPS)</a>.  The Trust Domain that will be used for this set of scenarios is <b>ips-pilgrimage</b></p>
 
-<p>This process is a both a pre-condition for the user scenario 3.0 and 3.1 as well as a routine process at any point relevant encryption key material is updated.</p>
+<p>This process is a both a pre-condition for the user scenario 3.0, 4.0, and 5.0 as well as a routine process at any point relevant encryption key material is updated.</p>
 
-<h3 id="20-publication-of-national-terminologies">2.0 Publication of National Terminologies</h3>
-<p>This process for sharing National Code Systems and Value Sets that are utilized in a National HIE’s profile of the IPS.  Standardized code systems should be utilized wherever possible but this recognizes that National Code Systems may be necessary, particularly for coding of medication terminologies.  The primary goal, at least in the first phases of sharing the terminologies is not semantic interoperability between a National HIE and Host Country EMR, rather it is  to support the Host Country Health Worker to review the IPS.</p>
+<h3 id="publication-of-national-terminologies">Publication of National Terminologies</h3>
+<p>This process for sharing National Code Systems and Value Sets that are utilized in a National HIE's profile of the IPS.  Standardized code systems should be utilized wherever possible but this recognizes that National Code Systems may be necessary, particularly for coding of medication terminologies.  The primary goal, at least in the first phases of sharing the terminologies is not semantic interoperability between a National HIE and Host Country EMR, rather it is  to support the Host Country Health Worker to review the IPS.</p>
 
 <p>These terminologies should be shared from the National HIE to the WHO Terminology Service.</p>
 <ul>
@@ -310,15 +314,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Once shared to the WHO Terminology Service, these terminologies should be retrievable from the Host Country EMR via the IHE SCVM profile.</p>
 
-<p>This process is a both a pre-condition for the user scenario 3.0 and 3.1 as well as a routine process at any point relevant terminologies are updated.</p>
+<p>This process is a both a pre-condition for the user scenario 3.0, 4.0 and 5.0 as well as a routine process at any point relevant terminologies are updated.</p>
 
-<h3 id="30-clinical-encounter-for-unplanned-care">3.0 Clinical Encounter for Unplanned Care</h3>
+<h3 id="issuance-of-health-document-at-origin-country">Issuance of Health Document at Origin Country</h3>
+<p>This is a "Phase 1" scenario in which the Origin Country conducts a health assessment for the Pilgrim, obtains consent for eligible pilgrims and issues QR Codes (Smart Health Link) that embeds their patient summary as a IPS. The QR code might be issues on a national health wallet or printed QR code.</p>
 
-<p>This is a “Phase 1” scenario in which a Pilgrim in a Host Country has need to seek care from a Host Country Health Worker.  The Pilgrim should be able to provide explicit consent to a Host Country Health Worker access their patient summary information (IPS).  This consent can be given, for example, by showing a QR code (Smart Health Link) on a National Health Wallet or printed QR code.  The Host Country EMR uses the QR code to access the National IHE to retrieve the patient summary.</p>
+<h3 id="clinical-encounter-for-unplanned-care">Clinical Encounter for Unplanned Care</h3>
 
-<h3 id="40-break-the-glass-clinical-encounter">4.0 Break The Glass Clinical Encounter</h3>
+<p>This is a "Phase 1" scenario in which a Pilgrim in a Host Country has need to seek care from a Host Country Health Worker. 
+The pilgrim mediates exchange by showing the QR code issued by their Origin Country.  The Host Country EMR uses the QR code to access the National IHE to retrieve the patient summary (IPS).</p>
 
-<p>This is a “Phase 2” scenario in which a Pilgrim in a Host Country is not conscious and must receive emergency care.  The Host Country Health Worker accesses the patient summary via the Pilgrimage Registration Number.   Prior to this emergency care encounter, the Pilgrim would have registered their consent to provide access to their record either through the National Health Wallet App or through the National Pilgrimage Authority.</p>
+<h3 id="break-the-glass-clinical-encounter">Break The Glass Clinical Encounter</h3>
+
+<p>This is a "Phase 2" scenario in which a Pilgrim in a Host Country is not conscious and must receive emergency care.  The Host Country Health Worker accesses the patient summary via the Pilgrimage Registration Number.   Prior to this emergency care encounter, the Pilgrim would have registered their consent to provide access to their record either through the National Health Wallet App or through the National Pilgrimage Authority.</p>
 
 
 
@@ -338,7 +346,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.ips-pilgrimage#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Thu, Apr 25, 2024 17:24+0000">2024-04-25</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.ips-pilgrimage#2.0.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 4, 2025 19:22+0000">2025-02-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -356,7 +364,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -367,7 +375,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>

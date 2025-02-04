@@ -1,228 +1,205 @@
 SMART_WHO_INT_IPS_Pilgrimage : Validation Results
 =========================================
 
-err = 134, warn = 23, info = 14
-IG Publisher Version: 1.6.6
-Generated Thu Apr 25 17:26:43 UTC 2024. FHIR version 4.3.0 for smart.who.int.ips-pilgrimage#1.0.0 (canonical = http://smart.who.int/ips-pilgrimage)
- Build Errors : 7 / 4 / 0
- /tmp/smart.who.int.ips-pilgrimage#1.0.0-milestone/fsh-generated/resources/ActorDefinition-HCEMR : 1 / 1 / 2
- /tmp/smart.who.int.ips-pilgrimage#1.0.0-milestone/fsh-generated/resources/ActorDefinition-OCHIE : 1 / 1 / 2
- /tmp/smart.who.int.ips-pilgrimage#1.0.0-milestone/fsh-generated/resources/ActorDefinition-OCHW : 1 / 1 / 2
- /tmp/smart.who.int.ips-pilgrimage#1.0.0-milestone/fsh-generated/resources/ActorDefinition-Pilgrim : 0 / 1 / 2
- /tmp/smart.who.int.ips-pilgrimage#1.0.0-milestone/fsh-generated/resources/ActorDefinition-QRCard : 1 / 1 / 2
- /tmp/smart.who.int.ips-pilgrimage#1.0.0-milestone/fsh-generated/resources/ActorDefinition-Scanner : 1 / 1 / 2
- /tmp/smart.who.int.ips-pilgrimage#1.0.0-milestone/fsh-generated/resources/CodeSystem-IPS.HAJJ.CONSENT : 0 / 0 / 1
- /tmp/smart.who.int.ips-pilgrimage#1.0.0-milestone/fsh-generated/resources/ImplementationGuide-smart.who.int.ips-pilgrimage : 1 / 1 / 1
- /tmp/smart.who.int.ips-pilgrimage#1.0.0-milestone/fsh-generated/resources/OperationDefinition-ConsentPostCounseling : 13 / 1 / 2
- /tmp/smart.who.int.ips-pilgrimage#1.0.0-milestone/fsh-generated/resources/OperationDefinition-ConsentWallet : 13 / 1 / 2
- /tmp/smart.who.int.ips-pilgrimage#1.0.0-milestone/fsh-generated/resources/OperationDefinition-GetKeys : 17 / 1 / 2
- /tmp/smart.who.int.ips-pilgrimage#1.0.0-milestone/fsh-generated/resources/OperationDefinition-IPSManifest : 16 / 1 / 2
- /tmp/smart.who.int.ips-pilgrimage#1.0.0-milestone/fsh-generated/resources/OperationDefinition-IPSView : 22 / 1 / 2
- /tmp/smart.who.int.ips-pilgrimage#1.0.0-milestone/fsh-generated/resources/OperationDefinition-PutKeys : 20 / 1 / 2
- /tmp/smart.who.int.ips-pilgrimage#1.0.0-milestone/fsh-generated/resources/OperationDefinition-SignIPS : 13 / 1 / 2
- /tmp/smart.who.int.ips-pilgrimage#1.0.0-milestone/fsh-generated/resources/OperationDefinition-SignSHL : 13 / 1 / 2
- /tmp/smart.who.int.ips-pilgrimage#1.0.0-milestone/fsh-generated/resources/StructureDefinition-ConsentPeriod : 0 / 1 / 1
- /tmp/smart.who.int.ips-pilgrimage#1.0.0-milestone/fsh-generated/resources/StructureDefinition-ConsentVerifiedBy : 0 / 1 / 1
- /tmp/smart.who.int.ips-pilgrimage#1.0.0-milestone/fsh-generated/resources/StructureDefinition-HajjConsent : 0 / 1 / 1
- /tmp/smart.who.int.ips-pilgrimage#1.0.0-milestone/fsh-generated/resources/StructureDefinition-HajjOrganization : 0 / 1 / 1
- /tmp/smart.who.int.ips-pilgrimage#1.0.0-milestone/fsh-generated/resources/ValueSet-IPS.HAJJ.CONSENT : 0 / 0 / 1
+err = 0, warn = 28, info = 60
+IG Publisher Version: 1.8.10
+Generated Tue Feb 04 19:24:46 UTC 2025. FHIR version 4.0.1 for smart.who.int.ips-pilgrimage#2.0.2 (canonical = http://smart.who.int/ips-pilgrimage)
+ Build Errors : 0 / 6 / 0
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/AllergyIntolerance-72884cad-ebe6-4f43-a51a-2f978275f131 : 0 / 0 / 2
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/Bundle-MyIPS : 0 / 6 / 48
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/CapabilityStatement-VHLDocumentResponder : 0 / 0 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/CodeSystem-BrowserCs : 0 / 0 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/CodeSystem-DistributionModelCs : 0 / 0 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/CodeSystem-IPS.HAJJ.ACTOR : 0 / 0 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/CodeSystem-IPS.HAJJ.CONSENT : 0 / 0 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/CodeSystem-IPS.HAJJ.TRANSACTION : 0 / 0 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/CodeSystem-LanguageCs : 0 / 0 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/CodeSystem-LicensingModelCs : 0 / 0 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/CodeSystem-OperatingSystemCs : 0 / 0 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/Composition-ExampleComposition : 0 / 0 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/Condition-c4597aa2-688a-401b-a658-70acc6de28c5 : 0 / 0 / 2
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/Condition-c64139e7-f02d-409c-bf34-75e8bf23bc89 : 0 / 0 / 2
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/Consent-c7781f44-6df8-4a8b-9e06-0b34263a47c6 : 0 / 2 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/DocumentReference-FHIRIPSDocumentReference : 0 / 0 / 2
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/DocumentReference-FHIRIPSSignedDocumentReference : 0 / 0 / 2
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/DocumentReference-IPSPDFDocumentReference : 0 / 0 / 2
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/DocumentReference-IPSSignedPDFDocumentReference : 0 / 0 / 2
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/DocumentReference-ex-documentreference : 0 / 0 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/DocumentReference-ex-documentreference1 : 0 / 0 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/ImplementationGuide-smart.who.int.ips-pilgrimage : 0 / 0 / 43
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/List-PilgrimFolder : 0 / 0 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/Medication-8adc0999-9468-4ac9-9557-680fa133d625 : 0 / 0 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/Medication-976d0804-cae0-45ae-afe3-a19f3ceba6bb : 0 / 2 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/MedicationStatement-47524493-846a-4a26-bae2-4ab03e60f02d : 0 / 0 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/MedicationStatement-c220e36c-eb67-4fc4-9ba1-2fabc52acec5 : 0 / 0 / 2
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/Observation-2639657a-c19a-48e2-82cc-471e13b8ad93 : 0 / 0 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/Observation-26bee0a9-5997-4557-ab9d-c6adbb05b571 : 0 / 0 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/Observation-6e39ccf3-f997-4a2b-8f28-b4b71c778c79 : 0 / 0 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/Observation-a6a5a1d5-c896-4c7e-b922-888fcc7e6ae3 : 0 / 0 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/Observation-aa11a2be-3e36-4be7-b58a-6fc3dace2740 : 0 / 0 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/Observation-b4916505-a06b-460c-9be8-011609282456 : 0 / 0 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/Observation-cc354e00-a419-47ea-8b6c-1768b2a01645 : 0 / 0 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/Organization-45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd6 : 0 / 0 / 2
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/Organization-890751f4-2924-4636-bab7-efffc7f3cf14 : 0 / 0 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/Patient-2b90dd2b-2dab-4c75-9bb9-a355e07401e7 : 0 / 0 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/Practitioner-1c616b24-3895-48c4-9a02-9a64110351ee : 0 / 0 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/Questionnaire-Questionnaire-ConnectathonSubmission : 0 / 1 / 7
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/StructureDefinition-ConsentPeriod : 0 / 1 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/StructureDefinition-ConsentVerifiedBy : 0 / 1 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/StructureDefinition-HajjConsent : 0 / 2 / 2
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/StructureDefinition-HajjIPS : 0 / 0 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/StructureDefinition-HajjIPS-Composition : 0 / 1 / 4
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/StructureDefinition-HajjOrganization : 0 / 1 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/ValueSet-Browser : 0 / 1 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/ValueSet-DistributionModel : 0 / 1 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/ValueSet-IPS.HAJJ.ACTOR : 0 / 0 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/ValueSet-IPS.HAJJ.ACTOR.SYSTEM : 0 / 0 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/ValueSet-IPS.HAJJ.CONSENT : 0 / 0 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/ValueSet-IPS.HAJJ.TRANSACTION : 0 / 0 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/ValueSet-Language : 0 / 1 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/ValueSet-LicensingModel : 0 / 1 / 1
+ /workspace/temp/smart.who.int.ips-pilgrimage#2.0.2-milestone/fsh-generated/resources/ValueSet-OperatingSystem : 0 / 1 / 1
 </table>
 == n/a ==
-ERROR: /tmp/smart.who.int.ips-pilgrimage#1.0.0-milestone/output/business-requirements.html#/html/body/div/div/div/div/div/ul/li/a at Line 280, column 8: The link 'business-process.html' for "Business Processes" cannot be resolved
-ERROR: /tmp/smart.who.int.ips-pilgrimage#1.0.0-milestone/output/data-models-and-exchange.html#/html/body/div/div/div/div/div/ul/li/a at Line 281, column 8: The link 'actors.html' for "Actors" cannot be resolved
-ERROR: /tmp/smart.who.int.ips-pilgrimage#1.0.0-milestone/output/data-models-and-exchange.html#/html/body/div/div/div/div/div/ul/li/a at Line 284, column 8: The link 'logical-models.html' for "Logical Models" cannot be resolved
-ERROR: /tmp/smart.who.int.ips-pilgrimage#1.0.0-milestone/output/downloads.html: The html source references validator.pack which is deprecated. Change the IG to describe the use of the package system instead
-ERROR: /tmp/smart.who.int.ips-pilgrimage#1.0.0-milestone/output/indicators-measures.html#/html/body/div/div/div/div/div/p/a at Line 278, column 70: The link 'artifacts.html#knowledge-artifacts-measure' for "Artifact Index - Measures" cannot be resolved (valid targets: [terminology-value-sets, project-nav, publish-box, segment-post-footer, who-logo, top, example-example-instances, stripe, segment-footer, language-selector, artifact-index, segment-content, structures-extension-definitions, segment-header, bottom, structures-resource-profiles, fhir-logo, family-nav, ig-status, 1, 2, terminology-code-systems, 3, 4, 5, segment-navbar, segment-breadcrumb])
-ERROR: /tmp/smart.who.int.ips-pilgrimage#1.0.0-milestone/output/reference-implementations.html#/html/body/div/div/div/div/div/p/a at Line 282, column 97: The link 'content_profiles.html' for "Content Profiles" cannot be resolved
-ERROR: /tmp/smart.who.int.ips-pilgrimage#1.0.0-milestone/output/trust_domain.html#/html/body/div/div/div/div/div/p/a at Line 294, column 171: The link 'http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ' for "here" cannot be resolved
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Consent/c7781f44-6df8-4a8b-9e06-0b34263a47c6.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
-WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
-== fsh-generated/resources/ActorDefinition-HCEMR.json ==
-ERROR: ActorDefinition/HCEMR: ActorDefinition.type: The value provided ('system') was not found in the value set 'Example Scenario Actor Type' (http://hl7.org/fhir/ValueSet/examplescenario-actor-type|5.0.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'system' in the ValueSet 'http://hl7.org/fhir/ValueSet/examplescenario-actor-type|5.0.0'; The provided code '#system' was not found in the value set 'http://hl7.org/fhir/ValueSet/examplescenario-actor-type|5.0.0')
-WARNING: ActorDefinition/HCEMR: ActorDefinition.meta.profile[1]: Profile reference 'http://smart.who.int/smart-base/StructureDefinition/SGPersona' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
-INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/ActorDefinition-OCHIE.json ==
-ERROR: ActorDefinition/OCHIE: ActorDefinition.type: The value provided ('system') was not found in the value set 'Example Scenario Actor Type' (http://hl7.org/fhir/ValueSet/examplescenario-actor-type|5.0.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'system' in the ValueSet 'http://hl7.org/fhir/ValueSet/examplescenario-actor-type|5.0.0'; The provided code '#system' was not found in the value set 'http://hl7.org/fhir/ValueSet/examplescenario-actor-type|5.0.0')
-WARNING: ActorDefinition/OCHIE: ActorDefinition.meta.profile[1]: Profile reference 'http://smart.who.int/smart-base/StructureDefinition/SGPersona' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
-INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/ActorDefinition-OCHW.json ==
-ERROR: ActorDefinition/OCHW: ActorDefinition.type: The value provided ('system') was not found in the value set 'Example Scenario Actor Type' (http://hl7.org/fhir/ValueSet/examplescenario-actor-type|5.0.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'system' in the ValueSet 'http://hl7.org/fhir/ValueSet/examplescenario-actor-type|5.0.0'; The provided code '#system' was not found in the value set 'http://hl7.org/fhir/ValueSet/examplescenario-actor-type|5.0.0')
-WARNING: ActorDefinition/OCHW: ActorDefinition.meta.profile[1]: Profile reference 'http://smart.who.int/smart-base/StructureDefinition/SGPersona' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
-INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/ActorDefinition-Pilgrim.json ==
-WARNING: ActorDefinition/Pilgrim: ActorDefinition.meta.profile[1]: Profile reference 'http://smart.who.int/smart-trust/StructureDefinition/Credential.Holder' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
-INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/ActorDefinition-QRCard.json ==
-ERROR: ActorDefinition/QRCard: ActorDefinition.type: The value provided ('system') was not found in the value set 'Example Scenario Actor Type' (http://hl7.org/fhir/ValueSet/examplescenario-actor-type|5.0.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'system' in the ValueSet 'http://hl7.org/fhir/ValueSet/examplescenario-actor-type|5.0.0'; The provided code '#system' was not found in the value set 'http://hl7.org/fhir/ValueSet/examplescenario-actor-type|5.0.0')
-WARNING: ActorDefinition/QRCard: ActorDefinition.meta.profile[1]: Profile reference 'http://smart.who.int/smart-base/StructureDefinition/SGPersona' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
-INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/ActorDefinition-Scanner.json ==
-ERROR: ActorDefinition/Scanner: ActorDefinition.type: The value provided ('system') was not found in the value set 'Example Scenario Actor Type' (http://hl7.org/fhir/ValueSet/examplescenario-actor-type|5.0.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'system' in the ValueSet 'http://hl7.org/fhir/ValueSet/examplescenario-actor-type|5.0.0'; The provided code '#system' was not found in the value set 'http://hl7.org/fhir/ValueSet/examplescenario-actor-type|5.0.0')
-WARNING: ActorDefinition/Scanner: ActorDefinition.meta.profile[1]: Profile reference 'http://smart.who.int/smart-base/StructureDefinition/SGPersona' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
-INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
+== fsh-generated/resources/AllergyIntolerance-72884cad-ebe6-4f43-a51a-2f978275f131.json ==
+INFORMATION: AllergyIntolerance/72884cad-ebe6-4f43-a51a-2f978275f131: AllergyIntolerance.code.coding[0].code: The code '373270004' is valid but is not active
+== fsh-generated/resources/Bundle-MyIPS.json ==
+INFORMATION: Bundle/MyIPS: Bundle.entry[5].resource.dosage[0].doseAndRate[0].type: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/dose-rate-type|1.0.0
+INFORMATION: Bundle/MyIPS: Bundle.entry[5].resource/*MedicationStatement/c220e36c-eb67-4fc4-9ba1-2fabc52acec6*/.dosage[0].doseAndRate[0].type: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/dose-rate-type|1.0.0
+WARNING: Bundle/MyIPS: Bundle.entry[7].resource/*Medication/976d0804-cae0-45ae-afe3-a19f3ceba6bc*/.code.coding[1].system: A definition for CodeSystem 'urn:oid:2.16.840.1.113883.2.4.4.1' could not be found, so the code cannot be validated
+WARNING: Bundle/MyIPS: Bundle.entry[7].resource/*Medication/976d0804-cae0-45ae-afe3-a19f3ceba6bc*/.code.coding[2].system: A definition for CodeSystem 'urn:oid:2.16.840.1.113883.2.4.4.7' could not be found, so the code cannot be validated
+INFORMATION: Bundle/MyIPS: Bundle.entry[9].resource.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/MyIPS: Bundle.entry[9].resource/*AllergyIntolerance/72884cad-ebe6-4f43-a51a-2f978275f132*/.code.coding[0].code: The code '373270004' is valid but is not active
+INFORMATION: Bundle/MyIPS: Bundle.entry[11].resource/*Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7*/.type[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/organization-type|2.0.0
+WARNING: Bundle/MyIPS: Bundle.entry[19].resource.category[0].coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/MyIPS: Bundle.entry[19].resource.provision.purpose[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/MyIPS: Bundle.entry[19].resource/*Consent/c7781f44-6df8-4a8b-9e06-0b34263a47c7*/.category[0].coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/MyIPS: Bundle.entry[19].resource/*Consent/c7781f44-6df8-4a8b-9e06-0b34263a47c7*/.provision.purpose[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+INFORMATION: Bundle/MyIPS: Bundle: Can't find 'DocumentReference/ex-documentreference' in the bundle (Bundle.entry[19].resource.source[x])
+== fsh-generated/resources/CapabilityStatement-VHLDocumentResponder.json ==
+== fsh-generated/resources/CodeSystem-BrowserCs.json ==
+== fsh-generated/resources/CodeSystem-DistributionModelCs.json ==
+== fsh-generated/resources/CodeSystem-IPS.HAJJ.ACTOR.json ==
 == fsh-generated/resources/CodeSystem-IPS.HAJJ.CONSENT.json ==
+== fsh-generated/resources/CodeSystem-IPS.HAJJ.TRANSACTION.json ==
+== fsh-generated/resources/CodeSystem-LanguageCs.json ==
+== fsh-generated/resources/CodeSystem-LicensingModelCs.json ==
+== fsh-generated/resources/CodeSystem-OperatingSystemCs.json ==
+== fsh-generated/resources/Composition-ExampleComposition.json ==
+== fsh-generated/resources/Condition-c4597aa2-688a-401b-a658-70acc6de28c5.json ==
+INFORMATION: Condition/c4597aa2-688a-401b-a658-70acc6de28c5: Condition.severity: None of the codings provided are in the value set 'Condition/Diagnosis Severity' (http://hl7.org/fhir/ValueSet/condition-severity|4.0.1), and a coding is recommended to come from this value set (codes = http://loinc.org#LA6750-9)
+== fsh-generated/resources/Condition-c64139e7-f02d-409c-bf34-75e8bf23bc89.json ==
+INFORMATION: Condition/c64139e7-f02d-409c-bf34-75e8bf23bc89: Condition.severity: None of the codings provided are in the value set 'Condition/Diagnosis Severity' (http://hl7.org/fhir/ValueSet/condition-severity|4.0.1), and a coding is recommended to come from this value set (codes = http://loinc.org#LA6751-7)
+== fsh-generated/resources/Consent-c7781f44-6df8-4a8b-9e06-0b34263a47c6.json ==
+WARNING: Consent/c7781f44-6df8-4a8b-9e06-0b34263a47c6: Consent.category[0].coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Consent/c7781f44-6df8-4a8b-9e06-0b34263a47c6: Consent.provision.purpose[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== fsh-generated/resources/DocumentReference-FHIRIPSDocumentReference.json ==
+INFORMATION: DocumentReference/FHIRIPSDocumentReference: DocumentReference.status: Reference to draft CodeSystem http://hl7.org/fhir/document-reference-status|4.0.1
+== fsh-generated/resources/DocumentReference-FHIRIPSSignedDocumentReference.json ==
+INFORMATION: DocumentReference/FHIRIPSSignedDocumentReference: DocumentReference.status: Reference to draft CodeSystem http://hl7.org/fhir/document-reference-status|4.0.1
+== fsh-generated/resources/DocumentReference-IPSPDFDocumentReference.json ==
+INFORMATION: DocumentReference/IPSPDFDocumentReference: DocumentReference.status: Reference to draft CodeSystem http://hl7.org/fhir/document-reference-status|4.0.1
+== fsh-generated/resources/DocumentReference-IPSSignedPDFDocumentReference.json ==
+INFORMATION: DocumentReference/IPSSignedPDFDocumentReference: DocumentReference.status: Reference to draft CodeSystem http://hl7.org/fhir/document-reference-status|4.0.1
+== fsh-generated/resources/DocumentReference-ex-documentreference.json ==
+== fsh-generated/resources/DocumentReference-ex-documentreference1.json ==
 == fsh-generated/resources/ImplementationGuide-smart.who.int.ips-pilgrimage.json ==
-ERROR: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.meta.profile[0]: Canonical URLs must be absolute URLs if they are not fragment references (SMARTImplementationGuide)
-WARNING: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.meta.profile[0]: Profile reference 'SMARTImplementationGuide' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
-== fsh-generated/resources/OperationDefinition-ConsentPostCounseling.json ==
-ERROR: OperationDefinition/ConsentPostCounseling: OperationDefinition.extension[0]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - sourceActor, targetActor
-ERROR: OperationDefinition/ConsentPostCounseling: OperationDefinition.extension[1]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - sourceActor, targetActor
-ERROR: OperationDefinition/ConsentPostCounseling: OperationDefinition.extension[2]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
-ERROR: OperationDefinition/ConsentPostCounseling: OperationDefinition.extension[3]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
-ERROR: OperationDefinition/ConsentPostCounseling: OperationDefinition.extension[4]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
-ERROR: OperationDefinition/ConsentPostCounseling: OperationDefinition.extension[2]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
-ERROR: OperationDefinition/ConsentPostCounseling: OperationDefinition.extension[3]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
-ERROR: OperationDefinition/ConsentPostCounseling: OperationDefinition.extension[4]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
-ERROR: OperationDefinition/ConsentPostCounseling: OperationDefinition: OperationDefinition.extension:sourceActor: max allowed = 1, but found 2 (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1)
-ERROR: OperationDefinition/ConsentPostCounseling: OperationDefinition: Slice 'OperationDefinition.extension:targetActor': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1). Note that other slices are allowed in addition to this required slice
-ERROR: OperationDefinition/ConsentPostCounseling: OperationDefinition: OperationDefinition.extension:triggerEvents: max allowed = 1, but found 3 (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1)
-ERROR: OperationDefinition/ConsentPostCounseling: OperationDefinition: Slice 'OperationDefinition.extension:messageSemantics': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1). Note that other slices are allowed in addition to this required slice
-ERROR: OperationDefinition/ConsentPostCounseling: OperationDefinition: Slice 'OperationDefinition.extension:expectedActions': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1). Note that other slices are allowed in addition to this required slice
-WARNING: OperationDefinition/ConsentPostCounseling: OperationDefinition.kind: ValueSet 'http://hl7.org/fhir/ValueSet/operation-kind|5.0.0' not found
-INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/OperationDefinition-ConsentWallet.json ==
-ERROR: OperationDefinition/ConsentWallet: OperationDefinition.extension[0]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - sourceActor, targetActor
-ERROR: OperationDefinition/ConsentWallet: OperationDefinition.extension[1]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - sourceActor, targetActor
-ERROR: OperationDefinition/ConsentWallet: OperationDefinition.extension[2]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
-ERROR: OperationDefinition/ConsentWallet: OperationDefinition.extension[3]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
-ERROR: OperationDefinition/ConsentWallet: OperationDefinition.extension[4]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
-ERROR: OperationDefinition/ConsentWallet: OperationDefinition.extension[2]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
-ERROR: OperationDefinition/ConsentWallet: OperationDefinition.extension[3]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
-ERROR: OperationDefinition/ConsentWallet: OperationDefinition.extension[4]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
-ERROR: OperationDefinition/ConsentWallet: OperationDefinition: OperationDefinition.extension:sourceActor: max allowed = 1, but found 2 (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1)
-ERROR: OperationDefinition/ConsentWallet: OperationDefinition: Slice 'OperationDefinition.extension:targetActor': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1). Note that other slices are allowed in addition to this required slice
-ERROR: OperationDefinition/ConsentWallet: OperationDefinition: OperationDefinition.extension:triggerEvents: max allowed = 1, but found 3 (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1)
-ERROR: OperationDefinition/ConsentWallet: OperationDefinition: Slice 'OperationDefinition.extension:messageSemantics': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1). Note that other slices are allowed in addition to this required slice
-ERROR: OperationDefinition/ConsentWallet: OperationDefinition: Slice 'OperationDefinition.extension:expectedActions': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1). Note that other slices are allowed in addition to this required slice
-WARNING: OperationDefinition/ConsentWallet: OperationDefinition.kind: ValueSet 'http://hl7.org/fhir/ValueSet/operation-kind|5.0.0' not found
-INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/OperationDefinition-GetKeys.json ==
-ERROR: OperationDefinition/GetKeys: OperationDefinition.extension[0]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - sourceActor, targetActor
-ERROR: OperationDefinition/GetKeys: OperationDefinition.extension[1]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - sourceActor, targetActor
-ERROR: OperationDefinition/GetKeys: OperationDefinition.extension[2]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
-ERROR: OperationDefinition/GetKeys: OperationDefinition.extension[3]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
-ERROR: OperationDefinition/GetKeys: OperationDefinition.extension[4]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
-ERROR: OperationDefinition/GetKeys: OperationDefinition.extension[2]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
-ERROR: OperationDefinition/GetKeys: OperationDefinition.extension[3]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
-ERROR: OperationDefinition/GetKeys: OperationDefinition.extension[4]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
-ERROR: OperationDefinition/GetKeys: OperationDefinition: OperationDefinition.extension:sourceActor: max allowed = 1, but found 2 (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1)
-ERROR: OperationDefinition/GetKeys: OperationDefinition: Slice 'OperationDefinition.extension:targetActor': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1). Note that other slices are allowed in addition to this required slice
-ERROR: OperationDefinition/GetKeys: OperationDefinition: OperationDefinition.extension:triggerEvents: max allowed = 1, but found 3 (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1)
-ERROR: OperationDefinition/GetKeys: OperationDefinition: Slice 'OperationDefinition.extension:messageSemantics': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1). Note that other slices are allowed in addition to this required slice
-ERROR: OperationDefinition/GetKeys: OperationDefinition: Slice 'OperationDefinition.extension:expectedActions': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1). Note that other slices are allowed in addition to this required slice
-ERROR: OperationDefinition/GetKeys: OperationDefinition.extension[0].value.ofType(Reference): Unable to resolve resource with reference 'http://smart.who.int/trust/ActorDefinition/GDHCN'
-ERROR: OperationDefinition/GetKeys: OperationDefinition.extension[2]: Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Extension)
-ERROR: OperationDefinition/GetKeys: OperationDefinition.extension[2]: The Extension 'http://smart.who.int/base/StructureDefinition/Markdown' definition is for a simple extension, so it must contain a value
-ERROR: OperationDefinition/GetKeys: OperationDefinition.extension[2]: Extension.value[x]: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/Markdown|0.1.1)
-WARNING: OperationDefinition/GetKeys: OperationDefinition.kind: ValueSet 'http://hl7.org/fhir/ValueSet/operation-kind|5.0.0' not found
-INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/OperationDefinition-IPSManifest.json ==
-ERROR: OperationDefinition/IPSManifest: OperationDefinition.extension[0]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - sourceActor, targetActor
-ERROR: OperationDefinition/IPSManifest: OperationDefinition.extension[1]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - sourceActor, targetActor
-ERROR: OperationDefinition/IPSManifest: OperationDefinition.extension[2]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
-ERROR: OperationDefinition/IPSManifest: OperationDefinition.extension[3]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
-ERROR: OperationDefinition/IPSManifest: OperationDefinition.extension[4]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
-ERROR: OperationDefinition/IPSManifest: OperationDefinition.extension[2]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
-ERROR: OperationDefinition/IPSManifest: OperationDefinition.extension[3]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
-ERROR: OperationDefinition/IPSManifest: OperationDefinition.extension[4]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
-ERROR: OperationDefinition/IPSManifest: OperationDefinition: OperationDefinition.extension:sourceActor: max allowed = 1, but found 2 (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1)
-ERROR: OperationDefinition/IPSManifest: OperationDefinition: Slice 'OperationDefinition.extension:targetActor': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1). Note that other slices are allowed in addition to this required slice
-ERROR: OperationDefinition/IPSManifest: OperationDefinition: OperationDefinition.extension:triggerEvents: max allowed = 1, but found 3 (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1)
-ERROR: OperationDefinition/IPSManifest: OperationDefinition: Slice 'OperationDefinition.extension:messageSemantics': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1). Note that other slices are allowed in addition to this required slice
-ERROR: OperationDefinition/IPSManifest: OperationDefinition: Slice 'OperationDefinition.extension:expectedActions': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1). Note that other slices are allowed in addition to this required slice
-ERROR: OperationDefinition/IPSManifest: OperationDefinition.extension[4]: Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Extension)
-ERROR: OperationDefinition/IPSManifest: OperationDefinition.extension[4]: The Extension 'http://smart.who.int/base/StructureDefinition/Markdown' definition is for a simple extension, so it must contain a value
-ERROR: OperationDefinition/IPSManifest: OperationDefinition.extension[4]: Extension.value[x]: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/Markdown|0.1.1)
-WARNING: OperationDefinition/IPSManifest: OperationDefinition.kind: ValueSet 'http://hl7.org/fhir/ValueSet/operation-kind|5.0.0' not found
-INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/OperationDefinition-IPSView.json ==
-ERROR: OperationDefinition/IPSView: OperationDefinition.extension[0]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - sourceActor, targetActor
-ERROR: OperationDefinition/IPSView: OperationDefinition.extension[1]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - sourceActor, targetActor
-ERROR: OperationDefinition/IPSView: OperationDefinition.extension[2]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
-ERROR: OperationDefinition/IPSView: OperationDefinition.extension[3]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
-ERROR: OperationDefinition/IPSView: OperationDefinition.extension[4]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
-ERROR: OperationDefinition/IPSView: OperationDefinition.extension[2]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
-ERROR: OperationDefinition/IPSView: OperationDefinition.extension[3]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
-ERROR: OperationDefinition/IPSView: OperationDefinition.extension[4]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
-ERROR: OperationDefinition/IPSView: OperationDefinition: OperationDefinition.extension:sourceActor: max allowed = 1, but found 2 (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1)
-ERROR: OperationDefinition/IPSView: OperationDefinition: Slice 'OperationDefinition.extension:targetActor': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1). Note that other slices are allowed in addition to this required slice
-ERROR: OperationDefinition/IPSView: OperationDefinition: OperationDefinition.extension:triggerEvents: max allowed = 1, but found 3 (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1)
-ERROR: OperationDefinition/IPSView: OperationDefinition: Slice 'OperationDefinition.extension:messageSemantics': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1). Note that other slices are allowed in addition to this required slice
-ERROR: OperationDefinition/IPSView: OperationDefinition: Slice 'OperationDefinition.extension:expectedActions': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1). Note that other slices are allowed in addition to this required slice
-ERROR: OperationDefinition/IPSView: OperationDefinition.extension[2]: Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Extension)
-ERROR: OperationDefinition/IPSView: OperationDefinition.extension[2]: The Extension 'http://smart.who.int/base/StructureDefinition/Markdown' definition is for a simple extension, so it must contain a value
-ERROR: OperationDefinition/IPSView: OperationDefinition.extension[2]: Extension.value[x]: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/Markdown|0.1.1)
-ERROR: OperationDefinition/IPSView: OperationDefinition.extension[3]: Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Extension)
-ERROR: OperationDefinition/IPSView: OperationDefinition.extension[3]: The Extension 'http://smart.who.int/base/StructureDefinition/Markdown' definition is for a simple extension, so it must contain a value
-ERROR: OperationDefinition/IPSView: OperationDefinition.extension[3]: Extension.value[x]: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/Markdown|0.1.1)
-ERROR: OperationDefinition/IPSView: OperationDefinition.extension[4]: Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Extension)
-ERROR: OperationDefinition/IPSView: OperationDefinition.extension[4]: The Extension 'http://smart.who.int/base/StructureDefinition/Markdown' definition is for a simple extension, so it must contain a value
-ERROR: OperationDefinition/IPSView: OperationDefinition.extension[4]: Extension.value[x]: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/Markdown|0.1.1)
-WARNING: OperationDefinition/IPSView: OperationDefinition.kind: ValueSet 'http://hl7.org/fhir/ValueSet/operation-kind|5.0.0' not found
-INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/OperationDefinition-PutKeys.json ==
-ERROR: OperationDefinition/PutKeys: OperationDefinition.extension[0]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - sourceActor, targetActor
-ERROR: OperationDefinition/PutKeys: OperationDefinition.extension[1]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - sourceActor, targetActor
-ERROR: OperationDefinition/PutKeys: OperationDefinition.extension[2]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
-ERROR: OperationDefinition/PutKeys: OperationDefinition.extension[3]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
-ERROR: OperationDefinition/PutKeys: OperationDefinition.extension[4]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
-ERROR: OperationDefinition/PutKeys: OperationDefinition.extension[2]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
-ERROR: OperationDefinition/PutKeys: OperationDefinition.extension[3]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
-ERROR: OperationDefinition/PutKeys: OperationDefinition.extension[4]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
-ERROR: OperationDefinition/PutKeys: OperationDefinition: OperationDefinition.extension:sourceActor: max allowed = 1, but found 2 (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1)
-ERROR: OperationDefinition/PutKeys: OperationDefinition: Slice 'OperationDefinition.extension:targetActor': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1). Note that other slices are allowed in addition to this required slice
-ERROR: OperationDefinition/PutKeys: OperationDefinition: OperationDefinition.extension:triggerEvents: max allowed = 1, but found 3 (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1)
-ERROR: OperationDefinition/PutKeys: OperationDefinition: Slice 'OperationDefinition.extension:messageSemantics': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1). Note that other slices are allowed in addition to this required slice
-ERROR: OperationDefinition/PutKeys: OperationDefinition: Slice 'OperationDefinition.extension:expectedActions': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1). Note that other slices are allowed in addition to this required slice
-ERROR: OperationDefinition/PutKeys: OperationDefinition.extension[1].value.ofType(Reference): Unable to resolve resource with reference 'http://smart.who.int/trust/ActorDefinition/GDHCN'
-ERROR: OperationDefinition/PutKeys: OperationDefinition.extension[2]: Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Extension)
-ERROR: OperationDefinition/PutKeys: OperationDefinition.extension[2]: The Extension 'http://smart.who.int/base/StructureDefinition/Markdown' definition is for a simple extension, so it must contain a value
-ERROR: OperationDefinition/PutKeys: OperationDefinition.extension[2]: Extension.value[x]: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/Markdown|0.1.1)
-ERROR: OperationDefinition/PutKeys: OperationDefinition.extension[4]: Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Extension)
-ERROR: OperationDefinition/PutKeys: OperationDefinition.extension[4]: The Extension 'http://smart.who.int/base/StructureDefinition/Markdown' definition is for a simple extension, so it must contain a value
-ERROR: OperationDefinition/PutKeys: OperationDefinition.extension[4]: Extension.value[x]: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/Markdown|0.1.1)
-WARNING: OperationDefinition/PutKeys: OperationDefinition.kind: ValueSet 'http://hl7.org/fhir/ValueSet/operation-kind|5.0.0' not found
-INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/OperationDefinition-SignIPS.json ==
-ERROR: OperationDefinition/SignIPS: OperationDefinition.extension[0]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - sourceActor, targetActor
-ERROR: OperationDefinition/SignIPS: OperationDefinition.extension[1]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - sourceActor, targetActor
-ERROR: OperationDefinition/SignIPS: OperationDefinition.extension[2]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
-ERROR: OperationDefinition/SignIPS: OperationDefinition.extension[3]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
-ERROR: OperationDefinition/SignIPS: OperationDefinition.extension[4]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
-ERROR: OperationDefinition/SignIPS: OperationDefinition.extension[2]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
-ERROR: OperationDefinition/SignIPS: OperationDefinition.extension[3]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
-ERROR: OperationDefinition/SignIPS: OperationDefinition.extension[4]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
-ERROR: OperationDefinition/SignIPS: OperationDefinition: OperationDefinition.extension:sourceActor: max allowed = 1, but found 2 (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1)
-ERROR: OperationDefinition/SignIPS: OperationDefinition: Slice 'OperationDefinition.extension:targetActor': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1). Note that other slices are allowed in addition to this required slice
-ERROR: OperationDefinition/SignIPS: OperationDefinition: OperationDefinition.extension:triggerEvents: max allowed = 1, but found 3 (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1)
-ERROR: OperationDefinition/SignIPS: OperationDefinition: Slice 'OperationDefinition.extension:messageSemantics': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1). Note that other slices are allowed in addition to this required slice
-ERROR: OperationDefinition/SignIPS: OperationDefinition: Slice 'OperationDefinition.extension:expectedActions': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1). Note that other slices are allowed in addition to this required slice
-WARNING: OperationDefinition/SignIPS: OperationDefinition.kind: ValueSet 'http://hl7.org/fhir/ValueSet/operation-kind|5.0.0' not found
-INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/OperationDefinition-SignSHL.json ==
-ERROR: OperationDefinition/SignSHL: OperationDefinition.extension[0]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - sourceActor, targetActor
-ERROR: OperationDefinition/SignSHL: OperationDefinition.extension[1]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - sourceActor, targetActor
-ERROR: OperationDefinition/SignSHL: OperationDefinition.extension[2]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
-ERROR: OperationDefinition/SignSHL: OperationDefinition.extension[3]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
-ERROR: OperationDefinition/SignSHL: OperationDefinition.extension[4]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, messageSemantics
-ERROR: OperationDefinition/SignSHL: OperationDefinition.extension[2]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
-ERROR: OperationDefinition/SignSHL: OperationDefinition.extension[3]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
-ERROR: OperationDefinition/SignSHL: OperationDefinition.extension[4]: Profile http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1, Element matches more than one slice - triggerEvents, expectedActions
-ERROR: OperationDefinition/SignSHL: OperationDefinition: OperationDefinition.extension:sourceActor: max allowed = 1, but found 2 (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1)
-ERROR: OperationDefinition/SignSHL: OperationDefinition: Slice 'OperationDefinition.extension:targetActor': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1). Note that other slices are allowed in addition to this required slice
-ERROR: OperationDefinition/SignSHL: OperationDefinition: OperationDefinition.extension:triggerEvents: max allowed = 1, but found 3 (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1)
-ERROR: OperationDefinition/SignSHL: OperationDefinition: Slice 'OperationDefinition.extension:messageSemantics': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1). Note that other slices are allowed in addition to this required slice
-ERROR: OperationDefinition/SignSHL: OperationDefinition: Slice 'OperationDefinition.extension:expectedActions': a matching slice is required, but not found (from http://smart.who.int/base/StructureDefinition/SGTransaction|0.1.1). Note that other slices are allowed in addition to this required slice
-WARNING: OperationDefinition/SignSHL: OperationDefinition.kind: ValueSet 'http://hl7.org/fhir/ValueSet/operation-kind|5.0.0' not found
-INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[0]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[1]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[2]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[3]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[4]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[5]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[6]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[7]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[8]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[9]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[10]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[11]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[12]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[13]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[15]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[16]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[17]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[18]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[19]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[20]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[21]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[22]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[23]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[24]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[26]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[27]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[28]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[29]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[30]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[31]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[32]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[33]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[34]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[35]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[43]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[45]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[47]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[48]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[49]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[50]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[52]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+== fsh-generated/resources/List-PilgrimFolder.json ==
+== fsh-generated/resources/Medication-8adc0999-9468-4ac9-9557-680fa133d625.json ==
+== fsh-generated/resources/Medication-976d0804-cae0-45ae-afe3-a19f3ceba6bb.json ==
+WARNING: Medication/976d0804-cae0-45ae-afe3-a19f3ceba6bb: Medication.code.coding[1].system: A definition for CodeSystem 'urn:oid:2.16.840.1.113883.2.4.4.1' could not be found, so the code cannot be validated
+WARNING: Medication/976d0804-cae0-45ae-afe3-a19f3ceba6bb: Medication.code.coding[2].system: A definition for CodeSystem 'urn:oid:2.16.840.1.113883.2.4.4.7' could not be found, so the code cannot be validated
+== fsh-generated/resources/MedicationStatement-47524493-846a-4a26-bae2-4ab03e60f02d.json ==
+== fsh-generated/resources/MedicationStatement-c220e36c-eb67-4fc4-9ba1-2fabc52acec5.json ==
+INFORMATION: MedicationStatement/c220e36c-eb67-4fc4-9ba1-2fabc52acec5: MedicationStatement.dosage[0].doseAndRate[0].type: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/dose-rate-type|1.0.0
+== fsh-generated/resources/Observation-2639657a-c19a-48e2-82cc-471e13b8ad93.json ==
+== fsh-generated/resources/Observation-26bee0a9-5997-4557-ab9d-c6adbb05b571.json ==
+== fsh-generated/resources/Observation-6e39ccf3-f997-4a2b-8f28-b4b71c778c79.json ==
+== fsh-generated/resources/Observation-a6a5a1d5-c896-4c7e-b922-888fcc7e6ae3.json ==
+== fsh-generated/resources/Observation-aa11a2be-3e36-4be7-b58a-6fc3dace2740.json ==
+== fsh-generated/resources/Observation-b4916505-a06b-460c-9be8-011609282456.json ==
+== fsh-generated/resources/Observation-cc354e00-a419-47ea-8b6c-1768b2a01645.json ==
+== fsh-generated/resources/Organization-45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd6.json ==
+INFORMATION: Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd6: Organization.type[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/organization-type|2.0.0
+== fsh-generated/resources/Organization-890751f4-2924-4636-bab7-efffc7f3cf14.json ==
+== fsh-generated/resources/Patient-2b90dd2b-2dab-4c75-9bb9-a355e07401e7.json ==
+== fsh-generated/resources/Practitioner-1c616b24-3895-48c4-9a02-9a64110351ee.json ==
+== fsh-generated/resources/Questionnaire-Questionnaire-ConnectathonSubmission.json ==
+WARNING: Questionnaire/Questionnaire-ConnectathonSubmission: Questionnaire: Constraint failed: que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/Questionnaire)
 == fsh-generated/resources/StructureDefinition-ConsentPeriod.json ==
 WARNING: StructureDefinition.where(url = 'http://smart.who.int/ips-pilgrimage/StructureDefinition/ConsentPeriod'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ConsentVerifiedBy.json ==
 WARNING: StructureDefinition.where(url = 'http://smart.who.int/ips-pilgrimage/StructureDefinition/ConsentVerifiedBy'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-HajjConsent.json ==
-WARNING: StructureDefinition.where(url = 'http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjConsent'): The Implementation Guide contains no examples for this profile
+INFORMATION: StructureDefinition/HajjConsent: StructureDefinition.snapshot.element[11].pattern.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/consentscope|2.0.0
+WARNING: StructureDefinition/HajjConsent: StructureDefinition.differential.element[3].binding: The definition for the element 'Consent.provision.purpose' binds to the value set 'http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.CONSENT' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/HajjConsent: StructureDefinition.snapshot.element[46].binding: The definition for the element 'Consent.provision.purpose' binds to the value set 'http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.CONSENT' which is experimental, but this structure is not labeled as experimental
+== fsh-generated/resources/StructureDefinition-HajjIPS.json ==
+== fsh-generated/resources/StructureDefinition-HajjIPS-Composition.json ==
+WARNING: StructureDefinition/HajjIPS-Composition: StructureDefinition: Constraint failed: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+INFORMATION: StructureDefinition/HajjIPS-Composition: Composition.extension: The extension http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber|5.1.0 is deprecated
+INFORMATION: StructureDefinition/HajjIPS-Composition: StructureDefinition.snapshot.element[40].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/HajjIPS-Composition: StructureDefinition.snapshot.element[54].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 == fsh-generated/resources/StructureDefinition-HajjOrganization.json ==
 WARNING: StructureDefinition.where(url = 'http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjOrganization'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/ValueSet-Browser.json ==
+WARNING: ValueSet/Browser: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-DistributionModel.json ==
+WARNING: ValueSet/DistributionModel: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-IPS.HAJJ.ACTOR.json ==
+== fsh-generated/resources/ValueSet-IPS.HAJJ.ACTOR.SYSTEM.json ==
 == fsh-generated/resources/ValueSet-IPS.HAJJ.CONSENT.json ==
+== fsh-generated/resources/ValueSet-IPS.HAJJ.TRANSACTION.json ==
+== fsh-generated/resources/ValueSet-Language.json ==
+WARNING: ValueSet/Language: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-LicensingModel.json ==
+WARNING: ValueSet/LicensingModel: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-OperatingSystem.json ==
+WARNING: ValueSet/OperatingSystem: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present

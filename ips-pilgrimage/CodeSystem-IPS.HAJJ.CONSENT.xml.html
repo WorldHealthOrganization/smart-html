@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>IPS.HAJJ.CONSENT CodeSystem - XML Representation - SMART Verifiable IPS for Pilgrimage v1.0.0</title>
+    <title>IPS.HAJJ.CONSENT CodeSystem - XML Representation - SMART Verifiable IPS for Pilgrimage v2.0.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -23,6 +23,7 @@
     <!-- Placeholder for child template CSS declarations -->
     <link href="assets/css/who.css" rel="stylesheet"/>
     <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -43,8 +44,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5.1.6"}
-    h3,h4,h5,h6{--heading-prefix:"5.1.6"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.1.21"}
+    h3,h4,h5,h6{--heading-prefix:"5.1.21"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
 
       <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
@@ -60,7 +61,7 @@
                 <span class="icon-bar"> </span>
                 <span class="icon-bar"> </span>
               </button>
-              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4B/index.html">FHIR</a>
+              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
               <div class="nav-collapse collapse navbar-inverse-collapse">
                 <!-- menu.xml  -->
 
@@ -209,6 +210,8 @@
         <!-- Placeholder for child template header declarations -->
 <div id="project-nav">
     <a id="who-logo" no-external="true" href="index.html">
+      
+<img height="50" style="margin:7px" alt="Welcome on standards website" src="assets/images/h-logo-blue.svg"/>
         
     </a>
 </div>
@@ -218,10 +221,10 @@
 </div> 
 
 
-        <div id="ig-status" class="ig-status-draft">
+        <div id="ig-status" class="ig-status-active">
           <p><span style="font-size:12pt;font-weight:bold">SMART Verifiable IPS for Pilgrimage</span>
             <br/>
-            <span style="display:inline-block;">1.0.0 - ci-build
+            <span style="display:inline-block;">2.0.2 - release
 
 
             </span>
@@ -249,7 +252,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the SMART Verifiable IPS for Pilgrimage (v1.0.0: Releases Draft) based on <a no-external="true" href="http://hl7.org/fhir/4.3.0">FHIR (HL7® FHIR® Standard) v4.3.0</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/ips-pilgrimage/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">This page is part of the SMART Verifiable IPS for Pilgrimage (v2.0.2: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/ips-pilgrimage/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -304,7 +307,7 @@
         
           Active
           
-            as of 2024-04-25
+            as of 2025-02-04
           
         
       </td>
@@ -320,62 +323,61 @@
 
 
 
-  <pre class="xml" style="white-space: pre; text-wrap: nowrap;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
-
-&lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem">CodeSystem</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.id">id</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#id">value</a>=&quot;IPS.HAJJ.CONSENT&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.text">text</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;This case-insensitive code system &lt;code&gt;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=&quot;codes&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;CONSENT-KSA&lt;a name=&quot;IPS.HAJJ.CONSENT-CONSENT-KSA&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Consent for Kingdom of Saudi Arabia&lt;/td&gt;&lt;td&gt;The Pilgrim consents to share his-her International Patient Summary (IPS data) during the  provision of clinical care at Ministry of Health-Saudi Arabia in Haj District area healthcare facilities through the Haj-1445 event as any follow up care that might be needed from any healthcare practitioners&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;CONSENT-IDN&lt;a name=&quot;IPS.HAJJ.CONSENT-CONSENT-IDN&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Consent for Indonesia&lt;/td&gt;&lt;td&gt;&amp;lt;INSERT TEXT FROM INDONESIA: discuss pilgrims's consent to utilize Satusehat to enable access to KSA to their IPS if they are in need of care during Hajj&amp;gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;CONSENT-MYS&lt;a name=&quot;IPS.HAJJ.CONSENT-CONSENT-MYS&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Consent for Malaysia&lt;/td&gt;&lt;td&gt;The Malaysian Hajj pilgrim has provided consent for sharing the International Patient Summary (IPS) generated from the data recorded during the Hajj pilgrim health examination, as well as the vaccination records stored on MySejahtera to Kingdom of Saudi Arabia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;CONSENT-OMN&lt;a name=&quot;IPS.HAJJ.CONSENT-CONSENT-OMN&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Consent for Oman&lt;/td&gt;&lt;td&gt;&amp;lt;INSERT TEXT FROM OMAN: discuss pilgrims's consent to utilize Oman's e-Health Portal to enable access to KSA to their IPS if they are in need of care&amp;gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  <pre class="xml" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
+&lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">CodeSystem</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;IPS.HAJJ.CONSENT&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem IPS.HAJJ.CONSENT&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;IPS.HAJJ.CONSENT&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcIPS.HAJJ.CONSENT&quot;&gt; &lt;/a&gt;&lt;a name=&quot;IPS.HAJJ.CONSENT-en-US&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-insensitive code system &lt;code&gt;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=&quot;codes&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;CONSENT-KSA&lt;a name=&quot;IPS.HAJJ.CONSENT-CONSENT-KSA&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Consent for Kingdom of Saudi Arabia&lt;/td&gt;&lt;td&gt;The Pilgrim consents to share his-her International Patient Summary (IPS data) during the  provision of clinical care at Ministry of Health-Saudi Arabia in Haj District area healthcare facilities through the Haj-1445 event as any follow up care that might be needed from any healthcare practitioners&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;CONSENT-IDN&lt;a name=&quot;IPS.HAJJ.CONSENT-CONSENT-IDN&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Consent for Indonesia&lt;/td&gt;&lt;td&gt;&amp;lt;INSERT TEXT FROM INDONESIA: discuss pilgrims's consent to utilize Satusehat to enable access to KSA to their IPS if they are in need of care during Hajj&amp;gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;CONSENT-MYS&lt;a name=&quot;IPS.HAJJ.CONSENT-CONSENT-MYS&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Consent for Malaysia&lt;/td&gt;&lt;td&gt;The Malaysian Hajj pilgrim has provided consent for sharing the International Patient Summary (IPS) generated from the data recorded during the Hajj pilgrim health examination, as well as the vaccination records stored on MySejahtera to Kingdom of Saudi Arabia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;CONSENT-OMN&lt;a name=&quot;IPS.HAJJ.CONSENT-CONSENT-OMN&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Consent for Oman&lt;/td&gt;&lt;td&gt;&amp;lt;INSERT TEXT FROM OMAN: discuss pilgrims's consent to utilize Oman's e-Health Portal to enable access to KSA to their IPS if they are in need of care&amp;gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.url">url</a>
-       <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">value</a>=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.version">version</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;1.0.0&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.name">name</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;IPS_HAJJ_CONSENT&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.title">title</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;IPS.HAJJ.CONSENT CodeSystem&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.status">status</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.experimental">experimental</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.date">date</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#dateTime">value</a>=&quot;2024-04-25T17:24:48+00:00&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.publisher">publisher</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;WHO&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.contact">contact</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;WHO&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;http://who.int&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>
+       <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;2.0.2&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;IPS_HAJJ_CONSENT&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;IPS.HAJJ.CONSENT CodeSystem&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2025-02-04T19:22:12+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;WHO&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;WHO&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;http://who.int&quot;/&gt;
     &lt;/telecom&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;email&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;smart@who.int&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;email&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;smart@who.int&quot;/&gt;
     &lt;/telecom&gt;
   &lt;/contact&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.description">description</a>
-               <a href="http://hl7.org/fhir/R4B/datatypes.html#markdown">value</a>=&quot;CodeSystem for IPS.HAJJ.CONSENT CodeSystem for utilization of IPS during Hajj&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.content">content</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;complete&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.count">count</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#unsignedInt">value</a>=&quot;4&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;CONSENT-KSA&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Consent for Kingdom of Saudi Arabia&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.definition">definition</a>
-                <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;The Pilgrim consents to share his-her International Patient Summary (IPS data) during the  provision of clinical care at Ministry of Health-Saudi Arabia in Haj District area healthcare facilities through the Haj-1445 event as any follow up care that might be needed from any healthcare practitioners&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;CodeSystem for IPS.HAJJ.CONSENT CodeSystem for utilization of IPS during Hajj&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;complete&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>=&quot;4&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;CONSENT-KSA&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Consent for Kingdom of Saudi Arabia&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;The Pilgrim consents to share his-her International Patient Summary (IPS data) during the  provision of clinical care at Ministry of Health-Saudi Arabia in Haj District area healthcare facilities through the Haj-1445 event as any follow up care that might be needed from any healthcare practitioners&quot;/&gt;
   &lt;/concept&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;CONSENT-IDN&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Consent for Indonesia&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.definition">definition</a>
-                <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;&amp;lt;INSERT TEXT FROM INDONESIA: discuss pilgrims's consent to utilize Satusehat to enable access to KSA to their IPS if they are in need of care during Hajj&amp;gt;&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;CONSENT-IDN&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Consent for Indonesia&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;&amp;lt;INSERT TEXT FROM INDONESIA: discuss pilgrims's consent to utilize Satusehat to enable access to KSA to their IPS if they are in need of care during Hajj&amp;gt;&quot;/&gt;
   &lt;/concept&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;CONSENT-MYS&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Consent for Malaysia&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.definition">definition</a>
-                <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;The Malaysian Hajj pilgrim has provided consent for sharing the International Patient Summary (IPS) generated from the data recorded during the Hajj pilgrim health examination, as well as the vaccination records stored on MySejahtera to Kingdom of Saudi Arabia&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;CONSENT-MYS&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Consent for Malaysia&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;The Malaysian Hajj pilgrim has provided consent for sharing the International Patient Summary (IPS) generated from the data recorded during the Hajj pilgrim health examination, as well as the vaccination records stored on MySejahtera to Kingdom of Saudi Arabia&quot;/&gt;
   &lt;/concept&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;CONSENT-OMN&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Consent for Oman&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.definition">definition</a>
-                <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;&amp;lt;INSERT TEXT FROM OMAN: discuss pilgrims's consent to utilize Oman's e-Health Portal to enable access to KSA to their IPS if they are in need of care&amp;gt;&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;CONSENT-OMN&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Consent for Oman&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;&amp;lt;INSERT TEXT FROM OMAN: discuss pilgrims's consent to utilize Oman's e-Health Portal to enable access to KSA to their IPS if they are in need of care&amp;gt;&quot;/&gt;
   &lt;/concept&gt;
 &lt;/CodeSystem&gt;</code></pre>
 
@@ -401,7 +403,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.ips-pilgrimage#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Thu, Apr 25, 2024 17:24+0000">2024-04-25</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.ips-pilgrimage#2.0.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 4, 2025 19:22+0000">2025-02-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -419,7 +421,7 @@
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -430,7 +432,6 @@
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>

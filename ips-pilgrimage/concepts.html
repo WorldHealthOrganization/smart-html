@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Concepts - SMART Verifiable IPS for Pilgrimage v1.0.0</title>
+    <title>Concepts - SMART Verifiable IPS for Pilgrimage v2.0.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -21,6 +21,7 @@
     <!-- Placeholder for child template CSS declarations -->
     <link href="assets/css/who.css" rel="stylesheet"/>
     <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -58,7 +59,7 @@
                 <span class="icon-bar"> </span>
                 <span class="icon-bar"> </span>
               </button>
-              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4B/index.html">FHIR</a>
+              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
               <div class="nav-collapse collapse navbar-inverse-collapse">
                 <!-- menu.xml  -->
 
@@ -207,6 +208,8 @@
         <!-- Placeholder for child template header declarations -->
 <div id="project-nav">
     <a id="who-logo" no-external="true" href="index.html">
+      
+<img height="50" style="margin:7px" alt="Welcome on standards website" src="assets/images/h-logo-blue.svg"/>
         
     </a>
 </div>
@@ -216,10 +219,10 @@
 </div> 
 
 
-        <div id="ig-status" class="ig-status-draft">
+        <div id="ig-status" class="ig-status-active">
           <p><span style="font-size:12pt;font-weight:bold">SMART Verifiable IPS for Pilgrimage</span>
             <br/>
-            <span style="display:inline-block;">1.0.0 - ci-build
+            <span style="display:inline-block;">2.0.2 - release
 
 
             </span>
@@ -254,7 +257,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART Verifiable IPS for Pilgrimage (v1.0.0: Releases Draft) based on <a no-external="true" href="http://hl7.org/fhir/4.3.0">FHIR (HL7® FHIR® Standard) v4.3.0</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/ips-pilgrimage/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART Verifiable IPS for Pilgrimage (v2.0.2: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/ips-pilgrimage/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Concepts</h2>
   
 
@@ -270,80 +273,94 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#key-concepts-and-definitions" id="markdown-toc-key-concepts-and-definitions">Key Concepts and Definitions</a>    <ul>
+      <li><a href="#pilgrim" id="markdown-toc-pilgrim"><strong>Pilgrim</strong></a></li>
+      <li><a href="#origin-country" id="markdown-toc-origin-country"><strong>Origin Country</strong></a></li>
+      <li><a href="#host-country" id="markdown-toc-host-country"><strong>Host Country</strong></a></li>
+      <li><a href="#hajj-health-facility" id="markdown-toc-hajj-health-facility"><strong>Hajj Health Facility</strong></a></li>
+      <li><a href="#registration-nurse" id="markdown-toc-registration-nurse"><strong>Registration Nurse</strong></a></li>
+      <li><a href="#clinician" id="markdown-toc-clinician"><strong>Clinician</strong></a></li>
+      <li><a href="#international-patient-summary-ips" id="markdown-toc-international-patient-summary-ips"><strong>International Patient Summary (IPS)</strong></a></li>
+      <li><a href="#qr-code" id="markdown-toc-qr-code"><strong>QR Code</strong></a></li>
+      <li><a href="#smart-health-link-shl" id="markdown-toc-smart-health-link-shl"><strong>Smart Health Link (SHL)</strong></a></li>
+      <li><a href="#pin-personal-identification-number" id="markdown-toc-pin-personal-identification-number"><strong>PIN (Personal Identification Number)</strong></a></li>
+      <li><a href="#emr-electronic-medical-record" id="markdown-toc-emr-electronic-medical-record"><strong>EMR (Electronic Medical Record)</strong></a></li>
+      <li><a href="#hie-health-information-exchange" id="markdown-toc-hie-health-information-exchange"><strong>HIE (Health Information Exchange)</strong></a></li>
+      <li><a href="#verifiable-international-patient-summary-verifiable-ips" id="markdown-toc-verifiable-international-patient-summary-verifiable-ips"><strong>Verifiable International Patient Summary (Verifiable IPS)</strong></a></li>
+    </ul>
+  </li>
+</ul>
+
 </div>
-<p>AKey concepts and abbreviations are described here. Additional terms are defined in the Glossary and List of Abbreviations in the <a href="https://worldhealthorganization.github.io/ddcc/concepts.html">WHO Digital Documentation of COVID-19 Certificates FHIR Implementation Guide</a>.</p>
+<p>Key concepts and abbreviations are described here. Additional terms are defined in the Glossary and List of Abbreviations in the <a href="https://worldhealthorganization.github.io/ddcc/concepts.html">WHO Digital Documentation of COVID-19 Certificates FHIR Implementation Guide</a>.</p>
+
 <h1 id="key-concepts-and-definitions">Key Concepts and Definitions</h1>
 
-<h2 id="pilgrim"><strong>Pilgrim</strong></h2>
+<h3 id="pilgrim"><strong>Pilgrim</strong></h3>
 <ul>
   <li>A person who undertakes the Hajj pilgrimage to Mecca. In the context of the healthcare system, the pilgrim is the primary user, receiving healthcare services and interacting with various healthcare providers.</li>
 </ul>
 
-<h2 id="origin-country"><strong>Origin Country</strong></h2>
+<h3 id="origin-country"><strong>Origin Country</strong></h3>
 <ul>
   <li>The country from which the pilgrim originates or holds citizenship. This is significant in the context of healthcare as health information and preparatory measures might be initiated in the origin country before the pilgrimage.</li>
 </ul>
 
-<h2 id="host-country"><strong>Host Country</strong></h2>
+<h3 id="host-country"><strong>Host Country</strong></h3>
 <ul>
   <li>The country hosting the pilgrimage, which in the case of the Hajj is the Kingdom of Saudi Arabia (KSA). The host country provides healthcare and other services to pilgrims during their stay.</li>
 </ul>
 
-<h2 id="hajj-health-facility"><strong>Hajj Health Facility</strong></h2>
+<h3 id="hajj-health-facility"><strong>Hajj Health Facility</strong></h3>
 <ul>
   <li>A medical facility set up to cater specifically to the needs of Hajj pilgrims. These facilities can range from clinics to hospitals and are equipped to handle both routine health checks and emergency services.</li>
 </ul>
 
-<h2 id="registration-nurse"><strong>Registration Nurse</strong></h2>
+<h3 id="registration-nurse"><strong>Registration Nurse</strong></h3>
 <ul>
   <li>A healthcare professional responsible for the initial registration of pilgrims at Hajj health facilities. This includes collecting and verifying pilgrim information and initiating the health service process.</li>
 </ul>
 
-<h2 id="clinician"><strong>Clinician</strong></h2>
+<h3 id="clinician"><strong>Clinician</strong></h3>
 <ul>
-  <li>A medical professional, such as a doctor or nurse, who provides clinical care to the pilgrim. Clinicians use the pilgrim’s health information, accessed via the healthcare system, to offer appropriate medical treatments.</li>
+  <li>A medical professional, such as a doctor or nurse, who provides clinical care to the pilgrim. Clinicians use the pilgrim's health information, accessed via the healthcare system, to offer appropriate medical treatments.</li>
 </ul>
 
-<h2 id="international-patient-summary-ips"><strong>International Patient Summary (IPS)</strong></h2>
+<h3 id="international-patient-summary-ips"><strong>International Patient Summary (IPS)</strong></h3>
 <ul>
   <li>A digital document that contains essential healthcare information about a patient, designed to support the continuity of care and patient safety. For Hajj pilgrims, the IPS includes basic demographics, medical history, medications, allergies, and other critical health information that can be shared across borders and healthcare systems.</li>
 </ul>
 
-<h2 id="qr-code"><strong>QR Code</strong></h2>
+<h3 id="qr-code"><strong>QR Code</strong></h3>
 <ul>
-  <li>A machine-readable optical label that contains information about the item to which it is attached. In this context, it holds encrypted data that allows healthcare providers access to a pilgrim’s IPS when scanned.</li>
+  <li>A machine-readable optical label that contains information about the item to which it is attached. In this context, it holds encrypted data that allows healthcare providers access to a pilgrim's IPS when scanned.</li>
 </ul>
 
-<h2 id="verifiable-smart-health-link-shl">**Verifiable Smart Health Link (SHL)</h2>
+<h3 id="smart-health-link-shl"><strong>Smart Health Link (SHL)</strong></h3>
 <ul>
   <li>A Smart Health Link is a special link that provides time-bound, password and cryptographically restricted access to a health certificate or document.</li>
 </ul>
 
-<h2 id="pin-personal-identification-number"><strong>PIN (Personal Identification Number)</strong></h2>
+<h3 id="pin-personal-identification-number"><strong>PIN (Personal Identification Number)</strong></h3>
 <ul>
-  <li>A security feature that adds an extra layer of protection to the pilgrim’s health information. The default PIN is often the pilgrim’s birthdate, and it is used in conjunction with the QR code to access the IPS.</li>
+  <li>A security feature that adds an extra layer of protection to the pilgrim's health information. The default PIN is often the pilgrim's birthdate, and it is used in conjunction with the QR code to access the IPS.</li>
 </ul>
 
-<h2 id="emr-electronic-medical-record"><strong>EMR (Electronic Medical Record)</strong></h2>
+<h3 id="emr-electronic-medical-record"><strong>EMR (Electronic Medical Record)</strong></h3>
 <ul>
-  <li>A digital version of a patient’s paper chart, used by healthcare providers for diagnosis and treatment. In the context of the Hajj, EMRs are used by host country medical facilities to manage pilgrim care.</li>
+  <li>A digital version of a patient's paper chart, used by healthcare providers for diagnosis and treatment. In the context of the Hajj, EMRs are used by host country medical facilities to manage pilgrim care.</li>
 </ul>
 
-<h2 id="hie-health-information-exchange"><strong>HIE (Health Information Exchange)</strong></h2>
+<h3 id="hie-health-information-exchange"><strong>HIE (Health Information Exchange)</strong></h3>
 <ul>
   <li>The electronic sharing of health information among different organizations. In the context of the Hajj, it refers to the system that allows origin countries and the host country to exchange pilgrim health information securely.</li>
 </ul>
 
-<h2 id="verifiable-international-patient-summary-verifiable-ips"><strong>Verifiable International Patient Summary (Verifiable IPS)</strong></h2>
+<h3 id="verifiable-international-patient-summary-verifiable-ips"><strong>Verifiable International Patient Summary (Verifiable IPS)</strong></h3>
 <ul>
   <li>An IPS document together with a digital signature that can be used to verify the provenance of the IPS within a Trust Network.</li>
-</ul>
-
-<h2 id="verifiable-smart-health-link-verifiable-shl">**Verifiable Smart Health Link (Verifiable SHL)</h2>
-<ul>
-  <li>A Smart Health Link together with a digital signature embedded as a HCERT</li>
 </ul>
 
 
@@ -365,7 +382,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.ips-pilgrimage#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Thu, Apr 25, 2024 17:24+0000">2024-04-25</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.ips-pilgrimage#2.0.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 4, 2025 19:22+0000">2025-02-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -383,7 +400,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -394,7 +411,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>

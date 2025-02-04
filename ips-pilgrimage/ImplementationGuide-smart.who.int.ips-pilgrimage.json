@@ -2,18 +2,19 @@
   "resourceType" : "ImplementationGuide",
   "id" : "smart.who.int.ips-pilgrimage",
   "meta" : {
-    "profile" : ["SMARTImplementationGuide"]
+    "profile" : ["http://smart.who.int/base/StructureDefinition/SGImplementationGuide"]
   },
   "text" : {
-    "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SMART_WHO_INT_IPS_Pilgrimage</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/ips-pilgrimage/ImplementationGuide/smart.who.int.ips-pilgrimage</pre><div><p>An Implementation Guide which describes how to utilize GDHCN and IPS for verifiable health documents during pilgrimage.</p>\n</div></div>"
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide smart.who.int.ips-pilgrimage</b></p><a name=\"smart.who.int.ips-pilgrimage\"> </a><a name=\"hcsmart.who.int.ips-pilgrimage\"> </a><a name=\"smart.who.int.ips-pilgrimage-en-US\"> </a><h2>SMART_WHO_INT_IPS_Pilgrimage</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/ips-pilgrimage/ImplementationGuide/smart.who.int.ips-pilgrimage</pre><div><p>An Implementation Guide which describes how to utilize GDHCN and IPS for verifiable health documents during pilgrimage.</p>\n</div></div>"
   },
   "url" : "http://smart.who.int/ips-pilgrimage/ImplementationGuide/smart.who.int.ips-pilgrimage",
-  "version" : "1.0.0",
+  "version" : "2.0.2",
   "name" : "SMART_WHO_INT_IPS_Pilgrimage",
   "title" : "SMART Verifiable IPS for Pilgrimage",
-  "status" : "draft",
-  "date" : "2024-04-25T17:24:48+00:00",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-02-04T19:22:12+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",
@@ -28,8 +29,8 @@
   }],
   "description" : "An Implementation Guide which describes how to utilize GDHCN and IPS for verifiable health documents during pilgrimage.",
   "packageId" : "smart.who.int.ips-pilgrimage",
-  "license" : "CC0-1.0",
-  "fhirVersion" : ["4.3.0"],
+  "license" : "CC-BY-SA-3.0-IGO",
+  "fhirVersion" : ["4.0.1"],
   "dependsOn" : [{
     "id" : "hl7tx",
     "extension" : [{
@@ -38,7 +39,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "5.5.0"
+    "version" : "6.2.0"
   },
   {
     "id" : "hl7ext",
@@ -48,25 +49,49 @@
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "1.0.0"
+    "version" : "5.1.0"
   },
   {
-    "id" : "who_base",
-    "uri" : "http://smart.who.int/base/ImplementationGuide/who.base",
-    "packageId" : "who.base",
-    "version" : "dev"
+    "id" : "smart_who_int_base",
+    "uri" : "http://smart.who.int/base/ImplementationGuide/smart.who.int.base",
+    "packageId" : "smart.who.int.base",
+    "version" : "0.1.0"
   },
   {
     "id" : "ihe_iti_mcsd",
     "uri" : "https://profiles.ihe.net/ITI/mCSD/ImplementationGuide/ihe.iti.mcsd",
     "packageId" : "ihe.iti.mcsd",
-    "version" : "current"
+    "version" : "3.8.0"
   },
   {
     "id" : "hl7_fhir_uv_ips",
     "uri" : "http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips",
     "packageId" : "hl7.fhir.uv.ips",
     "version" : "1.1.0"
+  },
+  {
+    "id" : "hl7_fhir_uv_sdc",
+    "uri" : "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc",
+    "packageId" : "hl7.fhir.uv.sdc",
+    "version" : "3.0.0"
+  },
+  {
+    "id" : "hl7_fhir_uv_cpg",
+    "uri" : "http://hl7.org/fhir/uv/cpg/ImplementationGuide/hl7.fhir.uv.cpg",
+    "packageId" : "hl7.fhir.uv.cpg",
+    "version" : "2.0.0"
+  },
+  {
+    "id" : "ihe_iti_pcf",
+    "uri" : "https://profiles.ihe.net/ITI/PCF/ImplementationGuide/ihe.iti.pcf",
+    "packageId" : "ihe.iti.pcf",
+    "version" : "1.1.0"
+  },
+  {
+    "id" : "ihe_iti_mhd",
+    "uri" : "https://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.iti.mhd",
+    "packageId" : "ihe.iti.mhd",
+    "version" : "4.2.2"
   }],
   "definition" : {
     "extension" : [{
@@ -87,7 +112,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "ci-build"
+        "valueString" : "release"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -346,7 +371,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools#0.1.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.3.0"
     },
     {
       "extension" : [{
@@ -366,7 +391,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "ci-build"
+        "valueString" : "release"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -626,6 +651,270 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/1c616b24-3895-48c4-9a02-9a64110351ee"
+      },
+      "name" : "1c616b24-3895-48c4-9a02-9a64110351ee",
+      "description" : "Example Practitioner",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/2639657a-c19a-48e2-82cc-471e13b8ad93"
+      },
+      "name" : "2639657a-c19a-48e2-82cc-471e13b8ad93",
+      "description" : "Example Observation",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/26bee0a9-5997-4557-ab9d-c6adbb05b571"
+      },
+      "name" : "26bee0a9-5997-4557-ab9d-c6adbb05b571",
+      "description" : "Example Observation",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd6"
+      },
+      "name" : "45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd6",
+      "description" : "Example Organization",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationStatement"
+      }],
+      "reference" : {
+        "reference" : "MedicationStatement/47524493-846a-4a26-bae2-4ab03e60f02d"
+      },
+      "name" : "47524493-846a-4a26-bae2-4ab03e60f02d",
+      "description" : "Example MedicationStatement",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/6e39ccf3-f997-4a2b-8f28-b4b71c778c79"
+      },
+      "name" : "6e39ccf3-f997-4a2b-8f28-b4b71c778c79",
+      "description" : "Example Observation",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "AllergyIntolerance"
+      }],
+      "reference" : {
+        "reference" : "AllergyIntolerance/72884cad-ebe6-4f43-a51a-2f978275f131"
+      },
+      "name" : "72884cad-ebe6-4f43-a51a-2f978275f131",
+      "description" : "Example AllergyIntolerance",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/890751f4-2924-4636-bab7-efffc7f3cf14"
+      },
+      "name" : "890751f4-2924-4636-bab7-efffc7f3cf14",
+      "description" : "Example Organization",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/8adc0999-9468-4ac9-9557-680fa133d625"
+      },
+      "name" : "8adc0999-9468-4ac9-9557-680fa133d625",
+      "description" : "Example Medication",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/976d0804-cae0-45ae-afe3-a19f3ceba6bb"
+      },
+      "name" : "976d0804-cae0-45ae-afe3-a19f3ceba6bb",
+      "description" : "Example Medication",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/a6a5a1d5-c896-4c7e-b922-888fcc7e6ae3"
+      },
+      "name" : "a6a5a1d5-c896-4c7e-b922-888fcc7e6ae3",
+      "description" : "Example Observation",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/aa11a2be-3e36-4be7-b58a-6fc3dace2740"
+      },
+      "name" : "aa11a2be-3e36-4be7-b58a-6fc3dace2740",
+      "description" : "Example Observation",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/b4916505-a06b-460c-9be8-011609282456"
+      },
+      "name" : "b4916505-a06b-460c-9be8-011609282456",
+      "description" : "Example Observation",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Browser"
+      },
+      "name" : "Browser",
+      "description" : "Browser",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/BrowserCs"
+      },
+      "name" : "Browser",
+      "description" : "Browser",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/HajjIPS"
+      },
+      "name" : "Bundle - IPS for Hajj",
+      "description" : "This profile represents the constraints applied to the Bundle resource by the International Patient Summary (IPS) FHIR Implementation Guide for the Hajj Pilgrimage.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationStatement"
+      }],
+      "reference" : {
+        "reference" : "MedicationStatement/c220e36c-eb67-4fc4-9ba1-2fabc52acec5"
+      },
+      "name" : "c220e36c-eb67-4fc4-9ba1-2fabc52acec5",
+      "description" : "Example MedicationStatement",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/c4597aa2-688a-401b-a658-70acc6de28c5"
+      },
+      "name" : "c4597aa2-688a-401b-a658-70acc6de28c5",
+      "description" : "Example Condition",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/c64139e7-f02d-409c-bf34-75e8bf23bc89"
+      },
+      "name" : "c64139e7-f02d-409c-bf34-75e8bf23bc89",
+      "description" : "Example Condition",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/cc354e00-a419-47ea-8b6c-1768b2a01645"
+      },
+      "name" : "cc354e00-a419-47ea-8b6c-1768b2a01645",
+      "description" : "Example Observation",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/HajjIPS-Composition"
+      },
+      "name" : "Composition (IPS) for Hajj",
+      "description" : "Clinical document used to represent the International Patient Summary (IPS) data set for Hajj Pilgrimage",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/Questionnaire-ConnectathonSubmission"
+      },
+      "name" : "Connectathon Submission",
+      "description" : "Connectathon Submission",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -646,6 +935,101 @@
       "name" : "ConsentVerifiedBy",
       "description" : "Consent VerfifiedBy extension for use in Consent resources prior to R5.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/DistributionModel"
+      },
+      "name" : "Distribution Model",
+      "description" : "Distribution Model",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/DistributionModelCs"
+      },
+      "name" : "Distribution Model",
+      "description" : "Distribution Model",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DocumentReference"
+      }],
+      "reference" : {
+        "reference" : "DocumentReference/ex-documentreference1"
+      },
+      "name" : "DocumentReference Consent Paperwork example",
+      "description" : "DocumentReference example of the paperwork of the Consent\nThis is showing an example of a document that is purely text.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DocumentReference"
+      }],
+      "reference" : {
+        "reference" : "DocumentReference/ex-documentreference"
+      },
+      "name" : "DocumentReference Consent Paperwork example",
+      "description" : "DocumentReference example of the paperwork of the Consent\nThis is showing an example of a document that is purely text.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Consent"
+      }],
+      "reference" : {
+        "reference" : "Consent/c7781f44-6df8-4a8b-9e06-0b34263a47c6"
+      },
+      "name" : "ExampleConsent",
+      "exampleCanonical" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjConsent"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DocumentReference"
+      }],
+      "reference" : {
+        "reference" : "DocumentReference/FHIRIPSDocumentReference"
+      },
+      "name" : "FHIR IPS json reference",
+      "description" : "Example of FHIR IPS JSON for pilgrimage, as a document reference.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DocumentReference"
+      }],
+      "reference" : {
+        "reference" : "DocumentReference/FHIRIPSSignedDocumentReference"
+      },
+      "name" : "FHIR IPS JSON Signed",
+      "description" : "Example of FHIR IPS Signed using DSGj for pilgrimage, as a document reference.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Composition"
+      }],
+      "reference" : {
+        "reference" : "Composition/ExampleComposition"
+      },
+      "name" : "Hajj IPS Composition",
+      "description" : "Hajj IPS Composition Example",
+      "exampleCanonical" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjIPS-Composition"
     },
     {
       "extension" : [{
@@ -674,14 +1058,62 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ActorDefinition"
+        "valueString" : "DocumentReference"
       }],
       "reference" : {
-        "reference" : "ActorDefinition/HCEMR"
+        "reference" : "DocumentReference/IPSPDFDocumentReference"
       },
-      "name" : "Host Country EMR",
-      "description" : "Host Country EMR",
+      "name" : "IPS PDF reference",
+      "description" : "Example of FHIR IPS PDF for pilgrimage, as a document reference.",
       "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DocumentReference"
+      }],
+      "reference" : {
+        "reference" : "DocumentReference/IPSSignedPDFDocumentReference"
+      },
+      "name" : "IPS PDF Signed",
+      "description" : "Example of FHIR IPS Signed PDF JSON using DSGj for pilgrimage, as a document reference.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/IPS.HAJJ.ACTOR"
+      },
+      "name" : "IPS.HAJJ.ACTOR CodeSystem",
+      "description" : "CodeSystem for IPS.HAJJ.ACTOR CodeSystem for utilization of IPS during Hajj",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/IPS.HAJJ.ACTOR"
+      },
+      "name" : "IPS.HAJJ.ACTOR ValueSet of actor",
+      "description" : "ValueSet of codes for actor for Hajj",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/IPS.HAJJ.ACTOR.SYSTEM"
+      },
+      "name" : "IPS.HAJJ.ACTOR.SYSTEM ValueSet of actor",
+      "description" : "ValueSet of codes for system actors for Hajj",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -710,318 +1142,456 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ActorDefinition"
+        "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "ActorDefinition/OCHW"
+        "reference" : "CodeSystem/IPS.HAJJ.TRANSACTION"
       },
-      "name" : "Origin Country Health Wallet",
-      "description" : "Origin Country Health Wallet held by the Pilgrim",
+      "name" : "IPS.HAJJ.TRANSACTION CodeSystem",
+      "description" : "CodeSystem for IPS.HAJJ.TRANSACTION CodeSystem for utilization of IPS during Hajj",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/IPS.HAJJ.TRANSACTION"
+      },
+      "name" : "IPS.HAJJ.TRANSACTION ValueSet of transaction",
+      "description" : "ValueSet of codes for transaction for Hajj",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Language"
+      },
+      "name" : "Language",
+      "description" : "Language",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/LanguageCs"
+      },
+      "name" : "Language",
+      "description" : "Language",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/LicensingModel"
+      },
+      "name" : "Licensing Model",
+      "description" : "Licensing Model",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/LicensingModelCs"
+      },
+      "name" : "Licensing Model",
+      "description" : "Licensing Model",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e7"
+      },
+      "name" : "Martha",
+      "description" : "Example Patient",
       "exampleBoolean" : true
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ActorDefinition"
+        "valueString" : "List"
       }],
       "reference" : {
-        "reference" : "ActorDefinition/OCHIE"
+        "reference" : "List/PilgrimFolder"
       },
-      "name" : "Origin Country HIE",
-      "description" : "Origin Country Health Information Exchange (HIE) which is responsible for issuance of Verifiable IPS and Verifiable SMART Health Links",
+      "name" : "My Hajj Pilgrimage Minimal Folder",
+      "description" : "Folder for Pilgrim",
       "exampleBoolean" : true
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ActorDefinition"
+        "valueString" : "Bundle"
       }],
       "reference" : {
-        "reference" : "ActorDefinition/Pilgrim"
+        "reference" : "Bundle/MyIPS"
       },
-      "name" : "Pilgrim",
-      "description" : "Pilgrim",
-      "exampleBoolean" : true
+      "name" : "My IPS",
+      "description" : "Hajj IPS Example",
+      "exampleCanonical" : "http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjIPS"
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "OperationDefinition"
+        "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "OperationDefinition/PutKeys"
+        "reference" : "ValueSet/OperatingSystem"
       },
-      "name" : "Publish Verification Keys",
-      "description" : "Publish Verification Keys",
-      "exampleBoolean" : true
+      "name" : "Operating System",
+      "description" : "Operating System",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ActorDefinition"
+        "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "ActorDefinition/QRCard"
+        "reference" : "CodeSystem/OperatingSystemCs"
       },
-      "name" : "QRCard",
-      "description" : "Pilgrim Card containing QR code of SMART Health Link",
-      "exampleBoolean" : true
+      "name" : "Operating System",
+      "description" : "Operating System",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "OperationDefinition"
+        "valueString" : "CapabilityStatement"
       }],
       "reference" : {
-        "reference" : "OperationDefinition/ConsentWallet"
+        "reference" : "CapabilityStatement/VHLDocumentResponder"
       },
-      "name" : "Record Consent - Digital Health Wallet",
-      "description" : "Record consent on a digital health wallet",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "OperationDefinition"
-      }],
-      "reference" : {
-        "reference" : "OperationDefinition/ConsentPostCounseling"
-      },
-      "name" : "Record Consent - Post-Counseling",
-      "description" : "Record Consent - Post-Counseling. Intended in bulk",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "OperationDefinition"
-      }],
-      "reference" : {
-        "reference" : "OperationDefinition/IPSManifest"
-      },
-      "name" : "Retrieve SHL for IPS Manifest",
-      "description" : "Retrieve SHL for IPS Manifest",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "OperationDefinition"
-      }],
-      "reference" : {
-        "reference" : "OperationDefinition/IPSView"
-      },
-      "name" : "Retrieve SHL for IPS Viewer",
-      "description" : "Retrieve SHL for IPS Viewer",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "OperationDefinition"
-      }],
-      "reference" : {
-        "reference" : "OperationDefinition/GetKeys"
-      },
-      "name" : "Retrieve Verification Keys",
-      "description" : "Retrieve Verification Keys",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ActorDefinition"
-      }],
-      "reference" : {
-        "reference" : "ActorDefinition/Scanner"
-      },
-      "name" : "Scanner",
-      "description" : "2D/QR code Scanner",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "OperationDefinition"
-      }],
-      "reference" : {
-        "reference" : "OperationDefinition/SignIPS"
-      },
-      "name" : "Sign IPS",
-      "description" : "Sign IPS",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "OperationDefinition"
-      }],
-      "reference" : {
-        "reference" : "OperationDefinition/SignSHL"
-      },
-      "name" : "Sign Smart Health Link",
-      "description" : "Sign Smart Health Link",
-      "exampleBoolean" : true
+      "name" : "VHL Document Responder (server)",
+      "description" : "VHL Document Responder (server) - Search DocumentReferences in a List.",
+      "exampleBoolean" : false
     }],
     "page" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+        "valueUrl" : "toc.html"
+      }],
       "nameUrl" : "toc.html",
       "title" : "Table of Contents",
       "generation" : "html",
       "page" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "index.html"
+        }],
         "nameUrl" : "index.html",
         "title" : "Home",
         "generation" : "markdown",
         "page" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "changes.html"
+          }],
           "nameUrl" : "changes.html",
           "title" : "Changes",
           "generation" : "markdown"
         },
         {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "dependencies.html"
+          }],
           "nameUrl" : "dependencies.html",
           "title" : "Dependencies",
           "generation" : "markdown"
         },
         {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "references.html"
+          }],
           "nameUrl" : "references.html",
           "title" : "References",
           "generation" : "markdown"
         },
         {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "adapting.html"
+          }],
           "nameUrl" : "adapting.html",
           "title" : "Adapting Guidelines for Country use",
           "generation" : "markdown"
         },
         {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "license.html"
+          }],
           "nameUrl" : "license.html",
           "title" : "License",
           "generation" : "markdown"
         }]
       },
       {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "business-requirements.html"
+        }],
         "nameUrl" : "business-requirements.html",
         "title" : "Business Requirements",
         "generation" : "markdown",
         "page" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "concepts.html"
+          }],
           "nameUrl" : "concepts.html",
           "title" : "Concepts",
           "generation" : "markdown"
         },
         {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "personas.html"
+          }],
           "nameUrl" : "personas.html",
           "title" : "Generic Personas",
           "generation" : "markdown"
         },
         {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "scenarios.html"
+          }],
           "nameUrl" : "scenarios.html",
           "title" : "User Scenarios",
           "generation" : "markdown"
         },
         {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "business-processes.html"
+          }],
           "nameUrl" : "business-processes.html",
           "title" : "Business Processes",
           "generation" : "markdown"
         },
         {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "dictionary.html"
+          }],
           "nameUrl" : "dictionary.html",
           "title" : "Data Dictionary",
           "generation" : "markdown"
         },
         {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "decision-logic.html"
+          }],
           "nameUrl" : "decision-logic.html",
           "title" : "Decision-support logic",
           "generation" : "markdown"
         },
         {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "indicators.html"
+          }],
           "nameUrl" : "indicators.html",
           "title" : "Indicator and Performance Metrics",
           "generation" : "markdown"
         },
         {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "functional-requirements.html"
+          }],
           "nameUrl" : "functional-requirements.html",
           "title" : "Functional Requirements",
           "generation" : "markdown"
         },
         {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "non-functional-requirements.html"
+          }],
           "nameUrl" : "non-functional-requirements.html",
           "title" : "Non-functional Requirements",
           "generation" : "markdown"
         }]
       },
       {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "data-models-and-exchange.html"
+        }],
         "nameUrl" : "data-models-and-exchange.html",
         "title" : "Data Models and Exchange",
         "generation" : "markdown",
         "page" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "system-actors.html"
+          }],
           "nameUrl" : "system-actors.html",
           "title" : "System Actors",
           "generation" : "markdown"
         },
         {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "sequence-diagrams.html"
+          }],
           "nameUrl" : "sequence-diagrams.html",
           "title" : "Sequence Diagrams",
           "generation" : "markdown"
         },
         {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "transactions.html"
+          }],
           "nameUrl" : "transactions.html",
           "title" : "Transactions",
           "generation" : "markdown"
         },
         {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "indicators-measures.html"
+          }],
           "nameUrl" : "indicators-measures.html",
           "title" : "Indicators and Measures",
           "generation" : "markdown"
         },
         {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "codings.html"
+          }],
           "nameUrl" : "codings.html",
           "title" : "Codings",
           "generation" : "markdown"
         }]
       },
       {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "deployment.html"
+        }],
         "nameUrl" : "deployment.html",
         "title" : "Deployment",
         "generation" : "markdown",
         "page" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "security-privacy.html"
+          }],
           "nameUrl" : "security-privacy.html",
           "title" : "Security and Privacy Considerations",
           "generation" : "markdown"
         },
         {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "testing.html"
+          }],
           "nameUrl" : "testing.html",
           "title" : "Testing",
           "generation" : "markdown"
         },
         {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-data.html"
+          }],
           "nameUrl" : "test-data.html",
           "title" : "Test Data",
           "generation" : "markdown"
         },
         {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-cases.html"
+          }],
+          "nameUrl" : "test-cases.html",
+          "title" : "Test Cases",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "reference-implementations.html"
+          }],
           "nameUrl" : "reference-implementations.html",
           "title" : "Reference Implementations",
           "generation" : "markdown"
         },
         {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "reference-implementations-malaysia.html"
+          }],
+          "nameUrl" : "reference-implementations-malaysia.html",
+          "title" : "Reference Implementation in Malaysia",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "trust_domain.html"
+          }],
           "nameUrl" : "trust_domain.html",
           "title" : "Trust Domains",
           "generation" : "markdown"
         },
         {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "downloads.html"
+          }],
           "nameUrl" : "downloads.html",
           "title" : "Downloads",
           "generation" : "markdown"
         }]
       },
       {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "indices.html"
+        }],
         "nameUrl" : "indices.html",
         "title" : "Indices",
         "generation" : "markdown",
         "page" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "artifacts.html"
+          }],
           "nameUrl" : "artifacts.html",
           "title" : "Artifact Index",
           "generation" : "html"
         },
         {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "maps.html"
+          }],
           "nameUrl" : "maps.html",
           "title" : "Mappings",
           "generation" : "markdown"
@@ -1029,6 +1599,10 @@
       }]
     },
     "parameter" : [{
+      "code" : "path-pages",
+      "value" : "input/testing"
+    },
+    {
       "code" : "path-resource",
       "value" : "input/capabilities"
     },
