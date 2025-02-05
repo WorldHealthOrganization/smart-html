@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Business Processes - SMART Verifiable IPS for Pilgrimage v1.0.0</title>
+    <title>Business Processes - SMART Verifiable IPS for Pilgrimage v2.0.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -21,6 +21,7 @@
     <!-- Placeholder for child template CSS declarations -->
     <link href="assets/css/who.css" rel="stylesheet"/>
     <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -58,7 +59,7 @@
                 <span class="icon-bar"> </span>
                 <span class="icon-bar"> </span>
               </button>
-              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4B/index.html">FHIR</a>
+              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
               <div class="nav-collapse collapse navbar-inverse-collapse">
                 <!-- menu.xml  -->
 
@@ -207,6 +208,8 @@
         <!-- Placeholder for child template header declarations -->
 <div id="project-nav">
     <a id="who-logo" no-external="true" href="index.html">
+      
+<img height="50" style="margin:7px" alt="Welcome on standards website" src="assets/images/h-logo-blue.svg"/>
         
     </a>
 </div>
@@ -216,10 +219,10 @@
 </div> 
 
 
-        <div id="ig-status" class="ig-status-draft">
+        <div id="ig-status" class="ig-status-active">
           <p><span style="font-size:12pt;font-weight:bold">SMART Verifiable IPS for Pilgrimage</span>
             <br/>
-            <span style="display:inline-block;">1.0.0 - ci-build
+            <span style="display:inline-block;">2.0.2 - release
 
 
             </span>
@@ -254,7 +257,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART Verifiable IPS for Pilgrimage (v1.0.0: Releases Draft) based on <a no-external="true" href="http://hl7.org/fhir/4.3.0">FHIR (HL7® FHIR® Standard) v4.3.0</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/ips-pilgrimage/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART Verifiable IPS for Pilgrimage (v2.0.2: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/ips-pilgrimage/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Business Processes</h2>
   
 
@@ -272,6 +275,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
+  <li><a href="#overview-of-key-process-flows" id="markdown-toc-overview-of-key-process-flows">Overview of key process flows</a></li>
   <li><a href="#overview-of-key-business-processes" id="markdown-toc-overview-of-key-business-processes">Overview of Key Business Processes</a></li>
   <li><a href="#workflows" id="markdown-toc-workflows">Workflows</a></li>
 </ul>
@@ -290,7 +294,16 @@ and collaboration among users, stakeholders and engineers.</p>
 <p>The Trust Domain for IPS Pilgrimage focuses on key business processes that are
 part of providing care for pilgrims during a pilgrimage.</p>
 
+<h3 id="overview-of-key-process-flows">Overview of key process flows</h3>
+<p>The diagram here denotes the key process flows at a high level, which are further described in details as various business processes.</p>
+
+<div> 
+    <img src="workflow.png" alt="Overview of key clinical process flows" style="width:85%" />
+  </div>
+<p><br /></p>
+
 <h3 id="overview-of-key-business-processes">Overview of Key Business Processes</h3>
+
 <p>The following table describes the workflows of the included processes.</p>
 
 <table border="1" class="dataframe table table-striped table-bordered">
@@ -335,21 +348,21 @@ part of providing care for pilgrims during a pilgrimage.</p>
       <td>3.0</td>
       <td>Issuance of Health Document at Origin Country</td>
       <td>IPS.PILGRIMAGE.3.0</td>
-      <td><p>Pilgrim</p><p>National IHE</p></td>
+      <td><p>Pilgrim</p><p>Counselor</p><p>Health Wallet App</p><p>National HIE</p></td>
       <td>Retrieve a Pilgrim's patient summary for a unplanned clinical encounter</td>
     </tr>
     <tr class="odd">
       <td>4.0</td>
       <td>Clinical Encounter for Unplanned Care</td>
       <td>IPS.PILGRIMAGE.4.0</td>
-      <td><p>Host Country Health worker</p><p>Pilgrim</p><p>Host Country EMR</p><p>National IHE</p></td>
+      <td><p>Host Country Health worker</p><p>Pilgrim</p><p>Host Country EMR</p><p>National HIE</p></td>
       <td>Retrieve a Pilgrim's patient summary for a unplanned clinical encounter</td>
     </tr>
    <tr class="even">
       <td>5.0</td>
       <td>Break The Glass Clinical Encounter (not in scope for phase 1) </td>
       <td>IPS.PILGRIMAGE.5.0</td>
-      <td><p>National Pilgrimage Authority</p><p>Host Country Health Worker</p><p>Pilgrim</p><p>Host Country EMR</p><p>National IHE</p></td>
+      <td><p>National Pilgrimage Authority</p><p>Host Country Health Worker</p><p>Pilgrim</p><p>Host Country EMR</p><p>National HIE</p></td>
       <td>Retrieve a Pilgrim's patient summary for an emergency unplanned clinical encounter</td>
     </tr>
     <tr class="even">
@@ -365,16 +378,9 @@ part of providing care for pilgrims during a pilgrimage.</p>
 <h3 id="workflows">Workflows</h3>
 <p>The workflows that follow depict processes that have been generalized across different contexts and may not reflect the variability and nuances across different settings. The simplicity of the workflow may not adequately illustrate the nonlinear steps that may occur.</p>
 
-<h4 id="overview-of-key-process-flows">Overview of key process flows</h4>
-
-<div> 
-    <img src="workflow.png" alt="Overview of key clinical process flows" style="width:85%" />
-  </div>
-<p><br /></p>
-
 <p><br clear="all" /></p>
 
-<h4 id="10-publication-of-national-public-keys-for-verification">1.0 Publication of National Public Keys for Verification</h4>
+<h4 id="publication-of-national-public-keys-for-verification">Publication of National Public Keys for Verification</h4>
 
 <p><b>TO DO: Insert diagram</b></p>
 <div> 
@@ -382,7 +388,7 @@ part of providing care for pilgrims during a pilgrimage.</p>
   </div>
 <p><br /></p>
 
-<h4 id="20-publication-of-national-terminologies">2.0 Publication of National Terminologies</h4>
+<h4 id="publication-of-national-terminologies">Publication of National Terminologies</h4>
 
 <p><b>TO DO: Insert diagram</b></p>
 <div> 
@@ -390,30 +396,26 @@ part of providing care for pilgrims during a pilgrimage.</p>
   </div>
 <p><br /></p>
 
-<h4 id="30-issuance-of-health-document-at-origin-country">3.0 Issuance of Health Document at Origin Country</h4>
+<h4 id="issuance-of-health-document-at-origin-country">Issuance of Health Document at Origin Country</h4>
 
-<p><b>TO DO: Insert diagram</b></p>
+<h5 id="health-check-and-counseling-verbal-consent-brief">Health Check and Counseling, Verbal Consent (brief)</h5>
 <div> 
-<!--    <img src="immz-a-facility-registration-business-process.png" alt="IMMZ.A Facility Registration business process" style="width:85%"/> -->
+  <img src="Health Check and Counseling, Verbal Consent (brief).png" alt="Health Check and Counseling, Verbal Consent (brief)" style="width:85%" />
   </div>
 <p><br /></p>
 
-<h4 id="40-clinical-encounter-for-unplanned-care">4.0 Clinical Encounter for Unplanned Care</h4>
-
-<p><b>TO DO: Insert diagram</b></p>
+<h5 id="health-check-and-counseling-explicit-consent-brief">Health Check and Counseling, Explicit Consent (brief)</h5>
 <div> 
-<!--    <img src="immz-a-facility-registration-business-process.png" alt="IMMZ.A Facility Registration business process" style="width:85%"/> -->
+  <img src="Health Check and Counseling, Explicit Consent (brief).png" alt="Health Check and Counseling, Explicit Consent (brief)" style="width:85%" />
   </div>
 <p><br /></p>
 
-<h4 id="50-break-the-glass-clinical-encounter">5.0 Break The Glass Clinical Encounter</h4>
+<h4 id="clinical-encounter-for-unplanned-care">Clinical Encounter for Unplanned Care</h4>
 
-<p><b>TO DO: Insert diagram</b></p>
 <div> 
-<!--    <img src="immz-a-facility-registration-business-process.png" alt="IMMZ.A Facility Registration business process" style="width:85%"/> -->
+<img src="Clinical Encounter for Unplanned Care.png" alt="Clinical Encounter for Unplanned Care" style="width:85%" />
   </div>
 <p><br /></p>
-
 
 
 
@@ -433,7 +435,7 @@ part of providing care for pilgrims during a pilgrimage.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.ips-pilgrimage#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Thu, Apr 25, 2024 17:24+0000">2024-04-25</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.ips-pilgrimage#2.0.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 5, 2025 10:42+0000">2025-02-05</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -451,7 +453,7 @@ part of providing care for pilgrims during a pilgrimage.</p>
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -462,7 +464,6 @@ part of providing care for pilgrims during a pilgrimage.</p>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>
