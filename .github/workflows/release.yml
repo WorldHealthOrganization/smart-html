@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - name: Checkout current repo to ./source
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           path: source
           fetch-depth: 0  # Fetch all history for all branches and tags.
@@ -33,7 +33,7 @@ jobs:
           fetch-depth: 0  # Fetch all history for all branches and tags.
 
       - name: Checkout FHIR/ig-registry to ./ig-registry
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: FHIR/ig-registry
           path: ig-registry
