@@ -4,7 +4,8 @@
     "url" : "http://smart.who.int",
     "server" : "apache",
     "org" : "WHO",
-    "index-template":"index.template"
+    "index-template":"index.template",
+    "clone-xml-json" : true
   },
   "feeds" : {
     "package" : "package-feed.xml",
