@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Testing - SMART Verifiable IPS for Pilgrimage v1.0.0</title>
+    <title>Testing - SMART Verifiable IPS for Pilgrimage v2.0.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -21,6 +21,7 @@
     <!-- Placeholder for child template CSS declarations -->
     <link href="assets/css/who.css" rel="stylesheet"/>
     <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -58,7 +59,7 @@
                 <span class="icon-bar"> </span>
                 <span class="icon-bar"> </span>
               </button>
-              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4B/index.html">FHIR</a>
+              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
               <div class="nav-collapse collapse navbar-inverse-collapse">
                 <!-- menu.xml  -->
 
@@ -207,6 +208,8 @@
         <!-- Placeholder for child template header declarations -->
 <div id="project-nav">
     <a id="who-logo" no-external="true" href="index.html">
+      
+<img height="50" style="margin:7px" alt="Welcome on standards website" src="assets/images/h-logo-blue.svg"/>
         
     </a>
 </div>
@@ -216,10 +219,10 @@
 </div> 
 
 
-        <div id="ig-status" class="ig-status-draft">
+        <div id="ig-status" class="ig-status-active">
           <p><span style="font-size:12pt;font-weight:bold">SMART Verifiable IPS for Pilgrimage</span>
             <br/>
-            <span style="display:inline-block;">1.0.0 - ci-build
+            <span style="display:inline-block;">2.0.2 - release
 
 
             </span>
@@ -254,7 +257,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART Verifiable IPS for Pilgrimage (v1.0.0: Releases Draft) based on <a no-external="true" href="http://hl7.org/fhir/4.3.0">FHIR (HL7® FHIR® Standard) v4.3.0</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/ips-pilgrimage/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART Verifiable IPS for Pilgrimage (v2.0.2: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/ips-pilgrimage/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Testing</h2>
   
 
@@ -274,42 +277,40 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
 
-<p>This page will include testing artifacts for this implementation guide.</p>
+<p>Testing of this specification is done by running the test cases defined in <a href="test-cases.html">Test Cases</a>.
+These test cases are expressed</p>
+<ul>
+  <li>in Gherkin language or a dialect like Karate with a FHIR DSL</li>
+  <li>using TestScripts</li>
+</ul>
 
-<p>Artifacts will include Gherkin .feature files, with acceptance criteria for each test definition, and with defined test cases for PlanDefinitions and Measures. Example data will be in the form of FHIR shorthand (FSH) files or FHIR Resources, with examples listed under the example tab of the resources.</p>
+<p>The test data is available in 3 ways:</p>
+<ol>
+  <li>As FHIR resources in this ImplementationGuide - these are used in the test cases</li>
+  <li>With test data definitions (templates or input for data generation tooling) - will be used in the data generation tooling</li>
+  <li>From a pool of test data available from a package</li>
+</ol>
 
-<p>See <a href="test-data.html">Test Data</a> for test data.</p>
+<p>See <a href="test-data.html">Test Data</a>.</p>
 
 <p>The testing artifacts in this implementation guide are not intended to be used to determine formal conformance, nor are they intended to be authoritative or comprehensive.</p>
 
 <h3 id="testing-platforms">Testing platforms</h3>
 
-<p>These files allow a quick setup of working servers, for testing of the specification in a known configuration.</p>
+<p>There is a quick setup of a working server, for testing the specification in a known configuration.</p>
 
-<p>Prerequisites: <a href="https://www.docker.com">Docker</a></p>
+<h4 id="prerequisites">Prerequisites</h4>
+<ul>
+  <li><a href="https://www.docker.com">Docker</a> installed locally</li>
+</ul>
 
-<h4 id="questionnaires-and-structuremap-transformations">Questionnaires and StructureMap Transformations</h4>
-
-<p>The matchbox server configuration allows you to test the mappings. For more information: <a href="https://github.com/ahdis/matchbox">https://github.com/ahdis/matchbox</a></p>
-
-<p>How to setup the server:</p>
+<h4 id="instructions">Instructions</h4>
 <ol>
-  <li>Download the <a href="https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/main/testing/docker/questionnaires/.env" download="">.env file</a></li>
-  <li>Download the <a href="https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/main/testing/docker/questionnaires/docker-compose.yml" download="">docker compose file</a></li>
-  <li>From the same folder, run <code class="language-plaintext highlighter-rouge">docker-compose up -d</code></li>
-  <li>Navigate to http://localhost:<static_server_port> e.g. <a href="http://localhost:8087">http://localhost:8087</a></static_server_port></li>
-  <li>Follow the instructions there to setup and run the extractions</li>
+  <li>Git clone or download the <a href="https://github.com/medigree/ips-sandbox/archive/refs/heads/main.zip">sandbox</a>  to a local folder</li>
+  <li>From that same folder, run <code class="language-plaintext highlighter-rouge">docker-compose up -d</code></li>
+  <li>Navigate to <a href="http://localhost:8080">http://localhost:8080</a></li>
 </ol>
 
-<h4 id="scheduling-and-decision-logic-measures">Scheduling and Decision Logic, Measures</h4>
-<p>CQFRuler</p>
-<ol>
-  <li>Download the <a href="https://raw.githubusercontent.com/WorldHealthOrganization/smart-ups-pilgrimage/main/testing/docker/logic/.env" download="">.env file</a></li>
-  <li>Download the <a href="https://raw.githubusercontent.com/WorldHealthOrganization/smart-ips-pilgrimage/main/testing/docker/logic/docker-compose.yml" download="">docker compose file</a></li>
-  <li>From the same folder, run <code class="language-plaintext highlighter-rouge">docker-compose up -d</code></li>
-  <li>Navigate to http://localhost:<static_server_port> e.g. <a href="http://localhost:8087">http://localhost:8087</a></static_server_port></li>
-  <li>Follow the instructions there to setup and run the plan definitions.</li>
-</ol>
 
 
 
@@ -329,7 +330,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.ips-pilgrimage#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Thu, Apr 25, 2024 17:24+0000">2024-04-25</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.ips-pilgrimage#2.0.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 5, 2025 10:42+0000">2025-02-05</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -347,7 +348,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -358,7 +359,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>

@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>System Actors - SMART Verifiable IPS for Pilgrimage v1.0.0</title>
+    <title>System Actors - SMART Verifiable IPS for Pilgrimage v2.0.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -21,6 +21,7 @@
     <!-- Placeholder for child template CSS declarations -->
     <link href="assets/css/who.css" rel="stylesheet"/>
     <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -58,7 +59,7 @@
                 <span class="icon-bar"> </span>
                 <span class="icon-bar"> </span>
               </button>
-              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4B/index.html">FHIR</a>
+              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
               <div class="nav-collapse collapse navbar-inverse-collapse">
                 <!-- menu.xml  -->
 
@@ -207,6 +208,8 @@
         <!-- Placeholder for child template header declarations -->
 <div id="project-nav">
     <a id="who-logo" no-external="true" href="index.html">
+      
+<img height="50" style="margin:7px" alt="Welcome on standards website" src="assets/images/h-logo-blue.svg"/>
         
     </a>
 </div>
@@ -216,10 +219,10 @@
 </div> 
 
 
-        <div id="ig-status" class="ig-status-draft">
+        <div id="ig-status" class="ig-status-active">
           <p><span style="font-size:12pt;font-weight:bold">SMART Verifiable IPS for Pilgrimage</span>
             <br/>
-            <span style="display:inline-block;">1.0.0 - ci-build
+            <span style="display:inline-block;">2.0.2 - release
 
 
             </span>
@@ -254,7 +257,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART Verifiable IPS for Pilgrimage (v1.0.0: Releases Draft) based on <a no-external="true" href="http://hl7.org/fhir/4.3.0">FHIR (HL7® FHIR® Standard) v4.3.0</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/ips-pilgrimage/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART Verifiable IPS for Pilgrimage (v2.0.2: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/ips-pilgrimage/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>System Actors</h2>
   
 
@@ -272,113 +275,73 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#key-generic-personas-interacting-with-the-system" id="markdown-toc-key-generic-personas-interacting-with-the-system">Key generic personas interacting with the system</a></li>
-  <li><a href="#digital-services" id="markdown-toc-digital-services">Digital Services</a></li>
+  <li><a href="#ochw" id="markdown-toc-ochw">Origin Country Wallet</a></li>
+  <li><a href="#ochie" id="markdown-toc-ochie">Origin Country HIE</a></li>
+  <li><a href="#hcemr" id="markdown-toc-hcemr">Host Country EMR</a></li>
 </ul>
 
 </div>
-<p>This page lists and describes the human users and digital services that interact with the system, derived from the business requirements defined at the operational level (L2). For more details about end-users and related stakeholders, see the <a href="personas.html">Generic Personas</a>.</p>
+<p>This page describes the system actors for IPS-pilgrimage that participate in transactions documented for this Implementation Guide.</p>
 
-<p>Systems managing clinical and patient information are expected to interact with a shared health record, laboratory information system or a longitudinal health record, as appropriate, and to synchronize with data collected in a clinical encounter.</p>
+<h3 id="ochw">Origin Country Wallet</h3>
 
-<p>Integrating the Healthcare Enterprise (IHE) maintains a <a href="https://profiles.ihe.net/GeneralIntro/ch-A.html">repository with common actors</a> used in IHE profiles.</p>
+<table border="1" class="dataframe table table-striped table-bordered">
+  <tbody>
+  <tr>
+    <td>Description</td>
+    <td>Health Wallet App linked to the National HIE that manages access to  patient summary information of a Pilgrim, particularly the IPS. The wallet app should manage consent profiles including time-bound access to an IPS, selective disclosure of content that is shared within the patient summary, and opt-out/opt-in on usage of the patient summary in a "break the glass" scenario.</td>
+  </tr>
+  <tr>
+    <td>Transactions participated in as source</td>
+    <td>The health wallet initiates the following transactions: 
+       <ul>
+        <li><a href="transactions.html#record-consent-request">record consent from wallet - request (record-consent-request)</a></li>
+        <li><a href="transactions.html#issue-vhl-request">issue VHL request (issue-vhl-request)</a></li>
+       </ul>
+    </td>
+  </tr>
+  </tbody>
+</table>
 
-<h3 id="key-generic-personas-interacting-with-the-system">Key generic personas interacting with the system</h3>
-<p>In the clinical flows, generic personas are represented using profiles of the various entity resources in HL7 FHIR, such as <a href="http://hl7.org/fhir/patient">Patient</a>, <a href="http://hl7.org/fhir/practitioner">Practitioner</a>, <a href="http://hl7.org/fhir/practitionerrole">PractitionerRole</a>, and <a href="http://hl7.org/fhir/relatedperson">RelatedPerson</a>.</p>
+<h3 id="ochie">Origin Country HIE</h3>
 
-<table class="list">
-  <thead>
-    <tr>
-      <th>Role </th>
-      <th>Description</th>
-      <th>Different Names</th>
-      <th>ISCO Code (if applicable)</th>
-    </tr>
-  </thead>
+<table border="1" class="dataframe table table-striped table-bordered">
   <tbody>
     <tr>
-      <td>Pilgrim</td>
-      <td>Person undergoing a pilgrimage to a pilgrimage host country.  During an unplanned care encounter they would provide explicit consent to access a patient summary information to a Host Country Health Worker.  In case of emergency, they may have provided consent during a "break the glass" scenario.</td>
-      <td>Patient, client, health system user</td>
-      <td></td>
+      <td>Description</td>
+      <td>Health information exchange of origin country of a Pilgrim.  Responsible for providing standardized patient summary information for a Pilgrim and making that accessible to the Pilgrim as part of a patient-mediated exchange data exchange and consent approach.</td>
     </tr>
     <tr>
-      <td>Accompanying Clinician from Origin Country</td>
-      <td>Clinician from Origin Country accompanying pilgrims to a pilgrimage host country.  During an unplanned care encounter they would provide explicit consent to access a patient summary information to a Host Country Health Worker, only if the pilgrim themselves is unable to do so.</td>
-      <td>Clinician, Doctor</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Host Country Health Worker</td>
-      <td>Health worker in the Host Country of a pilgrimage event that is providing care to and/or performing registration and intake of a Pilgrim during a clinical encounter.</td>
-      <td>Clinician, Provider, Doctor, Nurse, Receptionist</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>National Pilgrimage Authority</td>
-      <td>Organization that manages the application of a Pilgrim as they apply to make pilgrim to a pilgrimage host country.  Responsible for providing a Pilgrim with a Pilgrimage Registration Number and assessing health status of Pilgrim before approval is granted by the Pilgrimage Host Country. Optionally responsible for ensuring consent in case of "break the glass" scenario when a Pilgrim is not able to provide explicit consent in an emergency care setting due to, for example, unconsciousness. In this case, the National Pilgrimage Authority should collect consent from the Pilgrim for potential future "break the glass scenario", associate a Pilgrimage Registration Number to a patient summary document, and provide access means to the Host Country HIE to the patient summary document by association to the Pilgrimage Registration Number</td> 
-      <td>Pilgrimage Authority</td>
-      <td></td>
+      <td>Transactions participated in as target</td>
+      <td>The Origin Country HIE participates acts as the recipient of requests, takes necessary actions, and responds back to the source in the following transactions:
+      <ul>
+        <li><a href="transactions.html#record-consent-request">record consent from wallet - request (record-consent-request)</a></li>
+        <li><a href="transactions.html#issue-vhl-request">issue VHL request (issue-shl-request)</a></li>
+      </ul></td>
     </tr>
   </tbody>
 </table>
 
-<h3 id="digital-services">Digital Services</h3>
+<h3 id="hcemr">Host Country EMR</h3>
 
-<table class="list">
-  <thead>
-    <tr>
-      <th>Service</th>
-      <th>Description</th>
-      <th>Different Names</th>
-      <th>Service Code (if applicable)</th>
-    </tr>
-  </thead>
+<table border="1" class="dataframe table table-striped table-bordered">
   <tbody>
     <tr>
-      <td>National Health Information Exchange</td>
-      <td>Health information exchange of origin country of a Pilgrim.  Responsible for providing standardized patient summary information for a Pilgrim and making that accessible to the Pilgrim as part of a patient-mediated exchange data exchange and consent approach.</td>
-      <td>HIE</td>
-      <td></td>
+      <td>Description</td>
+      <td>EMR used in Host Country of the pilgrimage by the Host Country Health Worker for accessing and managing health records. Serves as the interface utilized to view and/or ingest patient summary documents from Pilgrims. The Host Country EMR should, at a minimum, save a rendered version (e.g. PDF) of the Pilgrim's patient summary document for audit and liability purposes. The Host Country EMR may optionally ingest the patient summary document and transmit or otherwise make it available to the Host Country HIE for continued patient care.</td>
     </tr>
     <tr>
-      <td>National Health Wallet App</td>
-      <td>Health Wallet App linked to the National HIE that manages access to  patient summary information of a Pilgrim, particularly the IPS.   The wallet app should manage consent profiles including time-bound access to an IPS, selective disclosure of content that is shared within the patient summary, and opt-out/opt-in on usage of the patient summary in a "break the glass" scenario.
-      <td>HIE</td>
-      <td></td>
-    &lt;/tr&gt;
-    <tr>
-      <td>WHO GDHCN</td>
-      <td>WHO Global Digital Health Certification Network for management of public keys provided through National HIEs for verification of digital signatures</td>
-      <td>GDHCN, Trust Network Gateway, TNG, Public Key Directory, PKD</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>WHO Terminology Service</td>
-      <td>WHO hosted Terminology Service used for handling codesystems and valuesets used by National Systems&lt;/a&gt;
-      <td>WHO TS, TS</td>
-      <td></td>
-    &lt;/tr&gt;
-    <tr>
-      <td>Host Country EMR</td>
-      <td>EMR used in Host Country of the pilgrimage by the Host Country Health Worker for accessing and managing health records.  Serves as the interface utilized to view and/or ingest patient summary documents from Pilgrims.  The Host Country EMR should, at a minimum, save a rendered version (e.g. PDF) of the Pilgrim's patient summary document for audit and liability purposes.  The Host Country EMR may optionally ingest the patient summary document and transmit or otherwise make it available to the Host Country HIE for continued patient care.
-      In the optional scenario of a "break the glass" scenario, the Host Country EMR should retrieve the patient summary of the Pilgrim from the Host Country HIE via the association of that document to the Pilgrim Registration Number.
+      <td>Transactions participated in as source</td>
+      <td>The Host Country EMR initiates requests to retrieve content in the following transactions:
+      <ul>
+        <li><a href="transactions.html#retrieve-VHL-manifest-request">retrieve VHL Manifest request</a></li>
+        <li><a href="transactions.html#retrieve-IPS-request">retrieve IPS request</a></li>
+      </ul>
       </td>
-      <td>Host EMR, EMR, Electronic Medical Records System</td>
-      <td></td>
     </tr>
-    <tr>
-      <td>Host Country HIE</td>
-      <td>Health Information Exchange of the Host Country which contains ingested patient summary information during a Pilgrim's care encounter or manages access to their patient summary during a "break the glass" scenario.
-      <td>Host HIE</td>
-      <td></td>
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+  </tbody>
+</table>
 
-
-### External Hardware and   
-</td></tr></td></tr></td></tr></tbody></table>
 
 
 
@@ -398,7 +361,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.ips-pilgrimage#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Thu, Apr 25, 2024 17:24+0000">2024-04-25</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.ips-pilgrimage#2.0.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 5, 2025 10:42+0000">2025-02-05</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -416,7 +379,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -427,7 +390,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>
