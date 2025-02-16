@@ -1,28 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Redirecting...</title>
+  <meta charset="utf-8">
   <script>
-    const accept = navigator.accept || navigator.userAgent;
-    if (accept.includes('application/json+fhir')) {
-      window.location.replace('http://smart.who.int/trust/v1.1.5/ValueSet-WHO.TRUST.DOMAIN.json2');
-    } else if (accept.includes('application/fhir+json')) {
-      window.location.replace('http://smart.who.int/trust/v1.1.5/ValueSet-WHO.TRUST.DOMAIN.json1');
-    } else if (accept.includes('json')) {
-      window.location.replace('http://smart.who.int/trust/v1.1.5/ValueSet-WHO.TRUST.DOMAIN.json');
-    } else if (accept.includes('application/xml+fhir')) {
-      window.location.replace('http://smart.who.int/trust/v1.1.5/ValueSet-WHO.TRUST.DOMAIN.xml2');
-    } else if (accept.includes('application/fhir+xml')) {
-      window.location.replace('http://smart.who.int/trust/v1.1.5/ValueSet-WHO.TRUST.DOMAIN.xml1');
-    } else if (accept.includes('html')) {
-      window.location.replace('http://smart.who.int/trust/v1.1.5/ValueSet-WHO.TRUST.DOMAIN.html');
-    } else {
-      window.location.replace('http://smart.who.int/trust/v1.1.5/ValueSet-WHO.TRUST.DOMAIN.xml');
+    function redirect() {
+      window.location = "https://smart.who.int/trust/ValueSet-WHO.TRUST.DOMAIN.html";
     }
+    window.onload = redirect;
   </script>
 </head>
 <body>
-  <p>If you are not redirected, <a href="http://smart.who.int/trust/v1.1.5/ValueSet-WHO.TRUST.DOMAIN.xml">click here</a>.</p>
+  <p>You should be redirect to <a href="https://smart.who.int/trust/ValueSet-WHO.TRUST.DOMAIN.html">https://smart.who.int/trust/ValueSet-WHO.TRUST.DOMAIN.html</a></p>
 </body>
 </html>
