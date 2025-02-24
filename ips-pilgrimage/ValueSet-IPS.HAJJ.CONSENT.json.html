@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>IPS.HAJJ.CONSENT ValueSet of consent policies - JSON Representation - SMART Verifiable IPS for Pilgrimage v1.0.0</title>
+    <title>IPS.HAJJ.CONSENT ValueSet of consent policies - JSON Representation - SMART Verifiable IPS for Pilgrimage v2.0.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -23,6 +23,7 @@
     <!-- Placeholder for child template CSS declarations -->
     <link href="assets/css/who.css" rel="stylesheet"/>
     <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -43,8 +44,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5.1.5"}
-    h3,h4,h5,h6{--heading-prefix:"5.1.5"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.1.7"}
+    h3,h4,h5,h6{--heading-prefix:"5.1.7"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
 
       <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
@@ -60,7 +61,7 @@
                 <span class="icon-bar"> </span>
                 <span class="icon-bar"> </span>
               </button>
-              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4B/index.html">FHIR</a>
+              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
               <div class="nav-collapse collapse navbar-inverse-collapse">
                 <!-- menu.xml  -->
 
@@ -209,6 +210,8 @@
         <!-- Placeholder for child template header declarations -->
 <div id="project-nav">
     <a id="who-logo" no-external="true" href="index.html">
+      
+<img height="50" style="margin:7px" alt="Welcome on standards website" src="assets/images/h-logo-blue.svg"/>
         
     </a>
 </div>
@@ -218,10 +221,10 @@
 </div> 
 
 
-        <div id="ig-status" class="ig-status-draft">
+        <div id="ig-status" class="ig-status-active">
           <p><span style="font-size:12pt;font-weight:bold">SMART Verifiable IPS for Pilgrimage</span>
             <br/>
-            <span style="display:inline-block;">1.0.0 - ci-build
+            <span style="display:inline-block;">2.0.2 - release
 
 
             </span>
@@ -249,7 +252,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the SMART Verifiable IPS for Pilgrimage (v1.0.0: Releases Draft) based on <a no-external="true" href="http://hl7.org/fhir/4.3.0">FHIR (HL7® FHIR® Standard) v4.3.0</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/ips-pilgrimage/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">This page is part of the SMART Verifiable IPS for Pilgrimage (v2.0.2: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/ips-pilgrimage/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -304,7 +307,7 @@
         
           Active
           
-            as of 2024-04-25
+            as of 2025-02-13
           
         
       </td>
@@ -320,60 +323,41 @@
 
 
 
-  <pre class="json" style="white-space: pre; text-wrap: nowrap;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">
-{
-  "<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
-  "<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.id">id</a>" : "IPS.HAJJ.CONSENT",
-  "<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.text">text</a>" : {
-    "<a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.status">status</a>" : "extensions",
-    "<a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;CodeSystem-IPS.HAJJ.CONSENT.html\&quot;&gt;&lt;code&gt;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-IPS.HAJJ.CONSENT.html#IPS.HAJJ.CONSENT-CONSENT-KSA\&quot;&gt;CONSENT-KSA&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Consent for Kingdom of Saudi Arabia&lt;/td&gt;&lt;td&gt;The Pilgrim consents to share his-her International Patient Summary (IPS data) during the  provision of clinical care at Ministry of Health-Saudi Arabia in Haj District area healthcare facilities through the Haj-1445 event as any follow up care that might be needed from any healthcare practitioners&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-IPS.HAJJ.CONSENT.html#IPS.HAJJ.CONSENT-CONSENT-IDN\&quot;&gt;CONSENT-IDN&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Consent for Indonesia&lt;/td&gt;&lt;td&gt;&amp;lt;INSERT TEXT FROM INDONESIA: discuss pilgrims's consent to utilize Satusehat to enable access to KSA to their IPS if they are in need of care during Hajj&amp;gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-IPS.HAJJ.CONSENT.html#IPS.HAJJ.CONSENT-CONSENT-MYS\&quot;&gt;CONSENT-MYS&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Consent for Malaysia&lt;/td&gt;&lt;td&gt;The Malaysian Hajj pilgrim has provided consent for sharing the International Patient Summary (IPS) generated from the data recorded during the Hajj pilgrim health examination, as well as the vaccination records stored on MySejahtera to Kingdom of Saudi Arabia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-IPS.HAJJ.CONSENT.html#IPS.HAJJ.CONSENT-CONSENT-OMN\&quot;&gt;CONSENT-OMN&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Consent for Oman&lt;/td&gt;&lt;td&gt;&amp;lt;INSERT TEXT FROM OMAN: discuss pilgrims's consent to utilize Oman's e-Health Portal to enable access to KSA to their IPS if they are in need of care&amp;gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+  <pre class="json" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a>" : "IPS.HAJJ.CONSENT",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet IPS.HAJJ.CONSENT&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;IPS.HAJJ.CONSENT\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcIPS.HAJJ.CONSENT\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;IPS.HAJJ.CONSENT-en-US\&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include all codes defined in &lt;a href=\&quot;CodeSystem-IPS.HAJJ.CONSENT.html\&quot;&gt;&lt;code&gt;http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
   },
-  "<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.url">url</a>" : "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.CONSENT",
-  "<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.version">version</a>" : "1.0.0",
-  "<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.name">name</a>" : "IPS_HAJJ_CONSENT",
-  "<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.title">title</a>" : "IPS.HAJJ.CONSENT ValueSet of consent policies",
-  "<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.experimental">experimental</a>" : true,
-  "<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.date">date</a>" : "2024-04-25T17:24:48+00:00",
-  "<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.publisher">publisher</a>" : "WHO",
-  "<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.contact">contact</a>" : [
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.CONSENT",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "2.0.2",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "IPS_HAJJ_CONSENT",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "IPS.HAJJ.CONSENT ValueSet of consent policies",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a>" : true,
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2025-02-13T16:11:24+00:00",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "WHO",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R4B/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "WHO",
-      "<a href="http://hl7.org/fhir/R4B/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "WHO",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R4B/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
-          "<a href="http://hl7.org/fhir/R4B/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://who.int"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://who.int"
         },
         {
-          "<a href="http://hl7.org/fhir/R4B/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
-          "<a href="http://hl7.org/fhir/R4B/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "smart@who.int"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "smart@who.int"
         }
       ]
     }
   ],
-  "<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.description">description</a>" : "ValueSet of codes for consent policies for Hajj pilgrims",
-  "<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.compose">compose</a>" : {
-    "<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.compose.include">include</a>" : [
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a>" : "ValueSet of codes for consent policies for Hajj pilgrims",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
+    "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
       {
-        "<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.compose.include.system">system</a>" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT",
-        "<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "CONSENT-KSA",
-            "<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Consent for Kingdom of Saudi Arabia"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "CONSENT-IDN",
-            "<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Consent for Indonesia"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "CONSENT-MYS",
-            "<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Consent for Malaysia"
-          },
-          {
-            "<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "CONSENT-OMN",
-            "<a href="http://hl7.org/fhir/R4B/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Consent for Oman"
-          }
-        ]
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT"
       }
     ]
   }
@@ -401,7 +385,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.ips-pilgrimage#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Thu, Apr 25, 2024 17:24+0000">2024-04-25</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.ips-pilgrimage#2.0.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 13, 2025 16:13+0000">2025-02-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -419,7 +403,7 @@
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -430,7 +414,6 @@
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>
