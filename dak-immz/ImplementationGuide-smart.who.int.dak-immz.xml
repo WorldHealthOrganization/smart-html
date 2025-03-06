@@ -6,15 +6,15 @@
     <profile value="http://smart.who.int/base/StructureDefinition/SGImplementationGuide"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide smart.who.int.dak-immz</b></p><a name="smart.who.int.dak-immz"> </a><a name="hcsmart.who.int.dak-immz"> </a><a name="smart.who.int.dak-immz-en-US"> </a><h2>DakImmz</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/dak-immz/ImplementationGuide/smart.who.int.dak-immz</pre><div><p>SMART DAK for Immunizations</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide smart.who.int.dak-immz</b></p><a name="smart.who.int.dak-immz"> </a><a name="hcsmart.who.int.dak-immz"> </a><a name="smart.who.int.dak-immz-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://smart.who.int/base/0.1.0/StructureDefinition-SGImplementationGuide.html">SMART Guidelines ImplementationGuide</a></p></div><h2>DakImmz</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/dak-immz/ImplementationGuide/smart.who.int.dak-immz</pre><div><p>SMART DAK for Immunizations</p>
 </div></div>
   </text>
   <url value="http://smart.who.int/dak-immz/ImplementationGuide/smart.who.int.dak-immz"/>
-  <version value="1.0.0"/>
+  <version value="1.1.0"/>
   <name value="DakImmz"/>
   <title value="SMART DAK IMMZ"/>
   <status value="active"/>
-  <date value="2025-02-03T11:17:32+00:00"/>
+  <date value="2025-03-06T10:16:38+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -25,7 +25,7 @@
   </contact>
   <description value="SMART DAK for Immunizations"/>
   <packageId value="smart.who.int.dak-immz"/>
-  <license value="CC0-1.0"/>
+  <license value="CC-BY-SA-3.0-IGO"/>
   <fhirVersion value="4.0.1"/>
   <dependsOn id="hl7tx">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -41,7 +41,7 @@
     </extension>
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
-    <version value="5.1.0"/>
+    <version value="5.2.0"/>
   </dependsOn>
   <dependsOn id="smart_who_int_base">
     <uri value="http://smart.who.int/base/ImplementationGuide/smart.who.int.base"/>

@@ -6,14 +6,14 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide smart.who.int.dak-immz</b></p><a name=\"smart.who.int.dak-immz\"> </a><a name=\"hcsmart.who.int.dak-immz\"> </a><a name=\"smart.who.int.dak-immz-en-US\"> </a><h2>DakImmz</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/dak-immz/ImplementationGuide/smart.who.int.dak-immz</pre><div><p>SMART DAK for Immunizations</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide smart.who.int.dak-immz</b></p><a name=\"smart.who.int.dak-immz\"> </a><a name=\"hcsmart.who.int.dak-immz\"> </a><a name=\"smart.who.int.dak-immz-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://smart.who.int/base/0.1.0/StructureDefinition-SGImplementationGuide.html\">SMART Guidelines ImplementationGuide</a></p></div><h2>DakImmz</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/dak-immz/ImplementationGuide/smart.who.int.dak-immz</pre><div><p>SMART DAK for Immunizations</p>\n</div></div>"
   },
   "url" : "http://smart.who.int/dak-immz/ImplementationGuide/smart.who.int.dak-immz",
-  "version" : "1.0.0",
+  "version" : "1.1.0",
   "name" : "DakImmz",
   "title" : "SMART DAK IMMZ",
   "status" : "active",
-  "date" : "2025-02-03T11:17:32+00:00",
+  "date" : "2025-03-06T10:16:38+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",
@@ -24,7 +24,7 @@
   }],
   "description" : "SMART DAK for Immunizations",
   "packageId" : "smart.who.int.dak-immz",
-  "license" : "CC0-1.0",
+  "license" : "CC-BY-SA-3.0-IGO",
   "fhirVersion" : ["4.0.1"],
   "dependsOn" : [{
     "id" : "hl7tx",
@@ -44,7 +44,7 @@
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.1.0"
+    "version" : "5.2.0"
   },
   {
     "id" : "smart_who_int_base",
