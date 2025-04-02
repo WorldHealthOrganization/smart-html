@@ -7,13 +7,22 @@
       "sequence" : "ci-build"
     },
     {
+      "version" : "1.2.0",
+      "path" : "http://smart.who.int/trust/1.2.0",
+      "status" : "release",
+      "sequence" : "Releases",
+      "fhirversion" : "5.0.0",
+      "date" : "2025-04-02",
+      "current" : true,
+      "desc" : "SMART TRUST - release 1.2.0"
+    },
+    {
       "version" : "1.1.5",
       "path" : "http://smart.who.int/trust/v1.1.5",
       "status" : "release",
       "sequence" : "Releases",
       "fhirversion" : "4.0.1",
       "date" : "2024-12-20",
-      "current" : true,
       "desc" : "1.1.5 release"
     },
     {
