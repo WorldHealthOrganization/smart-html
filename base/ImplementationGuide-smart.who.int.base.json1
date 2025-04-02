@@ -6,15 +6,15 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide smart.who.int.base</b></p><a name=\"smart.who.int.base\"> </a><a name=\"hcsmart.who.int.base\"> </a><a name=\"smart.who.int.base-en-US\"> </a><h2>Base</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/base/ImplementationGuide/smart.who.int.base</pre><div><p>Base SMART Guidelines implementation guide to be used as the base dependency for all SMART Guidelines IGs</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide smart.who.int.base</b></p><a name=\"smart.who.int.base\"> </a><a name=\"hcsmart.who.int.base\"> </a><a name=\"smart.who.int.base-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-SGImplementationGuide.html\">SMART Guidelines ImplementationGuide</a></p></div><h2>Base</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/base/ImplementationGuide/smart.who.int.base</pre><div><p>Base SMART Guidelines implementation guide to be used as the base dependency for all SMART Guidelines IGs</p>\n</div></div>"
   },
   "url" : "http://smart.who.int/base/ImplementationGuide/smart.who.int.base",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "Base",
   "title" : "SMART Base",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2024-09-20T13:45:31+00:00",
+  "date" : "2025-04-02T12:10:23+02:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",
@@ -38,6 +38,12 @@
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
     "version" : "5.1.0"
+  },
+  {
+    "id" : "hl7_fhir_uv_extensions_r5",
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r5",
+    "version" : "5.2.0"
   },
   {
     "id" : "cql",
@@ -347,7 +353,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools#0.2.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.4.1"
     },
     {
       "extension" : [{
@@ -624,7 +630,24 @@
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     }],
+    "grouping" : [{
+      "id" : "Conformance",
+      "name" : "Conformance",
+      "description" : "constraints and profile structures for SMART Guidelines resources"
+    }],
     "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/LinkIdExt"
+      },
+      "name" : "LinkIdExt",
+      "description" : "Smart Guidelines link identifier extension",
+      "exampleBoolean" : false
+    },
+    {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
@@ -642,10 +665,106 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/Sgcode"
+        "reference" : "StructureDefinition/Satisfies"
       },
-      "name" : "Sgcode",
+      "name" : "Satisfies",
+      "description" : "Indicates that if the conditions for this requirement are satisified, then that it should be viewed as satisifying  the referenced requirement.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SGActorExt"
+      },
+      "name" : "SGActorExt",
+      "description" : "Smart Guidelines Actor Reference extension",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SGcode"
+      },
+      "name" : "SGcode",
       "description" : "Smart Guidelines code extension",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SGDocumentation"
+      },
+      "name" : "SGDocumentation",
+      "description" : "Smart Guidelines Documentation extension",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SGMarkdown"
+      },
+      "name" : "SGMarkdown",
+      "description" : "Smart Guidelines markdown extension",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SGRequirementExt"
+      },
+      "name" : "SGRequirementExt",
+      "description" : "Smart Guidelines Requirements extension",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SGRequirements"
+      },
+      "name" : "SGRequirements",
+      "description" : "Smart Guidelines Requirements",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SGString"
+      },
+      "name" : "SGString",
+      "description" : "Smart Guidelines (required) string extension for use in a complex extension",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SGUserStory"
+      },
+      "name" : "SGUserStory",
+      "description" : "Smart Guidelines extension to support structured User Stories (As a <Actor> I want to <capability> so that <benfit>) extension",
       "exampleBoolean" : false
     },
     {
@@ -657,8 +776,22 @@
         "reference" : "StructureDefinition/SGActivityDefinition"
       },
       "name" : "SMART Guidelines ActivityDefinition",
-      "description" : "Defines the minimum expectations for ActivityDefinition resources used in SMART Guidelines",
-      "exampleBoolean" : false
+      "description" : "The minimum expectations for ActivityDefinition resources used in SMART Guidelines",
+      "exampleBoolean" : false,
+      "groupingId" : "Conformance"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SGActor"
+      },
+      "name" : "SMART Guidelines Actor",
+      "description" : "Structure and constraints for ActorDefinition resources used in SMART Guidelines",
+      "exampleBoolean" : false,
+      "groupingId" : "Conformance"
     },
     {
       "extension" : [{
@@ -669,8 +802,9 @@
         "reference" : "StructureDefinition/SGBusinessProcess"
       },
       "name" : "SMART Guidelines Business Process",
-      "description" : "Defines the minimum expectations for Business Processes represented in SMART Guidelines",
-      "exampleBoolean" : false
+      "description" : "Structure and constraints for Business Processes represented in SMART Guidelines",
+      "exampleBoolean" : false,
+      "groupingId" : "Conformance"
     },
     {
       "extension" : [{
@@ -682,7 +816,8 @@
       },
       "name" : "SMART Guidelines CodeSystem",
       "description" : "Defines the minimum expectations for CodeSystem resources used in SMART Guidelines",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Conformance"
     },
     {
       "extension" : [{
@@ -694,7 +829,58 @@
       },
       "name" : "SMART Guidelines ConceptMap",
       "description" : "Defines the minimum expectations for ConceptMap resources used in SMART Guidelines",
+      "exampleBoolean" : false,
+      "groupingId" : "Conformance"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/DocumentationSection"
+      },
+      "name" : "Smart Guidelines Documentation Section",
+      "description" : "CodeSystem for Smart Guidelines Documentation Section to autogenerate documentation from artifacts",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/DocumentationSections"
+      },
+      "name" : "Smart Guidelines Documentation Section",
+      "description" : "CodeSystem for Smart Guidelines Documentation Section to autogenerate documentation from artifacts",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SGGraphDefinition"
+      },
+      "name" : "SMART Guidelines GraphDefinition",
+      "description" : "The minimum expectations for GraphDefinition resources used in SMART Guidelines",
+      "exampleBoolean" : false,
+      "groupingId" : "Conformance"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SGGroupDefinition"
+      },
+      "name" : "SMART Guidelines Group Definition",
+      "description" : "Structure and constraints for Group Definitions represented in SMART Guidelines",
+      "exampleBoolean" : false,
+      "groupingId" : "Conformance"
     },
     {
       "extension" : [{
@@ -706,7 +892,8 @@
       },
       "name" : "SMART Guidelines ImplementationGuide",
       "description" : "Defines the minimum expectations for ImplementationGuide resources used in SMART Guidelines",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Conformance"
     },
     {
       "extension" : [{
@@ -718,7 +905,8 @@
       },
       "name" : "SMART Guidelines Library",
       "description" : "Defines the minimum expectations for Library resources used in SMART Guidelines",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Conformance"
     },
     {
       "extension" : [{
@@ -730,7 +918,8 @@
       },
       "name" : "SMART Guidelines Logical Model",
       "description" : "Defines the minimum expectations for Logical Models used in SMART Guidelines",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Conformance"
     },
     {
       "extension" : [{
@@ -742,7 +931,8 @@
       },
       "name" : "SMART Guidelines Measure",
       "description" : "Defines the minimum expectations for Measure resources used in SMART Guidelines",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Conformance"
     },
     {
       "extension" : [{
@@ -754,7 +944,8 @@
       },
       "name" : "SMART Guidelines PlanDefinition",
       "description" : "Defines the minimum expectations for PlanDefinition resources used in SMART Guidelines",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Conformance"
     },
     {
       "extension" : [{
@@ -766,7 +957,8 @@
       },
       "name" : "SMART Guidelines Questionnaire",
       "description" : "Defines the minimum expectations for Questionnaire resources used in SMART Guidelines",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Conformance"
     },
     {
       "extension" : [{
@@ -778,7 +970,8 @@
       },
       "name" : "SMART Guidelines StructureDefinition",
       "description" : "Defines the minimum expectations for StructureDefinition resources used in SMART Guidelines",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Conformance"
     },
     {
       "extension" : [{
@@ -790,7 +983,21 @@
       },
       "name" : "SMART Guidelines StructureMap",
       "description" : "Defines the minimum expectations for StructureMap resources used in SMART Guidelines",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Conformance"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SGTransaction"
+      },
+      "name" : "SMART Guidelines Transaction",
+      "description" : "Structure and constraints for TransactionDefinition resources used in SMART Guidelines",
+      "exampleBoolean" : false,
+      "groupingId" : "Conformance"
     },
     {
       "extension" : [{
@@ -802,19 +1009,8 @@
       },
       "name" : "SMART Guidelines ValueSet",
       "description" : "Defines the minimum expectations for ValueSet resources used in SMART Guidelines",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/SGGroupDefinition"
-      },
-      "name" : "WHO SMART Guidelines Group Definition",
-      "description" : "WHO SMART Guidelines Group Definition",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Conformance"
     }],
     "page" : {
       "extension" : [{

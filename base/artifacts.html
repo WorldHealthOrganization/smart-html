@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary - SMART Base v0.1.0</title>
+    <title>Artifacts Summary - SMART Base v0.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -120,7 +120,7 @@
         <div id="ig-status" class="ig-status-draft">
           <p><span style="font-size:12pt;font-weight:bold">SMART Base</span>
             <br/>
-            <span style="display:inline-block;">0.1.0 - ci-build
+            <span style="display:inline-block;">0.2.0 - ci-build
 
 
             </span>
@@ -155,7 +155,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART Base (v0.1.0: Releases Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/base/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART Base (v0.2.0: Releases Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/base/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -167,10 +167,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">Structures: Resource Profiles</a>
+         <a href="#1">Conformance</a>
       </li>
       <li>
-         <a href="#2">Structures: Extension Definitions</a>
+         <a href="#2">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#3">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#5">Terminology: Code Systems</a>
       </li>
    </ul>
 </div>
@@ -179,8 +188,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      xmlns:html="http://www.w3.org/1999/xhtml">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
-   <h3>Structures: Resource Profiles </h3>
-    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+   <h3>Conformance </h3>
+    <p>constraints and profile structures for SMART Guidelines resources</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
@@ -190,7 +199,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/SGActivityDefinition">SMART Guidelines ActivityDefinition</a>
             </td>
             <td>
-<p>Defines the minimum expectations for ActivityDefinition resources used in SMART Guidelines</p>
+<p>The minimum expectations for ActivityDefinition resources used in SMART Guidelines</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SGActor.html"
+                  title="StructureDefinition/SGActor">SMART Guidelines Actor</a>
+            </td>
+            <td>
+<p>Structure and constraints for ActorDefinition resources used in SMART Guidelines</p>
 </td>
          </tr>
          <tr>
@@ -199,7 +217,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/SGBusinessProcess">SMART Guidelines Business Process</a>
             </td>
             <td>
-<p>Defines the minimum expectations for Business Processes represented in SMART Guidelines</p>
+<p>Structure and constraints for Business Processes represented in SMART Guidelines</p>
 </td>
          </tr>
          <tr>
@@ -218,6 +236,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Defines the minimum expectations for ConceptMap resources used in SMART Guidelines</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SGGraphDefinition.html"
+                  title="StructureDefinition/SGGraphDefinition">SMART Guidelines GraphDefinition</a>
+            </td>
+            <td>
+<p>The minimum expectations for GraphDefinition resources used in SMART Guidelines</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SGGroupDefinition.html"
+                  title="StructureDefinition/SGGroupDefinition">SMART Guidelines Group Definition</a>
+            </td>
+            <td>
+<p>Structure and constraints for Group Definitions represented in SMART Guidelines</p>
 </td>
          </tr>
          <tr>
@@ -294,6 +330,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-SGTransaction.html"
+                  title="StructureDefinition/SGTransaction">SMART Guidelines Transaction</a>
+            </td>
+            <td>
+<p>Structure and constraints for TransactionDefinition resources used in SMART Guidelines</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-SGValueSet.html"
                   title="StructureDefinition/SGValueSet">SMART Guidelines ValueSet</a>
             </td>
@@ -301,23 +346,40 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Defines the minimum expectations for ValueSet resources used in SMART Guidelines</p>
 </td>
          </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-SGGroupDefinition.html"
-                  title="StructureDefinition/SGGroupDefinition">WHO SMART Guidelines Group Definition</a>
+               <a href="StructureDefinition-SGRequirements.html"
+                  title="StructureDefinition/SGRequirements">SGRequirements</a>
             </td>
             <td>
-<p>WHO SMART Guidelines Group Definition</p>
+<p>Smart Guidelines Requirements</p>
 </td>
          </tr>
       </tbody>
    </table>
-   <a name="2"> </a>
+   <a name="3"> </a>
    <h3>Structures: Extension Definitions </h3>
     <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-LinkIdExt.html"
+                  title="StructureDefinition/LinkIdExt">LinkIdExt</a>
+            </td>
+            <td>
+<p>Smart Guidelines link identifier extension</p>
+</td>
+         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-Markdown.html"
@@ -329,11 +391,108 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-Sgcode.html"
-                  title="StructureDefinition/Sgcode">Sgcode</a>
+               <a href="StructureDefinition-SGActorExt.html"
+                  title="StructureDefinition/SGActorExt">SGActorExt</a>
+            </td>
+            <td>
+<p>Smart Guidelines Actor Reference extension</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SGDocumentation.html"
+                  title="StructureDefinition/SGDocumentation">SGDocumentation</a>
+            </td>
+            <td>
+<p>Smart Guidelines Documentation extension</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SGMarkdown.html"
+                  title="StructureDefinition/SGMarkdown">SGMarkdown</a>
+            </td>
+            <td>
+<p>Smart Guidelines markdown extension</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SGRequirementExt.html"
+                  title="StructureDefinition/SGRequirementExt">SGRequirementExt</a>
+            </td>
+            <td>
+<p>Smart Guidelines Requirements extension</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SGString.html"
+                  title="StructureDefinition/SGString">SGString</a>
+            </td>
+            <td>
+<p>Smart Guidelines (required) string extension for use in a complex extension</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SGUserStory.html"
+                  title="StructureDefinition/SGUserStory">SGUserStory</a>
+            </td>
+            <td>
+<p>Smart Guidelines extension to support structured User Stories (As a &lt;Actor&gt; I want to &lt;capability&gt; so that &lt;benfit&gt;) extension</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SGcode.html"
+                  title="StructureDefinition/SGcode">SGcode</a>
             </td>
             <td>
 <p>Smart Guidelines code extension</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Satisfies.html"
+                  title="StructureDefinition/Satisfies">Satisfies</a>
+            </td>
+            <td>
+<p>Indicates that if the conditions for this requirement are satisified, then that it should be viewed as satisifying  the referenced requirement.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-DocumentationSection.html"
+                  title="ValueSet/DocumentationSection">Smart Guidelines Documentation Section</a>
+            </td>
+            <td>
+<p>CodeSystem for Smart Guidelines Documentation Section to autogenerate documentation from artifacts</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-DocumentationSections.html"
+                  title="CodeSystem/DocumentationSections">Smart Guidelines Documentation Section</a>
+            </td>
+            <td>
+<p>CodeSystem for Smart Guidelines Documentation Section to autogenerate documentation from artifacts</p>
 </td>
          </tr>
       </tbody>
@@ -341,52 +500,53 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 
 </div>
-        </div>  <!-- /inner-wrapper -->
-      </div>  <!-- /row -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-content -->
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-content -->
 
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
-  <a name="bottom"> </a>
-  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
-    <div class="container">  <!-- container -->
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
+<a name="bottom"> </a>
+<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+<div class="container">  <!-- container -->
 
-      <div class="inner-wrapper">
-        <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.base#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 20, 2024 13:45+0000">2024-09-20</span>
-          <br/>
-          <span style="color: var(--footer-highlight-text-color)">
-                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+<div class="inner-wrapper">
+  <p>
+    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.base#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Apr 2, 2025 12:10+0200">2025-04-02</span>
+    <br/>
+    <span style="color: var(--footer-highlight-text-color)">
+                Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
 | <a style="color: #81BEF7" target="_blank" href="http://smart.who.int/base/history.html">Version History</a> | <a style="color: #81BEF7" rel="license" href="license.html">License</a>
-          </span>
-        </p>
-      </div>  <!-- /inner-wrapper -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-footer -->
-  
-  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
-    <div class="container">  <!-- container -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-post-footer -->
+    </span>
+  </p>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-footer -->
 
-  <!-- JS and analytics only. -->
-  <!-- Bootstrap core JavaScript
-  ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
-  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
-  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
-  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
-  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
-  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  <!-- Analytics Below
-  ================================================== -->
-  </body>
-</html>
+<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+<div class="container">  <!-- container -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+<script type="text/javascript" src="assets/js/respond.min.js"> </script>
+<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+<script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+<!-- Analytics Below
+================================================== -->
+
+
+
 

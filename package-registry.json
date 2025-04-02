@@ -7,16 +7,16 @@
       "canonical" : "http://smart.who.int/base",
       "category" : "base",
       "ci-build" : "http://worldhealthorganization.github.io/smart-base",
-      "version-count" : 1,
+      "version-count" : 2,
       "latest" : {
-        "version" : "0.1.0",
-        "date" : "2024-10-03",
-        "path" : "http://smart.who.int/base/0.1.0"
+        "version" : "0.2.0",
+        "date" : "2025-04-02",
+        "path" : "http://smart.who.int/base/0.2.0"
       },
       "milestone" : {
-        "version" : "0.1.0",
-        "date" : "2024-10-03",
-        "path" : "http://smart.who.int/base/0.1.0"
+        "version" : "0.2.0",
+        "date" : "2025-04-02",
+        "path" : "http://smart.who.int/base/0.2.0"
       }
     },
     {
@@ -170,7 +170,7 @@
         "date" : "2024-04-25",
         "path" : "http://smart.who.int/ips-pilgrimage/1.0.0"
       }
-    },    
+    },
     {
       "path" : "ddcc/package-list.json",
       "package-id" : "who.ddcc",
