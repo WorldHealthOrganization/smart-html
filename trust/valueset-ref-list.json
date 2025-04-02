@@ -1,44 +1,70 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://smart.who.int/trust/ValueSet/WHO.TRUST.ACTOR",
-      "version" : "1.1.5",
+      "url" : "http://smart.who.int/trust/ValueSet/Actors",
+      "version" : "1.2.0",
       "status" : "active",
-      "name" : "WHO_TRUST_ACTOR",
-      "title" : "TRUST.ACTOR ValueSet of key usage codes ",
+      "name" : "Actors",
+      "title" : "WHO GDHCN Actor ValueSet of actor codes",
+      "description" : "ValueSet of codes for actor codes",
+      "systems" : ["http://smart.who.int/trust/CodeSystem/Actors"]
+    },
+    {
+      "url" : "http://smart.who.int/trust/ValueSet/ConnectionTypes",
+      "version" : "1.2.0",
+      "status" : "active",
+      "name" : "ConnectionTypes",
+      "title" : "WHO GDHCN Connection Types",
+      "description" : "ValueSet of GDHCN Trust Network Connection Types",
+      "systems" : ["http://smart.who.int/trust/CodeSystem/ConnectionTypes"]
+    },
+    {
+      "url" : "http://smart.who.int/trust/ValueSet/Domains",
+      "version" : "1.2.0",
+      "status" : "active",
+      "name" : "Domains",
+      "title" : "WHO GDHCN Trust Domains",
+      "description" : "ValueSet of WHO GDHCN Trust Domains",
+      "systems" : ["http://smart.who.int/trust/CodeSystem/Domains"]
+    },
+    {
+      "url" : "http://smart.who.int/trust/ValueSet/KeyUsage",
+      "version" : "1.2.0",
+      "status" : "active",
+      "name" : "KeyUsage",
+      "title" : "WHO GDHCN  Key Usage ValueSet",
       "description" : "ValueSet of codes for key usage codes",
+      "systems" : ["http://smart.who.int/trust/CodeSystem/KeyUsage"]
+    },
+    {
+      "url" : "http://smart.who.int/trust/ValueSet/Participants",
+      "version" : "1.2.0",
+      "status" : "active",
+      "name" : "Participants",
+      "title" : "WHO GDHCN Trust Network Participant",
+      "description" : "ValueSet of GDHCN Trust Network Participants",
       "systems" : [
-        "http://smart.who.int/ips-pilgrimage/CodeSystem/WHO.TRUST.ACTOR"
+        "http://smart.who.int/trust/CodeSystem/Participants",
+        "http://smart.who.int/refmart/CodeSystem/REF_COUNTRY"
       ]
     },
     {
-      "url" : "http://smart.who.int/trust/ValueSet/WHO.TRUST.DOMAIN",
-      "version" : "1.1.5",
+      "url" : "http://smart.who.int/trust/ValueSet/PayloadTypes",
+      "version" : "1.2.0",
       "status" : "active",
-      "name" : "WHO_TRUST_DOMAIN",
-      "title" : "WHO SMART Trust Domains",
-      "description" : "Health credential type",
-      "systems" : ["http://smart.who.int/trust/CodeSystem/WHO.TRUST.DOMAIN"]
+      "name" : "PayloadTypes",
+      "title" : "WHO GDHCN Payload Types",
+      "description" : "ValueSet of GDHCN Trust Network Payload Types",
+      "systems" : ["http://smart.who.int/trust/CodeSystem/PayloadTypes"]
     },
     {
-      "url" : "http://smart.who.int/trust/ValueSet/WHO.TRUST.KEYUSAGE",
-      "version" : "1.1.5",
+      "url" : "http://smart.who.int/trust/ValueSet/Transactions",
+      "version" : "1.2.0",
       "status" : "active",
-      "name" : "WHO_TRUST_KEYUSAGE",
-      "title" : "TRUST.KEYUSAGE ValueSet of key usage codes ",
-      "description" : "ValueSet of codes for key usage codes",
-      "systems" : ["http://smart.who.int/trust/CodeSystem/WHO.TRUST.KEYUSAGE"]
-    },
-    {
-      "url" : "http://smart.who.int/trust/ValueSet/WHO.TRUST.TRANSACTION",
-      "version" : "1.1.5",
-      "status" : "active",
-      "name" : "WHO_TRUST_TRANSACTION",
-      "title" : "TRUST.TRANSACTION ValueSet of key usage codes ",
-      "description" : "ValueSet of codes for key usage codes",
-      "systems" : [
-        "http://smart.who.int/ips-pilgrimage/CodeSystem/WHO.TRUST.TRANSACTION"
-      ]
+      "name" : "Transactions",
+      "title" : "WHO GDHCN Transaction Codes",
+      "description" : "ValueSet of WHO GDHCN Transaction Codes",
+      "systems" : ["http://smart.who.int/trust/CodeSystem/Transactions"]
     }
   ]
 }
