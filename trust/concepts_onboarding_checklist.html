@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Concepts Onboarding Checklist - WHO SMART Trust v1.1.5</title>
+    <title>Onboarding Checklist - WHO SMART Trust v1.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"1.8.6"}
-    h3,h4,h5,h6{--heading-prefix:"1.8.6"}</style>
+    <style type="text/css">h2{--heading-prefix:"4.1"}
+    h3,h4,h5,h6{--heading-prefix:"4.1"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
 
       <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
@@ -59,7 +59,7 @@
                 <span class="icon-bar"> </span>
                 <span class="icon-bar"> </span>
               </button>
-              <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+              <a href="http://hl7.org/fhir/R5/index.html" class="navbar-brand hidden">FHIR</a>
               <div class="nav-collapse collapse navbar-inverse-collapse">
                   <!-- menu.xml -->
 
@@ -73,19 +73,10 @@
         <a href="index.html">Summary</a>
       </li>
       <li>
-        <a href="changes.html">Changes</a>
-      </li>
-      <li>
         <a href="dependencies.html">Dependencies</a>
       </li>
       <li>
         <a href="ethical_principles.html">Ethical Considerations and Data Protection Principles</a>
-      </li>
-      <li>
-        <a href="references.html">References</a>
-      </li>
-      <li>
-        <a href="adapting_guidelines.html">Adapting Guidelines for Country use</a>
       </li>
       <li>
         <a href="faq.html">Frequently Asked Questions</a>
@@ -99,6 +90,12 @@
     <ul class="dropdown-menu">
       <li>
         <a href="concepts.html">Concepts</a>
+      </li>
+      <li>
+        <a href="concepts_certificate_governance.html">Certificate Governance</a>
+      </li>
+      <li>
+        <a href="concepts_onboarding.html">Onboarding Process</a>
       </li>
       <li>
         <a href="use_cases.html">Use Cases</a>
@@ -117,16 +114,25 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="actors.html">System Actors</a>
+        <a href="system-actors.html">System Actors</a>
       </li>
       <li>
         <a href="transactions.html">Transactions</a>
       </li>
       <li>
-        <a href="workflows.html">Workflows</a>
+        <a href="sequence-diagrams.html">Sequence Diagrams</a>
       </li>
       <li>
-        <a href="content_profiles.html">Content Profiles</a>
+        <a href="trust_domains.html">Trust Domains</a>
+      </li>
+      <li>
+        <a href="trust_network_gateway_architecture.html">Trust Network Gateway Architecture</a>
+      </li>
+      <li>
+        <a href="concepts_did.html">DID Trustlist Specification</a>
+      </li>
+      <li>
+        <a href="hcert_spec.html">HCERT Specification</a>
       </li>
     </ul>
   </li>
@@ -136,7 +142,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="video_tutorial.html">Video Tutorials</a>
+        <a href="concepts_onboarding_checklist.html">Onboarding Checklist</a>
       </li>
       <li>
         <a href="security_privacy.html">Security and Privacy Considerations</a>
@@ -150,6 +156,12 @@
       <li>
         <a href="downloads.html">Downloads</a>
       </li>
+      <li>
+        <a href="changes.html">Changes</a>
+      </li>
+      <li>
+        <a href="endpoints.html">Endpoints</a>
+      </li>
     </ul>
   </li>
   <li class="dropdown">
@@ -161,7 +173,13 @@
         <a href="artifacts.html">Artifact Index</a>
       </li>
       <li>
+        <a href="references.html">References</a>
+      </li>
+      <li>
         <a href="maps.html">Mappings</a>
+      </li>
+      <li>
+        <a href="license.html">License</a>
       </li>
     </ul>
   </li>
@@ -207,7 +225,7 @@
         <div id="ig-status" class="ig-status-active">
           <p><span style="font-size:12pt;font-weight:bold">WHO SMART Trust</span>
             <br/>
-            <span style="display:inline-block;">1.1.5 - v1.1.5
+            <span style="display:inline-block;">1.2.0 - CI Build
 
 
 
@@ -226,7 +244,17 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="index.html"><b>Home</b></a></li><li><a href="concepts.html"><b>Concepts</b></a></li><li><b>Concepts Onboarding Checklist</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="deployment.html"><b>Deployment</b></a></li><li><b>Onboarding Checklist</b></li>
+
+          <span style="float:right;">
+
+            <a href="deployment.html">&lt;prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="security_privacy.html">next&gt;</a>
+
+          </span>
 
         </ul>
       </div>    <!-- /container -->
@@ -246,8 +274,8 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">This page is part of the Trust (v1.1.5: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/trust/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
-  <h2>Concepts Onboarding Checklist</h2>
+    <!-- ReleaseHeader --><p id="publish-box">This page is part of the Trust (v1.2.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R5">FHIR (HL7® FHIR® Standard) v5.0.0</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/trust/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Onboarding Checklist</h2>
   
 
 
@@ -262,25 +290,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p>  <!-- white space is critical inside of capture --></p>
-<div class="markdown-toc">
-<ul id="markdown-toc">
-  <li><a href="#git-repository" id="markdown-toc-git-repository">Git Repository</a></li>
-  <li><a href="#local-repository" id="markdown-toc-local-repository">Local Repository</a></li>
-  <li><a href="#invite-tng-bot" id="markdown-toc-invite-tng-bot">Invite tng-bot</a></li>
-  <li><a href="#generate-gpg-key" id="markdown-toc-generate-gpg-key">Generate GPG Key</a></li>
-  <li><a href="#create-certificates" id="markdown-toc-create-certificates">Create Certificates</a></li>
-  <li><a href="#provide" id="markdown-toc-provide">Provide</a></li>
-  <li><a href="#send-an-onboardingparticipation-request" id="markdown-toc-send-an-onboardingparticipation-request">Send an onboarding/participation request</a></li>
-  <li><a href="#validate-the-connection" id="markdown-toc-validate-the-connection">Validate the connection</a></li>
-  <li><a href="#upload-cms-package" id="markdown-toc-upload-cms-package">Upload CMS Package</a></li>
-  <li><a href="#appendix" id="markdown-toc-appendix">Appendix</a></li>
-</ul>
-
+<div>
+  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
 </div>
-<p>This repository contains the template for building <a href="https://github.com/WorldHealthOrganization/smart-trust/blob/main/input/pagecontent/concepts_onboarding.md">onboarding</a> information for the Smart Trust Network Attendees. This includes CSCAs, Auth information, signing information and other relevant files for onboarding a participant. Videos guides to the steps described here are available on this <a href="video_tutorial.html">page</a>.</p>
+<h3 id="onboarding-checklist">Onboarding Checklist</h3>
+
+<p><a name="l502">​</a>This repository contains the a checklist for <a href="concepts_onboarding.html">onboarding</a> the Trust Network Participants. This includes CSCAs, Auth information, signing information and other relevant files for onboarding a participant. Videos guides to the steps described here are available on this <a href="video_tutorial.html">page</a>.</p>
 
 <p><strong>Onboarding Process</strong></p>
-<p><a name="l507">​</a><img src="Onboarding%20Process.drawio.png" alt="Onboarding Process" style="width:60%" class="figure-img img-responsive img-rounded center-block"/></p>
+<p><img src="OnboardingProcess.drawio.png" alt="Onboarding Process" style="width:60%" class="figure-img img-responsive img-rounded center-block"/></p>
 <div style="clear:both;"></div>
 
 <p><strong>Prerequisites for Onboarding</strong></p>
@@ -375,19 +393,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><strong>Steps to Be Followed by Participant Country:</strong></p>
 
-<h3 id="git-repository">Git Repository</h3>
+<h4 id="git-repository">Git Repository</h4>
 
 <p><strong>Create a private git repository on github. One for each Environment (DEV, UAT, PROD)</strong></p>
 
 <blockquote>
   <p>Please check <a href="https://github.com/WorldHealthOrganization/smart-trust/releases/download/v1.1.1/2.1.and2.3.full-video.v2.mp4">Create private repository</a> video for reference</p>
-  <ul>
-    <li>From Github profile, go to repositories</li>
-    <li>Click on New</li>
-    <li>Enter Repository name, follow the convention, it has to contain the ISO 3 letter. All the rest is optional</li>
-    <li>Click on Create Repository</li>
-  </ul>
 </blockquote>
+
+<video controls="null" width="60%">
+  <source src="https://github.com/WorldHealthOrganization/smart-trust/releases/download/v1.1.1/2.1.and2.3.full-video.v2.mp4" type="video/mp4"/>
+</video>
+
+<ul>
+  <li>From Github profile, go to repositories</li>
+  <li>Click on New</li>
+  <li>Enter Repository name, follow the convention, it has to contain the ISO 3 letter. All the rest is optional</li>
+  <li>Click on Create Repository</li>
+</ul>
 
 <blockquote>
   <p><strong>Save For Later:</strong> Be sure to securely save items like <strong>GitHub usernames</strong>, and <strong>Repository Name, URL</strong> as they will be needed in upcoming steps.</p>
@@ -406,7 +429,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <p><strong>Save For Later:</strong> Be sure to securely save the <strong>GitHub PAT (Personal Access Token)</strong>, as it will be needed in upcoming steps.</p>
 </blockquote>
 
-<h3 id="local-repository">Local Repository</h3>
+<h4 id="local-repository">Local Repository</h4>
 
 <ul>
   <li>Go to local repo</li>
@@ -421,7 +444,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </li>
 </ul>
 
-<h3 id="invite-tng-bot">Invite tng-bot</h3>
+<h4 id="invite-tng-bot">Invite tng-bot</h4>
 <ul>
   <li>Add tng-bot to new repository
     <blockquote>
@@ -435,7 +458,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Add tng-bot for Prod and tng-bot-dev for dev and UAT</li>
 </ul>
 
-<h3 id="generate-gpg-key">Generate GPG Key</h3>
+<video controls="null" width="60%">
+  <source src="https://github.com/WorldHealthOrganization/smart-trust/releases/download/v1.1.1/2.2.full-video.v2.mp4" type="video/mp4"/>
+</video>
+
+<h4 id="generate-gpg-key">Generate GPG Key</h4>
 <ul>
   <li>Create GPG Keys for responsible persons for each environment
     <blockquote>
@@ -446,6 +473,11 @@ Please check <a href="https://github.com/WorldHealthOrganization/smart-trust/rel
   <li>Download and install the GPG command line tools for your operating system. We generally recommend installing the latest version for your operating system.</li>
   <li>Open Git Bash</li>
   <li>Generate a GPG key pair. Since there are multiple versions of GPG, you may need to consult the relevant man page to find the appropriate key generation command</li>
+</ul>
+<video controls="null" width="60%">
+  <source src="https://github.com/WorldHealthOrganization/smart-trust/releases/download/v1.1.1/1.2.full-video.v2.mp4" type="video/mp4"/>
+</video>
+<ul>
   <li>
     <p>If you are on version 2.1.17 or greater, paste the text below to generate a GPG key pair.</p>
 
@@ -516,9 +548,13 @@ Please check <a href="https://github.com/WorldHealthOrganization/smart-trust/rel
   <li>Click on Add GPG Key</li>
 </ul>
 
-<h3 id="create-certificates">Create Certificates</h3>
+<video controls="null" width="60%">
+  <source src="https://github.com/WorldHealthOrganization/smart-trust/releases/download/v1.1.1/1.3.full-video.v2.mp4" type="video/mp4"/>
+</video>
 
-<h4 id="certificate-preparation-for-dev-and-uat">Certificate Preparation for DEV and UAT</h4>
+<h4 id="create-certificates">Create Certificates</h4>
+
+<h5 id="certificate-preparation-for-dev-and-uat">Certificate Preparation for DEV and UAT</h5>
 
 <blockquote>
   <p><strong>Disclaimer</strong>: This script is designed to create self-signed certificates solely for non-production environments, such as DEV and UAT, not intended to be used on production environments. To use it, <strong>choose the appropriate script for your operating system</strong>:</p>
@@ -531,7 +567,7 @@ Please check <a href="https://github.com/WorldHealthOrganization/smart-trust/rel
 
 <p>These scripts, along with the provided configuration files, serve as guidelines for <a href="https://github.com/WorldHealthOrganization/tng-participant-template/blob/main/scripts/certgen/README.md">certificate preparation</a> .</p>
 
-<h4 id="if-your-operating-systems-is-unixlinuxmac">If your Operating Systems is Unix/Linux/Mac</h4>
+<h5 id="if-your-operating-systems-is-unixlinuxmac">If your Operating Systems is Unix/Linux/Mac</h5>
 <blockquote>
 
   <ul>
@@ -551,7 +587,7 @@ export OSSL_COMMON_NAME="NationXC_TNP
   <p>Note: OSSL_COUNTRY_NAME should be ISO 2 letter name of the country mapped to the name used in repository.</p>
 </blockquote>
 
-<h4 id="if-your-operating-systems-is-windows">If your Operating Systems is Windows</h4>
+<h5 id="if-your-operating-systems-is-windows">If your Operating Systems is Windows</h5>
 <blockquote>
 
   <p>For Windows, use the <a href="https://github.com/WorldHealthOrganization/tng-participant-template/blob/main/scripts/certgen/gen_all_certs.ps1">gen_all_certs.ps1</a> PowerShell script. You can modify the environment variables directly within the script or set them in your current PowerShell session:</p>
@@ -578,7 +614,7 @@ $env:OSSL_COMMON_NAME="NationXC_TNP"
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
 </code></pre></div></div>
 
-<h4 id="how-to-run-script-">How to Run Script :</h4>
+<h5 id="how-to-run-script-">How to Run Script :</h5>
 
 <ul>
   <li>Once you execute the script. It will generate all certificates and keys in a subfolder named by current datetime.</li>
@@ -597,7 +633,7 @@ cd scripts/certgen
 
 <p>This setup generates all required certificates (TLS, SCA, UP) and keys in a timestamped subfolder, based on the configuration specified in DN_template.cnf for Unix/Linux and the environment variables set in the current PowerShell session for Windows.</p>
 
-<h4 id="prepare-folders">Prepare Folders</h4>
+<h5 id="prepare-folders">Prepare Folders</h5>
 
 <blockquote>
   <p>Note: keep your private keys safe and secure. Do not share them with anyone.</p>
@@ -616,16 +652,23 @@ Files to be copied in respective folders are as follows:</p>
   <p>Note: On DEV and UAT environment, if the files are generated using a script, delete the generated folder before committing the files.</p>
 </blockquote>
 
-<h4 id="certification-preparation-for-prod">Certification Preparation for Prod</h4>
+<h5 id="certification-preparation-for-prod">Certification Preparation for Prod</h5>
 
 <p>This guide follows the certificate templates defined in the certificate governance. Public Key Certificates generated by following this guide will include the minimal required fields - further fields can be added in the configuration files if needed.Self-signed certificates are typically used in DEV and UAT environments.</p>
 
 <p><strong>For production, It is strongly recommended to use certificates signed by a trusted Certificate Authority (CA)</strong>.
 This is just an example reference on how to use a Trusted CA certificate in a production environment. You should refer to the specific procedures provided by the public Trusted Certificate Authority (CA) of your choice for accurate and detailed instructions <a href="#steps-to-obtain-and-use-a-ca-signed-certificate">Reference- Recommendation to use Trusted Public CA Certificate in Prod</a></p>
 
-<p><strong>Elliptic Curve Public Key Certificates (ECDSA with NIST-p-256)</strong></p>
+<p><strong>Only following signature algoriths are supported for the certificate.</strong></p>
+<ul>
+  <li>ECDSA with SHA-256</li>
+  <li>ECDSA with SHA-384</li>
+  <li>RSASSA-PSS</li>
+  <li>DSA with SHA-256</li>
+  <li>Legacy: SHA-256 with RSA Encryption</li>
+</ul>
 
-<h5 id="sca-certificate-tnpsca-generation-example">SCA certificate (TNP<sub>SCA</sub>) generation example</h5>
+<h6 id="sca-certificate-tnpsca-generation-example">SCA certificate (TNP<sub>SCA</sub>) generation example</h6>
 <blockquote>
   <p>Please check <a href="https://github.com/WorldHealthOrganization/smart-trust/releases/download/v1.1.1/1.1.full-video.SCA.v2.mp4">SCA Creation</a> video  for reference</p>
 </blockquote>
@@ -656,13 +699,22 @@ This is just an example reference on how to use a Trusted CA certificate in a pr
   <li>
     <p><em>Certificate generation</em>: Open a command line prompt in the folder where the sca.conf is located and use the following OpenSSL command to create the private key (CAprivkey.key) and the certificate (CAcert.pem):</p>
   </li>
-  <li><strong>For Prod it's recommended to use</strong> <a href="#steps-to-obtain-and-use-a-ca-signed-certificate">Trusted CA issued Certificate</a> only. As below command for self-signed certificate generation as it's usually only recommended for <strong>DEV/UAT</strong> environment.
+  <li>
+    <p><strong>For Prod it's recommended to use</strong> <a href="#steps-to-obtain-and-use-a-ca-signed-certificate">Trusted CA issued Certificate</a> only. As below command for self-signed certificate generation as it's usually only recommended for <strong>DEV/UAT</strong> environment.</p>
     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  openssl req -x509 -new -days 1461 -newkey ec:&lt;(openssl ecparam -name prime256v1) -extensions ext -keyout CAprivkey.key -nodes -out CAcert.pem -config sca.conf
 </code></pre></div>    </div>
-    <h5 id="dsc-generation-example">DSC generation example</h5>
-    <p><strong>DSC generation example</strong>
-  Document Signer Certificates (DSCs) must be signed by the SCA. Hence, you have to create the SCA certificate (with the corresponding private key) before you can issue DSCs.</p>
   </li>
+</ul>
+
+<video controls="null" width="60%">
+  <source src="https://github.com/WorldHealthOrganization/smart-trust/releases/download/v1.1.1/1.1.full-video.SCA.v2.mp4" type="video/mp4"/>
+</video>
+
+<h6 id="dsc-generation-example">DSC generation example</h6>
+<p><strong>DSC generation example</strong>
+	Document Signer Certificates (DSCs) must be signed by the SCA. Hence, you have to create the SCA certificate (with the corresponding private key) before you can issue DSCs.</p>
+
+<ul>
   <li>
     <p><em>DSC.conf</em>: Please check <a href="https://github.com/WorldHealthOrganization/smart-trust/releases/download/v1.1.1/3.2.and3.3.full-video.v2.mp4">DSC generation and deletion</a>  video for reference</p>
   </li>
@@ -706,10 +758,16 @@ This is just an example reference on how to use a Trusted CA certificate in a pr
     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  openssl x509 -req -in DSC01csr.pem -CA CAcert.pem -CAkey CAprivkey.key -CAcreateserial -days 730 -extensions ext -extfile DSC.conf -out DSCcert.pem
 </code></pre></div>    </div>
   </li>
-  <li><strong>Important Recommendations for Prod</strong>: Please replace CAcert.pem and CAprivkey.key with signing material from an officially Trusted Certification Authority instead using your own self-signed one.</li>
+  <li>
+    <p><strong>Important Recommendations for Prod</strong>: Please replace CAcert.pem and CAprivkey.key with signing material from an officially Trusted Certification Authority instead using your own self-signed one.</p>
+  </li>
 </ul>
 
-<h5 id="tnpup-generation-example">TNP<sub>UP</sub> generation example</h5>
+<video controls="null" width="60%">
+  <source src="https://github.com/WorldHealthOrganization/smart-trust/releases/download/v1.1.1/3.2.and3.3.full-video.v2.mp4" type="video/mp4"/>
+</video>
+
+<h6 id="tnpup-generation-example">TNP<sub>UP</sub> generation example</h6>
 
 <ul>
   <li><em>uploadCert.conf</em>
@@ -745,8 +803,11 @@ This is just an example reference on how to use a Trusted CA certificate in a pr
 </code></pre></div>    </div>
   </li>
 </ul>
+<video controls="null" width="60%">
+  <source src="https://github.com/WorldHealthOrganization/smart-trust/releases/download/v1.1.1/1.1.full-video.UP.v2.mp4" type="video/mp4"/>
+</video>
 
-<h5 id="tnptls-generation-example">TNP<sub>TLS</sub> generation example</h5>
+<h6 id="tnptls-generation-example">TNP<sub>TLS</sub> generation example</h6>
 
 <ul>
   <li><em>TLSClient.conf</em>
@@ -802,8 +863,11 @@ extendedKeyUsage = clientAuth
 <p><strong>RSA Public Key Certificates</strong>
 In case you want to use RSA certificates you can still use the configuration files provided above. During the CSR/certificate creation, replace the <code class="language-plaintext highlighter-rouge">-newkey ec:&lt;(openssl ecparam -name prime256v1)</code> with <code class="language-plaintext highlighter-rouge">-newkey rsa:4096</code> for a 4096 Bit RSA key.<br/>
 Please be aware that RSA is NOT RECOMMENDED for the DSC and if you want to use RSA as your document signing algorithm, please create either a 2048 bit RSA key or at maximum a 3072 bit RSA key due to the space limitations on the QR codes.</p>
+<video controls="null" width="60%">
+  <source src="https://github.com/WorldHealthOrganization/smart-trust/releases/download/v1.1.1/1.1.full-video.TLS.v2.mp4" type="video/mp4"/>
+</video>
 
-<h3 id="provide">Provide</h3>
+<h4 id="provide">Provide</h4>
 
 <blockquote>
   <p>Please check  <a href="https://github.com/WorldHealthOrganization/smart-trust/releases/download/v1.1.1/2.4.full-video.v2.mp4">Signing (tag) certificates</a> video for reference</p>
@@ -883,10 +947,14 @@ Please be aware that RSA is NOT RECOMMENDED for the DSC and if you want to use R
   <li>For more detailed git commands please review <a href="#more-information-about-git-commit-signing-and-tagging-commands">Appendix</a></li>
 </ul>
 
+<video controls="null" width="60%">
+  <source src="https://github.com/WorldHealthOrganization/smart-trust/releases/download/v1.1.1/2.4.full-video.v2.mp4" type="video/mp4"/>
+</video>
+
 <p><strong>Everyone Must Sign - Always a good idea</strong>
 Signing tags and commits is great, but if you decide to use this in your normal workflow, you’ll have to make sure that everyone on your team understands how to do so. This can be achieved by asking everyone working with the repository to run git config –local commit.gpgsign true to automatically have all of their commits in the repository signed by default. If you don’t, you’ll end up spending a lot of time helping people figure out how to rewrite their commits with signed versions. Make sure you understand GPG and the benefits of signing things before adopting this as part of your standard workflow.</p>
 
-<h3 id="send-an-onboardingparticipation-request">Send an onboarding/participation request</h3>
+<h4 id="send-an-onboardingparticipation-request">Send an onboarding/participation request</h4>
 
 <ul>
   <li>Send an onboarding/participation request to gdhcn-support@who.int which contains:
@@ -897,18 +965,37 @@ Signing tags and commits is great, but if you decide to use this in your normal 
   </li>
 </ul>
 
-<h3 id="validate-the-connection">Validate the connection</h3>
+<h4 id="validate-the-connection">Validate the connection</h4>
 <ul>
   <li>Once the confirmation of successful onboarding is received from the TNG Support Team ( gdhcn-support@who.int), please do the following</li>
 </ul>
 
-<p><strong>TNG-WHO Endpoints:</strong></p>
+<p>THe following are the endpoints for the <a href="concepts.html#trust-network-gateway-tng">Trust Network Gateway</a> for each of development (DEV), user-acceptence testing (UAT) and production (PROD) <em>*environment</em>s:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Environment</th>
+      <th>URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PROD</td>
+      <td>https://tng.who.int</td>
+    </tr>
+    <tr>
+      <td>UAT</td>
+      <td>https://tng-uat.who.int</td>
+    </tr>
+    <tr>
+      <td>DEV</td>
+      <td>https://tng-dev.who.int</td>
+    </tr>
+  </tbody>
+</table>
+
 <ul>
-  <li>PRD:	 https://tng.who.int</li>
-  <li>UAT:	 https://tng-uat.who.int</li>
-  <li>
-    <p>DEV:	 https://tng-dev.who.int</p>
-  </li>
   <li>After onboarding in the DEV/UAT/PROD Environment, check the connectivity with the Trust Network Gateway using its <a href="https://smart.who.int/trust/openapi/">API</a>. This can be achieved with following command:</li>
 </ul>
 
@@ -932,7 +1019,7 @@ Signing tags and commits is great, but if you decide to use this in your normal 
   <li>Test the other Trustlist Routes in the same style (e.g. with DSC/SCA/Upload/Authentication…)</li>
 </ul>
 
-<h3 id="upload-cms-package">Upload CMS Package</h3>
+<h4 id="upload-cms-package">Upload CMS Package</h4>
 <ul>
   <li>
     <p>Create an Document Signer Certificate and sign it by the SCA <a href="#certification-preparation-for-prod">Refer</a> and <a href="#dsc-generation-example">DSC generation example</a></p>
@@ -954,6 +1041,27 @@ openssl base64 -in signed.der -out cms.b64 -e -A
 <blockquote>
   <p>Note: cert.der is your DSC, signing.crt is the TNP<sub>UP</sub>.</p>
 </blockquote>
+
+<ul>
+  <li>Check DSC is already exist before upload CMS package</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -v https://tng-dev.who.int/trustList/DSC/XC --cert TLS.pem --key TLS.key
+</code></pre></div></div>
+
+<ul>
+  <li>Upload the CMS Package to the Gateway</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -v -X POST -H "Content-Type: application/json"  --cert TLS.pem --key TLS.key --data '{"cms": "'"$(cat cms.b64)"'", "properties": {}, "domain": "DCC"}' https://tng-dev.who.int/trustedCertificate
+</code></pre></div></div>
+
+<ul>
+  <li>Download the Trustlist again, and check if your DSC is available.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -v https://tng-dev.who.int/trustList/DSC/XC --cert TLS.pem --key TLS.key
+</code></pre></div></div>
 
 <p><strong>Method 2 - Scripts</strong></p>
 
@@ -978,7 +1086,7 @@ An optional third argument can be provided to specify the purpose of the DSC (e.
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./script_name.sh DN_template.cnf directory_of_SCA_files [test/vax/rec-purpose]
 
 </code></pre></div></div>
-<p><strong>How to run upload.sh script:</strong> <a href="https://github.com/WorldHealthOrganization/tng-participant-template/blob/main/scripts/certgen/upload_dsc.sh">upload_dsc.sh</a></p>
+<p><strong>How to run upload_dsc.sh script to upload CMS Package:</strong> <a href="https://github.com/WorldHealthOrganization/tng-participant-template/blob/main/scripts/certgen/upload_dsc.sh">upload_dsc.sh</a></p>
 
 <p><strong>- ./upload_dsc.sh:</strong> Replace this with the actual name of your script.</p>
 
@@ -990,21 +1098,6 @@ An optional third argument can be provided to specify the purpose of the DSC (e.
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./upload_dsc.sh /path/to/subdir-up_pem_key  /path/to/DSC_dir [DCC]
 </code></pre></div></div>
-
-<ul>
-  <li>Check DSC is already exist before upload CMS package</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -v https://tng-dev.who.int/trustList/DSC/XC --cert TLS.pem --key TLS.key
-</code></pre></div></div>
-
-<ul>
-  <li>Upload the CMS Package to the Gateway</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -v -X POST -H "Content-Type: application/cms" --cert TLS.pem --key TLS.key --data @cms.b64 https://tng-dev.who.int/signerCertificate
-</code></pre></div></div>
-
 <ul>
   <li>Download the Trustlist again, and check if your DSC is available.</li>
 </ul>
@@ -1026,10 +1119,10 @@ An optional third argument can be provided to specify the purpose of the DSC (e.
 <p><img src="https://github.com/user-attachments/assets/0f149617-d5f8-4f1b-bb65-37a073d4c146" alt="Non-working setup" style="width:60%" class="figure-img img-responsive img-rounded center-block"/></p>
 <div style="clear:both;"></div>
 
-<h3 id="appendix">Appendix</h3>
+<h4 id="appendix">Appendix</h4>
 
-<h4 id="further-example-configuration-files">Further example configuration files</h4>
-<p>The following configuration files have been provided during the alignment on the <a href="https://worldhealthorganization.github.io/smart-trust/concepts_certificate_governance.html">certificate governance</a>. The configuration files contain additional fields that a Trust Network Participant might want to include and use. The config-files are not tested with the OpenSSL commands provided above.</p>
+<h5 id="further-example-configuration-files">Further example configuration files</h5>
+<p>The following configuration files have been provided during the alignment on the <a href="concepts_certificate_governance.html">certificate governance</a>. The configuration files contain additional fields that a Trust Network Participant might want to include and use. The config-files are not tested with the OpenSSL commands provided above.</p>
 
 <ul>
   <li>
@@ -1106,7 +1199,7 @@ An optional third argument can be provided to specify the purpose of the DSC (e.
   </li>
 </ul>
 
-<h4 id="steps-to-obtain-and-use-a-ca-signed-certificate">Steps to Obtain and Use a CA-Signed Certificate</h4>
+<h5 id="steps-to-obtain-and-use-a-ca-signed-certificate">Steps to Obtain and Use a CA-Signed Certificate</h5>
 
 <ul>
   <li>Generate a Certificate Signing Request (CSR)
@@ -1139,7 +1232,7 @@ cp CAprivkey.key ${subdir}/CAprivkey.key</p>
   </li>
 </ul>
 
-<h4 id="more-information-about-git-commit-signing-and-tagging-commands">More information about Git commit, signing and tagging commands</h4>
+<h5 id="more-information-about-git-commit-signing-and-tagging-commands">More information about Git commit, signing and tagging commands</h5>
 
 <p><strong>Signing Your Work</strong></p>
 
@@ -1333,51 +1426,80 @@ cp CAprivkey.key ${subdir}/CAprivkey.key</p>
 
 
 </div>
-        </div>    <!-- /inner-wrapper -->
-      </div>    <!-- /row -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-content -->
+</div>    <!-- /inner-wrapper -->
+</div>    <!-- /row -->
+</div>    <!-- /container -->
+</div>    <!-- /segment-content -->
 
-  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+<script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
 
-  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
-  <a name="bottom"> </a>
-  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
-    <div class="container">    <!-- container -->
+<script src="assets/js/window-hash.js" type="text/javascript"> </script>
+<a name="bottom"> </a>
+<div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+<div class="container">    <!-- container -->
 
-      <div class="inner-wrapper">
-        <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.trust#1.1.5 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 20, 2024 06:07+0000">2024-12-20</span>
-          <br/>
-          <span style="color: var(--footer-highlight-text-color)"><a name="l2370">​</a>
-                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+<div style="background-color:var(--footer-nav-bg-color)">
+  <table style="width:100%">
+    <tbody>
+      <tr>
+        <td style="text-align:left">&nbsp;
+
+          <a href="deployment.html">&lt;prev</a>
+
+        </td>
+        <td style="text-align:center">
+          <a href="#top">top</a>
+        </td>
+        <td style="text-align:right">&nbsp;
+
+          <a href="security_privacy.html">next&gt;</a>
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="inner-wrapper">
+  <p>
+    IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.trust#1.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Apr 2, 2025 15:31+0200">2025-04-02</span>
+    <br/>
+    <span style="color: var(--footer-highlight-text-color)">
+                Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
-                  | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/WorldHealthOrganization/smart-ig-empty/projects/1" target="_blank">Issues</a>
+                 
                 
 | <a style="color: #81BEF7" href="http://smart.who.int/trust/history.html" target="_blank">Version History</a> | <a rel="license" style="color: #81BEF7" href="license.html">License</a>
-          </span>
-        </p>
-      </div>    <!-- /inner-wrapper -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-footer -->
-  
-  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
-    <div class="container">    <!-- container -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-post-footer -->
+    </span>
+  </p>
+</div>    <!-- /inner-wrapper -->
+</div>    <!-- /container -->
+</div>    <!-- /segment-footer -->
 
-    <!-- JS and analytics only. -->
-    <!-- Bootstrap core JavaScript
-  ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
-  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
-    <!-- Analytics Below
-  ================================================== -->
-  </body>
-</html>
+<div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+<div class="container">    <!-- container -->
+</div>    <!-- /container -->
+</div>    <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+<script src="assets/js/respond.min.js" type="text/javascript"> </script>
+<script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+<script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+<script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+<script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+  <!-- Analytics Below
+================================================== -->
+
+
+<div data-repo-owner="null" data-issue-label="feedback" data-feedback-options="[{&quot;form&quot;:&quot;https://github.com/WorldHealthOrganization/smart-trust/issues/new?template=feedback.yml&quot;,&quot;type&quot;:&quot;GitHub&quot;,&quot;sectionid&quot;:&quot;section&quot;,&quot;pageid&quot;:&quot;page&quot;},{&quot;form&quot;:&quot;https://forms.office.com/e/WKxJWQMEcx&quot;,&quot;type&quot;:&quot;Form&quot;,&quot;sectionid&quot;:&quot;r275a700d161d41d182d84c2e58947298&quot;}]" data-repo-name="null" data-repo-source="https://github.com/WorldHealthOrganization/smart-trust/issues/new?template=feedback.yml" style="display:none;" id="feedback-config"></div>
+
+<script src="assets/js/feedback.js"></script>
+
+
+
+</body></html>
