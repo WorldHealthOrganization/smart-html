@@ -6,16 +6,16 @@
     <profile value="http://smart.who.int/base/StructureDefinition/SGImplementationGuide"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide smart.who.int.base</b></p><a name="smart.who.int.base"> </a><a name="hcsmart.who.int.base"> </a><a name="smart.who.int.base-en-US"> </a><h2>Base</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/base/ImplementationGuide/smart.who.int.base</pre><div><p>Base SMART Guidelines implementation guide to be used as the base dependency for all SMART Guidelines IGs</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide smart.who.int.base</b></p><a name="smart.who.int.base"> </a><a name="hcsmart.who.int.base"> </a><a name="smart.who.int.base-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-SGImplementationGuide.html">SMART Guidelines ImplementationGuide</a></p></div><h2>Base</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/base/ImplementationGuide/smart.who.int.base</pre><div><p>Base SMART Guidelines implementation guide to be used as the base dependency for all SMART Guidelines IGs</p>
 </div></div>
   </text>
   <url value="http://smart.who.int/base/ImplementationGuide/smart.who.int.base"/>
-  <version value="0.1.0"/>
+  <version value="0.2.0"/>
   <name value="Base"/>
   <title value="SMART Base"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2024-09-20T13:45:31+00:00"/>
+  <date value="2025-04-02T12:10:23+02:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -37,6 +37,11 @@
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
     <version value="5.1.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_extensions_r5">
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r5"/>
+    <version value="5.2.0"/>
   </dependsOn>
   <dependsOn id="cql">
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ImplementationGuide.dependsOn.reason">
@@ -264,7 +269,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools#0.2.0"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#0.4.1"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -466,6 +471,21 @@
         <valueString value="true"/>
       </extension>
     </extension>
+    <grouping id="Conformance">
+      <name value="Conformance"/>
+      <description value="constraints and profile structures for SMART Guidelines resources"/>
+    </grouping>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/LinkIdExt"/>
+      </reference>
+      <name value="LinkIdExt"/>
+      <description value="Smart Guidelines link identifier extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
@@ -482,10 +502,98 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/Sgcode"/>
+        <reference value="StructureDefinition/Satisfies"/>
       </reference>
-      <name value="Sgcode"/>
+      <name value="Satisfies"/>
+      <description value="Indicates that if the conditions for this requirement are satisified, then that it should be viewed as satisifying  the referenced requirement."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGActorExt"/>
+      </reference>
+      <name value="SGActorExt"/>
+      <description value="Smart Guidelines Actor Reference extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGcode"/>
+      </reference>
+      <name value="SGcode"/>
       <description value="Smart Guidelines code extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGDocumentation"/>
+      </reference>
+      <name value="SGDocumentation"/>
+      <description value="Smart Guidelines Documentation extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGMarkdown"/>
+      </reference>
+      <name value="SGMarkdown"/>
+      <description value="Smart Guidelines markdown extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGRequirementExt"/>
+      </reference>
+      <name value="SGRequirementExt"/>
+      <description value="Smart Guidelines Requirements extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGRequirements"/>
+      </reference>
+      <name value="SGRequirements"/>
+      <description value="Smart Guidelines Requirements"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGString"/>
+      </reference>
+      <name value="SGString"/>
+      <description value="Smart Guidelines (required) string extension for use in a complex extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGUserStory"/>
+      </reference>
+      <name value="SGUserStory"/>
+      <description value="Smart Guidelines extension to support structured User Stories (As a &lt;Actor&gt; I want to &lt;capability&gt; so that &lt;benfit&gt;) extension"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -496,8 +604,21 @@
         <reference value="StructureDefinition/SGActivityDefinition"/>
       </reference>
       <name value="SMART Guidelines ActivityDefinition"/>
-      <description value="Defines the minimum expectations for ActivityDefinition resources used in SMART Guidelines"/>
+      <description value="The minimum expectations for ActivityDefinition resources used in SMART Guidelines"/>
       <exampleBoolean value="false"/>
+      <groupingId value="Conformance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGActor"/>
+      </reference>
+      <name value="SMART Guidelines Actor"/>
+      <description value="Structure and constraints for ActorDefinition resources used in SMART Guidelines"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Conformance"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -507,8 +628,9 @@
         <reference value="StructureDefinition/SGBusinessProcess"/>
       </reference>
       <name value="SMART Guidelines Business Process"/>
-      <description value="Defines the minimum expectations for Business Processes represented in SMART Guidelines"/>
+      <description value="Structure and constraints for Business Processes represented in SMART Guidelines"/>
       <exampleBoolean value="false"/>
+      <groupingId value="Conformance"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -520,6 +642,7 @@
       <name value="SMART Guidelines CodeSystem"/>
       <description value="Defines the minimum expectations for CodeSystem resources used in SMART Guidelines"/>
       <exampleBoolean value="false"/>
+      <groupingId value="Conformance"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -531,6 +654,53 @@
       <name value="SMART Guidelines ConceptMap"/>
       <description value="Defines the minimum expectations for ConceptMap resources used in SMART Guidelines"/>
       <exampleBoolean value="false"/>
+      <groupingId value="Conformance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/DocumentationSection"/>
+      </reference>
+      <name value="Smart Guidelines Documentation Section"/>
+      <description value="CodeSystem for Smart Guidelines Documentation Section to autogenerate documentation from artifacts"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/DocumentationSections"/>
+      </reference>
+      <name value="Smart Guidelines Documentation Section"/>
+      <description value="CodeSystem for Smart Guidelines Documentation Section to autogenerate documentation from artifacts"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGGraphDefinition"/>
+      </reference>
+      <name value="SMART Guidelines GraphDefinition"/>
+      <description value="The minimum expectations for GraphDefinition resources used in SMART Guidelines"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Conformance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGGroupDefinition"/>
+      </reference>
+      <name value="SMART Guidelines Group Definition"/>
+      <description value="Structure and constraints for Group Definitions represented in SMART Guidelines"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Conformance"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -542,6 +712,7 @@
       <name value="SMART Guidelines ImplementationGuide"/>
       <description value="Defines the minimum expectations for ImplementationGuide resources used in SMART Guidelines"/>
       <exampleBoolean value="false"/>
+      <groupingId value="Conformance"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -553,6 +724,7 @@
       <name value="SMART Guidelines Library"/>
       <description value="Defines the minimum expectations for Library resources used in SMART Guidelines"/>
       <exampleBoolean value="false"/>
+      <groupingId value="Conformance"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -564,6 +736,7 @@
       <name value="SMART Guidelines Logical Model"/>
       <description value="Defines the minimum expectations for Logical Models used in SMART Guidelines"/>
       <exampleBoolean value="false"/>
+      <groupingId value="Conformance"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -575,6 +748,7 @@
       <name value="SMART Guidelines Measure"/>
       <description value="Defines the minimum expectations for Measure resources used in SMART Guidelines"/>
       <exampleBoolean value="false"/>
+      <groupingId value="Conformance"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -586,6 +760,7 @@
       <name value="SMART Guidelines PlanDefinition"/>
       <description value="Defines the minimum expectations for PlanDefinition resources used in SMART Guidelines"/>
       <exampleBoolean value="false"/>
+      <groupingId value="Conformance"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -597,6 +772,7 @@
       <name value="SMART Guidelines Questionnaire"/>
       <description value="Defines the minimum expectations for Questionnaire resources used in SMART Guidelines"/>
       <exampleBoolean value="false"/>
+      <groupingId value="Conformance"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -608,6 +784,7 @@
       <name value="SMART Guidelines StructureDefinition"/>
       <description value="Defines the minimum expectations for StructureDefinition resources used in SMART Guidelines"/>
       <exampleBoolean value="false"/>
+      <groupingId value="Conformance"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -619,6 +796,19 @@
       <name value="SMART Guidelines StructureMap"/>
       <description value="Defines the minimum expectations for StructureMap resources used in SMART Guidelines"/>
       <exampleBoolean value="false"/>
+      <groupingId value="Conformance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGTransaction"/>
+      </reference>
+      <name value="SMART Guidelines Transaction"/>
+      <description value="Structure and constraints for TransactionDefinition resources used in SMART Guidelines"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Conformance"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -630,17 +820,7 @@
       <name value="SMART Guidelines ValueSet"/>
       <description value="Defines the minimum expectations for ValueSet resources used in SMART Guidelines"/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/SGGroupDefinition"/>
-      </reference>
-      <name value="WHO SMART Guidelines Group Definition"/>
-      <description value="WHO SMART Guidelines Group Definition"/>
-      <exampleBoolean value="false"/>
+      <groupingId value="Conformance"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
