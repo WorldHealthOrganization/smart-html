@@ -14,12 +14,12 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem BrowserCs</b></p><a name=\"BrowserCs\"> </a><a name=\"hcBrowserCs\"> </a><a name=\"BrowserCs-en-US\"> </a><p>This case-insensitive code system <code>http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">Firefox<a name=\"BrowserCs-Firefox\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Chrome<a name=\"BrowserCs-Chrome\"> </a></td></tr><tr><td style=\"white-space:nowrap\">MicrosoftEdge<a name=\"BrowserCs-MicrosoftEdge\"> </a></td></tr><tr><td style=\"white-space:nowrap\">InternetExplorer<a name=\"BrowserCs-InternetExplorer\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Safari<a name=\"BrowserCs-Safari\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Other<a name=\"BrowserCs-Other\"> </a></td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://smart.who.int/ips-pilgrimage/CodeSystem/BrowserCs"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "2.0.2"] ; # 
+  fhir:version [ fhir:v "2.0.3"] ; # 
   fhir:name [ fhir:v "BrowserCs"] ; # 
   fhir:title [ fhir:v "Browser"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2025-02-13T16:11:24+00:00"^^xsd:dateTime] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-05-27T11:03:57+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "WHO"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "WHO" ] ;
@@ -32,7 +32,7 @@
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "Browser"] ; # 
-  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
   fhir:content [ fhir:v "complete"] ; # 
   fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
   fhir:concept ( [

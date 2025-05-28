@@ -273,10 +273,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-HajjIPSComposition.html" : "Composition (IPS) for Hajj",
       "StructureDefinition-HajjOrganization.html" : "HajjOrganization",
-      "StructureDefinition-HajjConsent.html" : "HajjConsent",
-      "StructureDefinition-HajjIPS.html" : "Bundle - IPS for Hajj"
+      "StructureDefinition-HajjIPSComposition.html" : "Composition (IPS) for Hajj",
+      "StructureDefinition-HajjIPS.html" : "Bundle - IPS for Hajj",
+      "StructureDefinition-HajjConsent.html" : "HajjConsent"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/list-empty-reason",
@@ -415,7 +415,7 @@
     },
     {
       "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/Browser",
-      "version" : "2.0.2",
+      "version" : "2.0.3",
       "status" : "draft",
       "name" : "Browser",
       "title" : "Browser",
@@ -435,7 +435,7 @@
     },
     {
       "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/DistributionModel",
-      "version" : "2.0.2",
+      "version" : "2.0.3",
       "status" : "draft",
       "name" : "DistributionModel",
       "title" : "Distribution Model",
@@ -446,7 +446,7 @@
     },
     {
       "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.ACTOR",
-      "version" : "2.0.2",
+      "version" : "2.0.3",
       "status" : "active",
       "name" : "IPS_HAJJ_ACTOR",
       "title" : "IPS.HAJJ.ACTOR ValueSet of actor",
@@ -468,7 +468,7 @@
     },
     {
       "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.ACTOR.SYSTEM",
-      "version" : "2.0.2",
+      "version" : "2.0.3",
       "status" : "active",
       "name" : "IPS_HAJJ_ACTOR_SYSTEM",
       "title" : "IPS.HAJJ.ACTOR.SYSTEM ValueSet of actor",
@@ -479,7 +479,7 @@
     },
     {
       "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.CONSENT",
-      "version" : "2.0.2",
+      "version" : "2.0.3",
       "status" : "active",
       "name" : "IPS_HAJJ_CONSENT",
       "title" : "IPS.HAJJ.CONSENT ValueSet of consent policies",
@@ -493,7 +493,7 @@
     },
     {
       "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.TRANSACTION",
-      "version" : "2.0.2",
+      "version" : "2.0.3",
       "status" : "active",
       "name" : "IPS_HAJJ_TRANSACTION",
       "title" : "IPS.HAJJ.TRANSACTION ValueSet of transaction",
@@ -513,7 +513,7 @@
     },
     {
       "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/Language",
-      "version" : "2.0.2",
+      "version" : "2.0.3",
       "status" : "draft",
       "name" : "Language",
       "title" : "Language",
@@ -533,7 +533,7 @@
     },
     {
       "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/LicensingModel",
-      "version" : "2.0.2",
+      "version" : "2.0.3",
       "status" : "draft",
       "name" : "LicensingModel",
       "title" : "Licensing Model",
@@ -555,7 +555,7 @@
     },
     {
       "url" : "http://smart.who.int/ips-pilgrimage/ValueSet/OperatingSystem",
-      "version" : "2.0.2",
+      "version" : "2.0.3",
       "status" : "draft",
       "name" : "OperatingSystem",
       "title" : "Operating System",

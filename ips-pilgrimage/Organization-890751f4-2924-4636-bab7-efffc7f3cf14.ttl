@@ -17,7 +17,7 @@
      fhir:system [ fhir:v "urn:oid:2.16.528.1.1007.3.3"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "564738757" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name [ fhir:v "Anorg Aniza Tion BV / The best custodian ever"] ; # 
   fhir:telecom ( [
      fhir:system [ fhir:v "phone" ] ;

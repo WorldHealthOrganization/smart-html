@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifact Index - SMART Verifiable IPS for Pilgrimage v2.0.2</title>
+    <title>Artifact Index - SMART Verifiable IPS for Pilgrimage v2.0.3</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -222,7 +222,7 @@
         <div id="ig-status" class="ig-status-active">
           <p><span style="font-size:12pt;font-weight:bold">SMART Verifiable IPS for Pilgrimage</span>
             <br/>
-            <span style="display:inline-block;">2.0.2 - release
+            <span style="display:inline-block;">2.0.3 - release
 
 
             </span>
@@ -257,7 +257,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART Verifiable IPS for Pilgrimage (v2.0.2: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/ips-pilgrimage/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART Verifiable IPS for Pilgrimage (v2.0.3: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://smart.who.int/ips-pilgrimage/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifact Index</h2>
   
   
@@ -275,16 +275,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#2">Structures: Questionnaires</a>
       </li>
       <li>
-         <a href="#3">Terminology: Value Sets</a>
+         <a href="#3">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#4">Terminology: Code Systems</a>
+         <a href="#4">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#5">Example: Example Instances</a>
+         <a href="#5">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#6">Other</a>
+         <a href="#6">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#7">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -327,6 +330,85 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </tbody>
    </table>
    <a name="3"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-HajjIPS.html"
+                  title="StructureDefinition/HajjIPS">Bundle - IPS for Hajj</a>
+            </td>
+            <td>
+<p>This profile represents the constraints applied to the Bundle resource by the International Patient Summary (IPS) FHIR Implementation Guide for the Hajj Pilgrimage.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-HajjIPSComposition.html"
+                  title="StructureDefinition/HajjIPSComposition">Composition (IPS) for Hajj</a>
+            </td>
+            <td>
+<p>Clinical document used to represent the International Patient Summary (IPS) data set for Hajj Pilgrimage</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-HajjConsent.html"
+                  title="StructureDefinition/HajjConsent">HajjConsent</a>
+            </td>
+            <td>
+<p>A profile of the consent resource to track consent of a pilgrim to participate</p>
+
+<p>FHIR R5 upgrade notes (need this implemented as a structure map):</p>
+<ul>
+  <li>make cardinality of decision 1.. and should stop using it in lieu of verification.verified</li>
+  <li>use verification.verifiedBy instead of Consent.organization</li>
+  <li>the period extenion should be replaced by Consent.period</li>
+  <li>the Consent.patient should be replaced by Consent.subject</li>
+  <li>Consent.verification.verifiedBy should be used instead of Consent.organization</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-HajjOrganization.html"
+                  title="StructureDefinition/HajjOrganization">HajjOrganization</a>
+            </td>
+            <td>
+<p>A profile of the consent resource to track consent of a pilgrim to participate</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ConsentPeriod.html"
+                  title="StructureDefinition/ConsentPeriod">ConsentPeriod</a>
+            </td>
+            <td>
+<p>Consent Period extension for use in Consent resources prior to R5.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ConsentVerifiedBy.html"
+                  title="StructureDefinition/ConsentVerifiedBy">ConsentVerifiedBy</a>
+            </td>
+            <td>
+<p>Consent VerfifiedBy extension for use in Consent resources prior to R5.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -409,7 +491,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="4"> </a>
+   <a name="6"> </a>
    <h3>Terminology: Code Systems </h3>
     <p>These define new code systems used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -486,7 +568,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="5"> </a>
+   <a name="7"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -600,6 +682,15 @@ This is showing an example of a document that is purely text.</p>
             <td>
 <p>DocumentReference example of the paperwork of the Consent
 This is showing an example of a document that is purely text.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-PilgrimFolderSearchSetExtended.html"
+                  title="Bundle/PilgrimFolderSearchSetExtended">Example Folder for Pilgrim (Extended)</a>
+            </td>
+            <td>
+<p>Example Hajj Pilgrimage Minimal Folder Search Set</p>
 </td>
          </tr>
          <tr>
@@ -746,126 +837,56 @@ This is showing an example of a document that is purely text.</p>
          </tr>
       </tbody>
    </table>
-   <a name="6"> </a>
-   <h3>Other </h3>
-    <p>These are resources that are used within this implementation guide that do not fit into one of the other categories.</p>
-<table class="grid">
-      <col style="width:20%"/>
-      <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-HajjIPS.html"
-                  title="StructureDefinition/HajjIPS">Bundle - IPS for Hajj</a>
-            </td>
-            <td>
-<p>This profile represents the constraints applied to the Bundle resource by the International Patient Summary (IPS) FHIR Implementation Guide for the Hajj Pilgrimage.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-HajjIPSComposition.html"
-                  title="StructureDefinition/HajjIPSComposition">Composition (IPS) for Hajj</a>
-            </td>
-            <td>
-<p>Clinical document used to represent the International Patient Summary (IPS) data set for Hajj Pilgrimage</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-ConsentPeriod.html"
-                  title="StructureDefinition/ConsentPeriod">ConsentPeriod</a>
-            </td>
-            <td>
-<p>Consent Period extension for use in Consent resources prior to R5.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-ConsentVerifiedBy.html"
-                  title="StructureDefinition/ConsentVerifiedBy">ConsentVerifiedBy</a>
-            </td>
-            <td>
-<p>Consent VerfifiedBy extension for use in Consent resources prior to R5.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-HajjConsent.html"
-                  title="StructureDefinition/HajjConsent">HajjConsent</a>
-            </td>
-            <td>
-<p>A profile of the consent resource to track consent of a pilgrim to participate</p>
-
-<p>FHIR R5 upgrade notes (need this implemented as a structure map):</p>
-<ul>
-  <li>make cardinality of decision 1.. and should stop using it in lieu of verification.verified</li>
-  <li>use verification.verifiedBy instead of Consent.organization</li>
-  <li>the period extenion should be replaced by Consent.period</li>
-  <li>the Consent.patient should be replaced by Consent.subject</li>
-  <li>Consent.verification.verifiedBy should be used instead of Consent.organization</li>
-</ul>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-HajjOrganization.html"
-                  title="StructureDefinition/HajjOrganization">HajjOrganization</a>
-            </td>
-            <td>
-<p>A profile of the consent resource to track consent of a pilgrim to participate</p>
-</td>
-         </tr>
-      </tbody>
-   </table>
 </div>
 
 </div>
-        </div>  <!-- /inner-wrapper -->
-      </div>  <!-- /row -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-content -->
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-content -->
 
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
-  <a name="bottom"> </a>
-  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
-    <div class="container">  <!-- container -->
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
+<a name="bottom"> </a>
+<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+<div class="container">  <!-- container -->
 
-      <div class="inner-wrapper">
-        <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.ips-pilgrimage#2.0.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 13, 2025 16:13+0000">2025-02-13</span>
-          <br/>
-          <span style="color: var(--footer-highlight-text-color)">
-                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+<div class="inner-wrapper">
+  <p>
+    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.ips-pilgrimage#2.0.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 27, 2025 11:05+0000">2025-05-27</span>
+    <br/>
+    <span style="color: var(--footer-highlight-text-color)">
+                Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
 | <a style="color: #81BEF7" target="_blank" href="http://smart.who.int/ips-pilgrimage/history.html">Version History</a> | <a style="color: #81BEF7" rel="license" href="license.html">License</a>
-          </span>
-        </p>
-      </div>  <!-- /inner-wrapper -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-footer -->
-  
-  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
-    <div class="container">  <!-- container -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-post-footer -->
+    </span>
+  </p>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-footer -->
 
-  <!-- JS and analytics only. -->
-  <!-- Bootstrap core JavaScript
-  ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
-  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
-  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
-  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
-  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
-  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  <!-- Analytics Below
-  ================================================== -->
-  </body>
-</html>
+<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+<div class="container">  <!-- container -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+<script type="text/javascript" src="assets/js/respond.min.js"> </script>
+<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+<script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+<!-- Analytics Below
+================================================== -->
+
+
+
 

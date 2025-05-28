@@ -20,7 +20,7 @@
        fhir:display [ fhir:v "CIBG" ]
      ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:family [ fhir:v "van Hulp" ] ;
      fhir:given ( [ fhir:v "Beetje" ] )

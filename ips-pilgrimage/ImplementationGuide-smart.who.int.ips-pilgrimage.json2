@@ -6,15 +6,15 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide smart.who.int.ips-pilgrimage</b></p><a name=\"smart.who.int.ips-pilgrimage\"> </a><a name=\"hcsmart.who.int.ips-pilgrimage\"> </a><a name=\"smart.who.int.ips-pilgrimage-en-US\"> </a><h2>SMART_WHO_INT_IPS_Pilgrimage</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/ips-pilgrimage/ImplementationGuide/smart.who.int.ips-pilgrimage</pre><div><p>An Implementation Guide which describes how to utilize GDHCN and IPS for verifiable health documents during pilgrimage</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide smart.who.int.ips-pilgrimage</b></p><a name=\"smart.who.int.ips-pilgrimage\"> </a><a name=\"hcsmart.who.int.ips-pilgrimage\"> </a><a name=\"smart.who.int.ips-pilgrimage-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://smart.who.int/base/0.1.0/StructureDefinition-SGImplementationGuide.html\">SMART Guidelines ImplementationGuide</a></p></div><h2>SMART_WHO_INT_IPS_Pilgrimage</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/ips-pilgrimage/ImplementationGuide/smart.who.int.ips-pilgrimage</pre><div><p>An Implementation Guide which describes how to utilize GDHCN and IPS for verifiable health documents during pilgrimage</p>\n</div></div>"
   },
   "url" : "http://smart.who.int/ips-pilgrimage/ImplementationGuide/smart.who.int.ips-pilgrimage",
-  "version" : "2.0.2",
+  "version" : "2.0.3",
   "name" : "SMART_WHO_INT_IPS_Pilgrimage",
   "title" : "SMART Verifiable IPS for Pilgrimage",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-02-13T16:11:24+00:00",
+  "date" : "2025-05-27T11:03:57+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",
@@ -39,7 +39,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.2.0"
+    "version" : "6.3.0"
   },
   {
     "id" : "hl7ext",
@@ -371,7 +371,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.3.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.5.0"
     },
     {
       "extension" : [{
@@ -831,7 +831,7 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
         "reference" : "StructureDefinition/HajjIPS"
@@ -891,7 +891,7 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
         "reference" : "StructureDefinition/HajjIPSComposition"
@@ -915,7 +915,7 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition"
+        "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
         "reference" : "StructureDefinition/ConsentPeriod"
@@ -927,7 +927,7 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition"
+        "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
         "reference" : "StructureDefinition/ConsentVerifiedBy"
@@ -987,6 +987,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/PilgrimFolderSearchSetExtended"
+      },
+      "name" : "Example Folder for Pilgrim (Extended)",
+      "description" : "Example Hajj Pilgrimage Minimal Folder Search Set",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Consent"
       }],
       "reference" : {
@@ -1034,7 +1046,7 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
         "reference" : "StructureDefinition/HajjConsent"
@@ -1046,7 +1058,7 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
         "reference" : "StructureDefinition/HajjOrganization"

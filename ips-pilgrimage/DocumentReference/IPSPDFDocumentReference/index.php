@@ -7,19 +7,19 @@ function Redirect($url)
 
 $accept = $_SERVER['HTTP_ACCEPT'];
 if (strpos($accept, 'application/json+fhir') !== false)
-  Redirect('http://smart.who.int/ips-pilgrimage/2.0.2/DocumentReference-IPSPDFDocumentReference.json2');
+  Redirect('http://smart.who.int/ips-pilgrimage/2.0.3/DocumentReference-IPSPDFDocumentReference.json2');
 elseif (strpos($accept, 'application/fhir+json') !== false)
-  Redirect('http://smart.who.int/ips-pilgrimage/2.0.2/DocumentReference-IPSPDFDocumentReference.json1');
+  Redirect('http://smart.who.int/ips-pilgrimage/2.0.3/DocumentReference-IPSPDFDocumentReference.json1');
 elseif (strpos($accept, 'json') !== false)
-  Redirect('http://smart.who.int/ips-pilgrimage/2.0.2/DocumentReference-IPSPDFDocumentReference.json');
+  Redirect('http://smart.who.int/ips-pilgrimage/2.0.3/DocumentReference-IPSPDFDocumentReference.json');
 elseif (strpos($accept, 'application/xml+fhir') !== false)
-  Redirect('http://smart.who.int/ips-pilgrimage/2.0.2/DocumentReference-IPSPDFDocumentReference.xml2');
+  Redirect('http://smart.who.int/ips-pilgrimage/2.0.3/DocumentReference-IPSPDFDocumentReference.xml2');
 elseif (strpos($accept, 'application/fhir+xml') !== false)
-  Redirect('http://smart.who.int/ips-pilgrimage/2.0.2/DocumentReference-IPSPDFDocumentReference.xml1');
+  Redirect('http://smart.who.int/ips-pilgrimage/2.0.3/DocumentReference-IPSPDFDocumentReference.xml1');
 elseif (strpos($accept, 'html') !== false)
-  Redirect('http://smart.who.int/ips-pilgrimage/2.0.2/DocumentReference-IPSPDFDocumentReference.html');
+  Redirect('http://smart.who.int/ips-pilgrimage/2.0.3/DocumentReference-IPSPDFDocumentReference.html');
 else 
-  Redirect('http://smart.who.int/ips-pilgrimage/2.0.2/DocumentReference-IPSPDFDocumentReference.xml');
+  Redirect('http://smart.who.int/ips-pilgrimage/2.0.3/DocumentReference-IPSPDFDocumentReference.xml');
 ?>
     
 You should not be seeing this page. If you do, PHP has failed badly.

@@ -7,13 +7,22 @@
       "sequence" : "ci-build"
     },
     {
+      "version" : "2.0.3",
+      "path" : "http://smart.who.int/ips-pilgrimage/2.0.3",
+      "status" : "release",
+      "sequence" : "Releases",
+      "fhirversion" : "4.0.1",
+      "date" : "2025-05-27",
+      "current" : true,
+      "descmd" : "2.0.3 release"
+    },
+    {
       "version" : "2.0.2",
       "path" : "http://smart.who.int/ips-pilgrimage/2.0.2",
       "status" : "release",
       "sequence" : "Releases",
       "fhirversion" : "4.0.1",
       "date" : "2025-02-13",
-      "current" : true,
       "descmd" : "2.0.2 release"
     },
     {

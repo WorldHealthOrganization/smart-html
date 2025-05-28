@@ -6,12 +6,12 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem IPS.HAJJ.ACTOR</b></p><a name="IPS.HAJJ.ACTOR"> </a><a name="hcIPS.HAJJ.ACTOR"> </a><a name="IPS.HAJJ.ACTOR-en-US"> </a><p>This case-insensitive code system <code>http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">ochie<a name="IPS.HAJJ.ACTOR-ochie"> </a></td><td>Origin Country HIE</td></tr><tr><td style="white-space:nowrap">ochw<a name="IPS.HAJJ.ACTOR-ochw"> </a></td><td>Origin Country Health Wallet</td></tr><tr><td style="white-space:nowrap">hcemr<a name="IPS.HAJJ.ACTOR-hcemr"> </a></td><td>Host Country EMR</td></tr><tr><td style="white-space:nowrap">pilgrim<a name="IPS.HAJJ.ACTOR-pilgrim"> </a></td><td>Pilgrim</td></tr><tr><td style="white-space:nowrap">scanner<a name="IPS.HAJJ.ACTOR-scanner"> </a></td><td>Scanner</td></tr><tr><td style="white-space:nowrap">qrcode<a name="IPS.HAJJ.ACTOR-qrcode"> </a></td><td>QR Code</td></tr></table></div>
   </text>
   <url value="http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR"/>
-  <version value="2.0.2"/>
+  <version value="2.0.3"/>
   <name value="IPS_HAJJ_ACTOR"/>
   <title value="IPS.HAJJ.ACTOR CodeSystem"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2025-02-13T16:11:24+00:00"/>
+  <date value="2025-05-27T11:03:57+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
