@@ -159,16 +159,16 @@
       "canonical" : "http://smart.who.int/ips-pilgrimage",
       "category" : "base",
       "ci-build" : "http://worldhealthorganization.github.io/smart-ips-pilgrimage",
-      "version-count" : 1,
+      "version-count" : 3,
       "latest" : {
-        "version" : "1.0.0",
-        "date" : "2024-04-25",
-        "path" : "http://smart.who.int/ips-pilgrimage/1.0.0"
+        "version" : "2.0.3",
+        "date" : "2025-05-27",
+        "path" : "http://smart.who.int/ips-pilgrimage/2.0.3"
       },
       "milestone" : {
-        "version" : "1.0.0",
-        "date" : "2024-04-25",
-        "path" : "http://smart.who.int/ips-pilgrimage/1.0.0"
+        "version" : "2.0.3",
+        "date" : "2025-05-27",
+        "path" : "http://smart.who.int/ips-pilgrimage/2.0.3"
       }
     },
     {
