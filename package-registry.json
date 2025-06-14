@@ -189,6 +189,25 @@
         "date" : "2024-12-18",
         "path" : "http://smart.who.int/ddcc/1.0.1"
       }
+    },
+    {
+      "path" : "dak-bds/package-list.json",
+      "package-id" : "smart.who.int.dak-bds",
+      "title" : "SMART DAK BDS",
+      "canonical" : "http://smart.who.int/dak-bds",
+      "category" : "base",
+      "ci-build" : "http://worldhealthorganization.github.io/smart-dak-bds",
+      "version-count" : 1,
+      "latest" : {
+        "version" : "1.0.0",
+        "date" : "2025-06-13",
+        "path" : "http://smart.who.int/dak-bds/v1.0.0"
+      },
+      "milestone" : {
+        "version" : "1.0.0",
+        "date" : "2025-06-13",
+        "path" : "http://smart.who.int/dak-bds/v1.0.0"
+      }
     }
   ]
 }

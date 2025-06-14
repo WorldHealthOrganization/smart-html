@@ -10,6 +10,17 @@
     <language>en</language>
     <ttl>600</ttl>
     <item>
+      <title>smart.who.int.dak-bds#1.0.0</title>
+      <description>1.0.0 Release</description>
+      <link>http://smart.who.int/dak-bds/v1.0.0/package.tgz</link>
+      <guid isPermaLink="true">http://smart.who.int/dak-bds/v1.0.0/package.tgz</guid>
+      <dc:creator>WHO</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Fri, 13 Jun 2025 01:35:40 +0000</pubDate>
+      <fhir:details>Publication run at 13/06/2025 by 54413b7af917 using Version 2.0.6 (Git# 0e36f4bcb58f). Built 2025-06-10T06:56:14.605Z (3 days old) source id Unknown (todo)</fhir:details>
+    </item>
+    <item>
       <title>smart.who.int.base#0.2.0</title>
       <description>0.2.0 draft release</description>
       <link>http://smart.who.int/base/0.2.0/package.tgz</link>
