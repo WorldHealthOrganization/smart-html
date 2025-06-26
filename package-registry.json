@@ -208,6 +208,25 @@
         "date" : "2025-06-13",
         "path" : "http://smart.who.int/dak-bds/v1.0.0"
       }
+    },
+    {
+      "path" : "pcmt/package-list.json",
+      "package-id" : "smart.who.int.pcmt",
+      "title" : "SMART Product Catalog",
+      "canonical" : "http://smart.who.int/pcmt",
+      "category" : "base",
+      "ci-build" : "http://worldhealthorganization.github.io/smart-pcmt",
+      "version-count" : 1,
+      "latest" : {
+        "version" : "0.1.0",
+        "date" : "2025-06-26",
+        "path" : "http://smart.who.int/pcmt/v0.1.0"
+      },
+      "milestone" : {
+        "version" : "0.1.0",
+        "date" : "2025-06-26",
+        "path" : "http://smart.who.int/pcmt/v0.1.0"
+      }
     }
   ]
 }

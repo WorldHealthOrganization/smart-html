@@ -10,6 +10,17 @@
     <language>en</language>
     <ttl>600</ttl>
     <item>
+      <title>smart.who.int.pcmt#0.1.0</title>
+      <description>0.1.0 draft release</description>
+      <link>http://smart.who.int/pcmt/v0.1.0/package.tgz</link>
+      <guid isPermaLink="true">http://smart.who.int/pcmt/v0.1.0/package.tgz</guid>
+      <dc:creator>WHO</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Thu, 26 Jun 2025 06:29:23 +0000</pubDate>
+      <fhir:details>Publication run at 26/06/2025 by 3ff94631626f using Version 2.0.7 (Git# f2fdf4e51a8d). Built 2025-06-14T10:53:27.183Z (11 days old) source id Unknown (todo)</fhir:details>
+    </item>
+    <item>
       <title>smart.who.int.dak-bds#1.0.0</title>
       <description>1.0.0 Release</description>
       <link>http://smart.who.int/dak-bds/v1.0.0/package.tgz</link>
