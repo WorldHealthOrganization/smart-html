@@ -10,6 +10,28 @@
     <language>en</language>
     <ttl>600</ttl>
     <item>
+      <title>smart.who.int.pcmt-vaxprequal#0.1.0</title>
+      <description>0.1.0 draft release</description>
+      <link>http://smart.who.int/pcmt-vaxprequal/v0.1.0/package.tgz</link>
+      <guid isPermaLink="true">http://smart.who.int/pcmt-vaxprequal/v0.1.0/package.tgz</guid>
+      <dc:creator>WHO</dc:creator>
+      <fhir:version>5.0.0</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Tue, 01 Jul 2025 08:29:35 +0000</pubDate>
+      <fhir:details>Publication run at 01/07/2025 by 4a9a9798aa12 using Version 2.0.8 (Git# e7d965b03a28). Built 2025-06-27T22:18:09.321Z (3 days old) source id Unknown (todo)</fhir:details>
+    </item>
+    <item>
+      <title>smart.who.int.ra#0.1.0</title>
+      <description>0.1.0 draft release</description>
+      <link>http://smart.who.int/ra/v0.1.0/package.tgz</link>
+      <guid isPermaLink="true">http://smart.who.int/ra/v0.1.0/package.tgz</guid>
+      <dc:creator>WHO</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Tue, 01 Jul 2025 07:59:35 +0000</pubDate>
+      <fhir:details>Publication run at 01/07/2025 by ca09e62233c8 using Version 2.0.8 (Git# e7d965b03a28). Built 2025-06-27T22:18:09.321Z (3 days old) source id Unknown (todo)</fhir:details>
+    </item>
+    <item>
       <title>smart.who.int.dak-smbp#1.0.0</title>
       <description>1.0.0 Release</description>
       <link>http://smart.who.int/dak-smbp/v1.0.0/package.tgz</link>
