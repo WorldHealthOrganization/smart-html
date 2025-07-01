@@ -11,6 +11,17 @@
     <language>en</language>
     <ttl>600</ttl>
     <item>
+      <title>SMART DAK SMBP version 1.0.0</title>
+      <description>1.0.0 Release</description>
+      <link>http://smart.who.int/dak-smbp/v1.0.0/index.html</link>
+      <guid isPermaLink="true">http://smart.who.int/dak-smbp/v1.0.0/index.html</guid>
+      <dc:creator>WHO</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Tue, 01 Jul 2025 06:57:19 +0000</pubDate>
+      <fhir:details>Publication run at 01/07/2025 by 0bc7f67e19c5 using Version 2.0.8 (Git# e7d965b03a28). Built 2025-06-27T22:18:09.321Z (3 days old) source id Unknown (todo)</fhir:details>
+    </item>
+    <item>
       <title>SMART Product Catalog version 0.1.0</title>
       <description>0.1.0 draft release</description>
       <link>http://smart.who.int/pcmt/v0.1.0/index.html</link>

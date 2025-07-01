@@ -227,6 +227,25 @@
         "date" : "2025-06-26",
         "path" : "http://smart.who.int/pcmt/v0.1.0"
       }
+    },
+    {
+      "path" : "dak-smbp/package-list.json",
+      "package-id" : "smart.who.int.dak-smbp",
+      "title" : "SMART DAK SMBP",
+      "canonical" : "http://smart.who.int/dak-smbp",
+      "category" : "base",
+      "ci-build" : "http://worldhealthorganization.github.io/smart-dak-smbp",
+      "version-count" : 1,
+      "latest" : {
+        "version" : "1.0.0",
+        "date" : "2025-07-01",
+        "path" : "http://smart.who.int/dak-smbp/v1.0.0"
+      },
+      "milestone" : {
+        "version" : "1.0.0",
+        "date" : "2025-07-01",
+        "path" : "http://smart.who.int/dak-smbp/v1.0.0"
+      }
     }
   ]
 }
