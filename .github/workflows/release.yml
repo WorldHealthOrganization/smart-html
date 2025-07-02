@@ -68,14 +68,16 @@ jobs:
             java -Xmx4g -Dfile.encoding=UTF-8 -jar /workspace/publisher.jar -go-publish -package-cache-folder /workspace/fhir-package-cache -source /workspace/source -web /workspace/webroot -temp /workspace/temp -registry /workspace/ig-registry/fhir-ig-list.json -history /workspace/history-template -templates /workspace/webroot/templates
           "
 
-      - name: Exclude .zip files from gh-pages and move to release-assets
+      - name: Exclude files > 100MB from gh-pages and move to release-assets
         run: |
           mkdir -p ./release-assets
-          # Move all .zip files to release-assets
-          find ./webroot/ig-build-zips -name "*.zip" -exec mv {} ./release-assets/ \;
-          # Prepare the deploy folder excluding .zip files
+          # Move all files larger than 100 MB to release-assets
+          find ./webroot/ -type f -size +100M -exec mv {} ./release-assets/ \;
+          
+          # Prepare the deploy folder, only with files ≤ 100MB
           mkdir -p ./deploy
-          rsync -av --exclude="*.zip" ./webroot/ ./deploy/
+          rsync -av --exclude-from=<(find ./webroot/ -type f -size +100M -printf "%P\n") ./webroot/ ./deploy/
+
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
