@@ -1,0 +1,111 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/anc/ActivityDefinition/ANCB4> a fhir:ActivityDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ANCB4"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <table class=\"narrative-table\">\n    <tbody>\n<tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Metadata</th>\n\n\n</tr>\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Title</th>\n\n\n<td class=\"content-container\">ANC.B4 Confirm pregnancy</td>\n</tr>\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Version</th>\n\n\n<td class=\"content-container\">0.3.0</td>\n</tr>\n\n\n\n\n\n\n\n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Identifier</th>\n\n\n<td class=\"content-container\">ANC.B4</td>\n</tr>\n\n\n\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Use Context</th>\n\n\n<td class=\"content-container\"><span title=\"{http://terminology.hl7.org/CodeSystem/usage-context-type task}\">Workflow Task</span> = <span title=\"Codes:{http://smart.who.int/anc/CodeSystem/anc-activity-codes ANC.B4}\">Confirm pregnancy</span></td>\n</tr>\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Jurisdiction</th>\n\n\n<td class=\"content-container\"><span title=\"Codes:{http://unstats.un.org/unsd/methods/m49/m49.htm 001}\">Global (Whole world)</span></td>\n</tr>\n\n\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Steward (Publisher)</th>\n\n\n<td class=\"content-container\">World Health Organization (WHO)</td>\n</tr>\n\n\n\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Description</th>\n\n\n<td class=\"content-container\"><div><p>Confirm the woman is pregnant using a urine dipstick test or by a blood test.</p>\n</div></td>\n</tr>\n\n\n\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Resource Kind</th>\n\n\n<td class=\"content-container\">Task</td>\n</tr>\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Resource Profile</th>\n\n\n<td class=\"content-container\"><a href=\"http://hl7.org/fhir/uv/cpg/STU1/StructureDefinition-cpg-questionnairetask.html\">CPGQuestionnaireTask</a></td>\n</tr>\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Code</th>\n\n\n<td class=\"content-container\"><span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type collect-information}\">Collect information</span></td>\n</tr>\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Intent</th>\n\n\n<td class=\"content-container\">Proposal</td>\n</tr>\n\n\n\n\n\n\n\n\n\n\n\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Dynamic Value</th>\n  <td class=\"content-container\">\n    \n    <em>Path</em>: input\n    \n    \n    <br/>\n    <em>Expression</em>: { type: code, value: extension('http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-collectWith').value }\n    \n  </td>\n</tr>\n\n<tr>\n  <th colspan=\"2\" scope=\"row\" class=\"row-header\">Generated using version 0.4.9-cibuild of the sample-content-ig Liquid templates</th>\n</tr>\n\n    </tbody>\n  </table>\n</div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "shareable"
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "computable"
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "publishable"
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "structured"
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-collectWith"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:canonical ;
+       fhir:v "http://smart.who.int/anc/Questionnaire/ANCB4"^^xsd:anyURI ;
+       fhir:link <http://smart.who.int/anc/Questionnaire/ANCB4>
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://smart.who.int/anc/ActivityDefinition/ANCB4"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:value [ fhir:v "ANC.B4" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.3.0"] ; # 
+  fhir:name [ fhir:v "ANCB4"] ; # 
+  fhir:title [ fhir:v "ANC.B4 Confirm pregnancy"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2021-06-08T16:08:55-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "World Health Organization (WHO)"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Confirm the woman is pregnant using a urine dipstick test or by a blood test."] ; # 
+  fhir:useContext ( [
+     fhir:code [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/usage-context-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "task" ] ;
+       fhir:display [ fhir:v "Workflow Task" ]
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://smart.who.int/anc/CodeSystem/anc-activity-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "ANC.B4" ] ;
+         fhir:display [ fhir:v "Confirm pregnancy" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:kind [ fhir:v "Task"] ; # 
+  fhir:profile [
+     fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask"^^xsd:anyURI ;
+     fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask>
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "collect-information" ] ;
+       fhir:display [ fhir:v "Collect information" ]
+     ] )
+  ] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:doNotPerform [ fhir:v false] ; # 
+  fhir:dynamicValue ( [
+     fhir:path [ fhir:v "input" ] ;
+     fhir:expression [
+       fhir:language [ fhir:v "text/cql-expression" ] ;
+       fhir:expression [ fhir:v "{ type: code, value: extension('http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-collectWith').value }" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,1241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="ANCDT30"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">
+  <table class="narrative-table">
+    <tbody>
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">Metadata</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">ANC.DT.30 General risk reduction counselling</td>
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Version</th>
+
+
+<td class="content-container">0.3.0</td>
+</tr>
+
+
+
+
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">Identifier</th>
+
+
+<td class="content-container">ANC.DT.30</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Use Context</th>
+
+
+<td class="content-container"><span title="{http://terminology.hl7.org/CodeSystem/usage-context-type task}">Workflow Task</span> = <span title="Codes:{http://smart.who.int/anc/CodeSystem/activity-codes ANC.B9.}">Conduct laboratory tests and imaging</span></td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Jurisdiction</th>
+
+
+<td class="content-container"><span title="Codes:{http://unstats.un.org/unsd/methods/m49/m49.htm 001}">Global (Whole world)</span></td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Steward (Publisher)</th>
+
+
+<td class="content-container">World Health Organization (WHO)</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Description</th>
+
+
+<td class="content-container"><div><p>Depending on a variety of risk factors and/or gestational age, provide additional counselling accordingly</p>
+</div></td>
+</tr>
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Type</th>
+
+
+<td class="content-container"><span title="Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type eca-rule}">ECA Rule</span></td>
+</tr>
+
+
+
+
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">PlanDefinition Action</th>
+
+
+</tr>
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">ANC.DT.30 General risk reduction counselling</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Trigger Type</th>
+
+
+<td class="content-container">Named Event</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Trigger Name</th>
+
+
+<td class="content-container">ANC.B9. Conduct laboratory tests and imaging</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+      
+      
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">PlanDefinition Sub-Action (Parent Action Title: ANC.DT.30 General risk reduction counselling)</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Id</th>
+
+
+<td class="content-container">1</td>
+</tr>
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">Provide counselling on Rh factor negative</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Description</th>
+
+
+<td class="content-container">Provide counselling on Rh factor negative</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Human-interpretable Description</th>
+
+
+<td class="content-container">– Woman is at risk of alloimmunization if the baby's father is Rh positive or unknown
+– Proceed with local protocol to investigate sensitization and the need for referral 
+– If non-sensitized, woman should receive anti-D prophylaxis postnatally if the baby is Rh positive</td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+  <th scope="row" class="row-header">Condition</th>
+  <td class="content-container">
+  <em>Kind</em>: Applicability
+  
+    <br/>
+    
+      
+      <em>Logic Definition</em>: <a href="#ancdt30-should-provide-counselling-on-rh-factor-negative">Should Provide counselling on Rh factor negative</a> 
+    
+   
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+    
+    
+      
+      
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">PlanDefinition Sub-Action (Parent Action Title: ANC.DT.30 General risk reduction counselling)</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Id</th>
+
+
+<td class="content-container">2</td>
+</tr>
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">Provide counselling on intrapartum antibiotic to prevent early neonatal Group B Streptococcus (GBS) infection</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Description</th>
+
+
+<td class="content-container">Provide counselling on intrapartum antibiotic to prevent early neonatal Group B Streptococcus (GBS) infection</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Human-interpretable Description</th>
+
+
+<td class="content-container">Pregnant women with GBS colonization should receive intrapartum antibiotic administration to prevent early neonatal GBS infection</td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+  <th scope="row" class="row-header">Condition</th>
+  <td class="content-container">
+  <em>Kind</em>: Applicability
+  
+    <br/>
+    
+      
+      <em>Logic Definition</em>: <a href="#ancdt30-should-provide-counselling-on-intrapartum-antibiotic-to-prevent-early-neonatal-group-b-streptococcus-(gbs)-infection">Should Provide counselling on intrapartum antibiotic to prevent early neonatal Group B Streptococcus (GBS) infection</a> 
+    
+   
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+
+
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">PlanDefinition Logic</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Primary Library</th>
+
+
+<td class="content-container"><a href="Library-ANCDT30.html">ANC.DT.30 General risk reduction counselling</a></td>
+</tr>
+
+
+
+
+  
+  
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Library FHIRHelpers
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <code>http://smart.who.int/anc/Library/FHIRHelpers|4.0.1</code>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/Library/FHIRHelpers|4.0.1</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Library ContactData
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="Library-ANCContactDataElements.html">ANC Contact Data Elements</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/Library/ANCContactDataElements</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Library WC
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="Library-WHOCommon.html">WHO Common</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/Library/WHOCommon</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Library Cx
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="Library-ANCConcepts.html">ANC Concepts</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/Library/ANCConcepts</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Rh factor
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b9-de29.html">Rh factor</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b9-de29</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Rh factor - Rh negative Choices
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b9-de31.html">Rh factor - Rh negative Choices</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b9-de31</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Midstream urine culture (recommended)
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b9-de124.html">Midstream urine culture (recommended)</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b9-de124</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Midstream urine culture (recommended) - Positive - Group B Strep (GBS) Choices
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b9-de127.html">Midstream urine culture (recommended) - Positive - Group B Strep (GBS) Choices</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b9-de127</tt>
+    
+    
+    
+  </td>
+</tr>
+
+
+  
+  
+  
+<tr>
+  
+
+<th scope="row" class="row-header">Parameter</th>
+
+
+  <td class="content-container">
+    
+    <em>Name</em>: encounter
+    
+    
+    <br/>
+    
+    
+    <em>Use</em>: In
+    
+    
+    <br/>
+    
+    
+    <em>Min Cardinality</em>: 0
+    
+    
+    <br/>
+    
+    
+    <em>Max Cardinality</em>: 1
+    
+    
+    <br/>
+    
+    
+    <em>Type</em>: string
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Parameter</th>
+
+
+  <td class="content-container">
+    
+    <em>Name</em>: Should Provide counselling on Rh factor negative
+    
+    
+    <br/>
+    
+    
+    <em>Use</em>: Out
+    
+    
+    <br/>
+    
+    
+    <em>Min Cardinality</em>: 0
+    
+    
+    <br/>
+    
+    
+    <em>Max Cardinality</em>: 1
+    
+    
+    <br/>
+    
+    
+    <em>Type</em>: boolean
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Parameter</th>
+
+
+  <td class="content-container">
+    
+    <em>Name</em>: Should Provide counselling on intrapartum antibiotic to prevent early neonatal Group B Streptococcus (GBS) infection
+    
+    
+    <br/>
+    
+    
+    <em>Use</em>: Out
+    
+    
+    <br/>
+    
+    
+    <em>Min Cardinality</em>: 0
+    
+    
+    <br/>
+    
+    
+    <em>Max Cardinality</em>: 1
+    
+    
+    <br/>
+    
+    
+    <em>Type</em>: boolean
+    
+  </td>
+</tr>
+
+  
+  
+  <tr>
+    <th colspan="2" scope="row" class="section-header"><a name="effective-data-requirements"> </a>PlanDefinition Logic Data Requirements</th>
+  </tr>
+  
+  
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, status, encounter, encounter.reference
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> <a href="ValueSet-anc-b9-de29.html">Rh factor</a>
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, status, encounter, encounter.reference
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> <a href="ValueSet-anc-b9-de124.html">Midstream urine culture (recommended)</a>
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+  
+  <tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+    Logic Definition
+  </th>
+
+</tr>
+<tr>
+
+</tr>
+
+  
+
+<tr>
+  <th colspan="2" scope="row" class="row-header">Generated using version 0.4.9-cibuild of the sample-content-ig Liquid templates</th>
+</tr>
+
+    </tbody>
+  </table>
+</div>
+  </text>
+  <contained>
+    <Library>
+      <id value="effective-data-requirements"/>
+      <name value="EffectiveDataRequirements"/>
+      <status value="active"/>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/library-type"/>
+          <code value="module-definition"/>
+        </coding>
+      </type>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Library FHIRHelpers"/>
+        <resource value="http://smart.who.int/anc/Library/FHIRHelpers|4.0.1"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Library ContactData"/>
+        <resource value="http://smart.who.int/anc/Library/ANCContactDataElements"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Library WC"/>
+        <resource value="http://smart.who.int/anc/Library/WHOCommon"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Library Cx"/>
+        <resource value="http://smart.who.int/anc/Library/ANCConcepts"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set Rh factor"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b9-de29"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set Rh factor - Rh negative Choices"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b9-de31"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set Midstream urine culture (recommended)"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b9-de124"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set Midstream urine culture (recommended) - Positive - Group B Strep (GBS) Choices"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b9-de127"/>
+      </relatedArtifact>
+      <parameter>
+        <name value="encounter"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="1"/>
+        <type value="string"/>
+      </parameter>
+      <parameter>
+        <name value="Should Provide counselling on Rh factor negative"/>
+        <use value="out"/>
+        <min value="0"/>
+        <max value="1"/>
+        <type value="boolean"/>
+      </parameter>
+      <parameter>
+        <name value="Should Provide counselling on intrapartum antibiotic to prevent early neonatal Group B Streptococcus (GBS) infection"/>
+        <use value="out"/>
+        <min value="0"/>
+        <max value="1"/>
+        <type value="boolean"/>
+      </parameter>
+      <dataRequirement>
+        <type value="Observation"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+        <mustSupport value="code"/>
+        <mustSupport value="status"/>
+        <mustSupport value="encounter"/>
+        <mustSupport value="encounter.reference"/>
+        <codeFilter>
+          <path value="code"/>
+          <valueSet value="http://smart.who.int/anc/ValueSet/anc-b9-de29"/>
+        </codeFilter>
+      </dataRequirement>
+      <dataRequirement>
+        <type value="Observation"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+        <mustSupport value="code"/>
+        <mustSupport value="status"/>
+        <mustSupport value="encounter"/>
+        <mustSupport value="encounter.reference"/>
+        <codeFilter>
+          <path value="code"/>
+          <valueSet value="http://smart.who.int/anc/ValueSet/anc-b9-de124"/>
+        </codeFilter>
+      </dataRequirement>
+    </Library>
+  </contained>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCContactDataElements"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Rh factor"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;  @dataElement: ANC.B9.DE29 Rh factor&#xA;  @activity: ANC.B9 Lab tests &amp; imaging&#xA;  @description: The client's Rhesus (Rh) factor&#xA;*/&#xA;define &quot;Rh factor&quot;:&#xA;  WC.Only(&#xA;  [Observation: Cx.&quot;Rh factor&quot;] O&#xA;    where O.status in { 'final', 'amended', 'corrected' }&#xA;      and Coalesce(WC.ModifierExtension(O, 'who-notDone').value, false) is false&#xA;      and Last(Split(O.encounter.reference, '/')) = Last(Split(encounter, '/'))&#xA;  ).value as FHIR.CodeableConcept"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="0"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCDT30"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Should Provide counselling on Rh factor negative"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;Rh factor&quot; = &quot;Rh negative&quot;&#xA;*/&#xA;define &quot;Should Provide counselling on Rh factor negative&quot;:&#xA;  ContactData.&quot;Rh factor&quot; in Cx.&quot;Rh factor - Rh negative Choices&quot;"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="1"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCContactDataElements"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Midstream urine culture (recommended)"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;  @dataElement: ANC.B9.DE124 Midstream urine culture (recommended)&#xA;  @activity: ANC.B9 Lab tests &amp; imaging&#xA;  @description: Midstream urine culture is the recommended method for diagnosing asymptomatic bacteriuria (ASB) in pregnancy&#xA;*/&#xA;define &quot;Midstream urine culture (recommended)&quot;:&#xA;  WC.Only(&#xA;  [Observation: Cx.&quot;Midstream urine culture (recommended)&quot;] O&#xA;    where O.status in { 'final', 'amended', 'corrected' }&#xA;      and Coalesce(WC.ModifierExtension(O, 'who-notDone').value, false) is false&#xA;      and Last(Split(O.encounter.reference, '/')) = Last(Split(encounter, '/'))&#xA;  ).value as FHIR.CodeableConcept"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="2"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCDT30"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Should Provide counselling on intrapartum antibiotic to prevent early neonatal Group B Streptococcus (GBS) infection"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;Midstream urine culture (recommended)&quot; = &quot;Positive – Group B Streptococcus (GBS)&quot;&#xA;*/&#xA;define &quot;Should Provide counselling on intrapartum antibiotic to prevent early neonatal Group B Streptococcus (GBS) infection&quot;:&#xA;  ContactData.&quot;Midstream urine culture (recommended)&quot; in Cx.&quot;Midstream urine culture (recommended) - Positive - Group B Strep (GBS) Choices&quot;"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="3"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="FHIRHelpers"/>
+    </extension>
+    <extension url="name">
+      <valueString value="ToConcept"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="define function ToConcept(concept FHIR.CodeableConcept):&#xA;    if concept is null then&#xA;        null&#xA;    else&#xA;        System.Concept {&#xA;            codes: concept.coding C return ToCode(C),&#xA;            display: concept.text.value&#xA;        }"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="4"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="FHIRHelpers"/>
+    </extension>
+    <extension url="name">
+      <valueString value="ToCode"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="define function ToCode(coding FHIR.Coding):&#xA;    if coding is null then&#xA;        null&#xA;    else&#xA;        System.Code {&#xA;          code: coding.code.value,&#xA;          system: coding.system.value,&#xA;          version: coding.version.value,&#xA;          display: coding.display.value&#xA;        }"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="5"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="WHOCommon"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Only"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="define function Only(observations List&lt;Observation&gt;):&#xA;  singleton from observations"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="6"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="FHIRHelpers"/>
+    </extension>
+    <extension url="name">
+      <valueString value="ToString"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="define function ToString(value ObservationStatus): value.value"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="7"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="FHIRHelpers"/>
+    </extension>
+    <extension url="name">
+      <valueString value="ToBoolean"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="define function ToBoolean(value boolean): value.value"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="8"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="WHOCommon"/>
+    </extension>
+    <extension url="name">
+      <valueString value="ModifierExtension"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;@description: Returns the single WHO core modifier extension (if present) on the given resource with the specified id.&#xA;@comment: This function uses singleton from to ensure that a run-time exception is thrown if there&#xA;is more than one extension on the given resource with the specified url.&#xA;*/&#xA;define function ModifierExtension(domainResource DomainResource, id String):&#xA;  singleton from ModifierExtensions(domainResource, id)"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="9"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="WHOCommon"/>
+    </extension>
+    <extension url="name">
+      <valueString value="ModifierExtensions"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;@description: Returns any WHO core modifier extensions defined on the given resource with the specified id.&#xA;@comment: NOTE: Extensions are not the preferred approach, but are used as a way to access&#xA;content that is defined by extensions but not yet surfaced in the&#xA;CQL model info.&#xA;*/&#xA;define function ModifierExtensions(domainResource DomainResource, id String):&#xA;  domainResource.modifierExtension E&#xA;&#x9;  where E.url = ('http://fhir.org/guides/who/core/StructureDefinition/' + id)&#xA;&#x9;&#x9;return E"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="10"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="FHIRHelpers"/>
+    </extension>
+    <extension url="name">
+      <valueString value="ToString"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="define function ToString(value uri): value.value"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="11"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="FHIRHelpers"/>
+    </extension>
+    <extension url="name">
+      <valueString value="ToString"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="define function ToString(value string): value.value"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="12"/>
+    </extension>
+  </extension>
+  <extension id="effective-data-requirements" url="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements">
+    <valueCanonical value="#effective-data-requirements"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-softwaresystem">
+    <valueReference>
+      <reference value="Device/cqf-tooling"/>
+    </valueReference>
+  </extension>
+  <url value="http://smart.who.int/anc/PlanDefinition/ANCDT30"/>
+  <identifier>
+    <use value="official"/>
+    <value value="ANC.DT.30"/>
+  </identifier>
+  <version value="0.3.0"/>
+  <name value="ANCDT30"/>
+  <title value="ANC.DT.30 General risk reduction counselling"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="eca-rule"/>
+    </coding>
+  </type>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-06-24T13:58:48-06:00"/>
+  <publisher value="World Health Organization (WHO)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.who.int"/>
+    </telecom>
+  </contact>
+  <description value="Depending on a variety of risk factors and/or gestational age, provide additional counselling accordingly"/>
+  <useContext>
+    <code>
+      <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+      <code value="task"/>
+      <display value="Workflow Task"/>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://smart.who.int/anc/CodeSystem/activity-codes"/>
+        <code value="ANC.B9."/>
+        <display value="Conduct laboratory tests and imaging"/>
+      </coding>
+    </valueCodeableConcept>
+  </useContext>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <library value="http://smart.who.int/anc/Library/ANCDT30"/>
+  <action>
+    <title value="ANC.DT.30 General risk reduction counselling"/>
+    <trigger>
+      <type value="named-event"/>
+      <name value="ANC.B9. Conduct laboratory tests and imaging"/>
+    </trigger>
+    <action id="1">
+      <title value="Provide counselling on Rh factor negative"/>
+      <description value="Provide counselling on Rh factor negative"/>
+      <textEquivalent value="– Woman is at risk of alloimmunization if the baby's father is Rh positive or unknown&#xA;– Proceed with local protocol to investigate sensitization and the need for referral &#xA;– If non-sensitized, woman should receive anti-D prophylaxis postnatally if the baby is Rh positive"/>
+      <documentation>
+        <type value="citation"/>
+        <label value="WHO ANC recommendations (2016): C.3. Antenatal anti-D immunoglobulin administration (2)"/>
+      </documentation>
+      <condition>
+        <kind value="applicability"/>
+        <expression>
+          <description value="Rh factor&quot; = &quot;Rh negative&quot;"/>
+          <language value="text/cql-identifier"/>
+          <expression value="Should Provide counselling on Rh factor negative"/>
+        </expression>
+      </condition>
+    </action>
+    <action id="2">
+      <title value="Provide counselling on intrapartum antibiotic to prevent early neonatal Group B Streptococcus (GBS) infection"/>
+      <description value="Provide counselling on intrapartum antibiotic to prevent early neonatal Group B Streptococcus (GBS) infection"/>
+      <textEquivalent value="Pregnant women with GBS colonization should receive intrapartum antibiotic administration to prevent early neonatal GBS infection"/>
+      <documentation>
+        <type value="citation"/>
+        <label value="WHO ANC recommendations (2016): C.1: Antibiotics for asymptomatic bacteriuria (ASB) (2)"/>
+      </documentation>
+      <condition>
+        <kind value="applicability"/>
+        <expression>
+          <description value="Midstream urine culture (recommended)&quot; = &quot;Positive – Group B Streptococcus (GBS)&quot;"/>
+          <language value="text/cql-identifier"/>
+          <expression value="Should Provide counselling on intrapartum antibiotic to prevent early neonatal Group B Streptococcus (GBS) infection"/>
+        </expression>
+      </condition>
+    </action>
+  </action>
+</PlanDefinition>

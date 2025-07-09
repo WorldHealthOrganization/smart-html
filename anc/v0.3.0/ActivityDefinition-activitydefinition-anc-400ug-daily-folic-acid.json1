@@ -1,0 +1,81 @@
+{
+  "resourceType" : "ActivityDefinition",
+  "id" : "activitydefinition-anc-400ug-daily-folic-acid",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-activitydefinition"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <table class=\"narrative-table\">\n    <tbody>\n<tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Metadata</th>\n\n\n</tr>\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Title</th>\n\n\n<td class=\"content-container\">ActivityDefinition - ANC 400ug Daily Folic Acid</td>\n</tr>\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Version</th>\n\n\n<td class=\"content-container\">0.3.0</td>\n</tr>\n\n\n\n\n\n\n\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Experimental</th>\n\n\n<td class=\"content-container\">true</td>\n</tr>\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Use Context</th>\n\n\n<td class=\"content-container\"><span title=\"{http://terminology.hl7.org/CodeSystem/usage-context-type focus}\">Clinical Focus</span> = <span title=\"Codes:{http://snomed.info/sct 77386006}\">Pregnant (finding)</span></td>\n</tr>\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Jurisdiction</th>\n\n\n<td class=\"content-container\"><span title=\"Codes:{http://unstats.un.org/unsd/methods/m49/m49.htm 001}\">Global (Whole world)</span></td>\n</tr>\n\n\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Steward (Publisher)</th>\n\n\n<td class=\"content-container\">World Health Organization (WHO)</td>\n</tr>\n\n\n\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Description</th>\n\n\n<td class=\"content-container\"><div><p>400ug folic acid daily</p>\n</div></td>\n</tr>\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Purpose</th>\n\n\n<td class=\"content-container\"><div><p>Defines a guideline supported prescription for daily folic acid for patients that do not have anaemia</p>\n</div></td>\n</tr>\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Copyright</th>\n\n\n<td class=\"content-container\"><div><p>© WHO 2019+.</p>\n</div></td>\n</tr>\n\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Resource Kind</th>\n\n\n<td class=\"content-container\">MedicationRequest</td>\n</tr>\n\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Product</th>\n\n\n<td class=\"content-container\"><span title=\"Codes:\">folic acid</span></td>\n</tr>\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Dosage</th>\n\n\n<td class=\"content-container\">No display for Dosage </td>\n</tr>\n\n\n\n\n\n\n\n<tr>\n  <th colspan=\"2\" scope=\"row\" class=\"row-header\">Generated using version 0.4.9-cibuild of the sample-content-ig Liquid templates</th>\n</tr>\n\n    </tbody>\n  </table>\n</div>"
+  },
+  "url" : "http://smart.who.int/anc/ActivityDefinition/ANC400ugDailyFolicAcid",
+  "version" : "0.3.0",
+  "name" : "ANC400ugDailyFolicAcid",
+  "title" : "ActivityDefinition - ANC 400ug Daily Folic Acid",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2019-06-01",
+  "publisher" : "World Health Organization (WHO)",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.who.int"
+    }]
+  }],
+  "description" : "400ug folic acid daily",
+  "useContext" : [{
+    "code" : {
+      "system" : "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code" : "focus"
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "77386006",
+        "display" : "Pregnant (finding)"
+      }]
+    }
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "purpose" : "Defines a guideline supported prescription for daily folic acid for patients that do not have anaemia",
+  "copyright" : "© WHO 2019+.",
+  "kind" : "MedicationRequest",
+  "productCodeableConcept" : {
+    "text" : "folic acid"
+  },
+  "dosage" : [{
+    "text" : "400ug daily",
+    "timing" : {
+      "repeat" : {
+        "frequency" : 1,
+        "period" : 1,
+        "periodUnit" : "d"
+      }
+    },
+    "route" : {
+      "coding" : [{
+        "code" : "26643006",
+        "display" : "Oral route (qualifier value)"
+      }],
+      "text" : "Oral route (qualifier value)"
+    },
+    "doseAndRate" : [{
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+          "code" : "ordered",
+          "display" : "Ordered"
+        }]
+      },
+      "doseQuantity" : {
+        "value" : 400,
+        "unit" : "ug"
+      }
+    }]
+  }]
+}

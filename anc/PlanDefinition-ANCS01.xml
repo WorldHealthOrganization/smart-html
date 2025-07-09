@@ -1,0 +1,1345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="ANCS01"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">
+  <table class="narrative-table">
+    <tbody>
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">Metadata</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">ANC.S.01 Contact schedule</td>
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Version</th>
+
+
+<td class="content-container">0.3.0</td>
+</tr>
+
+
+
+
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">Identifier</th>
+
+
+<td class="content-container">ANC.S.01</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Use Context</th>
+
+
+<td class="content-container"><span title="{http://terminology.hl7.org/CodeSystem/usage-context-type focus}">Clinical Focus</span> = <span title="Codes:{http://snomed.info/sct 77386006}">Pregnant (finding)</span></td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Jurisdiction</th>
+
+
+<td class="content-container"><span title="Codes:{http://unstats.un.org/unsd/methods/m49/m49.htm 001}">Global (Whole world)</span></td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Steward (Publisher)</th>
+
+
+<td class="content-container">World Health Organization (WHO)</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Description</th>
+
+
+<td class="content-container"><div><p>To counsel and provide ANC services to a pregnant woman</p>
+</div></td>
+</tr>
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Type</th>
+
+
+<td class="content-container"><span title="Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type clinical-protocol}">Clinical Protocol</span></td>
+</tr>
+
+
+
+
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">PlanDefinition Action</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Id</th>
+
+
+<td class="content-container">1</td>
+</tr>
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">ANC Contact 1</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Description</th>
+
+
+<td class="content-container">The first time a woman visits a health-care provider for ANC</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Human-interpretable Description</th>
+
+
+<td class="content-container">First contact, up to 12 weeks</td>
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Code</th>
+
+
+<td class="content-container"><span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}">Guideline-based care</span></td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Definition</th>
+
+
+<td class="content-container"><a href="PlanDefinition-ANCB.html">ANC.B Routine contact</a></td>
+</tr>
+
+
+
+<tr>
+  <th scope="row" class="row-header">Dynamic Value</th>
+  <td class="content-container">
+    
+    <em>Path</em>: timingDateTime
+    
+    
+    
+    <br/>
+    
+    
+    
+    
+    <em>Logic Definition</em>: <a href="#ancs01-anc-first-contact-date">ANC First Contact Date</a>
+    
+    
+  </td>
+</tr>
+
+
+
+
+
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">PlanDefinition Action</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Id</th>
+
+
+<td class="content-container">2</td>
+</tr>
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">ANC Contact 2</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Description</th>
+
+
+<td class="content-container">The second time a woman visits a health-care provider for ANC</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Human-interpretable Description</th>
+
+
+<td class="content-container">Second contact, 20 weeks</td>
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Code</th>
+
+
+<td class="content-container"><span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}">Guideline-based care</span></td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Definition</th>
+
+
+<td class="content-container"><a href="PlanDefinition-ANCB.html">ANC.B Routine contact</a></td>
+</tr>
+
+
+
+<tr>
+  <th scope="row" class="row-header">Dynamic Value</th>
+  <td class="content-container">
+    
+    <em>Path</em>: timingDateTime
+    
+    
+    
+    <br/>
+    
+    
+    
+    
+    <em>Logic Definition</em>: <a href="#ancs01-anc-second-contact-date">ANC Second Contact Date</a>
+    
+    
+  </td>
+</tr>
+
+
+
+
+
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">PlanDefinition Action</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Id</th>
+
+
+<td class="content-container">3</td>
+</tr>
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">ANC Contact 3</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Description</th>
+
+
+<td class="content-container">The third time a woman visits a health-care provider for ANC</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Human-interpretable Description</th>
+
+
+<td class="content-container">Third contact, 26 weeks</td>
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Code</th>
+
+
+<td class="content-container"><span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}">Guideline-based care</span></td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Definition</th>
+
+
+<td class="content-container"><a href="PlanDefinition-ANCB.html">ANC.B Routine contact</a></td>
+</tr>
+
+
+
+<tr>
+  <th scope="row" class="row-header">Dynamic Value</th>
+  <td class="content-container">
+    
+    <em>Path</em>: timingDateTime
+    
+    
+    
+    <br/>
+    
+    
+    
+    
+    <em>Logic Definition</em>: <a href="#ancs01-anc-third-contact-date">ANC Third Contact Date</a>
+    
+    
+  </td>
+</tr>
+
+
+
+
+
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">PlanDefinition Action</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Id</th>
+
+
+<td class="content-container">4</td>
+</tr>
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">ANC Contact 4</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Description</th>
+
+
+<td class="content-container">The fourth time a woman visits a health-care provider for ANC</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Human-interpretable Description</th>
+
+
+<td class="content-container">Fourth contact, 30 weeks</td>
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Code</th>
+
+
+<td class="content-container"><span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}">Guideline-based care</span></td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Definition</th>
+
+
+<td class="content-container"><a href="PlanDefinition-ANCB.html">ANC.B Routine contact</a></td>
+</tr>
+
+
+
+<tr>
+  <th scope="row" class="row-header">Dynamic Value</th>
+  <td class="content-container">
+    
+    <em>Path</em>: timingDateTime
+    
+    
+    
+    <br/>
+    
+    
+    
+    
+    <em>Logic Definition</em>: <a href="#ancs01-anc-fourth-contact-date">ANC Fourth Contact Date</a>
+    
+    
+  </td>
+</tr>
+
+
+
+
+
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">PlanDefinition Action</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Id</th>
+
+
+<td class="content-container">5</td>
+</tr>
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">ANC Contact 5</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Description</th>
+
+
+<td class="content-container">The fifth time a woman visits a health-care provider for ANC</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Human-interpretable Description</th>
+
+
+<td class="content-container">Fifth contact, 34 weeks</td>
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Code</th>
+
+
+<td class="content-container"><span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}">Guideline-based care</span></td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Definition</th>
+
+
+<td class="content-container"><a href="PlanDefinition-ANCB.html">ANC.B Routine contact</a></td>
+</tr>
+
+
+
+<tr>
+  <th scope="row" class="row-header">Dynamic Value</th>
+  <td class="content-container">
+    
+    <em>Path</em>: timingDateTime
+    
+    
+    
+    <br/>
+    
+    
+    
+    
+    <em>Logic Definition</em>: <a href="#ancs01-anc-fifth-contact-date">ANC Fifth Contact Date</a>
+    
+    
+  </td>
+</tr>
+
+
+
+
+
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">PlanDefinition Action</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Id</th>
+
+
+<td class="content-container">6</td>
+</tr>
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">ANC Contact 6</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Description</th>
+
+
+<td class="content-container">The sixth time a woman visits a health-care provider for ANC</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Human-interpretable Description</th>
+
+
+<td class="content-container">Sixth contact, 36 weeks</td>
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Code</th>
+
+
+<td class="content-container"><span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}">Guideline-based care</span></td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Definition</th>
+
+
+<td class="content-container"><a href="PlanDefinition-ANCB.html">ANC.B Routine contact</a></td>
+</tr>
+
+
+
+<tr>
+  <th scope="row" class="row-header">Dynamic Value</th>
+  <td class="content-container">
+    
+    <em>Path</em>: timingDateTime
+    
+    
+    
+    <br/>
+    
+    
+    
+    
+    <em>Logic Definition</em>: <a href="#ancs01-anc-sixth-contact-date">ANC Sixth Contact Date</a>
+    
+    
+  </td>
+</tr>
+
+
+
+
+
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">PlanDefinition Action</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Id</th>
+
+
+<td class="content-container">7</td>
+</tr>
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">ANC Contact 7</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Description</th>
+
+
+<td class="content-container">The seventh time a woman visits a health-care provider for ANC</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Human-interpretable Description</th>
+
+
+<td class="content-container">Seventh contact, 38 weeks</td>
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Code</th>
+
+
+<td class="content-container"><span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}">Guideline-based care</span></td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Definition</th>
+
+
+<td class="content-container"><a href="PlanDefinition-ANCB.html">ANC.B Routine contact</a></td>
+</tr>
+
+
+
+<tr>
+  <th scope="row" class="row-header">Dynamic Value</th>
+  <td class="content-container">
+    
+    <em>Path</em>: timingDateTime
+    
+    
+    
+    <br/>
+    
+    
+    
+    
+    <em>Logic Definition</em>: <a href="#ancs01-anc-seventh-contact-date">ANC Seventh Contact Date</a>
+    
+    
+  </td>
+</tr>
+
+
+
+
+
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">PlanDefinition Action</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Id</th>
+
+
+<td class="content-container">8</td>
+</tr>
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">ANC Contact 8</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Description</th>
+
+
+<td class="content-container">The eighth time a woman visits a health-care provider for ANC</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Human-interpretable Description</th>
+
+
+<td class="content-container">Eighth contact, 40 weeks</td>
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Code</th>
+
+
+<td class="content-container"><span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}">Guideline-based care</span></td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Definition</th>
+
+
+<td class="content-container"><a href="PlanDefinition-ANCB.html">ANC.B Routine contact</a></td>
+</tr>
+
+
+
+<tr>
+  <th scope="row" class="row-header">Dynamic Value</th>
+  <td class="content-container">
+    
+    <em>Path</em>: timingDateTime
+    
+    
+    
+    <br/>
+    
+    
+    
+    
+    <em>Logic Definition</em>: <a href="#ancs01-anc-eighth-contact-date">ANC Eighth Contact Date</a>
+    
+    
+  </td>
+</tr>
+
+
+
+
+
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">PlanDefinition Action</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Id</th>
+
+
+<td class="content-container">9</td>
+</tr>
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">Refer for delivery</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Description</th>
+
+
+<td class="content-container">The date on which a pregnant woman gives birth</td>
+</tr>
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Code</th>
+
+
+<td class="content-container"><span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}">Guideline-based care</span></td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <th scope="row" class="row-header">Dynamic Value</th>
+  <td class="content-container">
+    
+    <em>Path</em>: timingDateTime
+    
+    
+    
+    <br/>
+    
+    
+    
+    
+    <em>Logic Definition</em>: <a href="#ancs01-anc-anticipated-delivery-date">ANC Anticipated Delivery Date</a>
+    
+    
+  </td>
+</tr>
+
+
+
+
+
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">PlanDefinition Logic</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Primary Library</th>
+
+
+<td class="content-container"><a href="Library-ANCS01.html">ANC.S.01 Contact schedule</a></td>
+</tr>
+
+
+
+
+<tr>
+  <th colspan="2" scope="row" class="row-header">Generated using version 0.4.9-cibuild of the sample-content-ig Liquid templates</th>
+</tr>
+
+    </tbody>
+  </table>
+</div>
+  </text>
+  <url value="http://smart.who.int/anc/PlanDefinition/ANCS01"/>
+  <identifier>
+    <use value="official"/>
+    <value value="ANC.S.01"/>
+  </identifier>
+  <version value="0.3.0"/>
+  <name value="ANCS01"/>
+  <title value="ANC.S.01 Contact schedule"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="clinical-protocol"/>
+    </coding>
+  </type>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2021-06-08T16:08:55-06:00"/>
+  <publisher value="World Health Organization (WHO)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.who.int"/>
+    </telecom>
+  </contact>
+  <description value="To counsel and provide ANC services to a pregnant woman"/>
+  <useContext>
+    <code>
+      <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+      <code value="focus"/>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="77386006"/>
+        <display value="Pregnant (finding)"/>
+      </coding>
+    </valueCodeableConcept>
+  </useContext>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <library value="http://smart.who.int/anc/Library/ANCS01"/>
+  <action id="1">
+    <title value="ANC Contact 1"/>
+    <description value="The first time a woman visits a health-care provider for ANC"/>
+    <textEquivalent value="First contact, up to 12 weeks"/>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+        <code value="guideline-based-care"/>
+        <display value="Guideline-based care"/>
+      </coding>
+    </code>
+    <definitionCanonical value="http://smart.who.int/anc/PlanDefinition/ANCB"/>
+    <dynamicValue>
+      <path value="timingDateTime"/>
+      <expression>
+        <language value="text/cql-identifier"/>
+        <expression value="ANC First Contact Date"/>
+      </expression>
+    </dynamicValue>
+  </action>
+  <action id="2">
+    <title value="ANC Contact 2"/>
+    <description value="The second time a woman visits a health-care provider for ANC"/>
+    <textEquivalent value="Second contact, 20 weeks"/>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+        <code value="guideline-based-care"/>
+        <display value="Guideline-based care"/>
+      </coding>
+    </code>
+    <definitionCanonical value="http://smart.who.int/anc/PlanDefinition/ANCB"/>
+    <dynamicValue>
+      <path value="timingDateTime"/>
+      <expression>
+        <language value="text/cql-identifier"/>
+        <expression value="ANC Second Contact Date"/>
+      </expression>
+    </dynamicValue>
+  </action>
+  <action id="3">
+    <title value="ANC Contact 3"/>
+    <description value="The third time a woman visits a health-care provider for ANC"/>
+    <textEquivalent value="Third contact, 26 weeks"/>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+        <code value="guideline-based-care"/>
+        <display value="Guideline-based care"/>
+      </coding>
+    </code>
+    <definitionCanonical value="http://smart.who.int/anc/PlanDefinition/ANCB"/>
+    <dynamicValue>
+      <path value="timingDateTime"/>
+      <expression>
+        <language value="text/cql-identifier"/>
+        <expression value="ANC Third Contact Date"/>
+      </expression>
+    </dynamicValue>
+  </action>
+  <action id="4">
+    <title value="ANC Contact 4"/>
+    <description value="The fourth time a woman visits a health-care provider for ANC"/>
+    <textEquivalent value="Fourth contact, 30 weeks"/>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+        <code value="guideline-based-care"/>
+        <display value="Guideline-based care"/>
+      </coding>
+    </code>
+    <definitionCanonical value="http://smart.who.int/anc/PlanDefinition/ANCB"/>
+    <dynamicValue>
+      <path value="timingDateTime"/>
+      <expression>
+        <language value="text/cql-identifier"/>
+        <expression value="ANC Fourth Contact Date"/>
+      </expression>
+    </dynamicValue>
+  </action>
+  <action id="5">
+    <title value="ANC Contact 5"/>
+    <description value="The fifth time a woman visits a health-care provider for ANC"/>
+    <textEquivalent value="Fifth contact, 34 weeks"/>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+        <code value="guideline-based-care"/>
+        <display value="Guideline-based care"/>
+      </coding>
+    </code>
+    <definitionCanonical value="http://smart.who.int/anc/PlanDefinition/ANCB"/>
+    <dynamicValue>
+      <path value="timingDateTime"/>
+      <expression>
+        <language value="text/cql-identifier"/>
+        <expression value="ANC Fifth Contact Date"/>
+      </expression>
+    </dynamicValue>
+  </action>
+  <action id="6">
+    <title value="ANC Contact 6"/>
+    <description value="The sixth time a woman visits a health-care provider for ANC"/>
+    <textEquivalent value="Sixth contact, 36 weeks"/>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+        <code value="guideline-based-care"/>
+        <display value="Guideline-based care"/>
+      </coding>
+    </code>
+    <definitionCanonical value="http://smart.who.int/anc/PlanDefinition/ANCB"/>
+    <dynamicValue>
+      <path value="timingDateTime"/>
+      <expression>
+        <language value="text/cql-identifier"/>
+        <expression value="ANC Sixth Contact Date"/>
+      </expression>
+    </dynamicValue>
+  </action>
+  <action id="7">
+    <title value="ANC Contact 7"/>
+    <description value="The seventh time a woman visits a health-care provider for ANC"/>
+    <textEquivalent value="Seventh contact, 38 weeks"/>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+        <code value="guideline-based-care"/>
+        <display value="Guideline-based care"/>
+      </coding>
+    </code>
+    <definitionCanonical value="http://smart.who.int/anc/PlanDefinition/ANCB"/>
+    <dynamicValue>
+      <path value="timingDateTime"/>
+      <expression>
+        <language value="text/cql-identifier"/>
+        <expression value="ANC Seventh Contact Date"/>
+      </expression>
+    </dynamicValue>
+  </action>
+  <action id="8">
+    <title value="ANC Contact 8"/>
+    <description value="The eighth time a woman visits a health-care provider for ANC"/>
+    <textEquivalent value="Eighth contact, 40 weeks"/>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+        <code value="guideline-based-care"/>
+        <display value="Guideline-based care"/>
+      </coding>
+    </code>
+    <definitionCanonical value="http://smart.who.int/anc/PlanDefinition/ANCB"/>
+    <dynamicValue>
+      <path value="timingDateTime"/>
+      <expression>
+        <language value="text/cql-identifier"/>
+        <expression value="ANC Eighth Contact Date"/>
+      </expression>
+    </dynamicValue>
+  </action>
+  <action id="9">
+    <title value="Refer for delivery"/>
+    <description value="The date on which a pregnant woman gives birth"/>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+        <code value="guideline-based-care"/>
+        <display value="Guideline-based care"/>
+      </coding>
+    </code>
+    <dynamicValue>
+      <path value="timingDateTime"/>
+      <expression>
+        <language value="text/cql-identifier"/>
+        <expression value="ANC Anticipated Delivery Date"/>
+      </expression>
+    </dynamicValue>
+  </action>
+</PlanDefinition>

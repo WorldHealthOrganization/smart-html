@@ -1,0 +1,132 @@
+{
+  "resourceType" : "PlanDefinition",
+  "id" : "ANCDT02",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <table class=\"narrative-table\">\n    <tbody>\n<tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Metadata</th>\n\n\n</tr>\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Title</th>\n\n\n<td class=\"content-container\">ANC.DT.02 Adolescent HEADSS asessement</td>\n</tr>\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Version</th>\n\n\n<td class=\"content-container\">0.3.0</td>\n</tr>\n\n\n\n\n\n\n\n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Identifier</th>\n\n\n<td class=\"content-container\">ANC.DT.02</td>\n</tr>\n\n\n\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Use Context</th>\n\n\n<td class=\"content-container\"><span title=\"{http://terminology.hl7.org/CodeSystem/usage-context-type task}\">Workflow Task</span> = <span title=\"Codes:{http://smart.who.int/anc/CodeSystem/activity-codes Client}\">is an adolescent (age &gt;19)</span></td>\n</tr>\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Jurisdiction</th>\n\n\n<td class=\"content-container\"><span title=\"Codes:{http://unstats.un.org/unsd/methods/m49/m49.htm 001}\">Global (Whole world)</span></td>\n</tr>\n\n\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Steward (Publisher)</th>\n\n\n<td class=\"content-container\">World Health Organization (WHO)</td>\n</tr>\n\n\n\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Description</th>\n\n\n<td class=\"content-container\"><div><p>If client is an adolescent, conduct Home-Eating-Activity-Drugs-Sexuality-Safety-Suicide (HEADSS) assessment</p>\n</div></td>\n</tr>\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Type</th>\n\n\n<td class=\"content-container\"><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type eca-rule}\">ECA Rule</span></td>\n</tr>\n\n\n\n\n<tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">PlanDefinition Action</th>\n\n\n</tr>\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Title</th>\n\n\n<td class=\"content-container\">ANC.DT.02 Adolescent HEADSS asessement</td>\n</tr>\n\n\n\n\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Trigger Type</th>\n\n\n<td class=\"content-container\">Named Event</td>\n</tr>\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Trigger Name</th>\n\n\n<td class=\"content-container\">Client is an adolescent (age &gt;19)</td>\n</tr>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    \n      \n      \n<tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">PlanDefinition Sub-Action (Parent Action Title: ANC.DT.02 Adolescent HEADSS asessement)</th>\n\n\n</tr>\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Id</th>\n\n\n<td class=\"content-container\">1</td>\n</tr>\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Title</th>\n\n\n<td class=\"content-container\">Conduct HEADSS assessment</td>\n</tr>\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Description</th>\n\n\n<td class=\"content-container\">Conduct HEADSS assessment</td>\n</tr>\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Human-interpretable Description</th>\n\n\n<td class=\"content-container\">Questions to consider include:\n-Whether the adolescent studies/works?\n-How they perceive their home situation?\n-How they perceive their relation with their teachers and fellow students/employers\nand colleagues?\n-Whether there have been any recent changes in their situation?\n-Whether they feel safe at home, in the community, in their place of study or work;\non the road, etc?</td>\n</tr>\n\n\n\n\n\n\n\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Condition</th>\n  <td class=\"content-container\">\n  <em>Kind</em>: Applicability\n  \n    <br/>\n    \n      \n      <em>Logic Definition</em>: <a href=\"#ancdt02-should-conduct-headss-assessment\">Should Conduct HEADSS assessment</a> \n    \n   \n  </td>\n</tr>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    \n  \n\n\n\n<tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">PlanDefinition Logic</th>\n\n\n</tr>\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Primary Library</th>\n\n\n<td class=\"content-container\"><a href=\"Library-ANCDT02.html\">ANC.DT.02 Adolescent HEADSS asessement</a></td>\n</tr>\n\n\n\n\n  \n  \n  \n  \n  \n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Parameter</th>\n\n\n  <td class=\"content-container\">\n    \n    <em>Name</em>: Should Conduct HEADSS assessment\n    \n    \n    <br/>\n    \n    \n    <em>Use</em>: Out\n    \n    \n    <br/>\n    \n    \n    <em>Min Cardinality</em>: 0\n    \n    \n    <br/>\n    \n    \n    <em>Max Cardinality</em>: 1\n    \n    \n    <br/>\n    \n    \n    <em>Type</em>: boolean\n    \n  </td>\n</tr>\n\n  \n  \n  <tr>\n    <th colspan=\"2\" scope=\"row\" class=\"section-header\"><a name=\"effective-data-requirements\"> </a>PlanDefinition Logic Data Requirements</th>\n  </tr>\n  \n  \n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Patient\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    <a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a>\n    <br/>        \n  \n   \n   \n   \n  </td>\n</tr>\n\n  \n  <tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n    Logic Definition\n  </th>\n\n</tr>\n<tr>\n\n</tr>\n\n  \n\n<tr>\n  <th colspan=\"2\" scope=\"row\" class=\"row-header\">Generated using version 0.4.9-cibuild of the sample-content-ig Liquid templates</th>\n</tr>\n\n    </tbody>\n  </table>\n</div>"
+  },
+  "contained" : [{
+    "resourceType" : "Library",
+    "id" : "effective-data-requirements",
+    "name" : "EffectiveDataRequirements",
+    "status" : "active",
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/library-type",
+        "code" : "module-definition"
+      }]
+    },
+    "parameter" : [{
+      "name" : "Should Conduct HEADSS assessment",
+      "use" : "out",
+      "min" : 0,
+      "max" : "1",
+      "type" : "boolean"
+    }],
+    "dataRequirement" : [{
+      "type" : "Patient",
+      "profile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+    }]
+  }],
+  "extension" : [{
+    "extension" : [{
+      "url" : "libraryName",
+      "valueString" : "ANCDT02"
+    },
+    {
+      "url" : "name",
+      "valueString" : "Should Conduct HEADSS assessment"
+    },
+    {
+      "url" : "statement",
+      "valueString" : "/*\n\"Age\" < 19\n*/\ndefine \"Should Conduct HEADSS assessment\":\n  AgeInYearsAt(Today()) < 19"
+    },
+    {
+      "url" : "displaySequence",
+      "valueInteger" : 0
+    }],
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition"
+  },
+  {
+    "id" : "effective-data-requirements",
+    "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements",
+    "valueCanonical" : "#effective-data-requirements"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-softwaresystem",
+    "valueReference" : {
+      "reference" : "Device/cqf-tooling"
+    }
+  }],
+  "url" : "http://smart.who.int/anc/PlanDefinition/ANCDT02",
+  "identifier" : [{
+    "use" : "official",
+    "value" : "ANC.DT.02"
+  }],
+  "version" : "0.3.0",
+  "name" : "ANCDT02",
+  "title" : "ANC.DT.02 Adolescent HEADSS asessement",
+  "type" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+      "code" : "eca-rule"
+    }]
+  },
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-06-24T13:58:48-06:00",
+  "publisher" : "World Health Organization (WHO)",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.who.int"
+    }]
+  }],
+  "description" : "If client is an adolescent, conduct Home-Eating-Activity-Drugs-Sexuality-Safety-Suicide (HEADSS) assessment",
+  "useContext" : [{
+    "code" : {
+      "system" : "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code" : "task",
+      "display" : "Workflow Task"
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://smart.who.int/anc/CodeSystem/activity-codes",
+        "code" : "Client",
+        "display" : "is an adolescent (age >19)"
+      }]
+    }
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "library" : ["http://smart.who.int/anc/Library/ANCDT02"],
+  "action" : [{
+    "title" : "ANC.DT.02 Adolescent HEADSS asessement",
+    "trigger" : [{
+      "type" : "named-event",
+      "name" : "Client is an adolescent (age >19)"
+    }],
+    "action" : [{
+      "id" : "1",
+      "title" : "Conduct HEADSS assessment",
+      "description" : "Conduct HEADSS assessment",
+      "textEquivalent" : "Questions to consider include:\n-Whether the adolescent studies/works?\n-How they perceive their home situation?\n-How they perceive their relation with their teachers and fellow students/employers\nand colleagues?\n-Whether there have been any recent changes in their situation?\n-Whether they feel safe at home, in the community, in their place of study or work;\non the road, etc?",
+      "documentation" : [{
+        "type" : "citation",
+        "label" : "Adolescent job aid: a handy desk reference tool for primary level health (2010) pp.11 (2)"
+      }],
+      "condition" : [{
+        "kind" : "applicability",
+        "expression" : {
+          "description" : "\"Age\" > 19",
+          "language" : "text/cql-identifier",
+          "expression" : "Should Conduct HEADSS assessment"
+        }
+      }]
+    }]
+  }]
+}

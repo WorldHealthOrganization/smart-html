@@ -1,0 +1,1633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="ANCDT28"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">
+  <table class="narrative-table">
+    <tbody>
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">Metadata</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">ANC.DT.28 Gestational diabetes mellitus (GDM) risk counselling</td>
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Version</th>
+
+
+<td class="content-container">0.3.0</td>
+</tr>
+
+
+
+
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">Identifier</th>
+
+
+<td class="content-container">ANC.DT.28</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Use Context</th>
+
+
+<td class="content-container"><span title="{http://terminology.hl7.org/CodeSystem/usage-context-type task}">Workflow Task</span> = <span title="Codes:{http://smart.who.int/anc/CodeSystem/activity-codes ANC.B9.}">Conduct laboratory tests and imaging</span></td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Jurisdiction</th>
+
+
+<td class="content-container"><span title="Codes:{http://unstats.un.org/unsd/methods/m49/m49.htm 001}">Global (Whole world)</span></td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Steward (Publisher)</th>
+
+
+<td class="content-container">World Health Organization (WHO)</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Description</th>
+
+
+<td class="content-container"><div><p>If the woman has risk factors for developing gestational diabetes mellitus (GDM), provide counselling to reduce risk of developing GDM</p>
+</div></td>
+</tr>
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Type</th>
+
+
+<td class="content-container"><span title="Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type eca-rule}">ECA Rule</span></td>
+</tr>
+
+
+
+
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">PlanDefinition Action</th>
+
+
+</tr>
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">ANC.DT.28 Gestational diabetes mellitus (GDM) risk counselling</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Trigger Type</th>
+
+
+<td class="content-container">Named Event</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Trigger Name</th>
+
+
+<td class="content-container">ANC.B9. Conduct laboratory tests and imaging</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+      
+      
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">PlanDefinition Sub-Action (Parent Action Title: ANC.DT.28 Gestational diabetes mellitus (GDM) risk counselling)</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Id</th>
+
+
+<td class="content-container">1</td>
+</tr>
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">Provide counselling on gestational diabetes mellitus (GDM) risk</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Description</th>
+
+
+<td class="content-container">Provide counselling on gestational diabetes mellitus (GDM) risk</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Human-interpretable Description</th>
+
+
+<td class="content-container">The woman is considered at risk for GDM if she has any of the following risk factors: 
+– BMI of 30 kg/m2 or more
+– Previous GDM
+– Previous macrosomia 
+– Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions
+
+Please provide appropriate counseling for GDM risk mitigation, including: 
+– Reasserting dietary interventions
+– Reasserting physical activity during pregnancy</td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+  <th scope="row" class="row-header">Condition</th>
+  <td class="content-container">
+  <em>Kind</em>: Applicability
+  
+    <br/>
+    
+      
+      <em>Logic Definition</em>: <a href="#ancdt28-should-provide-counselling-on-gestational-diabetes-mellitus-(gdm)-risk">Should Provide counselling on gestational diabetes mellitus (GDM) risk</a> 
+    
+   
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+
+
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">PlanDefinition Logic</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Primary Library</th>
+
+
+<td class="content-container"><a href="Library-ANCDT28.html">ANC.DT.28 Gestational diabetes mellitus (GDM) risk counselling</a></td>
+</tr>
+
+
+
+
+  
+  
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Library FHIRHelpers
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <code>http://smart.who.int/anc/Library/FHIRHelpers|4.0.1</code>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/Library/FHIRHelpers|4.0.1</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Library ContactData
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="Library-ANCContactDataElements.html">ANC Contact Data Elements</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/Library/ANCContactDataElements</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Library WC
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="Library-WHOCommon.html">WHO Common</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/Library/WHOCommon</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Library Cx
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="Library-ANCConcepts.html">ANC Concepts</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/Library/ANCConcepts</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Library PatientData
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="Library-ANCDataElements.html">ANC Data Elements</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/Library/ANCDataElements</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Gestational diabetes mellitus (GDM) diagnosis
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b9-de169.html">Gestational diabetes mellitus (GDM) diagnosis</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b9-de169</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Gestational diabetes mellitus (GDM) diagnosis - Negative Choices
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b9-de171.html">Gestational diabetes mellitus (GDM) diagnosis - Negative Choices</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b9-de171</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Diabetes mellitus (DM) during pregnancy diagnosis
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b9-de172.html">Diabetes mellitus (DM) during pregnancy diagnosis</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b9-de172</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set BMI
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b8-de4.html">BMI</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b8-de4</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Past pregnancy complications
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b6-de34.html">Past pregnancy complications</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b6-de34</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Past pregnancy complications - Gestational diabetes mellitus Choices
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b6-de43.html">Past pregnancy complications - Gestational diabetes mellitus Choices</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b6-de43</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Past pregnancy complications - Macrosomia Choices
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b6-de45.html">Past pregnancy complications - Macrosomia Choices</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b6-de45</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Urine dipstick result - glucose
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b9-de150.html">Urine dipstick result - glucose</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b9-de150</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Urine dipstick result - glucose - 2 plus Choices
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b9-de153.html">Urine dipstick result - glucose - 2 plus Choices</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b9-de153</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Urine dipstick result - glucose - 3 plus Choices
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b9-de154.html">Urine dipstick result - glucose - 3 plus Choices</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b9-de154</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Urine dipstick result - glucose - 4 plus Choices
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b9-de155.html">Urine dipstick result - glucose - 4 plus Choices</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b9-de155</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Urine dipstick result - glucose - 1 plus Choices
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b9-de152.html">Urine dipstick result - glucose - 1 plus Choices</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b9-de152</tt>
+    
+    
+    
+  </td>
+</tr>
+
+
+  
+  
+  
+<tr>
+  
+
+<th scope="row" class="row-header">Parameter</th>
+
+
+  <td class="content-container">
+    
+    <em>Name</em>: encounter
+    
+    
+    <br/>
+    
+    
+    <em>Use</em>: In
+    
+    
+    <br/>
+    
+    
+    <em>Min Cardinality</em>: 0
+    
+    
+    <br/>
+    
+    
+    <em>Max Cardinality</em>: 1
+    
+    
+    <br/>
+    
+    
+    <em>Type</em>: string
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Parameter</th>
+
+
+  <td class="content-container">
+    
+    <em>Name</em>: Should Provide counselling on gestational diabetes mellitus (GDM) risk
+    
+    
+    <br/>
+    
+    
+    <em>Use</em>: Out
+    
+    
+    <br/>
+    
+    
+    <em>Min Cardinality</em>: 0
+    
+    
+    <br/>
+    
+    
+    <em>Max Cardinality</em>: 1
+    
+    
+    <br/>
+    
+    
+    <em>Type</em>: boolean
+    
+  </td>
+</tr>
+
+  
+  
+  <tr>
+    <th colspan="2" scope="row" class="section-header"><a name="effective-data-requirements"> </a>PlanDefinition Logic Data Requirements</th>
+  </tr>
+  
+  
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, status, encounter, encounter.reference
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> <a href="ValueSet-anc-b9-de169.html">Gestational diabetes mellitus (GDM) diagnosis</a>
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, status, encounter, encounter.reference
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> <a href="ValueSet-anc-b9-de172.html">Diabetes mellitus (DM) during pregnancy diagnosis</a>
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, status, encounter, encounter.reference
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> <a href="ValueSet-anc-b8-de4.html">BMI</a>
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, status, encounter, encounter.reference, value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> <a href="ValueSet-anc-b6-de34.html">Past pregnancy complications</a>
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, status, encounter, encounter.reference, value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> <a href="ValueSet-anc-b9-de150.html">Urine dipstick result - glucose</a>
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+  
+  <tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+    Logic Definition
+  </th>
+
+</tr>
+<tr>
+
+</tr>
+
+  
+
+<tr>
+  <th colspan="2" scope="row" class="row-header">Generated using version 0.4.9-cibuild of the sample-content-ig Liquid templates</th>
+</tr>
+
+    </tbody>
+  </table>
+</div>
+  </text>
+  <contained>
+    <Library>
+      <id value="effective-data-requirements"/>
+      <name value="EffectiveDataRequirements"/>
+      <status value="active"/>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/library-type"/>
+          <code value="module-definition"/>
+        </coding>
+      </type>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Library FHIRHelpers"/>
+        <resource value="http://smart.who.int/anc/Library/FHIRHelpers|4.0.1"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Library ContactData"/>
+        <resource value="http://smart.who.int/anc/Library/ANCContactDataElements"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Library WC"/>
+        <resource value="http://smart.who.int/anc/Library/WHOCommon"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Library Cx"/>
+        <resource value="http://smart.who.int/anc/Library/ANCConcepts"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Library PatientData"/>
+        <resource value="http://smart.who.int/anc/Library/ANCDataElements"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set Gestational diabetes mellitus (GDM) diagnosis"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b9-de169"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set Gestational diabetes mellitus (GDM) diagnosis - Negative Choices"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b9-de171"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set Diabetes mellitus (DM) during pregnancy diagnosis"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b9-de172"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set BMI"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b8-de4"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set Past pregnancy complications"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b6-de34"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set Past pregnancy complications - Gestational diabetes mellitus Choices"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b6-de43"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set Past pregnancy complications - Macrosomia Choices"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b6-de45"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set Urine dipstick result - glucose"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b9-de150"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set Urine dipstick result - glucose - 2 plus Choices"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b9-de153"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set Urine dipstick result - glucose - 3 plus Choices"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b9-de154"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set Urine dipstick result - glucose - 4 plus Choices"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b9-de155"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set Urine dipstick result - glucose - 1 plus Choices"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b9-de152"/>
+      </relatedArtifact>
+      <parameter>
+        <name value="encounter"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="1"/>
+        <type value="string"/>
+      </parameter>
+      <parameter>
+        <name value="Should Provide counselling on gestational diabetes mellitus (GDM) risk"/>
+        <use value="out"/>
+        <min value="0"/>
+        <max value="1"/>
+        <type value="boolean"/>
+      </parameter>
+      <dataRequirement>
+        <type value="Observation"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+        <mustSupport value="code"/>
+        <mustSupport value="status"/>
+        <mustSupport value="encounter"/>
+        <mustSupport value="encounter.reference"/>
+        <codeFilter>
+          <path value="code"/>
+          <valueSet value="http://smart.who.int/anc/ValueSet/anc-b9-de169"/>
+        </codeFilter>
+      </dataRequirement>
+      <dataRequirement>
+        <type value="Observation"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+        <mustSupport value="code"/>
+        <mustSupport value="status"/>
+        <mustSupport value="encounter"/>
+        <mustSupport value="encounter.reference"/>
+        <codeFilter>
+          <path value="code"/>
+          <valueSet value="http://smart.who.int/anc/ValueSet/anc-b9-de172"/>
+        </codeFilter>
+      </dataRequirement>
+      <dataRequirement>
+        <type value="Observation"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+        <mustSupport value="code"/>
+        <mustSupport value="status"/>
+        <mustSupport value="encounter"/>
+        <mustSupport value="encounter.reference"/>
+        <codeFilter>
+          <path value="code"/>
+          <valueSet value="http://smart.who.int/anc/ValueSet/anc-b8-de4"/>
+        </codeFilter>
+      </dataRequirement>
+      <dataRequirement>
+        <type value="Observation"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+        <mustSupport value="code"/>
+        <mustSupport value="status"/>
+        <mustSupport value="encounter"/>
+        <mustSupport value="encounter.reference"/>
+        <mustSupport value="value"/>
+        <codeFilter>
+          <path value="code"/>
+          <valueSet value="http://smart.who.int/anc/ValueSet/anc-b6-de34"/>
+        </codeFilter>
+      </dataRequirement>
+      <dataRequirement>
+        <type value="Observation"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+        <mustSupport value="code"/>
+        <mustSupport value="status"/>
+        <mustSupport value="encounter"/>
+        <mustSupport value="encounter.reference"/>
+        <mustSupport value="value"/>
+        <codeFilter>
+          <path value="code"/>
+          <valueSet value="http://smart.who.int/anc/ValueSet/anc-b9-de150"/>
+        </codeFilter>
+      </dataRequirement>
+    </Library>
+  </contained>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCContactDataElements"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Gestational diabetes mellitus (GDM) diagnosis"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;  @dataElement: ANC.B9.DE169 Gestational diabetes mellitus (GDM) diagnosis&#xA;  @activity: ANC.B9 Lab tests &amp; imaging&#xA;  @description: Whether the woman has gestational diabetes mellitus (GDM)&#xA;*/&#xA;define &quot;Gestational diabetes mellitus (GDM) diagnosis&quot;:&#xA;  WC.Only(&#xA;  [Observation: Cx.&quot;Gestational diabetes mellitus (GDM) diagnosis&quot;] O&#xA;    where O.status in { 'final', 'amended', 'corrected' }&#xA;      and Coalesce(WC.ModifierExtension(O, 'who-notDone').value, false) is false&#xA;      and Last(Split(O.encounter.reference, '/')) = Last(Split(encounter, '/'))&#xA;  ).value as FHIR.CodeableConcept"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="0"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCContactDataElements"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Diabetes mellitus (DM) during pregnancy diagnosis"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;  @dataElement: ANC.B9.DE172 Diabetes mellitus (DM) during pregnancy diagnosis&#xA;  @activity: ANC.B9 Lab tests &amp; imaging&#xA;  @description: Whether the woman has developed diabetes mellitus during pregnancy&#xA;*/&#xA;define &quot;Diabetes mellitus (DM) during pregnancy diagnosis&quot;:&#xA;  WC.Only(&#xA;  [Observation: Cx.&quot;Diabetes mellitus (DM) during pregnancy diagnosis&quot;] O&#xA;    where O.status in { 'final', 'amended', 'corrected' }&#xA;      and Coalesce(WC.ModifierExtension(O, 'who-notDone').value, false) is false&#xA;      and Last(Split(O.encounter.reference, '/')) = Last(Split(encounter, '/'))&#xA;  ).value as FHIR.CodeableConcept"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="1"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCContactDataElements"/>
+    </extension>
+    <extension url="name">
+      <valueString value="BMI"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;  @dataElement: ANC.B8.DE4 BMI&#xA;  @activity: ANC.B8 Physical exam&#xA;  @description: Body mass index (BMI): calculated by taking weight in kg divided by the squared height in meters, i.e. kg/(m^2)&#xA;*/&#xA;define &quot;BMI&quot;:&#xA;  WC.Only(&#xA;  [Observation: Cx.&quot;BMI&quot;] O&#xA;    where O.status in { 'final', 'amended', 'corrected' }&#xA;      and Coalesce(WC.ModifierExtension(O, 'who-notDone').value, false) is false&#xA;      and Last(Split(O.encounter.reference, '/')) = Last(Split(encounter, '/'))&#xA;  ).value as FHIR.Quantity"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="2"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCContactDataElements"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Past pregnancy complications"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;  @dataElement: ANC.B6.DE34 Past pregnancy complications&#xA;  @activity: ANC.B6 Profile&#xA;  @description: Mark whether the woman has had any complications or problems in any previous pregnancy&#xA;*/&#xA;define &quot;Past pregnancy complications&quot;:&#xA;  [Observation: Cx.&quot;Past pregnancy complications&quot;] O&#xA;    where O.status in { 'final', 'amended', 'corrected' }&#xA;      and Coalesce(WC.ModifierExtension(O, 'who-notDone').value, false) is false&#xA;      and Last(Split(O.encounter.reference, '/')) = Last(Split(encounter, '/'))&#xA;    return O.value as FHIR.CodeableConcept"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="3"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCContactDataElements"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Urine dipstick result - glucose"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;  @dataElement: ANC.B9.DE150 Urine dipstick result - glucose&#xA;  @activity: ANC.B9 Lab tests &amp; imaging&#xA;  @description: Dipstick test results – glucose&#xA;*/&#xA;define &quot;Urine dipstick result - glucose&quot;:&#xA;  WC.Only(&#xA;  [Observation: Cx.&quot;Urine dipstick result - glucose&quot;] O&#xA;    where O.status in { 'final', 'amended', 'corrected' }&#xA;      and Coalesce(WC.ModifierExtension(O, 'who-notDone').value, false) is false&#xA;      and Last(Split(O.encounter.reference, '/')) = Last(Split(encounter, '/'))&#xA;  ).value as FHIR.CodeableConcept"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="4"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCDataElements"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Urine dipstick result - glucose"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;  @dataElement: ANC.B9.DE150 Urine dipstick result - glucose&#xA;  @activity: ANC.B9. Conduct laboratory tests and imaging&#xA;  @description: Dipstick test results – glucose&#xA;*/&#xA;define &quot;Urine dipstick result - glucose&quot;:&#xA;  [Observation: Cx.&quot;Urine dipstick result - glucose&quot;] O&#xA;    where O.status in { 'final', 'amended', 'corrected' }&#xA;      and Coalesce(WC.ModifierExtension(O, 'who-notDone').value, false) is false"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="5"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCDT28"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Should Provide counselling on gestational diabetes mellitus (GDM) risk"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;(((((((&quot;BMI&quot; ≥ 30)&#xA;  AND (&quot;Gestational diabetes mellitus (GDM) diagnosis&quot; = &quot;GDM negative&quot;)&#xA;  AND (&quot;Diabetes mellitus (DM) during pregnancy diagnosis&quot; = &quot;DM negative&quot;))&#xA;  OR ((&quot;Past pregnancy complications&quot; = &quot;Gestational diabetes mellitus&quot;)&#xA;  AND (&quot;Gestational diabetes mellitus (GDM) diagnosis&quot; = &quot;GDM negative&quot;)&#xA;  AND (&quot;Diabetes mellitus (DM) during pregnancy diagnosis&quot; = &quot;DM negative&quot;)))&#xA;  OR ((&quot;Past pregnancy complications&quot; = &quot;Macrosomia&quot;)&#xA;  AND (&quot;Gestational diabetes mellitus (GDM) diagnosis&quot; = &quot;GDM negative&quot;)&#xA;  AND (&quot;Diabetes mellitus (DM) during pregnancy diagnosis&quot; = &quot;DM negative&quot;)))&#xA;  OR ((&quot;Urine dipstick result – glucose&quot; = &quot;++&quot;)&#xA;  AND (&quot;Gestational diabetes mellitus (GDM) diagnosis&quot; = &quot;GDM negative&quot;)&#xA;  AND (&quot;Diabetes mellitus (DM) during pregnancy diagnosis&quot; = &quot;DM negative&quot;)))&#xA;  OR ((&quot;Urine dipstick result – glucose&quot; = &quot;+++&quot;)&#xA;  AND (&quot;Gestational diabetes mellitus (GDM) diagnosis&quot; = &quot;GDM negative&quot;)&#xA;  AND (&quot;Diabetes mellitus (DM) during pregnancy diagnosis&quot; = &quot;DM negative&quot;)))&#xA;  OR ((&quot;Urine dipstick result – glucose&quot; = &quot;++++&quot;)&#xA;  AND (&quot;Gestational diabetes mellitus (GDM) diagnosis&quot; = &quot;GDM negative&quot;)&#xA;  AND (&quot;Diabetes mellitus (DM) during pregnancy diagnosis&quot; = &quot;DM negative&quot;)))&#xA;  OR ((&quot;Urine dipstick result – glucose&quot; = &quot;+&quot; ON MORE THAN ONE TEST ACROSS PREGNANCY)&#xA;  AND (&quot;Gestational diabetes mellitus (GDM) diagnosis&quot; = &quot;GDM negative&quot;)&#xA;  AND (&quot;Diabetes mellitus (DM) during pregnancy diagnosis&quot; = &quot;DM negative&quot;))&#xA;*/&#xA;define &quot;Should Provide counselling on gestational diabetes mellitus (GDM) risk&quot;:&#xA;  ContactData.&quot;Gestational diabetes mellitus (GDM) diagnosis&quot; in Cx.&quot;Gestational diabetes mellitus (GDM) diagnosis - Negative Choices&quot;&#xA;    and ContactData.&quot;Diabetes mellitus (DM) during pregnancy diagnosis&quot; in Cx.&quot;Gestational diabetes mellitus (GDM) diagnosis - Negative Choices&quot;&#xA;    and (&#xA;      ContactData.&quot;BMI&quot; &gt;= 30&#xA;        or ContactData.&quot;Past pregnancy complications&quot; in Cx.&quot;Past pregnancy complications - Gestational diabetes mellitus Choices&quot;&#xA;        or ContactData.&quot;Past pregnancy complications&quot; in Cx. &quot;Past pregnancy complications - Macrosomia Choices&quot;&#xA;        or ContactData.&quot;Urine dipstick result - glucose&quot; in Cx. &quot;Urine dipstick result - glucose - 2 plus Choices&quot;&#xA;        or ContactData.&quot;Urine dipstick result - glucose&quot; in Cx. &quot;Urine dipstick result - glucose - 3 plus Choices&quot;&#xA;        or ContactData.&quot;Urine dipstick result - glucose&quot; in Cx. &quot;Urine dipstick result - glucose - 4 plus Choices&quot;&#xA;        or (Count(PatientData.&quot;Urine dipstick result - glucose&quot; O where O.value in Cx. &quot;Urine dipstick result - glucose - 1 plus Choices&quot;) &gt; 1)&#xA;    )"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="6"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="FHIRHelpers"/>
+    </extension>
+    <extension url="name">
+      <valueString value="ToConcept"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="define function ToConcept(concept FHIR.CodeableConcept):&#xA;    if concept is null then&#xA;        null&#xA;    else&#xA;        System.Concept {&#xA;            codes: concept.coding C return ToCode(C),&#xA;            display: concept.text.value&#xA;        }"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="7"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="FHIRHelpers"/>
+    </extension>
+    <extension url="name">
+      <valueString value="ToCode"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="define function ToCode(coding FHIR.Coding):&#xA;    if coding is null then&#xA;        null&#xA;    else&#xA;        System.Code {&#xA;          code: coding.code.value,&#xA;          system: coding.system.value,&#xA;          version: coding.version.value,&#xA;          display: coding.display.value&#xA;        }"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="8"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="WHOCommon"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Only"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="define function Only(observations List&lt;Observation&gt;):&#xA;  singleton from observations"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="9"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="FHIRHelpers"/>
+    </extension>
+    <extension url="name">
+      <valueString value="ToString"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="define function ToString(value ObservationStatus): value.value"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="10"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="FHIRHelpers"/>
+    </extension>
+    <extension url="name">
+      <valueString value="ToBoolean"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="define function ToBoolean(value boolean): value.value"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="11"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="WHOCommon"/>
+    </extension>
+    <extension url="name">
+      <valueString value="ModifierExtension"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;@description: Returns the single WHO core modifier extension (if present) on the given resource with the specified id.&#xA;@comment: This function uses singleton from to ensure that a run-time exception is thrown if there&#xA;is more than one extension on the given resource with the specified url.&#xA;*/&#xA;define function ModifierExtension(domainResource DomainResource, id String):&#xA;  singleton from ModifierExtensions(domainResource, id)"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="12"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="WHOCommon"/>
+    </extension>
+    <extension url="name">
+      <valueString value="ModifierExtensions"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;@description: Returns any WHO core modifier extensions defined on the given resource with the specified id.&#xA;@comment: NOTE: Extensions are not the preferred approach, but are used as a way to access&#xA;content that is defined by extensions but not yet surfaced in the&#xA;CQL model info.&#xA;*/&#xA;define function ModifierExtensions(domainResource DomainResource, id String):&#xA;  domainResource.modifierExtension E&#xA;&#x9;  where E.url = ('http://fhir.org/guides/who/core/StructureDefinition/' + id)&#xA;&#x9;&#x9;return E"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="13"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="FHIRHelpers"/>
+    </extension>
+    <extension url="name">
+      <valueString value="ToString"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="define function ToString(value uri): value.value"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="14"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="FHIRHelpers"/>
+    </extension>
+    <extension url="name">
+      <valueString value="ToString"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="define function ToString(value string): value.value"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="15"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="FHIRHelpers"/>
+    </extension>
+    <extension url="name">
+      <valueString value="ToQuantity"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="define function ToQuantity(quantity FHIR.Quantity):&#xA;    case&#xA;        when quantity is null then null&#xA;        when quantity.value is null then null&#xA;        when quantity.comparator is not null then&#xA;            Message(null, true, 'FHIRHelpers.ToQuantity.ComparatorQuantityNotSupported', 'Error', 'FHIR Quantity value has a comparator and cannot be converted to a System.Quantity value.')&#xA;        when quantity.system is null or quantity.system.value = 'http://unitsofmeasure.org'&#xA;              or quantity.system.value = 'http://hl7.org/fhirpath/CodeSystem/calendar-units' then&#xA;            System.Quantity { value: quantity.value.value, unit: ToCalendarUnit(Coalesce(quantity.code.value, quantity.unit.value, '1')) }&#xA;        else&#xA;            Message(null, true, 'FHIRHelpers.ToQuantity.InvalidFHIRQuantity', 'Error', 'Invalid FHIR Quantity code: ' &amp; quantity.unit.value &amp; ' (' &amp; quantity.system.value &amp; '|' &amp; quantity.code.value &amp; ')')&#xA;    end"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="16"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="FHIRHelpers"/>
+    </extension>
+    <extension url="name">
+      <valueString value="ToCalendarUnit"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="define function ToCalendarUnit(unit System.String):&#xA;    case unit&#xA;        when 'ms' then 'millisecond'&#xA;        when 's' then 'second'&#xA;        when 'min' then 'minute'&#xA;        when 'h' then 'hour'&#xA;        when 'd' then 'day'&#xA;        when 'wk' then 'week'&#xA;        when 'mo' then 'month'&#xA;        when 'a' then 'year'&#xA;        else unit&#xA;    end"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="17"/>
+    </extension>
+  </extension>
+  <extension id="effective-data-requirements" url="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements">
+    <valueCanonical value="#effective-data-requirements"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-softwaresystem">
+    <valueReference>
+      <reference value="Device/cqf-tooling"/>
+    </valueReference>
+  </extension>
+  <url value="http://smart.who.int/anc/PlanDefinition/ANCDT28"/>
+  <identifier>
+    <use value="official"/>
+    <value value="ANC.DT.28"/>
+  </identifier>
+  <version value="0.3.0"/>
+  <name value="ANCDT28"/>
+  <title value="ANC.DT.28 Gestational diabetes mellitus (GDM) risk counselling"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="eca-rule"/>
+    </coding>
+  </type>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-06-24T13:58:48-06:00"/>
+  <publisher value="World Health Organization (WHO)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.who.int"/>
+    </telecom>
+  </contact>
+  <description value="If the woman has risk factors for developing gestational diabetes mellitus (GDM), provide counselling to reduce risk of developing GDM"/>
+  <useContext>
+    <code>
+      <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+      <code value="task"/>
+      <display value="Workflow Task"/>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://smart.who.int/anc/CodeSystem/activity-codes"/>
+        <code value="ANC.B9."/>
+        <display value="Conduct laboratory tests and imaging"/>
+      </coding>
+    </valueCodeableConcept>
+  </useContext>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <library value="http://smart.who.int/anc/Library/ANCDT28"/>
+  <action>
+    <title value="ANC.DT.28 Gestational diabetes mellitus (GDM) risk counselling"/>
+    <trigger>
+      <type value="named-event"/>
+      <name value="ANC.B9. Conduct laboratory tests and imaging"/>
+    </trigger>
+    <action id="1">
+      <title value="Provide counselling on gestational diabetes mellitus (GDM) risk"/>
+      <description value="Provide counselling on gestational diabetes mellitus (GDM) risk"/>
+      <textEquivalent value="The woman is considered at risk for GDM if she has any of the following risk factors: &#xA;– BMI of 30 kg/m2 or more&#xA;– Previous GDM&#xA;– Previous macrosomia &#xA;– Glycosuria on dipstick testing is ++ or above on one occasion OR + on two or more occasions&#xA;&#xA;Please provide appropriate counseling for GDM risk mitigation, including: &#xA;– Reasserting dietary interventions&#xA;– Reasserting physical activity during pregnancy"/>
+      <documentation>
+        <type value="citation"/>
+        <label value="WHO ANC recommendations (2016): B.1.4 (2)"/>
+      </documentation>
+      <condition>
+        <kind value="applicability"/>
+        <expression>
+          <description value="(((((((&quot;BMI&quot; ≥ 30)&#xA;  AND (&quot;Gestational diabetes mellitus (GDM) diagnosis&quot; = &quot;GDM negative&quot;)&#xA;  AND (&quot;Diabetes mellitus (DM) during pregnancy diagnosis&quot; = &quot;DM negative&quot;))&#xA;  OR ((&quot;Past pregnancy complications&quot; = &quot;Gestational diabetes mellitus&quot;)&#xA;  AND (&quot;Gestational diabetes mellitus (GDM) diagnosis&quot; = &quot;GDM negative&quot;)&#xA;  AND (&quot;Diabetes mellitus (DM) during pregnancy diagnosis&quot; = &quot;DM negative&quot;)))&#xA;  OR ((&quot;Past pregnancy complications&quot; = &quot;Macrosomia&quot;)&#xA;  AND (&quot;Gestational diabetes mellitus (GDM) diagnosis&quot; = &quot;GDM negative&quot;)&#xA;  AND (&quot;Diabetes mellitus (DM) during pregnancy diagnosis&quot; = &quot;DM negative&quot;)))&#xA;  OR ((&quot;Urine dipstick result – glucose&quot; = &quot;++&quot;)&#xA;  AND (&quot;Gestational diabetes mellitus (GDM) diagnosis&quot; = &quot;GDM negative&quot;)&#xA;  AND (&quot;Diabetes mellitus (DM) during pregnancy diagnosis&quot; = &quot;DM negative&quot;)))&#xA;  OR ((&quot;Urine dipstick result – glucose&quot; = &quot;+++&quot;)&#xA;  AND (&quot;Gestational diabetes mellitus (GDM) diagnosis&quot; = &quot;GDM negative&quot;)&#xA;  AND (&quot;Diabetes mellitus (DM) during pregnancy diagnosis&quot; = &quot;DM negative&quot;)))&#xA;  OR ((&quot;Urine dipstick result – glucose&quot; = &quot;++++&quot;)&#xA;  AND (&quot;Gestational diabetes mellitus (GDM) diagnosis&quot; = &quot;GDM negative&quot;)&#xA;  AND (&quot;Diabetes mellitus (DM) during pregnancy diagnosis&quot; = &quot;DM negative&quot;)))&#xA;  OR ((&quot;Urine dipstick result – glucose&quot; = &quot;+&quot; ON MORE THAN ONE TEST ACROSS PREGNANCY)&#xA;  AND (&quot;Gestational diabetes mellitus (GDM) diagnosis&quot; = &quot;GDM negative&quot;)&#xA;  AND (&quot;Diabetes mellitus (DM) during pregnancy diagnosis&quot; = &quot;DM negative&quot;))"/>
+          <language value="text/cql-identifier"/>
+          <expression value="Should Provide counselling on gestational diabetes mellitus (GDM) risk"/>
+        </expression>
+      </condition>
+    </action>
+  </action>
+</PlanDefinition>
