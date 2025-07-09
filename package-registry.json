@@ -284,6 +284,25 @@
         "date" : "2025-07-01",
         "path" : "http://smart.who.int/pcmt-vaxprequal/v0.1.0"
       }
+    },
+    {
+      "path" : "hiv/package-list.json",
+      "package-id" : "smart.who.int.hiv",
+      "title" : "WHO SMART Guidelines - HIV",
+      "canonical" : "http://smart.who.int/hiv",
+      "category" : "base",
+      "ci-build" : "http://worldhealthorganization.github.io/smart-hiv",
+      "version-count" : 1,
+      "latest" : {
+        "version" : "1.0.0",
+        "date" : "2025-07-08",
+        "path" : "http://smart.who.int/hiv/v1.0.0"
+      },
+      "milestone" : {
+        "version" : "1.0.0",
+        "date" : "2025-07-08",
+        "path" : "http://smart.who.int/hiv/v1.0.0"
+      }
     }
   ]
 }

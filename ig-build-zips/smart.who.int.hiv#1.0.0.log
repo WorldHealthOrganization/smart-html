@@ -1,0 +1,117 @@
+FHIR IG Publisher Version 2.0.8 (Git# e7d965b03a28). Built 2025-06-27T22:18:09.321Z (10 days old)
+Detected Java version: 17.0.7 from c:\work\jdk-17.0.7 on amd64 (64bit). 4096MB available
+dir = C:\work\release, path = C:\Python313\Scripts\;C:\Python313\;C:\Ruby32-x64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Recovery\OEM\Backup\;c:\work\jdk-17.0.7\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\VSCodium\bin;C:\Program Files\Git\cmd;C:\Program Files\maven\bin;C:\Program Files\Meld\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\Jose\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Go\bin;C:\Program Files\Git LFS;C:\Users\Jose\AppData\Local\Microsoft\WindowsApps;C:\Users\Jose\AppData\Local\GitHubDesktop\bin;C:\Users\Jose\AppData\Roaming\npm;C:\Program Files\7-Zip;C:\Users\Jose\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\Jose\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Jose\go\bin
+Parameters: -go-publish -package-cache-folder C:\work\release\fhir-package-cache -source C:\work\release\source -web C:\work\release\webroot -temp C:\work\release\temp -registry C:\work\release\ig-registry\fhir-ig-list.json -history C:\work\release\history-template -templates C:\work\release\webroot\templates
+---------------
+Publication Run: publish C:\work\release\source to C:\work\release\webroot
+Relative directory for IG is '\hiv'
+===== Web Publication Run Details ===============================
+ Source IG: smart.who.int.hiv#1.0.0 : http://smart.who.int/hiv (R4) from C:\work\release\source
+All checks passed. Do the publication build from C:\work\release\source and publish to C:\work\release\temp\web-root\run-20250708\hiv
+Prepare Build space in C:\work\release\temp\ig-builds\smart.who.int.hiv#1.0.0
+Build IG at C:\work\release\source: final copy suitable for publication (in C:\work\release\temp\ig-builds\smart.who.int.hiv#1.0.0)
+FHIR IG Publisher Version 2.0.8 (Git# e7d965b03a28). Built 2025-06-27T22:18:09.321Z (10 days old)   
+Detected Java version: 17.0.7 from c:\work\jdk-17.0.7 on Windows 11/amd64 (64bit). 4096MB available 
+dir = C:\work\release, path = C:\Python313\Scripts\;C:\Python313\;C:\Ruby32-x64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Recovery\OEM\Backup\;c:\work\jdk-17.0.7\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\VSCodium\bin;C:\Program Files\Git\cmd;C:\Program Files\maven\bin;C:\Program Files\Meld\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\Jose\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Go\bin;C:\Program Files\Git LFS;C:\Users\Jose\AppData\Local\Microsoft\WindowsApps;C:\Users\Jose\AppData\Local\GitHubDesktop\bin;C:\Users\Jose\AppData\Roaming\npm;C:\Program Files\7-Zip;C:\Users\Jose\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\Jose\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Jose\go\bin
+Parameters: -ig C:\work\release\temp\ig-builds\smart.who.int.hiv#1.0.0 -resetTx -publish http://smart.who.int/hiv/v1.0.0 -no-exit
+Character encoding = UTF-8 / UTF-8                                                                  
+Start Clock @ terça-feira, 8 de julho de 2025 às 23:38:41 Hora de verão da Europa Central (2025-07-08T23:38:41+02:00)
+                                                                                                    
+Build FHIR IG from C:\work\release\temp\ig-builds\smart.who.int.hiv#1.0.0                            (00:00.025 / 00:00.025, 275Mb)
+Build Formal Publication package, intended for http://smart.who.int/hiv/v1.0.0                       (00:00.003 / 00:00.028, 275Mb)
+API keys loaded from C:\Users\Jose\.fhir\fhir-settings.json                                          (00:00.001 / 00:00.029, 275Mb)
+Package Cache: C:\Users\Jose\.fhir\packages                                                          (00:00.003 / 00:00.033, 275Mb)
+Run Sushi on C:\work\release\temp\ig-builds\smart.who.int.hiv#1.0.0                                  (00:00.033 / 00:00.066, 275Mb)
+Sushi: info  Running SUSHI v3.16.2 (implements FHIR Shorthand specification v3.0.0)                  (00:00.601 / 00:00.668, 278Mb)
+Sushi: info  Arguments:                                                                              (00:00.001 / 00:00.669, 278Mb)
+Sushi: info    --require-latest                                                                      (00:00.001 / 00:00.670, 278Mb)
+Sushi: info    --out C:\work\release\temp\ig-builds\smart.who.int.hiv#1.0.0                          (00:00.001 / 00:00.672, 278Mb)
+Sushi: info    C:\work\release\temp\ig-builds\smart.who.int.hiv#1.0.0                                (00:00.000 / 00:00.673, 278Mb)
+Sushi: error Current SUSHI version (3.16.2) is not the latest version. Upgrade to the latest version (3.16.3) or run SUSHI again without the --require-latest flag. (00:00.644 / 00:01.317, 278Mb)
+Sushi couldn't be run. Complete output from running Sushi :                                          (00:00.008 / 00:01.325, 278Mb)
+Note: Check that Sushi is installed correctly ("npm install -g fsh-sushi". On windows, get npm from https://www.npmjs.com/get-npm) (00:00.001 / 00:01.326, 278Mb)
+Exception: Process exited with an error: 1 (Exit value: 1)                                           (00:00.001 / 00:01.327, 278Mb)
+Publishing Content Failed: Process exited with an error: 1 (Exit value: 1)                           (00:00.001 / 00:01.329, 279Mb)
+                                                                                                     (00:00.000 / 00:01.330, 279Mb)
+Use -? to get command line help                                                                      (00:00.001 / 00:01.331, 279Mb)
+                                                                                                     (00:00.000 / 00:01.332, 279Mb)
+Stack Dump (for debugging):                                                                          (00:00.000 / 00:01.333, 279Mb)
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:153)
+	at org.hl7.fhir.igtools.publisher.FSHRunner.runFsh(FSHRunner.java:78)
+	at org.hl7.fhir.igtools.publisher.Publisher.initialize(Publisher.java:2778)
+	at org.hl7.fhir.igtools.publisher.Publisher.execute(Publisher.java:1068)
+	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:15771)
+	at org.hl7.fhir.igtools.web.PublicationProcess.runBuild(PublicationProcess.java:1080)
+	at org.hl7.fhir.igtools.web.PublicationProcess.doPublish(PublicationProcess.java:556)
+	at org.hl7.fhir.igtools.web.PublicationProcess.publishInner2(PublicationProcess.java:469)
+	at org.hl7.fhir.igtools.web.PublicationProcess.publishInner(PublicationProcess.java:286)
+	at org.hl7.fhir.igtools.web.PublicationProcess.publish(PublicationProcess.java:146)
+	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:15519)
+Prepare Build space in C:\work\release\temp\ig-builds\smart.who.int.hiv#1.0.0-milestone
+Build IG at C:\work\release\source: final copy suitable for publication (in C:\work\release\temp\ig-builds\smart.who.int.hiv#1.0.0-milestone) (milestone build)
+FHIR IG Publisher Version 2.0.8 (Git# e7d965b03a28). Built 2025-06-27T22:18:09.321Z (10 days old)   
+Detected Java version: 17.0.7 from c:\work\jdk-17.0.7 on Windows 11/amd64 (64bit). 4096MB available 
+dir = C:\work\release, path = C:\Python313\Scripts\;C:\Python313\;C:\Ruby32-x64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Recovery\OEM\Backup\;c:\work\jdk-17.0.7\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\VSCodium\bin;C:\Program Files\Git\cmd;C:\Program Files\maven\bin;C:\Program Files\Meld\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\Jose\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Go\bin;C:\Program Files\Git LFS;C:\Users\Jose\AppData\Local\Microsoft\WindowsApps;C:\Users\Jose\AppData\Local\GitHubDesktop\bin;C:\Users\Jose\AppData\Roaming\npm;C:\Program Files\7-Zip;C:\Users\Jose\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\Jose\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Jose\go\bin
+Parameters: -ig C:\work\release\temp\ig-builds\smart.who.int.hiv#1.0.0-milestone -publish http://smart.who.int/hiv/v1.0.0 -milestone -no-exit
+Character encoding = UTF-8 / UTF-8                                                                  
+Start Clock @ terça-feira, 8 de julho de 2025 às 23:40:13 Hora de verão da Europa Central (2025-07-08T23:40:13+02:00)
+                                                                                                    
+Build FHIR IG from C:\work\release\temp\ig-builds\smart.who.int.hiv#1.0.0-milestone                  (00:00.010 / 00:00.010, 522Mb)
+Build Formal Publication package, intended for http://smart.who.int/hiv/v1.0.0                       (00:00.001 / 00:00.012, 522Mb)
+API keys loaded from C:\Users\Jose\.fhir\fhir-settings.json                                          (00:00.001 / 00:00.013, 522Mb)
+Package Cache: C:\Users\Jose\.fhir\packages                                                          (00:00.000 / 00:00.014, 522Mb)
+Run Sushi on C:\work\release\temp\ig-builds\smart.who.int.hiv#1.0.0-milestone                        (00:00.022 / 00:00.037, 522Mb)
+Sushi: info  Running SUSHI v3.16.2 (implements FHIR Shorthand specification v3.0.0)                  (00:00.587 / 00:00.624, 522Mb)
+Sushi: info  Arguments:                                                                              (00:00.001 / 00:00.626, 523Mb)
+Sushi: info    --require-latest                                                                      (00:00.000 / 00:00.626, 523Mb)
+Sushi: info    --out C:\work\release\temp\ig-builds\smart.who.int.hiv#1.0.0-milestone                (00:00.001 / 00:00.627, 523Mb)
+Sushi: info    C:\work\release\temp\ig-builds\smart.who.int.hiv#1.0.0-milestone                      (00:00.000 / 00:00.628, 523Mb)
+Sushi: error Current SUSHI version (3.16.2) is not the latest version. Upgrade to the latest version (3.16.3) or run SUSHI again without the --require-latest flag. (00:00.700 / 00:01.329, 523Mb)
+Sushi couldn't be run. Complete output from running Sushi :                                          (00:00.008 / 00:01.338, 523Mb)
+Note: Check that Sushi is installed correctly ("npm install -g fsh-sushi". On windows, get npm from https://www.npmjs.com/get-npm) (00:00.000 / 00:01.338, 523Mb)
+Exception: Process exited with an error: 1 (Exit value: 1)                                           (00:00.000 / 00:01.339, 523Mb)
+Publishing Content Failed: Process exited with an error: 1 (Exit value: 1)                           (00:00.000 / 00:01.340, 523Mb)
+                                                                                                     (00:00.000 / 00:01.340, 523Mb)
+Use -? to get command line help                                                                      (00:00.000 / 00:01.341, 523Mb)
+                                                                                                     (00:00.000 / 00:01.342, 523Mb)
+Stack Dump (for debugging):                                                                          (00:00.000 / 00:01.343, 523Mb)
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:153)
+	at org.hl7.fhir.igtools.publisher.FSHRunner.runFsh(FSHRunner.java:78)
+	at org.hl7.fhir.igtools.publisher.Publisher.initialize(Publisher.java:2778)
+	at org.hl7.fhir.igtools.publisher.Publisher.execute(Publisher.java:1068)
+	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:15771)
+	at org.hl7.fhir.igtools.web.PublicationProcess.runBuild(PublicationProcess.java:1080)
+	at org.hl7.fhir.igtools.web.PublicationProcess.doPublish(PublicationProcess.java:561)
+	at org.hl7.fhir.igtools.web.PublicationProcess.publishInner2(PublicationProcess.java:469)
+	at org.hl7.fhir.igtools.web.PublicationProcess.publishInner(PublicationProcess.java:286)
+	at org.hl7.fhir.igtools.web.PublicationProcess.publish(PublicationProcess.java:146)
+	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:15519)
+Keep a copy of the build directory at C:\work\release\temp\web-root\run-20250708\ig-build-zips\smart.who.int.hiv#1.0.0.zip
+
+ok. All checks passed. Publish v1.0.0 to C:\work\release\temp\web-root\run-20250708\hiv\v1.0.0
+Copy the IG to C:\work\release\temp\web-root\run-20250708\hiv\v1.0.0
+Update C:\work\release\temp\web-root\run-20250708\hiv\package-list.json
+Publish Box Statement: This page is part of the WHO SMART Guidelines - HIV (v1.0.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a data-no-external="true" href="http://smart.who.int/hiv/history.html">Directory of published versions</a>
+  .. 4115 files checked, 4115 updated
+  .. 1397 clones checked, 2582 updated
+  .. 644 redirections (644 created/updated)
+This is a milestone release - publish v1.0.0 to C:\work\release\temp\web-root\run-20250708\hiv
+Publish Box Statement: This page is part of the WHO SMART Guidelines - HIV (v1.0.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://smart.who.int/hiv/history.html">Directory of published versions</a>
+  .. 4115 files checked, 4115 updated
+  .. 1397 clones checked, 2582 updated
+  .. 644 redirections (644 created/updated)
+Check for Files to delete
+  ... 0 files
+Copy to new IG C:\work\release\temp\web-root\run-20250708\hiv
+[Fatal Error] :1:1: Content is not allowed in prolog.
+Unable to process RSS feed C:\work\release\temp\web-root\run-20250708\publication-feed.xml as XML - processing as text instead (Content is not allowed in prolog.)
+smart.who.int.hiv (http://smart.who.int/hiv): WHO SMART Guidelines - HIV @ http://worldhealthorganization.github.io/smart-hiv
+  release: Releases 1.0.0/4.0.1 @ http://smart.who.int/hiv/v1.0.0
+Build is complete. Copy from C:\work\release\temp\web-root\run-20250708
+Update history page at C:\work\release\temp\web-root\run-20250708\hiv from C:\work\release\history-template and C:\work\release\webroot\templates
