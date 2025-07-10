@@ -1,0 +1,1890 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="ANCDT37"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">
+  <table class="narrative-table">
+    <tbody>
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">Metadata</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">ANC.DT.37 Intimate partner violence (IPV) first-line support and treatment</td>
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Version</th>
+
+
+<td class="content-container">0.3.0</td>
+</tr>
+
+
+
+
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">Identifier</th>
+
+
+<td class="content-container">ANC.DT.37</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Use Context</th>
+
+
+<td class="content-container"><span title="{http://terminology.hl7.org/CodeSystem/usage-context-type task}">Workflow Task</span> = <span title="Codes:{http://smart.who.int/anc/CodeSystem/activity-codes ANC.B10.}">Counselling, in-facility management &amp; treatment</span></td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Jurisdiction</th>
+
+
+<td class="content-container"><span title="Codes:{http://unstats.un.org/unsd/methods/m49/m49.htm 001}">Global (Whole world)</span></td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Steward (Publisher)</th>
+
+
+<td class="content-container">World Health Organization (WHO)</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Description</th>
+
+
+<td class="content-container"><div><p>Woman has been subjected to IPV</p>
+</div></td>
+</tr>
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Type</th>
+
+
+<td class="content-container"><span title="Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type eca-rule}">ECA Rule</span></td>
+</tr>
+
+
+
+
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">PlanDefinition Action</th>
+
+
+</tr>
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">ANC.DT.37 Intimate partner violence (IPV) first-line support and treatment</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Trigger Type</th>
+
+
+<td class="content-container">Named Event</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Trigger Name</th>
+
+
+<td class="content-container">ANC.B10. Counselling, in-facility management &amp; treatment – 8. IPV first-line support and care</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+      
+      
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">PlanDefinition Sub-Action (Parent Action Title: ANC.DT.37 Intimate partner violence (IPV) first-line support and treatment)</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Id</th>
+
+
+<td class="content-container">1</td>
+</tr>
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">Provide first-line support. Four (4) kinds of needs deserve attention:– Immediate emotional/psychological health needs– Immediate physical health needs– Ongoing safety needs– Ongoing support and mental health needs.</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Description</th>
+
+
+<td class="content-container">Provide first-line support. Four (4) kinds of needs deserve attention:– Immediate emotional/psychological health needs– Immediate physical health needs– Ongoing safety needs– Ongoing support and mental health needs.</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Human-interpretable Description</th>
+
+
+<td class="content-container">Conduct the following 5 tasks: 
+– Listen to the woman closely, with empathy, and without judging
+– Inquire about needs and concerns: assess and respond to her various needs and concerns – emotional, physical, social and practical (e.g. childcare)
+– Validate: show her that you understand and believe her; assure her that she is not to blame
+– Enhance saftey: discuss a plan to protect herself from further harm if violence occurs again
+– Support her by helping her connect to information, services and social support.</td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+  <th scope="row" class="row-header">Condition</th>
+  <td class="content-container">
+  <em>Kind</em>: Applicability
+  
+    <br/>
+    
+      
+      <em>Logic Definition</em>: <a href="#ancdt37-should-provide-first-line-support.-four-(4)-kinds-of-needs-deserve-attention:–-immediate-emotional/psychological-health-needs–-immediate-physical-health-needs–-ongoing-safety-needs–-ongoing-support-and-mental-health-needs.">Should Provide first-line support. Four (4) kinds of needs deserve attention:– Immediate emotional/psychological health needs– Immediate physical health needs– Ongoing safety needs– Ongoing support and mental health needs.</a> 
+    
+   
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+    
+    
+      
+      
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">PlanDefinition Sub-Action (Parent Action Title: ANC.DT.37 Intimate partner violence (IPV) first-line support and treatment)</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Id</th>
+
+
+<td class="content-container">2</td>
+</tr>
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">Ask the following questions:  -Has the physical violence happened more often or gotten worse over the past 6 months? - Has he ever used a weapon or threatened you with a weapon? - Has he ever tried to strangle you? - Do you believe he could kill you? - Has he ever beaten you when you were pregnant? - Is he violently and constantly jealous of you? </td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Description</th>
+
+
+<td class="content-container">Ask the following questions:  -Has the physical violence happened more often or gotten worse over the past 6 months? - Has he ever used a weapon or threatened you with a weapon? - Has he ever tried to strangle you? - Do you believe he could kill you? - Has he ever beaten you when you were pregnant? - Is he violently and constantly jealous of you? </td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Human-interpretable Description</th>
+
+
+<td class="content-container">If woman answers &quot;yes&quot; to at least 3 of the questions, the woman may be at high risk of violence /danger
+</td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+  <th scope="row" class="row-header">Condition</th>
+  <td class="content-container">
+  <em>Kind</em>: Applicability
+  
+    <br/>
+    
+      
+      <em>Logic Definition</em>: <a href="#ancdt37-should-ask-the-following-questions:---has-the-physical-violence-happened-more-often-or-gotten-worse-over-the-past-6-months?---has-he-ever-used-a-weapon-or-threatened-you-with-a-weapon?---has-he-ever-tried-to-strangle-you?---do-you-believe-he-could-kill-you?---has-he-ever-beaten-you-when-you-were-pregnant?---is-he-violently-and-constantly-jealous-of-you?-">Should Ask the following questions:  -Has the physical violence happened more often or gotten worse over the past 6 months? - Has he ever used a weapon or threatened you with a weapon? - Has he ever tried to strangle you? - Do you believe he could kill you? - Has he ever beaten you when you were pregnant? - Is he violently and constantly jealous of you? </a> 
+    
+   
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+    
+    
+      
+      
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">PlanDefinition Sub-Action (Parent Action Title: ANC.DT.37 Intimate partner violence (IPV) first-line support and treatment)</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Id</th>
+
+
+<td class="content-container">3</td>
+</tr>
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">If it is not safe for the woman to return home, make appropriate referrals for shelter or safe housing, or work with her to identify a safe place she can go to (such as a friend’s home or church).</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Description</th>
+
+
+<td class="content-container">If it is not safe for the woman to return home, make appropriate referrals for shelter or safe housing, or work with her to identify a safe place she can go to (such as a friend’s home or church).</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Human-interpretable Description</th>
+
+
+<td class="content-container">If it is not safe for the woman to return home, make appropriate referrals for shelter or safe housing, or work with her to identify a safe place she can go to (such as a friend’s home or church).</td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+  <th scope="row" class="row-header">Condition</th>
+  <td class="content-container">
+  <em>Kind</em>: Applicability
+  
+    <br/>
+    
+      
+      <em>Logic Definition</em>: <a href="#ancdt37-should-if-it-is-not-safe-for-the-woman-to-return-home,-make-appropriate-referrals-for-shelter-or-safe-housing,-or-work-with-her-to-identify-a-safe-place-she-can-go-to-(such-as-a-friend’s-home-or-church).">Should If it is not safe for the woman to return home, make appropriate referrals for shelter or safe housing, or work with her to identify a safe place she can go to (such as a friend’s home or church).</a> 
+    
+   
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+
+
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">PlanDefinition Logic</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Primary Library</th>
+
+
+<td class="content-container"><a href="Library-ANCDT37.html">ANC.DT.37 Intimate partner violence (IPV) first-line support and treatment</a></td>
+</tr>
+
+
+
+
+  
+  
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Library ContactData
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="Library-ANCContactDataElements.html">ANC Contact Data Elements</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/Library/ANCContactDataElements</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Library WC
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="Library-WHOCommon.html">WHO Common</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/Library/WHOCommon</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Library Cx
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="Library-ANCConcepts.html">ANC Concepts</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/Library/ANCConcepts</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Library FHIRHelpers
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <code>http://smart.who.int/anc/Library/FHIRHelpers|4.0.1</code>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/Library/FHIRHelpers|4.0.1</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Has the physical violence happened more often or gotten worse over the past 6 months
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b10-de217.html">Has the physical violence happened more often or gotten worse over the past 6 months</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b10-de217</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Has he ever used a weapon or threatened you with a weapon
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b10-de218.html">Has he ever used a weapon or threatened you with a weapon</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b10-de218</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Has he ever tried to strangle you
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b10-de219.html">Has he ever tried to strangle you</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b10-de219</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Do you believe he could kill you
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b10-de222.html">Do you believe he could kill you</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b10-de222</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Has he ever beaten you when you were pregnant
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b10-de220.html">Has he ever beaten you when you were pregnant</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b10-de220</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Is he violently and constantly jealous of you
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b10-de221.html">Is he violently and constantly jealous of you</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b10-de221</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Has the woman  been subjected to intimate partner violence
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b8-de128.html">Has the woman  been subjected to intimate partner violence</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b8-de128</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Safety assessement
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b10-de216.html">Safety assessement</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b10-de216</tt>
+    
+    
+    
+  </td>
+</tr>
+
+
+  
+  
+  
+<tr>
+  
+
+<th scope="row" class="row-header">Parameter</th>
+
+
+  <td class="content-container">
+    
+    <em>Name</em>: encounter
+    
+    
+    <br/>
+    
+    
+    <em>Use</em>: In
+    
+    
+    <br/>
+    
+    
+    <em>Min Cardinality</em>: 0
+    
+    
+    <br/>
+    
+    
+    <em>Max Cardinality</em>: 1
+    
+    
+    <br/>
+    
+    
+    <em>Type</em>: string
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Parameter</th>
+
+
+  <td class="content-container">
+    
+    <em>Name</em>: Should If it is not safe for the woman to return home, make appropriate referrals for shelter or safe housing, or work with her to identify a safe place she can go to (such as a friend’s home or church).
+    
+    
+    <br/>
+    
+    
+    <em>Use</em>: Out
+    
+    
+    <br/>
+    
+    
+    <em>Min Cardinality</em>: 0
+    
+    
+    <br/>
+    
+    
+    <em>Max Cardinality</em>: 1
+    
+    
+    <br/>
+    
+    
+    <em>Type</em>: boolean
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Parameter</th>
+
+
+  <td class="content-container">
+    
+    <em>Name</em>: Should Provide first-line support. Four (4) kinds of needs deserve attention:– Immediate emotional/psychological health needs– Immediate physical health needs– Ongoing safety needs– Ongoing support and mental health needs.
+    
+    
+    <br/>
+    
+    
+    <em>Use</em>: Out
+    
+    
+    <br/>
+    
+    
+    <em>Min Cardinality</em>: 0
+    
+    
+    <br/>
+    
+    
+    <em>Max Cardinality</em>: 1
+    
+    
+    <br/>
+    
+    
+    <em>Type</em>: boolean
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Parameter</th>
+
+
+  <td class="content-container">
+    
+    <em>Name</em>: Should Ask the following questions:  -Has the physical violence happened more often or gotten worse over the past 6 months? - Has he ever used a weapon or threatened you with a weapon? - Has he ever tried to strangle you? - Do you believe he could kill you? - Has he ever beaten you when you were pregnant? - Is he violently and constantly jealous of you? 
+    
+    
+    <br/>
+    
+    
+    <em>Use</em>: Out
+    
+    
+    <br/>
+    
+    
+    <em>Min Cardinality</em>: 0
+    
+    
+    <br/>
+    
+    
+    <em>Max Cardinality</em>: 1
+    
+    
+    <br/>
+    
+    
+    <em>Type</em>: boolean
+    
+  </td>
+</tr>
+
+  
+  
+  <tr>
+    <th colspan="2" scope="row" class="section-header"><a name="effective-data-requirements"> </a>PlanDefinition Logic Data Requirements</th>
+  </tr>
+  
+  
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, status, encounter, encounter.reference
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> <a href="ValueSet-anc-b10-de217.html">Has the physical violence happened more often or gotten worse over the past 6 months</a>
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, status, encounter, encounter.reference
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> <a href="ValueSet-anc-b10-de218.html">Has he ever used a weapon or threatened you with a weapon</a>
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, status, encounter, encounter.reference
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> <a href="ValueSet-anc-b10-de219.html">Has he ever tried to strangle you</a>
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, status, encounter, encounter.reference
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> <a href="ValueSet-anc-b10-de222.html">Do you believe he could kill you</a>
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, status, encounter, encounter.reference
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> <a href="ValueSet-anc-b10-de220.html">Has he ever beaten you when you were pregnant</a>
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, status, encounter, encounter.reference
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> <a href="ValueSet-anc-b10-de221.html">Is he violently and constantly jealous of you</a>
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, status, encounter, encounter.reference
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> <a href="ValueSet-anc-b8-de128.html">Has the woman  been subjected to intimate partner violence</a>
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, status, encounter, encounter.reference
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> <a href="ValueSet-anc-b10-de216.html">Safety assessement</a>
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+  
+  <tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+    Logic Definition
+  </th>
+
+</tr>
+<tr>
+
+</tr>
+
+  
+
+<tr>
+  <th colspan="2" scope="row" class="row-header">Generated using version 0.4.9-cibuild of the sample-content-ig Liquid templates</th>
+</tr>
+
+    </tbody>
+  </table>
+</div>
+  </text>
+  <contained>
+    <Library>
+      <id value="effective-data-requirements"/>
+      <name value="EffectiveDataRequirements"/>
+      <status value="active"/>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/library-type"/>
+          <code value="module-definition"/>
+        </coding>
+      </type>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Library ContactData"/>
+        <resource value="http://smart.who.int/anc/Library/ANCContactDataElements"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Library WC"/>
+        <resource value="http://smart.who.int/anc/Library/WHOCommon"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Library Cx"/>
+        <resource value="http://smart.who.int/anc/Library/ANCConcepts"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Library FHIRHelpers"/>
+        <resource value="http://smart.who.int/anc/Library/FHIRHelpers|4.0.1"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set Has the physical violence happened more often or gotten worse over the past 6 months"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b10-de217"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set Has he ever used a weapon or threatened you with a weapon"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b10-de218"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set Has he ever tried to strangle you"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b10-de219"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set Do you believe he could kill you"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b10-de222"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set Has he ever beaten you when you were pregnant"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b10-de220"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set Is he violently and constantly jealous of you"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b10-de221"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set Has the woman  been subjected to intimate partner violence"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b8-de128"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set Safety assessement"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b10-de216"/>
+      </relatedArtifact>
+      <parameter>
+        <name value="encounter"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="1"/>
+        <type value="string"/>
+      </parameter>
+      <parameter>
+        <name value="Should If it is not safe for the woman to return home, make appropriate referrals for shelter or safe housing, or work with her to identify a safe place she can go to (such as a friend’s home or church)."/>
+        <use value="out"/>
+        <min value="0"/>
+        <max value="1"/>
+        <type value="boolean"/>
+      </parameter>
+      <parameter>
+        <name value="Should Provide first-line support. Four (4) kinds of needs deserve attention:– Immediate emotional/psychological health needs– Immediate physical health needs– Ongoing safety needs– Ongoing support and mental health needs."/>
+        <use value="out"/>
+        <min value="0"/>
+        <max value="1"/>
+        <type value="boolean"/>
+      </parameter>
+      <parameter>
+        <name value="Should Ask the following questions:  -Has the physical violence happened more often or gotten worse over the past 6 months? - Has he ever used a weapon or threatened you with a weapon? - Has he ever tried to strangle you? - Do you believe he could kill you? - Has he ever beaten you when you were pregnant? - Is he violently and constantly jealous of you? "/>
+        <use value="out"/>
+        <min value="0"/>
+        <max value="1"/>
+        <type value="boolean"/>
+      </parameter>
+      <dataRequirement>
+        <type value="Observation"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+        <mustSupport value="code"/>
+        <mustSupport value="status"/>
+        <mustSupport value="encounter"/>
+        <mustSupport value="encounter.reference"/>
+        <codeFilter>
+          <path value="code"/>
+          <valueSet value="http://smart.who.int/anc/ValueSet/anc-b10-de217"/>
+        </codeFilter>
+      </dataRequirement>
+      <dataRequirement>
+        <type value="Observation"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+        <mustSupport value="code"/>
+        <mustSupport value="status"/>
+        <mustSupport value="encounter"/>
+        <mustSupport value="encounter.reference"/>
+        <codeFilter>
+          <path value="code"/>
+          <valueSet value="http://smart.who.int/anc/ValueSet/anc-b10-de218"/>
+        </codeFilter>
+      </dataRequirement>
+      <dataRequirement>
+        <type value="Observation"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+        <mustSupport value="code"/>
+        <mustSupport value="status"/>
+        <mustSupport value="encounter"/>
+        <mustSupport value="encounter.reference"/>
+        <codeFilter>
+          <path value="code"/>
+          <valueSet value="http://smart.who.int/anc/ValueSet/anc-b10-de219"/>
+        </codeFilter>
+      </dataRequirement>
+      <dataRequirement>
+        <type value="Observation"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+        <mustSupport value="code"/>
+        <mustSupport value="status"/>
+        <mustSupport value="encounter"/>
+        <mustSupport value="encounter.reference"/>
+        <codeFilter>
+          <path value="code"/>
+          <valueSet value="http://smart.who.int/anc/ValueSet/anc-b10-de222"/>
+        </codeFilter>
+      </dataRequirement>
+      <dataRequirement>
+        <type value="Observation"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+        <mustSupport value="code"/>
+        <mustSupport value="status"/>
+        <mustSupport value="encounter"/>
+        <mustSupport value="encounter.reference"/>
+        <codeFilter>
+          <path value="code"/>
+          <valueSet value="http://smart.who.int/anc/ValueSet/anc-b10-de220"/>
+        </codeFilter>
+      </dataRequirement>
+      <dataRequirement>
+        <type value="Observation"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+        <mustSupport value="code"/>
+        <mustSupport value="status"/>
+        <mustSupport value="encounter"/>
+        <mustSupport value="encounter.reference"/>
+        <codeFilter>
+          <path value="code"/>
+          <valueSet value="http://smart.who.int/anc/ValueSet/anc-b10-de221"/>
+        </codeFilter>
+      </dataRequirement>
+      <dataRequirement>
+        <type value="Observation"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+        <mustSupport value="code"/>
+        <mustSupport value="status"/>
+        <mustSupport value="encounter"/>
+        <mustSupport value="encounter.reference"/>
+        <codeFilter>
+          <path value="code"/>
+          <valueSet value="http://smart.who.int/anc/ValueSet/anc-b8-de128"/>
+        </codeFilter>
+      </dataRequirement>
+      <dataRequirement>
+        <type value="Observation"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+        <mustSupport value="code"/>
+        <mustSupport value="status"/>
+        <mustSupport value="encounter"/>
+        <mustSupport value="encounter.reference"/>
+        <codeFilter>
+          <path value="code"/>
+          <valueSet value="http://smart.who.int/anc/ValueSet/anc-b10-de216"/>
+        </codeFilter>
+      </dataRequirement>
+    </Library>
+  </contained>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCContactDataElements"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Has the physical violence happened more often or gotten worse over the past 6 months"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;  @dataElement: ANC.B10.DE217 Has the physical violence happened more often or gotten worse over the past 6 months&#xA;  @activity: ANC.B10.8 Intimate partner violence first-line support and care&#xA;  @description: Has the physical violence happened more often or gotten worse over the past 6 months?&#xA;*/&#xA;define &quot;Has the physical violence happened more often or gotten worse over the past 6 months&quot;:&#xA;  WC.Only(&#xA;  [Observation: Cx.&quot;Has the physical violence happened more often or gotten worse over the past 6 months&quot;] O&#xA;    where O.status in { 'final', 'amended', 'corrected' }&#xA;      and Coalesce(WC.ModifierExtension(O, 'who-notDone').value, false) is false&#xA;      and Last(Split(O.encounter.reference, '/')) = Last(Split(encounter, '/'))&#xA;  ).value as FHIR.boolean"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="0"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCContactDataElements"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Has he ever used a weapon or threatened you with a weapon"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;  @dataElement: ANC.B10.DE218 Has he ever used a weapon or threatened you with a weapon&#xA;  @activity: ANC.B10.8 Intimate partner violence first-line support and care&#xA;  @description: Has he ever used a weapon or threatened you with a weapon?&#xA;*/&#xA;define &quot;Has he ever used a weapon or threatened you with a weapon&quot;:&#xA;  WC.Only(&#xA;  [Observation: Cx.&quot;Has he ever used a weapon or threatened you with a weapon&quot;] O&#xA;    where O.status in { 'final', 'amended', 'corrected' }&#xA;      and Coalesce(WC.ModifierExtension(O, 'who-notDone').value, false) is false&#xA;      and Last(Split(O.encounter.reference, '/')) = Last(Split(encounter, '/'))&#xA;  ).value as FHIR.boolean"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="1"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCContactDataElements"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Has he ever tried to strangle you"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;  @dataElement: ANC.B10.DE219 Has he ever tried to strangle you&#xA;  @activity: ANC.B10.8 Intimate partner violence first-line support and care&#xA;  @description: Has he ever tried to strangle you?&#xA;*/&#xA;define &quot;Has he ever tried to strangle you&quot;:&#xA;  WC.Only(&#xA;  [Observation: Cx.&quot;Has he ever tried to strangle you&quot;] O&#xA;    where O.status in { 'final', 'amended', 'corrected' }&#xA;      and Coalesce(WC.ModifierExtension(O, 'who-notDone').value, false) is false&#xA;      and Last(Split(O.encounter.reference, '/')) = Last(Split(encounter, '/'))&#xA;  ).value as FHIR.boolean"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="2"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCContactDataElements"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Do you believe he could kill you"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;  @dataElement: ANC.B10.DE222 Do you believe he could kill you&#xA;  @activity: ANC.B10.8 Intimate partner violence first-line support and care&#xA;  @description: Do you believe he could kill you?&#xA;*/&#xA;define &quot;Do you believe he could kill you&quot;:&#xA;  WC.Only(&#xA;  [Observation: Cx.&quot;Do you believe he could kill you&quot;] O&#xA;    where O.status in { 'final', 'amended', 'corrected' }&#xA;      and Coalesce(WC.ModifierExtension(O, 'who-notDone').value, false) is false&#xA;      and Last(Split(O.encounter.reference, '/')) = Last(Split(encounter, '/'))&#xA;  ).value as FHIR.boolean"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="3"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCContactDataElements"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Has he ever beaten you when you were pregnant"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;  @dataElement: ANC.B10.DE220 Has he ever beaten you when you were pregnant&#xA;  @activity: ANC.B10.8 Intimate partner violence first-line support and care&#xA;  @description: Has he ever beaten you when you were pregnant?&#xA;*/&#xA;define &quot;Has he ever beaten you when you were pregnant&quot;:&#xA;  WC.Only(&#xA;  [Observation: Cx.&quot;Has he ever beaten you when you were pregnant&quot;] O&#xA;    where O.status in { 'final', 'amended', 'corrected' }&#xA;      and Coalesce(WC.ModifierExtension(O, 'who-notDone').value, false) is false&#xA;      and Last(Split(O.encounter.reference, '/')) = Last(Split(encounter, '/'))&#xA;  ).value as FHIR.boolean"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="4"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCContactDataElements"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Is he violently and constantly jealous of you"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;  @dataElement: ANC.B10.DE221 Is he violently and constantly jealous of you&#xA;  @activity: ANC.B10.8 Intimate partner violence first-line support and care&#xA;  @description: Is he violently and constantly jealous of you?&#xA;*/&#xA;define &quot;Is he violently and constantly jealous of you&quot;:&#xA;  WC.Only(&#xA;  [Observation: Cx.&quot;Is he violently and constantly jealous of you&quot;] O&#xA;    where O.status in { 'final', 'amended', 'corrected' }&#xA;      and Coalesce(WC.ModifierExtension(O, 'who-notDone').value, false) is false&#xA;      and Last(Split(O.encounter.reference, '/')) = Last(Split(encounter, '/'))&#xA;  ).value as FHIR.boolean"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="5"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCDT37"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Should If it is not safe for the woman to return home, make appropriate referrals for shelter or safe housing, or work with her to identify a safe place she can go to (such as a friend’s home or church)."/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;(&quot;Has the physical violence happened more often or gotten worse over the past 6 months?&quot;  = TRUE )&#xA;  AND (&quot;Has he ever used a weapon or threatened you with a weapon?&quot;  = TRUE )&#xA;  AND (&quot;Has he ever tried to strangle you?&quot;  = TRUE )&#xA;*/&#xA;define &quot;Should If it is not safe for the woman to return home, make appropriate referrals for shelter or safe housing, or work with her to identify a safe place she can go to (such as a friend’s home or church).&quot;:&#xA;  Count(({&#xA;    ContactData.&quot;Has the physical violence happened more often or gotten worse over the past 6 months&quot;,&#xA;    ContactData.&quot;Has he ever used a weapon or threatened you with a weapon&quot;,&#xA;    ContactData.&quot;Has he ever tried to strangle you&quot;,&#xA;    ContactData.&quot;Do you believe he could kill you&quot;,&#xA;    ContactData.&quot;Has he ever beaten you when you were pregnant&quot;,&#xA;    ContactData.&quot;Is he violently and constantly jealous of you&quot;&#xA;  }) O where O is true) &gt;= 3"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="6"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCContactDataElements"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Has the woman  been subjected to intimate partner violence"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;  @dataElement: ANC.B8.DE128 Has the woman  been subjected to intimate partner violence&#xA;  @activity: ANC.B7 Symptoms &amp; Follow-up&#xA;  @description: Whether the woman has been subjected to intimate partner violence&#xA;*/&#xA;define &quot;Has the woman  been subjected to intimate partner violence&quot;:&#xA;  WC.Only(&#xA;  [Observation: Cx.&quot;Has the woman  been subjected to intimate partner violence&quot;] O&#xA;    where O.status in { 'final', 'amended', 'corrected' }&#xA;      and Coalesce(WC.ModifierExtension(O, 'who-notDone').value, false) is false&#xA;      and Last(Split(O.encounter.reference, '/')) = Last(Split(encounter, '/'))&#xA;  ).value as FHIR.boolean"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="7"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCDT37"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Should Provide first-line support. Four (4) kinds of needs deserve attention:– Immediate emotional/psychological health needs– Immediate physical health needs– Ongoing safety needs– Ongoing support and mental health needs."/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;&quot;Has the woman been subjected to intimate partner violence&quot;=TRUE&#xA;*/&#xA;define &quot;Should Provide first-line support. Four (4) kinds of needs deserve attention:– Immediate emotional/psychological health needs– Immediate physical health needs– Ongoing safety needs– Ongoing support and mental health needs.&quot;:&#xA;  ContactData.&quot;Has the woman  been subjected to intimate partner violence&quot; is true"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="8"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCContactDataElements"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Safety assessement"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;  @dataElement: ANC.B10.DE216 Safety assessement&#xA;  @activity: ANC.B10.8 Intimate partner violence first-line support and care&#xA;  @description: Assess immediate risk of violence/danger&#xA;*/&#xA;define &quot;Safety assessement&quot;:&#xA;  WC.Only(&#xA;  [Observation: Cx.&quot;Safety assessement&quot;] O&#xA;    where O.status in { 'final', 'amended', 'corrected' }&#xA;      and Coalesce(WC.ModifierExtension(O, 'who-notDone').value, false) is false&#xA;      and Last(Split(O.encounter.reference, '/')) = Last(Split(encounter, '/'))&#xA;  ).value as FHIR.boolean"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="9"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCDT37"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Should Ask the following questions:  -Has the physical violence happened more often or gotten worse over the past 6 months? - Has he ever used a weapon or threatened you with a weapon? - Has he ever tried to strangle you? - Do you believe he could kill you? - Has he ever beaten you when you were pregnant? - Is he violently and constantly jealous of you? "/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;&quot;Safety assessement conducted&quot;=TRUE&#xA;*/&#xA;define &quot;Should Ask the following questions:  -Has the physical violence happened more often or gotten worse over the past 6 months? - Has he ever used a weapon or threatened you with a weapon? - Has he ever tried to strangle you? - Do you believe he could kill you? - Has he ever beaten you when you were pregnant? - Is he violently and constantly jealous of you? &quot;:&#xA;  ContactData.&quot;Safety assessement&quot; is true"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="10"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="WHOCommon"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Only"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="define function Only(observations List&lt;Observation&gt;):&#xA;  singleton from observations"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="11"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="FHIRHelpers"/>
+    </extension>
+    <extension url="name">
+      <valueString value="ToString"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="define function ToString(value ObservationStatus): value.value"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="12"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="FHIRHelpers"/>
+    </extension>
+    <extension url="name">
+      <valueString value="ToBoolean"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="define function ToBoolean(value boolean): value.value"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="13"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="WHOCommon"/>
+    </extension>
+    <extension url="name">
+      <valueString value="ModifierExtension"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;@description: Returns the single WHO core modifier extension (if present) on the given resource with the specified id.&#xA;@comment: This function uses singleton from to ensure that a run-time exception is thrown if there&#xA;is more than one extension on the given resource with the specified url.&#xA;*/&#xA;define function ModifierExtension(domainResource DomainResource, id String):&#xA;  singleton from ModifierExtensions(domainResource, id)"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="14"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="WHOCommon"/>
+    </extension>
+    <extension url="name">
+      <valueString value="ModifierExtensions"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;@description: Returns any WHO core modifier extensions defined on the given resource with the specified id.&#xA;@comment: NOTE: Extensions are not the preferred approach, but are used as a way to access&#xA;content that is defined by extensions but not yet surfaced in the&#xA;CQL model info.&#xA;*/&#xA;define function ModifierExtensions(domainResource DomainResource, id String):&#xA;  domainResource.modifierExtension E&#xA;&#x9;  where E.url = ('http://fhir.org/guides/who/core/StructureDefinition/' + id)&#xA;&#x9;&#x9;return E"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="15"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="FHIRHelpers"/>
+    </extension>
+    <extension url="name">
+      <valueString value="ToString"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="define function ToString(value uri): value.value"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="16"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="FHIRHelpers"/>
+    </extension>
+    <extension url="name">
+      <valueString value="ToString"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="define function ToString(value string): value.value"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="17"/>
+    </extension>
+  </extension>
+  <extension id="effective-data-requirements" url="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements">
+    <valueCanonical value="#effective-data-requirements"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-softwaresystem">
+    <valueReference>
+      <reference value="Device/cqf-tooling"/>
+    </valueReference>
+  </extension>
+  <url value="http://smart.who.int/anc/PlanDefinition/ANCDT37"/>
+  <identifier>
+    <use value="official"/>
+    <value value="ANC.DT.37"/>
+  </identifier>
+  <version value="0.3.0"/>
+  <name value="ANCDT37"/>
+  <title value="ANC.DT.37 Intimate partner violence (IPV) first-line support and treatment"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="eca-rule"/>
+    </coding>
+  </type>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-06-24T13:58:48-06:00"/>
+  <publisher value="World Health Organization (WHO)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.who.int"/>
+    </telecom>
+  </contact>
+  <description value="Woman has been subjected to IPV"/>
+  <useContext>
+    <code>
+      <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+      <code value="task"/>
+      <display value="Workflow Task"/>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://smart.who.int/anc/CodeSystem/activity-codes"/>
+        <code value="ANC.B10."/>
+        <display value="Counselling, in-facility management &amp; treatment"/>
+      </coding>
+    </valueCodeableConcept>
+  </useContext>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <library value="http://smart.who.int/anc/Library/ANCDT37"/>
+  <action>
+    <title value="ANC.DT.37 Intimate partner violence (IPV) first-line support and treatment"/>
+    <trigger>
+      <type value="named-event"/>
+      <name value="ANC.B10. Counselling, in-facility management &amp; treatment – 8. IPV first-line support and care"/>
+    </trigger>
+    <action id="1">
+      <title value="Provide first-line support. Four (4) kinds of needs deserve attention:– Immediate emotional/psychological health needs– Immediate physical health needs– Ongoing safety needs– Ongoing support and mental health needs."/>
+      <description value="Provide first-line support. Four (4) kinds of needs deserve attention:– Immediate emotional/psychological health needs– Immediate physical health needs– Ongoing safety needs– Ongoing support and mental health needs."/>
+      <textEquivalent value="Conduct the following 5 tasks: &#xA;– Listen to the woman closely, with empathy, and without judging&#xA;– Inquire about needs and concerns: assess and respond to her various needs and concerns – emotional, physical, social and practical (e.g. childcare)&#xA;– Validate: show her that you understand and believe her; assure her that she is not to blame&#xA;– Enhance saftey: discuss a plan to protect herself from further harm if violence occurs again&#xA;– Support her by helping her connect to information, services and social support."/>
+      <documentation>
+        <type value="citation"/>
+        <label value="IPV handbook (2014) (15)"/>
+      </documentation>
+      <condition>
+        <kind value="applicability"/>
+        <expression>
+          <description value="&quot;Has the woman  been subjected to intimate partner violence&quot;=TRUE"/>
+          <language value="text/cql-identifier"/>
+          <expression value="Should Provide first-line support. Four (4) kinds of needs deserve attention:– Immediate emotional/psychological health needs– Immediate physical health needs– Ongoing safety needs– Ongoing support and mental health needs."/>
+        </expression>
+      </condition>
+    </action>
+    <action id="2">
+      <title value="Ask the following questions:  -Has the physical violence happened more often or gotten worse over the past 6 months? - Has he ever used a weapon or threatened you with a weapon? - Has he ever tried to strangle you? - Do you believe he could kill you? - Has he ever beaten you when you were pregnant? - Is he violently and constantly jealous of you? "/>
+      <description value="Ask the following questions:  -Has the physical violence happened more often or gotten worse over the past 6 months? - Has he ever used a weapon or threatened you with a weapon? - Has he ever tried to strangle you? - Do you believe he could kill you? - Has he ever beaten you when you were pregnant? - Is he violently and constantly jealous of you? "/>
+      <textEquivalent value="If woman answers &quot;yes&quot; to at least 3 of the questions, the woman may be at high risk of violence /danger&#xA;"/>
+      <documentation>
+        <type value="citation"/>
+      </documentation>
+      <condition>
+        <kind value="applicability"/>
+        <expression>
+          <description value="&quot;Safety assessement conducted&quot;=TRUE"/>
+          <language value="text/cql-identifier"/>
+          <expression value="Should Ask the following questions:  -Has the physical violence happened more often or gotten worse over the past 6 months? - Has he ever used a weapon or threatened you with a weapon? - Has he ever tried to strangle you? - Do you believe he could kill you? - Has he ever beaten you when you were pregnant? - Is he violently and constantly jealous of you? "/>
+        </expression>
+      </condition>
+    </action>
+    <action id="3">
+      <title value="If it is not safe for the woman to return home, make appropriate referrals for shelter or safe housing, or work with her to identify a safe place she can go to (such as a friend’s home or church)."/>
+      <description value="If it is not safe for the woman to return home, make appropriate referrals for shelter or safe housing, or work with her to identify a safe place she can go to (such as a friend’s home or church)."/>
+      <textEquivalent value="If it is not safe for the woman to return home, make appropriate referrals for shelter or safe housing, or work with her to identify a safe place she can go to (such as a friend’s home or church)."/>
+      <documentation>
+        <type value="citation"/>
+      </documentation>
+      <condition>
+        <kind value="applicability"/>
+        <expression>
+          <description value="(&quot;Has the physical violence happened more often or gotten worse over the past 6 months?&quot;  = TRUE )&#xA;  AND (&quot;Has he ever used a weapon or threatened you with a weapon?&quot;  = TRUE )&#xA;  AND (&quot;Has he ever tried to strangle you?&quot;  = TRUE )"/>
+          <language value="text/cql-identifier"/>
+          <expression value="Should If it is not safe for the woman to return home, make appropriate referrals for shelter or safe housing, or work with her to identify a safe place she can go to (such as a friend’s home or church)."/>
+        </expression>
+      </condition>
+    </action>
+  </action>
+</PlanDefinition>

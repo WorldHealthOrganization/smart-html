@@ -1,0 +1,2280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="ANCDT29"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">
+  <table class="narrative-table">
+    <tbody>
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">Metadata</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">ANC.DT.29 HIV risk counselling</td>
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Version</th>
+
+
+<td class="content-container">0.3.0</td>
+</tr>
+
+
+
+
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">Identifier</th>
+
+
+<td class="content-container">ANC.DT.29</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Use Context</th>
+
+
+<td class="content-container"><span title="{http://terminology.hl7.org/CodeSystem/usage-context-type task}">Workflow Task</span> = <span title="Codes:{http://smart.who.int/anc/CodeSystem/activity-codes ANC.B9.}">Conduct laboratory tests and imaging</span></td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Jurisdiction</th>
+
+
+<td class="content-container"><span title="Codes:{http://unstats.un.org/unsd/methods/m49/m49.htm 001}">Global (Whole world)</span></td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Steward (Publisher)</th>
+
+
+<td class="content-container">World Health Organization (WHO)</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Description</th>
+
+
+<td class="content-container"><div><p>If the woman has risk factors for contracting HIV, provide counselling to reduce risk of contracting HIV</p>
+</div></td>
+</tr>
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Type</th>
+
+
+<td class="content-container"><span title="Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type eca-rule}">ECA Rule</span></td>
+</tr>
+
+
+
+
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">PlanDefinition Action</th>
+
+
+</tr>
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">ANC.DT.29 HIV risk counselling</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Trigger Type</th>
+
+
+<td class="content-container">Named Event</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Trigger Name</th>
+
+
+<td class="content-container">ANC.B9. Conduct laboratory tests and imaging</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+      
+      
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">PlanDefinition Sub-Action (Parent Action Title: ANC.DT.29 HIV risk counselling)</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Id</th>
+
+
+<td class="content-container">1</td>
+</tr>
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">Conduct counselling on HIV risk</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Description</th>
+
+
+<td class="content-container">Conduct counselling on HIV risk</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Human-interpretable Description</th>
+
+
+<td class="content-container">If the woman lives in a setting with a generalized HIV epidemic, or her partner is HIV positive, or she injects drugs, or she is a sex worker, then she is at high risk for HIV – counselling should be given to provide prevention options
+
+Provide comprehensive HIV prevention options: 
+– STI screening and treatment (syndromic and syphilis)
+– Condom promotion
+– Risk reduction counselling
+– Pre-exposure prophylaxis (PrEP) with emphasis on adherence
+– Emphasize importance of follow-up ANC contact visits</td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+  <th scope="row" class="row-header">Condition</th>
+  <td class="content-container">
+  <em>Kind</em>: Applicability
+  
+    <br/>
+    
+      
+      <em>Logic Definition</em>: <a href="#ancdt29-should-conduct-counselling-on-hiv-risk">Should Conduct counselling on HIV risk</a> 
+    
+   
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+    
+    
+      
+      
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">PlanDefinition Sub-Action (Parent Action Title: ANC.DT.29 HIV risk counselling)</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Id</th>
+
+
+<td class="content-container">2</td>
+</tr>
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">Conduct counselling on pre-exposure prophylaxis (PrEP) for HIV prevention</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Description</th>
+
+
+<td class="content-container">Conduct counselling on pre-exposure prophylaxis (PrEP) for HIV prevention</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Human-interpretable Description</th>
+
+
+<td class="content-container">Oral pre-exposure prophylaxis (PrEP) containing tenofovir disoproxil fumarate (TDF) should be offered as an additional prevention choice for pregnant women at substantial risk of HIV infection as part of combination prevention approaches.
+
+See &quot;PrEP offering framework&quot; – a suggested prioritization framework for offering PrEP to pregnant and breastfeeding women (below).</td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+  <th scope="row" class="row-header">Condition</th>
+  <td class="content-container">
+  <em>Kind</em>: Applicability
+  
+    <br/>
+    
+      
+      <em>Logic Definition</em>: <a href="#ancdt29-should-conduct-counselling-on-pre-exposure-prophylaxis-(prep)-for-hiv-prevention">Should Conduct counselling on pre-exposure prophylaxis (PrEP) for HIV prevention</a> 
+    
+   
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+    
+    
+      
+      
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">PlanDefinition Sub-Action (Parent Action Title: ANC.DT.29 HIV risk counselling)</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Id</th>
+
+
+<td class="content-container">3</td>
+</tr>
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">Conduct counselling on HIV risk</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Description</th>
+
+
+<td class="content-container">Conduct counselling on HIV risk 2</td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Human-interpretable Description</th>
+
+
+<td class="content-container">Encourage woman to find out the status of her partner(s) or to bring them during the next contact visit to get tested</td>
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+  <th scope="row" class="row-header">Condition</th>
+  <td class="content-container">
+  <em>Kind</em>: Applicability
+  
+    <br/>
+    
+      
+      <em>Logic Definition</em>: <a href="#ancdt29-should-conduct-counselling-on-hiv-risk-2">Should Conduct counselling on HIV risk 2</a> 
+    
+   
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+      
+      
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">PlanDefinition Sub-Action (Parent Action ID: 3)</th>
+
+
+</tr>
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">Conduct counselling on HIV risk</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+      
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">PlanDefinition Sub-Action</th>
+
+
+</tr>
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">Conduct counselling on HIV risk</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+    
+      
+      
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">PlanDefinition Sub-Action (Parent Action ID: 3)</th>
+
+
+</tr>
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">Recommended partner HIV test</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+      
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">PlanDefinition Sub-Action</th>
+
+
+</tr>
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">Recommended partner HIV test</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+    
+  
+
+
+
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">PlanDefinition Logic</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Primary Library</th>
+
+
+<td class="content-container"><a href="Library-ANCDT29.html">ANC.DT.29 HIV risk counselling</a></td>
+</tr>
+
+
+
+
+  
+  
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Library FHIRHelpers
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <code>http://smart.who.int/anc/Library/FHIRHelpers|4.0.1</code>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/Library/FHIRHelpers|4.0.1</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Library ContactData
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="Library-ANCContactDataElements.html">ANC Contact Data Elements</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/Library/ANCContactDataElements</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Library WC
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="Library-WHOCommon.html">WHO Common</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/Library/WHOCommon</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Library Cx
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="Library-ANCConcepts.html">ANC Concepts</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/Library/ANCConcepts</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Library Config
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="Library-ANCConfig.html">ANC Configuration</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/Library/ANCConfig</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Library BaseDataElements
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="Library-ANCBaseDataElements.html">ANC Base Data Elements</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/Library/ANCBaseDataElements</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Library AC
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="Library-ANCCommon.html">WHO Antenatal Care Guidelines Common Logic</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/Library/ANCCommon</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Partner HIV status (reported)
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b6-de156.html">Partner HIV status (reported)</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b6-de156</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Partner HIV status (reported) - Inconclusive Choices
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b6-de159.html">Partner HIV status (reported) - Inconclusive Choices</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b6-de159</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Partner HIV test result
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b9-de48.html">Partner HIV test result</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b9-de48</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set HIV status
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b9-de45.html">HIV status</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b9-de45</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set HIV status - HIV negative Choices
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b9-de47.html">HIV status - HIV negative Choices</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b9-de47</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Partner HIV status (reported) - HIV Positive Choices
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b6-de157.html">Partner HIV status (reported) - HIV Positive Choices</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b6-de157</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Partner HIV test result - Partner HIV positive Choices
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b9-de52.html">Partner HIV test result - Partner HIV positive Choices</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b9-de52</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Partner HIV status (confirmed)
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b9-de55.html">Partner HIV status (confirmed)</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b9-de55</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Partner HIV status (confirmed) - HIV positive Choices
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b9-de56.html">Partner HIV status (confirmed) - HIV positive Choices</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b9-de56</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Current alcohol and/or other substance use
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b6-de146.html">Current alcohol and/or other substance use</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b6-de146</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Current alcohol and/or other substance use - Injectable drugs Choices
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b6-de150.html">Current alcohol and/or other substance use - Injectable drugs Choices</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b6-de150</tt>
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Occupation - Employment that puts woman at increased risk for HIV (e.g. sex worker) Choices
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: <a href="ValueSet-anc-b6-de11.html">Occupation - Employment that puts woman at increased risk for HIV (e.g. sex worker) Choices</a>
+    <br/>
+    <em>Canonical URL</em>: <tt>http://smart.who.int/anc/ValueSet/anc-b6-de11</tt>
+    
+    
+    
+  </td>
+</tr>
+
+
+  
+  
+  
+<tr>
+  
+
+<th scope="row" class="row-header">Parameter</th>
+
+
+  <td class="content-container">
+    
+    <em>Name</em>: encounter
+    
+    
+    <br/>
+    
+    
+    <em>Use</em>: In
+    
+    
+    <br/>
+    
+    
+    <em>Min Cardinality</em>: 0
+    
+    
+    <br/>
+    
+    
+    <em>Max Cardinality</em>: 1
+    
+    
+    <br/>
+    
+    
+    <em>Type</em>: string
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Parameter</th>
+
+
+  <td class="content-container">
+    
+    <em>Name</em>: Should Conduct counselling on HIV risk 2
+    
+    
+    <br/>
+    
+    
+    <em>Use</em>: Out
+    
+    
+    <br/>
+    
+    
+    <em>Min Cardinality</em>: 0
+    
+    
+    <br/>
+    
+    
+    <em>Max Cardinality</em>: 1
+    
+    
+    <br/>
+    
+    
+    <em>Type</em>: boolean
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Parameter</th>
+
+
+  <td class="content-container">
+    
+    <em>Name</em>: Should Conduct counselling on HIV risk
+    
+    
+    <br/>
+    
+    
+    <em>Use</em>: Out
+    
+    
+    <br/>
+    
+    
+    <em>Min Cardinality</em>: 0
+    
+    
+    <br/>
+    
+    
+    <em>Max Cardinality</em>: 1
+    
+    
+    <br/>
+    
+    
+    <em>Type</em>: boolean
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Parameter</th>
+
+
+  <td class="content-container">
+    
+    <em>Name</em>: Should Conduct counselling on pre-exposure prophylaxis (PrEP) for HIV prevention
+    
+    
+    <br/>
+    
+    
+    <em>Use</em>: Out
+    
+    
+    <br/>
+    
+    
+    <em>Min Cardinality</em>: 0
+    
+    
+    <br/>
+    
+    
+    <em>Max Cardinality</em>: 1
+    
+    
+    <br/>
+    
+    
+    <em>Type</em>: boolean
+    
+  </td>
+</tr>
+
+  
+  
+  <tr>
+    <th colspan="2" scope="row" class="section-header"><a name="effective-data-requirements"> </a>PlanDefinition Logic Data Requirements</th>
+  </tr>
+  
+  
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, status, encounter, encounter.reference
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> <a href="ValueSet-anc-b6-de156.html">Partner HIV status (reported)</a>
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, status, encounter, encounter.reference
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> <a href="ValueSet-anc-b9-de48.html">Partner HIV test result</a>
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, status, encounter, encounter.reference
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> <a href="ValueSet-anc-b9-de45.html">HIV status</a>
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, status, encounter, encounter.reference
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> <a href="ValueSet-anc-b9-de55.html">Partner HIV status (confirmed)</a>
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, status, encounter, encounter.reference, value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> <a href="ValueSet-anc-b6-de146.html">Current alcohol and/or other substance use</a>
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Patient
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    <a href="http://hl7.org/fhir/R4/patient.html">Patient</a>
+    <br/>        
+  
+   
+   
+   
+  </td>
+</tr>
+
+  
+  <tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+    Logic Definition
+  </th>
+
+</tr>
+<tr>
+
+</tr>
+
+  
+
+<tr>
+  <th colspan="2" scope="row" class="row-header">Generated using version 0.4.9-cibuild of the sample-content-ig Liquid templates</th>
+</tr>
+
+    </tbody>
+  </table>
+</div>
+  </text>
+  <contained>
+    <Library>
+      <id value="effective-data-requirements"/>
+      <name value="EffectiveDataRequirements"/>
+      <status value="active"/>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/library-type"/>
+          <code value="module-definition"/>
+        </coding>
+      </type>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Library FHIRHelpers"/>
+        <resource value="http://smart.who.int/anc/Library/FHIRHelpers|4.0.1"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Library ContactData"/>
+        <resource value="http://smart.who.int/anc/Library/ANCContactDataElements"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Library WC"/>
+        <resource value="http://smart.who.int/anc/Library/WHOCommon"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Library Cx"/>
+        <resource value="http://smart.who.int/anc/Library/ANCConcepts"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Library Config"/>
+        <resource value="http://smart.who.int/anc/Library/ANCConfig"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Library BaseDataElements"/>
+        <resource value="http://smart.who.int/anc/Library/ANCBaseDataElements"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Library AC"/>
+        <resource value="http://smart.who.int/anc/Library/ANCCommon"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set Partner HIV status (reported)"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b6-de156"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set Partner HIV status (reported) - Inconclusive Choices"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b6-de159"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set Partner HIV test result"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b9-de48"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set HIV status"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b9-de45"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set HIV status - HIV negative Choices"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b9-de47"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set Partner HIV status (reported) - HIV Positive Choices"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b6-de157"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set Partner HIV test result - Partner HIV positive Choices"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b9-de52"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set Partner HIV status (confirmed)"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b9-de55"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set Partner HIV status (confirmed) - HIV positive Choices"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b9-de56"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set Current alcohol and/or other substance use"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b6-de146"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set Current alcohol and/or other substance use - Injectable drugs Choices"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b6-de150"/>
+      </relatedArtifact>
+      <relatedArtifact>
+        <type value="depends-on"/>
+        <display value="Value set Occupation - Employment that puts woman at increased risk for HIV (e.g. sex worker) Choices"/>
+        <resource value="http://smart.who.int/anc/ValueSet/anc-b6-de11"/>
+      </relatedArtifact>
+      <parameter>
+        <name value="encounter"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="1"/>
+        <type value="string"/>
+      </parameter>
+      <parameter>
+        <name value="Should Conduct counselling on HIV risk 2"/>
+        <use value="out"/>
+        <min value="0"/>
+        <max value="1"/>
+        <type value="boolean"/>
+      </parameter>
+      <parameter>
+        <name value="Should Conduct counselling on HIV risk"/>
+        <use value="out"/>
+        <min value="0"/>
+        <max value="1"/>
+        <type value="boolean"/>
+      </parameter>
+      <parameter>
+        <name value="Should Conduct counselling on pre-exposure prophylaxis (PrEP) for HIV prevention"/>
+        <use value="out"/>
+        <min value="0"/>
+        <max value="1"/>
+        <type value="boolean"/>
+      </parameter>
+      <dataRequirement>
+        <type value="Observation"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+        <mustSupport value="code"/>
+        <mustSupport value="status"/>
+        <mustSupport value="encounter"/>
+        <mustSupport value="encounter.reference"/>
+        <codeFilter>
+          <path value="code"/>
+          <valueSet value="http://smart.who.int/anc/ValueSet/anc-b6-de156"/>
+        </codeFilter>
+      </dataRequirement>
+      <dataRequirement>
+        <type value="Observation"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+        <mustSupport value="code"/>
+        <mustSupport value="status"/>
+        <mustSupport value="encounter"/>
+        <mustSupport value="encounter.reference"/>
+        <codeFilter>
+          <path value="code"/>
+          <valueSet value="http://smart.who.int/anc/ValueSet/anc-b9-de48"/>
+        </codeFilter>
+      </dataRequirement>
+      <dataRequirement>
+        <type value="Observation"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+        <mustSupport value="code"/>
+        <mustSupport value="status"/>
+        <mustSupport value="encounter"/>
+        <mustSupport value="encounter.reference"/>
+        <codeFilter>
+          <path value="code"/>
+          <valueSet value="http://smart.who.int/anc/ValueSet/anc-b9-de45"/>
+        </codeFilter>
+      </dataRequirement>
+      <dataRequirement>
+        <type value="Observation"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+        <mustSupport value="code"/>
+        <mustSupport value="status"/>
+        <mustSupport value="encounter"/>
+        <mustSupport value="encounter.reference"/>
+        <codeFilter>
+          <path value="code"/>
+          <valueSet value="http://smart.who.int/anc/ValueSet/anc-b9-de55"/>
+        </codeFilter>
+      </dataRequirement>
+      <dataRequirement>
+        <type value="Observation"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+        <mustSupport value="code"/>
+        <mustSupport value="status"/>
+        <mustSupport value="encounter"/>
+        <mustSupport value="encounter.reference"/>
+        <mustSupport value="value"/>
+        <codeFilter>
+          <path value="code"/>
+          <valueSet value="http://smart.who.int/anc/ValueSet/anc-b6-de146"/>
+        </codeFilter>
+      </dataRequirement>
+      <dataRequirement>
+        <type value="Patient"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+      </dataRequirement>
+    </Library>
+  </contained>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCContactDataElements"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Partner HIV status (reported)"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;  @dataElement: ANC.B6.DE156 Partner HIV status (reported)&#xA;  @activity: ANC.B6 Profile&#xA;  @description: The HIV status of the woman's partner&#xA;*/&#xA;define &quot;Partner HIV status (reported)&quot;:&#xA;  WC.Only(&#xA;  [Observation: Cx.&quot;Partner HIV status (reported)&quot;] O&#xA;    where O.status in { 'final', 'amended', 'corrected' }&#xA;      and Coalesce(WC.ModifierExtension(O, 'who-notDone').value, false) is false&#xA;      and Last(Split(O.encounter.reference, '/')) = Last(Split(encounter, '/'))&#xA;  ).value as FHIR.CodeableConcept"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="0"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCContactDataElements"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Partner HIV test result"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;  @dataElement: ANC.B9.DE48 Partner HIV test result&#xA;  @activity: ANC.B9 Lab tests &amp; imaging&#xA;  @description: Select the result of her partner's HIV test&#xA;*/&#xA;define &quot;Partner HIV test result&quot;:&#xA;  WC.Only(&#xA;  [Observation: Cx.&quot;Partner HIV test result&quot;] O&#xA;    where O.status in { 'final', 'amended', 'corrected' }&#xA;      and Coalesce(WC.ModifierExtension(O, 'who-notDone').value, false) is false&#xA;      and Last(Split(O.encounter.reference, '/')) = Last(Split(encounter, '/'))&#xA;  ).value as FHIR.CodeableConcept"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="1"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCDT29"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Should Conduct counselling on HIV risk 2"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;(&quot;Partner HIV status (reported)&quot; = &quot;Inconclusive&quot;)&#xA;  OR (&quot;Partner HIV test conducted&quot; = FALSE)&#xA;*/&#xA;define &quot;Should Conduct counselling on HIV risk 2&quot;:&#xA;  ContactData.&quot;Partner HIV status (reported)&quot; in Cx.&quot;Partner HIV status (reported) - Inconclusive Choices&quot;&#xA;    or ContactData.&quot;Partner HIV test result&quot; is null"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="2"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCContactDataElements"/>
+    </extension>
+    <extension url="name">
+      <valueString value="HIV status"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;  @dataElement: ANC.B9.DE45 HIV status&#xA;  @activity: ANC.B9 Lab tests &amp; imaging&#xA;  @description: Calculated field for woman's HIV status&#xA;*/&#xA;define &quot;HIV status&quot;:&#xA;  WC.Only(&#xA;  [Observation: Cx.&quot;HIV status&quot;] O&#xA;    where O.status in { 'final', 'amended', 'corrected' }&#xA;      and Coalesce(WC.ModifierExtension(O, 'who-notDone').value, false) is false&#xA;      and Last(Split(O.encounter.reference, '/')) = Last(Split(encounter, '/'))&#xA;  ).value as FHIR.CodeableConcept"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="3"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCConfig"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Prevalence of HIV in pregnant women in the catchment area"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;  Description: The proportion of pregnant women in the health-care facility's&#xA;    catchment area who are HIV positive, based on the number of pregnant&#xA;    women attending antenatal clinics at the health-care facility&#xA;*/&#xA;define &quot;Prevalence of HIV in pregnant women in the catchment area&quot;:&#xA;  2 '%'"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="4"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCContactDataElements"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Partner HIV status (confirmed)"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;  @dataElement: ANC.B9.DE55 Partner HIV status (confirmed)&#xA;  @activity: ANC.B9 Lab tests &amp; imaging&#xA;  @description: Partner's confirmed HIV status&#xA;*/&#xA;define &quot;Partner HIV status (confirmed)&quot;:&#xA;  WC.Only(&#xA;  [Observation: Cx.&quot;Partner HIV status (confirmed)&quot;] O&#xA;    where O.status in { 'final', 'amended', 'corrected' }&#xA;      and Coalesce(WC.ModifierExtension(O, 'who-notDone').value, false) is false&#xA;      and Last(Split(O.encounter.reference, '/')) = Last(Split(encounter, '/'))&#xA;  ).value as FHIR.CodeableConcept"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="5"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCContactDataElements"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Current alcohol and/or other substance use"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;  @dataElement: ANC.B6.DE146 Current alcohol and/or other substance use&#xA;  @activity: ANC.B6 Profile&#xA;  @description: Whether or not the woman currently consumes any alcohol or substances&#xA;*/&#xA;define &quot;Current alcohol and/or other substance use&quot;:&#xA;  [Observation: Cx.&quot;Current alcohol and/or other substance use&quot;] O&#xA;    where O.status in { 'final', 'amended', 'corrected' }&#xA;      and Coalesce(WC.ModifierExtension(O, 'who-notDone').value, false) is false&#xA;      and Last(Split(O.encounter.reference, '/')) = Last(Split(encounter, '/'))&#xA;    return O.value as FHIR.CodeableConcept"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="6"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCBaseDataElements"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Patient Occupation"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;@description: The patient's occupation&#xA;*/&#xA;define &quot;Patient Occupation&quot;:&#xA;  [Patient] P&#xA;    return (AC.Extension(P, 'occupation')).value as CodeableConcept"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="7"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCDT29"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Should Conduct counselling on HIV risk"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;((((((&quot;HIV status&quot; = &quot;HIV negative&quot;)&#xA;  AND (&quot;Prevalence of HIV in pregnant women in the catchment area&quot; &gt; 1%))&#xA;  OR ((&quot;HIV status&quot; = &quot;HIV negative&quot;)&#xA;  AND (&quot;Partner HIV status (reported)&quot; = &quot;HIV positive&quot;)))&#xA;  OR ((&quot;HIV status&quot; = &quot;HIV negative&quot;)&#xA;  AND (&quot;Partner HIV test result&quot; = HIV positive&quot;)))&#xA;  OR ((&quot;HIV status&quot; = &quot;HIV negative&quot;)&#xA;  AND (Partner HIV status (confirmed)&quot; = &quot;HIV positive&quot;)))&#xA;  OR ((&quot;HIV status&quot; = &quot;HIV negative&quot;)&#xA;  AND (Current alcohol and/or other substance use&quot; = &quot;Injectable drugs&quot;)))&#xA;  OR ((&quot;HIV status&quot; = &quot;HIV negative&quot;)&#xA;  AND (&quot;Occupation&quot; = &quot;Employment that puts woman at increased risk for HIV (e.g. sex worker)&quot;))&#xA;*/&#xA;define &quot;Should Conduct counselling on HIV risk&quot;:&#xA;  ContactData.&quot;HIV status&quot; in Cx.&quot;HIV status - HIV negative Choices&quot;&#xA;    and (&#xA;      Config.&quot;Prevalence of HIV in pregnant women in the catchment area&quot; &gt; 1 '%'&#xA;        or ContactData.&quot;Partner HIV status (reported)&quot; in Cx.&quot;Partner HIV status (reported) - HIV Positive Choices&quot;&#xA;        or ContactData.&quot;Partner HIV test result&quot; in Cx.&quot;Partner HIV test result - Partner HIV positive Choices&quot;&#xA;        or ContactData.&quot;Partner HIV status (confirmed)&quot; in Cx.&quot;Partner HIV status (confirmed) - HIV positive Choices&quot;&#xA;        or ContactData.&quot;Current alcohol and/or other substance use&quot; in Cx.&quot;Current alcohol and/or other substance use - Injectable drugs Choices&quot;&#xA;        or BaseDataElements.&quot;Patient Occupation&quot; in Cx.&quot;Occupation - Employment that puts woman at increased risk for HIV (e.g. sex worker) Choices&quot;&#xA;    )"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="8"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCConfig"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Population incidence of HIV in the absence of PrEP"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;  Description: HIV incidence number of cases per 100 person-years&#xA;*/&#xA;define &quot;Population incidence of HIV in the absence of PrEP&quot;:&#xA;  System.Quantity { value: 4, unit: '{Person-years}' }"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="9"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCDT29"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Should Conduct counselling on pre-exposure prophylaxis (PrEP) for HIV prevention"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;&quot;Population incidence of HIV in the absence of PrEP&quot; &gt; 3 per 100 person-years&#xA;*/&#xA;define &quot;Should Conduct counselling on pre-exposure prophylaxis (PrEP) for HIV prevention&quot;:&#xA;  Config.&quot;Population incidence of HIV in the absence of PrEP&quot; &gt; 3 '{Person-Years}'"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="10"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="FHIRHelpers"/>
+    </extension>
+    <extension url="name">
+      <valueString value="ToConcept"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="define function ToConcept(concept FHIR.CodeableConcept):&#xA;    if concept is null then&#xA;        null&#xA;    else&#xA;        System.Concept {&#xA;            codes: concept.coding C return ToCode(C),&#xA;            display: concept.text.value&#xA;        }"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="11"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="FHIRHelpers"/>
+    </extension>
+    <extension url="name">
+      <valueString value="ToCode"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="define function ToCode(coding FHIR.Coding):&#xA;    if coding is null then&#xA;        null&#xA;    else&#xA;        System.Code {&#xA;          code: coding.code.value,&#xA;          system: coding.system.value,&#xA;          version: coding.version.value,&#xA;          display: coding.display.value&#xA;        }"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="12"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="WHOCommon"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Only"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="define function Only(observations List&lt;Observation&gt;):&#xA;  singleton from observations"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="13"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="FHIRHelpers"/>
+    </extension>
+    <extension url="name">
+      <valueString value="ToString"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="define function ToString(value ObservationStatus): value.value"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="14"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="FHIRHelpers"/>
+    </extension>
+    <extension url="name">
+      <valueString value="ToBoolean"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="define function ToBoolean(value boolean): value.value"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="15"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="WHOCommon"/>
+    </extension>
+    <extension url="name">
+      <valueString value="ModifierExtension"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;@description: Returns the single WHO core modifier extension (if present) on the given resource with the specified id.&#xA;@comment: This function uses singleton from to ensure that a run-time exception is thrown if there&#xA;is more than one extension on the given resource with the specified url.&#xA;*/&#xA;define function ModifierExtension(domainResource DomainResource, id String):&#xA;  singleton from ModifierExtensions(domainResource, id)"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="16"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="WHOCommon"/>
+    </extension>
+    <extension url="name">
+      <valueString value="ModifierExtensions"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;@description: Returns any WHO core modifier extensions defined on the given resource with the specified id.&#xA;@comment: NOTE: Extensions are not the preferred approach, but are used as a way to access&#xA;content that is defined by extensions but not yet surfaced in the&#xA;CQL model info.&#xA;*/&#xA;define function ModifierExtensions(domainResource DomainResource, id String):&#xA;  domainResource.modifierExtension E&#xA;&#x9;  where E.url = ('http://fhir.org/guides/who/core/StructureDefinition/' + id)&#xA;&#x9;&#x9;return E"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="17"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="FHIRHelpers"/>
+    </extension>
+    <extension url="name">
+      <valueString value="ToString"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="define function ToString(value uri): value.value"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="18"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="FHIRHelpers"/>
+    </extension>
+    <extension url="name">
+      <valueString value="ToString"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="define function ToString(value string): value.value"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="19"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCCommon"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Extension"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;@description: Returns the single ANC extension (if present) on the given resource with the specified id.&#xA;@comment: This function uses singleton from to ensure that a run-time exception is thrown if there&#xA;is more than one extension on the given resource with the specified id.&#xA;*/&#xA;define function Extension(domainResource DomainResource, id String):&#xA;  singleton from &quot;Extensions&quot;(domainResource, id)"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="20"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition">
+    <extension url="libraryName">
+      <valueString value="ANCCommon"/>
+    </extension>
+    <extension url="name">
+      <valueString value="Extensions"/>
+    </extension>
+    <extension url="statement">
+      <valueString value="/*&#xA;@description: Returns any ANC extensions defined on the given resource with the specified id.&#xA;@comment: NOTE: Extensions are not the preferred approach, but are used as a way to access&#xA;content that is defined by extensions but not yet surfaced in the&#xA;CQL model info.&#xA;*/&#xA;define function Extensions(domainResource DomainResource, id String):&#xA;  domainResource.extension E&#xA;&#x9;  where E.url = ('http://smart.who.int/anc/StructureDefinition/' + id)&#xA;&#x9;&#x9;return E"/>
+    </extension>
+    <extension url="displaySequence">
+      <valueInteger value="21"/>
+    </extension>
+  </extension>
+  <extension id="effective-data-requirements" url="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements">
+    <valueCanonical value="#effective-data-requirements"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-softwaresystem">
+    <valueReference>
+      <reference value="Device/cqf-tooling"/>
+    </valueReference>
+  </extension>
+  <url value="http://smart.who.int/anc/PlanDefinition/ANCDT29"/>
+  <identifier>
+    <use value="official"/>
+    <value value="ANC.DT.29"/>
+  </identifier>
+  <version value="0.3.0"/>
+  <name value="ANCDT29"/>
+  <title value="ANC.DT.29 HIV risk counselling"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="eca-rule"/>
+    </coding>
+  </type>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-06-24T13:58:48-06:00"/>
+  <publisher value="World Health Organization (WHO)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.who.int"/>
+    </telecom>
+  </contact>
+  <description value="If the woman has risk factors for contracting HIV, provide counselling to reduce risk of contracting HIV"/>
+  <useContext>
+    <code>
+      <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+      <code value="task"/>
+      <display value="Workflow Task"/>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://smart.who.int/anc/CodeSystem/activity-codes"/>
+        <code value="ANC.B9."/>
+        <display value="Conduct laboratory tests and imaging"/>
+      </coding>
+    </valueCodeableConcept>
+  </useContext>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <library value="http://smart.who.int/anc/Library/ANCDT29"/>
+  <action>
+    <title value="ANC.DT.29 HIV risk counselling"/>
+    <trigger>
+      <type value="named-event"/>
+      <name value="ANC.B9. Conduct laboratory tests and imaging"/>
+    </trigger>
+    <action id="1">
+      <title value="Conduct counselling on HIV risk"/>
+      <description value="Conduct counselling on HIV risk"/>
+      <textEquivalent value="If the woman lives in a setting with a generalized HIV epidemic, or her partner is HIV positive, or she injects drugs, or she is a sex worker, then she is at high risk for HIV – counselling should be given to provide prevention options&#xA;&#xA;Provide comprehensive HIV prevention options: &#xA;– STI screening and treatment (syndromic and syphilis)&#xA;– Condom promotion&#xA;– Risk reduction counselling&#xA;– Pre-exposure prophylaxis (PrEP) with emphasis on adherence&#xA;– Emphasize importance of follow-up ANC contact visits"/>
+      <documentation>
+        <type value="citation"/>
+        <label value="WHO ANC recommendations (2016): B.1.7, C.7 (2)&#xA;Pregnancy, childbirth, postpartum and newborn care guide (IMPAC) (2015): C6 (1)"/>
+      </documentation>
+      <condition>
+        <kind value="applicability"/>
+        <expression>
+          <description value="((((((&quot;HIV status&quot; = &quot;HIV negative&quot;)&#xA;  AND (&quot;Prevalence of HIV in pregnant women in the catchment area&quot; &gt; 1%))&#xA;  OR ((&quot;HIV status&quot; = &quot;HIV negative&quot;)&#xA;  AND (&quot;Partner HIV status (reported)&quot; = &quot;HIV positive&quot;)))&#xA;  OR ((&quot;HIV status&quot; = &quot;HIV negative&quot;)&#xA;  AND (&quot;Partner HIV test result&quot; = HIV positive&quot;)))&#xA;  OR ((&quot;HIV status&quot; = &quot;HIV negative&quot;)&#xA;  AND (Partner HIV status (confirmed)&quot; = &quot;HIV positive&quot;)))&#xA;  OR ((&quot;HIV status&quot; = &quot;HIV negative&quot;)&#xA;  AND (Current alcohol and/or other substance use&quot; = &quot;Injectable drugs&quot;)))&#xA;  OR ((&quot;HIV status&quot; = &quot;HIV negative&quot;)&#xA;  AND (&quot;Occupation&quot; = &quot;Employment that puts woman at increased risk for HIV (e.g. sex worker)&quot;))"/>
+          <language value="text/cql-identifier"/>
+          <expression value="Should Conduct counselling on HIV risk"/>
+        </expression>
+      </condition>
+    </action>
+    <action id="2">
+      <title value="Conduct counselling on pre-exposure prophylaxis (PrEP) for HIV prevention"/>
+      <description value="Conduct counselling on pre-exposure prophylaxis (PrEP) for HIV prevention"/>
+      <textEquivalent value="Oral pre-exposure prophylaxis (PrEP) containing tenofovir disoproxil fumarate (TDF) should be offered as an additional prevention choice for pregnant women at substantial risk of HIV infection as part of combination prevention approaches.&#xA;&#xA;See &quot;PrEP offering framework&quot; – a suggested prioritization framework for offering PrEP to pregnant and breastfeeding women (below)."/>
+      <documentation>
+        <type value="citation"/>
+        <label value="WHO ANC recommendations (2016): C.7 (2)&#xA;Pre-exposure prophylaxis (PrEP) for HIV prevention (2017) (20)"/>
+      </documentation>
+      <condition>
+        <kind value="applicability"/>
+        <expression>
+          <description value="&quot;Population incidence of HIV in the absence of PrEP&quot; &gt; 3 per 100 person-years"/>
+          <language value="text/cql-identifier"/>
+          <expression value="Should Conduct counselling on pre-exposure prophylaxis (PrEP) for HIV prevention"/>
+        </expression>
+      </condition>
+    </action>
+    <action id="3">
+      <title value="Conduct counselling on HIV risk"/>
+      <description value="Conduct counselling on HIV risk 2"/>
+      <textEquivalent value="Encourage woman to find out the status of her partner(s) or to bring them during the next contact visit to get tested"/>
+      <documentation>
+        <type value="citation"/>
+        <label value="WHO ANC recommendations (2016): B.1.7 (2)&#xA;Consolidated guidelines on HIV testing services (2015) (6)"/>
+      </documentation>
+      <condition>
+        <kind value="applicability"/>
+        <expression>
+          <description value="(&quot;Partner HIV status (reported)&quot; = &quot;Inconclusive&quot;)&#xA;  OR (&quot;Partner HIV test conducted&quot; = FALSE)"/>
+          <language value="text/cql-identifier"/>
+          <expression value="Should Conduct counselling on HIV risk 2"/>
+        </expression>
+      </condition>
+      <action>
+        <title value="Conduct counselling on HIV risk"/>
+      </action>
+      <action>
+        <title value="Recommended partner HIV test"/>
+      </action>
+    </action>
+  </action>
+</PlanDefinition>
