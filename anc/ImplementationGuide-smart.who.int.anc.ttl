@@ -23179,9 +23179,6 @@
        ] )
      ] ;
      fhir:parameter ( [
-       fhir:code [ fhir:v "path-pages" ] ;
-       fhir:value [ fhir:v "input/pagecontent" ]
-     ] [
        fhir:code [ fhir:v "path-resource" ] ;
        fhir:value [ fhir:v "input/resources/activitydefinition" ]
      ] [

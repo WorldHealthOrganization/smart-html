@@ -13,7 +13,7 @@
       "status" : "release",
       "sequence" : "Releases",
       "fhirversion" : "4.0.1",
-      "date" : "2025-07-09",
+      "date" : "2025-07-10",
       "current" : true,
       "desc" : "0.3.0 Release"
     }
@@ -21,6 +21,6 @@
   "package-id" : "smart.who.int.anc",
   "canonical" : "http://smart.who.int/anc",
   "title" : "WHO SMART Guidelines - ANC",
-  "category" : "base",
+  "category" : "SMART (WHO)",
   "introduction" : "WHO SMART Guidelines - ANC"
 }

@@ -17164,10 +17164,6 @@
       }]
     },
     "parameter" : [{
-      "code" : "path-pages",
-      "value" : "input/pagecontent"
-    },
-    {
       "code" : "path-resource",
       "value" : "input/resources/activitydefinition"
     },

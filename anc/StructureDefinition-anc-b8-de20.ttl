@@ -19,7 +19,7 @@
   fhir:title [ fhir:v "Repeat systolic blood pressure"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2025-07-09T22:44:47+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-07-10T12:22:41+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "World Health Organization (WHO)"] ; # 
   fhir:contact ( [
      fhir:telecom ( [

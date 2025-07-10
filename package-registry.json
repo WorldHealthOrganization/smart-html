@@ -309,17 +309,17 @@
       "package-id" : "smart.who.int.anc",
       "title" : "WHO SMART Guidelines - ANC",
       "canonical" : "http://smart.who.int/anc",
-      "category" : "base",
+      "category" : "SMART (WHO)",
       "ci-build" : "http://worldhealthorganization.github.io/smart-anc",
       "version-count" : 1,
       "latest" : {
         "version" : "0.3.0",
-        "date" : "2025-07-09",
+        "date" : "2025-07-10",
         "path" : "http://smart.who.int/anc/v0.3.0"
       },
       "milestone" : {
         "version" : "0.3.0",
-        "date" : "2025-07-09",
+        "date" : "2025-07-10",
         "path" : "http://smart.who.int/anc/v0.3.0"
       }
     }

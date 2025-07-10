@@ -15372,10 +15372,6 @@
       </page>
     </page>
     <parameter>
-      <code value="path-pages"/>
-      <value value="input/pagecontent"/>
-    </parameter>
-    <parameter>
       <code value="path-resource"/>
       <value value="input/resources/activitydefinition"/>
     </parameter>

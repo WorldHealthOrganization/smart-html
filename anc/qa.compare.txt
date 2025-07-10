@@ -4,7 +4,7 @@ ANCCDS : Validation Results
 err = 4427, warn = 1744, info = 1683
 $--
 Generated $--. FHIR version $-- for smart.who.int.anc#$-- (canonical = http://smart.who.int/anc)
- Build Errors : 729 / 307 / 0
+ Build Errors : 737 / 307 / 0
  C:\work\release\temp\ig-builds\smart.who.int.anc#0.3.0-milestone\input\anc-cds : 0 / 2 / 1
  C:\work\release\temp\ig-builds\smart.who.int.anc#0.3.0-milestone\input\examples\condition-anc-b10-de113-example : 3 / 2 / 2
  C:\work\release\temp\ig-builds\smart.who.int.anc#0.3.0-milestone\input\examples\condition-anc-b10-de121-example : 3 / 2 / 2
@@ -1441,7 +1441,7 @@ Generated $--. FHIR version $-- for smart.who.int.anc#$-- (canonical = http://sm
  C:\work\release\temp\ig-builds\smart.who.int.anc#0.3.0-milestone\input\vocabulary\valueset\valueset-anc-end-41 : 3 / 0 / 3
 </table>
 == n/a ==
-ERROR: ImplementationGuide.definition.parameter[37].value: Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters)
+ERROR: ImplementationGuide.definition.parameter[36].value: Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters)
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Library/FHIRCommon.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/who-notDoneReason.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/who-doNotPerformReason.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -2471,8 +2471,16 @@ ERROR: StructureDefinition-who-servicerequest.html#/html/body/div/div/div/div/di
 ERROR: StructureDefinition-who-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 801, column 1221: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
 ERROR: StructureDefinition-who-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1217, column 1221: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
 ERROR: StructureDefinition-who-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1602, column 1221: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: documentation.html#/html/body/div/div/div/div/div/p/img at Line 205, column 5: The image source 'assets/images/dak-to-cpg.jpg' cannot be resolved
 ERROR: documentation.html#/html/body/div/div/div/div/div/p/a at Line 341, column 5: The link 'examples-second-contact.html' for "Second Contact Example Scenario" cannot be resolved
 ERROR: documentation.html#/html/body/div/div/div/div/div/p/a at Line 345, column 5: The link 'examples-adolescent.html' for "Adolescent Example Scenario" cannot be resolved
+ERROR: documentation.html#/html/body/div/div/div/div/div/p/img at Line 432, column 5: The image source 'assets/images/first-contact.svg' cannot be resolved
+ERROR: documentation.html#/html/body/div/div/div/div/div/p/img at Line 436, column 5: The image source 'assets/images/registration.svg' cannot be resolved
+ERROR: documentation.html#/html/body/div/div/div/div/div/p/img at Line 440, column 5: The image source 'assets/images/enrollment.svg' cannot be resolved
+ERROR: documentation.html#/html/body/div/div/div/div/div/p/img at Line 444, column 5: The image source 'assets/images/encounter-processing.svg' cannot be resolved
+ERROR: documentation.html#/html/body/div/div/div/div/div/p/img at Line 448, column 5: The image source 'assets/images/activity-processing.svg' cannot be resolved
+ERROR: documentation.html#/html/body/div/div/div/div/div/p/img at Line 460, column 5: The image source 'assets/images/data-element-processing.jpg' cannot be resolved
+ERROR: documentation.html#/html/body/div/div/div/div/div/p/img at Line 3233, column 5: The image source 'assets/images/decision-table-processing.jpg' cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide

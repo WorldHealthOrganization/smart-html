@@ -7,8 +7,8 @@
   "status" : "draft",
   "package-id" : "smart.who.int.anc",
   "ig-ver" : "0.3.0",
-  "date" : "Wed, 09 Jul, 2025 22:45:50 +0200",
-  "dateISO8601" : "2025-07-09T22:45:50+02:00",
+  "date" : "Thu, 10 Jul, 2025 12:23:46 +0200",
+  "dateISO8601" : "2025-07-10T12:23:46+02:00",
   "errs" : 4427,
   "warnings" : 1744,
   "hints" : 1683,
@@ -16,5 +16,5 @@
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 3989622352
+  "maxMemory" : 4012531400
 }
