@@ -11,6 +11,28 @@
     <language>en</language>
     <ttl>600</ttl>
     <item>
+      <title>SMART DAK PNC version 0.9.9</title>
+      <description>0.9.9 Draft Release</description>
+      <link>http://smart.who.int/dak-pnc/v0.9.9/index.html</link>
+      <guid isPermaLink="true">http://smart.who.int/dak-pnc/v0.9.9/index.html</guid>
+      <dc:creator>WHO</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Fri, 11 Jul 2025 09:27:53 +0200</pubDate>
+      <fhir:details>Publication run at 11/07/2025 by BEE using Version 2.0.8 (Git# e7d965b03a28). Built 2025-06-27T22:18:09.321Z (13 days old) source id Unknown (todo)</fhir:details>
+    </item>
+    <item>
+      <title>SMART DAK PNC version 0.9.9</title>
+      <description>0.9.9 Draft Release</description>
+      <link>http://smart.who.int/dak-pnc/v0.9.9/index.html</link>
+      <guid isPermaLink="true">http://smart.who.int/dak-pnc/v0.9.9/index.html</guid>
+      <dc:creator>WHO</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Thu, 10 Jul 2025 10:46:55 +0200</pubDate>
+      <fhir:details>Publication run at 10/07/2025 by BEE using Version 2.0.8 (Git# e7d965b03a28). Built 2025-06-27T22:18:09.321Z (12 days old) source id Unknown (todo)</fhir:details>
+    </item>
+    <item>
       <title>WHO SMART Guidelines - ANC version 0.3.0</title>
       <description>0.3.0 Release</description>
       <link>http://smart.who.int/anc/v0.3.0/index.html</link>
