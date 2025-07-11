@@ -3,7 +3,7 @@ DAKPnc : Validation Results
 
 err = 2, warn = 7, info = 0
 IG Publisher Version: 2.0.8
-Generated Thu Jul 10 22:48:09 CEST 2025. FHIR version 4.0.1 for smart.who.int.dak-pnc#0.9.9 (canonical = http://smart.who.int/dak-pnc)
+Generated Fri Jul 11 09:29:01 CEST 2025. FHIR version 4.0.1 for smart.who.int.dak-pnc#0.9.9 (canonical = http://smart.who.int/dak-pnc)
  Build Errors : 0 / 4 / 0
  C:\work\release\temp\ig-builds\smart.who.int.dak-pnc#0.9.9\fsh-generated\resources\ImplementationGuide-smart.who.int.dak-pnc : 2 / 3 / 1
 </table>

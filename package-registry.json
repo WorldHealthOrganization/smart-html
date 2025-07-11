@@ -328,17 +328,17 @@
       "package-id" : "smart.who.int.dak-pnc",
       "title" : "SMART DAK PNC",
       "canonical" : "http://smart.who.int/dak-pnc",
-      "category" : "base",
+      "category" : "SMART (WHO)",
       "ci-build" : "http://worldhealthorganization.github.io/smart-dak-pnc",
       "version-count" : 1,
       "latest" : {
         "version" : "0.9.9",
-        "date" : "2025-07-10",
+        "date" : "2025-07-11",
         "path" : "http://smart.who.int/dak-pnc/v0.9.9"
       },
       "milestone" : {
         "version" : "0.9.9",
-        "date" : "2025-07-10",
+        "date" : "2025-07-11",
         "path" : "http://smart.who.int/dak-pnc/v0.9.9"
       }
     }

@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "DAKPnc"] ; # 
   fhir:title [ fhir:v "SMART DAK PNC"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-07-10T22:48:26+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-07-11T09:29:20+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "WHO"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "WHO" ] ;

@@ -13,7 +13,7 @@
       "status" : "release",
       "sequence" : "Releases",
       "fhirversion" : "4.0.1",
-      "date" : "2025-07-10",
+      "date" : "2025-07-11",
       "current" : true,
       "desc" : "0.9.9 Draft Release"
     }
@@ -21,6 +21,6 @@
   "package-id" : "smart.who.int.dak-pnc",
   "canonical" : "http://smart.who.int/dak-pnc",
   "title" : "SMART DAK PNC",
-  "category" : "base",
+  "category" : "SMART (WHO)",
   "introduction" : "SMART DAK PNC"
 }
