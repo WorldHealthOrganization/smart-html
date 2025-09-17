@@ -11,13 +11,13 @@
   fhir:id [ fhir:v "PreQualDBtoProductAuthorizationLM"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap PreQualDBtoProductAuthorizationLM</b></p><a name=\"PreQualDBtoProductAuthorizationLM\"> </a><a name=\"hcPreQualDBtoProductAuthorizationLM\"> </a><pre class=\"fml\">#xD;\n<span style=\"color: #cc00cc\">/// <b>url</b> = </span><span style=\"color: blue\">'http://smart.who.int/icvp/StructureMap/PreQualDBtoProductAuthorizationLM'</span>#xD;\n<span style=\"color: #cc00cc\">/// <b>name</b> = </span><span style=\"color: blue\">'PreQualDBtoProductAuthorizationLM'</span>#xD;\n<span style=\"color: #cc00cc\">/// <b>status</b> = </span><span style=\"color: blue\">'draft'</span>#xD;\n#xD;\n<b>uses</b><span style=\"color: navy\"> \"</span>http://smart.who.int/icvp/StructureDefinition/PreQualDBwithIds<span style=\"color: navy\">\" </span><b>alias </b>PreQualDB <b>as </b><b>source</b>#xD;\n<b>uses</b><span style=\"color: navy\"> \"</span>http://smart.who.int/icvp/StructureDefinition/ProductAuthorization<span style=\"color: navy\">\" </span><b>alias </b>ProductAuthorization <b>as </b><b>target</b>#xD;\n#xD;\n<b>group </b>PreQualDBtoProductAuthorizationLM<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">prequal</span><span style=\"color: navy\"> : </span>PreQualDB, <b>target</b> <span style=\"color: maroon\">productAuth</span><span style=\"color: navy\"> : </span>ProductAuthoization<span style=\"color: navy\">)</span><span style=\"color: navy\"> {#xD;\n</span>  productAuth.status<b> as </b><span style=\"color: maroon\">status</span><span style=\"color: navy\"><b> -&gt; </b></span>status = <span style=\"color: blue\">'active'</span><span style=\"color: navy\">;</span>#xD;\n  productAuth.type<b> as </b><span style=\"color: maroon\">type</span><span style=\"color: navy\"><b> -&gt; </b></span>type = <span style=\"color: blue\">'prequal'</span> <i>\"set prequal\"</i><span style=\"color: navy\">;</span>#xD;\n  prequal.responsibleNRAReference<b> as </b><span style=\"color: maroon\">respNRARef</span><b> then</b><span style=\"color: navy\"> {#xD;\n</span>    respNRARef<b> as </b><span style=\"color: maroon\">respNRARef</span><span style=\"color: navy\"><b> -&gt; </b></span>productAuth.holder = <span style=\"color: maroon\">respNRARef</span> <i>\"set national regulatory authority holder\"</i><span style=\"color: navy\">;</span>#xD;\n  <span style=\"color: navy\">}</span> <i>\"process nra\"</i><span style=\"color: navy\">;</span>#xD;\n  prequal.validityPeriod<b> as </b><span style=\"color: maroon\">validityPeriod</span><b> then</b><span style=\"color: navy\"> {#xD;\n</span>    validityPeriod<b> as </b><span style=\"color: maroon\">validityPeriod</span><span style=\"color: navy\"><b> -&gt; </b></span>productAuth.validityPeriod = <span style=\"color: maroon\">validityPeriod</span> <i>\"set validity period\"</i><span style=\"color: navy\">;</span>#xD;\n  <span style=\"color: navy\">}</span> <i>\"process validity period\"</i><span style=\"color: navy\">;</span>#xD;\n  productAuth.jurisdiction<b> as </b><span style=\"color: maroon\">j</span><b> then</b><span style=\"color: navy\"> {#xD;\n</span>    j.coding<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>coding.display = <span style=\"color: blue\">'WHO'</span> <i>\"set WHO\"</i><span style=\"color: navy\">;</span>#xD;\n  <span style=\"color: navy\">}</span> <i>\"process juris\"</i><span style=\"color: navy\">;</span>#xD;\n  prequal.index<b> as </b><span style=\"color: maroon\">index</span><span style=\"color: navy\"><b> -&gt; </b></span>productAuth.number = <span style=\"color: maroon\">index</span> <i>\"set number/index\"</i><span style=\"color: navy\">;</span>#xD;\n  prequal.productReference<b> as </b><span style=\"color: maroon\">prodRef</span><span style=\"color: navy\"><b> -&gt; </b></span>productAuth.product = <span style=\"color: maroon\">prodRef</span> <i>\"set prod ref\"</i><span style=\"color: navy\">;</span>#xD;\n<span style=\"color: navy\">}#xD;\n#xD;\n</span></pre></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap PreQualDBtoProductAuthorizationLM</b></p><a name=\"PreQualDBtoProductAuthorizationLM\"> </a><a name=\"hcPreQualDBtoProductAuthorizationLM\"> </a><pre class=\"fml\">#xD;\n<b>map</b><span style=\"color: navy\"> \"</span>http://smart.who.int/icvp/StructureMap/PreQualDBtoProductAuthorizationLM<span style=\"color: navy\">\" = \"</span>PreQualDBtoProductAuthorizationLM<span style=\"color: navy\">\"#xD;\n#xD;\n</span><b>uses</b><span style=\"color: navy\"> \"</span>http://smart.who.int/icvp/StructureDefinition/PreQualDBwithIds<span style=\"color: navy\">\" </span><b>alias </b>PreQualDB <b>as </b><b>source</b>#xD;\n<b>uses</b><span style=\"color: navy\"> \"</span>http://smart.who.int/icvp/StructureDefinition/ProductAuthorization<span style=\"color: navy\">\" </span><b>alias </b>ProductAuthorization <b>as </b><b>target</b>#xD;\n#xD;\n<b>group </b>PreQualDBtoProductAuthorizationLM<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">prequal</span><span style=\"color: navy\"> : </span>PreQualDB, <b>target</b> <span style=\"color: maroon\">productAuth</span><span style=\"color: navy\"> : </span>ProductAuthoization<span style=\"color: navy\">)</span><span style=\"color: navy\"> {#xD;\n</span>  productAuth.status<b> as </b><span style=\"color: maroon\">status</span><span style=\"color: navy\"><b> -&gt; </b></span>status = <span style=\"color: blue\">'active'</span><span style=\"color: navy\">;</span>#xD;\n  productAuth.type<b> as </b><span style=\"color: maroon\">type</span><span style=\"color: navy\"><b> -&gt; </b></span>type = <span style=\"color: blue\">'prequal'</span> <i>\"set prequal\"</i><span style=\"color: navy\">;</span>#xD;\n  prequal.responsibleNRAReference<b> as </b><span style=\"color: maroon\">respNRARef</span><b> then</b><span style=\"color: navy\"> {#xD;\n</span>    respNRARef<b> as </b><span style=\"color: maroon\">respNRARef</span><span style=\"color: navy\"><b> -&gt; </b></span>productAuth.holder = <span style=\"color: maroon\">respNRARef</span> <i>\"set national regulatory authority holder\"</i><span style=\"color: navy\">;</span>#xD;\n  <span style=\"color: navy\">}</span> <i>\"process nra\"</i><span style=\"color: navy\">;</span>#xD;\n  prequal.validityPeriod<b> as </b><span style=\"color: maroon\">validityPeriod</span><b> then</b><span style=\"color: navy\"> {#xD;\n</span>    validityPeriod<b> as </b><span style=\"color: maroon\">validityPeriod</span><span style=\"color: navy\"><b> -&gt; </b></span>productAuth.validityPeriod = <span style=\"color: maroon\">validityPeriod</span> <i>\"set validity period\"</i><span style=\"color: navy\">;</span>#xD;\n  <span style=\"color: navy\">}</span> <i>\"process validity period\"</i><span style=\"color: navy\">;</span>#xD;\n  productAuth.jurisdiction<b> as </b><span style=\"color: maroon\">j</span><b> then</b><span style=\"color: navy\"> {#xD;\n</span>    j.coding<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>coding.display = <span style=\"color: blue\">'WHO'</span> <i>\"set WHO\"</i><span style=\"color: navy\">;</span>#xD;\n  <span style=\"color: navy\">}</span> <i>\"process juris\"</i><span style=\"color: navy\">;</span>#xD;\n  prequal.index<b> as </b><span style=\"color: maroon\">index</span><span style=\"color: navy\"><b> -&gt; </b></span>productAuth.number = <span style=\"color: maroon\">index</span> <i>\"set number/index\"</i><span style=\"color: navy\">;</span>#xD;\n  prequal.productReference<b> as </b><span style=\"color: maroon\">prodRef</span><span style=\"color: navy\"><b> -&gt; </b></span>productAuth.product = <span style=\"color: maroon\">prodRef</span> <i>\"set prod ref\"</i><span style=\"color: navy\">;</span>#xD;\n<span style=\"color: #b36b00\" title=\"This element was not defined prior to R5\">// prequal.index as index then {</span>#xD;\n<span style=\"color: #b36b00\" title=\"This element was not defined prior to R5\">// prequal.vaxTypeCode as vaxTypeCode</span>#xD;\n<span style=\"color: navy\">// </span><span style=\"color: green\">-&gt; productAuth.product = reference(vaxTypeCode + \"Product\" + index.value )  \"Set Product reference\";</span>#xD;\n<span style=\"color: navy\">// </span><span style=\"color: green\">} \"set index\";</span>#xD;\n<span style=\"color: navy\">}#xD;\n#xD;\n</span></pre></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://smart.who.int/icvp/StructureMap/PreQualDBtoProductAuthorizationLM"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
   fhir:name [ fhir:v "PreQualDBtoProductAuthorizationLM"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-07-01T08:33:29+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-16T20:42:07+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "WHO"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "WHO" ] ;
@@ -43,6 +43,7 @@
   ] ) ; # 
   fhir:group ( [
      fhir:name [ fhir:v "PreQualDBtoProductAuthorizationLM" ] ;
+     fhir:typeMode [ fhir:v "none" ] ;
      fhir:input ( [
        fhir:name [ fhir:v "prequal" ] ;
        fhir:type [ fhir:v "PreQualDB" ] ;
@@ -61,6 +62,7 @@
        ] ) ;
        fhir:target ( [
          fhir:context [ fhir:v "status" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
          fhir:transform [ fhir:v "copy" ] ;
          fhir:parameter ( [
            fhir:value [
@@ -78,6 +80,7 @@
        ] ) ;
        fhir:target ( [
          fhir:context [ fhir:v "type" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
          fhir:transform [ fhir:v "copy" ] ;
          fhir:parameter ( [
            fhir:value [
@@ -101,6 +104,7 @@
          ] ) ;
          fhir:target ( [
            fhir:context [ fhir:v "productAuth" ] ;
+           fhir:contextType [ fhir:v "variable" ] ;
            fhir:element [ fhir:v "holder" ] ;
            fhir:transform [ fhir:v "copy" ] ;
            fhir:parameter ( [
@@ -126,6 +130,7 @@
          ] ) ;
          fhir:target ( [
            fhir:context [ fhir:v "productAuth" ] ;
+           fhir:contextType [ fhir:v "variable" ] ;
            fhir:element [ fhir:v "validityPeriod" ] ;
            fhir:transform [ fhir:v "copy" ] ;
            fhir:parameter ( [
@@ -152,6 +157,7 @@
          ] ) ;
          fhir:target ( [
            fhir:context [ fhir:v "coding" ] ;
+           fhir:contextType [ fhir:v "variable" ] ;
            fhir:element [ fhir:v "display" ] ;
            fhir:transform [ fhir:v "copy" ] ;
            fhir:parameter ( [
@@ -171,6 +177,7 @@
        ] ) ;
        fhir:target ( [
          fhir:context [ fhir:v "productAuth" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
          fhir:element [ fhir:v "number" ] ;
          fhir:transform [ fhir:v "copy" ] ;
          fhir:parameter ( [
@@ -189,6 +196,7 @@
        ] ) ;
        fhir:target ( [
          fhir:context [ fhir:v "productAuth" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
          fhir:element [ fhir:v "product" ] ;
          fhir:transform [ fhir:v "copy" ] ;
          fhir:parameter ( [

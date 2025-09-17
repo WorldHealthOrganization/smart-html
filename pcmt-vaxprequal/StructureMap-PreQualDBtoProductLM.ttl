@@ -11,13 +11,13 @@
   fhir:id [ fhir:v "PreQualDBtoProductLM"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap PreQualDBtoProductLM</b></p><a name=\"PreQualDBtoProductLM\"> </a><a name=\"hcPreQualDBtoProductLM\"> </a><pre class=\"fml\">#xD;\n<span style=\"color: #cc00cc\">/// <b>url</b> = </span><span style=\"color: blue\">'http://smart.who.int/icvp/StructureMap/PreQualDBtoProductLM'</span>#xD;\n<span style=\"color: #cc00cc\">/// <b>name</b> = </span><span style=\"color: blue\">'PreQualDBtoProductLM'</span>#xD;\n<span style=\"color: #cc00cc\">/// <b>status</b> = </span><span style=\"color: blue\">'draft'</span>#xD;\n#xD;\n<b>uses</b><span style=\"color: navy\"> \"</span>http://smart.who.int/icvp/StructureDefinition/PreQualDBwithIds<span style=\"color: navy\">\" </span><b>alias </b>PreQualDB <b>as </b><b>source</b>#xD;\n<b>uses</b><span style=\"color: navy\"> \"</span>http://smart.who.int/icvp/StructureDefinition/Product<span style=\"color: navy\">\" </span><b>alias </b>Product <b>as </b><b>target</b>#xD;\n#xD;\n<b>group </b>PreQualDBtoProductLM<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">prequal</span><span style=\"color: navy\"> : </span>PreQualDB, <b>target</b> <span style=\"color: maroon\">product</span><span style=\"color: navy\"> : </span>Product<span style=\"color: navy\">)</span><span style=\"color: navy\"> {#xD;\n</span>  prequal.number<b> as </b><span style=\"color: maroon\">number</span><span style=\"color: navy\"><b> -&gt; </b></span>product.number = <span style=\"color: maroon\">number</span> <i>\"set prod num\"</i><span style=\"color: navy\">;</span>#xD;\n  prequal.commercialName<b> as </b><span style=\"color: maroon\">name</span><span style=\"color: navy\"><b> -&gt; </b></span>product.name = <span style=\"color: maroon\">name</span> <i>\"set prod name\"</i><span style=\"color: navy\">;</span>#xD;\n  prequal.index<b> as </b><span style=\"color: maroon\">index</span><span style=\"color: navy\"><b> -&gt; </b></span>product.identifier = <b>id</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'https://extranet.who.int/prequal/vaccines/prequalified-vaccines'</span><span style=\"color: navy\">, </span><span style=\"color: maroon\">index</span><span style=\"color: navy\">)</span> <i>\"set product id\"</i><span style=\"color: navy\">;</span>#xD;\n  prequal.numDoses<b> as </b><span style=\"color: maroon\">numDoses</span><b> then</b><span style=\"color: navy\"> {#xD;\n</span>    product.doseQuantity<b> as </b><span style=\"color: maroon\">dq</span><span style=\"color: navy\"><b> -&gt; </b></span>dq.value = <span style=\"color: maroon\">numDoses</span> <i>\"set number of doses\"</i><span style=\"color: navy\">;</span>#xD;\n  <span style=\"color: navy\">}</span> <i>\"set num dose\"</i><span style=\"color: navy\">;</span>#xD;\n  product.unitOfUse<b> as </b><span style=\"color: maroon\">uou</span><b> then</b><span style=\"color: navy\"> {#xD;\n</span>    uou.coding<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>coding.code = <span style=\"color: blue\">'doses'</span> <i>\"set doses unit\"</i><span style=\"color: navy\">;</span>#xD;\n  <span style=\"color: navy\">}</span> <i>\"set num doses\"</i><span style=\"color: navy\">;</span>#xD;\n  prequal.manufacturerReference<b> as </b><span style=\"color: maroon\">manufacturerReference</span><span style=\"color: navy\"><b> -&gt; </b></span>product.manufacturer = <span style=\"color: maroon\">manufacturerReference</span> <i>\"set manufacturer reference\"</i><span style=\"color: navy\">;</span>#xD;\n  prequal.manufacturer<b> as </b><span style=\"color: maroon\">manufacturer</span><b> then</b><span style=\"color: navy\"> {#xD;\n</span>    product.manufacturer<b> as </b><span style=\"color: maroon\">man</span><span style=\"color: navy\"><b> -&gt; </b></span>man.text = <span style=\"color: maroon\">manufacturer</span> <i>\"set mnf\"</i><span style=\"color: navy\">;</span>#xD;\n  <span style=\"color: navy\">}</span> <i>\"set man\"</i><span style=\"color: navy\">;</span>#xD;\n  prequal.vaxTypeCode<b> as </b><span style=\"color: maroon\">vaxTypeCode</span><span style=\"color: navy\"><b> -&gt; </b></span>product.classification = <span style=\"color: maroon\">vaxTypeCode</span> <i>\"set vaccine type as product clasification\"</i><span style=\"color: navy\">;</span>#xD;\n  prequal.presentation<b> as </b><span style=\"color: maroon\">presentation</span><span style=\"color: navy\"><b> -&gt; </b></span>product.dosageForm = <span style=\"color: maroon\">presentation</span> <i>\"set presentation\"</i><span style=\"color: navy\">;</span>#xD;\n<span style=\"color: navy\">}#xD;\n#xD;\n</span></pre></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap PreQualDBtoProductLM</b></p><a name=\"PreQualDBtoProductLM\"> </a><a name=\"hcPreQualDBtoProductLM\"> </a><pre class=\"fml\">#xD;\n<b>map</b><span style=\"color: navy\"> \"</span>http://smart.who.int/icvp/StructureMap/PreQualDBtoProductLM<span style=\"color: navy\">\" = \"</span>PreQualDBtoProductLM<span style=\"color: navy\">\"#xD;\n#xD;\n</span><b>uses</b><span style=\"color: navy\"> \"</span>http://smart.who.int/icvp/StructureDefinition/PreQualDBwithIds<span style=\"color: navy\">\" </span><b>alias </b>PreQualDB <b>as </b><b>source</b>#xD;\n<b>uses</b><span style=\"color: navy\"> \"</span>http://smart.who.int/icvp/StructureDefinition/Product<span style=\"color: navy\">\" </span><b>alias </b>Product <b>as </b><b>target</b>#xD;\n#xD;\n<b>group </b>PreQualDBtoProductLM<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">prequal</span><span style=\"color: navy\"> : </span>PreQualDB, <b>target</b> <span style=\"color: maroon\">product</span><span style=\"color: navy\"> : </span>Product<span style=\"color: navy\">)</span><span style=\"color: navy\"> {#xD;\n</span>  prequal.number<b> as </b><span style=\"color: maroon\">number</span><span style=\"color: navy\"><b> -&gt; </b></span>product.number = <span style=\"color: maroon\">number</span> <i>\"set prod num\"</i><span style=\"color: navy\">;</span>#xD;\n  prequal.commercialName<b> as </b><span style=\"color: maroon\">name</span><span style=\"color: navy\"><b> -&gt; </b></span>product.name = <span style=\"color: maroon\">name</span> <i>\"set prod name\"</i><span style=\"color: navy\">;</span>#xD;\n  prequal.index<b> as </b><span style=\"color: maroon\">index</span><span style=\"color: navy\"><b> -&gt; </b></span>product.identifier = <b>id</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'https://extranet.who.int/prequal/vaccines/prequalified-vaccines'</span><span style=\"color: navy\">, </span><span style=\"color: maroon\">index</span><span style=\"color: navy\">)</span> <i>\"set product id\"</i><span style=\"color: navy\">;</span>#xD;\n  prequal.numDoses<b> as </b><span style=\"color: maroon\">numDoses</span><b> then</b><span style=\"color: navy\"> {#xD;\n</span>    product.doseQuantity<b> as </b><span style=\"color: maroon\">dq</span><span style=\"color: navy\"><b> -&gt; </b></span>dq.value = <span style=\"color: maroon\">numDoses</span> <i>\"set number of doses\"</i><span style=\"color: navy\">;</span>#xD;\n  <span style=\"color: navy\">}</span> <i>\"set num dose\"</i><span style=\"color: navy\">;</span>#xD;\n  product.unitOfUse<b> as </b><span style=\"color: maroon\">uou</span><b> then</b><span style=\"color: navy\"> {#xD;\n</span>    uou.coding<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>coding.code = <span style=\"color: blue\">'doses'</span> <i>\"set doses unit\"</i><span style=\"color: navy\">;</span>#xD;\n  <span style=\"color: navy\">}</span> <i>\"set num doses\"</i><span style=\"color: navy\">;</span>#xD;\n  prequal.manufacturerReference<b> as </b><span style=\"color: maroon\">manufacturerReference</span><span style=\"color: navy\"><b> -&gt; </b></span>product.manufacturer = <span style=\"color: maroon\">manufacturerReference</span> <i>\"set manufacturer reference\"</i><span style=\"color: navy\">;</span>#xD;\n  prequal.manufacturer<b> as </b><span style=\"color: maroon\">manufacturer</span><b> then</b><span style=\"color: navy\"> {#xD;\n</span>    product.manufacturer<b> as </b><span style=\"color: maroon\">man</span><span style=\"color: navy\"><b> -&gt; </b></span>man.text = <span style=\"color: maroon\">manufacturer</span> <i>\"set mnf\"</i><span style=\"color: navy\">;</span>#xD;\n  <span style=\"color: navy\">}</span> <i>\"set man\"</i><span style=\"color: navy\">;</span>#xD;\n  prequal.vaxTypeCode<b> as </b><span style=\"color: maroon\">vaxTypeCode</span><span style=\"color: navy\"><b> -&gt; </b></span>product.classification = <span style=\"color: maroon\">vaxTypeCode</span> <i>\"set vaccine type as product clasification\"</i><span style=\"color: navy\">;</span>#xD;\n  prequal.presentation<b> as </b><span style=\"color: maroon\">presentation</span><span style=\"color: navy\"><b> -&gt; </b></span>product.dosageForm = <span style=\"color: maroon\">presentation</span> <i>\"set presentation\"</i><span style=\"color: navy\">;</span>#xD;\n<span style=\"color: navy\">}#xD;\n#xD;\n</span></pre></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://smart.who.int/icvp/StructureMap/PreQualDBtoProductLM"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
   fhir:name [ fhir:v "PreQualDBtoProductLM"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-07-01T08:33:29+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-16T20:42:07+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "WHO"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "WHO" ] ;
@@ -43,6 +43,7 @@
   ] ) ; # 
   fhir:group ( [
      fhir:name [ fhir:v "PreQualDBtoProductLM" ] ;
+     fhir:typeMode [ fhir:v "none" ] ;
      fhir:input ( [
        fhir:name [ fhir:v "prequal" ] ;
        fhir:type [ fhir:v "PreQualDB" ] ;
@@ -61,6 +62,7 @@
        ] ) ;
        fhir:target ( [
          fhir:context [ fhir:v "product" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
          fhir:element [ fhir:v "number" ] ;
          fhir:transform [ fhir:v "copy" ] ;
          fhir:parameter ( [
@@ -79,6 +81,7 @@
        ] ) ;
        fhir:target ( [
          fhir:context [ fhir:v "product" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
          fhir:element [ fhir:v "name" ] ;
          fhir:transform [ fhir:v "copy" ] ;
          fhir:parameter ( [
@@ -97,6 +100,7 @@
        ] ) ;
        fhir:target ( [
          fhir:context [ fhir:v "product" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
          fhir:element [ fhir:v "identifier" ] ;
          fhir:transform [ fhir:v "id" ] ;
          fhir:parameter ( [
@@ -127,6 +131,7 @@
          ] ) ;
          fhir:target ( [
            fhir:context [ fhir:v "dq" ] ;
+           fhir:contextType [ fhir:v "variable" ] ;
            fhir:element [ fhir:v "value" ] ;
            fhir:transform [ fhir:v "copy" ] ;
            fhir:parameter ( [
@@ -153,6 +158,7 @@
          ] ) ;
          fhir:target ( [
            fhir:context [ fhir:v "coding" ] ;
+           fhir:contextType [ fhir:v "variable" ] ;
            fhir:element [ fhir:v "code" ] ;
            fhir:transform [ fhir:v "copy" ] ;
            fhir:parameter ( [
@@ -172,6 +178,7 @@
        ] ) ;
        fhir:target ( [
          fhir:context [ fhir:v "product" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
          fhir:element [ fhir:v "manufacturer" ] ;
          fhir:transform [ fhir:v "copy" ] ;
          fhir:parameter ( [
@@ -197,6 +204,7 @@
          ] ) ;
          fhir:target ( [
            fhir:context [ fhir:v "man" ] ;
+           fhir:contextType [ fhir:v "variable" ] ;
            fhir:element [ fhir:v "text" ] ;
            fhir:transform [ fhir:v "copy" ] ;
            fhir:parameter ( [
@@ -216,6 +224,7 @@
        ] ) ;
        fhir:target ( [
          fhir:context [ fhir:v "product" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
          fhir:element [ fhir:v "classification" ] ;
          fhir:transform [ fhir:v "copy" ] ;
          fhir:parameter ( [
@@ -234,6 +243,7 @@
        ] ) ;
        fhir:target ( [
          fhir:context [ fhir:v "product" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
          fhir:element [ fhir:v "dosageForm" ] ;
          fhir:transform [ fhir:v "copy" ] ;
          fhir:parameter ( [

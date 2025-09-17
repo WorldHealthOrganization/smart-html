@@ -10,6 +10,28 @@
     <language>en</language>
     <ttl>600</ttl>
     <item>
+      <title>smart.who.int.pcmt-vaxprequal#0.2.0</title>
+      <description>0.2.0 draft release</description>
+      <link>http://smart.who.int/pcmt-vaxprequal/v0.2.0/package.tgz</link>
+      <guid isPermaLink="true">http://smart.who.int/pcmt-vaxprequal/v0.2.0/package.tgz</guid>
+      <dc:creator>WHO</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Tue, 16 Sep 2025 08:38:28 +0000</pubDate>
+      <fhir:details>Publication run at 16/09/2025 by runner using Version 2.0.17 (Git# 98facbadd305). Built 2025-09-09T06:53:45.198Z (7 days old) source id Unknown (todo)</fhir:details>
+    </item>
+    <item>
+      <title>smart.who.int.dak-pnc#1.0.0</title>
+      <description>1.0.0 Release</description>
+      <link>http://smart.who.int/dak-pnc/v1.0.0/package.tgz</link>
+      <guid isPermaLink="true">http://smart.who.int/dak-pnc/v1.0.0/package.tgz</guid>
+      <dc:creator>WHO</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Wed, 17 Sep 2025 08:01:19 +0000</pubDate>
+      <fhir:details>Publication run at 17/09/2025 by runner using Version 2.0.17 (Git# 98facbadd305). Built 2025-09-09T06:53:45.198Z (8 days old) source id Unknown (todo)</fhir:details>
+    </item>
+    <item>
       <title>smart.who.int.dak-pnc#0.9.9</title>
       <description>0.9.9 Draft Release</description>
       <link>http://smart.who.int/dak-pnc/v0.9.9/package.tgz</link>

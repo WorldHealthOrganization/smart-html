@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="3fe08655-8f15-4484-a47a-72d49fed2d99"/>
+  <id value="422be01c-e9fc-4c93-a50b-37a6a8988768"/>
   <meta>
-    <lastUpdated value="2025-07-01T08:34:37.329+00:00"/>
+    <lastUpdated value="2025-09-16T20:43:12.184+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -15,7 +15,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-PreQualPresentation.html">codesystem WHO PreQualificaiton Vaccine Presentations v0.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-PreQualPresentation.html">codesystem WHO PreQualificaiton Vaccine Presentations v0.2.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 11 concepts</p>
             <table class="codes">
@@ -27,7 +27,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display (en-US)</b>
+                  <b>Display</b>
                 </td>
               </tr>
               <tr>
@@ -122,20 +122,16 @@
           </div>
         </text>
         <url value="http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualPresentation"/>
-        <version value="0.1.0"/>
+        <version value="0.2.0"/>
         <name value="PreQualPresentation"/>
         <title value="WHO PreQualificaiton Presentation "/>
-        <status value="draft"/>
-        <date value="2025-07-01T08:33:29+00:00"/>
+        <status value="active"/>
+        <date value="2025-09-16T20:42:07+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:bcba37de-a9cd-466b-8af7-4d4b42d7b3cd"/>
-          <timestamp value="2025-07-01T08:35:25+00:00"/>
+          <identifier value="urn:uuid:3cf0f960-76c9-48ff-b60d-e65978d1ce11"/>
+          <timestamp value="2025-09-16T20:43:52+00:00"/>
           <total value="11"/>
           <offset value="0"/>
-          <parameter>
-            <name value="displayLanguage"/>
-            <valueCode value="en-US"/>
-          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -150,7 +146,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation|0.1.0"/>
+            <valueUri value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation|0.2.0"/>
           </parameter>
           <contains>
             <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation"/>
@@ -220,7 +216,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-PreQualProductIds.html">codesystem WHO PreQualificaiton Vaccine Product Ids v0.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-PreQualProductIds.html">codesystem WHO PreQualificaiton Vaccine Product Ids v0.2.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 275 concepts</p>
             <table class="codes">
@@ -232,7 +228,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display (en-US)</b>
+                  <b>Display</b>
                 </td>
               </tr>
               <tr>
@@ -2439,20 +2435,16 @@
           </div>
         </text>
         <url value="http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualProductIds"/>
-        <version value="0.1.0"/>
+        <version value="0.2.0"/>
         <name value="PreQualProductIds"/>
         <title value="WHO PreQualificaiton Vaccine Product Ids"/>
-        <status value="draft"/>
-        <date value="2025-07-01T08:33:29+00:00"/>
+        <status value="active"/>
+        <date value="2025-09-16T20:42:07+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:61db4d10-5f3d-426c-8669-7a3e0e30852a"/>
-          <timestamp value="2025-07-01T08:35:25+00:00"/>
+          <identifier value="urn:uuid:68a6d49e-d0a3-4161-9dde-49b83d327794"/>
+          <timestamp value="2025-09-16T20:43:52+00:00"/>
           <total value="275"/>
           <offset value="0"/>
-          <parameter>
-            <name value="displayLanguage"/>
-            <valueCode value="en-US"/>
-          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -2467,11 +2459,11 @@
           </parameter>
           <parameter>
             <name value="warning-experimental"/>
-            <valueUri value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds|0.1.0"/>
+            <valueUri value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds|0.2.0"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds|0.1.0"/>
+            <valueUri value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds|0.2.0"/>
           </parameter>
           <contains>
             <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
@@ -3861,7 +3853,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-PreQualVaccineType.html">codesystem WHO PreQualificaiton Vaccine VaccineTypes v0.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-PreQualVaccineType.html">codesystem WHO PreQualificaiton Vaccine VaccineTypes v0.2.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 57 concepts</p>
             <table class="codes">
@@ -3873,7 +3865,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display (en-US)</b>
+                  <b>Display</b>
                 </td>
               </tr>
               <tr>
@@ -4336,20 +4328,16 @@
           </div>
         </text>
         <url value="http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualVaccineType"/>
-        <version value="0.1.0"/>
+        <version value="0.2.0"/>
         <name value="PreQualVaccineType"/>
         <title value="WHO PreQualificaiton VaccineType "/>
-        <status value="draft"/>
-        <date value="2025-07-01T08:33:29+00:00"/>
+        <status value="active"/>
+        <date value="2025-09-16T20:42:07+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:fe026cab-3052-4422-a6df-9c29152485d6"/>
-          <timestamp value="2025-07-01T08:35:26+00:00"/>
+          <identifier value="urn:uuid:d1b2c53c-8486-46d9-9008-5cc88b2920b7"/>
+          <timestamp value="2025-09-16T20:43:53+00:00"/>
           <total value="57"/>
           <offset value="0"/>
-          <parameter>
-            <name value="displayLanguage"/>
-            <valueCode value="en-US"/>
-          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -4364,7 +4352,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType|0.1.0"/>
+            <valueUri value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType|0.2.0"/>
           </parameter>
           <contains>
             <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"/>

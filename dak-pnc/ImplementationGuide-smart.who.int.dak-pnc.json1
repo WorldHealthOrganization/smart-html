@@ -9,11 +9,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide smart.who.int.dak-pnc</b></p><a name=\"smart.who.int.dak-pnc\"> </a><a name=\"hcsmart.who.int.dak-pnc\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <code>SMARTImplementationGuide</code></p></div><h2>DAKPnc</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/dak-pnc/ImplementationGuide/smart.who.int.dak-pnc</pre><div><p>SMART DAK for postnatal care (PNC)</p>\n</div></div>"
   },
   "url" : "http://smart.who.int/dak-pnc/ImplementationGuide/smart.who.int.dak-pnc",
-  "version" : "0.9.9",
+  "version" : "1.0.0",
   "name" : "DAKPnc",
   "title" : "SMART DAK PNC",
   "status" : "active",
-  "date" : "2025-07-11T09:29:20+02:00",
+  "date" : "2025-09-17T08:02:27+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",
@@ -330,7 +330,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.5.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.8.0"
     },
     {
       "extension" : [{
