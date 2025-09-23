@@ -81,7 +81,7 @@ jobs:
           # Extract repo code and create branch name
           REPO_CODE="${SOURCE_REPO#smart-}"
           RELEASE_VERSION="${RELEASE_BRANCH#release-}"
-          BRANCH_NAME="release-${REPO_CODE}-${RELEASE_VERSION}"
+          BRANCH_NAME="${REPO_CODE}-release-${RELEASE_VERSION}"
 
           echo "Validation passed"
           echo "is_valid=true" >> $GITHUB_OUTPUT
@@ -132,55 +132,79 @@ jobs:
           git config --global user.name "WHO Smart Guidelines Bot"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Check for existing PR
-        id: check_pr
+      - name: Handle existing PR and branch
+        id: handle_existing
         run: |
-          # Check if PR already exists
+          # Check if PR already exists for this release
           EXISTING_PR=$(gh pr list --head "${{ env.BRANCH_NAME }}" \
             --state open --json number,title --jq '.[0].number' \
             2>/dev/null || echo "")
 
           if [[ -n "$EXISTING_PR" && "$EXISTING_PR" != "null" ]]; then
-            echo "PR already exists: #$EXISTING_PR"
-            echo "pr_exists=true" >> $GITHUB_OUTPUT
-            echo "pr_number=$EXISTING_PR" >> $GITHUB_OUTPUT
+            echo "Found existing PR #$EXISTING_PR for branch ${{ env.BRANCH_NAME }}"
+            echo "Closing existing PR and deleting branch..."
+            
+            # Close the existing PR
+            gh pr close "$EXISTING_PR" --comment "Closing this PR as a new release build is being processed."
+            
+            # Delete the existing branch
+            git push origin --delete "${{ env.BRANCH_NAME }}" || echo "Branch already deleted or doesn't exist"
+            
+            echo "Existing PR closed and branch deleted"
           else
-            echo "No existing PR found"
-            echo "pr_exists=false" >> $GITHUB_OUTPUT
+            echo "No existing PR found for branch ${{ env.BRANCH_NAME }}"
           fi
+          
+          echo "ready_to_create=true" >> $GITHUB_OUTPUT
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
-        if: steps.check_pr.outputs.pr_exists == 'false'
+        if: steps.handle_existing.outputs.ready_to_create == 'true'
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
 
       - name: Install Python dependencies
-        if: steps.check_pr.outputs.pr_exists == 'false'
+        if: steps.handle_existing.outputs.ready_to_create == 'true'
         run: |
           pip install requests
 
       - name: Download release content
-        if: steps.check_pr.outputs.pr_exists == 'false'
+        if: steps.handle_existing.outputs.ready_to_create == 'true'
         run: |
           echo "Downloading content from ${{ env.SOURCE_OWNER }}/${{ env.SOURCE_REPO }}/gh-pages/branches/${{ env.RELEASE_BRANCH }}"
-
-          python3 .github/scripts/release_automation.py \
-            "${{ env.SOURCE_OWNER }}" \
-            "${{ env.SOURCE_REPO }}" \
-            "${{ env.RELEASE_BRANCH }}" \
-            "${{ secrets.GITHUB_TOKEN }}" \
-            "smart-html"
+          
+          # Create target directory
+          mkdir -p "/tmp/release-content/${{ env.REPO_CODE }}"
+          
+          # Download content using GitHub API
+          curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            "https://api.github.com/repos/${{ env.SOURCE_OWNER }}/${{ env.SOURCE_REPO }}/tarball/gh-pages" \
+            -L -o "/tmp/release-content.tar.gz"
+          
+          # Extract the tarball
+          cd /tmp
+          tar -xzf release-content.tar.gz
+          
+          # Find the extracted directory and copy content
+          EXTRACTED_DIR=$(find . -maxdepth 1 -name "${{ env.SOURCE_OWNER }}-${{ env.SOURCE_REPO }}-*" -type d | head -1)
+          if [[ -n "$EXTRACTED_DIR" && -d "$EXTRACTED_DIR/branches/${{ env.RELEASE_BRANCH }}" ]]; then
+            cp -r "$EXTRACTED_DIR/branches/${{ env.RELEASE_BRANCH }}"/* "/tmp/release-content/${{ env.REPO_CODE }}/"
+            echo "Content downloaded successfully"
+          else
+            echo "Error: Release content not found at branches/${{ env.RELEASE_BRANCH }}"
+            exit 1
+          fi
 
       - name: Create and switch to new branch
-        if: steps.check_pr.outputs.pr_exists == 'false'
+        if: steps.handle_existing.outputs.ready_to_create == 'true'
         run: |
           git checkout -b "${{ env.BRANCH_NAME }}"
 
       - name: Copy content to target directory
-        if: steps.check_pr.outputs.pr_exists == 'false'
+        if: steps.handle_existing.outputs.ready_to_create == 'true'
         run: |
           # Create target directory
           mkdir -p "${{ env.REPO_CODE }}"
@@ -202,7 +226,7 @@ jobs:
           fi
 
       - name: Commit changes with squash approach
-        if: steps.check_pr.outputs.pr_exists == 'false'
+        if: steps.handle_existing.outputs.ready_to_create == 'true'
         run: |
           # Create a single commit with all changes for compact artifacts
           git commit -m "Add release content for ${{ env.SOURCE_REPO }} from ${{ env.RELEASE_BRANCH }}
@@ -216,12 +240,12 @@ jobs:
           to the smart-html repository for publication at smart.who.int."
 
       - name: Push branch
-        if: steps.check_pr.outputs.pr_exists == 'false'
+        if: steps.handle_existing.outputs.ready_to_create == 'true'
         run: |
           git push origin "${{ env.BRANCH_NAME }}"
 
       - name: Create Pull Request
-        if: steps.check_pr.outputs.pr_exists == 'false'
+        if: steps.handle_existing.outputs.ready_to_create == 'true'
         run: |
           gh pr create \
             --title "Release: Add ${{ env.SOURCE_REPO }} content from ${{ env.RELEASE_BRANCH }}" \
@@ -246,6 +270,9 @@ jobs:
           - [ ] Target directory is correct
           - [ ] Links and references work properly
 
+          ### Approval to Publish
+          Once reviewed and approved, this PR can be merged to publish the content to smart.who.int.
+
           **Generated by:** WHO Smart Guidelines publication release automation
           **Workflow:** \`publication-release.yml\`
           **Run ID:** ${{ github.run_id }}
@@ -258,15 +285,8 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Report PR creation
-        if: steps.check_pr.outputs.pr_exists == 'false'
+        if: steps.handle_existing.outputs.ready_to_create == 'true'
         run: |
           echo "✅ PR created successfully for ${{ env.SOURCE_REPO }} release ${{ env.RELEASE_BRANCH }}"
           echo "Branch: ${{ env.BRANCH_NAME }}"
           echo "Target Directory: ${{ env.REPO_CODE }}/"
-
-      - name: Report existing PR
-        if: steps.check_pr.outputs.pr_exists == 'true'
-        run: |
-          echo "ℹ️ PR already exists for this release: #${{ steps.check_pr.outputs.pr_number }}"
-          echo "Branch: ${{ env.BRANCH_NAME }}"
-          echo "No action needed."

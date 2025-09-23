@@ -94,12 +94,17 @@ jobs:
 ### Successful Execution
 When the workflow executes successfully:
 
-1. **New PR Created**: A new pull request is created with:
+1. **Existing PR Handling**: If a PR already exists for the same release:
+   - The existing PR is automatically closed with a comment
+   - The existing branch is deleted
+   - A new branch and PR are created with the latest content
+
+2. **New PR Created**: A new pull request is created with:
    - Title: "Release: Add {repo-name} content from {release-branch}"
-   - Branch: `release-{repo-code}-{release-version}`
+   - Branch: `{repo-code}-release-{release-version}` (e.g., `trust-release-v1.0.0`)
    - Content: Published files from the release branch
 
-2. **Directory Structure**: Content is placed in the appropriate directory:
+3. **Directory Structure**: Content is placed in the appropriate directory:
    ```
    smart-html/
    ├── trust/          # Content from smart-trust
@@ -108,11 +113,14 @@ When the workflow executes successfully:
    └── ...
    ```
 
-3. **Notification**: The PR includes detailed information about the source and changes
+4. **Approval to Publish**: The PR includes an "Approval to Publish" section and can be merged to publish content to smart.who.int
 
-### Duplicate Prevention
-- If a PR already exists for the same release, no new PR is created
-- Existing PR information is logged for reference
+### Branch Naming Convention
+- Format: `{repo-code}-release-{release-version}`
+- Examples:
+  - `trust-release-v1.0.0` (from smart-trust, release-v1.0.0)
+  - `base-release-2024.1` (from smart-base, release-2024.1)
+  - `immunizations-release-beta` (from smart-immunizations, release-beta)
 
 ### Error Handling
 - Invalid repositories are rejected with clear error messages
