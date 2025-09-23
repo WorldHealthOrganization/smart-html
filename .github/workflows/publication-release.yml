@@ -23,6 +23,21 @@ name: Publication Release Workflow
         default: 'WorldHealthOrganization'
   repository_dispatch:
     types: [release-publication-request]
+  workflow_dispatch:
+    inputs:
+      source_repository:
+        description: 'Source repository name (e.g., smart-trust)'
+        required: true
+        type: string
+      release_branch:
+        description: 'Release branch name (e.g., release-v1.0.0)'
+        required: true
+        type: string
+      source_owner:
+        description: 'Source repository owner'
+        required: false
+        type: string
+        default: 'WorldHealthOrganization'
 
 permissions:
   contents: write
@@ -43,7 +58,7 @@ jobs:
           echo "Validating release request..."
 
           # Extract inputs based on trigger type
-          if [[ "${{ github.event_name }}" == "workflow_call" ]]; then
+          if [[ "${{ github.event_name }}" == "workflow_call" ]] || [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
             SOURCE_REPO="${{ inputs.source_repository }}"
             RELEASE_BRANCH="${{ inputs.release_branch }}"
             SOURCE_OWNER="${{ inputs.source_owner }}"
@@ -110,7 +125,7 @@ jobs:
       - name: Set up environment variables
         run: |
           # Re-extract inputs based on trigger type for this job
-          if [[ "${{ github.event_name }}" == "workflow_call" ]]; then
+          if [[ "${{ github.event_name }}" == "workflow_call" ]] || [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
             SOURCE_REPO="${{ inputs.source_repository }}"
             RELEASE_BRANCH="${{ inputs.release_branch }}"
             SOURCE_OWNER="${{ inputs.source_owner }}"

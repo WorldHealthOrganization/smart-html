@@ -10,7 +10,7 @@ The publication release workflow enables automatic integration of published cont
 
 ### Trigger Methods
 
-The workflow can be triggered in two ways:
+The workflow can be triggered in three ways:
 
 1. **Repository Dispatch** (Primary method)
    - Triggered by other workflows using the `repository_dispatch` event
@@ -19,6 +19,11 @@ The workflow can be triggered in two ways:
 2. **Workflow Call** (Direct method)
    - Can be called directly from other workflows
    - Requires explicit input parameters
+
+3. **Manual Dispatch** (GitHub UI method)
+   - Can be triggered manually from the GitHub Actions UI
+   - Allows users to manually initiate publication releases
+   - Accessible from the "Actions" tab in the smart-html repository
 
 ### Workflow Process
 
@@ -88,6 +93,25 @@ jobs:
       release_branch: "release-v1.0.0"
       source_owner: "WorldHealthOrganization"
 ```
+
+### Manual dispatch from GitHub UI
+
+To manually trigger the publication release workflow:
+
+1. Navigate to the WorldHealthOrganization/smart-html repository
+2. Go to the "Actions" tab
+3. Select "Publication Release Workflow" from the workflow list
+4. Click "Run workflow"
+5. Fill in the required parameters:
+   - **Source repository**: The smart-XXX repository name (e.g., "smart-trust")
+   - **Release branch**: The release branch name (e.g., "release-v1.0.0") 
+   - **Source owner**: Repository owner (defaults to "WorldHealthOrganization")
+6. Click "Run workflow" to start the publication process
+
+This method is useful for:
+- Testing the publication workflow
+- Manually triggering releases when automated triggers fail
+- Re-running publication for existing release branches
 
 ## Expected Behavior
 
