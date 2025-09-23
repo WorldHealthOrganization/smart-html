@@ -20,7 +20,7 @@ enable_sparse_checkout: true
 sparse_dirs:
   - /templates
   - /assets
-  - /smart-pcmt-vaxprequal  # ADD THE IG FOLDER!
+#  - /smart-pcmt-vaxprequal  # ADD THE IG FOLDER!
 
 # GitHub settings
 enable_pr_creation: false  # Set to false for local testing
