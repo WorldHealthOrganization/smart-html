@@ -1,0 +1,272 @@
+---
+name: Publication Release Workflow
+
+# This workflow is triggered from smart-XXX repositories when they complete
+# a release deployment on a release-* branch. It creates a PR in smart-html
+# to include the published content.
+
+'on':
+  workflow_call:
+    inputs:
+      source_repository:
+        description: 'Source repository name (e.g., smart-trust)'
+        required: true
+        type: string
+      release_branch:
+        description: 'Release branch name (e.g., release-v1.0.0)'
+        required: true
+        type: string
+      source_owner:
+        description: 'Source repository owner'
+        required: false
+        type: string
+        default: 'WorldHealthOrganization'
+  repository_dispatch:
+    types: [release-publication-request]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  # Security validation job
+  validate-request:
+    runs-on: ubuntu-latest
+    outputs:
+      is_valid: ${{ steps.validation.outputs.is_valid }}
+      repo_code: ${{ steps.validation.outputs.repo_code }}
+      branch_name: ${{ steps.validation.outputs.branch_name }}
+    steps:
+      - name: Validate organization and repository
+        id: validation
+        run: |
+          echo "Validating release request..."
+
+          # Extract inputs based on trigger type
+          if [[ "${{ github.event_name }}" == "workflow_call" ]]; then
+            SOURCE_REPO="${{ inputs.source_repository }}"
+            RELEASE_BRANCH="${{ inputs.release_branch }}"
+            SOURCE_OWNER="${{ inputs.source_owner }}"
+          else
+            # repository_dispatch event
+            SOURCE_REPO="${{ github.event.client_payload.source_repository }}"
+            RELEASE_BRANCH="${{ github.event.client_payload.release_branch }}"
+            SOURCE_OWNER="${{ github.event.client_payload.source_owner || 'WorldHealthOrganization' }}"
+          fi
+
+          echo "Source: $SOURCE_OWNER/$SOURCE_REPO"
+          echo "Release Branch: $RELEASE_BRANCH"
+
+          # Validate organization
+          if [[ "$SOURCE_OWNER" != "WorldHealthOrganization" ]]; then
+            echo "Error: Only WorldHealthOrganization repositories are allowed"
+            echo "is_valid=false" >> $GITHUB_OUTPUT
+            exit 1
+          fi
+
+          # Validate smart-XXX pattern
+          if [[ ! "$SOURCE_REPO" =~ ^smart-.+ ]] || [[ "$SOURCE_REPO" == "smart-html" ]]; then
+            echo "Error: Repository must follow smart-XXX pattern and not be smart-html"
+            echo "is_valid=false" >> $GITHUB_OUTPUT
+            exit 1
+          fi
+
+          # Validate release-* pattern
+          if [[ ! "$RELEASE_BRANCH" =~ ^release-.+ ]]; then
+            echo "Error: Branch must follow release-* pattern"
+            echo "is_valid=false" >> $GITHUB_OUTPUT
+            exit 1
+          fi
+
+          # Extract repo code and create branch name
+          REPO_CODE="${SOURCE_REPO#smart-}"
+          RELEASE_VERSION="${RELEASE_BRANCH#release-}"
+          BRANCH_NAME="release-${REPO_CODE}-${RELEASE_VERSION}"
+
+          echo "Validation passed"
+          echo "is_valid=true" >> $GITHUB_OUTPUT
+          echo "repo_code=$REPO_CODE" >> $GITHUB_OUTPUT
+          echo "branch_name=$BRANCH_NAME" >> $GITHUB_OUTPUT
+
+          # Set as environment variables for next jobs
+          echo "SOURCE_REPO=$SOURCE_REPO" >> $GITHUB_ENV
+          echo "RELEASE_BRANCH=$RELEASE_BRANCH" >> $GITHUB_ENV
+          echo "SOURCE_OWNER=$SOURCE_OWNER" >> $GITHUB_ENV
+          echo "REPO_CODE=$REPO_CODE" >> $GITHUB_ENV
+          echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
+
+  # Main release automation job
+  create-release-pr:
+    needs: validate-request
+    if: needs.validate-request.outputs.is_valid == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout smart-html repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up environment variables
+        run: |
+          # Re-extract inputs based on trigger type for this job
+          if [[ "${{ github.event_name }}" == "workflow_call" ]]; then
+            SOURCE_REPO="${{ inputs.source_repository }}"
+            RELEASE_BRANCH="${{ inputs.release_branch }}"
+            SOURCE_OWNER="${{ inputs.source_owner }}"
+          else
+            # repository_dispatch event
+            SOURCE_REPO="${{ github.event.client_payload.source_repository }}"
+            RELEASE_BRANCH="${{ github.event.client_payload.release_branch }}"
+            SOURCE_OWNER="${{ github.event.client_payload.source_owner || 'WorldHealthOrganization' }}"
+          fi
+
+          echo "SOURCE_REPO=$SOURCE_REPO" >> $GITHUB_ENV
+          echo "RELEASE_BRANCH=$RELEASE_BRANCH" >> $GITHUB_ENV
+          echo "SOURCE_OWNER=$SOURCE_OWNER" >> $GITHUB_ENV
+          echo "REPO_CODE=${{ needs.validate-request.outputs.repo_code }}" >> $GITHUB_ENV
+          echo "BRANCH_NAME=${{ needs.validate-request.outputs.branch_name }}" >> $GITHUB_ENV
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "WHO Smart Guidelines Bot"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Check for existing PR
+        id: check_pr
+        run: |
+          # Check if PR already exists
+          EXISTING_PR=$(gh pr list --head "${{ env.BRANCH_NAME }}" \
+            --state open --json number,title --jq '.[0].number' \
+            2>/dev/null || echo "")
+
+          if [[ -n "$EXISTING_PR" && "$EXISTING_PR" != "null" ]]; then
+            echo "PR already exists: #$EXISTING_PR"
+            echo "pr_exists=true" >> $GITHUB_OUTPUT
+            echo "pr_number=$EXISTING_PR" >> $GITHUB_OUTPUT
+          else
+            echo "No existing PR found"
+            echo "pr_exists=false" >> $GITHUB_OUTPUT
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        if: steps.check_pr.outputs.pr_exists == 'false'
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install Python dependencies
+        if: steps.check_pr.outputs.pr_exists == 'false'
+        run: |
+          pip install requests
+
+      - name: Download release content
+        if: steps.check_pr.outputs.pr_exists == 'false'
+        run: |
+          echo "Downloading content from ${{ env.SOURCE_OWNER }}/${{ env.SOURCE_REPO }}/gh-pages/branches/${{ env.RELEASE_BRANCH }}"
+
+          python3 .github/scripts/release_automation.py \
+            "${{ env.SOURCE_OWNER }}" \
+            "${{ env.SOURCE_REPO }}" \
+            "${{ env.RELEASE_BRANCH }}" \
+            "${{ secrets.GITHUB_TOKEN }}" \
+            "smart-html"
+
+      - name: Create and switch to new branch
+        if: steps.check_pr.outputs.pr_exists == 'false'
+        run: |
+          git checkout -b "${{ env.BRANCH_NAME }}"
+
+      - name: Copy content to target directory
+        if: steps.check_pr.outputs.pr_exists == 'false'
+        run: |
+          # Create target directory
+          mkdir -p "${{ env.REPO_CODE }}"
+
+          # Copy content from downloaded location
+          if [[ -d "/tmp/release-content/${{ env.REPO_CODE }}" ]]; then
+            echo "Copying content to ${{ env.REPO_CODE }}/ directory..."
+            cp -r /tmp/release-content/${{ env.REPO_CODE }}/* "${{ env.REPO_CODE }}/"
+
+            # List what was copied
+            echo "Content copied:"
+            find "${{ env.REPO_CODE }}" -type f | head -20
+
+            # Add all changes
+            git add "${{ env.REPO_CODE }}/"
+          else
+            echo "Error: Downloaded content not found at /tmp/release-content/${{ env.REPO_CODE }}"
+            exit 1
+          fi
+
+      - name: Commit changes with squash approach
+        if: steps.check_pr.outputs.pr_exists == 'false'
+        run: |
+          # Create a single commit with all changes for compact artifacts
+          git commit -m "Add release content for ${{ env.SOURCE_REPO }} from ${{ env.RELEASE_BRANCH }}
+
+          - Source: WorldHealthOrganization/${{ env.SOURCE_REPO }}
+          - Release Branch: ${{ env.RELEASE_BRANCH }}
+          - Target Directory: ${{ env.REPO_CODE }}
+          - Automated by: publication-release workflow
+
+          This commit adds the published content from the release branch
+          to the smart-html repository for publication at smart.who.int."
+
+      - name: Push branch
+        if: steps.check_pr.outputs.pr_exists == 'false'
+        run: |
+          git push origin "${{ env.BRANCH_NAME }}"
+
+      - name: Create Pull Request
+        if: steps.check_pr.outputs.pr_exists == 'false'
+        run: |
+          gh pr create \
+            --title "Release: Add ${{ env.SOURCE_REPO }} content from ${{ env.RELEASE_BRANCH }}" \
+            --body "## Automated Release Publication
+
+          This PR adds the published content from **${{ env.SOURCE_REPO }}** release branch **${{ env.RELEASE_BRANCH }}** to the smart-html repository.
+
+          ### Release Information
+          - **Source Repository:** WorldHealthOrganization/${{ env.SOURCE_REPO }}
+          - **Release Branch:** ${{ env.RELEASE_BRANCH }}
+          - **Target Directory:** \`${{ env.REPO_CODE }}/\`
+          - **Content Source:** \`${{ env.SOURCE_REPO }}/gh-pages/branches/${{ env.RELEASE_BRANCH }}\`
+
+          ### Changes
+          - Copies published release content to the appropriate directory in smart-html
+          - Content will be available at \`smart.who.int/${{ env.REPO_CODE }}\` once merged
+          - Uses squash commits for compact artifact management
+
+          ### Review Checklist
+          - [ ] Content is complete and properly structured
+          - [ ] No sensitive information included
+          - [ ] Target directory is correct
+          - [ ] Links and references work properly
+
+          **Generated by:** WHO Smart Guidelines publication release automation
+          **Workflow:** \`publication-release.yml\`
+          **Run ID:** ${{ github.run_id }}
+
+          ---
+          *This is an automated PR. Contact the repository maintainers if you have questions.*" \
+            --head "${{ env.BRANCH_NAME }}" \
+            --base main
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Report PR creation
+        if: steps.check_pr.outputs.pr_exists == 'false'
+        run: |
+          echo "✅ PR created successfully for ${{ env.SOURCE_REPO }} release ${{ env.RELEASE_BRANCH }}"
+          echo "Branch: ${{ env.BRANCH_NAME }}"
+          echo "Target Directory: ${{ env.REPO_CODE }}/"
+
+      - name: Report existing PR
+        if: steps.check_pr.outputs.pr_exists == 'true'
+        run: |
+          echo "ℹ️ PR already exists for this release: #${{ steps.check_pr.outputs.pr_number }}"
+          echo "Branch: ${{ env.BRANCH_NAME }}"
+          echo "No action needed."
