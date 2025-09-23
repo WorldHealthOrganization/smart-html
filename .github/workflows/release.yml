@@ -1,144 +1,187 @@
-name: ReleaseBuild
+name: IG Release to gh-pages/sitepreview
 
 on:
-  workflow_call:  # Reusable by other workflows
-  workflow_dispatch:  # Manual trigger by user
-
+  workflow_call:
+    inputs:
+      pubreq_package_id:
+        type: string
+        required: false
+      pubreq_version:
+        type: string
+        required: false
+      pubreq_canonical:
+        type: string
+        required: false
+      pubreq_path:
+        type: string
+        required: false
+      sitepreview_dir:
+        type: string
+        required: false
+        default: sitepreview
+        
 permissions:
-  contents: write
-  pull-requests: write
+  contents: write  # push to gh-pages in the caller repo
 
 jobs:
-  build:
+  build-and-publish:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout current repo to ./source
+      # 1) Checkout the CALLER repo at the triggering commit/branch
+      - name: Checkout caller repo
         uses: actions/checkout@v4
         with:
-          path: source
-          fetch-depth: 0  # Fetch all history for all branches and tags.
+          fetch-depth: 0
 
-      - name: Checkout HL7/fhir-ig-history-template to ./history-template
-        uses: actions/checkout@v4
-        with:
-          repository: HL7/fhir-ig-history-template
-          path: history-template
-
-      - name: Checkout WorldHealthOrganization/smart-html to ./webroot
-        uses: actions/checkout@v4
-        with:
-          repository: WorldHealthOrganization/smart-html
-          path: webroot
-          fetch-depth: 0  # Fetch all history for all branches and tags.
-
-      - name: Checkout FHIR/ig-registry to ./ig-registry
-        uses: actions/checkout@v4
-        with:
-          repository: FHIR/ig-registry
-          path: ig-registry
-
-      - name: Setup publisher and install dependencies
+      # 2) If caller keeps override in .github/, copy it to root so the script can see it
+      - name: Use .github/release-config.yaml if present
         run: |
-          docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest /bin/sh -c "
-            npm install -g fsh-sushi &&
-            curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./publisher.jar --create-dirs
-          "
+          if [ -f ".github/release-config.yaml" ] && [ ! -f "release-config.yaml" ]; then
+            cp .github/release-config.yaml release-config.yaml
+            echo "Using caller .github/release-config.yaml"
+          fi
 
-      - name: Create package cache folder
-        run: |
-          docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest /bin/sh -c "
-            mkdir -p ./fhir-package-cache && chmod 777 ./fhir-package-cache
-          "
+      # 3) Toolchains
+      - name: Setup Java (publisher.jar)
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
 
-      - name: Ensure write permissions for webroot and source directories
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # 4) Download the script + global config from smart-html/scripts at the exact ref used in "uses:"
+      - name: Download scripts from smart-html@ref
         run: |
-          chmod -R 777 webroot
-          chmod -R 777 source
-          chmod -R 777 fhir-package-cache
+          set -euxo pipefail
+          # Example: github.workflow_ref = WorldHealthOrganization/smart-html/.github/workflows/release.yml@main
+          REF="${{ github.workflow_ref }}"
+          REF="${REF##*@}"   # => "main" (or a tag/SHA)
+          mkdir -p .ci-tools
+          curl -fsSL "https://raw.githubusercontent.com/costateixeira/smart-html/main/scripts/ig_publisher.py" \
+            -o .ci-tools/ig_publisher.py
+          curl -fsSL "https://raw.githubusercontent.com/costateixeira/smart-html/main/scripts/requirements.txt" \
+            -o .ci-tools/requirements.txt
+          curl -fsSL "https://raw.githubusercontent.com/costateixeira/smart-html/main/scripts/release-config.yaml" \
+            -o .ci-tools/release-config.global.yaml
+          chmod +x .ci-tools/ig_publisher.py
+
+      - name: Install Python deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r .ci-tools/requirements.txt
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install SUSHI
+        run: |
+          npm install -g fsh-sushi
+          sushi --version
           
-      - name: Run the IG publisher
+      - name: Install Graphviz
         run: |
-          docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest java -Xmx4g -jar ./publisher.jar publisher -ig source -package-cache-folder fhir-package-cache
+          sudo apt-get update
+          sudo apt-get install -y graphviz
+          dot -V          
 
-      - name: Run publisher command for publishing release
-        run: |
-          docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest /bin/sh -c "
-            ls -la /workspace/webroot &&
-            java -Xmx4g -Dfile.encoding=UTF-8 -jar /workspace/publisher.jar -go-publish -package-cache-folder /workspace/fhir-package-cache -source /workspace/source -web /workspace/webroot -temp /workspace/temp -registry /workspace/ig-registry/fhir-ig-list.json -history /workspace/history-template -templates /workspace/webroot/templates
-          "
 
-      - name: Exclude files > 100MB from gh-pages and move to release-assets
+      - name: Install Ruby
         run: |
-          mkdir -p ./release-assets
-          # Move all files larger than 100 MB to release-assets
-          find ./webroot/ -type f -size +100M -exec mv {} ./release-assets/ \;
+          sudo apt-get update
+          sudo apt-get install -y ruby-full build-essential zlib1g-dev
+
+      - name: Install Jekyll (user gems)
+        run: |
+          gem install --no-document jekyll bundler --user-install
+          echo "$(ruby -e 'print Gem.user_dir')/bin" >> $GITHUB_PATH
+
+
+      - name: Check Jekyll
+        run: |
+          jekyll -v
+          bundle -v
+
+      # - name: Prepare local webroot git remote
+      #   run: |
+      #     set -euxo pipefail
+      #     mkdir -p .ci-tools
+      #     # Create a bare remote with main branch seeded
+      #     git init --bare --initial-branch=main .ci-tools/webroot-remote.git
+      #     # Seed an initial commit so cloning --branch main works
+      #     git clone .ci-tools/webroot-remote.git .ci-tools/webroot-seed
+      #     git -C .ci-tools/webroot-seed config user.name  "github-actions[bot]"
+      #     git -C .ci-tools/webroot-seed config user.email "github-actions[bot]@users.noreply.github.com"
+      #     touch .ci-tools/webroot-seed/.nojekyll
+      #     git -C .ci-tools/webroot-seed add .nojekyll
+      #     git -C .ci-tools/webroot-seed commit -m "Initialize webroot main"
+      #     git -C .ci-tools/webroot-seed push origin main
+      #     rm -rf .ci-tools/webroot-seed
+
+      - name: Pre-clone webroot (sparse) for verification
+        run: |
+          set -euxo pipefail
+          mkdir -p .ci-tools
+          git clone --depth=1 --filter=blob:none --sparse \
+            https://github.com/WorldHealthOrganization/smart-html .ci-tools/webroot
+          # allow single-file patterns
+          git -C .ci-tools/webroot sparse-checkout init --no-cone || git -C .ci-tools/webroot sparse-checkout init
+          git -C .ci-tools/webroot sparse-checkout set --no-cone templates publish-setup.json package-registry.json
+          # optional: show what we got
+          git -C .ci-tools/webroot sparse-checkout list || true
+          ls -la .ci-tools/webroot | sed -n '1,200p'
+          test -f .ci-tools/webroot/publish-setup.json
           
-          # Prepare the deploy folder, only with files ≤ 100MB
-          mkdir -p ./deploy
-          rsync -av --exclude-from=<(find ./webroot/ -type f -size +100M -printf "%P\n") ./webroot/ ./deploy/
 
-
-      - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./deploy
-          destination_dir: sitepreview
-
-
-      - name: Upload release assets ( package.tgz)
+      - name: Verify sparse contents
         run: |
-          mkdir -p ./release-assets
-          mv ./source/output/package.tgz ./release-assets/
+          echo "Sparse list:"
+          git -C .ci-tools/webroot sparse-checkout list || true
+          echo "Root tree:"
+          ls -la .ci-tools/webroot | sed -n '1,200p'
+          test -f .ci-tools/webroot/publish-setup.json || (echo "publish-setup.json MISSING" && exit 1)
 
 
-      - name: Upload updated fhir-ig-list.json as artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: fhir-ig-list.json
-          path: ig-registry/fhir-ig-list.json
 
-      - name: Upload updated fhir-ig-list.json as artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: package-feeds.json
-          path: ig-registry/package-feeds.json
+#       # 5) Build IG into a local webroot (no push inside the script)
+#       - name: Build IG to local webroot (no push)
+#         run: |
+#           set -euxo pipefail
+#           python .ci-tools/ig_publisher.py \
+#             --global-config ".ci-tools/release-config.global.yaml" \
+#             --local-config "release-config.yaml" \
+#             --source "${{ github.workspace }}" 
+# #            --webroot-branch "main" \
+# #            --enable-sparse
+# #            --webroot-repo "https://github.com/costateixeira/smart-html" \
 
 
-#      - name: Upload package.tgz to release
-#        uses: actions/upload-release-asset@v1
-#        with:
-#          upload_url: ${{ github.event.release.upload_url }}
-#          asset_path: ./release-assets/package.tgz
-#          asset_name: package.tgz
-#          asset_content_type: application/gzip
+      - name: Build & publish (Python drives gh-pages)
+        run: |
+          set -euxo pipefail
+          python .ci-tools/ig_publisher.py \
+            --global-config ".ci-tools/release-config.global.yaml" \
+            --local-config "release-config.yaml" \
+            --source "${{ github.workspace }}" \
+            --source-repo "https://github.com/${{ github.repository }}" \
+            --webroot-repo "https://github.com/costateixeira/smart-html" \
+            --registry-repo "https://github.com/costateixeira/ig-registry" \
+            --ensure-pubreq \
+            --pubreq-package-id "${{ inputs.pubreq_package_id }}" \
+            --pubreq-version "${{ inputs.pubreq_version }}" \
+            --pubreq-canonical "${{ inputs.pubreq_canonical }}" \
+            --pubreq-path "${{ inputs.pubreq_path }}" \
+            --publish-gh-pages \
+            --sitepreview-dir "${{ inputs.sitepreview_dir }}" \
+            --enable-pr \
+            --github-token "${{ secrets.GITHUB_TOKEN }}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
 
-#      # Configure Git before committing changes
-#      - name: Configure Git
-#        run: |
-#          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-#          git config --global user.name "GitHub Actions Bot"
-
-#      # Use SSH or HTTPS with the user's credentials if available
-#      - name: Create new branch and update content in WorldHealthOrganization/smart-html
-#        run: |
-#          cd webroot
-#          git checkout main
-#          git checkout -b "${{ github.repository }}-${{ github.run_id }}"  # Create a branch using the calling repo name
-#          rsync -av --exclude='.git/' --delete ../deploy/ ./  # Sync the deploy directory to the webroot
-#          git add .
-#          git commit -m "Update site content from repo ${{ github.repository }}"
-#          git push --set-upstream origin "${{ github.repository }}-${{ github.run_id }}"
-#
-#      # Create a pull request to merge changes into the main branch
-#      - name: Create Pull Request
-#        uses: peter-evans/create-pull-request@v3
-#        with:
-#          token: ${{ secrets.GITHUB_TOKEN }}  # Reuse default GitHub token
-#          commit-message: "Update site content from repo ${{ github.repository }}"
-#          title: "Update site content from repo ${{ github.repository }}"
-#          body: "This is an automated pull request to update the site content from ${{ github.repository }}"
-#          head: "${{ github.repository }}-${{ github.run_id }}"
-#          base: main
-#          delete-branch: true
