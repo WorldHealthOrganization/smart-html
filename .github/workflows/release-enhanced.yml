@@ -1,0 +1,239 @@
+name: IG Release to gh-pages/sitepreview with DAK Processing
+
+on:
+  workflow_call:
+    inputs:
+      pubreq_package_id:
+        type: string
+        required: false
+      pubreq_version:
+        type: string
+        required: false
+      pubreq_canonical:
+        type: string
+        required: false
+      pubreq_path:
+        type: string
+        required: false
+      sitepreview_dir:
+        type: string
+        required: false
+        default: sitepreview
+      do_dak:
+        description: 'Enable DAK preprocessing and postprocessing'
+        required: false
+        type: boolean
+        default: true
+        
+permissions:
+  contents: write  # push to gh-pages in the caller repo
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1) Checkout the CALLER repo at the triggering commit/branch
+      - name: Checkout caller repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # 2) If caller keeps override in .github/, copy it to root so the script can see it
+      - name: Use .github/release-config.yaml if present
+        run: |
+          if [ -f ".github/release-config.yaml" ] && [ ! -f "release-config.yaml" ]; then
+            cp .github/release-config.yaml release-config.yaml
+            echo "Using caller .github/release-config.yaml"
+          fi
+
+      # 3) Toolchains
+      - name: Setup Java (publisher.jar)
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # 4) Download the script + global config from smart-html/scripts at the exact ref used in "uses:"
+      - name: Download scripts from smart-html@ref
+        run: |
+          set -euxo pipefail
+          # Example: github.workflow_ref = WorldHealthOrganization/smart-html/.github/workflows/release.yml@main
+          REF="${{ github.workflow_ref }}"
+          REF="${REF##*@}"   # => "main" (or a tag/SHA)
+          mkdir -p .ci-tools
+          curl -fsSL "https://raw.githubusercontent.com/costateixeira/smart-html/main/scripts/ig_publisher.py" \
+            -o .ci-tools/ig_publisher.py
+          curl -fsSL "https://raw.githubusercontent.com/costateixeira/smart-html/main/scripts/requirements.txt" \
+            -o .ci-tools/requirements.txt
+          curl -fsSL "https://raw.githubusercontent.com/costateixeira/smart-html/main/scripts/release-config.yaml" \
+            -o .ci-tools/release-config.global.yaml
+          curl -fsSL "https://raw.githubusercontent.com/costateixeira/smart-html/main/scripts/dak_processor.py" \
+            -o .ci-tools/dak_processor.py
+          chmod +x .ci-tools/ig_publisher.py
+          chmod +x .ci-tools/dak_processor.py
+
+      # 5) Install Python deps
+      - name: Install Python deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r .ci-tools/requirements.txt
+          # Install additional dependencies for DAK processing
+          pip install pyyaml lxml
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install SUSHI
+        run: |
+          npm install -g fsh-sushi
+          sushi --version
+          
+      - name: Install Graphviz
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y graphviz
+          dot -V          
+
+      - name: Install Ruby
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ruby-full build-essential zlib1g-dev
+
+      - name: Install Jekyll (user gems)
+        run: |
+          gem install --no-document jekyll bundler --user-install
+          echo "$(ruby -e 'print Gem.user_dir')/bin" >> $GITHUB_PATH
+
+      - name: Check Jekyll
+        run: |
+          jekyll -v
+          bundle -v
+
+      - name: Pre-clone webroot (sparse) for verification
+        run: |
+          set -euxo pipefail
+          mkdir -p .ci-tools
+          git clone --depth=1 --filter=blob:none --sparse \
+            https://github.com/WorldHealthOrganization/smart-html .ci-tools/webroot
+          # allow single-file patterns
+          git -C .ci-tools/webroot sparse-checkout init --no-cone || git -C .ci-tools/webroot sparse-checkout init
+          git -C .ci-tools/webroot sparse-checkout set --no-cone templates publish-setup.json package-registry.json
+          # optional: show what we got
+          git -C .ci-tools/webroot sparse-checkout list || true
+          ls -la .ci-tools/webroot | sed -n '1,200p'
+          test -f .ci-tools/webroot/publish-setup.json
+
+      - name: Verify sparse contents
+        run: |
+          echo "Sparse list:"
+          git -C .ci-tools/webroot sparse-checkout list || true
+          echo "Root tree:"
+          ls -la .ci-tools/webroot | sed -n '1,200p'
+          test -f .ci-tools/webroot/publish-setup.json || (echo "publish-setup.json MISSING" && exit 1)
+
+      # Standard IG Build & Publish
+      - name: Build & publish IG with standard workflow
+        run: |
+          set -euxo pipefail
+          python .ci-tools/ig_publisher.py \
+            --global-config ".ci-tools/release-config.global.yaml" \
+            --local-config "release-config.yaml" \
+            --source "${{ github.workspace }}" \
+            --source-repo "https://github.com/${{ github.repository }}" \
+            --webroot-repo "https://github.com/costateixeira/smart-html" \
+            --registry-repo "https://github.com/costateixeira/ig-registry" \
+            --ensure-pubreq \
+            --pubreq-package-id "${{ inputs.pubreq_package_id }}" \
+            --pubreq-version "${{ inputs.pubreq_version }}" \
+            --pubreq-canonical "${{ inputs.pubreq_canonical }}" \
+            --pubreq-path "${{ inputs.pubreq_path }}" \
+            --publish-gh-pages \
+            --sitepreview-dir "${{ inputs.sitepreview_dir }}" \
+            --enable-pr \
+            --github-token "${{ secrets.GITHUB_TOKEN }}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+
+      # DAK Post-Processing 
+      - name: Run DAK post-processing
+        if: inputs.do_dak != 'false'
+        run: |
+          echo "🔬 Starting DAK post-processing..."
+          
+          # Check if output directory exists
+          if [ ! -d "output" ]; then
+            echo "⚠️ Output directory not found, skipping DAK processing"
+            exit 0
+          fi
+          
+          # Run DAK processor
+          python .ci-tools/dak_processor.py \
+            --output-dir "output" \
+            --source-dir "." \
+            --verbose
+          
+          echo "✅ DAK post-processing completed"
+
+      # Copy DAK artifacts to webroot for final deployment
+      - name: Copy DAK artifacts to webroot
+        if: inputs.do_dak != 'false'
+        run: |
+          echo "📋 Copying DAK artifacts to webroot for deployment..."
+          
+          # Check if webroot directory exists
+          WEBROOT_DIR=""
+          if [ -d "webroot" ]; then
+            WEBROOT_DIR="webroot"
+          elif [ -d ".ci-tools/webroot" ]; then
+            WEBROOT_DIR=".ci-tools/webroot"
+          else
+            echo "⚠️ Webroot directory not found, skipping artifact copy"
+            exit 0
+          fi
+          
+          # Copy DAK artifacts from output to webroot
+          if [ -d "output" ]; then
+            echo "Copying JSON schemas..."
+            cp output/*.schema.json "$WEBROOT_DIR/" 2>/dev/null || echo "No schema files found"
+            
+            echo "Copying JSON-LD vocabularies..."
+            cp output/*.jsonld "$WEBROOT_DIR/" 2>/dev/null || echo "No JSON-LD files found"
+            
+            echo "Copying OpenAPI specs..."
+            cp output/*.openapi.json "$WEBROOT_DIR/" 2>/dev/null || echo "No OpenAPI files found"
+            
+            echo "Copying DAK API hub..."
+            cp output/dak-api.html "$WEBROOT_DIR/" 2>/dev/null || echo "No DAK API hub found"
+            
+            echo "Copying QA reports..."
+            cp output/qa.json "$WEBROOT_DIR/" 2>/dev/null || echo "No QA report found"
+            
+            echo "✅ DAK artifacts copied to webroot"
+          else
+            echo "⚠️ Output directory not found"
+          fi
+
+      # Optional: Upload build artifacts for debugging
+      - name: Upload build artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dak-processing-artifacts
+          path: |
+            output/*.schema.json
+            output/*.jsonld
+            output/*.openapi.json
+            output/dak-api.html
+            output/qa.json
+            input/temp/qa_*.json
+          if-no-files-found: ignore
+          retention-days: 7
