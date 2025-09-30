@@ -67,9 +67,9 @@ jobs:
           REF="${{ github.workflow_ref }}"
           REF="${REF##*@}"   # => "main" (or a tag/SHA)
           mkdir -p .ci-tools
-          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/main/scripts/ig_publisher.py" \
+          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/enhanced-release-wf/scripts/ig_publisher.py" \
             -o .ci-tools/ig_publisher.py
-          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/main/scripts/requirements.txt" \
+          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/enhanced-release-wf/scripts/requirements.txt" \
             -o .ci-tools/requirements.txt
           curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/enhanced-release-wf/scripts/release-config.yaml" \
             -o .ci-tools/release-config.global.yaml
