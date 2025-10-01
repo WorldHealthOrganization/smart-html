@@ -157,8 +157,8 @@ jobs:
           SOURCE_PATH=$(python3 -c "import yaml; config = yaml.safe_load(open('release-config.yaml')); print(config.get('scripts', {}).get('source_path', 'input/scripts'))")
           
           echo "📥 Downloading preprocessing scripts from $SOURCE_REPO"
-          echo "Branch: $SOURCE_BRANCH"
-          echo "Path: $SOURCE_PATH"
+          echo "Branch:" $SOURCE_BRANCH
+          echo "Path:" $SOURCE_PATH
           
           # Create scripts directory
           mkdir -p .ci-tools/preprocessing-scripts
@@ -171,7 +171,7 @@ jobs:
             exit 0
           fi
           
-          echo "Scripts to download: $PREPROCESS_SCRIPTS"
+          echo "Scripts to download:" $PREPROCESS_SCRIPTS
           
           # Download each preprocessing script
           for script in $PREPROCESS_SCRIPTS; do
