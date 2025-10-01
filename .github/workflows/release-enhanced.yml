@@ -67,13 +67,13 @@ jobs:
           REF="${{ github.workflow_ref }}"
           REF="${REF##*@}"   # => "main" (or a tag/SHA)
           mkdir -p .ci-tools
-          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/enhanced-release-wf/scripts/ig_publisher.py" \
+          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/${REF}/scripts/ig_publisher.py" \
             -o .ci-tools/ig_publisher.py
-          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/enhanced-release-wf/scripts/requirements.txt" \
+          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/${REF}/scripts/requirements.txt" \
             -o .ci-tools/requirements.txt
-          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/enhanced-release-wf/scripts/release-config.yaml" \
+          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/${REF}/scripts/release-config.yaml" \
             -o .ci-tools/release-config.global.yaml
-          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/enhanced-release-wf/scripts/dak_processor.py" \
+          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/${REF}/scripts/dak_processor.py" \
             -o .ci-tools/dak_processor.py
           chmod +x .ci-tools/ig_publisher.py
           chmod +x .ci-tools/dak_processor.py
@@ -139,11 +139,107 @@ jobs:
           ls -la .ci-tools/webroot | sed -n '1,200p'
           test -f .ci-tools/webroot/publish-setup.json || (echo "publish-setup.json MISSING" && exit 1)
 
-     # echo params
-      - name: ECHO config file
+      # Echo config files for debugging
+      - name: ECHO config files
         run: |
+          echo "=== Global config ==="
           cat .ci-tools/release-config.global.yaml
+          echo ""
+          echo "=== Local config ==="
           cat release-config.yaml
+
+      # NEW: DAK Preprocessing Step
+      - name: Run DAK preprocessing scripts
+        if: inputs.do_dak != 'false'
+        run: |
+          echo "🔬 Starting DAK preprocessing..."
+          
+          # Load config and check if preprocessing is enabled
+          if ! python3 -c "import yaml; config = yaml.safe_load(open('release-config.yaml')); exit(0 if config.get('scripts', {}).get('preprocessing') else 1)"; then
+            echo "No preprocessing scripts configured, skipping"
+            exit 0
+          fi
+          
+          # Get script configuration from release-config.yaml
+          SOURCE_REPO=$(python3 -c "import yaml; config = yaml.safe_load(open('release-config.yaml')); print(config.get('scripts', {}).get('source_repo', 'https://github.com/WorldHealthOrganization/smart-base'))")
+          SOURCE_BRANCH=$(python3 -c "import yaml; config = yaml.safe_load(open('release-config.yaml')); print(config.get('scripts', {}).get('source_branch', 'main'))")
+          SOURCE_PATH=$(python3 -c "import yaml; config = yaml.safe_load(open('release-config.yaml')); print(config.get('scripts', {}).get('source_path', 'input/scripts'))")
+          
+          echo "📥 Downloading preprocessing scripts from $SOURCE_REPO"
+          echo "Branch: $SOURCE_BRANCH"
+          echo "Path: $SOURCE_PATH"
+          
+          # Create scripts directory
+          mkdir -p .ci-tools/preprocessing-scripts
+          
+          # Get list of preprocessing scripts from config
+          PREPROCESS_SCRIPTS=$(python3 -c "import yaml; config = yaml.safe_load(open('release-config.yaml')); print(' '.join(config.get('scripts', {}).get('preprocessing', [])))")
+          
+          if [ -z "$PREPROCESS_SCRIPTS" ]; then
+            echo "No preprocessing scripts defined"
+            exit 0
+          fi
+          
+          echo "Scripts to download: $PREPROCESS_SCRIPTS"
+          
+          # Download each preprocessing script
+          for script in $PREPROCESS_SCRIPTS; do
+            echo "📥 Downloading $script..."
+            SCRIPT_URL="https://raw.githubusercontent.com/${SOURCE_REPO#https://github.com/}/${SOURCE_BRANCH}/${SOURCE_PATH}/${script}"
+            echo "URL: $SCRIPT_URL"
+            
+            if curl -fsSL "$SCRIPT_URL" -o ".ci-tools/preprocessing-scripts/${script}"; then
+              chmod +x ".ci-tools/preprocessing-scripts/${script}"
+              echo "✅ Downloaded $script"
+            else
+              echo "⚠️ Failed to download $script from $SCRIPT_URL"
+            fi
+          done
+          
+          # Download includes directory if needed (for DMN processing)
+          echo "📥 Downloading includes..."
+          mkdir -p input/includes
+          
+          INCLUDES_URL="https://raw.githubusercontent.com/${SOURCE_REPO#https://github.com/}/${SOURCE_BRANCH}/input/includes"
+          
+          for include_file in dmn2html.xslt dmn.css; do
+            if curl -fsSL "${INCLUDES_URL}/${include_file}" -o "input/includes/${include_file}"; then
+              echo "✅ Downloaded ${include_file}"
+            else
+              echo "⚠️ Failed to download ${include_file}"
+            fi
+          done
+          
+          # Run each preprocessing script
+          echo ""
+          echo "🔧 Running preprocessing scripts..."
+          
+          for script in $PREPROCESS_SCRIPTS; do
+            if [ -f ".ci-tools/preprocessing-scripts/${script}" ]; then
+              echo ""
+              echo "▶️ Running ${script}..."
+              
+              # Run the script in the current directory (repo root)
+              if python3 ".ci-tools/preprocessing-scripts/${script}"; then
+                echo "✅ ${script} completed successfully"
+              else
+                echo "⚠️ ${script} failed (exit code: $?)"
+                # Continue with other scripts even if one fails
+              fi
+            else
+              echo "⚠️ Script not found: ${script}"
+            fi
+          done
+          
+          echo ""
+          echo "✅ DAK preprocessing completed"
+          
+          # Show what files were created
+          echo ""
+          echo "📋 Files created by preprocessing:"
+          ls -la input/pagecontent/dak-*.md 2>/dev/null || echo "No dak-*.md files created"
+          ls -la input/images/openapi/*.json 2>/dev/null || echo "No OpenAPI files created"
+
       # Standard IG Build & Publish
       - name: Build & publish IG with standard workflow
         run: |
@@ -153,8 +249,8 @@ jobs:
             --local-config "release-config.yaml" \
             --source "${{ github.workspace }}" \
             --source-repo "https://github.com/${{ github.repository }}" \
-            --webroot-repo "https://github.com/costateixeira/smart-html" \
-            --registry-repo "https://github.com/costateixeira/ig-registry" \
+            --webroot-repo "https://github.com/WorldHealthOrganization/smart-html" \
+            --registry-repo "https://github.com/ritikarawlani/ig-registry" \
             --ensure-pubreq \
             --pubreq-package-id "${{ inputs.pubreq_package_id }}" \
             --pubreq-version "${{ inputs.pubreq_version }}" \
@@ -240,5 +336,6 @@ jobs:
             output/dak-api.html
             output/qa.json
             input/temp/qa_*.json
+            input/pagecontent/dak-*.md
           if-no-files-found: ignore
           retention-days: 7
