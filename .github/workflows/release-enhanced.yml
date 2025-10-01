@@ -142,8 +142,8 @@ jobs:
      # echo params
       - name: ECHO config file
         run: |
-          echo .ci-tools/release-config.global.yaml
-          echo release-config.yaml
+          cat .ci-tools/release-config.global.yaml
+          cat release-config.yaml
       # Standard IG Build & Publish
       - name: Build & publish IG with standard workflow
         run: |
