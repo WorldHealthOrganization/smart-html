@@ -67,13 +67,13 @@ jobs:
           REF="${{ github.workflow_ref }}"
           REF="${REF##*@}"   # => "main" (or a tag/SHA)
           mkdir -p .ci-tools
-          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/${REF}/scripts/ig_publisher.py" \
+          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/enhanced-release-wf/scripts/ig_publisher.py" \
             -o .ci-tools/ig_publisher.py
-          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/${REF}/scripts/requirements.txt" \
+          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/enhanced-release-wf/scripts/requirements.txt" \
             -o .ci-tools/requirements.txt
-          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/${REF}/scripts/release-config.yaml" \
+          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/enhanced-release-wf/scripts/release-config.yaml" \
             -o .ci-tools/release-config.global.yaml
-          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/${REF}/scripts/dak_processor.py" \
+          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/enhanced-release-wf/scripts/dak_processor.py" \
             -o .ci-tools/dak_processor.py
           chmod +x .ci-tools/ig_publisher.py
           chmod +x .ci-tools/dak_processor.py
@@ -138,15 +138,6 @@ jobs:
           echo "Root tree:"
           ls -la .ci-tools/webroot | sed -n '1,200p'
           test -f .ci-tools/webroot/publish-setup.json || (echo "publish-setup.json MISSING" && exit 1)
-
-      # Echo config files for debugging
-      - name: ECHO config files
-        run: |
-          echo "=== Global config ==="
-          cat .ci-tools/release-config.global.yaml
-          echo ""
-          echo "=== Local config ==="
-          cat release-config.yaml
 
       # NEW: DAK Preprocessing Step
       - name: Run DAK preprocessing scripts
