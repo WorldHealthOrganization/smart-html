@@ -139,6 +139,11 @@ jobs:
           ls -la .ci-tools/webroot | sed -n '1,200p'
           test -f .ci-tools/webroot/publish-setup.json || (echo "publish-setup.json MISSING" && exit 1)
 
+     # echo params
+      - name: ECHO config file
+        run: |
+          echo .ci-tools/release-config.global.yaml
+          echo release-config.yaml
       # Standard IG Build & Publish
       - name: Build & publish IG with standard workflow
         run: |
