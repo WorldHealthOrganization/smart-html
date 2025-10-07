@@ -341,6 +341,25 @@
         "date" : "2025-09-17",
         "path" : "http://smart.who.int/dak-pnc/v1.0.0"
       }
+    },
+    {
+      "path" : "trust-phw/package-list.json",
+      "package-id" : "smart.who.int.trust-phw",
+      "title" : "GDHCN Trust Network - Personal Health Wallet",
+      "canonical" : "http://smart.who.int/trust-phw",
+      "category" : "base",
+      "ci-build" : "http://worldhealthorganization.github.io/smart-trust-phw",
+      "version-count" : 1,
+      "latest" : {
+        "version" : "0.1.0",
+        "date" : "2025-10-07",
+        "path" : "http://smart.who.int/trust-phw/v0.1.0"
+      },
+      "milestone" : {
+        "version" : "0.1.0",
+        "date" : "2025-10-07",
+        "path" : "http://smart.who.int/trust-phw/v0.1.0"
+      }
     }
   ]
 }
