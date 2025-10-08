@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Business Processes - SMART ICVP v0.1.0</title>
+    <title>Business Processes - SMART ICVP v0.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -220,7 +220,7 @@
         <div id="ig-status" class="ig-status-draft">
           <p><span style="font-size:12pt;font-weight:bold">SMART ICVP</span>
             <br/>
-            <span style="display:inline-block;">0.1.0 - ci-build
+            <span style="display:inline-block;">0.2.0 - release
 
 
             </span>
@@ -255,7 +255,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the ICVP (v0.1.0: Releases Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/icvp/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the ICVP (v0.2.0: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://smart.who.int/icvp/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Business Processes</h2>
   
 
@@ -279,8 +279,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 </div>
 <p>This page describes the business processes included in the WHO Digital
-Adaptation Kit (DAK) <mark>[insert health domain here]</mark> (link forthcoming). 
-For full details, see the published DAK content.</p>
+Adaptation Kit (DAK) for ICVP.</p>
 
 <p>A business process, or process, is a set of related activities or tasks 
 performed together to achieve the objectives of the health programme area, 
@@ -290,7 +289,7 @@ that are performed within the business process. The workflow provides a “story
 for the business process being diagrammed and is used to enhance communication 
 and collaboration among users, stakeholders and engineers.</p>
 
-<p>The DAK for <mark>[insert health domain here]</mark> focuses on key business processes <nark>insert content here&lt;/mark&gt;.</nark></p>
+<p>The DAK for ICVP focuses on the following key business processes.</p>
 
 <h3 id="overview-of-key-business-processes">Overview of Key Business Processes</h3>
 <p>The following table describes the workflows of the included processes.</p>
@@ -308,10 +307,38 @@ and collaboration among users, stakeholders and engineers.</p>
  <tbody>
     <tr class="odd">
       <td></td>
-      <td>Title </td>
-      <td>ID used to reference this process throughout the DAK </td>
-      <td>Individuals interacting to complete the process </td>
-      <td>A concrete statement describing what the process seeks to achieve </td>
+      <td><strong>Title</strong></td>
+      <td><strong>ID used to reference this process throughout the DAK</strong></td>
+      <td><strong>Individuals interacting to complete the process</strong></td>
+      <td><strong>A concrete statement describing what the process seeks to achieve</strong></td>
+    </tr>
+    <tr class="even">
+      <td>A</td>
+      <td>Verifying an ICVP claim</td>
+      <td>ICVP.A</td>
+      <td></td>
+      <td>Verification of an ICVP claim presented to the verifier</td>
+    </tr>
+    <tr class="odd">
+      <td>B</td>
+      <td>Issuing an ICVP - Immunize &amp; Issue Digital ICVP Card</td>
+      <td>ICVP.B.1</td>
+      <td></td>
+      <td>Issuance of a Digital ICVP Card along with Immunization</td>
+    </tr>
+      <tr class="even">
+      <td>B</td>
+      <td>Issuing an ICVP - Digitize Existing Physical ICVP Card</td>
+      <td>ICVP.B.2</td>
+      <td></td>
+      <td>Issuing a difi</td>
+    </tr>
+      <tr class="odd">
+      <td>B</td>
+      <td>Issuing an ICVP - Issue Digital ICVP Card from EIR Data</td>
+      <td>ICVP.B.3</td>
+      <td></td>
+      <td>ff</td>
     </tr>
   </tbody>
 </table>
@@ -319,59 +346,65 @@ and collaboration among users, stakeholders and engineers.</p>
 <h3 id="workflows">Workflows</h3>
 <p>The workflows that follow depict processes that have been generalized across different contexts and may not reflect the variability and nuances across different settings. The simplicity of the workflow may not adequately illustrate the nonlinear steps that may occur.</p>
 
-<h4 id="overview-of-key-insert-health-domain-here-process-flows">Overview of key <mark>[insert health domain here]</mark> process flows</h4>
+<h4 id="overview-of-key-icvp-process-flows">Overview of key ICVP process flows</h4>
 <p>The business processes included in the DAK are shown in the following figure. Processes included in the DAK start with a letter (e.g. "A.") and are shown using the "Activity with sub-process" shape, which includes a plus sign.</p>
 
+<h5 id="a-verifying-an-icvp-claim">A. Verifying an ICVP Claim</h5>
+
+<div>
+  <img src="verification of icvp.svg" alt="A. Verifying an ICVP Claim" style="width:85%" />
+</div>
 
 
 
 </div>
-        </div>  <!-- /inner-wrapper -->
-      </div>  <!-- /row -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-content -->
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-content -->
 
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
-  <a name="bottom"> </a>
-  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
-    <div class="container">  <!-- container -->
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
+<a name="bottom"> </a>
+<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+<div class="container">  <!-- container -->
 
-      <div class="inner-wrapper">
-        <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.icvp#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 7, 2024 07:31+0000">2024-10-07</span>
-          <br/>
-          <span style="color: var(--footer-highlight-text-color)">
-                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+<div class="inner-wrapper">
+  <p>
+    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.icvp#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 8, 2025 14:37+0000">2025-10-08</span>
+    <br/>
+    <span style="color: var(--footer-highlight-text-color)">
+                Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
 | <a style="color: #81BEF7" target="_blank" href="http://smart.who.int/icvp/history.html">Version History</a> | <a style="color: #81BEF7" rel="license" href="license.html">License</a>
-          </span>
-        </p>
-      </div>  <!-- /inner-wrapper -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-footer -->
-  
-  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
-    <div class="container">  <!-- container -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-post-footer -->
+    </span>
+  </p>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-footer -->
 
-  <!-- JS and analytics only. -->
-  <!-- Bootstrap core JavaScript
-  ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
-  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
-  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
-  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
-  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
-  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  <!-- Analytics Below
-  ================================================== -->
-  </body>
-</html>
+<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+<div class="container">  <!-- container -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+<script type="text/javascript" src="assets/js/respond.min.js"> </script>
+<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+<script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+<!-- Analytics Below
+================================================== -->
+
+
+
 

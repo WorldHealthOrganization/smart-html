@@ -1,18 +1,6 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://hl7.org/fhir/administrative-gender",
-      "version" : "4.0.1",
-      "status" : "active",
-      "name" : "AdministrativeGender",
-      "title" : "AdministrativeGender",
-      "description" : "The gender of a person used for administrative purposes.",
-      "oids" : ["2.16.840.1.113883.4.642.4.2"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-administrative-gender.html" : "AdministrativeGender"
-    },
-    {
       "url" : "http://hl7.org/fhir/bundle-type",
       "version" : "4.0.1",
       "status" : "active",
@@ -97,18 +85,6 @@
       "http://hl7.org/fhir/R4/valueset-identifier-use.html" : "IdentifierUse"
     },
     {
-      "url" : "http://hl7.org/fhir/link-type",
-      "version" : "4.0.1",
-      "status" : "active",
-      "name" : "LinkType",
-      "title" : "LinkType",
-      "description" : "The type of link between this patient resource and another patient resource.",
-      "oids" : ["2.16.840.1.113883.4.642.4.424"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-link-type.html" : "LinkType"
-    },
-    {
       "url" : "http://hl7.org/fhir/list-mode",
       "version" : "4.0.1",
       "status" : "draft",
@@ -119,18 +95,6 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-list-mode.html" : "ListMode"
-    },
-    {
-      "url" : "http://hl7.org/fhir/name-use",
-      "version" : "4.0.1",
-      "status" : "active",
-      "name" : "NameUse",
-      "title" : "NameUse",
-      "description" : "The use of a human name.",
-      "oids" : ["2.16.840.1.113883.4.642.4.66"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-name-use.html" : "NameUse"
     },
     {
       "url" : "http://hl7.org/fhir/resource-types",
@@ -156,21 +120,28 @@
       "http://hl7.org/fhir/R4/valueset-search-entry-mode.html" : "SearchEntryMode"
     },
     {
-      "url" : "http://id.who.int/icd/release/11/mms",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "ICD11",
-      "title" : "ICD-11",
-      "description" : "ICD-11.",
+      "url" : "http://hl7.org/fhir/sid/cvx",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "CVX",
+      "title" : "Vaccine Administered Code Set (CVX)",
+      "description" : "The CDC's National Center of Immunization and Respiratory Diseases (NCIRD - see [https://www.cdc.gov/ncird/](https://www.cdc.gov/ncird/)) developed and maintains the CVX (vaccine administered) code set. It includes both active and inactive vaccines available in the US. CVX codes for inactive vaccines allow transmission of historical immunization records. When a MVX (manufacturer) code is paired with a CVX (vaccine administered) code, the specific trade named vaccine may be indicated. These codes should be used for immunization messages using either HL7 Version 2.3.1 or HL7 Version 2.5.1. CVX is the underlying Master Code System for V2 table 0292 (Vaccines Administered). The machine readable name for CVX in PHIN VADS is PH_VaccinesAdministeredCVX_CDC_NIP. The version of the CVX code set for certification can be found on the archive page:[https://www2a.cdc.gov/vaccines/iis/iisstandards/mu3versioned_codes.asp](https://www2a.cdc.gov/vaccines/iis/iisstandards/mu3versioned_codes.asp) \r\n\r\nThe Status column indicates if the vaccine is currently available in the United States.\r\n\r\n*  Active: A currently available administrable vaccine \r\n\r\n*  Inactive: An administrable vaccine formulation that is no longer available for patient administration, but can be found in historical patient records OR A historical record of a vaccine administered where the exact formulation is unknown \r\n\r\n*  Pending: A vaccine that is expected to become active in the future \r\n\r\n*  Non-US: A vaccine that available outside the US only \r\n\r\n*  Never Active: A vaccine that was never available and is not in the pipeline of new vaccines \r\n\r\nThe Last Updated column indicates the last time this particular vaccine code was updated in this table.\r\n\r\nQuestions regarding this table should be directed to the IIS Technical Assistance Team via iisinfo@cdc.gov (or use mailing address via [https://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx#addr](https://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx#addr)) \r\n\r\nHL7 Implementers should note that 'Status' IS NOT CONCEPT STATUS as all codes are ACTIVE in this code system.\r\n\r\nThe current code system is available via [https://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx](https://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx)",
+      "oids" : ["2.16.840.1.113883.12.292"],
       "uses" : {
       },
-      "ValueSet-ICVPDiseaseTargeted.html" : "ICVP Disease Targeted",
-      "ValueSet-Questionnaire-DVCModel_DVCVaccines.html" : "DVC - Vaccines",
-      "ValueSet-Questionnaire-DVCModel_DiseaseTargeted.html" : "Disease Targeted",
-      "ValueSet-Questionnaire-ICVPModel_ICVPVaccineCodes.html" : "ICVP - Vaccine Codes",
-      "ValueSet-DVCVaccines.html" : "DVC - Vaccines",
-      "ValueSet-Questionnaire-ICVPModel_ICVPDiseaseTargeted.html" : "ICVP Disease Targeted",
+      "http://hl7.org/fhir/R4/valueset-vaccine-code.html" : "Vaccine Administered Value Set"
+    },
+    {
+      "url" : "http://id.who.int/icd/release/11/mms",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ICD11MMS",
+      "title" : "International Classification of Diseases, 11th Revision Mortality and Morbidity Statistics (MMS)",
+      "description" : "The International Classification of Diseases, 11th Revision Mortality and Morbidity Statistics (MMS) is one of the ICD11 linearizations. Information about the ICD Foundation Component and the ICD11 Linearizations can be found in the complete reference guide here: [https://icd.who.int/icd11refguide/en/index.html](https://icd.who.int/icd11refguide/en/index.html)\r\n\r\n\"**The ICD11 Linearizations (Tabular lists)**\r\n\r\nA linearization is a subset of the foundation component, that is:\r\n\r\n1. fit for a particular purpose: reporting mortality, morbidity, primary care or other uses;\r\n\r\n 2. composed of entities that are Mutually Exclusive of each other; \r\n\r\n3. each entity is given a single parent.\r\n\r\nLinearization is similar to the classical print versions of ICD Tabular List (e.g. volume I of ICD-10 or other previous editions). The main linearization of ICD-11 is Mortality and Morbidity Statistics (MMS). Various linearizations could be built at different granularity, use case or other purposes such as for Primary Care, Clinical Care or Research. The linkage from the foundation component to a particular linearization will ensure consistent use of the ICD.\"\r\n\r\nICD-11 for Mortality and Morbidity (ICD-11 MMS) can be downloaded in either print or electronic (spreadsheet) format from the  browser in the Info tab located [here](https://icd.who.int/browse11/l-m/en)",
+      "uses" : {
+      },
       "ValueSet-DiseaseTargeted.html" : "Disease Targeted",
+      "ValueSet-ICVPDiseaseTargeted.html" : "ICVP Disease Targeted",
       "ValueSet-ICVPVaccineCodes.html" : "ICVP - Vaccine Codes"
     },
     {
@@ -188,30 +159,52 @@
       "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set"
     },
     {
-      "url" : "http://smart.who.int/icvp/CodeSystem/DVCRelationshipStatus",
+      "url" : "http://smart.who.int/icvp/CodeSystem/VaccineManufacturer",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "VaccineManufacturer",
+      "title" : "Prequalified Vaccines - Manufacturer names",
+      "description" : "List of WHO Prequalified Vaccines - Manufacturer names",
+      "uses" : {
+      },
+      "ValueSet-VaccineManufacturer.html" : "VaccineManufacturer"
+    },
+    {
+      "url" : "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "PreQualProductIds",
+      "title" : "WHO PreQualificaiton Vaccine Product Ids",
+      "description" : "WHO PreQualificaiton Vaccine Product Ids",
+      "uses" : {
+      },
+      "ConceptMap-ICVPProductIdToVaccineType.html" : "ConceptMap from ICVP Product IDs to Vaccine Types",
+      "ValueSet-ICVP_ICVPProductIds.html" : "WHO ICVP Vaccine Product Ids",
+      "ValueSet-ICVPProductIds.html" : "WHO ICVP Vaccine Product Ids",
+      "http://smart.who.int/pcmt-vaxprequal/v0.2.0/ValueSet-PreQualProductIds.html" : "WHO PreQualificaiton Vaccine Product Ids"
+    },
+    {
+      "url" : "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "PreQualVaccineType",
+      "title" : "WHO PreQualificaiton Vaccine VaccineTypes",
+      "description" : "WHO PreQualificaiton Vaccine VaccineTypes",
+      "uses" : {
+      },
+      "ConceptMap-ICVPProductIdToVaccineType.html" : "ConceptMap from ICVP Product IDs to Vaccine Types",
+      "ValueSet-ICVPVaccineType.html" : "Vaccine Types for use in the ICVP"
+    },
+    {
+      "url" : "http://smart.who.int/trust-phw/CodeSystem/DVCRelationshipStatus",
       "version" : "0.1.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "DVCRelationshipStatus",
       "title" : "Relationship Status for Contact in Patient",
       "description" : "Relationship Status for Contact in Patient",
       "uses" : {
       },
-      "ValueSet-Questionnaire-ICVPModel_DVCRelationshipStatus.html" : "Relationship Status for Contact in Patient",
-      "ValueSet-DVCRelationshipStatus.html" : "Relationship Status for Contact in Patient",
-      "ValueSet-Questionnaire-DVCModel_DVCRelationshipStatus.html" : "Relationship Status for Contact in Patient"
-    },
-    {
-      "url" : "http://smart.who.int/icvp/CodeSystem/doseNumber",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "doseNumber",
-      "title" : "Dose Number",
-      "description" : "Dose Number Code System",
-      "uses" : {
-      },
-      "ValueSet-Questionnaire-ICVPModel_doseNumber.html" : "Dose Number",
-      "ValueSet-doseNumber.html" : "Dose Number",
-      "ValueSet-Questionnaire-DVCModel_doseNumber.html" : "Dose Number"
+      "ValueSet-ICVP_DVCRelationshipStatus.html" : "Relationship Status for Contact in Patient"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -223,15 +216,17 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-immunization-reason.html" : "Immunization Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes",
       "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "http://hl7.org/fhir/uv/ips/2024Sep/ValueSet-target-diseases-uv-ips.html" : "Vaccine Target Diseases - IPS"
+      "http://hl7.org/fhir/R4/valueset-immunization-target-disease.html" : "Immunization Target Disease Codes",
+      "http://hl7.org/fhir/uv/ips/2024Sep/ValueSet-vaccines-uv-ips.html" : "Vaccines - IPS",
+      "http://hl7.org/fhir/R4/valueset-immunization-reason.html" : "Immunization Reason Codes",
+      "http://hl7.org/fhir/uv/ips/2024Sep/ValueSet-target-diseases-uv-ips.html" : "Vaccine Target Diseases - IPS",
+      "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/immunization-funding-source",
-      "version" : "1.0.0",
-      "status" : "draft",
+      "version" : "1.0.1",
+      "status" : "active",
       "name" : "ImmunizationFundingSource",
       "title" : "Immunization Funding Source",
       "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the source of the vaccine administered. This value set is provided as a suggestive example.",
@@ -242,8 +237,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/immunization-origin",
-      "version" : "1.0.0",
-      "status" : "draft",
+      "version" : "1.0.1",
+      "status" : "active",
       "name" : "ImmunizationOriginCodes",
       "title" : "Immunization Origin Codes",
       "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the source of the data when the report of the immunization event is not based on information from the person, entity or organization who administered the vaccine. This value set is provided as a suggestive example.",
@@ -254,8 +249,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/immunization-program-eligibility",
-      "version" : "1.0.0",
-      "status" : "draft",
+      "version" : "1.0.1",
+      "status" : "active",
       "name" : "ImmunizationProgramEligibility",
       "title" : "Immunization Program Eligibility",
       "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the patient's eligibility for a vaccination program. This value set is provided as a suggestive example.",
@@ -266,8 +261,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/immunization-subpotent-reason",
-      "version" : "1.0.0",
-      "status" : "draft",
+      "version" : "1.0.1",
+      "status" : "active",
       "name" : "ImmunizationSubpotentReason",
       "title" : "Immunization Subpotent Reason",
       "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the reason why a dose is considered to be subpotent. This value set is provided as a suggestive example.",
@@ -278,8 +273,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/list-empty-reason",
-      "version" : "1.0.0",
-      "status" : "draft",
+      "version" : "1.0.1",
+      "status" : "active",
       "name" : "ListEmptyReasons",
       "title" : "List Empty Reasons",
       "description" : "General reasons for a list to be empty. Reasons are either related to a summary list (i.e. problem or medication list) or to a workflow related list (i.e. consultation list).",
@@ -290,8 +285,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/list-order",
-      "version" : "1.0.0",
-      "status" : "draft",
+      "version" : "1.0.1",
+      "status" : "active",
       "name" : "ListOrderCodes",
       "title" : "List Order Codes",
       "description" : "Base values for the order of the items in a list resource.",
@@ -310,13 +305,12 @@
       "oids" : ["2.16.840.1.113883.18.2"],
       "uses" : {
       },
-      "ValueSet-Questionnaire-DVCModel_v2-0001.html" : "v2 SEX",
-      "ValueSet-Questionnaire-ICVPModel_v2-0001.html" : "v2 SEX",
-      "http://terminology.hl7.org/3.1.0/ValueSet-v2-0001.html" : "hl7VS-administrativeSex"
+      "http://terminology.hl7.org/6.5.0/ValueSet-v2-0001.html" : "hl7VS-administrativeSex",
+      "ValueSet-ICVP_v2-0001.html" : "v2 SEX"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-      "version" : "4.0.0",
+      "version" : "5.0.0",
       "status" : "active",
       "name" : "IdentifierType",
       "title" : "identifierType",
@@ -324,7 +318,8 @@
       "oids" : ["2.16.840.1.113883.18.108"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType"
+      "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType",
+      "http://terminology.hl7.org/6.5.0/ValueSet-v2-0203.html" : "hl7VS-identifierType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0443",
@@ -348,7 +343,7 @@
       "oids" : ["2.16.840.1.113883.5.4"],
       "uses" : {
       },
-      "http://terminology.hl7.org/5.5.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode"
+      "http://terminology.hl7.org/6.5.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
@@ -363,6 +358,18 @@
       "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ActSite",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActSite",
+      "title" : "ActSite",
+      "description" : "An anatomical location on an organism which can be the focus of an act.",
+      "oids" : ["2.16.840.1.113883.5.1052"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-immunization-site.html" : "Codes for Immunization Site of Administration"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
       "version" : "3.0.0",
       "status" : "active",
@@ -375,32 +382,20 @@
       "http://hl7.org/fhir/R4/v3/ConfidentialityClassification/vs.html" : "V3 Value SetConfidentialityClassification"
     },
     {
-      "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration",
       "version" : "3.0.0",
       "status" : "active",
-      "name" : "MaritalStatus",
-      "title" : "MaritalStatus",
-      "description" : "\\* \\* \\* No description supplied \\* \\* \\*\r\n\r\n*Open Issue:* The specific meanings of these codes can vary somewhat by jurisdiction and implementation so caution should be used when determining equivalency.\r\n\r\n*Open Issue:* fixing and completion of the hierarchy and proper good definitions of all the concepts is badly needed.",
-      "oids" : ["2.16.840.1.113883.5.2"],
+      "name" : "RouteOfAdministration",
+      "title" : "RouteOfAdministration",
+      "description" : "The path the administered medication takes to get into the body or into contact with the body.",
+      "oids" : ["2.16.840.1.113883.5.112"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-      "version" : "3.0.0",
-      "status" : "active",
-      "name" : "NullFlavor",
-      "title" : "NullFlavor",
-      "description" : "A collection of codes specifying why a valid value is not present.",
-      "oids" : ["2.16.840.1.113883.5.1008"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
+      "http://hl7.org/fhir/R4/valueset-immunization-route.html" : "Immunization Route Codes"
     },
     {
       "url" : "http://www.whocc.no/atc",
-      "version" : "2.0.0",
+      "version" : "2.0.1",
       "status" : "active",
       "name" : "WC",
       "title" : "WHO ATC",
@@ -412,7 +407,7 @@
     },
     {
       "url" : "urn:ietf:bcp:47",
-      "version" : "2.0.0",
+      "version" : "2.0.1",
       "status" : "active",
       "name" : "Ietf3066",
       "title" : "Tags for the Identification of Languages",
@@ -432,9 +427,8 @@
       "oids" : ["1.0.3166.1"],
       "uses" : {
       },
-      "ValueSet-Questionnaire-DVCModel_v3-Country.html" : "Country",
-      "ValueSet-Questionnaire-ICVPModel_v3-Country.html" : "Country",
-      "http://terminology.hl7.org/5.5.0/ValueSet-v3-Country.html" : "Country"
+      "ValueSet-ICVP_v3-Country.html" : "Country",
+      "http://terminology.hl7.org/6.5.0/ValueSet-v3-Country.html" : "Country"
     }
   ]
 }

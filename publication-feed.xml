@@ -11,6 +11,17 @@
     <language>en</language>
     <ttl>600</ttl>
     <item>
+      <title>ICVP version 0.2.0</title>
+      <description>0.2.0 draft release</description>
+      <link>http://smart.who.int/icvp/0.2.0/index.html</link>
+      <guid isPermaLink="true">http://smart.who.int/icvp/0.2.0/index.html</guid>
+      <dc:creator>WHO</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Wed, 08 Oct 2025 02:32:12 +0000</pubDate>
+      <fhir:details>Publication run at 08/10/2025 by runner using Version 2.0.19 (Git# e7076c8963f4). Built 2025-10-03T18:07:42.122Z (4 days old) source id Unknown (todo)</fhir:details>
+    </item>
+    <item>
       <title>GDHCN Trust Network - Personal Health Wallet version 0.1.0</title>
       <description>0.1.0 draft release</description>
       <link>http://smart.who.int/trust-phw/v0.1.0/index.html</link>

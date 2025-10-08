@@ -2,18 +2,19 @@
   "resourceType" : "ImplementationGuide",
   "id" : "smart.who.int.icvp",
   "meta" : {
-    "profile" : ["http://smart.who.int/base/StructureDefinition/SGImplementationGuide"]
+    "profile" : ["http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.2.0"]
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide smart.who.int.icvp</b></p><a name=\"smart.who.int.icvp\"> </a><a name=\"hcsmart.who.int.icvp\"> </a><a name=\"smart.who.int.icvp-en-US\"> </a><h2>ICVP</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/icvp/ImplementationGuide/smart.who.int.icvp</pre><div><p>SMART Guidelines for International Certificate for Vaccination or Prophylaxis</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide smart.who.int.icvp</b></p><a name=\"smart.who.int.icvp\"> </a><a name=\"hcsmart.who.int.icvp\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"file://C:\\work\\ImplementationGuides\\ig-release\\who\\smart-base\\output/StructureDefinition-SGImplementationGuide.html\">SMART Guidelines ImplementationGuideversion: null0.2.0)</a></p></div><h2>ICVP</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/icvp/ImplementationGuide/smart.who.int.icvp</pre><div><p>SMART Guidelines for International Certificate for Vaccination or Prophylaxis</p>\n</div></div>"
   },
   "url" : "http://smart.who.int/icvp/ImplementationGuide/smart.who.int.icvp",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "ICVP",
   "title" : "SMART ICVP",
   "status" : "draft",
-  "date" : "2024-10-07T07:31:05+00:00",
+  "experimental" : false,
+  "date" : "2025-10-08T14:36:54+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",
@@ -24,7 +25,7 @@
   }],
   "description" : "SMART Guidelines for International Certificate for Vaccination or Prophylaxis",
   "packageId" : "smart.who.int.icvp",
-  "license" : "CC0-1.0",
+  "license" : "CC-BY-SA-3.0-IGO",
   "fhirVersion" : ["4.0.1"],
   "dependsOn" : [{
     "id" : "hl7tx",
@@ -34,7 +35,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.0.2"
+    "version" : "6.5.0"
   },
   {
     "id" : "hl7ext",
@@ -44,13 +45,13 @@
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.1.0"
+    "version" : "5.2.0"
   },
   {
     "id" : "smart_who_int_base",
     "uri" : "http://smart.who.int/base/ImplementationGuide/smart.who.int.base",
     "packageId" : "smart.who.int.base",
-    "version" : "0.1.0"
+    "version" : "0.2.0"
   },
   {
     "id" : "hl7_fhir_uv_ips",
@@ -75,6 +76,24 @@
     "uri" : "http://smart.who.int/ts/ImplementationGuide/smart.who.int.ts",
     "packageId" : "smart.who.int.ts",
     "version" : "0.1.0"
+  },
+  {
+    "id" : "smart_who_int_pcmt",
+    "uri" : "http://smart.who.int/pcmt/ImplementationGuide/smart.who.int.pcmt",
+    "packageId" : "smart.who.int.pcmt",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "smart_who_int_trust_phw",
+    "uri" : "http://smart.who.int/trust-phw/ImplementationGuide/smart.who.int.trust-phw",
+    "packageId" : "smart.who.int.trust-phw",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "smart_who_int_pcmt_vaxprequal",
+    "uri" : "http://smart.who.int/pcmt-vaxprequal/ImplementationGuide/smart.who.int.pcmt-vaxprequal",
+    "packageId" : "smart.who.int.pcmt-vaxprequal",
+    "version" : "0.2.0"
   }],
   "definition" : {
     "extension" : [{
@@ -95,7 +114,29 @@
       },
       {
         "url" : "value",
-        "valueString" : "ci-build"
+        "valueString" : "release"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "produce-jekyll-data"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "pin-canonicals"
+      },
+      {
+        "url" : "value",
+        "valueString" : "pin-multiples"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -354,7 +395,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools#0.2.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.8.0"
     },
     {
       "extension" : [{
@@ -374,7 +415,29 @@
       },
       {
         "url" : "value",
-        "valueString" : "ci-build"
+        "valueString" : "release"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "produce-jekyll-data"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "pin-canonicals"
+      },
+      {
+        "url" : "value",
+        "valueString" : "pin-multiples"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -634,25 +697,37 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "ConceptMap"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/DVCBundle"
+        "reference" : "ConceptMap/ICVPProductIdToVaccineType"
       },
-      "name" : "Digital Vaccination Certificate - Bundle",
-      "description" : "Digital Vaccination Certificate - Bundle",
+      "name" : "ConceptMap from ICVP Product IDs to Vaccine Types",
+      "description" : "Mapping from ICVP Product IDs to Vaccine Types",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "ConceptMap"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/DVCComposition"
+        "reference" : "ConceptMap/VaccineTradeItemtoManufacturer"
       },
-      "name" : "Digital Vaccination Certificate - Composition",
-      "description" : "Digital Vaccination Certificate - Composition",
+      "name" : "ConceptMap from Vaccine Trade Item to Manufacturer",
+      "description" : "Mapping from Vaccine Trade Item to Manufacturer",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/DisclosureStatements"
+      },
+      "name" : "Discloure Statement maapings",
+      "description" : "Mapping from Disclosure Statements to itself to show relatiohships",
       "exampleBoolean" : false
     },
     {
@@ -670,73 +745,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "ValueSet/doseNumber"
+        "reference" : "StructureDefinition/Immunization-uv-ips-ICVP"
       },
-      "name" : "Dose Number",
-      "description" : "Dose Number value set",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/doseNumber"
-      },
-      "name" : "Dose Number",
-      "description" : "Dose Number Code System",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/doseNumberCodeableConcept"
-      },
-      "name" : "doseNumberCodeableConcept",
-      "description" : "doseNumber",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ModelDVC"
-      },
-      "name" : "DVC",
-      "description" : "Data elements for Digital Vaccination Certificate.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ModelVaccineDetails"
-      },
-      "name" : "DVC - Vaccine Details",
-      "description" : "Vaccine Data elements for the Digital Vaccination Certificates",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/DVCVaccines"
-      },
-      "name" : "DVC - Vaccines",
-      "description" : "This value set includes codes from ICD",
+      "name" : "DVC - WHO ICVP Immunization for IPS",
+      "description" : "This profile represents an IPS Immunization record that can be mapped onto a Digital Vaccine Certificates using the WHO PreQual Database",
       "exampleBoolean" : false
     },
     {
@@ -745,10 +760,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/DVCIPS"
+        "reference" : "StructureDefinition/Bundle-uv-ips-ICVP"
       },
-      "name" : "DVC Certificate - IPS Bundle",
-      "description" : "Profile of the IPS Bundle for representing digital vaccination certificates",
+      "name" : "DVC Certificate - IPS Bundle from WHO ICVP",
+      "description" : "Profile of the IPS Bundle for representing digital vaccination certificates from WHO ICVP",
       "exampleBoolean" : false
     },
     {
@@ -757,10 +772,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/DVCIPSComposition"
+        "reference" : "StructureDefinition/Composition-uv-ips-ICVP"
       },
-      "name" : "DVC Certificate - IPS Composition",
-      "description" : "Profile of the IPS Composition for representing digital vaccination certificates",
+      "name" : "DVC Certificate - IPS Composition for WHO ICVP",
+      "description" : "Profile of the IPS Composition for representing digital vaccination certificates with WHO PreQual Database for ICVP",
       "exampleBoolean" : false
     },
     {
@@ -769,22 +784,10 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/DVCPayload"
+        "reference" : "StructureDefinition/ICVPSD"
       },
-      "name" : "DVC HCERT Payload",
-      "description" : "Payload for Digital Vaccination Certificate - DVC CBOR Web Token Logical Model",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/DVC-ImmunizationUvIps"
-      },
-      "name" : "DVC Immunization",
-      "description" : "This profile represents Immunization record for Digital Vaccine Certificates",
+      "name" : "DVC Icvp with Selective Disclosure",
+      "description" : "DVC Icvp with Selective Disclosure",
       "exampleBoolean" : false
     },
     {
@@ -793,39 +796,11 @@
         "valueString" : "Questionnaire"
       }],
       "reference" : {
-        "reference" : "Questionnaire/Questionnaire-DVCModel"
+        "reference" : "Questionnaire/pPreQual"
       },
       "name" : "DVC Model Questionnaire",
-      "description" : "Questionnaire for DVC Logical Model",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/DVCPatient"
-      },
-      "name" : "DVC Patient",
-      "description" : "DVC Patient",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
-        "valueCode" : "application/fhir+json"
-      },
-      {
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Binary"
-      }],
-      "reference" : {
-        "reference" : "Binary/DVCPayloadExample"
-      },
-      "name" : "Example DVC Payload",
-      "description" : "Example payload of DVC Claim within HCERT",
-      "exampleCanonical" : "http://smart.who.int/icvp/StructureDefinition/DVCPayload"
+      "description" : "Questionnaire for DVC Logical Model with the WHO PreQual DB and paper attachment",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -833,10 +808,22 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/ModelICVP"
+        "reference" : "StructureDefinition/ICVP"
       },
       "name" : "ICVP",
       "description" : "Data elements for the Model International Certificate of Vaccination or Prophylaxis.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ICVPEvent"
+      },
+      "name" : "ICVP (single)",
+      "description" : "ICVP for a single vaccincation event",
       "exampleBoolean" : false
     },
     {
@@ -857,10 +844,10 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/ModelICVPVaccineDetails"
+        "reference" : "StructureDefinition/ICVPVaccineDetails"
       },
       "name" : "ICVP - Vaccine Details",
-      "description" : "Vaccine Data elements for the Model International Certificate of Vaccination or Prophylaxis.",
+      "description" : "Vaccine Data elements for the International Certificate of Vaccination or Prophylaxis",
       "exampleBoolean" : false
     },
     {
@@ -881,10 +868,34 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/ICVPEvent"
+        "reference" : "StructureDefinition/ICVPMin"
       },
-      "name" : "ICVP Event",
-      "description" : "ICVP for a single immunization event",
+      "name" : "ICVP HCERT Payload",
+      "description" : "Mininmial DVC payload for use within an HCERT Payload using the ICVP Product Catalogue",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ICVPMinVaccineDetails"
+      },
+      "name" : "ICVP HCERT Payload",
+      "description" : "Mininmial vaccine detail in DVC payload for use within an HCERT Payload using the ICVP Product Catalogue",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ICVPImmunization"
+      },
+      "name" : "ICVP Immunization",
+      "description" : "This profile represents Immunization record for Digital Vaccine Certificates for use in the International Certificate of Vaccination or Prophylaxis (ICVP).  Such vaccine should be listed in the ICVP Product Catalogue\n\nThe ICVP product catalogue consists of vaccines listed in the list of Prequalified Vaccines and the Emergency Use Listing.\n - https://extranet.who.int/prequal/vaccines/prequalified-vaccines\n - https://www.who.int/teams/regulation-prequalification/eul\n\nIn FHIR R6, this could also be a reference to an InventoryItem",
       "exampleBoolean" : false
     },
     {
@@ -893,11 +904,34 @@
         "valueString" : "Questionnaire"
       }],
       "reference" : {
-        "reference" : "Questionnaire/Questionnaire-ICVPModel"
+        "reference" : "Questionnaire/ICVP"
       },
       "name" : "ICVP Model Questionnaire",
-      "description" : "Questionnaire for ICVP Logical Model",
+      "description" : "Questionnaire for DVC Logical Model with the WHO ICVP",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ICVPVaccineDetailsSD"
+      },
+      "name" : "ICVP Vaccine Details with Selective Disclosure",
+      "description" : "ICVP Vaccine Details with Selective Disclosure",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/ICVPQRExample"
+      },
+      "name" : "ICVPQRExample",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -913,7 +947,7 @@
       },
       "name" : "IVCP123455",
       "description" : "Example ICVP",
-      "exampleCanonical" : "http://smart.who.int/icvp/StructureDefinition/ModelICVP"
+      "exampleCanonical" : "http://smart.who.int/icvp/StructureDefinition/ICVP"
     },
     {
       "extension" : [{
@@ -925,22 +959,34 @@
         "valueString" : "Binary"
       }],
       "reference" : {
-        "reference" : "Binary/ModelDVCExample"
+        "reference" : "Binary/IVCP123455SD"
       },
-      "name" : "ModelDVCExample",
-      "description" : "Example DVC model",
-      "exampleCanonical" : "http://smart.who.int/icvp/StructureDefinition/ModelDVC"
+      "name" : "IVCP123455SD",
+      "description" : "Example ICVP with Selective Disclosure",
+      "exampleCanonical" : "http://smart.who.int/icvp/StructureDefinition/ICVPSD"
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "ValueSet/DVCRelationshipStatus"
+        "reference" : "StructureDefinition/pICVP"
       },
-      "name" : "Relationship Status for Contact in Patient",
-      "description" : "Relationship Status for Contact in Patient",
+      "name" : "pICVP",
+      "description" : "Data elements for the Paper Model International Certificate of Vaccination or Prophylaxis.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/pICVPVaccineDetails"
+      },
+      "name" : "pICVP - Vaccine Details",
+      "description" : "Vaccine Data elements for the Paper Model International Certificate of Vaccination or Prophylaxis.",
       "exampleBoolean" : false
     },
     {
@@ -949,10 +995,58 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/DVCRelationshipStatus"
+        "reference" : "CodeSystem/VaccineManufacturer"
       },
-      "name" : "Relationship Status for Contact in Patient",
-      "description" : "Relationship Status for Contact in Patient",
+      "name" : "Prequalified Vaccines - Manufacturer names",
+      "description" : "List of WHO Prequalified Vaccines - Manufacturer names",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/preQualVaccines"
+      },
+      "name" : "preQualVaccines",
+      "description" : "preQualVaccines value set",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ICVPVaccineType"
+      },
+      "name" : "Vaccine Types for use in the ICVP",
+      "description" : "WHO PreQualificaiton Vaccine Type for use in the ICVP",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/VaccineManufacturer"
+      },
+      "name" : "VaccineManufacturer",
+      "description" : "VaccineManufacturer value set",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ICVPProductIds"
+      },
+      "name" : "WHO ICVP Vaccine Product Ids",
+      "description" : "WHO ICVP Vaccine Product Ids",
       "exampleBoolean" : false
     },
     {
@@ -961,8 +1055,9 @@
         "valueString" : "StructureMap"
       }],
       "reference" : {
-        "reference" : "StructureMap/DVCClaimtoDVCLM"
-      }
+        "reference" : "StructureMap/ICVPClaimtoICVPLM"
+      },
+      "name" : "ICVPClaimtoICVPLM"
     },
     {
       "extension" : [{
@@ -970,8 +1065,9 @@
         "valueString" : "StructureMap"
       }],
       "reference" : {
-        "reference" : "StructureMap/DVCClaimtoIPS"
-      }
+        "reference" : "StructureMap/ICVPClaimtoIPS"
+      },
+      "name" : "ICVPClaimtoIPS"
     },
     {
       "extension" : [{
@@ -979,8 +1075,9 @@
         "valueString" : "StructureMap"
       }],
       "reference" : {
-        "reference" : "StructureMap/DVCLMToIPS"
-      }
+        "reference" : "StructureMap/ICVPLMToIPS"
+      },
+      "name" : "ICVPLMToIPS"
     },
     {
       "extension" : [{
@@ -988,8 +1085,9 @@
         "valueString" : "StructureMap"
       }],
       "reference" : {
-        "reference" : "StructureMap/DVCLMtoDVCClaim"
-      }
+        "reference" : "StructureMap/ICVPLMtoICVPClaim"
+      },
+      "name" : "ICVPLMtoICVPClaim"
     },
     {
       "extension" : [{
@@ -997,8 +1095,9 @@
         "valueString" : "StructureMap"
       }],
       "reference" : {
-        "reference" : "StructureMap/DVCQRtoDVCClaim"
-      }
+        "reference" : "StructureMap/ICVPQRtoICVPClaim"
+      },
+      "name" : "ICVPQRtoICVPClaim"
     },
     {
       "extension" : [{
@@ -1006,8 +1105,19 @@
         "valueString" : "StructureMap"
       }],
       "reference" : {
-        "reference" : "StructureMap/DVCQRtoDVCLM"
-      }
+        "reference" : "StructureMap/ICVPQRtoICVPLM"
+      },
+      "name" : "ICVPQRtoICVPLM"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureMap"
+      }],
+      "reference" : {
+        "reference" : "StructureMap/PreQualDBtoProductLM"
+      },
+      "name" : "PreQualDBtoProductLM"
     }],
     "page" : {
       "extension" : [{

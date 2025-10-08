@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Generic Personas - SMART ICVP v0.1.0</title>
+    <title>Generic Personas - SMART ICVP v0.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -220,7 +220,7 @@
         <div id="ig-status" class="ig-status-draft">
           <p><span style="font-size:12pt;font-weight:bold">SMART ICVP</span>
             <br/>
-            <span style="display:inline-block;">0.1.0 - ci-build
+            <span style="display:inline-block;">0.2.0 - release
 
 
             </span>
@@ -255,7 +255,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the ICVP (v0.1.0: Releases Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/icvp/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the ICVP (v0.2.0: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://smart.who.int/icvp/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Generic Personas</h2>
   
 
@@ -271,266 +271,160 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
-</div>
-<p>This page includes a depiction of end-users and related stakeholders as introduced in the WHO Digital Adaptation Kit for <mark>[insert health domain here]</mark>(link forthcoming).</p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#targeted-generic-personas" id="markdown-toc-targeted-generic-personas">Targeted generic personas</a></li>
+  <li><a href="#digital-services" id="markdown-toc-digital-services">Digital services</a></li>
+</ul>
 
-<p>The specific roles and demographic profile of the personas will vary depending on the setting, the generic personas are based on the WHO core competencies and credentials of different health worker personas.</p>
+</div>
+<p>This page includes a depiction of end-users and related stakeholders as introduced in the WHO Digital Adaptation Kit for Digital ICVP.</p>
 
 <h3 id="targeted-generic-personas">Targeted generic personas</h3>
 
-<p>The targeted personas for the <mark>[insert health domain here]</mark> Digital Adaptation Kit are
-health professionals operating in care settings that are able to provide
-the required essential interventions for <mark>[insert health domain here]</mark> delivery. Their
-key competences of are defined in the following table.</p>
-
 <p><strong>Descriptions of key generic personas</strong></p>
 
-<table class="table table-bordered">
-  <thead class="thead-dark">
-      <tr>
-          <th>Name</th>
-          <th>Title</th>
-          <th>Description</th>
-      </tr>
-  </thead>
-  <tbody>
-      
-          
-          
-
-                  
-                  
-                  
-                  
-
-                  
-
-                  
-
-                  
-
-
-                  
-
-      
-          
-          
-
-                  
-                  
-                  
-                  
-
-                  
-
-                  
-
-                  
-
-
-                  
-
-      
-          
-          
-
-                  
-                  
-                  
-                  
-
-                  
-
-                  
-
-                  
-
-
-                  
-
-      
-          
-          
-
-                  
-                  
-                  
-                  
-
-                  
-
-                  
-
-                  
-
-
-                  
-
-      
-          
-          
-
-                  
-                  
-                  
-                  
-
-                  
-
-                  
-
-                  
-
-
-                  
-
-      
-          
-          
-
-                  
-                  
-                  
-                  
-
-                  
-
-                  
-
-                  
-
-
-                  
-
-      
-          
-          
-
-                  
-                  
-                  
-                  
-
-                  
-
-                  
-
-                  
-
-
-                  
-
-      
-          
-          
-
-                  
-                  
-                  
-                  
-
-                  
-
-                  
-
-                  
-
-
-                  
-
-      
-          
-          
-
-                  
-                  
-                  
-                  
-
-                  
-
-                  
-
-                  
-
-
-                  
-
-      
-          
-          
-
-                  
-                  
-                  
-                  
-
-                  
-
-                  
-
-                  
-
-
-                  
-
-      
-  </tbody>
-</table>
-
+<table border="1" class="dataframe table table-striped table-bordered">
+<thead>
+  <tr class="header">
+    <th><strong>Role</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>Different Names</strong></th>
+    <th><strong>ISCO Codes (if applicable)</strong></th>
+  </tr></thead>
+<tbody>
+  <tr class="odd">
+    <td>Certificate Holder</td>
+    <td>A person who holds the ICVP certificate and wants to assert a claim related to a vaccination. This person could be the same as the Subject of Care or, for example, could be a caregiver who may hold the certificate for a child or other dependant.</td>
+    <td>Traveller</td>
+    <td></td>
+  </tr>
+  <tr class="even">
+    <td>Verifier</td>
+    <td>The person or entity that wants to verify the vaccination status claim,  i.e. verify the vaccination status shown on an ICVP</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="odd">
+    <td>National Public Health Authority (PHA)</td>
+    <td>The entity that has overall responsibility for vaccinating the country’s population. The National PHA is also responsible for the ICVP Generation Service and the ICVP Registry Service.</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="even">
+    <td>International PHA</td>
+    <td>Any external PHA to which the National PHA might defer to verify certificates not issued by the National PHA. This could be a PHA in another country, but it could also be any regional level or international organization.</td>
+    <td></td>
+    <td></td>
+  </tr>
+</tbody></table>
 <p><br /></p>
+
+<h3 id="digital-services">Digital services</h3>
+
+<table border="1" class="dataframe table table-striped table-bordered">
+<thead class="header">
+  <tr>
+    <th><strong>Role</strong></th>
+    <th><strong>Description</strong></th>
+    <th><strong>Different Names</strong></th>
+    <th><strong>ISCO Codes (if applicable)</strong></th>
+  </tr></thead>
+<tbody>
+  <tr class="odd">
+    <td>Certificate Identifier (CID)</td>
+    <td>CID is the key identifier present on the model ICVP. The CID may be provided by an existing national system or alternatively, it could also be issued directly by the Certificate Generation Service which will then encode the ID in the DICVP. An index that associates the CID with metadata about the DICVP is stored in the Certificate Registry Service.</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="even">
+    <td>Status Checking Application</td>
+    <td>A digital solution that can inspect and cryptographically verify the validity of the ICVP. This can be an application on a mobile phone or another device.</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="odd">
+    <td>Certificate Generation Service</td>
+    <td>The service that is responsible for taking data about a vaccination event, converting that data to use the FHIR standard, signing that HL7 FHIR document, and returning it to the Digital Health Solution. The signed HL7 FHIR document is the DICVP. The Digital Health Solution is in turn responsible for distributing the DICVP and any associated representation of the data, such as a QR code, to the Certificate Holder based on PHA policy.</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="even">
+    <td>Certificate Registry Service</td>
+    <td>A service that is an index that is able to return metadata related to the DICVP (the signed FHIR document), such as its signature. This metadata may include the location from which the DICVP may be retrieved from the Certificate Repository, if one exists. The Certificate Registry Service can be utilized to determine whether a DICVP has been revoked, for example, due to revocation of a key within the PKI, a compromised batch of vaccinations, or issues within the supply chain. It is important to note that a Certificate Registry Service is not the same as an electronic immunization registry, which is commonly used for routine immunization programmes.</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="odd">
+    <td>Certificate Repository Service</td>
+    <td>The optional service that has a repository, or database, of all the DICVP and which is able to return a copy of the DICVP (the signed FHIR document) and potentially the one dimensional or two dimensional barcode representation (such as a QR code) of the signed FHIR document. This can be architected in a centralized or decentralized manner. Regardless, it is a mechanism that stores and persists the DICVP information.</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="even">
+    <td>WHO GDHCN</td>
+    <td>WHO Global Digital Health Certification Network for management of public keys through National HIEs for verification of digital signatures</td>
+    <td>GDHCN, Trust Network Gateway, TNG, PKD, Public Key Directory</td>
+    <td></td>
+  </tr>
+  <tr class="odd">
+    <td>WHO Terminology Service</td>
+    <td> WHO hosted terminology service used for handling codesystems and valuesets used by national systems</td>
+    <td> WHO TS, TS</td>
+    <td></td>
+  </tr>
+</tbody></table>
 
 
 
 </div>
-        </div>  <!-- /inner-wrapper -->
-      </div>  <!-- /row -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-content -->
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-content -->
 
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
-  <a name="bottom"> </a>
-  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
-    <div class="container">  <!-- container -->
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
+<a name="bottom"> </a>
+<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+<div class="container">  <!-- container -->
 
-      <div class="inner-wrapper">
-        <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.icvp#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 7, 2024 07:31+0000">2024-10-07</span>
-          <br/>
-          <span style="color: var(--footer-highlight-text-color)">
-                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+<div class="inner-wrapper">
+  <p>
+    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.icvp#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 8, 2025 14:37+0000">2025-10-08</span>
+    <br/>
+    <span style="color: var(--footer-highlight-text-color)">
+                Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
 | <a style="color: #81BEF7" target="_blank" href="http://smart.who.int/icvp/history.html">Version History</a> | <a style="color: #81BEF7" rel="license" href="license.html">License</a>
-          </span>
-        </p>
-      </div>  <!-- /inner-wrapper -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-footer -->
-  
-  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
-    <div class="container">  <!-- container -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-post-footer -->
+    </span>
+  </p>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-footer -->
 
-  <!-- JS and analytics only. -->
-  <!-- Bootstrap core JavaScript
-  ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
-  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
-  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
-  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
-  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
-  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  <!-- Analytics Below
-  ================================================== -->
-  </body>
-</html>
+<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+<div class="container">  <!-- container -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+<script type="text/javascript" src="assets/js/respond.min.js"> </script>
+<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+<script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+<!-- Analytics Below
+================================================== -->
+
+
+
 
