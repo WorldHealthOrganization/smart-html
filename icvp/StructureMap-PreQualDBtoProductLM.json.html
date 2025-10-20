@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>PreQualDBtoProductLM - JSON Representation - SMART ICVP v0.2.0</title>
+    <title>PreQualDBtoProductLM - JSON Representation - SMART ICVP v0.3.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -222,7 +222,7 @@
         <div id="ig-status" class="ig-status-draft">
           <p><span style="font-size:12pt;font-weight:bold">SMART ICVP</span>
             <br/>
-            <span style="display:inline-block;">0.2.0 - release
+            <span style="display:inline-block;">0.3.0 - release
 
 
             </span>
@@ -250,7 +250,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the ICVP (v0.2.0: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://smart.who.int/icvp/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">This page is part of the ICVP (v0.3.0: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://smart.who.int/icvp/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -305,7 +305,7 @@
         
           Draft
           
-            as of 2025-10-08
+            as of 2025-10-17
           
         
       </td>
@@ -329,10 +329,10 @@
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: StructureMap PreQualDBtoProductLM&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;PreQualDBtoProductLM\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcPreQualDBtoProductLM\&quot;&gt; &lt;/a&gt;&lt;pre class=\&quot;fml\&quot;&gt;\r\n&lt;b&gt;map&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; &amp;quot;&lt;/span&gt;http://smart.who.int/icvp/StructureMap/PreQualDBtoProductLM&lt;span style=\&quot;color: navy\&quot;&gt;&amp;quot; = &amp;quot;&lt;/span&gt;PreQualDBtoProductLM&lt;span style=\&quot;color: navy\&quot;&gt;&amp;quot;\r\n\r\n&lt;/span&gt;&lt;b&gt;uses&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; &amp;quot;&lt;/span&gt;http://smart.who.int/icvp/StructureDefinition/PreQualDBwithIDs&lt;span style=\&quot;color: navy\&quot;&gt;&amp;quot; &lt;/span&gt;&lt;b&gt;alias &lt;/b&gt;PreQualDB &lt;b&gt;as &lt;/b&gt;&lt;b&gt;source&lt;/b&gt;\r\n&lt;b&gt;uses&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; &amp;quot;&lt;/span&gt;http://smart.who.int/icvp/StructureDefinition/Product&lt;span style=\&quot;color: navy\&quot;&gt;&amp;quot; &lt;/span&gt;&lt;b&gt;alias &lt;/b&gt;Product &lt;b&gt;as &lt;/b&gt;&lt;b&gt;target&lt;/b&gt;\r\n\r\n&lt;b&gt;group &lt;/b&gt;PreQualDBtoProductLM&lt;span style=\&quot;color: navy\&quot;&gt;(&lt;/span&gt;&lt;b&gt;source&lt;/b&gt; &lt;span style=\&quot;color: maroon\&quot;&gt;prequal&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt; : &lt;/span&gt;PreQualDB, &lt;b&gt;target&lt;/b&gt; &lt;span style=\&quot;color: maroon\&quot;&gt;product&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt; : &lt;/span&gt;Product&lt;span style=\&quot;color: navy\&quot;&gt;)&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;  prequal.number&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;number&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;product.number = &lt;span style=\&quot;color: maroon\&quot;&gt;number&lt;/span&gt; &lt;i&gt;&amp;quot;setNumber&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n  prequal.commercialName&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;name&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;product.name = &lt;span style=\&quot;color: maroon\&quot;&gt;name&lt;/span&gt; &lt;i&gt;&amp;quot;setName&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n  prequal.manufacturer&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;manufacturer&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;product.manufacturer = &lt;span style=\&quot;color: maroon\&quot;&gt;manufacturer&lt;/span&gt; &lt;i&gt;&amp;quot;setManufacturer&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n  prequal.dateOfPrequal&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;date&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;product.dateOfPrequal = &lt;span style=\&quot;color: maroon\&quot;&gt;date&lt;/span&gt; &lt;i&gt;&amp;quot;setDate&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n  prequal.vaccineType&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;vaccineType&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;product.vaccineType = &lt;span style=\&quot;color: maroon\&quot;&gt;vaccineType&lt;/span&gt; &lt;i&gt;&amp;quot;setVaccineType&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n  prequal.presentation&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;presentation&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;product.presentation = &lt;span style=\&quot;color: maroon\&quot;&gt;presentation&lt;/span&gt; &lt;i&gt;&amp;quot;setPresentation&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n  prequal.numDoses&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;doses&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;product.numDoses = &lt;span style=\&quot;color: maroon\&quot;&gt;doses&lt;/span&gt; &lt;i&gt;&amp;quot;setDoses&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n  prequal.responsibleNRA&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;nra&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;product.responsibleNRA = &lt;span style=\&quot;color: maroon\&quot;&gt;nra&lt;/span&gt; &lt;i&gt;&amp;quot;setResponsibleNRA&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n&lt;span style=\&quot;color: navy\&quot;&gt;}\r\n\r\n&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;"
   },
   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.url">url</a>" : "http://smart.who.int/icvp/StructureMap/PreQualDBtoProductLM",
-  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.version">version</a>" : "0.2.0",
+  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.version">version</a>" : "0.3.0",
   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.name">name</a>" : "PreQualDBtoProductLM",
   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.status">status</a>" : "draft",
-  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.date">date</a>" : "2025-10-08T14:36:54+00:00",
+  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.date">date</a>" : "2025-10-17T14:28:32+00:00",
   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.publisher">publisher</a>" : "WHO",
   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.contact">contact</a>" : [
     {
@@ -585,7 +585,7 @@
 
 <div class="inner-wrapper">
   <p>
-    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.icvp#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 8, 2025 14:37+0000">2025-10-08</span>
+    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.icvp#0.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 17, 2025 14:29+0000">2025-10-17</span>
     <br/>
     <span style="color: var(--footer-highlight-text-color)">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

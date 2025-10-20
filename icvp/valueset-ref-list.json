@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://smart.who.int/icvp/ValueSet/DiseaseTargeted",
-      "version" : "0.2.0",
+      "version" : "0.3.0",
       "status" : "active",
       "name" : "DiseaseTargeted",
       "title" : "Disease Targeted",
@@ -11,7 +11,7 @@
     },
     {
       "url" : "http://smart.who.int/icvp/ValueSet/ICVPDiseaseTargeted",
-      "version" : "0.2.0",
+      "version" : "0.3.0",
       "status" : "active",
       "name" : "ICVPDiseaseTargeted",
       "title" : "ICVP Disease Targeted",
@@ -20,7 +20,7 @@
     },
     {
       "url" : "http://smart.who.int/icvp/ValueSet/ICVPProductIds",
-      "version" : "0.2.0",
+      "version" : "0.3.0",
       "status" : "active",
       "name" : "ICVPProductIds",
       "title" : "WHO ICVP Vaccine Product Ids",
@@ -30,8 +30,8 @@
       ],
       "uses" : {
       },
-      "ConceptMap-ICVPProductIdToVaccineType.html" : "ConceptMap from ICVP Product IDs to Vaccine Types",
-      "StructureDefinition-ICVPMinVaccineDetails.html" : "ICVP HCERT Payload"
+      "StructureDefinition-ICVPMinVaccineDetails.html" : "ICVP HCERT Payload",
+      "ConceptMap-ICVPProductIdToVaccineType.html" : "ConceptMap from ICVP Product IDs to Vaccine Types"
     },
     {
       "url" : "http://smart.who.int/icvp/ValueSet/ICVPProductIds",
@@ -46,7 +46,7 @@
     },
     {
       "url" : "http://smart.who.int/icvp/ValueSet/ICVPVaccineCodes",
-      "version" : "0.2.0",
+      "version" : "0.3.0",
       "status" : "active",
       "name" : "ICVPVaccineCodes",
       "title" : "ICVP - Vaccine Codes",
@@ -55,7 +55,7 @@
     },
     {
       "url" : "http://smart.who.int/icvp/ValueSet/ICVPVaccineType",
-      "version" : "0.2.0",
+      "version" : "0.3.0",
       "status" : "active",
       "name" : "ICVPVaccineType",
       "title" : "Vaccine Types for use in the ICVP",
@@ -69,7 +69,7 @@
     },
     {
       "url" : "http://smart.who.int/icvp/ValueSet/VaccineManufacturer",
-      "version" : "0.2.0",
+      "version" : "0.3.0",
       "status" : "active",
       "name" : "VaccineManufacturer",
       "title" : "VaccineManufacturer",
@@ -78,7 +78,7 @@
     },
     {
       "url" : "http://smart.who.int/icvp/ValueSet/preQualVaccines",
-      "version" : "0.2.0",
+      "version" : "0.3.0",
       "status" : "active",
       "name" : "preQualVaccines",
       "title" : "preQualVaccines",
@@ -97,7 +97,7 @@
       ],
       "uses" : {
       },
-      "Questionnaire-pPreQual.html" : "Questionnaire[http://smart.who.int/icvp/Questionnaire/pPreQual|0.2.0]"
+      "Questionnaire-pPreQual.html" : "Questionnaire[http://smart.who.int/icvp/Questionnaire/pPreQual|0.3.0]"
     },
     {
       "url" : "http://smart.who.int/trust-phw/ValueSet/DVCRelationshipStatus",
@@ -131,7 +131,7 @@
       "sources" : ["2.16.840.1.113883.21.2"],
       "uses" : {
       },
-      "Questionnaire-pPreQual.html" : "Questionnaire[http://smart.who.int/icvp/Questionnaire/pPreQual|0.2.0]"
+      "Questionnaire-pPreQual.html" : "Questionnaire[http://smart.who.int/icvp/Questionnaire/pPreQual|0.3.0]"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-0203",
@@ -170,7 +170,7 @@
       "sources" : ["2.16.840.1.113883.1.11.171"],
       "uses" : {
       },
-      "Questionnaire-pPreQual.html" : "Questionnaire[http://smart.who.int/icvp/Questionnaire/pPreQual|0.2.0]"
+      "Questionnaire-pPreQual.html" : "Questionnaire[http://smart.who.int/icvp/Questionnaire/pPreQual|0.3.0]"
     }
   ]
 }

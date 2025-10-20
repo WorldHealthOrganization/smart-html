@@ -3,14 +3,14 @@
   "id" : "VaccineManufacturer",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VaccineManufacturer</b></p><a name=\"VaccineManufacturer\"> </a><a name=\"hcVaccineManufacturer\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-VaccineManufacturer.html\"><code>http://smart.who.int/icvp/CodeSystem/VaccineManufacturer</code></a> version <span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\">&#x1F4E6;0.2.0</span></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VaccineManufacturer</b></p><a name=\"VaccineManufacturer\"> </a><a name=\"hcVaccineManufacturer\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-VaccineManufacturer.html\"><code>http://smart.who.int/icvp/CodeSystem/VaccineManufacturer</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.3.0</span></li></ul></div>"
   },
   "url" : "http://smart.who.int/icvp/ValueSet/VaccineManufacturer",
-  "version" : "0.2.0",
+  "version" : "0.3.0",
   "name" : "VaccineManufacturer",
   "title" : "VaccineManufacturer",
   "status" : "active",
-  "date" : "2025-10-08T14:36:54+00:00",
+  "date" : "2025-10-17T14:28:32+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

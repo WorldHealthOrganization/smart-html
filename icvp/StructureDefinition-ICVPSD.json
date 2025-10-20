@@ -10,11 +10,11 @@
     "valueBoolean" : true
   }],
   "url" : "http://smart.who.int/icvp/StructureDefinition/ICVPSD",
-  "version" : "0.2.0",
+  "version" : "0.3.0",
   "name" : "ICVPSD",
   "title" : "DVC Icvp with Selective Disclosure",
   "status" : "active",
-  "date" : "2025-10-08T14:36:54+00:00",
+  "date" : "2025-10-17T14:28:32+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",
@@ -33,7 +33,7 @@
   "snapshot" : {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
-      "valueString" : "0.2.0"
+      "valueString" : "0.3.0"
     }],
     "element" : [{
       "id" : "ICVP",

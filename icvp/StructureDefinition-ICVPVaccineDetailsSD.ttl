@@ -21,11 +21,11 @@
      ]
   ] ) ; # 
   fhir:url [ fhir:v "http://smart.who.int/icvp/StructureDefinition/ICVPVaccineDetailsSD"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:version [ fhir:v "0.3.0"] ; # 
   fhir:name [ fhir:v "ICVPVaccineDetailsSD"] ; # 
   fhir:title [ fhir:v "ICVP Vaccine Details with Selective Disclosure"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-10-08T14:36:54+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-17T14:28:32+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "WHO"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "WHO" ] ;
@@ -49,7 +49,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:string ;
-         fhir:v "0.2.0"
+         fhir:v "0.3.0"
        ]
      ] ) ;
      fhir:element ( [

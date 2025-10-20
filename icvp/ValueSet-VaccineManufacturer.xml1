@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="VaccineManufacturer"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet VaccineManufacturer</b></p><a name="VaccineManufacturer"> </a><a name="hcVaccineManufacturer"> </a><ul><li>Include all codes defined in <a href="CodeSystem-VaccineManufacturer.html"><code>http://smart.who.int/icvp/CodeSystem/VaccineManufacturer</code></a> version <span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.2.0</span></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet VaccineManufacturer</b></p><a name="VaccineManufacturer"> </a><a name="hcVaccineManufacturer"> </a><ul><li>Include all codes defined in <a href="CodeSystem-VaccineManufacturer.html"><code>http://smart.who.int/icvp/CodeSystem/VaccineManufacturer</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.3.0</span></li></ul></div>
   </text>
   <url value="http://smart.who.int/icvp/ValueSet/VaccineManufacturer"/>
-  <version value="0.2.0"/>
+  <version value="0.3.0"/>
   <name value="VaccineManufacturer"/>
   <title value="VaccineManufacturer"/>
   <status value="active"/>
-  <date value="2025-10-08T14:36:54+00:00"/>
+  <date value="2025-10-17T14:28:32+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>

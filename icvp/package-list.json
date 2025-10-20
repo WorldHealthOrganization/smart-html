@@ -7,13 +7,22 @@
       "sequence" : "ci-build"
     },
     {
+      "version" : "0.3.0",
+      "path" : "http://smart.who.int/icvp/0.3.0",
+      "status" : "draft",
+      "sequence" : "Releases",
+      "fhirversion" : "4.0.1",
+      "date" : "2025-10-17",
+      "current" : true,
+      "desc" : "0.3.0 draft release"
+    },
+    {
       "version" : "0.2.0",
       "path" : "http://smart.who.int/icvp/0.2.0",
       "status" : "draft",
       "sequence" : "Releases",
       "fhirversion" : "4.0.1",
       "date" : "2025-10-08",
-      "current" : true,
       "desc" : "0.2.0 draft release"
     },
     {

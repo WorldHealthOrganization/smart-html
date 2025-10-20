@@ -140,8 +140,8 @@
       "description" : "The International Classification of Diseases, 11th Revision Mortality and Morbidity Statistics (MMS) is one of the ICD11 linearizations. Information about the ICD Foundation Component and the ICD11 Linearizations can be found in the complete reference guide here: [https://icd.who.int/icd11refguide/en/index.html](https://icd.who.int/icd11refguide/en/index.html)\r\n\r\n\"**The ICD11 Linearizations (Tabular lists)**\r\n\r\nA linearization is a subset of the foundation component, that is:\r\n\r\n1. fit for a particular purpose: reporting mortality, morbidity, primary care or other uses;\r\n\r\n 2. composed of entities that are Mutually Exclusive of each other; \r\n\r\n3. each entity is given a single parent.\r\n\r\nLinearization is similar to the classical print versions of ICD Tabular List (e.g. volume I of ICD-10 or other previous editions). The main linearization of ICD-11 is Mortality and Morbidity Statistics (MMS). Various linearizations could be built at different granularity, use case or other purposes such as for Primary Care, Clinical Care or Research. The linkage from the foundation component to a particular linearization will ensure consistent use of the ICD.\"\r\n\r\nICD-11 for Mortality and Morbidity (ICD-11 MMS) can be downloaded in either print or electronic (spreadsheet) format from the  browser in the Info tab located [here](https://icd.who.int/browse11/l-m/en)",
       "uses" : {
       },
-      "ValueSet-DiseaseTargeted.html" : "Disease Targeted",
       "ValueSet-ICVPDiseaseTargeted.html" : "ICVP Disease Targeted",
+      "ValueSet-DiseaseTargeted.html" : "Disease Targeted",
       "ValueSet-ICVPVaccineCodes.html" : "ICVP - Vaccine Codes"
     },
     {
@@ -155,12 +155,12 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-doc-typecodes.html" : "FHIR Document Type Codes",
-      "http://hl7.org/fhir/R4/valueset-doc-section-codes.html" : "Document Section Codes",
-      "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set"
+      "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set",
+      "http://hl7.org/fhir/R4/valueset-doc-section-codes.html" : "Document Section Codes"
     },
     {
       "url" : "http://smart.who.int/icvp/CodeSystem/VaccineManufacturer",
-      "version" : "0.2.0",
+      "version" : "0.3.0",
       "status" : "active",
       "name" : "VaccineManufacturer",
       "title" : "Prequalified Vaccines - Manufacturer names",
@@ -178,9 +178,9 @@
       "description" : "WHO PreQualificaiton Vaccine Product Ids",
       "uses" : {
       },
-      "ConceptMap-ICVPProductIdToVaccineType.html" : "ConceptMap from ICVP Product IDs to Vaccine Types",
-      "ValueSet-ICVP_ICVPProductIds.html" : "WHO ICVP Vaccine Product Ids",
       "ValueSet-ICVPProductIds.html" : "WHO ICVP Vaccine Product Ids",
+      "ValueSet-ICVP_ICVPProductIds.html" : "WHO ICVP Vaccine Product Ids",
+      "ConceptMap-ICVPProductIdToVaccineType.html" : "ConceptMap from ICVP Product IDs to Vaccine Types",
       "http://smart.who.int/pcmt-vaxprequal/v0.2.0/ValueSet-PreQualProductIds.html" : "WHO PreQualificaiton Vaccine Product Ids"
     },
     {
@@ -216,12 +216,12 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
+      "http://hl7.org/fhir/uv/ips/2024Sep/ValueSet-target-diseases-uv-ips.html" : "Vaccine Target Diseases - IPS",
       "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
       "http://hl7.org/fhir/R4/valueset-immunization-target-disease.html" : "Immunization Target Disease Codes",
-      "http://hl7.org/fhir/uv/ips/2024Sep/ValueSet-vaccines-uv-ips.html" : "Vaccines - IPS",
       "http://hl7.org/fhir/R4/valueset-immunization-reason.html" : "Immunization Reason Codes",
-      "http://hl7.org/fhir/uv/ips/2024Sep/ValueSet-target-diseases-uv-ips.html" : "Vaccine Target Diseases - IPS",
-      "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes"
+      "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes",
+      "http://hl7.org/fhir/uv/ips/2024Sep/ValueSet-vaccines-uv-ips.html" : "Vaccines - IPS"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/immunization-funding-source",
@@ -305,8 +305,8 @@
       "oids" : ["2.16.840.1.113883.18.2"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.5.0/ValueSet-v2-0001.html" : "hl7VS-administrativeSex",
-      "ValueSet-ICVP_v2-0001.html" : "v2 SEX"
+      "ValueSet-ICVP_v2-0001.html" : "v2 SEX",
+      "http://terminology.hl7.org/6.5.0/ValueSet-v2-0001.html" : "hl7VS-administrativeSex"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",

@@ -16,11 +16,11 @@
     <valueBoolean value="true"/>
   </extension>
   <url value="http://smart.who.int/icvp/StructureDefinition/ICVPVaccineDetailsSD"/>
-  <version value="0.2.0"/>
+  <version value="0.3.0"/>
   <name value="ICVPVaccineDetailsSD"/>
   <title value="ICVP Vaccine Details with Selective Disclosure"/>
   <status value="active"/>
-  <date value="2025-10-08T14:36:54+00:00"/>
+  <date value="2025-10-17T14:28:32+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -38,7 +38,7 @@
   <derivation value="constraint"/>
   <snapshot>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
-      <valueString value="0.2.0"/>
+      <valueString value="0.3.0"/>
     </extension>
     <element id="ICVPVaccineDetails">
       <path value="ICVPVaccineDetails"/>

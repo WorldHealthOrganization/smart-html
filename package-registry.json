@@ -38,23 +38,23 @@
         "path" : "http://smart.who.int/ts/0.1.0"
       }
     },
-     {
+    {
       "path" : "icvp/package-list.json",
       "package-id" : "smart.who.int.icvp",
       "title" : "ICVP",
       "canonical" : "http://smart.who.int/icvp",
       "category" : "base",
       "ci-build" : "http://worldhealthorganization.github.io/smart-icvp",
-      "version-count" : 2,
+      "version-count" : 3,
       "latest" : {
-        "version" : "0.2.0",
-        "date" : "2025-10-08",
-        "path" : "http://smart.who.int/icvp/0.2.0"
+        "version" : "0.3.0",
+        "date" : "2025-10-17",
+        "path" : "http://smart.who.int/icvp/0.3.0"
       },
       "milestone" : {
-        "version" : "0.2.0",
-        "date" : "2025-10-08",
-        "path" : "http://smart.who.int/icvp/0.2.0"
+        "version" : "0.3.0",
+        "date" : "2025-10-17",
+        "path" : "http://smart.who.int/icvp/0.3.0"
       }
     },
     {

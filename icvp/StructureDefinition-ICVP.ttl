@@ -30,12 +30,12 @@
      ]
   ] ) ; # 
   fhir:url [ fhir:v "http://smart.who.int/icvp/StructureDefinition/ICVP"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:version [ fhir:v "0.3.0"] ; # 
   fhir:name [ fhir:v "ICVP"] ; # 
   fhir:title [ fhir:v "ICVP"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v true] ; # 
-  fhir:date [ fhir:v "2025-10-08T14:36:54+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-17T14:28:32+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "WHO"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "WHO" ] ;

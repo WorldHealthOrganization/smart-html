@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ICVPClaimtoIPS - TTL Representation - SMART ICVP v0.2.0</title>
+    <title>ICVPClaimtoIPS - TTL Representation - SMART ICVP v0.3.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -222,7 +222,7 @@
         <div id="ig-status" class="ig-status-draft">
           <p><span style="font-size:12pt;font-weight:bold">SMART ICVP</span>
             <br/>
-            <span style="display:inline-block;">0.2.0 - release
+            <span style="display:inline-block;">0.3.0 - release
 
 
             </span>
@@ -250,7 +250,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the ICVP (v0.2.0: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://smart.who.int/icvp/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">This page is part of the ICVP (v0.3.0: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://smart.who.int/icvp/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -305,7 +305,7 @@
         
           Draft
           
-            as of 2025-10-08
+            as of 2025-10-17
           
         
       </td>
@@ -338,10 +338,10 @@
 fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: StructureMap ICVPClaimtoIPS&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ICVPClaimtoIPS\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcICVPClaimtoIPS\&quot;&gt; &lt;/a&gt;&lt;pre class=\&quot;fml\&quot;&gt;#xD;\n&lt;b&gt;map&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; \&quot;&lt;/span&gt;http://smart.who.int/icvp/StructureMap/ICVPClaimtoIPS&lt;span style=\&quot;color: navy\&quot;&gt;\&quot; = \&quot;&lt;/span&gt;ICVPClaimtoIPS&lt;span style=\&quot;color: navy\&quot;&gt;\&quot;#xD;\n#xD;\n&lt;/span&gt;&lt;b&gt;uses&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; \&quot;&lt;/span&gt;&lt;a href=\&quot;StructureDefinition-ICVPMin.html\&quot; title=\&quot;ICVP HCERT Payload\&quot;&gt;http://smart.who.int/icvp/StructureDefinition/ICVPMin&lt;/a&gt;&lt;span style=\&quot;color: navy\&quot;&gt;\&quot; &lt;/span&gt;&lt;b&gt;alias &lt;/b&gt;ICVPPayload &lt;b&gt;as &lt;/b&gt;&lt;b&gt;source&lt;/b&gt;#xD;\n&lt;b&gt;uses&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; \&quot;&lt;/span&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/bundle.html\&quot; title=\&quot;Bundle\&quot;&gt;http://hl7.org/fhir/StructureDefinition/Bundle&lt;/a&gt;&lt;span style=\&quot;color: navy\&quot;&gt;\&quot; &lt;/span&gt;&lt;b&gt;alias &lt;/b&gt;IPS &lt;b&gt;as &lt;/b&gt;&lt;b&gt;target&lt;/b&gt;#xD;\n&lt;b&gt;uses&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; \&quot;&lt;/span&gt;&lt;a href=\&quot;StructureDefinition-ICVP.html\&quot; title=\&quot;ICVP\&quot;&gt;http://smart.who.int/icvp/StructureDefinition/ICVP&lt;/a&gt;&lt;span style=\&quot;color: navy\&quot;&gt;\&quot; &lt;/span&gt;&lt;b&gt;alias &lt;/b&gt;ICVPModel &lt;b&gt;as &lt;/b&gt;&lt;b&gt;target&lt;/b&gt;#xD;\n&lt;b&gt;uses&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; \&quot;&lt;/span&gt;&lt;a href=\&quot;StructureDefinition-ICVPVaccineDetails.html\&quot; title=\&quot;ICVP - Vaccine Details\&quot;&gt;http://smart.who.int/icvp/StructureDefinition/ICVPVaccineDetails&lt;/a&gt;&lt;span style=\&quot;color: navy\&quot;&gt;\&quot; &lt;/span&gt;&lt;b&gt;alias &lt;/b&gt;ICVPVaccineDetails &lt;b&gt;as &lt;/b&gt;&lt;b&gt;target&lt;/b&gt;#xD;\n#xD;\n&lt;b&gt;imports&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; \&quot;&lt;/span&gt;&lt;a href=\&quot;StructureMap-ICVPLMToIPS.html\&quot; title=\&quot;ICVPLMToIPS\&quot;&gt;http://smart.who.int/icvp/StructureMap/ICVPLMToIPS&lt;/a&gt;&lt;span style=\&quot;color: navy\&quot;&gt;\&quot;#xD;\n&lt;/span&gt;&lt;b&gt;imports&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; \&quot;&lt;/span&gt;&lt;a href=\&quot;StructureMap-ICVPClaimtoICVPLM.html\&quot; title=\&quot;ICVPClaimtoICVPLM\&quot;&gt;http://smart.who.int/icvp/StructureMap/ICVPClaimtoICVPLM&lt;/a&gt;&lt;span style=\&quot;color: navy\&quot;&gt;\&quot;#xD;\n&lt;/span&gt;#xD;\n&lt;b&gt;group &lt;/b&gt;ICVPClaimtoIPS&lt;span style=\&quot;color: navy\&quot;&gt;(&lt;/span&gt;&lt;b&gt;source&lt;/b&gt; &lt;span style=\&quot;color: maroon\&quot;&gt;ICVPClaim&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt; : &lt;/span&gt;ICVPPayload, &lt;b&gt;target&lt;/b&gt; &lt;span style=\&quot;color: maroon\&quot;&gt;IPS&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt; : &lt;/span&gt;Bundle&lt;span style=\&quot;color: navy\&quot;&gt;)&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {#xD;\n&lt;/span&gt;  ICVPClaim&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;&lt;b&gt;create&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt;(&lt;/span&gt;&lt;span style=\&quot;color: blue\&quot;&gt;'http://smart.who.int/icvp/StructureDefinition/ICVP'&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;)&lt;/span&gt;&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;model&lt;/span&gt;&lt;b&gt; then&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {#xD;\n&lt;/span&gt;    ICVPClaim&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;model&lt;b&gt; then &lt;/b&gt;ICVPClaimtoICVPLM&lt;span style=\&quot;color: navy\&quot;&gt;(&lt;/span&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;ICVPClaim&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;, &lt;/span&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;model&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;)&lt;/span&gt; &lt;i&gt;\&quot;rule1\&quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;#xD;\n    ICVPClaim&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;IPS&lt;b&gt; then &lt;/b&gt;ICVPLMToIPS&lt;span style=\&quot;color: navy\&quot;&gt;(&lt;/span&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;model&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;, &lt;/span&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;IPS&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;)&lt;/span&gt; &lt;i&gt;\&quot;rule2\&quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;#xD;\n  &lt;span style=\&quot;color: navy\&quot;&gt;}&lt;/span&gt; &lt;i&gt;\&quot;rule3\&quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;#xD;\n&lt;span style=\&quot;color: navy\&quot;&gt;}#xD;\n#xD;\n&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
   ] ; # 
   <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://smart.who.int/icvp/StructureMap/ICVPClaimtoIPS&quot;^^xsd:anyURI] ; # 
-  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;0.2.0&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;0.3.0&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ICVPClaimtoIPS&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;draft&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2025-10-08T14:36:54+00:00&quot;^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2025-10-17T14:28:32+00:00&quot;^^xsd:dateTime] ; # 
   <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;WHO&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.contact">fhir:contact</a> ( [
 <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;WHO&quot; ] ;
@@ -449,7 +449,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 
 <div class="inner-wrapper">
   <p>
-    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.icvp#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 8, 2025 14:37+0000">2025-10-08</span>
+    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.icvp#0.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 17, 2025 14:29+0000">2025-10-17</span>
     <br/>
     <span style="color: var(--footer-highlight-text-color)">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -56,7 +56,7 @@
 </span>  pid<span style="color: navy"><b> -&gt; </b></span>patient.id = <span style="color: maroon">pid</span> <i>&quot;setPatientId&quot;</i><span style="color: navy">;</span>
   lm.name<b> as </b><span style="color: maroon">sourceName</span><span style="color: navy"><b> -&gt; </b></span>patient.name<b> as </b><span style="color: maroon">targetName</span><b> then </b>nameToHumanName<span style="color: navy">(</span><span style="color: maroon">sourceName</span><span style="color: navy">, </span><span style="color: maroon">targetName</span><span style="color: navy">)</span> <i>&quot;Setname&quot;</i><span style="color: navy">;</span>
   lm.dob<b> as </b><span style="color: maroon">dob</span><span style="color: navy"><b> -&gt; </b></span>patient.birthDate = <span style="color: maroon">dob</span> <i>&quot;setDateofBirth&quot;</i><span style="color: navy">;</span>
-  lm.sex<b> as </b><span style="color: maroon">sex</span><b> then </b>ExtractGender<span style="color: navy">(</span><span style="color: maroon">sex</span><span style="color: navy">, </span><span style="color: maroon">patient</span><span style="color: navy">)</span> <i>&quot;Patient Gender&quot;</i><span style="color: navy">;</span>
+  lm.sex<b> as </b><span style="color: maroon">sex</span><b> then </b>ExtractGender<span style="color: navy">(</span><span style="color: maroon">sex</span><span style="color: navy">, </span><span style="color: maroon">patient</span><span style="color: navy">)</span> <i>&quot;PatientGender&quot;</i><span style="color: navy">;</span>
   <span style="color: #b36b00" title="This element was not defined prior to R5">// lm.sex as sex -&gt; patient.gender = sex &quot;setSex&quot;;</span>
   lm.nid<b> as </b><span style="color: maroon">id</span><span style="color: navy"><b> -&gt; </b></span> patient.identifier<b> as </b><span style="color: maroon">identifier</span><span style="color: navy">, </span> identifier.value = <span style="color: maroon">id</span> <i>&quot;setNationalIdentifier&quot;</i><span style="color: navy">;</span>
   lm.guardian<b> as </b><span style="color: maroon">guardian</span><span style="color: navy"><b> -&gt; </b></span> patient.contact<b> as </b><span style="color: maroon">parentContact</span><span style="color: navy">, </span> parentContact.name<b> as </b><span style="color: maroon">parentName</span><b> then </b>nameToHumanName<span style="color: navy">(</span><span style="color: maroon">guardian</span><span style="color: navy">, </span><span style="color: maroon">parentName</span><span style="color: navy">)</span> <i>&quot;setGuardianName&quot;</i><span style="color: navy">;</span>
@@ -121,7 +121,7 @@
 </span>  vax<span style="color: navy"><b> -&gt; </b></span>immunization.status = <span style="color: blue">'completed'</span> <i>&quot;setStatus&quot;</i><span style="color: navy">;</span>
   vax.productID<b> as </b><span style="color: maroon">vaccine</span><b> then</b><span style="color: navy"> {
 </span>    <span style="color: navy">// </span><span style="color: green">Keep the original productID as-is in the extension</span>
-    vaccine<span style="color: navy"><b> -&gt; </b></span> immunization.extension<b> as </b><span style="color: maroon">ext</span><span style="color: navy">, </span> ext.url = <span style="color: blue">'http://smart.who.int/pcmt/StructureDefinition/productID'</span><span style="color: navy">, </span> ext.value = <span style="color: maroon">vaccine</span> <i>&quot;keepProductIdExt&quot;</i><span style="color: navy">;</span>
+    vaccine<span style="color: navy"><b> -&gt; </b></span> immunization.extension<b> as </b><span style="color: maroon">ext</span><span style="color: navy">, </span> ext.url = <span style="color: blue">'http://smart.who.int/pcmt/StructureDefinition/ProductID'</span><span style="color: navy">, </span> ext.value = <span style="color: maroon">vaccine</span> <i>&quot;keepProductIdExt&quot;</i><span style="color: navy">;</span>
     <span style="color: navy">// </span><span style="color: green">Normalize system just for translate(): CM source = .../PreQualProductIds (camel 'Ids')</span>
     vaccine.code<b> as </b><span style="color: maroon">pcode</span><span style="color: navy"><b> -&gt; </b></span> <b>create</b><span style="color: navy">(</span><span style="color: blue">'Coding'</span><span style="color: navy">)</span><b> as </b><span style="color: maroon">src</span><span style="color: navy">, </span> src.system = <span style="color: blue">'http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds'</span><span style="color: navy">, </span> src.code = <span style="color: maroon">pcode</span><span style="color: navy">, </span> <b>create</b><span style="color: navy">(</span><span style="color: blue">'Coding'</span><span style="color: navy">)</span><b> as </b><span style="color: maroon">vcoding</span><span style="color: navy">, </span> vcoding.system = <span style="color: blue">'http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType'</span><span style="color: navy">, </span> vcoding.code = <b>translate</b><span style="color: navy">(</span><span style="color: maroon">src</span><span style="color: navy">, </span><span style="color: blue">'http://smart.who.int/icvp/ConceptMap/ICVPProductIdToVaccineType'</span><span style="color: navy">, </span><span style="color: blue">'code'</span><span style="color: navy">)</span><span style="color: navy">, </span> <b>create</b><span style="color: navy">(</span><span style="color: blue">'CodeableConcept'</span><span style="color: navy">)</span><b> as </b><span style="color: maroon">tgtVaccineCode</span><span style="color: navy">, </span> tgtVaccineCode.coding = <span style="color: maroon">vcoding</span><span style="color: navy">, </span> immunization.vaccineCode = <span style="color: maroon">tgtVaccineCode</span> <i>&quot;mapVaxCode&quot;</i><span style="color: navy">;</span>
   <span style="color: navy">}</span> <i>&quot;setVaccine&quot;</i><span style="color: navy">;</span>
@@ -167,10 +167,10 @@
 </span></pre></div>
   </text>
   <url value="http://smart.who.int/icvp/StructureMap/ICVPLMToIPS"/>
-  <version value="0.2.0"/>
+  <version value="0.3.0"/>
   <name value="ICVPLMToIPS"/>
   <status value="draft"/>
-  <date value="2025-10-08T14:36:54+00:00"/>
+  <date value="2025-10-17T14:28:32+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -828,7 +828,7 @@
       </target>
     </rule>
     <rule>
-      <name value="Patient Gender"/>
+      <name value="PatientGender"/>
       <source>
         <context value="lm"/>
         <element value="sex"/>
@@ -1883,7 +1883,7 @@
           <element value="url"/>
           <transform value="copy"/>
           <parameter>
-            <valueString value="http://smart.who.int/pcmt/StructureDefinition/productID"/>
+            <valueString value="http://smart.who.int/pcmt/StructureDefinition/ProductID"/>
           </parameter>
         </target>
         <target>

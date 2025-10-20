@@ -22,7 +22,7 @@
 <span style="color: navy">}
 
 </span><b>group </b>mapVaccineDetails<span style="color: navy">(</span><b>source</b> <span style="color: maroon">src</span><span style="color: navy"> : </span>BackboneElement, <b>target</b> <span style="color: maroon">tgt</span><span style="color: navy"> : </span>ICVPVaccineDetails<span style="color: navy">)</span><span style="color: navy"> {
-</span>  src.vp<b> as </b><span style="color: maroon">vp</span><span style="color: navy"><b> -&gt; </b></span> <b>create</b><span style="color: navy">(</span><span style="color: blue">'Coding'</span><span style="color: navy">)</span><b> as </b><span style="color: maroon">coding</span><span style="color: navy">, </span> coding.code = <span style="color: maroon">vp</span><span style="color: navy">, </span> coding.system = <span style="color: blue">'http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIDs'</span><span style="color: navy">, </span> tgt.productID = <span style="color: maroon">coding</span> <i>&quot;rule9&quot;</i><span style="color: navy">;</span>
+</span>  src.vp<b> as </b><span style="color: maroon">vp</span><span style="color: navy"><b> -&gt; </b></span> <b>create</b><span style="color: navy">(</span><span style="color: blue">'Coding'</span><span style="color: navy">)</span><b> as </b><span style="color: maroon">coding</span><span style="color: navy">, </span> coding.code = <span style="color: maroon">vp</span><span style="color: navy">, </span> coding.system = <span style="color: blue">'http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds'</span><span style="color: navy">, </span> tgt.productID = <span style="color: maroon">coding</span> <i>&quot;rule9&quot;</i><span style="color: navy">;</span>
   src.dt<b> as </b><span style="color: maroon">dt</span><span style="color: navy"><b> -&gt; </b></span>tgt.date = <span style="color: maroon">dt</span> <i>&quot;rule13&quot;</i><span style="color: navy">;</span>
   src.bo<b> as </b><span style="color: maroon">bo</span><span style="color: navy"><b> -&gt; </b></span> <b>create</b><span style="color: navy">(</span><span style="color: blue">'CodeableConcept'</span><span style="color: navy">)</span><b> as </b><span style="color: maroon">code</span><span style="color: navy">, </span> code.text = <span style="color: maroon">bo</span><span style="color: navy">, </span> tgt.batchNo = <span style="color: maroon">code</span> <i>&quot;rule14&quot;</i><span style="color: navy">;</span>
   src<span style="color: navy"><b> -&gt; </b></span><b>create</b><span style="color: navy">(</span><span style="color: blue">'Period'</span><span style="color: navy">)</span><b> as </b><span style="color: maroon">period</span><b> then</b><span style="color: navy"> {
@@ -61,10 +61,10 @@
 </span></pre></div>
   </text>
   <url value="http://smart.who.int/icvp/StructureMap/ICVPClaimtoICVPLM"/>
-  <version value="0.2.0"/>
+  <version value="0.3.0"/>
   <name value="ICVPClaimtoICVPLM"/>
   <status value="draft"/>
-  <date value="2025-10-08T14:36:54+00:00"/>
+  <date value="2025-10-17T14:28:32+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -283,7 +283,7 @@
         <element value="system"/>
         <transform value="copy"/>
         <parameter>
-          <valueString value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIDs"/>
+          <valueString value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
         </parameter>
       </target>
       <target>

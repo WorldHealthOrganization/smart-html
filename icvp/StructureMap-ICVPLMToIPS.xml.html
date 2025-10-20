@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ICVPLMToIPS - XML Representation - SMART ICVP v0.2.0</title>
+    <title>ICVPLMToIPS - XML Representation - SMART ICVP v0.3.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -222,7 +222,7 @@
         <div id="ig-status" class="ig-status-draft">
           <p><span style="font-size:12pt;font-weight:bold">SMART ICVP</span>
             <br/>
-            <span style="display:inline-block;">0.2.0 - release
+            <span style="display:inline-block;">0.3.0 - release
 
 
             </span>
@@ -250,7 +250,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the ICVP (v0.2.0: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://smart.who.int/icvp/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">This page is part of the ICVP (v0.3.0: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://smart.who.int/icvp/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -305,7 +305,7 @@
         
           Draft
           
-            as of 2025-10-08
+            as of 2025-10-17
           
         
       </td>
@@ -379,7 +379,7 @@
 &lt;/span&gt;  pid&lt;span style=&quot;color: navy&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;patient.id = &lt;span style=&quot;color: maroon&quot;&gt;pid&lt;/span&gt; &lt;i&gt;&amp;quot;setPatientId&amp;quot;&lt;/i&gt;&lt;span style=&quot;color: navy&quot;&gt;;&lt;/span&gt;
   lm.name&lt;b&gt; as &lt;/b&gt;&lt;span style=&quot;color: maroon&quot;&gt;sourceName&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;patient.name&lt;b&gt; as &lt;/b&gt;&lt;span style=&quot;color: maroon&quot;&gt;targetName&lt;/span&gt;&lt;b&gt; then &lt;/b&gt;nameToHumanName&lt;span style=&quot;color: navy&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: maroon&quot;&gt;sourceName&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color: maroon&quot;&gt;targetName&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;)&lt;/span&gt; &lt;i&gt;&amp;quot;Setname&amp;quot;&lt;/i&gt;&lt;span style=&quot;color: navy&quot;&gt;;&lt;/span&gt;
   lm.dob&lt;b&gt; as &lt;/b&gt;&lt;span style=&quot;color: maroon&quot;&gt;dob&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;patient.birthDate = &lt;span style=&quot;color: maroon&quot;&gt;dob&lt;/span&gt; &lt;i&gt;&amp;quot;setDateofBirth&amp;quot;&lt;/i&gt;&lt;span style=&quot;color: navy&quot;&gt;;&lt;/span&gt;
-  lm.sex&lt;b&gt; as &lt;/b&gt;&lt;span style=&quot;color: maroon&quot;&gt;sex&lt;/span&gt;&lt;b&gt; then &lt;/b&gt;ExtractGender&lt;span style=&quot;color: navy&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: maroon&quot;&gt;sex&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color: maroon&quot;&gt;patient&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;)&lt;/span&gt; &lt;i&gt;&amp;quot;Patient Gender&amp;quot;&lt;/i&gt;&lt;span style=&quot;color: navy&quot;&gt;;&lt;/span&gt;
+  lm.sex&lt;b&gt; as &lt;/b&gt;&lt;span style=&quot;color: maroon&quot;&gt;sex&lt;/span&gt;&lt;b&gt; then &lt;/b&gt;ExtractGender&lt;span style=&quot;color: navy&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: maroon&quot;&gt;sex&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color: maroon&quot;&gt;patient&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;)&lt;/span&gt; &lt;i&gt;&amp;quot;PatientGender&amp;quot;&lt;/i&gt;&lt;span style=&quot;color: navy&quot;&gt;;&lt;/span&gt;
   &lt;span style=&quot;color: #b36b00&quot; title=&quot;This element was not defined prior to R5&quot;&gt;// lm.sex as sex -&amp;gt; patient.gender = sex &amp;quot;setSex&amp;quot;;&lt;/span&gt;
   lm.nid&lt;b&gt; as &lt;/b&gt;&lt;span style=&quot;color: maroon&quot;&gt;id&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt; patient.identifier&lt;b&gt; as &lt;/b&gt;&lt;span style=&quot;color: maroon&quot;&gt;identifier&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;, &lt;/span&gt; identifier.value = &lt;span style=&quot;color: maroon&quot;&gt;id&lt;/span&gt; &lt;i&gt;&amp;quot;setNationalIdentifier&amp;quot;&lt;/i&gt;&lt;span style=&quot;color: navy&quot;&gt;;&lt;/span&gt;
   lm.guardian&lt;b&gt; as &lt;/b&gt;&lt;span style=&quot;color: maroon&quot;&gt;guardian&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt; patient.contact&lt;b&gt; as &lt;/b&gt;&lt;span style=&quot;color: maroon&quot;&gt;parentContact&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;, &lt;/span&gt; parentContact.name&lt;b&gt; as &lt;/b&gt;&lt;span style=&quot;color: maroon&quot;&gt;parentName&lt;/span&gt;&lt;b&gt; then &lt;/b&gt;nameToHumanName&lt;span style=&quot;color: navy&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: maroon&quot;&gt;guardian&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color: maroon&quot;&gt;parentName&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;)&lt;/span&gt; &lt;i&gt;&amp;quot;setGuardianName&amp;quot;&lt;/i&gt;&lt;span style=&quot;color: navy&quot;&gt;;&lt;/span&gt;
@@ -444,7 +444,7 @@
 &lt;/span&gt;  vax&lt;span style=&quot;color: navy&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;immunization.status = &lt;span style=&quot;color: blue&quot;&gt;'completed'&lt;/span&gt; &lt;i&gt;&amp;quot;setStatus&amp;quot;&lt;/i&gt;&lt;span style=&quot;color: navy&quot;&gt;;&lt;/span&gt;
   vax.productID&lt;b&gt; as &lt;/b&gt;&lt;span style=&quot;color: maroon&quot;&gt;vaccine&lt;/span&gt;&lt;b&gt; then&lt;/b&gt;&lt;span style=&quot;color: navy&quot;&gt; {
 &lt;/span&gt;    &lt;span style=&quot;color: navy&quot;&gt;// &lt;/span&gt;&lt;span style=&quot;color: green&quot;&gt;Keep the original productID as-is in the extension&lt;/span&gt;
-    vaccine&lt;span style=&quot;color: navy&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt; immunization.extension&lt;b&gt; as &lt;/b&gt;&lt;span style=&quot;color: maroon&quot;&gt;ext&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;, &lt;/span&gt; ext.url = &lt;span style=&quot;color: blue&quot;&gt;'http://smart.who.int/pcmt/StructureDefinition/productID'&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;, &lt;/span&gt; ext.value = &lt;span style=&quot;color: maroon&quot;&gt;vaccine&lt;/span&gt; &lt;i&gt;&amp;quot;keepProductIdExt&amp;quot;&lt;/i&gt;&lt;span style=&quot;color: navy&quot;&gt;;&lt;/span&gt;
+    vaccine&lt;span style=&quot;color: navy&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt; immunization.extension&lt;b&gt; as &lt;/b&gt;&lt;span style=&quot;color: maroon&quot;&gt;ext&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;, &lt;/span&gt; ext.url = &lt;span style=&quot;color: blue&quot;&gt;'http://smart.who.int/pcmt/StructureDefinition/ProductID'&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;, &lt;/span&gt; ext.value = &lt;span style=&quot;color: maroon&quot;&gt;vaccine&lt;/span&gt; &lt;i&gt;&amp;quot;keepProductIdExt&amp;quot;&lt;/i&gt;&lt;span style=&quot;color: navy&quot;&gt;;&lt;/span&gt;
     &lt;span style=&quot;color: navy&quot;&gt;// &lt;/span&gt;&lt;span style=&quot;color: green&quot;&gt;Normalize system just for translate(): CM source = .../PreQualProductIds (camel 'Ids')&lt;/span&gt;
     vaccine.code&lt;b&gt; as &lt;/b&gt;&lt;span style=&quot;color: maroon&quot;&gt;pcode&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt; &lt;b&gt;create&lt;/b&gt;&lt;span style=&quot;color: navy&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: blue&quot;&gt;'Coding'&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;)&lt;/span&gt;&lt;b&gt; as &lt;/b&gt;&lt;span style=&quot;color: maroon&quot;&gt;src&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;, &lt;/span&gt; src.system = &lt;span style=&quot;color: blue&quot;&gt;'http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds'&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;, &lt;/span&gt; src.code = &lt;span style=&quot;color: maroon&quot;&gt;pcode&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;, &lt;/span&gt; &lt;b&gt;create&lt;/b&gt;&lt;span style=&quot;color: navy&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: blue&quot;&gt;'Coding'&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;)&lt;/span&gt;&lt;b&gt; as &lt;/b&gt;&lt;span style=&quot;color: maroon&quot;&gt;vcoding&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;, &lt;/span&gt; vcoding.system = &lt;span style=&quot;color: blue&quot;&gt;'http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType'&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;, &lt;/span&gt; vcoding.code = &lt;b&gt;translate&lt;/b&gt;&lt;span style=&quot;color: navy&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: maroon&quot;&gt;src&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color: blue&quot;&gt;'http://smart.who.int/icvp/ConceptMap/ICVPProductIdToVaccineType'&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color: blue&quot;&gt;'code'&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;, &lt;/span&gt; &lt;b&gt;create&lt;/b&gt;&lt;span style=&quot;color: navy&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: blue&quot;&gt;'CodeableConcept'&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;)&lt;/span&gt;&lt;b&gt; as &lt;/b&gt;&lt;span style=&quot;color: maroon&quot;&gt;tgtVaccineCode&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;, &lt;/span&gt; tgtVaccineCode.coding = &lt;span style=&quot;color: maroon&quot;&gt;vcoding&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;, &lt;/span&gt; immunization.vaccineCode = &lt;span style=&quot;color: maroon&quot;&gt;tgtVaccineCode&lt;/span&gt; &lt;i&gt;&amp;quot;mapVaxCode&amp;quot;&lt;/i&gt;&lt;span style=&quot;color: navy&quot;&gt;;&lt;/span&gt;
   &lt;span style=&quot;color: navy&quot;&gt;}&lt;/span&gt; &lt;i&gt;&amp;quot;setVaccine&amp;quot;&lt;/i&gt;&lt;span style=&quot;color: navy&quot;&gt;;&lt;/span&gt;
@@ -490,10 +490,10 @@
 &lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.text">text</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://smart.who.int/icvp/StructureMap/ICVPLMToIPS&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.2.0&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.3.0&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ICVPLMToIPS&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2025-10-08T14:36:54+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2025-10-17T14:28:32+00:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;WHO&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;WHO&quot;/&gt;
@@ -1153,7 +1153,7 @@ create Bundle&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule">rule</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule">rule</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;Patient Gender&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;PatientGender&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;lm&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;sex&quot;/&gt;
@@ -2212,7 +2212,7 @@ create Bundle&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;copy&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueString</a>
-                         <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;http://smart.who.int/pcmt/StructureDefinition/productID&quot;/&gt;
+                         <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;http://smart.who.int/pcmt/StructureDefinition/ProductID&quot;/&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>&gt;
@@ -2757,7 +2757,7 @@ create Bundle&quot;/&gt;
 
 <div class="inner-wrapper">
   <p>
-    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.icvp#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 8, 2025 14:37+0000">2025-10-08</span>
+    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.icvp#0.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 17, 2025 14:29+0000">2025-10-17</span>
     <br/>
     <span style="color: var(--footer-highlight-text-color)">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

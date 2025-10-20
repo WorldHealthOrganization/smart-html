@@ -24,10 +24,10 @@
 </span></pre></div>
   </text>
   <url value="http://smart.who.int/icvp/StructureMap/ICVPQRtoICVPClaim"/>
-  <version value="0.2.0"/>
+  <version value="0.3.0"/>
   <name value="ICVPQRtoICVPClaim"/>
   <status value="draft"/>
-  <date value="2025-10-08T14:36:54+00:00"/>
+  <date value="2025-10-17T14:28:32+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>

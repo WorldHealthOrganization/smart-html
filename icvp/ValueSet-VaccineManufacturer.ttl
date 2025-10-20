@@ -11,14 +11,14 @@
   fhir:id [ fhir:v "VaccineManufacturer"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VaccineManufacturer</b></p><a name=\"VaccineManufacturer\"> </a><a name=\"hcVaccineManufacturer\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-VaccineManufacturer.html\"><code>http://smart.who.int/icvp/CodeSystem/VaccineManufacturer</code></a> version <span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\">?0.2.0</span></li></ul></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VaccineManufacturer</b></p><a name=\"VaccineManufacturer\"> </a><a name=\"hcVaccineManufacturer\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-VaccineManufacturer.html\"><code>http://smart.who.int/icvp/CodeSystem/VaccineManufacturer</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.3.0</span></li></ul></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://smart.who.int/icvp/ValueSet/VaccineManufacturer"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:version [ fhir:v "0.3.0"] ; # 
   fhir:name [ fhir:v "VaccineManufacturer"] ; # 
   fhir:title [ fhir:v "VaccineManufacturer"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-10-08T14:36:54+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-17T14:28:32+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "WHO"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "WHO" ] ;

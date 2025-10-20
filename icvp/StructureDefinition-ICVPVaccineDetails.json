@@ -14,12 +14,12 @@
     "valueBoolean" : true
   }],
   "url" : "http://smart.who.int/icvp/StructureDefinition/ICVPVaccineDetails",
-  "version" : "0.2.0",
+  "version" : "0.3.0",
   "name" : "ICVPVaccineDetails",
   "title" : "ICVP - Vaccine Details",
   "status" : "active",
   "experimental" : true,
-  "date" : "2025-10-08T14:36:54+00:00",
+  "date" : "2025-10-17T14:28:32+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",
