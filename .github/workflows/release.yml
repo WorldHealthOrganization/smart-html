@@ -28,13 +28,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1) Checkout the CALLER repo at the triggering commit/branch
       - name: Checkout caller repo
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      # 2) If caller keeps override in .github/, copy it to root so the script can see it
       - name: Use .github/release-config.yaml if present
         run: |
           if [ -f ".github/release-config.yaml" ] && [ ! -f "release-config.yaml" ]; then
@@ -42,7 +40,6 @@ jobs:
             echo "Using caller .github/release-config.yaml"
           fi
 
-      # 3) Toolchains
       - name: Setup Java (publisher.jar)
         uses: actions/setup-java@v4
         with:
@@ -54,13 +51,11 @@ jobs:
         with:
           python-version: "3.11"
 
-      # 4) Download the script + global config from smart-html/scripts at the exact ref used in "uses:"
       - name: Download scripts from smart-html@ref
         run: |
           set -euxo pipefail
-          # Example: github.workflow_ref = WorldHealthOrganization/smart-html/.github/workflows/release.yml@main
           REF="${{ github.workflow_ref }}"
-          REF="${REF##*@}"   # => "main" (or a tag/SHA)
+          REF="${REF##*@}"
           mkdir -p .ci-tools
           curl -fsSL "https://raw.githubusercontent.com/costateixeira/smart-html/main/scripts/ig_publisher.py" \
             -o .ci-tools/ig_publisher.py
@@ -91,7 +86,6 @@ jobs:
           sudo apt-get install -y graphviz
           dot -V          
 
-
       - name: Install Ruby
         run: |
           sudo apt-get update
@@ -102,27 +96,10 @@ jobs:
           gem install --no-document jekyll bundler --user-install
           echo "$(ruby -e 'print Gem.user_dir')/bin" >> $GITHUB_PATH
 
-
       - name: Check Jekyll
         run: |
           jekyll -v
           bundle -v
-
-      # - name: Prepare local webroot git remote
-      #   run: |
-      #     set -euxo pipefail
-      #     mkdir -p .ci-tools
-      #     # Create a bare remote with main branch seeded
-      #     git init --bare --initial-branch=main .ci-tools/webroot-remote.git
-      #     # Seed an initial commit so cloning --branch main works
-      #     git clone .ci-tools/webroot-remote.git .ci-tools/webroot-seed
-      #     git -C .ci-tools/webroot-seed config user.name  "github-actions[bot]"
-      #     git -C .ci-tools/webroot-seed config user.email "github-actions[bot]@users.noreply.github.com"
-      #     touch .ci-tools/webroot-seed/.nojekyll
-      #     git -C .ci-tools/webroot-seed add .nojekyll
-      #     git -C .ci-tools/webroot-seed commit -m "Initialize webroot main"
-      #     git -C .ci-tools/webroot-seed push origin main
-      #     rm -rf .ci-tools/webroot-seed
 
       - name: Pre-clone webroot (sparse) for verification
         run: |
@@ -130,14 +107,11 @@ jobs:
           mkdir -p .ci-tools
           git clone --depth=1 --filter=blob:none --sparse \
             https://github.com/WorldHealthOrganization/smart-html .ci-tools/webroot
-          # allow single-file patterns
           git -C .ci-tools/webroot sparse-checkout init --no-cone || git -C .ci-tools/webroot sparse-checkout init
           git -C .ci-tools/webroot sparse-checkout set --no-cone templates publish-setup.json package-registry.json
-          # optional: show what we got
           git -C .ci-tools/webroot sparse-checkout list || true
           ls -la .ci-tools/webroot | sed -n '1,200p'
           test -f .ci-tools/webroot/publish-setup.json
-          
 
       - name: Verify sparse contents
         run: |
@@ -147,29 +121,21 @@ jobs:
           ls -la .ci-tools/webroot | sed -n '1,200p'
           test -f .ci-tools/webroot/publish-setup.json || (echo "publish-setup.json MISSING" && exit 1)
 
-
-
-#       # 5) Build IG into a local webroot (no push inside the script)
-#       - name: Build IG to local webroot (no push)
-#         run: |
-#           set -euxo pipefail
-#           python .ci-tools/ig_publisher.py \
-#             --global-config ".ci-tools/release-config.global.yaml" \
-#             --local-config "release-config.yaml" \
-#             --source "${{ github.workspace }}" 
-# #            --webroot-branch "main" \
-# #            --enable-sparse
-# #            --webroot-repo "https://github.com/costateixeira/smart-html" \
-
-
       - name: Build & publish (Python drives gh-pages)
+        env:
+          # Use PR head branch when present, otherwise the ref name (branch or tag)
+          SOURCE_BRANCH: ${{ github.head_ref || github.ref_name }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
           set -euxo pipefail
+          echo "Detected source branch: ${SOURCE_BRANCH}"
           python .ci-tools/ig_publisher.py \
             --global-config ".ci-tools/release-config.global.yaml" \
             --local-config "release-config.yaml" \
             --source "${{ github.workspace }}" \
             --source-repo "https://github.com/${{ github.repository }}" \
+            --source-branch "${SOURCE_BRANCH}" \
             --webroot-repo "https://github.com/costateixeira/smart-html" \
             --registry-repo "https://github.com/costateixeira/ig-registry" \
             --ensure-pubreq \
@@ -181,7 +147,3 @@ jobs:
             --sitepreview-dir "${{ inputs.sitepreview_dir }}" \
             --enable-pr \
             --github-token "${{ secrets.GITHUB_TOKEN }}"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
-
