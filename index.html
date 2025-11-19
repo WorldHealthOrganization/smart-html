@@ -229,7 +229,7 @@
       .alphabetical-nav--list .alphabetical-nav--list-item a,
       .alphabetical-nav--list a,
       .nav--list a {
-      text-decoration: none !important
+      text-decoration: none !important;
       }
 
       .sf-events-wrapper .vertical-list-item:focus,
@@ -384,12 +384,20 @@
     text-decoration: none !important;
 } 
 
+/* NEW FIX: Specifically target links inside UL/LI within the smart-guidelines-table */
+.smart-guidelines-table td ul li a {
+    text-decoration: none !important;
+    border-bottom: none !important;
+} 
+
 .smart-guidelines-table a:hover {
     color: #1d4ed8 !important; 
     text-decoration: underline !important; 
     border-bottom: none !important; 
     background-color: transparent !important;
 }
+
+
 
 /* --- ICON GENERATION RULES ADDED BELOW --- */
 
@@ -504,6 +512,75 @@
     color: white;
     text-decoration: none;
     margin: 0 5px;
+}
+
+/* Ultimate Specificity Fix for List Item Underlines */
+.smart-guidelines-table tbody tr td ul li a,
+.smart-guidelines-table td ul li a:visited,
+.smart-guidelines-table tbody tr td ul li a:hover,
+.smart-guidelines-table tbody tr td ul li a:focus {
+    text-decoration: none !important;
+    border-bottom: none !important; /* Ensure border-bottom isn't the culprit */
+    background-color: transparent !important; /* Prevents background on hover/focus from other rules */
+}
+
+/* --- ULTIMATE OVERRIDE USING CUSTOM LIST ITEM CLASSES --- */
+
+/* 1. Target XLS links across all states */
+.smart-guidelines-table li.xls-link a,
+.smart-guidelines-table li.xls-link a:hover,
+.smart-guidelines-table li.xls-link a:focus {
+    text-decoration: none !important;
+    border-bottom: none !important; 
+    background-color: transparent !important;
+}
+
+/* 2. Target FHIR links across all states */
+.smart-guidelines-table li.fhir-link a,
+.smart-guidelines-table li.fhir-link a:hover,
+.smart-guidelines-table li.fhir-link a:focus {
+    text-decoration: none !important;
+    border-bottom: none !important; 
+    background-color: transparent !important;
+}
+
+/* 3. Target GitHub links across all states */
+.smart-guidelines-table li.github-link a,
+.smart-guidelines-table li.github-link a:hover,
+.smart-guidelines-table li.github-link a:focus {
+    text-decoration: none !important;
+    border-bottom: none !important; 
+    background-color: transparent !important;
+}
+
+/* 4. Target PDF links across all states (used for DDCC items) */
+.smart-guidelines-table li.pdf-link a,
+.smart-guidelines-table li.pdf-link a:hover,
+.smart-guidelines-table li.pdf-link a:focus {
+    text-decoration: none !important;
+    border-bottom: none !important; 
+    background-color: transparent !important;
+}
+
+/* 5. Catch-all for any other link inside a table list */
+.smart-guidelines-table td ul li a,
+.smart-guidelines-table td ul li a:focus {
+    text-decoration: none !important;
+    border-bottom: none !important; 
+    background-color: transparent !important;
+}
+
+.smart-guidelines-table td ul li a:hover,
+.smart-guidelines-table td ul li a:focus,
+.smart-guidelines-table li.fhir-link a:hover,
+.smart-guidelines-table li.fhir-link a:focus,
+.smart-guidelines-table li.pdf-link a:hover,
+.smart-guidelines-table li.pdf-link a:focus,
+.smart-guidelines-table li.xls-link a:hover,
+.smart-guidelines-table li.xls-link a:focus,
+.smart-guidelines-table li.github-link a:hover,
+.smart-guidelines-table li.github-link a:focus {
+text-decoration: underline !important;
 }
 
 /* --- NEW TABLE STYLES END --- */
