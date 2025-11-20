@@ -272,78 +272,12 @@
 
 
 
-  <pre class="rdf" style="white-space: pre; overflow: hidden"><code class="language-turtle">
-@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
-@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
-@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
-
-# - resource -------------------------------------------------------------------
-
- a fhir:StructureMap ;
-  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;CoreDataSetVSToAddBundle&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.text">fhir:text</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: StructureMap CoreDataSetVSToAddBundle&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;CoreDataSetVSToAddBundle\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcCoreDataSetVSToAddBundle\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;CoreDataSetVSToAddBundle-en-US\&quot;&gt; &lt;/a&gt;&lt;pre class=\&quot;fml\&quot;&gt;\r\n&lt;b&gt;map&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; &amp;quot;&lt;/span&gt;http://smart.who.int/ddcc/StructureMap/CoreDataSetVSToAddBundle&lt;span style=\&quot;color: navy\&quot;&gt;&amp;quot; = &amp;quot;&lt;/span&gt;CoreDataSetVSToAddBundle&lt;span style=\&quot;color: navy\&quot;&gt;&amp;quot;\r\n\r\n&lt;/span&gt;&lt;b&gt;uses&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; &amp;quot;&lt;/span&gt;&lt;a href=\&quot;StructureDefinition-DDCCCoreDataSetVS.html\&quot; title=\&quot;DDCC Core Data Set Logical Model for Vaccination Status\&quot;&gt;http://smart.who.int/ddcc/StructureDefinition/DDCCCoreDataSetVS&lt;/a&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&amp;quot; &lt;/span&gt;&lt;b&gt;alias &lt;/b&gt;DDCCVS &lt;b&gt;as &lt;/b&gt;&lt;b&gt;source&lt;/b&gt;\r\n&lt;b&gt;uses&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; &amp;quot;&lt;/span&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/bundle.html\&quot; title=\&quot;Bundle\&quot;&gt;http://hl7.org/fhir/StructureDefinition/Bundle&lt;/a&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&amp;quot; &lt;/span&gt;&lt;b&gt;alias &lt;/b&gt;AddBundle &lt;b&gt;as &lt;/b&gt;&lt;b&gt;target&lt;/b&gt;\r\n\r\n&lt;b&gt;imports&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; &amp;quot;&lt;/span&gt;&lt;a href=\&quot;StructureMap-CoreDataSetVSLibrary.html\&quot; title=\&quot;CoreDataSetVSLibrary\&quot;&gt;http://smart.who.int/ddcc/StructureMap/CoreDataSetVSLibrary&lt;/a&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&amp;quot;\r\n&lt;/span&gt;\r\n&lt;b&gt;group &lt;/b&gt;CoreDataSetVSToAddBundle&lt;span style=\&quot;color: navy\&quot;&gt;(&lt;/span&gt;&lt;b&gt;source&lt;/b&gt; &lt;span style=\&quot;color: maroon\&quot;&gt;ddcc&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt; : &lt;/span&gt;DDCCVS, &lt;b&gt;target&lt;/b&gt; &lt;span style=\&quot;color: maroon\&quot;&gt;bundle&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt; : &lt;/span&gt;AddBundle&lt;span style=\&quot;color: navy\&quot;&gt;)&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;  ddcc&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;bundle&lt;b&gt; then &lt;/b&gt;VSToAddBundle&lt;span style=\&quot;color: navy\&quot;&gt;(&lt;/span&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;ddcc&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;, &lt;/span&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;bundle&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;)&lt;/span&gt; &lt;i&gt;&amp;quot;setup add bundle&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n&lt;span style=\&quot;color: navy\&quot;&gt;}\r\n\r\n&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&quot;
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://smart.who.int/ddcc/StructureMap/CoreDataSetVSToAddBundle&quot;^^xsd:anyURI] ; # 
-  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1.0.1&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;CoreDataSetVSToAddBundle&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;draft&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2024-12-18T16:46:48+01:00&quot;^^xsd:dateTime] ; # 
-  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;WHO&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.contact">fhir:contact</a> ( [
-<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;WHO&quot; ] ;
-    ( <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;http://who.int&quot; ]     ] )
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.jurisdiction">fhir:jurisdiction</a> ( [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://unstats.un.org/unsd/methods/m49/m49.htm&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;001&quot; ]     ] )
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure">fhir:structure</a> ( [
-<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.url">fhir:url</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://smart.who.int/ddcc/StructureDefinition/DDCCCoreDataSetVS&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://smart.who.int/ddcc/StructureDefinition/DDCCCoreDataSetVS&gt;     ] ;
-<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.mode">fhir:mode</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;source&quot; ] ;
-<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.alias">fhir:alias</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DDCCVS&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.url">fhir:url</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Bundle&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Bundle&gt;     ] ;
-<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.mode">fhir:mode</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;target&quot; ] ;
-<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.alias">fhir:alias</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;AddBundle&quot; ]
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.import">fhir:import</a> ( [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://smart.who.int/ddcc/StructureMap/CoreDataSetVSLibrary&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://smart.who.int/ddcc/StructureMap/CoreDataSetVSLibrary&gt;
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group">fhir:group</a> ( [
-<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;CoreDataSetVSToAddBundle&quot; ] ;
-<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.typeMode">fhir:typeMode</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;none&quot; ] ;
-    ( <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input">fhir:input</a> [
-<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;ddcc&quot; ] ;
-<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DDCCVS&quot; ] ;
-<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.mode">fhir:mode</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;source&quot; ]     ] [
-<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;bundle&quot; ] ;
-<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;AddBundle&quot; ] ;
-<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.mode">fhir:mode</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;target&quot; ]     ] ) ;
-    ( <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule">fhir:rule</a> [
-<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;setup add bundle&quot; ] ;
-      ( <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">fhir:source</a> [
-<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">fhir:context</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;ddcc&quot; ]       ] ) ;
-      ( <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">fhir:target</a> [
-<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">fhir:context</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;bundle&quot; ] ;
-<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">fhir:contextType</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;variable&quot; ]       ] ) ;
-      ( <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.dependent">fhir:dependent</a> [
-<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.dependent.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;VSToAddBundle&quot; ] ;
-        ( <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.dependent.variable">fhir:variable</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ddcc&quot; ] [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;bundle&quot; ] )       ] )     ] )
-  ] ) . # 
-
-</code></pre>
+  <div style="position: relative;">
+    <button class="btn-copy" style="position: absolute; top: 10px; right: 20px; z-index: 10;"
+            title="Click to copy ttl"
+            data-clipboard-target="#format-content"></button>
+    <pre class="rdf" style="white-space: pre; overflow-x: auto;"><code id="format-content" class="language-turtle" data-src="StructureMap-CoreDataSetVSToAddBundle.ttl"></code></pre>
+  </div>
 
 
 
@@ -396,6 +330,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+    <script type="text/javascript" src="assets/js/format-loader.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   <!-- Analytics Below
   ================================================== -->

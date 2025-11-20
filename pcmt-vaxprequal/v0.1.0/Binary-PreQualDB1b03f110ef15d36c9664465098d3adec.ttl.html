@@ -306,22 +306,12 @@
 
 
 
-  <pre class="rdf" style="white-space: pre; overflow: hidden"><code class="language-turtle">
-@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
-@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
-@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
-@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
-
-# - resource -------------------------------------------------------------------
-
- a fhir:Binary ;
-  <a href="http://hl7.org/fhir/R5/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R5/binary.html#Binary.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;PreQualDB1b03f110ef15d36c9664465098d3adec&quot;] ; # 
-  <a href="http://hl7.org/fhir/R5/binary.html#Binary.contentType">fhir:contentType</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;application/fhir+json&quot;] ; # 
-  <a href="http://hl7.org/fhir/R5/binary.html#Binary.data">fhir:data</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#base64Binary">fhir:v</a> &quot;ewogICJyZXNvdXJjZVR5cGUiOiAiaHR0cDovL3NtYXJ0Lndoby5pbnQvcGNtdC12YXhwcmVxdWFsL1N0cnVjdHVyZURlZmluaXRpb24vUHJlUXVhbERCd2l0aElkcyIsCiAgImRhdGVPZlByZXF1YWwiOiAiMjAyNC0wOS0xMyIsCiAgInZhY2NpbmVUeXBlIjogewogICAgImNvZGluZyI6IFsKICAgICAgewogICAgICAgICJjb2RlIjogIlNtYWxscG94YW5kTXBveHZhY2NpbmVMaSIsCiAgICAgICAgImRpc3BsYXkiOiAiU21hbGxwb3ggYW5kIE1wb3ggdmFjY2luZSAoTGl2ZSBNb2RpZmllZCBWYWNjaW5pYSBWaXJ1cyBBbmthcmEpIgogICAgICB9CiAgICBdCiAgfSwKICAiY29tbWVyY2lhbE5hbWUiOiAiSW12YW5leMKuIChhbHNvIGFwcHJvdmVkIHVuZGVyIHRoZSBuYW1lIG9mIEpZTk5FT1MgYnkgdGhlIFVTRkRBIGFuZCBJTVZBTVVORSBieSBIZWFsdGggQ2FuYWRhKSIsCiAgInByZXNlbnRhdGlvbiI6IHsKICAgICJjb2RpbmciOiBbCiAgICAgIHsKICAgICAgICAic3lzdGVtIjogImh0dHBzOi8vZXh0cmFuZXQud2hvLmludC9wcmVxdWFsL3ZhY2NpbmVzL3ByZXF1YWxpZmllZC12YWNjaW5lcyIsCiAgICAgICAgImNvZGUiOiAiVmlhbCIsCiAgICAgICAgImRpc3BsYXkiOiAiVmlhbCIKICAgICAgfQogICAgXQogIH0sCiAgIm51bURvc2VzIjogMSwKICAibWFudWZhY3R1cmVyIjogewogICAgInRleHQiOiAiQmF2YXJpYW4gTm9yZGljIEEvUyIKICB9LAogICJyZXNwb25zaWJsZU5SQSI6IHsKICAgICJ0ZXh0IjogIkV1cm9wZWFuIE1lZGljaW5lcyBBZ2VuY3kiCiAgfSwKICAiaW5kZXgiOiB7CiAgICAidmFsdWUiOiAiMWIwM2YxMTBlZjE1ZDM2Yzk2NjQ0NjUwOThkM2FkZWMiCiAgfSwKICAibWFudWZhY3R1cmVyUmVmZXJlbmNlIjogewogICAgInJlZmVyZW5jZSI6ICJPcmdhbml6YXRpb24vTWFudWZhY3R1cmVyNDliYTIwMzRiNTc2YjliMzA1NTkzMDNlODgwZjliYzciCiAgfSwKICAicmVzcG9uc2libGVOUkFSZWZlcmVuY2UiOiB7CiAgICAicmVmZXJlbmNlIjogIk9yZ2FuaXphdGlvbi9Ib2xkZXIwNmZjNjNkMjQzZTM5ZDg1MTkwMDczMjJhMGZkZGM1MiIKICB9LAogICJwcm9kdWN0UmVmZXJlbmNlIjogewogICAgInJlZmVyZW5jZSI6ICJodHRwOi8vc21hcnQud2hvLmludC9wY210L1N0cnVjdHVyZURlZmluaXRpb24vUHJvZHVjdC9TbWFsbHBveGFuZE1wb3h2YWNjaW5lTGlQcm9kdWN0MWIwM2YxMTBlZjE1ZDM2Yzk2NjQ0NjUwOThkM2FkZWMiCiAgfQp9Cg==&quot;^^xsd:base64Binary] . # 
-
-</code></pre>
+  <div style="position: relative;">
+    <button class="btn-copy" style="position: absolute; top: 10px; right: 20px; z-index: 10;"
+            title="Click to copy ttl"
+            data-clipboard-target="#format-content"></button>
+    <pre class="rdf" style="white-space: pre; overflow-x: auto;"><code id="format-content" class="language-turtle" data-src="Binary-PreQualDB1b03f110ef15d36c9664465098d3adec.ttl"></code></pre>
+  </div>
 
 
 
@@ -374,6 +364,7 @@
 <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
 <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
 <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+    <script type="text/javascript" src="assets/js/format-loader.js"> </script>
 <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
 <!-- Analytics Below
 ================================================== -->

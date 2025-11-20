@@ -308,61 +308,12 @@
 
 
 
-  <pre class="rdf" style="white-space: pre; overflow: hidden"><code class="language-turtle">
-@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
-@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
-@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
-@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
-
-# - resource -------------------------------------------------------------------
-
- a fhir:List ;
-  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/list.html#List.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PilgrimFolder&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/list.html#List.meta">fhir:meta</a> [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Minimal.Folder&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Minimal.Folder&gt;     ] ) ;
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.security">fhir:security</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/v3-ActReason&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;HTEST&quot; ]     ] )
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/list.html#List.text">fhir:text</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: List PilgrimFolder&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;PilgrimFolder\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcPilgrimFolder\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;PilgrimFolder-en-US\&quot;&gt; &lt;/a&gt;&lt;table class=\&quot;clstu\&quot;&gt;&lt;tr&gt;&lt;td&gt;Mode: Working List &lt;/td&gt;&lt;td&gt;Status: Current &lt;/td&gt;&lt;td&gt;Code: Folder as a FHIR List &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr style=\&quot;backgound-color: #eeeeee\&quot;&gt;&lt;td&gt;&lt;b&gt;Items&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;DocumentReference-FHIRIPSDocumentReference.html\&quot;&gt;DocumentReference: masterIdentifier = OID:1.2.840.113556.1.8000.2554.53432.348.12973.17740.34205.4355.50220.62002; identifier = UUID:7d5bb8ac-68ee-4926-85e7-b8aac8e1f10e (use: official, ); status = current; type = Patient Summary Document&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;DocumentReference-IPSPDFDocumentReference.html\&quot;&gt;DocumentReference: masterIdentifier = OID:1.2.840.113556.1.8000.2554.53432.348.12973.17740.34205.4355.50220.62003; identifier = UUID:7d5bb8ac-68ee-4926-85e7-b8aac8e1f11e (use: official, ); status = current; type = Patient Summary Document&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;DocumentReference-FHIRIPSSignedDocumentReference.html\&quot;&gt;DocumentReference: masterIdentifier = OID:1.2.840.113556.1.8000.2554.53432.348.12973.17740.34205.4355.50220.62004; identifier = UUID:7d5bb8ac-68ee-4926-85e7-b8aac8e1f12e (use: official, ); status = current&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;DocumentReference-IPSSignedPDFDocumentReference.html\&quot;&gt;DocumentReference: masterIdentifier = OID:1.2.840.113556.1.8000.2554.53432.348.12973.17740.34205.4355.50220.62005; identifier = UUID:7d5bb8ac-68ee-4926-85e7-b8aac8e1f13e (use: official, ); status = current&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/list.html#List.identifier">fhir:identifier</a> ( [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;official&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:ietf:rfc:3986&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:5e2d58a3-2286-4a0e-8637-86f51be2d184&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;usual&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:ietf:rfc:3986&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:oid:1.2.840.113556.1.8000.2554.58783.21864.3474.19410.44358.58254.41281.46391&quot; ]
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/list.html#List.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;current&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/list.html#List.mode">fhir:mode</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;working&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/list.html#List.code">fhir:code</a> [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://profiles.ihe.net/ITI/MHD/CodeSystem/MHDlistTypes&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;folder&quot; ]     ] )
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/list.html#List.entry">fhir:entry</a> ( [
-<a href="http://hl7.org/fhir/R4/list.html#List.entry.item">fhir:item</a> [
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DocumentReference/FHIRIPSDocumentReference&quot; ]     ]
-  ] [
-<a href="http://hl7.org/fhir/R4/list.html#List.entry.item">fhir:item</a> [
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DocumentReference/IPSPDFDocumentReference&quot; ]     ]
-  ] [
-<a href="http://hl7.org/fhir/R4/list.html#List.entry.item">fhir:item</a> [
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DocumentReference/FHIRIPSSignedDocumentReference&quot; ]     ]
-  ] [
-<a href="http://hl7.org/fhir/R4/list.html#List.entry.item">fhir:item</a> [
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DocumentReference/IPSSignedPDFDocumentReference&quot; ]     ]
-  ] ) . # 
-
-</code></pre>
+  <div style="position: relative;">
+    <button class="btn-copy" style="position: absolute; top: 10px; right: 20px; z-index: 10;"
+            title="Click to copy ttl"
+            data-clipboard-target="#format-content"></button>
+    <pre class="rdf" style="white-space: pre; overflow-x: auto;"><code id="format-content" class="language-turtle" data-src="List-PilgrimFolder.ttl"></code></pre>
+  </div>
 
 
 
@@ -415,6 +366,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+    <script type="text/javascript" src="assets/js/format-loader.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   <!-- Analytics Below
   ================================================== -->

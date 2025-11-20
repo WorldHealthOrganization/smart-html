@@ -309,22 +309,12 @@
 
 
 
-  <pre class="rdf" style="white-space: pre; overflow: hidden"><code class="language-turtle">
-@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
-@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
-@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
-@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
-
-# - resource -------------------------------------------------------------------
-
- a fhir:Binary ;
-  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/binary.html#Binary.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PreQual94b97202e37b591c7b7da316ff2bca00&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/binary.html#Binary.contentType">fhir:contentType</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;application/fhir+json&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/binary.html#Binary.data">fhir:data</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#base64Binary">fhir:v</a> &quot;ewogICJyZXNvdXJjZVR5cGUiOiAiaHR0cDovL3NtYXJ0Lndoby5pbnQvcGNtdC9TdHJ1Y3R1cmVEZWZpbml0aW9uL1Byb2R1Y3RBdXRob3JpemF0aW9uIiwKICAic3RhdHVzIjogImFjdGl2ZSIsCiAgInR5cGUiOiAicHJlcXVhbCIsCiAgImp1cmlzZGljdGlvbiI6IFsKICAgIHsKICAgICAgImNvZGluZyI6IFsKICAgICAgICB7CiAgICAgICAgICAiZGlzcGxheSI6ICJXSE8iCiAgICAgICAgfQogICAgICBdCiAgICB9CiAgXSwKICAiaG9sZGVyIjogewogICAgInJlZmVyZW5jZSI6ICJPcmdhbml6YXRpb24vSG9sZGVyZjc5ZjIzYjRjNTEyMmZkOTZiMmM4N2NjMzg1MTU3ZmMiCiAgfSwKICAidmFsaWRpdHlQZXJpb2QiOiB7CiAgICAic3RhcnQiOiAiMjAxOC0xMC0wMiIKICB9LAogICJwcm9kdWN0IjogWwogICAgewogICAgICAicmVmZXJlbmNlIjogImh0dHA6Ly9zbWFydC53aG8uaW50L3BjbXQvU3RydWN0dXJlRGVmaW5pdGlvbi9Qcm9kdWN0L0phcGFuZXNlRW5jZXBoYWxpdGlzVmFjY1Byb2R1Y3Q5NGI5NzIwMmUzN2I1OTFjN2I3ZGEzMTZmZjJiY2EwMCIKICAgIH0KICBdCn0K&quot;^^xsd:base64Binary] . # 
-
-</code></pre>
+  <div style="position: relative;">
+    <button class="btn-copy" style="position: absolute; top: 10px; right: 20px; z-index: 10;"
+            title="Click to copy ttl"
+            data-clipboard-target="#format-content"></button>
+    <pre class="rdf" style="white-space: pre; overflow-x: auto;"><code id="format-content" class="language-turtle" data-src="Binary-PreQual94b97202e37b591c7b7da316ff2bca00.ttl"></code></pre>
+  </div>
 
 
 
@@ -377,6 +367,7 @@
 <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
 <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
 <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+    <script type="text/javascript" src="assets/js/format-loader.js"> </script>
 <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
 <!-- Analytics Below
 ================================================== -->

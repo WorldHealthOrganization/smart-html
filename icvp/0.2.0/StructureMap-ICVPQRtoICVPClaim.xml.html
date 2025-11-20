@@ -321,128 +321,12 @@
 
 
 
-  <pre class="xml" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
-&lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap">StructureMap</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ICVPQRtoICVPClaim&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.text">text</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: StructureMap ICVPQRtoICVPClaim&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;ICVPQRtoICVPClaim&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcICVPQRtoICVPClaim&quot;&gt; &lt;/a&gt;&lt;pre class=&quot;fml&quot;&gt;
-&lt;b&gt;map&lt;/b&gt;&lt;span style=&quot;color: navy&quot;&gt; &amp;quot;&lt;/span&gt;http://smart.who.int/icvp/StructureMap/ICVPQRtoICVPClaim&lt;span style=&quot;color: navy&quot;&gt;&amp;quot; = &amp;quot;&lt;/span&gt;ICVPQRtoICVPClaim&lt;span style=&quot;color: navy&quot;&gt;&amp;quot;
-
-&lt;/span&gt;&lt;b&gt;uses&lt;/b&gt;&lt;span style=&quot;color: navy&quot;&gt; &amp;quot;&lt;/span&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/questionnaireresponse.html&quot; title=&quot;QuestionnaireResponse&quot;&gt;http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse&lt;/a&gt;&lt;span style=&quot;color: navy&quot;&gt;&amp;quot; &lt;/span&gt;&lt;b&gt;alias &lt;/b&gt;QuestionnaireResponse &lt;b&gt;as &lt;/b&gt;&lt;b&gt;source&lt;/b&gt;
-&lt;b&gt;uses&lt;/b&gt;&lt;span style=&quot;color: navy&quot;&gt; &amp;quot;&lt;/span&gt;&lt;a href=&quot;StructureDefinition-ICVPMin.html&quot; title=&quot;ICVP HCERT Payload&quot;&gt;http://smart.who.int/icvp/StructureDefinition/ICVPMin&lt;/a&gt;&lt;span style=&quot;color: navy&quot;&gt;&amp;quot; &lt;/span&gt;&lt;b&gt;alias &lt;/b&gt;ICVPPayload &lt;b&gt;as &lt;/b&gt;&lt;b&gt;target&lt;/b&gt;
-&lt;b&gt;uses&lt;/b&gt;&lt;span style=&quot;color: navy&quot;&gt; &amp;quot;&lt;/span&gt;&lt;a href=&quot;StructureDefinition-ICVP.html&quot; title=&quot;ICVP&quot;&gt;http://smart.who.int/icvp/StructureDefinition/ICVP&lt;/a&gt;&lt;span style=&quot;color: navy&quot;&gt;&amp;quot; &lt;/span&gt;&lt;b&gt;alias &lt;/b&gt;ICVPModel &lt;b&gt;as &lt;/b&gt;&lt;b&gt;target&lt;/b&gt;
-&lt;b&gt;uses&lt;/b&gt;&lt;span style=&quot;color: navy&quot;&gt; &amp;quot;&lt;/span&gt;&lt;a href=&quot;StructureDefinition-ICVPVaccineDetails.html&quot; title=&quot;ICVP - Vaccine Details&quot;&gt;http://smart.who.int/icvp/StructureDefinition/ICVPVaccineDetails&lt;/a&gt;&lt;span style=&quot;color: navy&quot;&gt;&amp;quot; &lt;/span&gt;&lt;b&gt;alias &lt;/b&gt;ICVPVaccineDetails &lt;b&gt;as &lt;/b&gt;&lt;b&gt;target&lt;/b&gt;
-
-&lt;b&gt;imports&lt;/b&gt;&lt;span style=&quot;color: navy&quot;&gt; &amp;quot;&lt;/span&gt;&lt;a href=&quot;StructureMap-ICVPQRtoICVPLM.html&quot; title=&quot;ICVPQRtoICVPLM&quot;&gt;http://smart.who.int/icvp/StructureMap/ICVPQRtoICVPLM&lt;/a&gt;&lt;span style=&quot;color: navy&quot;&gt;&amp;quot;
-&lt;/span&gt;&lt;b&gt;imports&lt;/b&gt;&lt;span style=&quot;color: navy&quot;&gt; &amp;quot;&lt;/span&gt;&lt;a href=&quot;StructureMap-ICVPLMtoICVPClaim.html&quot; title=&quot;ICVPLMtoICVPClaim&quot;&gt;http://smart.who.int/icvp/StructureMap/ICVPLMtoICVPClaim&lt;/a&gt;&lt;span style=&quot;color: navy&quot;&gt;&amp;quot;
-&lt;/span&gt;
-&lt;b&gt;group &lt;/b&gt;ICVPQRtoICVPClaim&lt;span style=&quot;color: navy&quot;&gt;(&lt;/span&gt;&lt;b&gt;source&lt;/b&gt; &lt;span style=&quot;color: maroon&quot;&gt;qr&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt; : &lt;/span&gt;QuestionnaireResponse, &lt;b&gt;target&lt;/b&gt; &lt;span style=&quot;color: maroon&quot;&gt;ICVPClaim&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt; : &lt;/span&gt;ICVPPayload&lt;span style=&quot;color: navy&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt; {
-&lt;/span&gt;  qr&lt;span style=&quot;color: navy&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;&lt;b&gt;create&lt;/b&gt;&lt;span style=&quot;color: navy&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: blue&quot;&gt;'http://smart.who.int/icvp/StructureDefinition/ICVP'&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;)&lt;/span&gt;&lt;b&gt; as &lt;/b&gt;&lt;span style=&quot;color: maroon&quot;&gt;model&lt;/span&gt;&lt;b&gt; then&lt;/b&gt;&lt;span style=&quot;color: navy&quot;&gt; {
-&lt;/span&gt;    qr&lt;span style=&quot;color: navy&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;ICVPClaim&lt;b&gt; then &lt;/b&gt;ICVPQRtoICVPLM&lt;span style=&quot;color: navy&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: maroon&quot;&gt;qr&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color: maroon&quot;&gt;model&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;)&lt;/span&gt; &lt;i&gt;&amp;quot;rule1aa&amp;quot;&lt;/i&gt;&lt;span style=&quot;color: navy&quot;&gt;;&lt;/span&gt;
-    qr&lt;span style=&quot;color: navy&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;ICVPClaim&lt;b&gt; then &lt;/b&gt;ICVPLMtoICVPClaim&lt;span style=&quot;color: navy&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: maroon&quot;&gt;model&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color: maroon&quot;&gt;ICVPClaim&lt;/span&gt;&lt;span style=&quot;color: navy&quot;&gt;)&lt;/span&gt; &lt;i&gt;&amp;quot;rule2&amp;quot;&lt;/i&gt;&lt;span style=&quot;color: navy&quot;&gt;;&lt;/span&gt;
-  &lt;span style=&quot;color: navy&quot;&gt;}&lt;/span&gt; &lt;i&gt;&amp;quot;rule3&amp;quot;&lt;/i&gt;&lt;span style=&quot;color: navy&quot;&gt;;&lt;/span&gt;
-&lt;span style=&quot;color: navy&quot;&gt;}
-
-&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;<a name="end-xhtml"></a>
-  &lt;/<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.text">text</a>&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://smart.who.int/icvp/StructureMap/ICVPQRtoICVPClaim&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.2.0&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ICVPQRtoICVPClaim&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2025-10-08T14:32:12+00:00&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;WHO&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.contact">contact</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;WHO&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;http://who.int&quot;/&gt;
-    &lt;/<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
-  &lt;/<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.contact">contact</a>&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure">structure</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.url">url</a>
-         <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;source&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.alias">alias</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;QuestionnaireResponse&quot;/&gt;
-  &lt;/<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure">structure</a>&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure">structure</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://smart.who.int/icvp/StructureDefinition/ICVPMin&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;target&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.alias">alias</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ICVPPayload&quot;/&gt;
-  &lt;/<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure">structure</a>&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure">structure</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://smart.who.int/icvp/StructureDefinition/ICVP&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;target&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.alias">alias</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ICVPModel&quot;/&gt;
-  &lt;/<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure">structure</a>&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure">structure</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.url">url</a>
-         <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://smart.who.int/icvp/StructureDefinition/ICVPVaccineDetails&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;target&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.alias">alias</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ICVPVaccineDetails&quot;/&gt;
-  &lt;/<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure">structure</a>&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.import">import</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://smart.who.int/icvp/StructureMap/ICVPQRtoICVPLM&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.import">import</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://smart.who.int/icvp/StructureMap/ICVPLMtoICVPClaim&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group">group</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ICVPQRtoICVPClaim&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.typeMode">typeMode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;none&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input">input</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;qr&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;QuestionnaireResponse&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;source&quot;/&gt;
-    &lt;/<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input">input</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input">input</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ICVPClaim&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ICVPPayload&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;target&quot;/&gt;
-    &lt;/<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input">input</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule">rule</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rule3&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;qr&quot;/&gt;
-      &lt;/<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;variable&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.variable">variable</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;model&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;create&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueString</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;http://smart.who.int/icvp/StructureDefinition/ICVP&quot;/&gt;
-        &lt;/<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>&gt;
-      &lt;/<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rule1aa&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;qr&quot;/&gt;
-        &lt;/<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ICVPClaim&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;variable&quot;/&gt;
-        &lt;/<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.dependent">dependent</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.dependent.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ICVPQRtoICVPLM&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.dependent.variable">variable</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;qr&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.dependent.variable">variable</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;model&quot;/&gt;
-        &lt;/<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.dependent">dependent</a>&gt;
-      &lt;/<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;rule2&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;qr&quot;/&gt;
-        &lt;/<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ICVPClaim&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;variable&quot;/&gt;
-        &lt;/<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.dependent">dependent</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.dependent.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ICVPLMtoICVPClaim&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.dependent.variable">variable</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;model&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.dependent.variable">variable</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ICVPClaim&quot;/&gt;
-        &lt;/<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.dependent">dependent</a>&gt;
-      &lt;/<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>&gt;
-    &lt;/<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule">rule</a>&gt;
-  &lt;/<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group">group</a>&gt;
-&lt;/<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap">StructureMap</a>&gt;</code></pre>
+  <div style="position: relative;">
+    <button class="btn-copy" style="position: absolute; top: 10px; right: 20px; z-index: 10;"
+            title="Click to copy xml"
+            data-clipboard-target="#format-content"></button>
+    <pre class="xml" style="white-space: pre; overflow-x: auto;"><code id="format-content" class="language-xml" data-src="StructureMap-ICVPQRtoICVPClaim.xml"></code></pre>
+  </div>
 
 
   <!-- insert notes if present -->
@@ -494,6 +378,7 @@
 <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
 <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
 <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+    <script type="text/javascript" src="assets/js/format-loader.js"> </script>
 <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
 <!-- Analytics Below
 ================================================== -->

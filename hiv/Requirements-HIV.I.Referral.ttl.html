@@ -320,54 +320,12 @@
 
 
 
-  <pre class="rdf" style="white-space: pre; overflow: hidden"><code class="language-turtle">
-@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
-@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
-@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
-@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
-
-# - resource -------------------------------------------------------------------
-
- a fhir:Requirements ;
-  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R5/requirements.html#Requirements.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;HIV.I.Referral&quot;] ; # 
-  <a href="http://hl7.org/fhir/R5/requirements.html#Requirements.text">fhir:text</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Requirements HIV.I.Referral&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;HIV.I.Referral\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcHIV.I.Referral\&quot;&gt; &lt;/a&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;&lt;a name=\&quot;HIV.FXNREQ.050\&quot;&gt; &lt;/a&gt;&lt;/b&gt;HIV.FXNREQ.050&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;As a Facility staff member\nI want to bypass the standard flow at any point if there are signs of serious illness or emergency care is needed; urgent cases should be flagged and seen promptly\nSo that the client can be referred, if needed.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;&lt;a name=\&quot;HIV.FXNREQ.051\&quot;&gt; &lt;/a&gt;&lt;/b&gt;HIV.FXNREQ.051&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;As a Health worker\nI want to be able to find out where the required service may be available\nSo that I can refer my client to another facility to receive the appropriate services&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;&lt;a name=\&quot;HIV.FXNREQ.052\&quot;&gt; &lt;/a&gt;&lt;/b&gt;HIV.FXNREQ.052&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;As a Health worker\nI want  to have the ability to find facilities that can provide the service or method that mine cannot provide\nSo that the client does not travel to a facility that cannot help them&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;&lt;a name=\&quot;HIV.FXNREQ.053\&quot;&gt; &lt;/a&gt;&lt;/b&gt;HIV.FXNREQ.053&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;As a Health worker\nI want to have a list of the contact information for referral facilities\nSo that I can easily contact the facility when making the referral arrangements&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;&lt;a name=\&quot;HIV.FXNREQ.054\&quot;&gt; &lt;/a&gt;&lt;/b&gt;HIV.FXNREQ.054&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;As a Health worker\nI want to be able to share the client’s health records with the referral facility staff\nSo that they can provide the care that the client needs&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;&lt;a name=\&quot;HIV.FXNREQ.055\&quot;&gt; &lt;/a&gt;&lt;/b&gt;HIV.FXNREQ.055&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;As a Health worker\nI want to know what care and treatment the client received at the referral facility\nSo that I can provide appropriate care if the client comes back to my facility&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
-  ] ; # 
-  <a href="http://hl7.org/fhir/R5/requirements.html#Requirements.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://smart.who.int/hiv/Requirements/HIV.I.Referral&quot;^^xsd:anyURI] ; # 
-  <a href="http://hl7.org/fhir/R5/requirements.html#Requirements.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1.0.0&quot;] ; # 
-  <a href="http://hl7.org/fhir/R5/requirements.html#Requirements.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;] ; # 
-  <a href="http://hl7.org/fhir/R5/requirements.html#Requirements.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2025-07-08T23:21:58+02:00&quot;^^xsd:dateTime] ; # 
-  <a href="http://hl7.org/fhir/R5/requirements.html#Requirements.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;WHO&quot;] ; # 
-  <a href="http://hl7.org/fhir/R5/requirements.html#Requirements.contact">fhir:contact</a> ( [
-<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;WHO&quot; ] ;
-    ( <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;http://who.int&quot; ]     ] )
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R5/requirements.html#Requirements.statement">fhir:statement</a> ( [
-<a href="http://hl7.org/fhir/R5/requirements.html#Requirements.statement.key">fhir:key</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;HIV.FXNREQ.050&quot; ] ;
-<a href="http://hl7.org/fhir/R5/requirements.html#Requirements.statement.requirement">fhir:requirement</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;As a Facility staff member\nI want to bypass the standard flow at any point if there are signs of serious illness or emergency care is needed; urgent cases should be flagged and seen promptly\nSo that the client can be referred, if needed.&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R5/requirements.html#Requirements.statement.key">fhir:key</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;HIV.FXNREQ.051&quot; ] ;
-<a href="http://hl7.org/fhir/R5/requirements.html#Requirements.statement.requirement">fhir:requirement</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;As a Health worker\nI want to be able to find out where the required service may be available\nSo that I can refer my client to another facility to receive the appropriate services&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R5/requirements.html#Requirements.statement.key">fhir:key</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;HIV.FXNREQ.052&quot; ] ;
-<a href="http://hl7.org/fhir/R5/requirements.html#Requirements.statement.requirement">fhir:requirement</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;As a Health worker\nI want  to have the ability to find facilities that can provide the service or method that mine cannot provide\nSo that the client does not travel to a facility that cannot help them&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R5/requirements.html#Requirements.statement.key">fhir:key</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;HIV.FXNREQ.053&quot; ] ;
-<a href="http://hl7.org/fhir/R5/requirements.html#Requirements.statement.requirement">fhir:requirement</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;As a Health worker\nI want to have a list of the contact information for referral facilities\nSo that I can easily contact the facility when making the referral arrangements&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R5/requirements.html#Requirements.statement.key">fhir:key</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;HIV.FXNREQ.054&quot; ] ;
-<a href="http://hl7.org/fhir/R5/requirements.html#Requirements.statement.requirement">fhir:requirement</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;As a Health worker\nI want to be able to share the client’s health records with the referral facility staff\nSo that they can provide the care that the client needs&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R5/requirements.html#Requirements.statement.key">fhir:key</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;HIV.FXNREQ.055&quot; ] ;
-<a href="http://hl7.org/fhir/R5/requirements.html#Requirements.statement.requirement">fhir:requirement</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;As a Health worker\nI want to know what care and treatment the client received at the referral facility\nSo that I can provide appropriate care if the client comes back to my facility&quot; ]
-  ] ) . # 
-
-</code></pre>
+  <div style="position: relative;">
+    <button class="btn-copy" style="position: absolute; top: 10px; right: 20px; z-index: 10;"
+            title="Click to copy ttl"
+            data-clipboard-target="#format-content"></button>
+    <pre class="rdf" style="white-space: pre; overflow-x: auto;"><code id="format-content" class="language-turtle" data-src="Requirements-HIV.I.Referral.ttl"></code></pre>
+  </div>
 
 
 
@@ -420,6 +378,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
 <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
 <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+    <script type="text/javascript" src="assets/js/format-loader.js"> </script>
 <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
 <!-- Analytics Below
 ================================================== -->

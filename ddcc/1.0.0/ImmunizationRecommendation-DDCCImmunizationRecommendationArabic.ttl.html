@@ -255,52 +255,12 @@
 
 
 
-  <pre class="rdf" style="white-space: pre; overflow: hidden"><code class="language-turtle">
-@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
-@prefix loinc: &lt;https://loinc.org/rdf/&gt; .
-@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
-@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
-
-# - resource -------------------------------------------------------------------
-
- a fhir:ImmunizationRecommendation ;
-  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;DDCCImmunizationRecommendationArabic&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation.meta">fhir:meta</a> [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://smart.who.int/ddcc/StructureDefinition/DDCCImmunizationRecommendation&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://smart.who.int/ddcc/StructureDefinition/DDCCImmunizationRecommendation&gt;     ] )
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation.text">fhir:text</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ImmunizationRecommendation DDCCImmunizationRecommendationArabic&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;DDCCImmunizationRecommendationArabic\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcDDCCImmunizationRecommendationArabic\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;DDCCImmunizationRecommendationArabic-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a href=\&quot;Patient-DDCCPatientArabic.html\&quot;&gt;أولوس أجيريوس(official) (no stated gender), DoB: 2003-03-03&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2021-05-06&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;recommendation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;vaccineCode&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://id.who.int/icd11/mms XM0CX4}\&quot;&gt;XM0CX4&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;forecastStatus&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/immunization-recommendation-status due}\&quot;&gt;Due&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;DateCriterions&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{http://loinc.org 30980-7}\&quot;&gt;Date vaccine due&lt;/span&gt;&lt;/td&gt;&lt;td&gt;2021-05-20&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;supportingImmunization&lt;/b&gt;: &lt;a href=\&quot;Immunization-DDCCImmunizationArabic.html\&quot;&gt;Immunization: extension = XM1G90 (mms#XM1G90),SAU,Test (DDCC Codes for examples#TEST),2021-05-30; status = completed; vaccineCode = XM0CX4; occurrence[x] = 2021-05-06; lotNumber = 123; expirationDate = 2021-06-30&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation.patient">fhir:patient</a> [
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/DDCCPatientArabic&quot; ]
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2021-05-06&quot;^^xsd:date] ; # 
-  <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation.recommendation">fhir:recommendation</a> ( [
-    ( <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation.recommendation.vaccineCode">fhir:vaccineCode</a> [
-      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://id.who.int/icd11/mms&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;XM0CX4&quot; ]       ] )     ] ) ;
-<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation.recommendation.forecastStatus">fhir:forecastStatus</a> [
-      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/immunization-recommendation-status&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;due&quot; ]       ] )     ] ;
-    ( <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation.recommendation.dateCriterion">fhir:dateCriterion</a> [
-<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation.recommendation.dateCriterion.code">fhir:code</a> [
-        ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-a loinc:30980-7 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;30980-7&quot; ]         ] )       ] ;
-<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation.recommendation.dateCriterion.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2021-05-20&quot;^^xsd:date ]     ] ) ;
-    ( <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation.recommendation.supportingImmunization">fhir:supportingImmunization</a> [
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Immunization/DDCCImmunizationArabic&quot; ]     ] )
-  ] ) . # 
-
-</code></pre>
+  <div style="position: relative;">
+    <button class="btn-copy" style="position: absolute; top: 10px; right: 20px; z-index: 10;"
+            title="Click to copy ttl"
+            data-clipboard-target="#format-content"></button>
+    <pre class="rdf" style="white-space: pre; overflow-x: auto;"><code id="format-content" class="language-turtle" data-src="ImmunizationRecommendation-DDCCImmunizationRecommendationArabic.ttl"></code></pre>
+  </div>
 
 
 
@@ -353,6 +313,7 @@ a loinc:30980-7 ;
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+    <script type="text/javascript" src="assets/js/format-loader.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   <!-- Analytics Below
   ================================================== -->

@@ -308,56 +308,12 @@
 
 
 
-  <pre class="xml" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
-&lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent">Consent</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;c7781f44-6df8-4a8b-9e06-0b34263a47c6&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.meta">meta</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjConsent&quot;/&gt;
-  &lt;/meta&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.text">text</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Consent c7781f44-6df8-4a8b-9e06-0b34263a47c6&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;c7781f44-6df8-4a8b-9e06-0b34263a47c6&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcc7781f44-6df8-4a8b-9e06-0b34263a47c6&quot;&gt; &lt;/a&gt;&lt;a name=&quot;c7781f44-6df8-4a8b-9e06-0b34263a47c6-en-US&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;scope&lt;/b&gt;: &lt;span title=&quot;Codes:{http://terminology.hl7.org/CodeSystem/consentscope patient-privacy}&quot;&gt;Privacy Consent&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=&quot;Codes:&quot;&gt;acd&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: patient1&lt;/p&gt;&lt;p&gt;&lt;b&gt;dateTime&lt;/b&gt;: 2016-05-11&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: Org1&lt;/p&gt;&lt;p&gt;&lt;b&gt;organization&lt;/b&gt;: Org1&lt;/p&gt;&lt;p&gt;&lt;b&gt;source&lt;/b&gt;: &lt;a href=&quot;DocumentReference-ex-documentreference1.html&quot;&gt;DocumentReference: status = current; type = Release of information consent; description = The captured signed document&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;policyRule&lt;/b&gt;: &lt;span title=&quot;Codes:&quot;&gt;some policy&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Provisions&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Period&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Purpose&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;Opt In&lt;/td&gt;&lt;td&gt;1964-01-01 --&amp;gt; 2016-01-01&lt;/td&gt;&lt;td&gt;[not stated] CONSENT-KSA: CONSENT-KSA&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
-  &lt;/text&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.scope">scope</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/consentscope&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;patient-privacy&quot;/&gt;
-    &lt;/coding&gt;
-  &lt;/scope&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.category">category</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;acd&quot;/&gt;
-    &lt;/coding&gt;
-  &lt;/category&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.patient">patient</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient1&quot;/&gt;
-  &lt;/patient&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.dateTime">dateTime</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2016-05-11&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.performer">performer</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Org1&quot;/&gt;
-  &lt;/performer&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.organization">organization</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Org1&quot;/&gt;
-  &lt;/organization&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.source[x]">sourceReference</a>&gt;<a href="DocumentReference-ex-documentreference1.html" style="color: Maroon">&#x1F517;</a> 
-    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;DocumentReference/ex-documentreference1&quot;/&gt;
-  &lt;/sourceReference&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.policyRule">policyRule</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;some policy&quot;/&gt;
-  &lt;/policyRule&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision">provision</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;permit&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.period">period</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;1964-01-01&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2016-01-01&quot;/&gt;
-    &lt;/period&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/consent.html#Consent.provision.purpose">purpose</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;CONSENT-KSA&quot;/&gt;
-    &lt;/purpose&gt;
-  &lt;/provision&gt;
-&lt;/Consent&gt;</code></pre>
+  <div style="position: relative;">
+    <button class="btn-copy" style="position: absolute; top: 10px; right: 20px; z-index: 10;"
+            title="Click to copy xml"
+            data-clipboard-target="#format-content"></button>
+    <pre class="xml" style="white-space: pre; overflow-x: auto;"><code id="format-content" class="language-xml" data-src="Consent-c7781f44-6df8-4a8b-9e06-0b34263a47c6.xml"></code></pre>
+  </div>
 
 
   <!-- insert notes if present -->
@@ -409,6 +365,7 @@
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+    <script type="text/javascript" src="assets/js/format-loader.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   <!-- Analytics Below
   ================================================== -->

@@ -320,45 +320,12 @@
 
 
 
-  <pre class="rdf" style="white-space: pre; overflow: hidden"><code class="language-turtle">
-@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
-@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
-@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
-@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
-
-# - resource -------------------------------------------------------------------
-
- a fhir:Requirements ;
-  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R5/requirements.html#Requirements.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;HIV.J.Aggregatereportinganddatause&quot;] ; # 
-  <a href="http://hl7.org/fhir/R5/requirements.html#Requirements.text">fhir:text</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Requirements HIV.J.Aggregatereportinganddatause&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;HIV.J.Aggregatereportinganddatause\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcHIV.J.Aggregatereportinganddatause\&quot;&gt; &lt;/a&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;&lt;a name=\&quot;HIV.FXNREQ.056\&quot;&gt; &lt;/a&gt;&lt;/b&gt;HIV.FXNREQ.056&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;As a Facility staff member\nI want to produce a range of prepared and ad hoc reports and analyses\nSo that I am able to use data collected at the facility, including for service delivery (beyond reporting purposes alone).&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;&lt;a name=\&quot;HIV.FXNREQ.057\&quot;&gt; &lt;/a&gt;&lt;/b&gt;HIV.FXNREQ.057&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;As a Facility staff member\nI want to be able to identify clients that left before a visit was completed\nSo that I can better monitor facility performance (for example, through wait times and clients leaving before completing a visit)&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;&lt;a name=\&quot;HIV.FXNREQ.058\&quot;&gt; &lt;/a&gt;&lt;/b&gt;HIV.FXNREQ.058&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;As a Health worker or data entry clerk\nI want to be able to view data on my own performance and service delivery\nSo that I can understand trends and challenges and track my own performance over time&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
-  ] ; # 
-  <a href="http://hl7.org/fhir/R5/requirements.html#Requirements.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://smart.who.int/hiv/Requirements/HIV.J.Aggregatereportinganddatause&quot;^^xsd:anyURI] ; # 
-  <a href="http://hl7.org/fhir/R5/requirements.html#Requirements.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1.0.0&quot;] ; # 
-  <a href="http://hl7.org/fhir/R5/requirements.html#Requirements.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;] ; # 
-  <a href="http://hl7.org/fhir/R5/requirements.html#Requirements.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2025-07-08T23:21:58+02:00&quot;^^xsd:dateTime] ; # 
-  <a href="http://hl7.org/fhir/R5/requirements.html#Requirements.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;WHO&quot;] ; # 
-  <a href="http://hl7.org/fhir/R5/requirements.html#Requirements.contact">fhir:contact</a> ( [
-<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;WHO&quot; ] ;
-    ( <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;http://who.int&quot; ]     ] )
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R5/requirements.html#Requirements.statement">fhir:statement</a> ( [
-<a href="http://hl7.org/fhir/R5/requirements.html#Requirements.statement.key">fhir:key</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;HIV.FXNREQ.056&quot; ] ;
-<a href="http://hl7.org/fhir/R5/requirements.html#Requirements.statement.requirement">fhir:requirement</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;As a Facility staff member\nI want to produce a range of prepared and ad hoc reports and analyses\nSo that I am able to use data collected at the facility, including for service delivery (beyond reporting purposes alone).&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R5/requirements.html#Requirements.statement.key">fhir:key</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;HIV.FXNREQ.057&quot; ] ;
-<a href="http://hl7.org/fhir/R5/requirements.html#Requirements.statement.requirement">fhir:requirement</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;As a Facility staff member\nI want to be able to identify clients that left before a visit was completed\nSo that I can better monitor facility performance (for example, through wait times and clients leaving before completing a visit)&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R5/requirements.html#Requirements.statement.key">fhir:key</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;HIV.FXNREQ.058&quot; ] ;
-<a href="http://hl7.org/fhir/R5/requirements.html#Requirements.statement.requirement">fhir:requirement</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;As a Health worker or data entry clerk\nI want to be able to view data on my own performance and service delivery\nSo that I can understand trends and challenges and track my own performance over time&quot; ]
-  ] ) . # 
-
-</code></pre>
+  <div style="position: relative;">
+    <button class="btn-copy" style="position: absolute; top: 10px; right: 20px; z-index: 10;"
+            title="Click to copy ttl"
+            data-clipboard-target="#format-content"></button>
+    <pre class="rdf" style="white-space: pre; overflow-x: auto;"><code id="format-content" class="language-turtle" data-src="Requirements-HIV.J.Aggregatereportinganddatause.ttl"></code></pre>
+  </div>
 
 
 
@@ -411,6 +378,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
 <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
 <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+    <script type="text/javascript" src="assets/js/format-loader.js"> </script>
 <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
 <!-- Analytics Below
 ================================================== -->

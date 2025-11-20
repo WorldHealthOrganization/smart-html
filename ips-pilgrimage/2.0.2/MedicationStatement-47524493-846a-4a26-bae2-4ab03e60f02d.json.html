@@ -308,43 +308,12 @@
 
 
 
-  <pre class="json" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
-  "<a href="http://hl7.org/fhir/R4/medicationstatement.html#MedicationStatement">resourceType</a>" : "MedicationStatement",
-  "<a href="http://hl7.org/fhir/R4/medicationstatement.html#MedicationStatement.id">id</a>" : "47524493-846a-4a26-bae2-4ab03e60f02d",
-  "<a href="http://hl7.org/fhir/R4/medicationstatement.html#MedicationStatement.text">text</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: MedicationStatement 47524493-846a-4a26-bae2-4ab03e60f02d&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;47524493-846a-4a26-bae2-4ab03e60f02d\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hc47524493-846a-4a26-bae2-4ab03e60f02d\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;47524493-846a-4a26-bae2-4ab03e60f02d-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;urn:oid:1.2.3.999&lt;/code&gt;/9e312d6b-c6b6-439a-a730-6efaa5dcf8bc&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;medication&lt;/b&gt;: &lt;a href=\&quot;Bundle-MyIPS.html#urn-uuid-8adc0999-9468-4ac9-9557-680fa133d626\&quot;&gt;Bundle: identifier = urn:oid:2.16.724.4.8.10.200.10#175bd032-8b00-4728-b2dc-748bb1501aed; type = document; timestamp = 2024-02-11 11:32:00+0100&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Bundle-MyIPS.html#urn-uuid-2b90dd2b-2dab-4c75-9bb9-a355e07401e8\&quot;&gt;Bundle: identifier = urn:oid:2.16.724.4.8.10.200.10#175bd032-8b00-4728-b2dc-748bb1501aed; type = document; timestamp = 2024-02-11 11:32:00+0100&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2016-01 --&amp;gt; (ongoing)&lt;/p&gt;&lt;h3&gt;Dosages&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Route&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{http://standardterms.edqm.eu 20053000}\&quot;&gt;Oral use&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
-  },
-  "<a href="http://hl7.org/fhir/R4/medicationstatement.html#MedicationStatement.identifier">identifier</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:oid:1.2.3.999",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "9e312d6b-c6b6-439a-a730-6efaa5dcf8bc"
-    }
-  ],
-  "<a href="http://hl7.org/fhir/R4/medicationstatement.html#MedicationStatement.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/medicationstatement.html#MedicationStatement.medication[x]">medicationReference</a>" : {
-    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:uuid:8adc0999-9468-4ac9-9557-680fa133d626"
-  },
-  "<a href="http://hl7.org/fhir/R4/medicationstatement.html#MedicationStatement.subject">subject</a>" : {
-    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8"
-  },
-  "<a href="http://hl7.org/fhir/R4/medicationstatement.html#MedicationStatement.effective[x]">effectivePeriod</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2016-01"
-  },
-  "<a href="http://hl7.org/fhir/R4/medicationstatement.html#MedicationStatement.dosage">dosage</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Dosage#Dosage.route">route</a>" : {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://standardterms.edqm.eu",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "20053000",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Oral use"
-          }
-        ]
-      }
-    }
-  ]
-}</code></pre>
+  <div style="position: relative;">
+    <button class="btn-copy" style="position: absolute; top: 10px; right: 20px; z-index: 10;"
+            title="Click to copy json"
+            data-clipboard-target="#format-content"></button>
+    <pre class="json" style="white-space: pre; overflow-x: auto;"><code id="format-content" class="language-json" data-src="MedicationStatement-47524493-846a-4a26-bae2-4ab03e60f02d.json"></code></pre>
+  </div>
 
 
   <!-- insert notes if present -->
@@ -396,6 +365,7 @@
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+    <script type="text/javascript" src="assets/js/format-loader.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   <!-- Analytics Below
   ================================================== -->
