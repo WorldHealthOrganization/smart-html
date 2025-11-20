@@ -4,11 +4,9 @@
   <id value="PreQualDBtoProductLM"/>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureMap PreQualDBtoProductLM</b></p><a name="PreQualDBtoProductLM"> </a><a name="hcPreQualDBtoProductLM"> </a><pre class="fml">
-<span style="color: #cc00cc">/// <b>url</b> = </span><span style="color: blue">'http://smart.who.int/icvp/StructureMap/PreQualDBtoProductLM'</span>
-<span style="color: #cc00cc">/// <b>name</b> = </span><span style="color: blue">'PreQualDBtoProductLM'</span>
-<span style="color: #cc00cc">/// <b>status</b> = </span><span style="color: blue">'draft'</span>
+<b>map</b><span style="color: navy"> &quot;</span>http://smart.who.int/icvp/StructureMap/PreQualDBtoProductLM<span style="color: navy">&quot; = &quot;</span>PreQualDBtoProductLM<span style="color: navy">&quot;
 
-<b>uses</b><span style="color: navy"> &quot;</span>http://smart.who.int/icvp/StructureDefinition/PreQualDBwithIds<span style="color: navy">&quot; </span><b>alias </b>PreQualDB <b>as </b><b>source</b>
+</span><b>uses</b><span style="color: navy"> &quot;</span>http://smart.who.int/icvp/StructureDefinition/PreQualDBwithIds<span style="color: navy">&quot; </span><b>alias </b>PreQualDB <b>as </b><b>source</b>
 <b>uses</b><span style="color: navy"> &quot;</span>http://smart.who.int/icvp/StructureDefinition/Product<span style="color: navy">&quot; </span><b>alias </b>Product <b>as </b><b>target</b>
 
 <b>group </b>PreQualDBtoProductLM<span style="color: navy">(</span><b>source</b> <span style="color: maroon">prequal</span><span style="color: navy"> : </span>PreQualDB, <b>target</b> <span style="color: maroon">product</span><span style="color: navy"> : </span>Product<span style="color: navy">)</span><span style="color: navy"> {
@@ -32,10 +30,10 @@
 </span></pre></div>
   </text>
   <url value="http://smart.who.int/icvp/StructureMap/PreQualDBtoProductLM"/>
-  <version value="0.1.0"/>
+  <version value="0.2.0"/>
   <name value="PreQualDBtoProductLM"/>
   <status value="draft"/>
-  <date value="2025-07-01T08:33:29+00:00"/>
+  <date value="2025-09-16T20:42:07+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -56,6 +54,7 @@
   </structure>
   <group>
     <name value="PreQualDBtoProductLM"/>
+    <typeMode value="none"/>
     <input>
       <name value="prequal"/>
       <type value="PreQualDB"/>
@@ -75,6 +74,7 @@
       </source>
       <target>
         <context value="product"/>
+        <contextType value="variable"/>
         <element value="number"/>
         <transform value="copy"/>
         <parameter>
@@ -91,6 +91,7 @@
       </source>
       <target>
         <context value="product"/>
+        <contextType value="variable"/>
         <element value="name"/>
         <transform value="copy"/>
         <parameter>
@@ -107,6 +108,7 @@
       </source>
       <target>
         <context value="product"/>
+        <contextType value="variable"/>
         <element value="identifier"/>
         <transform value="id"/>
         <parameter>
@@ -133,6 +135,7 @@
         </source>
         <target>
           <context value="dq"/>
+          <contextType value="variable"/>
           <element value="value"/>
           <transform value="copy"/>
           <parameter>
@@ -157,6 +160,7 @@
         </source>
         <target>
           <context value="coding"/>
+          <contextType value="variable"/>
           <element value="code"/>
           <transform value="copy"/>
           <parameter>
@@ -174,6 +178,7 @@
       </source>
       <target>
         <context value="product"/>
+        <contextType value="variable"/>
         <element value="manufacturer"/>
         <transform value="copy"/>
         <parameter>
@@ -197,6 +202,7 @@
         </source>
         <target>
           <context value="man"/>
+          <contextType value="variable"/>
           <element value="text"/>
           <transform value="copy"/>
           <parameter>
@@ -214,6 +220,7 @@
       </source>
       <target>
         <context value="product"/>
+        <contextType value="variable"/>
         <element value="classification"/>
         <transform value="copy"/>
         <parameter>
@@ -230,6 +237,7 @@
       </source>
       <target>
         <context value="product"/>
+        <contextType value="variable"/>
         <element value="dosageForm"/>
         <transform value="copy"/>
         <parameter>

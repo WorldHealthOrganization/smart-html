@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>WHO PreQualificaiton Vaccine VaccineTypes - JSON Representation - SMART Product Dataset for Prequalified Vaccines v0.1.0</title>
+    <title>WHO PreQualificaiton Vaccine VaccineTypes - JSON Representation - SMART Product Dataset for Prequalified Vaccines v0.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -61,7 +61,7 @@
                 <span class="icon-bar"> </span>
                 <span class="icon-bar"> </span>
               </button>
-              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
               <div class="nav-collapse collapse navbar-inverse-collapse">
                 <!-- menu.xml  -->
 
@@ -180,6 +180,9 @@
       <li>
         <a href="maps.html">Mappings</a>
       </li>
+      <li>
+        <a href="dak-api.html">DAK API</a>
+      </li>
     </ul>
   </li>
 </ul>
@@ -222,7 +225,7 @@
         <div id="ig-status" class="ig-status-draft">
           <p><span style="font-size:12pt;font-weight:bold">SMART Product Dataset for Prequalified Vaccines</span>
             <br/>
-            <span style="display:inline-block;">0.1.0 - release
+            <span style="display:inline-block;">0.2.0 - release
 
 
             </span>
@@ -250,7 +253,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the SMART Product Dataset for Prequalified Vaccines (v0.1.0: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R5">FHIR (HL7® FHIR® Standard) v5.0.0</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://smart.who.int/pcmt-vaxprequal/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">This page is part of the SMART Product Dataset for Prequalified Vaccines (v0.2.0: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://smart.who.int/pcmt-vaxprequal/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -298,14 +301,14 @@
 
 <h2 id="root">: WHO PreQualificaiton Vaccine VaccineTypes - JSON Representation</h2>
 
-  <table class="colsd">
+  <table class="colsi">
     <tr>
 
       <td colspan="2">
         
-          Draft
+          Active
           
-            as of 2025-07-01
+            as of 2025-09-16
           
         
       </td>
@@ -322,261 +325,261 @@
 
 
   <pre class="json" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
-  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
-  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.id">id</a>" : "PreQualVaccineType",
-  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.text">text</a>" : {
-    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem PreQualVaccineType&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;PreQualVaccineType\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcPreQualVaccineType\&quot;&gt; &lt;/a&gt;&lt;p&gt;This  code system &lt;code&gt;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;BCG&lt;a name=\&quot;PreQualVaccineType-BCG\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;BCG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Covid19&lt;a name=\&quot;PreQualVaccineType-Covid19\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Covid-19&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DengueTetravalentliveattenuated&lt;a name=\&quot;PreQualVaccineType-DengueTetravalentliveattenuated\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dengue Tetravalent (live, attenuated)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DiphtheriaTetanus&lt;a name=\&quot;PreQualVaccineType-DiphtheriaTetanus\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Diphtheria-Tetanus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DiphtheriaTetanusreducedantigencontent&lt;a name=\&quot;PreQualVaccineType-DiphtheriaTetanusreducedantigencontent\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Diphtheria-Tetanus (reduced antigen content)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DiphtheriaTetanusPertussisacellular&lt;a name=\&quot;PreQualVaccineType-DiphtheriaTetanusPertussisacellular\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Diphtheria-Tetanus-Pertussis (acellular)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DiphtheriaTetanusPertussisacellularHepatitisBHaemophilusinfluenzaetypebPolioInactivated&lt;a name=\&quot;PreQualVaccineType-DiphtheriaTetanusPertussisacellularHepatitisBHaemophilusinfluenzaetypebPolioInactivated\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Diphtheria-Tetanus-Pertussis (acellular)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DiphtheriaTetanusPertussiswholecell&lt;a name=\&quot;PreQualVaccineType-DiphtheriaTetanusPertussiswholecell\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Diphtheria-Tetanus-Pertussis (whole cell)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DiphtheriaTetanusPertussiswholecellHaemophilusinfluenzaetypeb&lt;a name=\&quot;PreQualVaccineType-DiphtheriaTetanusPertussiswholecellHaemophilusinfluenzaetypeb\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Diphtheria-Tetanus-Pertussis (whole cell)-Haemophilus influenzae type b&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb&lt;a name=\&quot;PreQualVaccineType-DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypebPolioInactivated&lt;a name=\&quot;PreQualVaccineType-DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypebPolioInactivated\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;EbolaZairerVSVGZEBOVGPliveattenuated&lt;a name=\&quot;PreQualVaccineType-EbolaZairerVSVGZEBOVGPliveattenuated\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ebola Zaire (rVSV∆G-ZEBOV-GP, live attenuated)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;EbolavaccineAd26ZEBOVGPrecombinant&lt;a name=\&quot;PreQualVaccineType-EbolavaccineAd26ZEBOVGPrecombinant\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ebola vaccine (Ad26.ZEBOV-GP [recombinant])&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;EbolavaccineMVABNFilorecombinant&lt;a name=\&quot;PreQualVaccineType-EbolavaccineMVABNFilorecombinant\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ebola vaccine (MVA-BN-Filo [recombinant])&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Haemophilusinfluenzaetypeb&lt;a name=\&quot;PreQualVaccineType-Haemophilusinfluenzaetypeb\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Haemophilus influenzae type b&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HepatitisAHumanDiploidCellInactivatedAdult&lt;a name=\&quot;PreQualVaccineType-HepatitisAHumanDiploidCellInactivatedAdult\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hepatitis A (Human Diploid Cell), Inactivated (Adult)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HepatitisAHumanDiploidCellInactivatedPaediatric&lt;a name=\&quot;PreQualVaccineType-HepatitisAHumanDiploidCellInactivatedPaediatric\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hepatitis A (Human Diploid Cell), Inactivated (Paediatric)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HepatitisB&lt;a name=\&quot;PreQualVaccineType-HepatitisB\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hepatitis B&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HepatitisBPaediatric&lt;a name=\&quot;PreQualVaccineType-HepatitisBPaediatric\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hepatitis B (Paediatric)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HumanPapillomavirusBivalent&lt;a name=\&quot;PreQualVaccineType-HumanPapillomavirusBivalent\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Human Papillomavirus (Bivalent)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HumanPapillomavirusNinevalent&lt;a name=\&quot;PreQualVaccineType-HumanPapillomavirusNinevalent\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Human Papillomavirus (Ninevalent)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HumanPapillomavirusQuadrivalent&lt;a name=\&quot;PreQualVaccineType-HumanPapillomavirusQuadrivalent\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Human Papillomavirus (Quadrivalent)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;InfluenzaPandemicH1N1&lt;a name=\&quot;PreQualVaccineType-InfluenzaPandemicH1N1\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Influenza, Pandemic (H1N1)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;InfluenzaPandemicH5N1&lt;a name=\&quot;PreQualVaccineType-InfluenzaPandemicH5N1\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Influenza, Pandemic (H5N1)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;InfluenzaseasonalQuadrivalent&lt;a name=\&quot;PreQualVaccineType-InfluenzaseasonalQuadrivalent\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Influenza, seasonal (Quadrivalent)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;InfluenzaseasonalTrivalent&lt;a name=\&quot;PreQualVaccineType-InfluenzaseasonalTrivalent\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Influenza, seasonal (Trivalent)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;JapaneseEncephalitisVaccineInactivated3µgPediatric&lt;a name=\&quot;PreQualVaccineType-JapaneseEncephalitisVaccineInactivated3.181gPediatric\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Japanese Encephalitis Vaccine (Inactivated) (3µg Pediatric)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;JapaneseEncephalitisVaccineInactivated6µg&lt;a name=\&quot;PreQualVaccineType-JapaneseEncephalitisVaccineInactivated6.181g\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Japanese Encephalitis Vaccine (Inactivated) 6µg&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;JapaneseEncephalitisVaccineliveattenuated&lt;a name=\&quot;PreQualVaccineType-JapaneseEncephalitisVaccineliveattenuated\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Japanese Encephalitis Vaccine (live, attenuated)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Malaria&lt;a name=\&quot;PreQualVaccineType-Malaria\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Malaria&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Measles&lt;a name=\&quot;PreQualVaccineType-Measles\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Measles&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MeaslesandRubella&lt;a name=\&quot;PreQualVaccineType-MeaslesandRubella\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Measles and Rubella&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MeaslesMumpsandRubella&lt;a name=\&quot;PreQualVaccineType-MeaslesMumpsandRubella\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Measles, Mumps and Rubella&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MenigococcalACYWXPolysaccharideconjugate&lt;a name=\&quot;PreQualVaccineType-MenigococcalACYWXPolysaccharideconjugate\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Menigococcal ACYWX (Polysaccharide conjugate)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MeningococcalAConjugate10µg&lt;a name=\&quot;PreQualVaccineType-MeningococcalAConjugate10.181g\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Meningococcal A Conjugate 10 µg&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MeningococcalAConjugate5µg&lt;a name=\&quot;PreQualVaccineType-MeningococcalAConjugate5.181g\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Meningococcal A Conjugate 5 µg&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MeningococcalACYW135conjugatevaccine&lt;a name=\&quot;PreQualVaccineType-MeningococcalACYW135conjugatevaccine\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Meningococcal ACYW-135 (conjugate vaccine)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MeningococcalACYW135TetanusToxoidconjugatevaccine&lt;a name=\&quot;PreQualVaccineType-MeningococcalACYW135TetanusToxoidconjugatevaccine\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Meningococcal ACYW-135 Tetanus Toxoid (conjugate vaccine)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Pneumococcalconjugate&lt;a name=\&quot;PreQualVaccineType-Pneumococcalconjugate\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pneumococcal (conjugate)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;PolioVaccineInactivatedIPV&lt;a name=\&quot;PreQualVaccineType-PolioVaccineInactivatedIPV\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Polio Vaccine - Inactivated (IPV)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;PolioVaccineInactivatedSabinsIPV&lt;a name=\&quot;PreQualVaccineType-PolioVaccineInactivatedSabinsIPV\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Polio Vaccine - Inactivated Sabin (sIPV)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;PolioVaccineNovelOralnOPVType2&lt;a name=\&quot;PreQualVaccineType-PolioVaccineNovelOralnOPVType2\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Polio Vaccine - Novel Oral (nOPV) Type 2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;PolioVaccineOralOPVBivalentTypes1and3&lt;a name=\&quot;PreQualVaccineType-PolioVaccineOralOPVBivalentTypes1and3\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;PolioVaccineOralOPVMonovalentType1&lt;a name=\&quot;PreQualVaccineType-PolioVaccineOralOPVMonovalentType1\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Polio Vaccine - Oral (OPV) Monovalent Type 1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;PolioVaccineOralOPVMonovalentType2&lt;a name=\&quot;PreQualVaccineType-PolioVaccineOralOPVMonovalentType2\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Polio Vaccine - Oral (OPV) Monovalent Type 2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;PolioVaccineOralOPVMonovalentType3&lt;a name=\&quot;PreQualVaccineType-PolioVaccineOralOPVMonovalentType3\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Polio Vaccine - Oral (OPV) Monovalent Type 3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;PolioVaccineOralOPVTrivalent&lt;a name=\&quot;PreQualVaccineType-PolioVaccineOralOPVTrivalent\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Polio Vaccine - Oral (OPV) Trivalent&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Rabies&lt;a name=\&quot;PreQualVaccineType-Rabies\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rabies&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Rotavirus&lt;a name=\&quot;PreQualVaccineType-Rotavirus\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rotavirus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Rotavirusliveattenuated&lt;a name=\&quot;PreQualVaccineType-Rotavirusliveattenuated\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rotavirus (live, attenuated)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Rubella&lt;a name=\&quot;PreQualVaccineType-Rubella\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rubella&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;SmallpoxandMpoxvaccineLiveModifiedVacciniaVirusAnkara&lt;a name=\&quot;PreQualVaccineType-SmallpoxandMpoxvaccineLiveModifiedVacciniaVirusAnkara\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Smallpox and Mpox vaccine (Live Modified Vaccinia Virus Ankara)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TetanusToxoid&lt;a name=\&quot;PreQualVaccineType-TetanusToxoid\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tetanus Toxoid&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TyphoidConjugate&lt;a name=\&quot;PreQualVaccineType-TyphoidConjugate\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Typhoid (Conjugate)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Varicella&lt;a name=\&quot;PreQualVaccineType-Varicella\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Varicella&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;YellowFever&lt;a name=\&quot;PreQualVaccineType-YellowFever\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Yellow Fever&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;cholerainactivatedoral&lt;a name=\&quot;PreQualVaccineType-cholerainactivatedoral\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;cholera: inactivated oral&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">id</a>" : "PreQualVaccineType",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem PreQualVaccineType&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;PreQualVaccineType\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcPreQualVaccineType\&quot;&gt; &lt;/a&gt;&lt;p&gt;This  code system &lt;code&gt;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;BCG&lt;a name=\&quot;PreQualVaccineType-BCG\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;BCG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Covid19&lt;a name=\&quot;PreQualVaccineType-Covid19\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Covid-19&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DengueTetravalentliveattenuated&lt;a name=\&quot;PreQualVaccineType-DengueTetravalentliveattenuated\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dengue Tetravalent (live, attenuated)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DiphtheriaTetanus&lt;a name=\&quot;PreQualVaccineType-DiphtheriaTetanus\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Diphtheria-Tetanus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DiphtheriaTetanusreducedantigencontent&lt;a name=\&quot;PreQualVaccineType-DiphtheriaTetanusreducedantigencontent\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Diphtheria-Tetanus (reduced antigen content)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DiphtheriaTetanusPertussisacellular&lt;a name=\&quot;PreQualVaccineType-DiphtheriaTetanusPertussisacellular\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Diphtheria-Tetanus-Pertussis (acellular)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DiphtheriaTetanusPertussisacellularHepatitisBHaemophilusinfluenzaetypebPolioInactivated&lt;a name=\&quot;PreQualVaccineType-DiphtheriaTetanusPertussisacellularHepatitisBHaemophilusinfluenzaetypebPolioInactivated\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Diphtheria-Tetanus-Pertussis (acellular)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DiphtheriaTetanusPertussiswholecell&lt;a name=\&quot;PreQualVaccineType-DiphtheriaTetanusPertussiswholecell\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Diphtheria-Tetanus-Pertussis (whole cell)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DiphtheriaTetanusPertussiswholecellHaemophilusinfluenzaetypeb&lt;a name=\&quot;PreQualVaccineType-DiphtheriaTetanusPertussiswholecellHaemophilusinfluenzaetypeb\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Diphtheria-Tetanus-Pertussis (whole cell)-Haemophilus influenzae type b&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb&lt;a name=\&quot;PreQualVaccineType-DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypebPolioInactivated&lt;a name=\&quot;PreQualVaccineType-DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypebPolioInactivated\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;EbolaZairerVSVGZEBOVGPliveattenuated&lt;a name=\&quot;PreQualVaccineType-EbolaZairerVSVGZEBOVGPliveattenuated\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ebola Zaire (rVSV∆G-ZEBOV-GP, live attenuated)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;EbolavaccineAd26ZEBOVGPrecombinant&lt;a name=\&quot;PreQualVaccineType-EbolavaccineAd26ZEBOVGPrecombinant\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ebola vaccine (Ad26.ZEBOV-GP [recombinant])&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;EbolavaccineMVABNFilorecombinant&lt;a name=\&quot;PreQualVaccineType-EbolavaccineMVABNFilorecombinant\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ebola vaccine (MVA-BN-Filo [recombinant])&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Haemophilusinfluenzaetypeb&lt;a name=\&quot;PreQualVaccineType-Haemophilusinfluenzaetypeb\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Haemophilus influenzae type b&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HepatitisAHumanDiploidCellInactivatedAdult&lt;a name=\&quot;PreQualVaccineType-HepatitisAHumanDiploidCellInactivatedAdult\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hepatitis A (Human Diploid Cell), Inactivated (Adult)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HepatitisAHumanDiploidCellInactivatedPaediatric&lt;a name=\&quot;PreQualVaccineType-HepatitisAHumanDiploidCellInactivatedPaediatric\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hepatitis A (Human Diploid Cell), Inactivated (Paediatric)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HepatitisB&lt;a name=\&quot;PreQualVaccineType-HepatitisB\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hepatitis B&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HepatitisBPaediatric&lt;a name=\&quot;PreQualVaccineType-HepatitisBPaediatric\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hepatitis B (Paediatric)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HumanPapillomavirusBivalent&lt;a name=\&quot;PreQualVaccineType-HumanPapillomavirusBivalent\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Human Papillomavirus (Bivalent)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HumanPapillomavirusNinevalent&lt;a name=\&quot;PreQualVaccineType-HumanPapillomavirusNinevalent\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Human Papillomavirus (Ninevalent)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HumanPapillomavirusQuadrivalent&lt;a name=\&quot;PreQualVaccineType-HumanPapillomavirusQuadrivalent\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Human Papillomavirus (Quadrivalent)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;InfluenzaPandemicH1N1&lt;a name=\&quot;PreQualVaccineType-InfluenzaPandemicH1N1\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Influenza, Pandemic (H1N1)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;InfluenzaPandemicH5N1&lt;a name=\&quot;PreQualVaccineType-InfluenzaPandemicH5N1\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Influenza, Pandemic (H5N1)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;InfluenzaseasonalQuadrivalent&lt;a name=\&quot;PreQualVaccineType-InfluenzaseasonalQuadrivalent\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Influenza, seasonal (Quadrivalent)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;InfluenzaseasonalTrivalent&lt;a name=\&quot;PreQualVaccineType-InfluenzaseasonalTrivalent\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Influenza, seasonal (Trivalent)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;JapaneseEncephalitisVaccineInactivated3µgPediatric&lt;a name=\&quot;PreQualVaccineType-JapaneseEncephalitisVaccineInactivated3.181gPediatric\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Japanese Encephalitis Vaccine (Inactivated) (3µg Pediatric)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;JapaneseEncephalitisVaccineInactivated6µg&lt;a name=\&quot;PreQualVaccineType-JapaneseEncephalitisVaccineInactivated6.181g\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Japanese Encephalitis Vaccine (Inactivated) 6µg&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;JapaneseEncephalitisVaccineliveattenuated&lt;a name=\&quot;PreQualVaccineType-JapaneseEncephalitisVaccineliveattenuated\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Japanese Encephalitis Vaccine (live, attenuated)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Malaria&lt;a name=\&quot;PreQualVaccineType-Malaria\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Malaria&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Measles&lt;a name=\&quot;PreQualVaccineType-Measles\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Measles&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MeaslesandRubella&lt;a name=\&quot;PreQualVaccineType-MeaslesandRubella\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Measles and Rubella&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MeaslesMumpsandRubella&lt;a name=\&quot;PreQualVaccineType-MeaslesMumpsandRubella\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Measles, Mumps and Rubella&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MenigococcalACYWXPolysaccharideconjugate&lt;a name=\&quot;PreQualVaccineType-MenigococcalACYWXPolysaccharideconjugate\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Menigococcal ACYWX (Polysaccharide conjugate)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MeningococcalAConjugate10µg&lt;a name=\&quot;PreQualVaccineType-MeningococcalAConjugate10.181g\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Meningococcal A Conjugate 10 µg&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MeningococcalAConjugate5µg&lt;a name=\&quot;PreQualVaccineType-MeningococcalAConjugate5.181g\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Meningococcal A Conjugate 5 µg&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MeningococcalACYW135conjugatevaccine&lt;a name=\&quot;PreQualVaccineType-MeningococcalACYW135conjugatevaccine\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Meningococcal ACYW-135 (conjugate vaccine)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MeningococcalACYW135TetanusToxoidconjugatevaccine&lt;a name=\&quot;PreQualVaccineType-MeningococcalACYW135TetanusToxoidconjugatevaccine\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Meningococcal ACYW-135 Tetanus Toxoid (conjugate vaccine)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Pneumococcalconjugate&lt;a name=\&quot;PreQualVaccineType-Pneumococcalconjugate\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pneumococcal (conjugate)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;PolioVaccineInactivatedIPV&lt;a name=\&quot;PreQualVaccineType-PolioVaccineInactivatedIPV\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Polio Vaccine - Inactivated (IPV)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;PolioVaccineInactivatedSabinsIPV&lt;a name=\&quot;PreQualVaccineType-PolioVaccineInactivatedSabinsIPV\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Polio Vaccine - Inactivated Sabin (sIPV)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;PolioVaccineNovelOralnOPVType2&lt;a name=\&quot;PreQualVaccineType-PolioVaccineNovelOralnOPVType2\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Polio Vaccine - Novel Oral (nOPV) Type 2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;PolioVaccineOralOPVBivalentTypes1and3&lt;a name=\&quot;PreQualVaccineType-PolioVaccineOralOPVBivalentTypes1and3\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;PolioVaccineOralOPVMonovalentType1&lt;a name=\&quot;PreQualVaccineType-PolioVaccineOralOPVMonovalentType1\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Polio Vaccine - Oral (OPV) Monovalent Type 1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;PolioVaccineOralOPVMonovalentType2&lt;a name=\&quot;PreQualVaccineType-PolioVaccineOralOPVMonovalentType2\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Polio Vaccine - Oral (OPV) Monovalent Type 2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;PolioVaccineOralOPVMonovalentType3&lt;a name=\&quot;PreQualVaccineType-PolioVaccineOralOPVMonovalentType3\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Polio Vaccine - Oral (OPV) Monovalent Type 3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;PolioVaccineOralOPVTrivalent&lt;a name=\&quot;PreQualVaccineType-PolioVaccineOralOPVTrivalent\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Polio Vaccine - Oral (OPV) Trivalent&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Rabies&lt;a name=\&quot;PreQualVaccineType-Rabies\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rabies&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Rotavirus&lt;a name=\&quot;PreQualVaccineType-Rotavirus\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rotavirus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Rotavirusliveattenuated&lt;a name=\&quot;PreQualVaccineType-Rotavirusliveattenuated\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rotavirus (live, attenuated)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Rubella&lt;a name=\&quot;PreQualVaccineType-Rubella\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rubella&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;SmallpoxandMpoxvaccineLiveModifiedVacciniaVirusAnkara&lt;a name=\&quot;PreQualVaccineType-SmallpoxandMpoxvaccineLiveModifiedVacciniaVirusAnkara\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Smallpox and Mpox vaccine (Live Modified Vaccinia Virus Ankara)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TetanusToxoid&lt;a name=\&quot;PreQualVaccineType-TetanusToxoid\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tetanus Toxoid&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TyphoidConjugate&lt;a name=\&quot;PreQualVaccineType-TyphoidConjugate\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Typhoid (Conjugate)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Varicella&lt;a name=\&quot;PreQualVaccineType-Varicella\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Varicella&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;YellowFever&lt;a name=\&quot;PreQualVaccineType-YellowFever\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Yellow Fever&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;cholerainactivatedoral&lt;a name=\&quot;PreQualVaccineType-cholerainactivatedoral\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;cholera: inactivated oral&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
   },
-  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.url">url</a>" : "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType",
-  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.version">version</a>" : "0.1.0",
-  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.name">name</a>" : "PreQualVaccineType",
-  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.title">title</a>" : "WHO PreQualificaiton Vaccine VaccineTypes",
-  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.status">status</a>" : "draft",
-  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.date">date</a>" : "2025-07-01T08:33:29+00:00",
-  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.publisher">publisher</a>" : "WHO",
-  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.contact">contact</a>" : [
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "0.2.0",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "PreQualVaccineType",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "WHO PreQualificaiton Vaccine VaccineTypes",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2025-09-16T20:42:07+00:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "WHO",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "WHO",
-      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "WHO",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
-          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://who.int"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://who.int"
         }
       ]
     }
   ],
-  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.description">description</a>" : "WHO PreQualificaiton Vaccine VaccineTypes",
-  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.content">content</a>" : "complete",
-  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.count">count</a>" : 57,
-  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>" : [
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>" : "WHO PreQualificaiton Vaccine VaccineTypes",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a>" : "complete",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a>" : 57,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "BCG",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "BCG"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "BCG",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "BCG"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "Covid19",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Covid-19"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Covid19",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Covid-19"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "DengueTetravalentliveattenuated",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Dengue Tetravalent (live, attenuated)"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DengueTetravalentliveattenuated",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dengue Tetravalent (live, attenuated)"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "DiphtheriaTetanus",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Diphtheria-Tetanus"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DiphtheriaTetanus",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Diphtheria-Tetanus"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "DiphtheriaTetanusreducedantigencontent",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Diphtheria-Tetanus (reduced antigen content)"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DiphtheriaTetanusreducedantigencontent",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Diphtheria-Tetanus (reduced antigen content)"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "DiphtheriaTetanusPertussisacellular",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Diphtheria-Tetanus-Pertussis (acellular)"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DiphtheriaTetanusPertussisacellular",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Diphtheria-Tetanus-Pertussis (acellular)"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "DiphtheriaTetanusPertussisacellularHepatitisBHaemophilusinfluenzaetypebPolioInactivated",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Diphtheria-Tetanus-Pertussis (acellular)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DiphtheriaTetanusPertussisacellularHepatitisBHaemophilusinfluenzaetypebPolioInactivated",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Diphtheria-Tetanus-Pertussis (acellular)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "DiphtheriaTetanusPertussiswholecell",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Diphtheria-Tetanus-Pertussis (whole cell)"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DiphtheriaTetanusPertussiswholecell",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Diphtheria-Tetanus-Pertussis (whole cell)"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "DiphtheriaTetanusPertussiswholecellHaemophilusinfluenzaetypeb",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Diphtheria-Tetanus-Pertussis (whole cell)-Haemophilus influenzae type b"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DiphtheriaTetanusPertussiswholecellHaemophilusinfluenzaetypeb",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Diphtheria-Tetanus-Pertussis (whole cell)-Haemophilus influenzae type b"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypebPolioInactivated",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypebPolioInactivated",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "EbolaZairerVSVGZEBOVGPliveattenuated",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Ebola Zaire (rVSV∆G-ZEBOV-GP, live attenuated)"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "EbolaZairerVSVGZEBOVGPliveattenuated",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ebola Zaire (rVSV∆G-ZEBOV-GP, live attenuated)"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "EbolavaccineAd26ZEBOVGPrecombinant",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Ebola vaccine (Ad26.ZEBOV-GP [recombinant])"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "EbolavaccineAd26ZEBOVGPrecombinant",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ebola vaccine (Ad26.ZEBOV-GP [recombinant])"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "EbolavaccineMVABNFilorecombinant",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Ebola vaccine (MVA-BN-Filo [recombinant])"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "EbolavaccineMVABNFilorecombinant",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ebola vaccine (MVA-BN-Filo [recombinant])"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "Haemophilusinfluenzaetypeb",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Haemophilus influenzae type b"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Haemophilusinfluenzaetypeb",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Haemophilus influenzae type b"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "HepatitisAHumanDiploidCellInactivatedAdult",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Hepatitis A (Human Diploid Cell), Inactivated (Adult)"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "HepatitisAHumanDiploidCellInactivatedAdult",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hepatitis A (Human Diploid Cell), Inactivated (Adult)"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "HepatitisAHumanDiploidCellInactivatedPaediatric",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Hepatitis A (Human Diploid Cell), Inactivated (Paediatric)"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "HepatitisAHumanDiploidCellInactivatedPaediatric",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hepatitis A (Human Diploid Cell), Inactivated (Paediatric)"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "HepatitisB",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Hepatitis B"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "HepatitisB",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hepatitis B"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "HepatitisBPaediatric",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Hepatitis B (Paediatric)"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "HepatitisBPaediatric",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hepatitis B (Paediatric)"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "HumanPapillomavirusBivalent",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Human Papillomavirus (Bivalent)"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "HumanPapillomavirusBivalent",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Human Papillomavirus (Bivalent)"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "HumanPapillomavirusNinevalent",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Human Papillomavirus (Ninevalent)"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "HumanPapillomavirusNinevalent",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Human Papillomavirus (Ninevalent)"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "HumanPapillomavirusQuadrivalent",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Human Papillomavirus (Quadrivalent)"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "HumanPapillomavirusQuadrivalent",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Human Papillomavirus (Quadrivalent)"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "InfluenzaPandemicH1N1",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Influenza, Pandemic (H1N1)"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "InfluenzaPandemicH1N1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Influenza, Pandemic (H1N1)"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "InfluenzaPandemicH5N1",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Influenza, Pandemic (H5N1)"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "InfluenzaPandemicH5N1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Influenza, Pandemic (H5N1)"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "InfluenzaseasonalQuadrivalent",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Influenza, seasonal (Quadrivalent)"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "InfluenzaseasonalQuadrivalent",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Influenza, seasonal (Quadrivalent)"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "InfluenzaseasonalTrivalent",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Influenza, seasonal (Trivalent)"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "InfluenzaseasonalTrivalent",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Influenza, seasonal (Trivalent)"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "JapaneseEncephalitisVaccineInactivated3µgPediatric",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Japanese Encephalitis Vaccine (Inactivated) (3µg Pediatric)"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "JapaneseEncephalitisVaccineInactivated3µgPediatric",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Japanese Encephalitis Vaccine (Inactivated) (3µg Pediatric)"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "JapaneseEncephalitisVaccineInactivated6µg",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Japanese Encephalitis Vaccine (Inactivated) 6µg"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "JapaneseEncephalitisVaccineInactivated6µg",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Japanese Encephalitis Vaccine (Inactivated) 6µg"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "JapaneseEncephalitisVaccineliveattenuated",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Japanese Encephalitis Vaccine (live, attenuated)"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "JapaneseEncephalitisVaccineliveattenuated",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Japanese Encephalitis Vaccine (live, attenuated)"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "Malaria",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Malaria"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Malaria",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Malaria"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "Measles",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Measles"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Measles",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Measles"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "MeaslesandRubella",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Measles and Rubella"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "MeaslesandRubella",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Measles and Rubella"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "MeaslesMumpsandRubella",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Measles, Mumps and Rubella"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "MeaslesMumpsandRubella",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Measles, Mumps and Rubella"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "MenigococcalACYWXPolysaccharideconjugate",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Menigococcal ACYWX (Polysaccharide conjugate)"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "MenigococcalACYWXPolysaccharideconjugate",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Menigococcal ACYWX (Polysaccharide conjugate)"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "MeningococcalAConjugate10µg",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Meningococcal A Conjugate 10 µg"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "MeningococcalAConjugate10µg",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Meningococcal A Conjugate 10 µg"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "MeningococcalAConjugate5µg",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Meningococcal A Conjugate 5 µg"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "MeningococcalAConjugate5µg",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Meningococcal A Conjugate 5 µg"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "MeningococcalACYW135conjugatevaccine",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Meningococcal ACYW-135 (conjugate vaccine)"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "MeningococcalACYW135conjugatevaccine",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Meningococcal ACYW-135 (conjugate vaccine)"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "MeningococcalACYW135TetanusToxoidconjugatevaccine",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Meningococcal ACYW-135 Tetanus Toxoid (conjugate vaccine)"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "MeningococcalACYW135TetanusToxoidconjugatevaccine",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Meningococcal ACYW-135 Tetanus Toxoid (conjugate vaccine)"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "Pneumococcalconjugate",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Pneumococcal (conjugate)"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Pneumococcalconjugate",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pneumococcal (conjugate)"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "PolioVaccineInactivatedIPV",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Polio Vaccine - Inactivated (IPV)"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "PolioVaccineInactivatedIPV",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Polio Vaccine - Inactivated (IPV)"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "PolioVaccineInactivatedSabinsIPV",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Polio Vaccine - Inactivated Sabin (sIPV)"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "PolioVaccineInactivatedSabinsIPV",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Polio Vaccine - Inactivated Sabin (sIPV)"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "PolioVaccineNovelOralnOPVType2",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Polio Vaccine - Novel Oral (nOPV) Type 2"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "PolioVaccineNovelOralnOPVType2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Polio Vaccine - Novel Oral (nOPV) Type 2"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "PolioVaccineOralOPVBivalentTypes1and3",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "PolioVaccineOralOPVBivalentTypes1and3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "PolioVaccineOralOPVMonovalentType1",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Polio Vaccine - Oral (OPV) Monovalent Type 1"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "PolioVaccineOralOPVMonovalentType1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Polio Vaccine - Oral (OPV) Monovalent Type 1"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "PolioVaccineOralOPVMonovalentType2",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Polio Vaccine - Oral (OPV) Monovalent Type 2"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "PolioVaccineOralOPVMonovalentType2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Polio Vaccine - Oral (OPV) Monovalent Type 2"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "PolioVaccineOralOPVMonovalentType3",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Polio Vaccine - Oral (OPV) Monovalent Type 3"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "PolioVaccineOralOPVMonovalentType3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Polio Vaccine - Oral (OPV) Monovalent Type 3"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "PolioVaccineOralOPVTrivalent",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Polio Vaccine - Oral (OPV) Trivalent"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "PolioVaccineOralOPVTrivalent",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Polio Vaccine - Oral (OPV) Trivalent"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "Rabies",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Rabies"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Rabies",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Rabies"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "Rotavirus",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Rotavirus"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Rotavirus",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Rotavirus"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "Rotavirusliveattenuated",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Rotavirus (live, attenuated)"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Rotavirusliveattenuated",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Rotavirus (live, attenuated)"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "Rubella",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Rubella"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Rubella",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Rubella"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "SmallpoxandMpoxvaccineLiveModifiedVacciniaVirusAnkara",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Smallpox and Mpox vaccine (Live Modified Vaccinia Virus Ankara)"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "SmallpoxandMpoxvaccineLiveModifiedVacciniaVirusAnkara",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Smallpox and Mpox vaccine (Live Modified Vaccinia Virus Ankara)"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "TetanusToxoid",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Tetanus Toxoid"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TetanusToxoid",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tetanus Toxoid"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "TyphoidConjugate",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Typhoid (Conjugate)"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TyphoidConjugate",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Typhoid (Conjugate)"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "Varicella",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Varicella"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Varicella",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Varicella"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "YellowFever",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Yellow Fever"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "YellowFever",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Yellow Fever"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "cholerainactivatedoral",
-      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "cholera: inactivated oral"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "cholerainactivatedoral",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "cholera: inactivated oral"
     }
   ]
 }</code></pre>
@@ -603,7 +606,7 @@
 
 <div class="inner-wrapper">
   <p>
-    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.pcmt-vaxprequal#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Jul 1, 2025 08:34+0000">2025-07-01</span>
+    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.pcmt-vaxprequal#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 16, 2025 20:43+0000">2025-09-16</span>
     <br/>
     <span style="color: var(--footer-highlight-text-color)">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

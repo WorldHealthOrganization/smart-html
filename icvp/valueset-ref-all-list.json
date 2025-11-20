@@ -1,20 +1,6 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
-      "version" : "4.0.1",
-      "status" : "active",
-      "name" : "AdministrativeGender",
-      "title" : "AdministrativeGender",
-      "description" : "The gender of a person used for administrative purposes.",
-      "systems" : ["http://hl7.org/fhir/administrative-gender"],
-      "oids" : ["2.16.840.1.113883.4.642.3.1"],
-      "sources" : ["2.16.840.1.113883.4.642.3.1"],
-      "uses" : {
-      },
-      "StructureDefinition-DVCPatient.html" : "DVC Patient"
-    },
-    {
       "url" : "http://hl7.org/fhir/ValueSet/body-site",
       "version" : "4.0.1",
       "status" : "draft",
@@ -26,7 +12,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-DVC-ImmunizationUvIps.html" : "DVC Immunization"
+      "StructureDefinition-Immunization-uv-ips-ICVP.html" : "DVC - WHO ICVP Immunization for IPS"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/bundle-type",
@@ -40,8 +26,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.620"],
       "uses" : {
       },
-      "StructureDefinition-DVCIPS.html" : "DVC Certificate - IPS Bundle",
-      "StructureDefinition-DVCBundle.html" : "Digital Vaccination Certificate - Bundle"
+      "StructureDefinition-Bundle-uv-ips-ICVP.html" : "DVC Certificate - IPS Bundle from WHO ICVP"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/composition-attestation-mode",
@@ -55,8 +40,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.238"],
       "uses" : {
       },
-      "StructureDefinition-DVCComposition.html" : "Digital Vaccination Certificate - Composition",
-      "StructureDefinition-DVCIPSComposition.html" : "DVC Certificate - IPS Composition"
+      "StructureDefinition-Composition-uv-ips-ICVP.html" : "DVC Certificate - IPS Composition for WHO ICVP"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/composition-status",
@@ -70,8 +54,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.241"],
       "uses" : {
       },
-      "StructureDefinition-DVCComposition.html" : "Digital Vaccination Certificate - Composition",
-      "StructureDefinition-DVCIPSComposition.html" : "DVC Certificate - IPS Composition"
+      "StructureDefinition-Composition-uv-ips-ICVP.html" : "DVC Certificate - IPS Composition for WHO ICVP"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/doc-section-codes",
@@ -85,8 +68,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.237"],
       "uses" : {
       },
-      "StructureDefinition-DVCComposition.html" : "Digital Vaccination Certificate - Composition",
-      "StructureDefinition-DVCIPSComposition.html" : "DVC Certificate - IPS Composition"
+      "StructureDefinition-Composition-uv-ips-ICVP.html" : "DVC Certificate - IPS Composition for WHO ICVP"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/doc-typecodes",
@@ -100,8 +82,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.240"],
       "uses" : {
       },
-      "StructureDefinition-DVCComposition.html" : "Digital Vaccination Certificate - Composition",
-      "StructureDefinition-DVCIPSComposition.html" : "DVC Certificate - IPS Composition"
+      "StructureDefinition-Composition-uv-ips-ICVP.html" : "DVC Certificate - IPS Composition for WHO ICVP"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/document-classcodes",
@@ -115,8 +96,7 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.46"],
       "uses" : {
       },
-      "StructureDefinition-DVCComposition.html" : "Digital Vaccination Certificate - Composition",
-      "StructureDefinition-DVCIPSComposition.html" : "DVC Certificate - IPS Composition"
+      "StructureDefinition-Composition-uv-ips-ICVP.html" : "DVC Certificate - IPS Composition for WHO ICVP"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/document-relationship-type",
@@ -130,8 +110,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.244"],
       "uses" : {
       },
-      "StructureDefinition-DVCComposition.html" : "Digital Vaccination Certificate - Composition",
-      "StructureDefinition-DVCIPSComposition.html" : "DVC Certificate - IPS Composition"
+      "StructureDefinition-Composition-uv-ips-ICVP.html" : "DVC Certificate - IPS Composition for WHO ICVP"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/http-verb",
@@ -145,8 +124,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.624"],
       "uses" : {
       },
-      "StructureDefinition-DVCIPS.html" : "DVC Certificate - IPS Bundle",
-      "StructureDefinition-DVCBundle.html" : "Digital Vaccination Certificate - Bundle"
+      "StructureDefinition-Bundle-uv-ips-ICVP.html" : "DVC Certificate - IPS Bundle from WHO ICVP"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
@@ -160,7 +138,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-DVCPatient.html" : "DVC Patient"
+      "StructureDefinition-ICVPSD.html" : "DVC Icvp with Selective Disclosure"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -174,7 +152,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-DVCPatient.html" : "DVC Patient"
+      "StructureDefinition-ICVPSD.html" : "DVC Icvp with Selective Disclosure"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/immunization-function",
@@ -188,7 +166,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.995"],
       "uses" : {
       },
-      "StructureDefinition-DVC-ImmunizationUvIps.html" : "DVC Immunization"
+      "StructureDefinition-ICVPImmunization.html" : "ICVP Immunization",
+      "StructureDefinition-Immunization-uv-ips-ICVP.html" : "DVC - WHO ICVP Immunization for IPS"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/immunization-funding-source",
@@ -204,7 +183,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.293"],
       "uses" : {
       },
-      "StructureDefinition-DVC-ImmunizationUvIps.html" : "DVC Immunization"
+      "StructureDefinition-ICVPImmunization.html" : "ICVP Immunization",
+      "StructureDefinition-Immunization-uv-ips-ICVP.html" : "DVC - WHO ICVP Immunization for IPS"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/immunization-origin",
@@ -218,7 +198,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.296"],
       "uses" : {
       },
-      "StructureDefinition-DVC-ImmunizationUvIps.html" : "DVC Immunization"
+      "StructureDefinition-ICVPImmunization.html" : "ICVP Immunization",
+      "StructureDefinition-Immunization-uv-ips-ICVP.html" : "DVC - WHO ICVP Immunization for IPS"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/immunization-program-eligibility",
@@ -234,7 +215,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.291"],
       "uses" : {
       },
-      "StructureDefinition-DVC-ImmunizationUvIps.html" : "DVC Immunization"
+      "StructureDefinition-ICVPImmunization.html" : "ICVP Immunization",
+      "StructureDefinition-Immunization-uv-ips-ICVP.html" : "DVC - WHO ICVP Immunization for IPS"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/immunization-reason",
@@ -248,7 +230,38 @@
       "sources" : ["2.16.840.1.113883.4.642.3.290"],
       "uses" : {
       },
-      "StructureDefinition-DVC-ImmunizationUvIps.html" : "DVC Immunization"
+      "StructureDefinition-ICVPImmunization.html" : "ICVP Immunization",
+      "StructureDefinition-Immunization-uv-ips-ICVP.html" : "DVC - WHO ICVP Immunization for IPS"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-route",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationRouteCodes",
+      "title" : "Immunization Route Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the administrative routes used during vaccination. This value set is provided as a suggestive example.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.289"],
+      "sources" : ["2.16.840.1.113883.4.642.3.289"],
+      "uses" : {
+      },
+      "StructureDefinition-ICVPImmunization.html" : "ICVP Immunization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-site",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CodesForImmunizationSiteOfAdministration",
+      "title" : "Codes for Immunization Site of Administration",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the body site where the vaccination occurred. This value set is provided as a suggestive example.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActSite"],
+      "oids" : ["2.16.840.1.113883.4.642.3.288"],
+      "sources" : ["2.16.840.1.113883.4.642.3.288"],
+      "uses" : {
+      },
+      "StructureDefinition-ICVPImmunization.html" : "ICVP Immunization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/immunization-status",
@@ -262,7 +275,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.295"],
       "uses" : {
       },
-      "StructureDefinition-DVC-ImmunizationUvIps.html" : "DVC Immunization"
+      "StructureDefinition-ICVPImmunization.html" : "ICVP Immunization",
+      "StructureDefinition-Immunization-uv-ips-ICVP.html" : "DVC - WHO ICVP Immunization for IPS"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/immunization-status-reason",
@@ -279,7 +293,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.992"],
       "uses" : {
       },
-      "StructureDefinition-DVC-ImmunizationUvIps.html" : "DVC Immunization"
+      "StructureDefinition-ICVPImmunization.html" : "ICVP Immunization",
+      "StructureDefinition-Immunization-uv-ips-ICVP.html" : "DVC - WHO ICVP Immunization for IPS"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/immunization-subpotent-reason",
@@ -295,7 +310,22 @@
       "sources" : ["2.16.840.1.113883.4.642.3.993"],
       "uses" : {
       },
-      "StructureDefinition-DVC-ImmunizationUvIps.html" : "DVC Immunization"
+      "StructureDefinition-ICVPImmunization.html" : "ICVP Immunization",
+      "StructureDefinition-Immunization-uv-ips-ICVP.html" : "DVC - WHO ICVP Immunization for IPS"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-target-disease",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationTargetDiseaseCodes",
+      "title" : "Immunization Target Disease Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the disease that the dose is being administered against. This value set is provided as a suggestive example and includes the SNOMED CT concepts from the 64572001 (Disease) hierarchy.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1047"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1047"],
+      "uses" : {
+      },
+      "StructureDefinition-ICVPImmunization.html" : "ICVP Immunization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -309,26 +339,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-DVCPatient.html" : "DVC Patient",
-      "StructureDefinition-DVCIPS.html" : "DVC Certificate - IPS Bundle",
-      "StructureDefinition-DVCComposition.html" : "Digital Vaccination Certificate - Composition",
-      "StructureDefinition-DVC-ImmunizationUvIps.html" : "DVC Immunization",
-      "StructureDefinition-DVCBundle.html" : "Digital Vaccination Certificate - Bundle",
-      "StructureDefinition-DVCIPSComposition.html" : "DVC Certificate - IPS Composition"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/link-type",
-      "version" : "4.0.1",
-      "status" : "active",
-      "name" : "LinkType",
-      "title" : "LinkType",
-      "description" : "The type of link between this patient resource and another patient resource.",
-      "systems" : ["http://hl7.org/fhir/link-type"],
-      "oids" : ["2.16.840.1.113883.4.642.3.423"],
-      "sources" : ["2.16.840.1.113883.4.642.3.423"],
-      "uses" : {
-      },
-      "StructureDefinition-DVCPatient.html" : "DVC Patient"
+      "StructureDefinition-Bundle-uv-ips-ICVP.html" : "DVC Certificate - IPS Bundle from WHO ICVP",
+      "StructureDefinition-ICVPImmunization.html" : "ICVP Immunization",
+      "StructureDefinition-Immunization-uv-ips-ICVP.html" : "DVC - WHO ICVP Immunization for IPS",
+      "StructureDefinition-Composition-uv-ips-ICVP.html" : "DVC Certificate - IPS Composition for WHO ICVP"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/list-empty-reason",
@@ -342,8 +356,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.322"],
       "uses" : {
       },
-      "StructureDefinition-DVCComposition.html" : "Digital Vaccination Certificate - Composition",
-      "StructureDefinition-DVCIPSComposition.html" : "DVC Certificate - IPS Composition"
+      "StructureDefinition-Composition-uv-ips-ICVP.html" : "DVC Certificate - IPS Composition for WHO ICVP"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/list-mode",
@@ -357,8 +370,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.318"],
       "uses" : {
       },
-      "StructureDefinition-DVCComposition.html" : "Digital Vaccination Certificate - Composition",
-      "StructureDefinition-DVCIPSComposition.html" : "DVC Certificate - IPS Composition"
+      "StructureDefinition-Composition-uv-ips-ICVP.html" : "DVC Certificate - IPS Composition for WHO ICVP"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/list-order",
@@ -372,39 +384,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.324"],
       "uses" : {
       },
-      "StructureDefinition-DVCComposition.html" : "Digital Vaccination Certificate - Composition",
-      "StructureDefinition-DVCIPSComposition.html" : "DVC Certificate - IPS Composition"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/marital-status",
-      "version" : "4.0.1",
-      "status" : "active",
-      "name" : "Marital Status Codes",
-      "title" : "MaritalStatus",
-      "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person.",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
-        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
-      ],
-      "oids" : ["2.16.840.1.113883.4.642.3.29"],
-      "sources" : ["2.16.840.1.113883.4.642.3.29"],
-      "uses" : {
-      },
-      "StructureDefinition-DVCPatient.html" : "DVC Patient"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/name-use",
-      "version" : "4.0.1",
-      "status" : "active",
-      "name" : "NameUse",
-      "title" : "NameUse",
-      "description" : "The use of a human name.",
-      "systems" : ["http://hl7.org/fhir/name-use"],
-      "oids" : ["2.16.840.1.113883.4.642.3.65"],
-      "sources" : ["2.16.840.1.113883.4.642.3.65"],
-      "uses" : {
-      },
-      "StructureDefinition-DVCPatient.html" : "DVC Patient"
+      "StructureDefinition-Composition-uv-ips-ICVP.html" : "DVC Certificate - IPS Composition for WHO ICVP"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/resource-types",
@@ -418,9 +398,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.27"],
       "uses" : {
       },
-      "StructureDefinition-DVCComposition.html" : "Digital Vaccination Certificate - Composition",
-      "StructureDefinition-DVC-ImmunizationUvIps.html" : "DVC Immunization",
-      "StructureDefinition-DVCIPSComposition.html" : "DVC Certificate - IPS Composition"
+      "StructureDefinition-ICVPVaccineDetailsSD.html" : "ICVP Vaccine Details with Selective Disclosure",
+      "StructureDefinition-Immunization-uv-ips-ICVP.html" : "DVC - WHO ICVP Immunization for IPS",
+      "StructureDefinition-ICVPSD.html" : "DVC Icvp with Selective Disclosure",
+      "StructureDefinition-Composition-uv-ips-ICVP.html" : "DVC Certificate - IPS Composition for WHO ICVP"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/search-entry-mode",
@@ -434,8 +415,21 @@
       "sources" : ["2.16.840.1.113883.4.642.3.622"],
       "uses" : {
       },
-      "StructureDefinition-DVCIPS.html" : "DVC Certificate - IPS Bundle",
-      "StructureDefinition-DVCBundle.html" : "Digital Vaccination Certificate - Bundle"
+      "StructureDefinition-Bundle-uv-ips-ICVP.html" : "DVC Certificate - IPS Bundle from WHO ICVP"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/vaccine-code",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "VaccineAdministeredValueSet",
+      "title" : "Vaccine Administered Value Set",
+      "description" : "This identifies the vaccine substance administered - CVX codes.",
+      "systems" : ["urn:oid:1.2.36.1.2001.1005.17", "http://hl7.org/fhir/sid/cvx"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.22"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.22"],
+      "uses" : {
+      },
+      "StructureDefinition-ICVPImmunization.html" : "ICVP Immunization"
     },
     {
       "url" : "http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration",
@@ -447,7 +441,7 @@
       "systems" : ["http://standardterms.edqm.eu"],
       "uses" : {
       },
-      "StructureDefinition-DVC-ImmunizationUvIps.html" : "DVC Immunization"
+      "StructureDefinition-Immunization-uv-ips-ICVP.html" : "DVC - WHO ICVP Immunization for IPS"
     },
     {
       "url" : "http://hl7.org/fhir/uv/ips/ValueSet/target-diseases-uv-ips",
@@ -459,7 +453,19 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-DVC-ImmunizationUvIps.html" : "DVC Immunization"
+      "StructureDefinition-Immunization-uv-ips-ICVP.html" : "DVC - WHO ICVP Immunization for IPS"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-uv-ips",
+      "version" : "2.0.0-ballot",
+      "status" : "active",
+      "name" : "VaccinesUvIps",
+      "title" : "Vaccines - IPS",
+      "description" : "IPS Vaccine codes value set.  This value set includes codes from SNOMED CT®: all descendants of 787859002 \\|Vaccine product (product)\\|; all descendants or self of 787482006 \\|No known immunizations (situation)\\|\n\nSNOMED CT® ECL definition:\\\n< 787859002 \\|Vaccine product (product)\\| OR \\<\\< 787482006 \\|No known immunizations (situation)\\|",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-Immunization-uv-ips-ICVP.html" : "DVC - WHO ICVP Immunization for IPS"
     },
     {
       "url" : "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-whoatc-uv-ips",
@@ -471,154 +477,126 @@
       "systems" : ["http://www.whocc.no/atc"],
       "uses" : {
       },
-      "StructureDefinition-DVC-ImmunizationUvIps.html" : "DVC Immunization"
-    },
-    {
-      "url" : "http://smart.who.int/icvp/ValueSet/DVCRelationshipStatus",
-      "version" : null,
-      "status" : "draft",
-      "name" : "DVCRelationshipStatus",
-      "title" : "Relationship Status for Contact in Patient",
-      "description" : "Relationship Status for Contact in Patient",
-      "systems" : ["http://smart.who.int/icvp/CodeSystem/DVCRelationshipStatus"]
-    },
-    {
-      "url" : "http://smart.who.int/icvp/ValueSet/DVCRelationshipStatus",
-      "version" : null,
-      "status" : "draft",
-      "name" : "DVCRelationshipStatus",
-      "title" : "Relationship Status for Contact in Patient",
-      "description" : "Relationship Status for Contact in Patient",
-      "systems" : ["http://smart.who.int/icvp/CodeSystem/DVCRelationshipStatus"]
-    },
-    {
-      "url" : "http://smart.who.int/icvp/ValueSet/DVCRelationshipStatus",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "DVCRelationshipStatus",
-      "title" : "Relationship Status for Contact in Patient",
-      "description" : "Relationship Status for Contact in Patient",
-      "systems" : ["http://smart.who.int/icvp/CodeSystem/DVCRelationshipStatus"],
-      "uses" : {
-      },
-      "StructureDefinition-DVCPatient.html" : "DVC Patient"
-    },
-    {
-      "url" : "http://smart.who.int/icvp/ValueSet/DVCVaccines",
-      "version" : null,
-      "status" : "draft",
-      "name" : "DVCVaccines",
-      "title" : "DVC - Vaccines",
-      "description" : "This value set includes codes from ICD",
-      "systems" : ["http://id.who.int/icd/release/11/mms"]
-    },
-    {
-      "url" : "http://smart.who.int/icvp/ValueSet/DVCVaccines",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "DVCVaccines",
-      "title" : "DVC - Vaccines",
-      "description" : "This value set includes codes from ICD",
-      "systems" : ["http://id.who.int/icd/release/11/mms"],
-      "uses" : {
-      },
-      "StructureDefinition-ModelVaccineDetails.html" : "DVC - Vaccine Details",
-      "StructureDefinition-DVC-ImmunizationUvIps.html" : "DVC Immunization"
+      "StructureDefinition-Immunization-uv-ips-ICVP.html" : "DVC - WHO ICVP Immunization for IPS"
     },
     {
       "url" : "http://smart.who.int/icvp/ValueSet/DiseaseTargeted",
-      "version" : null,
-      "status" : "draft",
+      "version" : "0.3.0",
+      "status" : "active",
       "name" : "DiseaseTargeted",
       "title" : "Disease Targeted",
       "description" : "Value set for all diseases",
       "systems" : ["http://id.who.int/icd/release/11/mms"]
     },
     {
-      "url" : "http://smart.who.int/icvp/ValueSet/DiseaseTargeted",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "DiseaseTargeted",
-      "title" : "Disease Targeted",
-      "description" : "Value set for all diseases",
-      "systems" : ["http://id.who.int/icd/release/11/mms"],
-      "uses" : {
-      },
-      "StructureDefinition-ModelVaccineDetails.html" : "DVC - Vaccine Details",
-      "StructureDefinition-DVC-ImmunizationUvIps.html" : "DVC Immunization"
-    },
-    {
       "url" : "http://smart.who.int/icvp/ValueSet/ICVPDiseaseTargeted",
-      "version" : null,
-      "status" : "draft",
+      "version" : "0.3.0",
+      "status" : "active",
       "name" : "ICVPDiseaseTargeted",
       "title" : "ICVP Disease Targeted",
       "description" : "Value set for yellow fever and polio only",
       "systems" : ["http://id.who.int/icd/release/11/mms"]
     },
     {
-      "url" : "http://smart.who.int/icvp/ValueSet/ICVPDiseaseTargeted",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "ICVPDiseaseTargeted",
-      "title" : "ICVP Disease Targeted",
-      "description" : "Value set for yellow fever and polio only",
-      "systems" : ["http://id.who.int/icd/release/11/mms"],
+      "url" : "http://smart.who.int/icvp/ValueSet/ICVPProductIds",
+      "version" : "0.3.0",
+      "status" : "active",
+      "name" : "ICVPProductIds",
+      "title" : "WHO ICVP Vaccine Product Ids",
+      "description" : "WHO ICVP Vaccine Product Ids",
+      "systems" : [
+        "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"
+      ],
       "uses" : {
       },
-      "StructureDefinition-ModelICVPVaccineDetails.html" : "ICVP - Vaccine Details"
+      "StructureDefinition-ICVPMinVaccineDetails.html" : "ICVP HCERT Payload",
+      "ConceptMap-ICVPProductIdToVaccineType.html" : "ConceptMap from ICVP Product IDs to Vaccine Types"
+    },
+    {
+      "url" : "http://smart.who.int/icvp/ValueSet/ICVPProductIds",
+      "version" : null,
+      "status" : "active",
+      "name" : "ICVPProductIds",
+      "title" : "WHO ICVP Vaccine Product Ids",
+      "description" : "WHO ICVP Vaccine Product Ids",
+      "systems" : [
+        "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"
+      ]
     },
     {
       "url" : "http://smart.who.int/icvp/ValueSet/ICVPVaccineCodes",
-      "version" : null,
-      "status" : "draft",
+      "version" : "0.3.0",
+      "status" : "active",
       "name" : "ICVPVaccineCodes",
       "title" : "ICVP - Vaccine Codes",
       "description" : "This value set includes codes from ICVP",
       "systems" : ["http://id.who.int/icd/release/11/mms"]
     },
     {
-      "url" : "http://smart.who.int/icvp/ValueSet/ICVPVaccineCodes",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "ICVPVaccineCodes",
-      "title" : "ICVP - Vaccine Codes",
-      "description" : "This value set includes codes from ICVP",
-      "systems" : ["http://id.who.int/icd/release/11/mms"],
+      "url" : "http://smart.who.int/icvp/ValueSet/ICVPVaccineType",
+      "version" : "0.3.0",
+      "status" : "active",
+      "name" : "ICVPVaccineType",
+      "title" : "Vaccine Types for use in the ICVP",
+      "description" : "WHO PreQualificaiton Vaccine Type for use in the ICVP",
+      "systems" : [
+        "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+      ],
       "uses" : {
       },
-      "StructureDefinition-ModelICVPVaccineDetails.html" : "ICVP - Vaccine Details"
+      "ConceptMap-ICVPProductIdToVaccineType.html" : "ConceptMap from ICVP Product IDs to Vaccine Types"
     },
     {
-      "url" : "http://smart.who.int/icvp/ValueSet/doseNumber",
-      "version" : null,
-      "status" : "draft",
-      "name" : "doseNumber",
-      "title" : "Dose Number",
-      "description" : "Dose Number value set",
-      "systems" : ["http://smart.who.int/icvp/CodeSystem/doseNumber"]
+      "url" : "http://smart.who.int/icvp/ValueSet/VaccineManufacturer",
+      "version" : "0.3.0",
+      "status" : "active",
+      "name" : "VaccineManufacturer",
+      "title" : "VaccineManufacturer",
+      "description" : "VaccineManufacturer value set",
+      "systems" : ["http://smart.who.int/icvp/CodeSystem/VaccineManufacturer"]
     },
     {
-      "url" : "http://smart.who.int/icvp/ValueSet/doseNumber",
-      "version" : null,
-      "status" : "draft",
-      "name" : "doseNumber",
-      "title" : "Dose Number",
-      "description" : "Dose Number value set",
-      "systems" : ["http://smart.who.int/icvp/CodeSystem/doseNumber"]
+      "url" : "http://smart.who.int/icvp/ValueSet/preQualVaccines",
+      "version" : "0.3.0",
+      "status" : "active",
+      "name" : "preQualVaccines",
+      "title" : "preQualVaccines",
+      "description" : "preQualVaccines value set",
+      "systems" : ["http://smart.who.int/icvp/CodeSystem/preQualVaccines"]
     },
     {
-      "url" : "http://smart.who.int/icvp/ValueSet/doseNumber",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "doseNumber",
-      "title" : "Dose Number",
-      "description" : "Dose Number value set",
-      "systems" : ["http://smart.who.int/icvp/CodeSystem/doseNumber"],
+      "url" : "http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualProductIds",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "PreQualProductIds",
+      "title" : "WHO PreQualificaiton Vaccine Product Ids",
+      "description" : "WHO PreQualificaiton Vaccine Product Ids",
+      "systems" : [
+        "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"
+      ],
       "uses" : {
       },
-      "StructureDefinition-ModelICVPVaccineDetails.html" : "ICVP - Vaccine Details",
-      "StructureDefinition-ModelVaccineDetails.html" : "DVC - Vaccine Details"
+      "Questionnaire-pPreQual.html" : "Questionnaire[http://smart.who.int/icvp/Questionnaire/pPreQual|0.3.0]"
+    },
+    {
+      "url" : "http://smart.who.int/trust-phw/ValueSet/DVCRelationshipStatus",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "DVCRelationshipStatus",
+      "title" : "Relationship Status for Contact in Patient",
+      "description" : "Relationship Status for Contact in Patient",
+      "systems" : [
+        "http://smart.who.int/trust-phw/CodeSystem/DVCRelationshipStatus"
+      ]
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0001",
+      "version" : "2.9",
+      "status" : "active",
+      "name" : "v2.0001",
+      "title" : "v2 SEX",
+      "description" : "FHIR Value set/code system definition for HL7 v2 table 0001 ( SEX)",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0001"]
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-0001",
@@ -632,26 +610,26 @@
       "sources" : ["2.16.840.1.113883.21.2"],
       "uses" : {
       },
-      "Questionnaire-Questionnaire-ICVPModel.html" : "ICVP Model Questionnaire",
-      "Questionnaire-Questionnaire-DVCModel.html" : "DVC Model Questionnaire"
+      "Questionnaire-pPreQual.html" : "Questionnaire[http://smart.who.int/icvp/Questionnaire/pPreQual|0.3.0]"
     },
     {
-      "url" : "http://terminology.hl7.org/ValueSet/v2-0001",
-      "version" : "2.9",
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0203",
+      "version" : "2.0.0",
       "status" : "active",
-      "name" : "v2.0001",
-      "title" : "v2 SEX",
-      "description" : "FHIR Value set/code system definition for HL7 v2 table 0001 ( SEX)",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0001"]
-    },
-    {
-      "url" : "http://terminology.hl7.org/ValueSet/v2-0001",
-      "version" : "2.9",
-      "status" : "active",
-      "name" : "v2.0001",
-      "title" : "v2 SEX",
-      "description" : "FHIR Value set/code system definition for HL7 v2 table 0001 ( SEX)",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0001"]
+      "name" : "Hl7VSIdentifierType",
+      "title" : "hl7VS-identifierType",
+      "description" : "Concepts specifying types of identififiers, as used in person and organization identification datatypes in HL7 Version 2 standards.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.21.120"],
+      "sources" : ["2.16.840.1.113883.21.120"],
+      "uses" : {
+      },
+      "StructureDefinition-ICVPMin.html" : "ICVP HCERT Payload",
+      "StructureDefinition-pICVP.html" : "pICVP",
+      "StructureDefinition-ICVPSD.html" : "DVC Icvp with Selective Disclosure",
+      "Questionnaire-ICVP.html" : "ICVP Model Questionnaire",
+      "StructureDefinition-ICVPEvent.html" : "ICVP (single)",
+      "StructureDefinition-ICVP.html" : "ICVP"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ActCode",
@@ -663,8 +641,7 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
       "uses" : {
       },
-      "StructureDefinition-DVCComposition.html" : "Digital Vaccination Certificate - Composition",
-      "StructureDefinition-DVCIPSComposition.html" : "DVC Certificate - IPS Composition"
+      "StructureDefinition-Composition-uv-ips-ICVP.html" : "DVC Certificate - IPS Composition for WHO ICVP"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ConfidentialityClassification",
@@ -678,8 +655,18 @@
       "sources" : ["2.16.840.1.113883.1.11.10228"],
       "uses" : {
       },
-      "StructureDefinition-DVCComposition.html" : "Digital Vaccination Certificate - Composition",
-      "StructureDefinition-DVCIPSComposition.html" : "DVC Certificate - IPS Composition"
+      "StructureDefinition-Composition-uv-ips-ICVP.html" : "DVC Certificate - IPS Composition for WHO ICVP"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-Country",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "Country",
+      "title" : "Country",
+      "description" : "Countries of the world. ISO 3166, part 1, alpha-3 set.",
+      "systems" : ["urn:iso:std:iso:3166"],
+      "oids" : ["2.16.840.1.113883.1.11.171"],
+      "sources" : ["2.16.840.1.113883.1.11.171"]
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-Country",
@@ -693,30 +680,7 @@
       "sources" : ["2.16.840.1.113883.1.11.171"],
       "uses" : {
       },
-      "Questionnaire-Questionnaire-ICVPModel.html" : "ICVP Model Questionnaire",
-      "Questionnaire-Questionnaire-DVCModel.html" : "DVC Model Questionnaire"
-    },
-    {
-      "url" : "http://terminology.hl7.org/ValueSet/v3-Country",
-      "version" : "3.0.0",
-      "status" : "active",
-      "name" : "Country",
-      "title" : "Country",
-      "description" : "Countries of the world. ISO 3166, part 1, alpha-3 set.",
-      "systems" : ["urn:iso:std:iso:3166"],
-      "oids" : ["2.16.840.1.113883.1.11.171"],
-      "sources" : ["2.16.840.1.113883.1.11.171"]
-    },
-    {
-      "url" : "http://terminology.hl7.org/ValueSet/v3-Country",
-      "version" : "3.0.0",
-      "status" : "active",
-      "name" : "Country",
-      "title" : "Country",
-      "description" : "Countries of the world. ISO 3166, part 1, alpha-3 set.",
-      "systems" : ["urn:iso:std:iso:3166"],
-      "oids" : ["2.16.840.1.113883.1.11.171"],
-      "sources" : ["2.16.840.1.113883.1.11.171"]
+      "Questionnaire-pPreQual.html" : "Questionnaire[http://smart.who.int/icvp/Questionnaire/pPreQual|0.3.0]"
     }
   ]
 }

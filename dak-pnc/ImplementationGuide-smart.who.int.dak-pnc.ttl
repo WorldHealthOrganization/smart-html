@@ -17,11 +17,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide smart.who.int.dak-pnc</b></p><a name=\"smart.who.int.dak-pnc\"> </a><a name=\"hcsmart.who.int.dak-pnc\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <code>SMARTImplementationGuide</code></p></div><h2>DAKPnc</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/dak-pnc/ImplementationGuide/smart.who.int.dak-pnc</pre><div><p>SMART DAK for postnatal care (PNC)</p>\n</div></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://smart.who.int/dak-pnc/ImplementationGuide/smart.who.int.dak-pnc"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.9.9"] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "DAKPnc"] ; # 
   fhir:title [ fhir:v "SMART DAK PNC"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-07-11T09:29:20+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-17T08:02:27+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "WHO"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "WHO" ] ;
@@ -453,7 +453,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:code ;
-         fhir:v "hl7.fhir.uv.tools.r4#0.5.0"
+         fhir:v "hl7.fhir.uv.tools.r4#0.8.0"
        ]
      ] [
        fhir:extension ( [

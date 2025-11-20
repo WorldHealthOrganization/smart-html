@@ -45,16 +45,16 @@
       "canonical" : "http://smart.who.int/icvp",
       "category" : "base",
       "ci-build" : "http://worldhealthorganization.github.io/smart-icvp",
-      "version-count" : 1,
+      "version-count" : 3,
       "latest" : {
-        "version" : "0.1.0",
-        "date" : "2024-10-07",
-        "path" : "http://smart.who.int/icvp/0.1.0"
+        "version" : "0.3.0",
+        "date" : "2025-10-17",
+        "path" : "http://smart.who.int/icvp/0.3.0"
       },
       "milestone" : {
-        "version" : "0.1.0",
-        "date" : "2024-10-07",
-        "path" : "http://smart.who.int/icvp/0.1.0"
+        "version" : "0.3.0",
+        "date" : "2025-10-17",
+        "path" : "http://smart.who.int/icvp/0.3.0"
       }
     },
     {
@@ -64,16 +64,16 @@
       "canonical" : "http://smart.who.int/trust",
       "category" : "base",
       "ci-build" : "http://worldhealthorganization.github.io/smart-trust",
-      "version-count" : 4,
+      "version-count" : 6,
       "latest" : {
-        "version" : "1.1.5",
-        "date" : "2024-12-20",
-        "path" : "http://smart.who.int/trust/v1.1.5"
+        "version" : "1.3.0",
+        "date" : "2025-10-27",
+        "path" : "http://smart.who.int/trust/v1.3.0"
       },
       "milestone" : {
-        "version" : "1.1.5",
-        "date" : "2024-12-20",
-        "path" : "http://smart.who.int/trust/v1.1.5"
+        "version" : "1.3.0",
+        "date" : "2025-10-27",
+        "path" : "http://smart.who.int/trust/v1.3.0"
       }
     },
     {
@@ -273,16 +273,16 @@
       "canonical" : "http://smart.who.int/pcmt-vaxprequal",
       "category" : "base",
       "ci-build" : "http://worldhealthorganization.github.io/smart-pcmt-vaxprequal",
-      "version-count" : 1,
+      "version-count" : 2,
       "latest" : {
-        "version" : "0.1.0",
-        "date" : "2025-07-01",
-        "path" : "http://smart.who.int/pcmt-vaxprequal/v0.1.0"
+        "version" : "0.2.0",
+        "date" : "2025-09-16",
+        "path" : "http://smart.who.int/pcmt-vaxprequal/v0.2.0"
       },
       "milestone" : {
-        "version" : "0.1.0",
-        "date" : "2025-07-01",
-        "path" : "http://smart.who.int/pcmt-vaxprequal/v0.1.0"
+        "version" : "0.2.0",
+        "date" : "2025-09-16",
+        "path" : "http://smart.who.int/pcmt-vaxprequal/v0.2.0"
       }
     },
     {
@@ -330,16 +330,35 @@
       "canonical" : "http://smart.who.int/dak-pnc",
       "category" : "SMART (WHO)",
       "ci-build" : "http://worldhealthorganization.github.io/smart-dak-pnc",
-      "version-count" : 1,
+      "version-count" : 2,
       "latest" : {
-        "version" : "0.9.9",
-        "date" : "2025-07-11",
-        "path" : "http://smart.who.int/dak-pnc/v0.9.9"
+        "version" : "1.0.0",
+        "date" : "2025-09-17",
+        "path" : "http://smart.who.int/dak-pnc/v1.0.0"
       },
       "milestone" : {
-        "version" : "0.9.9",
-        "date" : "2025-07-11",
-        "path" : "http://smart.who.int/dak-pnc/v0.9.9"
+        "version" : "1.0.0",
+        "date" : "2025-09-17",
+        "path" : "http://smart.who.int/dak-pnc/v1.0.0"
+      }
+    },
+    {
+      "path" : "trust-phw/package-list.json",
+      "package-id" : "smart.who.int.trust-phw",
+      "title" : "GDHCN Trust Network - Personal Health Wallet",
+      "canonical" : "http://smart.who.int/trust-phw",
+      "category" : "base",
+      "ci-build" : "http://worldhealthorganization.github.io/smart-trust-phw",
+      "version-count" : 1,
+      "latest" : {
+        "version" : "0.1.0",
+        "date" : "2025-10-07",
+        "path" : "http://smart.who.int/trust-phw/v0.1.0"
+      },
+      "milestone" : {
+        "version" : "0.1.0",
+        "date" : "2025-10-07",
+        "path" : "http://smart.who.int/trust-phw/v0.1.0"
       }
     }
   ]

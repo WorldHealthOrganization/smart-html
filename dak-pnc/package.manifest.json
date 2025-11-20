@@ -1,6 +1,6 @@
 {
-  "version" : "0.9.9",
+  "version" : "1.0.0",
   "fhirVersion" : ["4.0.1"],
-  "date" : "20250711092920",
+  "date" : "20250917080227",
   "name" : "smart.who.int.dak-pnc"
 }

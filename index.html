@@ -88,6 +88,35 @@
     <meta property="og:title" content="SMART Guidelines" />
     <meta property="og:description" content="As a landmark effort to accelerating the digitization of global public health resources, digitalizing the countries increasingly invest in digital technologies for health, WHO  need to build support for digital health across its core functions. To date, there is no documentation of procedures for systematically translating WHO’s recommendations into digital health systems in a software-neutral manner. " />
     <style type="text/css" media="all">
+/*
+ * FONT-FACE DEFINITIONS TO FORCE SOLID (900) AND REGULAR (400) STYLES
+ * This should ensure the glyphs load correctly when referenced in ::before
+ */
+@font-face {
+  font-family: 'Font Awesome 5 Solid';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.eot");
+  src: url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"),
+       url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.woff2") format("woff2"),
+       url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.woff") format("woff"),
+       url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.ttf") format("truetype"),
+       url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.svg#fontawesome") format("svg");
+}
+
+@font-face {
+  font-family: 'Font Awesome 5 Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.eot");
+  src: url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"),
+       url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.woff2") format("woff2"),
+       url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.woff") format("woff"),
+       url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.ttf") format("truetype"),
+       url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.svg#fontawesome") format("svg");
+}
       .row-flex {
       display: flex;
       flex-direction: row
@@ -117,7 +146,7 @@
       .qa-details__content .sf-accordion__content p a {
       outline: 0;
       color: var(--l2-neutralForegroundRest);
-      border-bottom: 1px solid var(--l2-neutralForegroundRest);
+      /* border-bottom: 1px solid var(--l2-neutralForegroundRest);*/
       text-decoration: none
       }
 
@@ -125,7 +154,7 @@
       outline: 0;
       color: var(--l2-accentFillHover);
       background-color: var(--l2-neutralFillStealthHover);
-      border-bottom: 3px solid var(--l2-neutralFocus);
+      /* border-bottom: 3px solid var(--l2-neutralFocus);*/
       text-decoration: none
       }
 
@@ -133,7 +162,7 @@
       outline: 0;
       color: var(--l2-neutralForegroundRest);
       background-color: var(--l2-neutralFillStealthHover);
-      border-bottom: 3px solid var(--l2-neutralFocus);
+      /* border-bottom: 3px solid var(--l2-neutralFocus);*/
       text-decoration: none
       }
 
@@ -200,7 +229,7 @@
       .alphabetical-nav--list .alphabetical-nav--list-item a,
       .alphabetical-nav--list a,
       .nav--list a {
-      text-decoration: none !important
+      text-decoration: none !important;
       }
 
       .sf-events-wrapper .vertical-list-item:focus,
@@ -249,6 +278,313 @@
       .mdc-card--background a:visited .item--title {
       color: #fff !important;
       }
+           
+ /* --- NEW TABLE STYLES START --- */
+
+/* 1. Base Table Container & Modern Look */
+.smart-guidelines-table {
+    width: 100%; 
+    border-collapse: collapse; 
+    margin: 20px 0; 
+    /* Add subtle shadow and rounded corners for a modern "lifted" feel */
+    border: none; /* Remove default border to rely on shadow/background */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    overflow: hidden; /* Important for containing rounded corners */
+}
+
+/* 2. Header Styling (Deep Blue) */
+.smart-guidelines-table thead tr {
+    background-color: #007eb4; /* Deep WHO Blue */
+    color: #ffffff; /* White text for contrast */
+}
+
+.smart-guidelines-table th {
+    padding: 16px 24px; /* More vertical padding for height */
+    text-align: left; 
+    border-bottom: none; /* Remove heavy border */
+    font-weight: 600; /* Slightly lighter than bold 700 */
+    /*text-transform: uppercase;*/
+    font-size: 1rem;
+}
+
+/* 3. Table Data Cells */
+.smart-guidelines-table td {
+    padding: 12px 12px; /* Consistent padding */
+    border-bottom: 1px solid #e5e7eb; /* Light gray divider (from Tailwind gray-200) */
+    vertical-align: middle; 
+}
+
+/* 4. Alternating Rows and Hover */
+.smart-guidelines-table tbody tr {
+    transition: background-color 0.15s ease;
+}
+
+.smart-guidelines-table tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* Pure white */
+}
+
+.smart-guidelines-table tbody tr:nth-child(even) {
+    background-color: #f9fafb; /* Very light gray (from Tailwind gray-50) */
+}
+
+/* Add a hover effect for interactivity (light blue) - FIXED COMMENT BLOCK /
+.smart-guidelines-table tbody tr:hover {
+    background-color: #eff6ff !important; /* Light blue on hover (from Tailwind blue-50) /
+} */
+
+/* 5. Column Widths (Adjusted for 5 columns) */
+.smart-guidelines-table td:nth-child(1) { /* Health Domain + Image */
+    width: 10%; 
+    font-weight: 500;
+} 
+
+.smart-guidelines-table td:nth-child(2) { /* Publication Date */
+    width: 10%; 
+
+} 
+
+.smart-guidelines-table td:nth-child(3) { /* L2: DAK Kits */
+    width: 20%; 
+} 
+      
+.smart-guidelines-table td:nth-child(4) { /* L2: DAK Components */
+    width: 30%; 
+} 
+
+.smart-guidelines-table td:nth-child(5) { /* L3: FHIR Implementation Guides */
+    width: 20%; 
+} 
+
+/* 6. Link and List Styling with ICONS */
+.smart-guidelines-table ul {
+    margin: 0;
+    padding-left: 0; 
+    list-style-type: none; 
+    text-decoration: none !important;
+}
+
+.smart-guidelines-table li {
+    margin-bottom: 8px; 
+    text-decoration: none !important;
+}
+
+.smart-guidelines-table td a,
+.smart-guidelines-table ul li a {
+    color: #1e40af !important; 
+    text-decoration: none !important; /* This applies to all links in the table */
+    border-bottom: none !important; 
+    transition: color 0.2s;
+    display: inline-block; 
+}
+
+/* NEW RULE ADDED FOR HIGH SPECIFICITY ON LIST ITEMS */
+.smart-guidelines-table td a,
+.smart-guidelines-table ul li a {
+    text-decoration: none !important;
+} 
+
+/* NEW FIX: Specifically target links inside UL/LI within the smart-guidelines-table */
+.smart-guidelines-table td ul li a {
+    text-decoration: none !important;
+    border-bottom: none !important;
+} 
+
+.smart-guidelines-table a:hover {
+    color: #1d4ed8 !important; 
+    text-decoration: underline !important; 
+    border-bottom: none !important; 
+    background-color: transparent !important;
+}
+
+
+
+/* --- ICON GENERATION RULES ADDED BELOW --- */
+
+/* Base style for all link icons */
+.smart-guidelines-table a::before {
+    margin-right: 8px; /* Spacing between icon and link text */
+    font-size: 1.1em;
+    opacity: 0.8;
+}
+
+/* NEW: Icon for GitHub links (using Font Awesome) */
+.smart-guidelines-table li.github-link::before {
+    /* CRITICAL FA PROPERTIES FOR SOLID ICONS */
+    font-family: 'Font Awesome 5 Brands'; 
+    font-weight: 900; 
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block; /* Helps with positioning */
+    
+    /* ICON AND STYLING */
+    content: "\f09b"; /* fa-fire Unicode */
+    color: #181717; 
+    margin-right: 8px; 
+}
+
+.smart-guidelines-table li.fhir-link::before {
+    /* CRITICAL FA PROPERTIES FOR SOLID ICONS */
+    font-family: 'Font Awesome 5 Solid'; 
+    font-weight: 900; 
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block; /* Helps with positioning */
+    
+    /* ICON AND STYLING */
+    content: "\f06d"; /* fa-fire Unicode */
+    color: #181717; 
+    margin-right: 8px; 
+}
+
+.smart-guidelines-table li.xls-link::before {
+    /* CRITICAL FA PROPERTIES FOR REGULAR ICONS */
+    font-family: 'Font Awesome 5 Regular'; 
+    font-weight: 400; /* NOTE: This is the difference for Regular icons */
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    
+    /* ICON AND STYLING */
+    content: "\f1c3"; /* fa-file-excel Unicode */
+    color: #1d6f42;
+    margin-right: 8px; 
+}
+
+/* New CSS class for a PDF icon (fa-file-pdf - Solid) */
+
+.smart-guidelines-table td.pdf-link::before {
+    /* CRITICAL FA PROPERTIES FOR SOLID ICONS */
+    font-family: 'Font Awesome 5 Solid'; 
+    font-weight: 900; 
+    
+    /* ICON AND STYLING */
+    content: "\f1c1"; /* Unicode for fa-file-pdf */
+    color: #b30b00; /* Standard PDF red color */
+    margin-right: 8px; 
+    vertical-align: top;
+    margin-top: 3px;
+    
+    /* Ensure proper rendering */
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+}
+
+
+.smart-guidelines-table li.pdf-link::before {
+    /* CRITICAL FA PROPERTIES FOR SOLID ICONS */
+    font-family: 'Font Awesome 5 Solid'; 
+    font-weight: 900; 
+    
+    /* ICON AND STYLING */
+    content: "\f1c1"; /* Unicode for fa-file-pdf */
+    color: #b30b00; /* Standard PDF red color */
+    margin-right: 8px; 
+    vertical-align: top;
+    margin-top: 3px;
+    
+    /* Ensure proper rendering */
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+}
+
+.bottom-footer-bar {
+    text-align: center; /* Center the content */
+    padding: 10px 20px;
+    background-color: #274375; /* Example: a dark background color */
+    color: white; /* Example: white text */
+    font-size: 0.8rem;
+}
+
+.bottom-footer-bar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+/* Ultimate Specificity Fix for List Item Underlines */
+.smart-guidelines-table tbody tr td ul li a,
+.smart-guidelines-table td ul li a:visited,
+.smart-guidelines-table tbody tr td ul li a:hover,
+.smart-guidelines-table tbody tr td ul li a:focus {
+    text-decoration: none !important;
+    border-bottom: none !important; /* Ensure border-bottom isn't the culprit */
+    background-color: transparent !important; /* Prevents background on hover/focus from other rules */
+}
+
+/* --- ULTIMATE OVERRIDE USING CUSTOM LIST ITEM CLASSES --- */
+
+/* 1. Target XLS links across all states */
+.smart-guidelines-table li.xls-link a,
+.smart-guidelines-table li.xls-link a:hover,
+.smart-guidelines-table li.xls-link a:focus {
+    text-decoration: none !important;
+    border-bottom: none !important; 
+    background-color: transparent !important;
+}
+
+/* 2. Target FHIR links across all states */
+.smart-guidelines-table li.fhir-link a,
+.smart-guidelines-table li.fhir-link a:hover,
+.smart-guidelines-table li.fhir-link a:focus {
+    text-decoration: none !important;
+    border-bottom: none !important; 
+    background-color: transparent !important;
+}
+
+/* 3. Target GitHub links across all states */
+.smart-guidelines-table li.github-link a,
+.smart-guidelines-table li.github-link a:hover,
+.smart-guidelines-table li.github-link a:focus {
+    text-decoration: none !important;
+    border-bottom: none !important; 
+    background-color: transparent !important;
+}
+
+/* 4. Target PDF links across all states (used for DDCC items) */
+.smart-guidelines-table li.pdf-link a,
+.smart-guidelines-table li.pdf-link a:hover,
+.smart-guidelines-table li.pdf-link a:focus {
+    text-decoration: none !important;
+    border-bottom: none !important; 
+    background-color: transparent !important;
+}
+
+/* 5. Catch-all for any other link inside a table list */
+.smart-guidelines-table td ul li a,
+.smart-guidelines-table td ul li a:focus {
+    text-decoration: none !important;
+    border-bottom: none !important; 
+    background-color: transparent !important;
+}
+
+.smart-guidelines-table td ul li a:hover,
+.smart-guidelines-table td ul li a:focus,
+.smart-guidelines-table li.fhir-link a:hover,
+.smart-guidelines-table li.fhir-link a:focus,
+.smart-guidelines-table li.pdf-link a:hover,
+.smart-guidelines-table li.pdf-link a:focus,
+.smart-guidelines-table li.xls-link a:hover,
+.smart-guidelines-table li.xls-link a:focus,
+.smart-guidelines-table li.github-link a:hover,
+.smart-guidelines-table li.github-link a:focus {
+text-decoration: underline !important;
+}
+
+/* --- NEW TABLE STYLES END --- */
+
     </style>
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="Generator" content="Sitefinity 14.3.8028.0 DX" />
@@ -430,148 +766,307 @@
              <div id="PageContent_TD76DC2B8005_Col00" class="sf_colsIn col-md-12" data-sf-element="Column 1" data-placeholder-label="Main content">
                <div id="PageContent_C075_Col00" class="sf_colsIn container" data-sf-element="Container" data-placeholder-label="Container">
                  <div class="row" data-sf-element="Row">
-                   <div id="PageContent_C049_Col00" class="sf_colsIn col-md-8" data-sf-element="Column 1" data-placeholder-label="Column 1">
+                   <div id="PageContent_C049_Col00" class="sf_colsIn col-md-12" data-sf-element="Column 1" data-placeholder-label="Column 1">
                      <div class="sf-content-block content-block">
                        <div>
-			 <h2>SMART Guidelines Publications</h2>
-			 <p>WHO envisions a future where everyone in the world benefits fully and immediately from clinical, public health, and data-use recommendations. SMART Guidelines are a new approach to systematize and accelerate the consistent application of recommended, life-saving interventions in the digital age.</p>
-
-			 <h3>Why is this important?</h3>
-
-			 <p>WHO guidelines articulate and endorse rigorously tested recommendations for health interventions to be adopted within country programs. When applied correctly and consistently, guideline recommendations save lives.</p>
-
-			 <p>Countries are investing heavily in digital systems to accelerate the adoption of these recommended clinical, public health, and data interventions. The design, functionality, and content of digital tools and systems — that collect, exchange, and use patient data to drive health practices and coordination of care within health systems — can ensure adherence to national guidelines and lead to improved quality of care.</p>
-
-			 <p>To implement WHO recommendations in country settings, governments and technology partners must interpret and then adapt the content in line with local policies, procedures, and digital tools. The process of translating and incorporating recommendations into digital systems can be challenging, time-consuming, and prone to error. There is currently a lack of technical documentation and standards for accurate incorporation, resulting in digital implementations inconsistent with recommended data and health practices.​ Member States and their implementation partners need specifications for digitizing guidelines and making health investments consistent with WHO data, interoperability, and guideline recommendations.</p>
-
-                   
-       <h3>What are SMART Guidelines?</h3>
-
-       <p>SMART Guidelines — <strong>S</strong>tandards-based, <strong>M</strong>achine-readable, <strong>A</strong>daptive, <strong>R</strong>equirements-based, and <strong>T</strong>estable - are a comprehensive set of reusable digital health components (e.g., interoperability standards, code libraries, algorithms, technical and operational specifications) that transform the guideline adaptation and implementation process to preserve fidelity and accelerate uptake. SMART Guidelines provide a five-step pathway to advance the adoption of best clinical and data practices, even if a country is not yet fully digital. </p>
-
-       <img src="https://smart.who.int/assets/img/SMART%20Guidelines%20Layers.jpg" alt="SMART Guidelines layers visual">
-
-       <p>More information available here: <a href="https://www.who.int/teams/digital-health-and-innovation/smart-guidelines">https://www.who.int/teams/digital-health-and-innovation/smart-guidelines</a></p>
-			 <h3>Published SMART Guidelines</h3>
-       <table>
+			 <h2>WHO SMART Guideline Publications</h2>
+      <p>The table below provides an overview of all published WHO SMART Guidelines.<br><br>
+        For more information on the WHO SMART Guidelines initiative, <a href="https://www.who.int/teams/digital-health-and-innovation/smart-guidelines" target="_blank">visit here</a>.<br>
+          For help and support, write to SMART@who.int.</p>
+      <p style="padding-bottom: 12px;">Last updated:&nbsp;<span style="font-weight: 500;">November 2025</span></p>
+      <table class="smart-guidelines-table">
         <thead>
           <tr>
-            <th></th>
-            <th>L2: Digital Adaptation Kits</th>
-            <th>L3 : FHIR Implementation Guides</th>
+            <th>Health domain</th>
+            <th>Publication date</th>
+            <th>Digital Adaptation Kit<br>(DAK, L2)</th>
+            <th>DAK components<br>(L2)</th> 
+            <th>FHIR Implementation Guide<br>(L3)</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Antenatal Care</td>
-            <td><ul> 
-              <li><a href="https://www.who.int/publications/i/item/9789240020306">Digital Adaptation Kit for Antenatal Care: Operational requirements for implementing WHO recommendations in digital systems</a></li>
-              <li><a href="https://apps.who.int/iris/bitstream/handle/10665/339740/WHO-SRH-21.1-eng.xlsx">Core data dictionary</a></li> 
-              <li><a href="https://apps.who.int/iris/bitstream/handle/10665/339741/WHO-SRH-21.2-eng.xlsx">Decision support logic</a></li>
-              <li><a href="https://apps.who.int/iris/bitstream/handle/10665/339742/WHO-SRH-21.3-eng.xlsx">Indicator table</a></li> 
-              <li><a href="https://apps.who.int/iris/bitstream/handle/10665/339744/WHO-SRH-21.4-eng.xlsx">Functional and non-functional requirements</a></li>
-            </ul></td>
-            <td><a href="https://build.fhir.org/ig/WorldHealthOrganization/smart-anc/">WHO Antenatal Care Guideline Implementation Guide</a></td>
+            <td>Antenatal Care
+                  <div style="margin-top: 10px; text-align: center;">
+                    <img src="https://iris.who.int/server/api/core/bitstreams/76be19d8-544d-42db-b0b8-9884c5f69fde/content" 
+                         style="width: 100px; height: auto; border: 1px solid #ccc; border-radius: 4px; display: block; margin: 0 auto;"/>
+                  </div>  
+            </td>
+            <td>February 2021</td>
+            <td class="pdf-link">&nbsp;<a href="https://www.who.int/publications/i/item/9789240020306" target="_blank">Digital Adaptation Kit</a>
+            </td>
+            <td>
+              <ul> <li class="xls-link">&nbsp;<a href="https://apps.who.int/iris/bitstream/handle/10665/339740/WHO-SRH-21.1-eng.xlsx" target="_blank">Core data
+                    dictionary</a></li>
+                <li class="xls-link">&nbsp;<a href="https://apps.who.int/iris/bitstream/handle/10665/339741/WHO-SRH-21.2-eng.xlsx" target="_blank">Decision support
+                    logic</a></li>
+                <li class="xls-link">&nbsp;<a href="https://apps.who.int/iris/bitstream/handle/10665/339742/WHO-SRH-21.3-eng.xlsx" target="_blank">Indicator
+                    table</a></li>
+                <li class="xls-link">&nbsp;<a href="https://apps.who.int/iris/bitstream/handle/10665/339744/WHO-SRH-21.4-eng.xlsx" target="_blank">Functional and
+                    non-functional requirements</a></li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li class="fhir-link">&nbsp;<a href="https://build.fhir.org/ig/WorldHealthOrganization/smart-anc/" target="_blank">FHIR Implementation Guide</a><li>
+                <li class="github-link">&nbsp;<a href="https://github.com/WorldHealthOrganization/smart-anc" target="_blank">Github</a></li>
+              <ul>
+            </td>
           </tr>
           <tr>
-            <td>Family Planning</td>
-            <td><ul> 
-              <li><a href="https://www.who.int/publications/i/item/9789240029743">Digital Adaptation Kit for Family Planning: Operational requirements for implementing WHO recommendations in digital systems</a></li>
-              <li><a href="https://apps.who.int/iris/bitstream/handle/10665/341998/WHO-SRH-21.13-eng.xlsx">Core data dictionary</a></li> 
-              <li><a href="https://apps.who.int/iris/bitstream/handle/10665/341999/WHO-SRH-21.14-eng.xlsx">Decision support logic</a></li>
-              <li><a href="https://apps.who.int/iris/bitstream/handle/10665/342000/WHO-SRH-21.15-eng.xlsx">Indicator table</a></li> 
-              <li><a href="https://apps.who.int/iris/bitstream/handle/10665/342001/WHO-SRH-21.16-eng.xlsx">Functional and non-functional requirements</a></li>
-            </ul></td>
-            <td>Coming soon!</td>
+            <td>Family Planning
+                  <div style="margin-top: 10px; text-align: center;">
+                    <img src="https://iris.who.int/server/api/core/bitstreams/bb0c1741-8f81-442f-8107-5339dde4fa61/content" target="_blank" 
+                         style="width: 100px; height: auto; border: 1px solid #ccc; border-radius: 4px; display: block; margin: 0 auto;"/>
+                  </div>  
+            </td>
+            <td>June 2021</td>
+            <td class="pdf-link">&nbsp;<a href="https://www.who.int/publications/i/item/9789240029743">Digital Adaptation Kit</a>
+            </td>
+            <td>
+              <ul> <li class="xls-link">&nbsp;<a href="https://apps.who.int/iris/bitstream/handle/10665/341998/WHO-SRH-21.13-eng.xlsx" target="_blank">Core data
+                    dictionary</a></li>
+                <li class="xls-link">&nbsp;<a href="https://apps.who.int/iris/bitstream/handle/10665/341999/WHO-SRH-21.14-eng.xlsx" target="_blank">Decision support
+                    logic</a></li>
+                <li class="xls-link">&nbsp;<a href="https://apps.who.int/iris/bitstream/handle/10665/342000/WHO-SRH-21.15-eng.xlsx" target="_blank">Indicator
+                    table</a></li>
+                <li class="xls-link">&nbsp;<a href="https://apps.who.int/iris/bitstream/handle/10665/342001/WHO-SRH-21.16-eng.xlsx" target="_blank">Functional and
+                    non-functional requirements</a></li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li class="fhir-link">&nbsp;<a href="https://build.fhir.org/ig/WorldHealthOrganization/smart-fp/" target="_blank">FHIR Implementation Guide</a><li>
+                <li class="github-link">&nbsp;<a href="https://github.com/WorldHealthOrganization/smart-fp" target="_blank">Github</a></li>
+              <ul>
+            </td>
           </tr>
           <tr>
-            <td>HIV, second edition</td>
-            <td><ul> 
-              <li><a href="https://www.who.int/publications/i/item/9789240085138">Digital Adaptation Kit for HIV, second edition: Operational requirements for implementing WHO recommendations in digital systems</a></li>
-              <li><a href="https://iris.who.int/bitstream/handle/10665/375056/WHO-UCN-HHS-SIA-2023.27-eng.xlsx">Core data dictionary</a></li> 
-              <li><a href="https://iris.who.int/bitstream/handle/10665/375057/WHO-UCN-HHS-SIA-2023.28-eng.xlsx">Decision support logic</a></li>
-              <li><a href="https://iris.who.int/bitstream/handle/10665/375058/WHO-UCN-HHS-SIA-2023.29-eng.xlsx">Indicator table</a></li> 
-              <li><a href="https://iris.who.int/bitstream/handle/10665/375059/WHO-UCN-HHS-SIA-2023.30-eng.xlsx">Functional and non-functional requirements</a></li>
-            </ul></td>
-            <td>Coming soon!</td>
+            <td>Postnatal care
+                  <div style="margin-top: 10px; text-align: center;">
+                    <img src="https://iris.who.int/server/api/core/bitstreams/3b129d6e-7675-46f6-93e4-aedf29ecf6e4/content" target="_blank" 
+                         style="width: 100px; height: auto; border: 1px solid #ccc; border-radius: 4px; display: block; margin: 0 auto;"/>
+                  </div>  
+            </td>
+            <td>July 2025</td>
+            <td class="pdf-link">&nbsp;<a href="https://www.who.int/publications/i/item/9789240090347">Digital Adaptation Kit</a>
+            </td>
+            <td>
+              <ul> <li class="xls-link">&nbsp;<a href="https://smart.who.int/dak-pnc/dictionary.html" target="_blank">Core data
+                    dictionary</a></li>
+                <li class="xls-link">&nbsp;<a href="https://smart.who.int/dak-pnc/decision-logic.html" target="_blank">Decision support
+                    logic</a></li>
+                <li class="xls-link">&nbsp;<a href="https://smart.who.int/dak-pnc/indicators.html" target="_blank">Indicator
+                    table</a></li>
+                <li class="xls-link">&nbsp;<a href="https://smart.who.int/dak-pnc/system-requirements.html" target="_blank">Functional and
+                    non-functional requirements</a></li>
+              </ul>
+            </td>
+            <td>
+             Not available
+            </td>
           </tr>
           <tr>
-            <td>Digital Documentation of COVID-19 Certificates: Vaccination status (DDCC:VS)</td>
-            <td><ul> 
-              <li><a href="https://www.who.int/publications/i/item/WHO-2019-nCoV-Digital_certificates-vaccination-2021.1">Digital documentation of COVID-19 certificates: vaccination status: technical specifications and implementation guidance, 27 August 2021</a></li>
-              <li><a href="https://www.who.int/publications-detail-redirect/WHO-2019-nCoV-Digital_certificates-vaccination-data_dictionary-2021.1">Core data dictionary</a></li>
-              <li><a href="https://www.who.int/publications-detail-redirect/WHO-2019-nCoV-Digital_certificates-vaccination-technical_briefing-2021.1">Technical briefing, 27 August 2021</a></li>
-            </ul></td>
-            <td><a href="https://smart.who.int/ddcc/">WHO Digital Documentation of COVID-19 Certificates (DDCC)</a></td>
+            <td>Birth defects surveillance
+                  <div style="margin-top: 10px; text-align: center;">
+                    <img src="https://iris.who.int/server/api/core/bitstreams/8ec96d26-8cc3-441a-945d-09f134f62802/content" target="_blank" 
+                         style="width: 100px; height: auto; border: 1px solid #ccc; border-radius: 4px; display: block; margin: 0 auto;"/>
+                  </div>  
+            </td>
+            <td>June 2025</td>
+            <td class="pdf-link">&nbsp;<a href="https://www.who.int/publications/i/item/9789240110250">Digital Adaptation Kit</a>
+            </td>
+            <td>
+              <ul> <li class="xls-link">&nbsp;<a href="https://smart.who.int/dak-bds/dictionary.html" target="_blank">Core data
+                    dictionary</a></li>
+                <li class="xls-link">&nbsp;<a href="https://smart.who.int/dak-bds/indicators.html" target="_blank">Indicators and performance metrics</a></li>
+                <li class="xls-link">&nbsp;<a href="https://smart.who.int/dak-bds/system-requirements.html" target="_blank">Functional and
+                    non-functional requirements</a></li>
+              </ul>
+            </td>
+            <td>Not available</td>
           </tr>
           <tr>
-            <td>Digital Documentation of COVID-19 Certificates: Test results (DDCC:TR)</td>
-            <td><ul> 
-              <li><a href="https://www.who.int/publications/i/item/WHO-2019-nCoV-Digital_certificates_diagnostic_test_results-2022.1">Digital documentation of COVID-19 certificates: test result: technical specifications and implementation guidance, 31 March 2022</a></li>
-              <li><a href="https://www.who.int/publications/i/item/WHO-2019-nCoV-Digital_certificates-diagnostic_test_results-data_dictionary-2022.1">Core data dictionary</a></li>
-            </ul></td>
-            <td><a href="https://smart.who.int/ddcc/">WHO Digital Documentation of COVID-19 Certificates (DDCC)</a></td>
+            <td>HIV
+                  <div style="margin-top: 10px; text-align: center;">
+                    <img src="https://iris.who.int/server/api/core/bitstreams/a3f36420-7690-46dd-a3d6-ac1efbae3576/content" 
+                         style="width: 100px; height: auto; border: 1px solid #ccc; border-radius: 4px; display: block; margin: 0 auto;"/>
+                  </div>  
+            </td>
+            <td>February 2024</td>
+            <td class="pdf-link">&nbsp;<a href="https://www.who.int/publications/i/item/9789240085138" target="_blank">Digital Adaptation Kit</a>
+            </td>
+            <td>
+              <ul> <li class="xls-link">&nbsp;<a href="https://iris.who.int/bitstream/handle/10665/375056/WHO-UCN-HHS-SIA-2023.27-eng.xlsx" target="_blank">Core data
+                    dictionary</a></li>
+                <li class="xls-link">&nbsp;<a href="https://iris.who.int/bitstream/handle/10665/375057/WHO-UCN-HHS-SIA-2023.28-eng.xlsx" target="_blank">Decision support
+                    logic</a></li>
+                <li class="xls-link">&nbsp;<a href="https://iris.who.int/bitstream/handle/10665/375058/WHO-UCN-HHS-SIA-2023.29-eng.xlsx" target="_blank">Indicator
+                    table</a></li>
+                <li class="xls-link">&nbsp;<a href="https://iris.who.int/bitstream/handle/10665/375059/WHO-UCN-HHS-SIA-2023.30-eng.xlsx" target="_blank">Functional and
+                    non-functional requirements</a></li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li class="fhir-link">&nbsp;<a href="https://smart.who.int/hiv/" target="_blank">FHIR Implementation Guide</a><li>
+                <li class="github-link">&nbsp;<a href="https://github.com/WorldHealthOrganization/smart-hiv" target="_blank">Github</a></li>
+              <ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Tuberculosis
+                  <div style="margin-top: 10px; text-align: center;">
+                    <img src="https://iris.who.int/server/api/core/bitstreams/2d8741bb-f17f-4a7d-889e-ef1853179c3b/content" target="_blank" 
+                         style="width: 100px; height: auto; border: 1px solid #ccc; border-radius: 4px; display: block; margin: 0 auto;"/>
+                  </div> 
+            </td>
+            <td>May 2024</td>
+            <td class="pdf-link">&nbsp;<a href="https://www.who.int/publications/i/item/9789240086616">Digital Adaptation Kit</a></td>
+            <td>
+              <ul> <li class="xls-link">&nbsp;<a href="https://smart.who.int/dak-tb/dictionary.html" target="_blank">Core data
+                    dictionary</a></li>
+                <li class="xls-link">&nbsp;<a href="https://smart.who.int/dak-tb/decision-logic.html" target="_blank">Decision support
+                    logic</a></li>
+                <li class="xls-link">&nbsp;<a href="https://smart.who.int/dak-tb/indicators.html" target="_blank">Indicator
+                    table</a></li>
+                <li class="xls-link">&nbsp;<a href="https://smart.who.int/dak-tb/system-requirements.html" target="_blank">Functional and
+                    non-functional requirements</a></li>
+              </ul>
+            </td>
+            <td>
+             Not available
+            </td>
+          </tr>
+          <tr>
+            <td>Child health (0-59 months) in humanitarian emergencies
+                  <div style="margin-top: 10px; text-align: center;">
+                    <img src="https://iris.who.int/server/api/core/bitstreams/4c174817-34ea-457f-88ee-ebc9d6f90911/content" target="_blank"
+                         style="width: 100px; height: auto; border: 1px solid #ccc; border-radius: 4px; display: block; margin: 0 auto;"/>
+                  </div> 
+            </td>
+            <td>May 2024</td>
+            <td class="pdf-link">&nbsp;<a href="https://www.who.int/publications/i/item/9789240089907" target="_blank">Digital Adaptation Kit</a></td>
+            <td>
+              <ul> <li class="xls-link">&nbsp;<a href="https://smart.who.int/dak-ccc/dictionary" target="_blank">Core data
+                    dictionary</a></li>
+                <li class="xls-link">&nbsp;<a href="https://smart.who.int/dak-ccc/decision-logic" target="_blank">Decision support
+                    logic</a></li>
+                <li class="xls-link">&nbsp;<a href="https://smart.who.int/dak-ccc/indicators" target="_blank">Indicator
+                    table</a></li>
+                <li class="xls-link">&nbsp;<a href="https://smart.who.int/dak-ccc/system-requirements" target="_blank">Functional and
+                    non-functional requirements</a></li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li class="github-link">&nbsp;<a href="https://github.com/WorldHealthOrganization/smart-emcare" target="_blank">Github</a></li>
+              <ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Immunizations
+                  <div style="margin-top: 10px; text-align: center;">
+                    <img src="https://iris.who.int/server/api/core/bitstreams/02d65009-2da0-4091-97eb-5a9d182aa9fb/content" 
+                         style="width: 100px; height: auto; border: 1px solid #ccc; border-radius: 4px; display: block; margin: 0 auto;"/>
+                  </div>  
+            </td>
+            <td>January 2025</td>
+            <td class="pdf-link">&nbsp;<a href="https://www.who.int/publications/i/item/9789240099456">Digital Adaptation Kit</a></td>
+            <td>
+              <ul> <li class="xls-link">&nbsp;<a href="https://smart.who.int/dak-immz/dictionary.html" target="_blank">Core data
+                    dictionary</a></li>
+                <li class="xls-link">&nbsp;<a href="https://smart.who.int/dak-immz/decision-logic.html" target="_blank">Decision support and scheduling logic</a></li>
+                <li class="xls-link">&nbsp;<a href="https://smart.who.int/dak-immz/indicators.html" target="_blank">Indicator
+                    table</a></li>
+                <li class="xls-link">&nbsp;<a href="https://smart.who.int/dak-immz/system-requirements.html" target="_blank">Functional and
+                    non-functional requirements</a></li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li class="github-link">&nbsp;<a href="https://github.com/WorldHealthOrganization/smart-immunizations" target="_blank">Github</a></li>
+              <ul></td>
           </tr>
           <tr>
             <td>Global Digital Health Certification Network (GDHCN)</td>
-            <td>Trust for the
-              <a href="https://www.who.int/initiatives/global-digital-health-certification-network">Global Digital Health Certification Network (GDHCN)</a></td>
-            <td><a href="https://smart.who.int/trust">WHO SMART Trust</a></td>
+            <td>February 2021</td>
+            <td>
+              <a href="https://www.who.int/initiatives/global-digital-health-certification-network" target="_blank">GDHCN website</a>
+            </td>
+            <td>Not available</td> <td>
+              <ul>
+                <li class="fhir-link">&nbsp;<a href="https://smart.who.int/trust" target="_blank">FHIR Implementation Guide</a></td>
+                </li>
+              </ul>
+            </td>
           </tr>
           <tr>
-            <td>TB</td>
-            <td><a href="https://smart.who.int/dak-tb">SMART DAK TB</a></td>
-            <td>Coming soon!</td>
+            <td>Digital Documentation of COVID-19 Certificates: Vaccination status (DDCC:VS)</td>
+            <td>August 2021</td>
+            <td class="pdf-link">&nbsp;<a
+                    href="https://www.who.int/publications/i/item/WHO-2019-nCoV-Digital_certificates-vaccination-2021.1" target="_blank">Technical specifications<br>and implementation
+                    guidance</a>
+            </td>
+            <td>
+              <ul style="text-decoration: none !important" > <li class="pdf-link">&nbsp;<a href="https://www.who.int/publications/i/item/WHO-2019-nCoV-Digital_certificates-vaccination-data_dictionary-2021.1" target="_blank">Core
+                    data dictionary</a></li>
+                </ul>
+            </td>
+            <td>
+              <ul>
+                <li class="fhir-link">&nbsp;<a href="https://smart.who.int/ddcc/" target="_blank">FHIR Implementation Guide</a></td>
+                </li>
+              </ul>
+            </td>
           </tr>
           <tr>
-            <td>Clinical Care in Crises (CCC)</td>
-            <td><a href="https://smart.who.int/dak-ccc">SMART DAK CCC</a></td>
-            <td>Coming soon!</td>
+            <td>Digital Documentation of COVID-19 Certificates: Test results (DDCC:TR)</td>
+            <td>March 2022</td>
+            <td class="pdf-link">&nbsp;<a
+                    href="https://www.who.int/publications/i/item/WHO-2019-nCoV-Digital_certificates_diagnostic_test_results-2022.1" target="_blank">Technical specifications<br>and implementation guidance</a>
+            </td>
+            <td>
+              <ul> <li class="pdf-link">&nbsp;<a href="https://www.who.int/publications-detail-redirect/WHO-2019-nCoV-Digital_certificates-diagnostic_test_results-data_dictionary-2022.1" target="_blank">Core
+                    data dictionary</a></li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li class="fhir-link">&nbsp;<a href="https://smart.who.int/ddcc/" target="_blank">FHIR Implementation Guide</a></td>
+                </li>
+              </ul>
+            </td>
           </tr>
-          <tr>
-            <td>Immunizations</td>
-            <td><a href="https://smart.who.int/dak-immz">SMART DAK IMMZ</a></td>
-            <td>Coming soon!</td>
-          </tr>
-        </tbody>
-        </table>
-		       </div>
-		     </div>
-		   </div>
-		   <div id="PageContent_C049_Col01" class="sf_colsIn col-md-4" data-sf-element="Column 2" data-placeholder-label="Column 2">
-                     <div class="sf-content-block content-block">
-                       <div>
-                         <div class="arrowed-link">
-                           <a href="/teams/digital-health-and-innovation">Digital Health and Innovation</a>
-                         </div>
-                         <div class="arrowed-link">
-                           <a href="/teams/digital-health-and-innovation/governance">Strategy and Governance</a>
-                         </div>
-                         <div class="arrowed-link">
-                           <a href="/teams/digital-health-and-innovation/health-technologies">Public Digital Health Technology</a>
-                         </div>
-                         <div class="arrowed-link">
-                           <a href="/initiatives/behealthy">Be He@lthy, Be Mobile</a>
-                         </div>
-                         <div class="arrowed-link">
-                           <a href="/teams/digital-health-and-innovation/who-innovation-hub" data-sf-ec-immutable>WHO Innovation Hub</a>
-                         </div>
-                         <div class="arrowed-link">
-                           <a href="/teams/digital-health-and-innovation/digital-channels">Digital Channels</a>
-                         </div>
-                         <div class="arrowed-link">
-                           <a href="/teams/digital-health-and-innovation/capacity-building">Capacity building and collaboration</a>
-                         </div>
-                       </div>
-                     </div>
 
+        </tbody>
+      </table><br>
+      <h2>Upcoming publications</h2>
+      <p>The following SMART Guidelines are being actively developed:</p>
+      <ul>
+        <li>Surveillance</li>
+        <li>Community Health</li>
+<br><br><br>
+		    </div>
+		    </div>
 		   </div>
-		 </div>
+		   </div>
 	       </div>
 	     </div>
 	   </div>
 	 </div>
-       </section>
-       
+   </div> 
+       <div class="bottom-footer-bar">
+    <p>
+        <a href="https://www.who.int/">Home</a> |
+        <a href="https://www.who.int/privacy-policy">Privacy policy</a>
+    </p>
+    <p>&copy; 2025 WHO</p>
+</div>    
+  </section>
+    
+      </div>
+
      </body>
+
 </html>

@@ -3,18 +3,19 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="smart.who.int.icvp"/>
   <meta>
-    <profile value="http://smart.who.int/base/StructureDefinition/SGImplementationGuide"/>
+    <profile value="http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.2.0"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide smart.who.int.icvp</b></p><a name="smart.who.int.icvp"> </a><a name="hcsmart.who.int.icvp"> </a><a name="smart.who.int.icvp-en-US"> </a><h2>ICVP</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/icvp/ImplementationGuide/smart.who.int.icvp</pre><div><p>SMART Guidelines for International Certificate for Vaccination or Prophylaxis</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide smart.who.int.icvp</b></p><a name="smart.who.int.icvp"> </a><a name="hcsmart.who.int.icvp"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="file://C:\work\ImplementationGuides\ig-release\who\smart-base\output/StructureDefinition-SGImplementationGuide.html">SMART Guidelines ImplementationGuideversion: null0.2.0)</a></p></div><h2>ICVP</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/icvp/ImplementationGuide/smart.who.int.icvp</pre><div><p>SMART Guidelines for International Certificate for Vaccination or Prophylaxis</p>
 </div></div>
   </text>
   <url value="http://smart.who.int/icvp/ImplementationGuide/smart.who.int.icvp"/>
-  <version value="0.1.0"/>
+  <version value="0.3.0"/>
   <name value="ICVP"/>
   <title value="SMART ICVP"/>
   <status value="draft"/>
-  <date value="2024-10-07T07:31:05+00:00"/>
+  <experimental value="false"/>
+  <date value="2025-10-17T14:28:32+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -25,7 +26,7 @@
   </contact>
   <description value="SMART Guidelines for International Certificate for Vaccination or Prophylaxis"/>
   <packageId value="smart.who.int.icvp"/>
-  <license value="CC0-1.0"/>
+  <license value="CC-BY-SA-3.0-IGO"/>
   <fhirVersion value="4.0.1"/>
   <dependsOn id="hl7tx">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -33,7 +34,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="6.0.2"/>
+    <version value="6.5.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -41,12 +42,12 @@
     </extension>
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
-    <version value="5.1.0"/>
+    <version value="5.2.0"/>
   </dependsOn>
   <dependsOn id="smart_who_int_base">
     <uri value="http://smart.who.int/base/ImplementationGuide/smart.who.int.base"/>
     <packageId value="smart.who.int.base"/>
-    <version value="0.1.0"/>
+    <version value="0.2.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_uv_ips">
     <uri value="http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips"/>
@@ -68,6 +69,21 @@
     <packageId value="smart.who.int.ts"/>
     <version value="0.1.0"/>
   </dependsOn>
+  <dependsOn id="smart_who_int_pcmt">
+    <uri value="http://smart.who.int/pcmt/ImplementationGuide/smart.who.int.pcmt"/>
+    <packageId value="smart.who.int.pcmt"/>
+    <version value="0.1.0"/>
+  </dependsOn>
+  <dependsOn id="smart_who_int_trust_phw">
+    <uri value="http://smart.who.int/trust-phw/ImplementationGuide/smart.who.int.trust-phw"/>
+    <packageId value="smart.who.int.trust-phw"/>
+    <version value="0.1.0"/>
+  </dependsOn>
+  <dependsOn id="smart_who_int_pcmt_vaxprequal">
+    <uri value="http://smart.who.int/pcmt-vaxprequal/ImplementationGuide/smart.who.int.pcmt-vaxprequal"/>
+    <packageId value="smart.who.int.pcmt-vaxprequal"/>
+    <version value="0.2.0"/>
+  </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -82,7 +98,23 @@
         <valueString value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="ci-build"/>
+        <valueString value="release"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="produce-jekyll-data"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="pin-canonicals"/>
+      </extension>
+      <extension url="value">
+        <valueString value="pin-multiples"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -270,7 +302,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools#0.2.0"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#0.8.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -285,7 +317,23 @@
         <valueCode value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="ci-build"/>
+        <valueString value="release"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="produce-jekyll-data"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="pin-canonicals"/>
+      </extension>
+      <extension url="value">
+        <valueString value="pin-multiples"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -474,24 +522,35 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="ConceptMap"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/DVCBundle"/>
+        <reference value="ConceptMap/ICVPProductIdToVaccineType"/>
       </reference>
-      <name value="Digital Vaccination Certificate - Bundle"/>
-      <description value="Digital Vaccination Certificate - Bundle"/>
+      <name value="ConceptMap from ICVP Product IDs to Vaccine Types"/>
+      <description value="Mapping from ICVP Product IDs to Vaccine Types"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="ConceptMap"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/DVCComposition"/>
+        <reference value="ConceptMap/VaccineTradeItemtoManufacturer"/>
       </reference>
-      <name value="Digital Vaccination Certificate - Composition"/>
-      <description value="Digital Vaccination Certificate - Composition"/>
+      <name value="ConceptMap from Vaccine Trade Item to Manufacturer"/>
+      <description value="Mapping from Vaccine Trade Item to Manufacturer"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/DisclosureStatements"/>
+      </reference>
+      <name value="Discloure Statement maapings"/>
+      <description value="Mapping from Disclosure Statements to itself to show relatiohships"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -507,68 +566,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="ValueSet/doseNumber"/>
+        <reference value="StructureDefinition/Immunization-uv-ips-ICVP"/>
       </reference>
-      <name value="Dose Number"/>
-      <description value="Dose Number value set"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/doseNumber"/>
-      </reference>
-      <name value="Dose Number"/>
-      <description value="Dose Number Code System"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/doseNumberCodeableConcept"/>
-      </reference>
-      <name value="doseNumberCodeableConcept"/>
-      <description value="doseNumber"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ModelDVC"/>
-      </reference>
-      <name value="DVC"/>
-      <description value="Data elements for Digital Vaccination Certificate."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ModelVaccineDetails"/>
-      </reference>
-      <name value="DVC - Vaccine Details"/>
-      <description value="Vaccine Data elements for the Digital Vaccination Certificates"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/DVCVaccines"/>
-      </reference>
-      <name value="DVC - Vaccines"/>
-      <description value="This value set includes codes from ICD"/>
+      <name value="DVC - WHO ICVP Immunization for IPS"/>
+      <description value="This profile represents an IPS Immunization record that can be mapped onto a Digital Vaccine Certificates using the WHO PreQual Database"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -576,10 +580,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/DVCIPS"/>
+        <reference value="StructureDefinition/Bundle-uv-ips-ICVP"/>
       </reference>
-      <name value="DVC Certificate - IPS Bundle"/>
-      <description value="Profile of the IPS Bundle for representing digital vaccination certificates"/>
+      <name value="DVC Certificate - IPS Bundle from WHO ICVP"/>
+      <description value="Profile of the IPS Bundle for representing digital vaccination certificates from WHO ICVP"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -587,10 +591,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/DVCIPSComposition"/>
+        <reference value="StructureDefinition/Composition-uv-ips-ICVP"/>
       </reference>
-      <name value="DVC Certificate - IPS Composition"/>
-      <description value="Profile of the IPS Composition for representing digital vaccination certificates"/>
+      <name value="DVC Certificate - IPS Composition for WHO ICVP"/>
+      <description value="Profile of the IPS Composition for representing digital vaccination certificates with WHO PreQual Database for ICVP"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -598,21 +602,10 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/DVCPayload"/>
+        <reference value="StructureDefinition/ICVPSD"/>
       </reference>
-      <name value="DVC HCERT Payload"/>
-      <description value="Payload for Digital Vaccination Certificate - DVC CBOR Web Token Logical Model"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DVC-ImmunizationUvIps"/>
-      </reference>
-      <name value="DVC Immunization"/>
-      <description value="This profile represents Immunization record for Digital Vaccine Certificates"/>
+      <name value="DVC Icvp with Selective Disclosure"/>
+      <description value="DVC Icvp with Selective Disclosure"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -620,46 +613,32 @@
         <valueString value="Questionnaire"/>
       </extension>
       <reference>
-        <reference value="Questionnaire/Questionnaire-DVCModel"/>
+        <reference value="Questionnaire/pPreQual"/>
       </reference>
       <name value="DVC Model Questionnaire"/>
-      <description value="Questionnaire for DVC Logical Model"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DVCPatient"/>
-      </reference>
-      <name value="DVC Patient"/>
-      <description value="DVC Patient"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format">
-        <valueCode value="application/fhir+json"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Binary"/>
-      </extension>
-      <reference>
-        <reference value="Binary/DVCPayloadExample"/>
-      </reference>
-      <name value="Example DVC Payload"/>
-      <description value="Example payload of DVC Claim within HCERT"/>
-      <exampleCanonical value="http://smart.who.int/icvp/StructureDefinition/DVCPayload"/>
+      <description value="Questionnaire for DVC Logical Model with the WHO PreQual DB and paper attachment"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ModelICVP"/>
+        <reference value="StructureDefinition/ICVP"/>
       </reference>
       <name value="ICVP"/>
       <description value="Data elements for the Model International Certificate of Vaccination or Prophylaxis."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ICVPEvent"/>
+      </reference>
+      <name value="ICVP (single)"/>
+      <description value="ICVP for a single vaccincation event"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -678,10 +657,10 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ModelICVPVaccineDetails"/>
+        <reference value="StructureDefinition/ICVPVaccineDetails"/>
       </reference>
       <name value="ICVP - Vaccine Details"/>
-      <description value="Vaccine Data elements for the Model International Certificate of Vaccination or Prophylaxis."/>
+      <description value="Vaccine Data elements for the International Certificate of Vaccination or Prophylaxis"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -700,10 +679,32 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ICVPEvent"/>
+        <reference value="StructureDefinition/ICVPMin"/>
       </reference>
-      <name value="ICVP Event"/>
-      <description value="ICVP for a single immunization event"/>
+      <name value="ICVP HCERT Payload"/>
+      <description value="Mininmial DVC payload for use within an HCERT Payload using the ICVP Product Catalogue"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ICVPMinVaccineDetails"/>
+      </reference>
+      <name value="ICVP HCERT Payload"/>
+      <description value="Mininmial vaccine detail in DVC payload for use within an HCERT Payload using the ICVP Product Catalogue"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ICVPImmunization"/>
+      </reference>
+      <name value="ICVP Immunization"/>
+      <description value="This profile represents Immunization record for Digital Vaccine Certificates for use in the International Certificate of Vaccination or Prophylaxis (ICVP).  Such vaccine should be listed in the ICVP Product Catalogue&#xA;&#xA;The ICVP product catalogue consists of vaccines listed in the list of Prequalified Vaccines and the Emergency Use Listing.&#xA; - https://extranet.who.int/prequal/vaccines/prequalified-vaccines&#xA; - https://www.who.int/teams/regulation-prequalification/eul&#xA;&#xA;In FHIR R6, this could also be a reference to an InventoryItem"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -711,11 +712,32 @@
         <valueString value="Questionnaire"/>
       </extension>
       <reference>
-        <reference value="Questionnaire/Questionnaire-ICVPModel"/>
+        <reference value="Questionnaire/ICVP"/>
       </reference>
       <name value="ICVP Model Questionnaire"/>
-      <description value="Questionnaire for ICVP Logical Model"/>
+      <description value="Questionnaire for DVC Logical Model with the WHO ICVP"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ICVPVaccineDetailsSD"/>
+      </reference>
+      <name value="ICVP Vaccine Details with Selective Disclosure"/>
+      <description value="ICVP Vaccine Details with Selective Disclosure"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/ICVPQRExample"/>
+      </reference>
+      <name value="ICVPQRExample"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format">
@@ -729,7 +751,7 @@
       </reference>
       <name value="IVCP123455"/>
       <description value="Example ICVP"/>
-      <exampleCanonical value="http://smart.who.int/icvp/StructureDefinition/ModelICVP"/>
+      <exampleCanonical value="http://smart.who.int/icvp/StructureDefinition/ICVP"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format">
@@ -739,21 +761,32 @@
         <valueString value="Binary"/>
       </extension>
       <reference>
-        <reference value="Binary/ModelDVCExample"/>
+        <reference value="Binary/IVCP123455SD"/>
       </reference>
-      <name value="ModelDVCExample"/>
-      <description value="Example DVC model"/>
-      <exampleCanonical value="http://smart.who.int/icvp/StructureDefinition/ModelDVC"/>
+      <name value="IVCP123455SD"/>
+      <description value="Example ICVP with Selective Disclosure"/>
+      <exampleCanonical value="http://smart.who.int/icvp/StructureDefinition/ICVPSD"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
+        <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
-        <reference value="ValueSet/DVCRelationshipStatus"/>
+        <reference value="StructureDefinition/pICVP"/>
       </reference>
-      <name value="Relationship Status for Contact in Patient"/>
-      <description value="Relationship Status for Contact in Patient"/>
+      <name value="pICVP"/>
+      <description value="Data elements for the Paper Model International Certificate of Vaccination or Prophylaxis."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pICVPVaccineDetails"/>
+      </reference>
+      <name value="pICVP - Vaccine Details"/>
+      <description value="Vaccine Data elements for the Paper Model International Certificate of Vaccination or Prophylaxis."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -761,10 +794,54 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/DVCRelationshipStatus"/>
+        <reference value="CodeSystem/VaccineManufacturer"/>
       </reference>
-      <name value="Relationship Status for Contact in Patient"/>
-      <description value="Relationship Status for Contact in Patient"/>
+      <name value="Prequalified Vaccines - Manufacturer names"/>
+      <description value="List of WHO Prequalified Vaccines - Manufacturer names"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/preQualVaccines"/>
+      </reference>
+      <name value="preQualVaccines"/>
+      <description value="preQualVaccines value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ICVPVaccineType"/>
+      </reference>
+      <name value="Vaccine Types for use in the ICVP"/>
+      <description value="WHO PreQualificaiton Vaccine Type for use in the ICVP"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VaccineManufacturer"/>
+      </reference>
+      <name value="VaccineManufacturer"/>
+      <description value="VaccineManufacturer value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ICVPProductIds"/>
+      </reference>
+      <name value="WHO ICVP Vaccine Product Ids"/>
+      <description value="WHO ICVP Vaccine Product Ids"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -772,48 +849,63 @@
         <valueString value="StructureMap"/>
       </extension>
       <reference>
-        <reference value="StructureMap/DVCClaimtoDVCLM"/>
+        <reference value="StructureMap/ICVPClaimtoICVPLM"/>
       </reference>
+      <name value="ICVPClaimtoICVPLM"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureMap"/>
       </extension>
       <reference>
-        <reference value="StructureMap/DVCClaimtoIPS"/>
+        <reference value="StructureMap/ICVPClaimtoIPS"/>
       </reference>
+      <name value="ICVPClaimtoIPS"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureMap"/>
       </extension>
       <reference>
-        <reference value="StructureMap/DVCLMToIPS"/>
+        <reference value="StructureMap/ICVPLMToIPS"/>
       </reference>
+      <name value="ICVPLMToIPS"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureMap"/>
       </extension>
       <reference>
-        <reference value="StructureMap/DVCLMtoDVCClaim"/>
+        <reference value="StructureMap/ICVPLMtoICVPClaim"/>
       </reference>
+      <name value="ICVPLMtoICVPClaim"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureMap"/>
       </extension>
       <reference>
-        <reference value="StructureMap/DVCQRtoDVCClaim"/>
+        <reference value="StructureMap/ICVPQRtoICVPClaim"/>
       </reference>
+      <name value="ICVPQRtoICVPClaim"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureMap"/>
       </extension>
       <reference>
-        <reference value="StructureMap/DVCQRtoDVCLM"/>
+        <reference value="StructureMap/ICVPQRtoICVPLM"/>
       </reference>
+      <name value="ICVPQRtoICVPLM"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureMap"/>
+      </extension>
+      <reference>
+        <reference value="StructureMap/PreQualDBtoProductLM"/>
+      </reference>
+      <name value="PreQualDBtoProductLM"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

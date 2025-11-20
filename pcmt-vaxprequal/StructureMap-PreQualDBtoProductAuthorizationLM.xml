@@ -4,11 +4,9 @@
   <id value="PreQualDBtoProductAuthorizationLM"/>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureMap PreQualDBtoProductAuthorizationLM</b></p><a name="PreQualDBtoProductAuthorizationLM"> </a><a name="hcPreQualDBtoProductAuthorizationLM"> </a><pre class="fml">
-<span style="color: #cc00cc">/// <b>url</b> = </span><span style="color: blue">'http://smart.who.int/icvp/StructureMap/PreQualDBtoProductAuthorizationLM'</span>
-<span style="color: #cc00cc">/// <b>name</b> = </span><span style="color: blue">'PreQualDBtoProductAuthorizationLM'</span>
-<span style="color: #cc00cc">/// <b>status</b> = </span><span style="color: blue">'draft'</span>
+<b>map</b><span style="color: navy"> &quot;</span>http://smart.who.int/icvp/StructureMap/PreQualDBtoProductAuthorizationLM<span style="color: navy">&quot; = &quot;</span>PreQualDBtoProductAuthorizationLM<span style="color: navy">&quot;
 
-<b>uses</b><span style="color: navy"> &quot;</span>http://smart.who.int/icvp/StructureDefinition/PreQualDBwithIds<span style="color: navy">&quot; </span><b>alias </b>PreQualDB <b>as </b><b>source</b>
+</span><b>uses</b><span style="color: navy"> &quot;</span>http://smart.who.int/icvp/StructureDefinition/PreQualDBwithIds<span style="color: navy">&quot; </span><b>alias </b>PreQualDB <b>as </b><b>source</b>
 <b>uses</b><span style="color: navy"> &quot;</span>http://smart.who.int/icvp/StructureDefinition/ProductAuthorization<span style="color: navy">&quot; </span><b>alias </b>ProductAuthorization <b>as </b><b>target</b>
 
 <b>group </b>PreQualDBtoProductAuthorizationLM<span style="color: navy">(</span><b>source</b> <span style="color: maroon">prequal</span><span style="color: navy"> : </span>PreQualDB, <b>target</b> <span style="color: maroon">productAuth</span><span style="color: navy"> : </span>ProductAuthoization<span style="color: navy">)</span><span style="color: navy"> {
@@ -25,15 +23,19 @@
   <span style="color: navy">}</span> <i>&quot;process juris&quot;</i><span style="color: navy">;</span>
   prequal.index<b> as </b><span style="color: maroon">index</span><span style="color: navy"><b> -&gt; </b></span>productAuth.number = <span style="color: maroon">index</span> <i>&quot;set number/index&quot;</i><span style="color: navy">;</span>
   prequal.productReference<b> as </b><span style="color: maroon">prodRef</span><span style="color: navy"><b> -&gt; </b></span>productAuth.product = <span style="color: maroon">prodRef</span> <i>&quot;set prod ref&quot;</i><span style="color: navy">;</span>
+<span style="color: #b36b00" title="This element was not defined prior to R5">// prequal.index as index then {</span>
+<span style="color: #b36b00" title="This element was not defined prior to R5">// prequal.vaxTypeCode as vaxTypeCode</span>
+<span style="color: navy">// </span><span style="color: green">-&gt; productAuth.product = reference(vaxTypeCode + &quot;Product&quot; + index.value )  &quot;Set Product reference&quot;;</span>
+<span style="color: navy">// </span><span style="color: green">} &quot;set index&quot;;</span>
 <span style="color: navy">}
 
 </span></pre></div>
   </text>
   <url value="http://smart.who.int/icvp/StructureMap/PreQualDBtoProductAuthorizationLM"/>
-  <version value="0.1.0"/>
+  <version value="0.2.0"/>
   <name value="PreQualDBtoProductAuthorizationLM"/>
   <status value="draft"/>
-  <date value="2025-07-01T08:33:29+00:00"/>
+  <date value="2025-09-16T20:42:07+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -54,6 +56,7 @@
   </structure>
   <group>
     <name value="PreQualDBtoProductAuthorizationLM"/>
+    <typeMode value="none"/>
     <input>
       <name value="prequal"/>
       <type value="PreQualDB"/>
@@ -73,6 +76,7 @@
       </source>
       <target>
         <context value="status"/>
+        <contextType value="variable"/>
         <transform value="copy"/>
         <parameter>
           <valueString value="active"/>
@@ -88,6 +92,7 @@
       </source>
       <target>
         <context value="type"/>
+        <contextType value="variable"/>
         <transform value="copy"/>
         <parameter>
           <valueString value="prequal"/>
@@ -109,6 +114,7 @@
         </source>
         <target>
           <context value="productAuth"/>
+          <contextType value="variable"/>
           <element value="holder"/>
           <transform value="copy"/>
           <parameter>
@@ -132,6 +138,7 @@
         </source>
         <target>
           <context value="productAuth"/>
+          <contextType value="variable"/>
           <element value="validityPeriod"/>
           <transform value="copy"/>
           <parameter>
@@ -156,6 +163,7 @@
         </source>
         <target>
           <context value="coding"/>
+          <contextType value="variable"/>
           <element value="display"/>
           <transform value="copy"/>
           <parameter>
@@ -173,6 +181,7 @@
       </source>
       <target>
         <context value="productAuth"/>
+        <contextType value="variable"/>
         <element value="number"/>
         <transform value="copy"/>
         <parameter>
@@ -189,6 +198,7 @@
       </source>
       <target>
         <context value="productAuth"/>
+        <contextType value="variable"/>
         <element value="product"/>
         <transform value="copy"/>
         <parameter>

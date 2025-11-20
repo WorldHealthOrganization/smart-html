@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifact Index - SMART ICVP v0.1.0</title>
+    <title>Artifact Index - SMART ICVP v0.3.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -220,7 +220,7 @@
         <div id="ig-status" class="ig-status-draft">
           <p><span style="font-size:12pt;font-weight:bold">SMART ICVP</span>
             <br/>
-            <span style="display:inline-block;">0.1.0 - ci-build
+            <span style="display:inline-block;">0.3.0 - release
 
 
             </span>
@@ -255,7 +255,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the ICVP (v0.1.0: Releases Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/icvp/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the ICVP (v0.3.0: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://smart.who.int/icvp/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifact Index</h2>
   
   
@@ -276,16 +276,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#3">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#4">Structures: Extension Definitions</a>
+         <a href="#4">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#5">Terminology: Value Sets</a>
+         <a href="#5">Terminology: Code Systems</a>
       </li>
       <li>
-         <a href="#6">Terminology: Code Systems</a>
+         <a href="#6">Terminology: Structure Maps</a>
       </li>
       <li>
-         <a href="#7">Terminology: Structure Maps</a>
+         <a href="#7">Terminology: Concept Maps</a>
       </li>
       <li>
          <a href="#8">Example: Example Instances</a>
@@ -304,35 +304,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-ModelDVC.html"
-                  title="StructureDefinition/ModelDVC">DVC</a>
+               <a href="StructureDefinition-ICVPSD.html"
+                  title="StructureDefinition/ICVPSD">DVC Icvp with Selective Disclosure</a>
             </td>
             <td>
-<p>Data elements for Digital Vaccination Certificate.</p>
+<p>DVC Icvp with Selective Disclosure</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-ModelVaccineDetails.html"
-                  title="StructureDefinition/ModelVaccineDetails">DVC - Vaccine Details</a>
-            </td>
-            <td>
-<p>Vaccine Data elements for the Digital Vaccination Certificates</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-DVCPayload.html"
-                  title="StructureDefinition/DVCPayload">DVC HCERT Payload</a>
-            </td>
-            <td>
-<p>Payload for Digital Vaccination Certificate - DVC CBOR Web Token Logical Model</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-ModelICVP.html"
-                  title="StructureDefinition/ModelICVP">ICVP</a>
+               <a href="StructureDefinition-ICVP.html" title="StructureDefinition/ICVP">ICVP</a>
             </td>
             <td>
 <p>Data elements for the Model International Certificate of Vaccination or Prophylaxis.</p>
@@ -340,20 +321,64 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-ModelICVPVaccineDetails.html"
-                  title="StructureDefinition/ModelICVPVaccineDetails">ICVP - Vaccine Details</a>
+               <a href="StructureDefinition-ICVPEvent.html"
+                  title="StructureDefinition/ICVPEvent">ICVP (single)</a>
             </td>
             <td>
-<p>Vaccine Data elements for the Model International Certificate of Vaccination or Prophylaxis.</p>
+<p>ICVP for a single vaccincation event</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-ICVPEvent.html"
-                  title="StructureDefinition/ICVPEvent">ICVP Event</a>
+               <a href="StructureDefinition-ICVPVaccineDetails.html"
+                  title="StructureDefinition/ICVPVaccineDetails">ICVP - Vaccine Details</a>
             </td>
             <td>
-<p>ICVP for a single immunization event</p>
+<p>Vaccine Data elements for the International Certificate of Vaccination or Prophylaxis</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ICVPMin.html"
+                  title="StructureDefinition/ICVPMin">ICVP HCERT Payload</a>
+            </td>
+            <td>
+<p>Mininmial DVC payload for use within an HCERT Payload using the ICVP Product Catalogue</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ICVPMinVaccineDetails.html"
+                  title="StructureDefinition/ICVPMinVaccineDetails">ICVP HCERT Payload</a>
+            </td>
+            <td>
+<p>Mininmial vaccine detail in DVC payload for use within an HCERT Payload using the ICVP Product Catalogue</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ICVPVaccineDetailsSD.html"
+                  title="StructureDefinition/ICVPVaccineDetailsSD">ICVP Vaccine Details with Selective Disclosure</a>
+            </td>
+            <td>
+<p>ICVP Vaccine Details with Selective Disclosure</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-pICVP.html" title="StructureDefinition/pICVP">pICVP</a>
+            </td>
+            <td>
+<p>Data elements for the Paper Model International Certificate of Vaccination or Prophylaxis.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-pICVPVaccineDetails.html"
+                  title="StructureDefinition/pICVPVaccineDetails">pICVP - Vaccine Details</a>
+            </td>
+            <td>
+<p>Vaccine Data elements for the Paper Model International Certificate of Vaccination or Prophylaxis.</p>
 </td>
          </tr>
       </tbody>
@@ -366,20 +391,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="Questionnaire-Questionnaire-DVCModel.html"
-                  title="Questionnaire/Questionnaire-DVCModel">DVC Model Questionnaire</a>
+               <a href="Questionnaire-ICVP.html" title="Questionnaire/ICVP">ICVP Model Questionnaire</a>
             </td>
             <td>
-<p>Questionnaire for DVC Logical Model</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Questionnaire-Questionnaire-ICVPModel.html"
-                  title="Questionnaire/Questionnaire-ICVPModel">ICVP Model Questionnaire</a>
-            </td>
-            <td>
-<p>Questionnaire for ICVP Logical Model</p>
+<p>Questionnaire for DVC Logical Model with the WHO ICVP</p>
 </td>
          </tr>
       </tbody>
@@ -392,78 +407,51 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-DVCIPS.html"
-                  title="StructureDefinition/DVCIPS">DVC Certificate - IPS Bundle</a>
+               <a href="StructureDefinition-Immunization-uv-ips-ICVP.html"
+                  title="StructureDefinition/Immunization-uv-ips-ICVP">DVC - WHO ICVP Immunization for IPS</a>
             </td>
             <td>
-<p>Profile of the IPS Bundle for representing digital vaccination certificates</p>
+<p>This profile represents an IPS Immunization record that can be mapped onto a Digital Vaccine Certificates using the WHO PreQual Database</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-DVCIPSComposition.html"
-                  title="StructureDefinition/DVCIPSComposition">DVC Certificate - IPS Composition</a>
+               <a href="StructureDefinition-Bundle-uv-ips-ICVP.html"
+                  title="StructureDefinition/Bundle-uv-ips-ICVP">DVC Certificate - IPS Bundle from WHO ICVP</a>
             </td>
             <td>
-<p>Profile of the IPS Composition for representing digital vaccination certificates</p>
+<p>Profile of the IPS Bundle for representing digital vaccination certificates from WHO ICVP</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-DVC-ImmunizationUvIps.html"
-                  title="StructureDefinition/DVC-ImmunizationUvIps">DVC Immunization</a>
+               <a href="StructureDefinition-Composition-uv-ips-ICVP.html"
+                  title="StructureDefinition/Composition-uv-ips-ICVP">DVC Certificate - IPS Composition for WHO ICVP</a>
             </td>
             <td>
-<p>This profile represents Immunization record for Digital Vaccine Certificates</p>
+<p>Profile of the IPS Composition for representing digital vaccination certificates with WHO PreQual Database for ICVP</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-DVCPatient.html"
-                  title="StructureDefinition/DVCPatient">DVC Patient</a>
+               <a href="StructureDefinition-ICVPImmunization.html"
+                  title="StructureDefinition/ICVPImmunization">ICVP Immunization</a>
             </td>
             <td>
-<p>DVC Patient</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-DVCBundle.html"
-                  title="StructureDefinition/DVCBundle">Digital Vaccination Certificate - Bundle</a>
-            </td>
-            <td>
-<p>Digital Vaccination Certificate - Bundle</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-DVCComposition.html"
-                  title="StructureDefinition/DVCComposition">Digital Vaccination Certificate - Composition</a>
-            </td>
-            <td>
-<p>Digital Vaccination Certificate - Composition</p>
+<p>This profile represents Immunization record for Digital Vaccine Certificates for use in the International Certificate of Vaccination or Prophylaxis (ICVP).  Such vaccine should be listed in the ICVP Product Catalogue</p>
+
+<p>The ICVP product catalogue consists of vaccines listed in the list of Prequalified Vaccines and the Emergency Use Listing.</p>
+<ul>
+  <li>https://extranet.who.int/prequal/vaccines/prequalified-vaccines</li>
+  <li>https://www.who.int/teams/regulation-prequalification/eul</li>
+</ul>
+
+<p>In FHIR R6, this could also be a reference to an InventoryItem</p>
 </td>
          </tr>
       </tbody>
    </table>
    <a name="4"> </a>
-   <h3>Structures: Extension Definitions </h3>
-    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
-<table class="grid">
-      <col style="width:20%"/>
-      <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-doseNumberCodeableConcept.html"
-                  title="StructureDefinition/doseNumberCodeableConcept">doseNumberCodeableConcept</a>
-            </td>
-            <td>
-<p>doseNumber</p>
-</td>
-         </tr>
-      </tbody>
-   </table>
-   <a name="5"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -471,26 +459,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-DVCVaccines.html" title="ValueSet/DVCVaccines">DVC - Vaccines</a>
-            </td>
-            <td>
-<p>This value set includes codes from ICD</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="ValueSet-DiseaseTargeted.html" title="ValueSet/DiseaseTargeted">Disease Targeted</a>
             </td>
             <td>
 <p>Value set for all diseases</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-doseNumber.html" title="ValueSet/doseNumber">Dose Number</a>
-            </td>
-            <td>
-<p>Dose Number value set</p>
 </td>
          </tr>
          <tr>
@@ -512,16 +484,40 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-DVCRelationshipStatus.html"
-                  title="ValueSet/DVCRelationshipStatus">Relationship Status for Contact in Patient</a>
+               <a href="ValueSet-ICVPVaccineType.html" title="ValueSet/ICVPVaccineType">Vaccine Types for use in the ICVP</a>
             </td>
             <td>
-<p>Relationship Status for Contact in Patient</p>
+<p>WHO PreQualificaiton Vaccine Type for use in the ICVP</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-VaccineManufacturer.html"
+                  title="ValueSet/VaccineManufacturer">VaccineManufacturer</a>
+            </td>
+            <td>
+<p>VaccineManufacturer value set</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ICVPProductIds.html" title="ValueSet/ICVPProductIds">WHO ICVP Vaccine Product Ids</a>
+            </td>
+            <td>
+<p>WHO ICVP Vaccine Product Ids</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-preQualVaccines.html" title="ValueSet/preQualVaccines">preQualVaccines</a>
+            </td>
+            <td>
+<p>preQualVaccines value set</p>
 </td>
          </tr>
       </tbody>
    </table>
-   <a name="6"> </a>
+   <a name="5"> </a>
    <h3>Terminology: Code Systems </h3>
     <p>These define new code systems used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -529,24 +525,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-doseNumber.html" title="CodeSystem/doseNumber">Dose Number</a>
+               <a href="CodeSystem-VaccineManufacturer.html"
+                  title="CodeSystem/VaccineManufacturer">Prequalified Vaccines - Manufacturer names</a>
             </td>
             <td>
-<p>Dose Number Code System</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-DVCRelationshipStatus.html"
-                  title="CodeSystem/DVCRelationshipStatus">Relationship Status for Contact in Patient</a>
-            </td>
-            <td>
-<p>Relationship Status for Contact in Patient</p>
+<p>List of WHO Prequalified Vaccines - Manufacturer names</p>
 </td>
          </tr>
       </tbody>
    </table>
-   <a name="7"> </a>
+   <a name="6"> </a>
    <h3>Terminology: Structure Maps </h3>
     <p>These define transformations to convert between data structures used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -554,37 +542,79 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureMap-DVCClaimtoDVCLM.html"
-                  title="StructureMap/DVCClaimtoDVCLM">StructureMap/DVCClaimtoDVCLM</a>
+               <a href="StructureMap-ICVPClaimtoICVPLM.html"
+                  title="StructureMap/ICVPClaimtoICVPLM">ICVPClaimtoICVPLM</a>
             </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureMap-DVCClaimtoIPS.html"
-                  title="StructureMap/DVCClaimtoIPS">StructureMap/DVCClaimtoIPS</a>
+               <a href="StructureMap-ICVPClaimtoIPS.html"
+                  title="StructureMap/ICVPClaimtoIPS">ICVPClaimtoIPS</a>
             </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureMap-DVCLMToIPS.html" title="StructureMap/DVCLMToIPS">StructureMap/DVCLMToIPS</a>
+               <a href="StructureMap-ICVPLMToIPS.html" title="StructureMap/ICVPLMToIPS">ICVPLMToIPS</a>
             </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureMap-DVCLMtoDVCClaim.html"
-                  title="StructureMap/DVCLMtoDVCClaim">StructureMap/DVCLMtoDVCClaim</a>
+               <a href="StructureMap-ICVPLMtoICVPClaim.html"
+                  title="StructureMap/ICVPLMtoICVPClaim">ICVPLMtoICVPClaim</a>
             </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureMap-DVCQRtoDVCClaim.html"
-                  title="StructureMap/DVCQRtoDVCClaim">StructureMap/DVCQRtoDVCClaim</a>
+               <a href="StructureMap-ICVPQRtoICVPClaim.html"
+                  title="StructureMap/ICVPQRtoICVPClaim">ICVPQRtoICVPClaim</a>
             </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureMap-DVCQRtoDVCLM.html" title="StructureMap/DVCQRtoDVCLM">StructureMap/DVCQRtoDVCLM</a>
+               <a href="StructureMap-ICVPQRtoICVPLM.html"
+                  title="StructureMap/ICVPQRtoICVPLM">ICVPQRtoICVPLM</a>
             </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureMap-PreQualDBtoProductLM.html"
+                  title="StructureMap/PreQualDBtoProductLM">PreQualDBtoProductLM</a>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="7"> </a>
+   <h3>Terminology: Concept Maps </h3>
+    <p>These define transformations to convert between codes by systems conforming with this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-ICVPProductIdToVaccineType.html"
+                  title="ConceptMap/ICVPProductIdToVaccineType">ConceptMap from ICVP Product IDs to Vaccine Types</a>
+            </td>
+            <td>
+<p>Mapping from ICVP Product IDs to Vaccine Types</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-VaccineTradeItemtoManufacturer.html"
+                  title="ConceptMap/VaccineTradeItemtoManufacturer">ConceptMap from Vaccine Trade Item to Manufacturer</a>
+            </td>
+            <td>
+<p>Mapping from Vaccine Trade Item to Manufacturer</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-DisclosureStatements.html"
+                  title="ConceptMap/DisclosureStatements">Discloure Statement maapings</a>
+            </td>
+            <td>
+<p>Mapping from Disclosure Statements to itself to show relatiohships</p>
+</td>
          </tr>
       </tbody>
    </table>
@@ -596,10 +626,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="Binary-DVCPayloadExample.html" title="Binary/DVCPayloadExample">Example DVC Payload</a>
+               <a href="Questionnaire-pPreQual.html" title="Questionnaire/pPreQual">DVC Model Questionnaire</a>
             </td>
             <td>
-<p>Example payload of DVC Claim within HCERT</p>
+<p>Questionnaire for DVC Logical Model with the WHO PreQual DB and paper attachment</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-ICVPQRExample.html"
+                  title="QuestionnaireResponse/ICVPQRExample">ICVPQRExample</a>
+            </td>
+            <td>
+
 </td>
          </tr>
          <tr>
@@ -612,10 +651,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Binary-ModelDVCExample.html" title="Binary/ModelDVCExample">ModelDVCExample</a>
+               <a href="Binary-IVCP123455SD.html" title="Binary/IVCP123455SD">IVCP123455SD</a>
             </td>
             <td>
-<p>Example DVC model</p>
+<p>Example ICVP with Selective Disclosure</p>
 </td>
          </tr>
       </tbody>
@@ -623,52 +662,53 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 
 </div>
-        </div>  <!-- /inner-wrapper -->
-      </div>  <!-- /row -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-content -->
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-content -->
 
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
-  <a name="bottom"> </a>
-  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
-    <div class="container">  <!-- container -->
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
+<a name="bottom"> </a>
+<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+<div class="container">  <!-- container -->
 
-      <div class="inner-wrapper">
-        <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.icvp#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 7, 2024 07:31+0000">2024-10-07</span>
-          <br/>
-          <span style="color: var(--footer-highlight-text-color)">
-                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+<div class="inner-wrapper">
+  <p>
+    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.icvp#0.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 17, 2025 14:29+0000">2025-10-17</span>
+    <br/>
+    <span style="color: var(--footer-highlight-text-color)">
+                Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
 | <a style="color: #81BEF7" target="_blank" href="http://smart.who.int/icvp/history.html">Version History</a> | <a style="color: #81BEF7" rel="license" href="license.html">License</a>
-          </span>
-        </p>
-      </div>  <!-- /inner-wrapper -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-footer -->
-  
-  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
-    <div class="container">  <!-- container -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-post-footer -->
+    </span>
+  </p>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-footer -->
 
-  <!-- JS and analytics only. -->
-  <!-- Bootstrap core JavaScript
-  ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
-  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
-  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
-  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
-  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
-  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  <!-- Analytics Below
-  ================================================== -->
-  </body>
-</html>
+<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+<div class="container">  <!-- container -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+<script type="text/javascript" src="assets/js/respond.min.js"> </script>
+<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+<script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+<!-- Analytics Below
+================================================== -->
+
+
+
 

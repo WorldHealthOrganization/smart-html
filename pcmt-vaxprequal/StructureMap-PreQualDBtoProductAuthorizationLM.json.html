@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>PreQualDBtoProductAuthorizationLM - JSON Representation - SMART Product Dataset for Prequalified Vaccines v0.1.0</title>
+    <title>PreQualDBtoProductAuthorizationLM - JSON Representation - SMART Product Dataset for Prequalified Vaccines v0.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -61,7 +61,7 @@
                 <span class="icon-bar"> </span>
                 <span class="icon-bar"> </span>
               </button>
-              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
               <div class="nav-collapse collapse navbar-inverse-collapse">
                 <!-- menu.xml  -->
 
@@ -180,6 +180,9 @@
       <li>
         <a href="maps.html">Mappings</a>
       </li>
+      <li>
+        <a href="dak-api.html">DAK API</a>
+      </li>
     </ul>
   </li>
 </ul>
@@ -222,7 +225,7 @@
         <div id="ig-status" class="ig-status-draft">
           <p><span style="font-size:12pt;font-weight:bold">SMART Product Dataset for Prequalified Vaccines</span>
             <br/>
-            <span style="display:inline-block;">0.1.0 - release
+            <span style="display:inline-block;">0.2.0 - release
 
 
             </span>
@@ -250,7 +253,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the SMART Product Dataset for Prequalified Vaccines (v0.1.0: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R5">FHIR (HL7® FHIR® Standard) v5.0.0</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://smart.who.int/pcmt-vaxprequal/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">This page is part of the SMART Product Dataset for Prequalified Vaccines (v0.2.0: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://smart.who.int/pcmt-vaxprequal/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -305,7 +308,7 @@
         
           Draft
           
-            as of 2025-07-01
+            as of 2025-09-16
           
         
       </td>
@@ -322,125 +325,129 @@
 
 
   <pre class="json" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
-  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap">resourceType</a>" : "StructureMap",
-  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.id">id</a>" : "PreQualDBtoProductAuthorizationLM",
-  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.text">text</a>" : {
-    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: StructureMap PreQualDBtoProductAuthorizationLM&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;PreQualDBtoProductAuthorizationLM\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcPreQualDBtoProductAuthorizationLM\&quot;&gt; &lt;/a&gt;&lt;pre class=\&quot;fml\&quot;&gt;\r\n&lt;span style=\&quot;color: #cc00cc\&quot;&gt;/// &lt;b&gt;url&lt;/b&gt; = &lt;/span&gt;&lt;span style=\&quot;color: blue\&quot;&gt;'http://smart.who.int/icvp/StructureMap/PreQualDBtoProductAuthorizationLM'&lt;/span&gt;\r\n&lt;span style=\&quot;color: #cc00cc\&quot;&gt;/// &lt;b&gt;name&lt;/b&gt; = &lt;/span&gt;&lt;span style=\&quot;color: blue\&quot;&gt;'PreQualDBtoProductAuthorizationLM'&lt;/span&gt;\r\n&lt;span style=\&quot;color: #cc00cc\&quot;&gt;/// &lt;b&gt;status&lt;/b&gt; = &lt;/span&gt;&lt;span style=\&quot;color: blue\&quot;&gt;'draft'&lt;/span&gt;\r\n\r\n&lt;b&gt;uses&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; &amp;quot;&lt;/span&gt;http://smart.who.int/icvp/StructureDefinition/PreQualDBwithIds&lt;span style=\&quot;color: navy\&quot;&gt;&amp;quot; &lt;/span&gt;&lt;b&gt;alias &lt;/b&gt;PreQualDB &lt;b&gt;as &lt;/b&gt;&lt;b&gt;source&lt;/b&gt;\r\n&lt;b&gt;uses&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; &amp;quot;&lt;/span&gt;http://smart.who.int/icvp/StructureDefinition/ProductAuthorization&lt;span style=\&quot;color: navy\&quot;&gt;&amp;quot; &lt;/span&gt;&lt;b&gt;alias &lt;/b&gt;ProductAuthorization &lt;b&gt;as &lt;/b&gt;&lt;b&gt;target&lt;/b&gt;\r\n\r\n&lt;b&gt;group &lt;/b&gt;PreQualDBtoProductAuthorizationLM&lt;span style=\&quot;color: navy\&quot;&gt;(&lt;/span&gt;&lt;b&gt;source&lt;/b&gt; &lt;span style=\&quot;color: maroon\&quot;&gt;prequal&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt; : &lt;/span&gt;PreQualDB, &lt;b&gt;target&lt;/b&gt; &lt;span style=\&quot;color: maroon\&quot;&gt;productAuth&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt; : &lt;/span&gt;ProductAuthoization&lt;span style=\&quot;color: navy\&quot;&gt;)&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;  productAuth.status&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;status&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;status = &lt;span style=\&quot;color: blue\&quot;&gt;'active'&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n  productAuth.type&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;type&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;type = &lt;span style=\&quot;color: blue\&quot;&gt;'prequal'&lt;/span&gt; &lt;i&gt;&amp;quot;set prequal&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n  prequal.responsibleNRAReference&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;respNRARef&lt;/span&gt;&lt;b&gt; then&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;    respNRARef&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;respNRARef&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;productAuth.holder = &lt;span style=\&quot;color: maroon\&quot;&gt;respNRARef&lt;/span&gt; &lt;i&gt;&amp;quot;set national regulatory authority holder&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n  &lt;span style=\&quot;color: navy\&quot;&gt;}&lt;/span&gt; &lt;i&gt;&amp;quot;process nra&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n  prequal.validityPeriod&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;validityPeriod&lt;/span&gt;&lt;b&gt; then&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;    validityPeriod&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;validityPeriod&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;productAuth.validityPeriod = &lt;span style=\&quot;color: maroon\&quot;&gt;validityPeriod&lt;/span&gt; &lt;i&gt;&amp;quot;set validity period&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n  &lt;span style=\&quot;color: navy\&quot;&gt;}&lt;/span&gt; &lt;i&gt;&amp;quot;process validity period&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n  productAuth.jurisdiction&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;j&lt;/span&gt;&lt;b&gt; then&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;    j.coding&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;coding&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;coding.display = &lt;span style=\&quot;color: blue\&quot;&gt;'WHO'&lt;/span&gt; &lt;i&gt;&amp;quot;set WHO&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n  &lt;span style=\&quot;color: navy\&quot;&gt;}&lt;/span&gt; &lt;i&gt;&amp;quot;process juris&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n  prequal.index&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;index&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;productAuth.number = &lt;span style=\&quot;color: maroon\&quot;&gt;index&lt;/span&gt; &lt;i&gt;&amp;quot;set number/index&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n  prequal.productReference&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;prodRef&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;productAuth.product = &lt;span style=\&quot;color: maroon\&quot;&gt;prodRef&lt;/span&gt; &lt;i&gt;&amp;quot;set prod ref&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n&lt;span style=\&quot;color: navy\&quot;&gt;}\r\n\r\n&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;"
+  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap">resourceType</a>" : "StructureMap",
+  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.id">id</a>" : "PreQualDBtoProductAuthorizationLM",
+  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: StructureMap PreQualDBtoProductAuthorizationLM&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;PreQualDBtoProductAuthorizationLM\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcPreQualDBtoProductAuthorizationLM\&quot;&gt; &lt;/a&gt;&lt;pre class=\&quot;fml\&quot;&gt;\r\n&lt;b&gt;map&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; &amp;quot;&lt;/span&gt;http://smart.who.int/icvp/StructureMap/PreQualDBtoProductAuthorizationLM&lt;span style=\&quot;color: navy\&quot;&gt;&amp;quot; = &amp;quot;&lt;/span&gt;PreQualDBtoProductAuthorizationLM&lt;span style=\&quot;color: navy\&quot;&gt;&amp;quot;\r\n\r\n&lt;/span&gt;&lt;b&gt;uses&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; &amp;quot;&lt;/span&gt;http://smart.who.int/icvp/StructureDefinition/PreQualDBwithIds&lt;span style=\&quot;color: navy\&quot;&gt;&amp;quot; &lt;/span&gt;&lt;b&gt;alias &lt;/b&gt;PreQualDB &lt;b&gt;as &lt;/b&gt;&lt;b&gt;source&lt;/b&gt;\r\n&lt;b&gt;uses&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; &amp;quot;&lt;/span&gt;http://smart.who.int/icvp/StructureDefinition/ProductAuthorization&lt;span style=\&quot;color: navy\&quot;&gt;&amp;quot; &lt;/span&gt;&lt;b&gt;alias &lt;/b&gt;ProductAuthorization &lt;b&gt;as &lt;/b&gt;&lt;b&gt;target&lt;/b&gt;\r\n\r\n&lt;b&gt;group &lt;/b&gt;PreQualDBtoProductAuthorizationLM&lt;span style=\&quot;color: navy\&quot;&gt;(&lt;/span&gt;&lt;b&gt;source&lt;/b&gt; &lt;span style=\&quot;color: maroon\&quot;&gt;prequal&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt; : &lt;/span&gt;PreQualDB, &lt;b&gt;target&lt;/b&gt; &lt;span style=\&quot;color: maroon\&quot;&gt;productAuth&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt; : &lt;/span&gt;ProductAuthoization&lt;span style=\&quot;color: navy\&quot;&gt;)&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;  productAuth.status&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;status&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;status = &lt;span style=\&quot;color: blue\&quot;&gt;'active'&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n  productAuth.type&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;type&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;type = &lt;span style=\&quot;color: blue\&quot;&gt;'prequal'&lt;/span&gt; &lt;i&gt;&amp;quot;set prequal&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n  prequal.responsibleNRAReference&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;respNRARef&lt;/span&gt;&lt;b&gt; then&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;    respNRARef&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;respNRARef&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;productAuth.holder = &lt;span style=\&quot;color: maroon\&quot;&gt;respNRARef&lt;/span&gt; &lt;i&gt;&amp;quot;set national regulatory authority holder&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n  &lt;span style=\&quot;color: navy\&quot;&gt;}&lt;/span&gt; &lt;i&gt;&amp;quot;process nra&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n  prequal.validityPeriod&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;validityPeriod&lt;/span&gt;&lt;b&gt; then&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;    validityPeriod&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;validityPeriod&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;productAuth.validityPeriod = &lt;span style=\&quot;color: maroon\&quot;&gt;validityPeriod&lt;/span&gt; &lt;i&gt;&amp;quot;set validity period&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n  &lt;span style=\&quot;color: navy\&quot;&gt;}&lt;/span&gt; &lt;i&gt;&amp;quot;process validity period&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n  productAuth.jurisdiction&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;j&lt;/span&gt;&lt;b&gt; then&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;    j.coding&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;coding&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;coding.display = &lt;span style=\&quot;color: blue\&quot;&gt;'WHO'&lt;/span&gt; &lt;i&gt;&amp;quot;set WHO&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n  &lt;span style=\&quot;color: navy\&quot;&gt;}&lt;/span&gt; &lt;i&gt;&amp;quot;process juris&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n  prequal.index&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;index&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;productAuth.number = &lt;span style=\&quot;color: maroon\&quot;&gt;index&lt;/span&gt; &lt;i&gt;&amp;quot;set number/index&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n  prequal.productReference&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;prodRef&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;productAuth.product = &lt;span style=\&quot;color: maroon\&quot;&gt;prodRef&lt;/span&gt; &lt;i&gt;&amp;quot;set prod ref&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n&lt;span style=\&quot;color: #b36b00\&quot; title=\&quot;This element was not defined prior to R5\&quot;&gt;// prequal.index as index then {&lt;/span&gt;\r\n&lt;span style=\&quot;color: #b36b00\&quot; title=\&quot;This element was not defined prior to R5\&quot;&gt;// prequal.vaxTypeCode as vaxTypeCode&lt;/span&gt;\r\n&lt;span style=\&quot;color: navy\&quot;&gt;// &lt;/span&gt;&lt;span style=\&quot;color: green\&quot;&gt;-&amp;gt; productAuth.product = reference(vaxTypeCode + &amp;quot;Product&amp;quot; + index.value )  &amp;quot;Set Product reference&amp;quot;;&lt;/span&gt;\r\n&lt;span style=\&quot;color: navy\&quot;&gt;// &lt;/span&gt;&lt;span style=\&quot;color: green\&quot;&gt;} &amp;quot;set index&amp;quot;;&lt;/span&gt;\r\n&lt;span style=\&quot;color: navy\&quot;&gt;}\r\n\r\n&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;"
   },
-  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.url">url</a>" : "http://smart.who.int/icvp/StructureMap/PreQualDBtoProductAuthorizationLM",
-  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.version">version</a>" : "0.1.0",
-  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.name">name</a>" : "PreQualDBtoProductAuthorizationLM",
-  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.status">status</a>" : "draft",
-  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.date">date</a>" : "2025-07-01T08:33:29+00:00",
-  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.publisher">publisher</a>" : "WHO",
-  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.contact">contact</a>" : [
+  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.url">url</a>" : "http://smart.who.int/icvp/StructureMap/PreQualDBtoProductAuthorizationLM",
+  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.version">version</a>" : "0.2.0",
+  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.name">name</a>" : "PreQualDBtoProductAuthorizationLM",
+  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.status">status</a>" : "draft",
+  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.date">date</a>" : "2025-09-16T20:42:07+00:00",
+  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.publisher">publisher</a>" : "WHO",
+  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.contact">contact</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "WHO",
-      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "WHO",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
-          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://who.int"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://who.int"
         }
       ]
     }
   ],
-  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.structure">structure</a>" : [
+  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure">structure</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.structure.url">url</a>" : "http://smart.who.int/icvp/StructureDefinition/PreQualDBwithIds",
-      "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.structure.mode">mode</a>" : "source",
-      "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.structure.alias">alias</a>" : "PreQualDB"
+      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.url">url</a>" : "http://smart.who.int/icvp/StructureDefinition/PreQualDBwithIds",
+      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.mode">mode</a>" : "source",
+      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.alias">alias</a>" : "PreQualDB"
     },
     {
-      "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.structure.url">url</a>" : "http://smart.who.int/icvp/StructureDefinition/ProductAuthorization",
-      "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.structure.mode">mode</a>" : "target",
-      "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.structure.alias">alias</a>" : "ProductAuthorization"
+      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.url">url</a>" : "http://smart.who.int/icvp/StructureDefinition/ProductAuthorization",
+      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.mode">mode</a>" : "target",
+      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.alias">alias</a>" : "ProductAuthorization"
     }
   ],
-  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group">group</a>" : [
+  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group">group</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.name">name</a>" : "PreQualDBtoProductAuthorizationLM",
-      "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.input">input</a>" : [
+      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.name">name</a>" : "PreQualDBtoProductAuthorizationLM",
+      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.typeMode">typeMode</a>" : "none",
+      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input">input</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.input.name">name</a>" : "prequal",
-          "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.input.type">type</a>" : "PreQualDB",
-          "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.input.mode">mode</a>" : "source"
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.name">name</a>" : "prequal",
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.type">type</a>" : "PreQualDB",
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.mode">mode</a>" : "source"
         },
         {
-          "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.input.name">name</a>" : "productAuth",
-          "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.input.type">type</a>" : "ProductAuthoization",
-          "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.input.mode">mode</a>" : "target"
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.name">name</a>" : "productAuth",
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.type">type</a>" : "ProductAuthoization",
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.mode">mode</a>" : "target"
         }
       ],
-      "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule">rule</a>" : [
+      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule">rule</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.name">name</a>" : "status",
-          "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "status",
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
             {
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "productAuth",
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "status",
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "status"
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "productAuth",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "status",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "status"
             }
           ],
-          "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
             {
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "status",
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "status",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
                 {
-                  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueString</a>" : "active"
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueString</a>" : "active"
                 }
               ]
             }
           ]
         },
         {
-          "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.name">name</a>" : "set prequal",
-          "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "set prequal",
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
             {
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "productAuth",
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "type",
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "type"
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "productAuth",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "type",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "type"
             }
           ],
-          "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
             {
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "type",
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "type",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
                 {
-                  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueString</a>" : "prequal"
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueString</a>" : "prequal"
                 }
               ]
             }
           ]
         },
         {
-          "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.name">name</a>" : "process nra",
-          "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "process nra",
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
             {
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "prequal",
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "responsibleNRAReference",
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "respNRARef"
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "prequal",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "responsibleNRAReference",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "respNRARef"
             }
           ],
-          "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
             {
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.name">name</a>" : "set national regulatory authority holder",
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "set national regulatory authority holder",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
                 {
-                  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "respNRARef",
-                  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "respNRARef"
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "respNRARef",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "respNRARef"
                 }
               ],
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
                 {
-                  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "productAuth",
-                  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "holder",
-                  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
-                  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "productAuth",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "holder",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
                     {
-                      "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "respNRARef"
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "respNRARef"
                     }
                   ]
                 }
@@ -449,31 +456,32 @@
           ]
         },
         {
-          "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.name">name</a>" : "process validity period",
-          "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "process validity period",
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
             {
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "prequal",
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "validityPeriod",
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "validityPeriod"
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "prequal",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "validityPeriod",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "validityPeriod"
             }
           ],
-          "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
             {
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.name">name</a>" : "set validity period",
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "set validity period",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
                 {
-                  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "validityPeriod",
-                  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "validityPeriod"
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "validityPeriod",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "validityPeriod"
                 }
               ],
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
                 {
-                  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "productAuth",
-                  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "validityPeriod",
-                  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
-                  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "productAuth",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "validityPeriod",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
                     {
-                      "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "validityPeriod"
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "validityPeriod"
                     }
                   ]
                 }
@@ -482,32 +490,33 @@
           ]
         },
         {
-          "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.name">name</a>" : "process juris",
-          "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "process juris",
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
             {
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "productAuth",
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "jurisdiction",
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "j"
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "productAuth",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "jurisdiction",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "j"
             }
           ],
-          "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
             {
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.name">name</a>" : "set WHO",
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "set WHO",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
                 {
-                  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "j",
-                  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "coding",
-                  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "coding"
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "j",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "coding",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "coding"
                 }
               ],
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
                 {
-                  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "coding",
-                  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "display",
-                  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
-                  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "coding",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "display",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
                     {
-                      "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueString</a>" : "WHO"
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueString</a>" : "WHO"
                     }
                   ]
                 }
@@ -516,44 +525,46 @@
           ]
         },
         {
-          "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.name">name</a>" : "set number/index",
-          "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "set number/index",
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
             {
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "prequal",
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "index",
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "index"
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "prequal",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "index",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "index"
             }
           ],
-          "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
             {
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "productAuth",
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "number",
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "productAuth",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "number",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
                 {
-                  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "index"
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "index"
                 }
               ]
             }
           ]
         },
         {
-          "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.name">name</a>" : "set prod ref",
-          "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "set prod ref",
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
             {
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "prequal",
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "productReference",
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "prodRef"
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "prequal",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "productReference",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "prodRef"
             }
           ],
-          "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
             {
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "productAuth",
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "product",
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
-              "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "productAuth",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "product",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
                 {
-                  "<a href="http://hl7.org/fhir/R5/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "prodRef"
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "prodRef"
                 }
               ]
             }
@@ -586,7 +597,7 @@
 
 <div class="inner-wrapper">
   <p>
-    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.pcmt-vaxprequal#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Jul 1, 2025 08:34+0000">2025-07-01</span>
+    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.pcmt-vaxprequal#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 16, 2025 20:43+0000">2025-09-16</span>
     <br/>
     <span style="color: var(--footer-highlight-text-color)">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
