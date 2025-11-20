@@ -320,48 +320,12 @@
 
 
 
-  <pre class="rdf" style="white-space: pre; overflow: hidden"><code class="language-turtle">
-@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
-@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
-@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
-@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
-
-# - resource -------------------------------------------------------------------
-
- a fhir:ActorDefinition ;
-  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R5/actordefinition.html#ActorDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;SpecialistMedicalDoctor&quot;] ; # 
-  <a href="http://hl7.org/fhir/R5/actordefinition.html#ActorDefinition.meta">fhir:meta</a> [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://smart.who.int/smart-base/StructureDefinition/SGPersona&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://smart.who.int/smart-base/StructureDefinition/SGPersona&gt;     ] )
-  ] ; # 
-  <a href="http://hl7.org/fhir/R5/actordefinition.html#ActorDefinition.text">fhir:text</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ActorDefinition SpecialistMedicalDoctor&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;SpecialistMedicalDoctor\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcSpecialistMedicalDoctor\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;code&gt;http://smart.who.int/smart-base/StructureDefinition/SGPersona&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Actor: SpecialistMedicalDoctor &lt;/b&gt;&lt;/td&gt;&lt;td&gt;Specialist medical doctor&lt;/td&gt;&lt;td&gt;Type: person &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan=\&quot;3\&quot;/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
-  ] ; # 
-  <a href="http://hl7.org/fhir/R5/actordefinition.html#ActorDefinition.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://smart.who.int/hiv/ActorDefinition/SpecialistMedicalDoctor&quot;^^xsd:anyURI] ; # 
-  <a href="http://hl7.org/fhir/R5/actordefinition.html#ActorDefinition.identifier">fhir:identifier</a> ( [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;SpecialistMedicalDoctor&quot; ]
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R5/actordefinition.html#ActorDefinition.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1.0.0&quot;] ; # 
-  <a href="http://hl7.org/fhir/R5/actordefinition.html#ActorDefinition.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;SpecialistMedicalDoctor&quot;] ; # 
-  <a href="http://hl7.org/fhir/R5/actordefinition.html#ActorDefinition.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Specialist medical doctor&quot;] ; # 
-  <a href="http://hl7.org/fhir/R5/actordefinition.html#ActorDefinition.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;draft&quot;] ; # 
-  <a href="http://hl7.org/fhir/R5/actordefinition.html#ActorDefinition.experimental">fhir:experimental</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false] ; # 
-  <a href="http://hl7.org/fhir/R5/actordefinition.html#ActorDefinition.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2025-07-08T23:21:58+02:00&quot;^^xsd:dateTime] ; # 
-  <a href="http://hl7.org/fhir/R5/actordefinition.html#ActorDefinition.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;WHO&quot;] ; # 
-  <a href="http://hl7.org/fhir/R5/actordefinition.html#ActorDefinition.contact">fhir:contact</a> ( [
-<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;WHO&quot; ] ;
-    ( <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;http://who.int&quot; ]     ] )
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R5/actordefinition.html#ActorDefinition.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;A doctor who diagnoses, treats and prevents illness, disease, injury and other impairments using specialized testing and diagnostic, medical, surgical, physical and psychiatric techniques. These providers may also plan, supervise and evaluate the implementation of care and treatment plans by other health care providers. They specialize in certain disease categories, types of clients or methods of treatment and may conduct medical education and research activities in their chosen areas of specialization.&quot;] ; # 
-  <a href="http://hl7.org/fhir/R5/actordefinition.html#ActorDefinition.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;person&quot;] . # 
-
-</code></pre>
+  <div style="position: relative;">
+    <button class="btn-copy" style="position: absolute; top: 10px; right: 20px; z-index: 10;"
+            title="Click to copy ttl"
+            data-clipboard-target="#format-content"></button>
+    <pre class="rdf" style="white-space: pre; overflow-x: auto;"><code id="format-content" class="language-turtle" data-src="ActorDefinition-SpecialistMedicalDoctor.ttl"></code></pre>
+  </div>
 
 
 
@@ -414,6 +378,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
 <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
 <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+    <script type="text/javascript" src="assets/js/format-loader.js"> </script>
 <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
 <!-- Analytics Below
 ================================================== -->

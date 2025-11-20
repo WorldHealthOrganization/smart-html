@@ -321,145 +321,12 @@
 
 
 
-  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
-  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap">resourceType</a>" : "StructureMap",
-  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.id">id</a>" : "ICVPClaimtoIPS",
-  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.text">text</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: StructureMap ICVPClaimtoIPS&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ICVPClaimtoIPS\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcICVPClaimtoIPS\&quot;&gt; &lt;/a&gt;&lt;pre class=\&quot;fml\&quot;&gt;\r\n&lt;b&gt;map&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; &amp;quot;&lt;/span&gt;http://smart.who.int/icvp/StructureMap/ICVPClaimtoIPS&lt;span style=\&quot;color: navy\&quot;&gt;&amp;quot; = &amp;quot;&lt;/span&gt;ICVPClaimtoIPS&lt;span style=\&quot;color: navy\&quot;&gt;&amp;quot;\r\n\r\n&lt;/span&gt;&lt;b&gt;uses&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; &amp;quot;&lt;/span&gt;&lt;a href=\&quot;StructureDefinition-ICVPMin.html\&quot; title=\&quot;ICVP HCERT Payload\&quot;&gt;http://smart.who.int/icvp/StructureDefinition/ICVPMin&lt;/a&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&amp;quot; &lt;/span&gt;&lt;b&gt;alias &lt;/b&gt;ICVPPayload &lt;b&gt;as &lt;/b&gt;&lt;b&gt;source&lt;/b&gt;\r\n&lt;b&gt;uses&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; &amp;quot;&lt;/span&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/bundle.html\&quot; title=\&quot;Bundle\&quot;&gt;http://hl7.org/fhir/StructureDefinition/Bundle&lt;/a&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&amp;quot; &lt;/span&gt;&lt;b&gt;alias &lt;/b&gt;IPS &lt;b&gt;as &lt;/b&gt;&lt;b&gt;target&lt;/b&gt;\r\n&lt;b&gt;uses&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; &amp;quot;&lt;/span&gt;&lt;a href=\&quot;StructureDefinition-ICVP.html\&quot; title=\&quot;ICVP\&quot;&gt;http://smart.who.int/icvp/StructureDefinition/ICVP&lt;/a&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&amp;quot; &lt;/span&gt;&lt;b&gt;alias &lt;/b&gt;ICVPModel &lt;b&gt;as &lt;/b&gt;&lt;b&gt;target&lt;/b&gt;\r\n&lt;b&gt;uses&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; &amp;quot;&lt;/span&gt;&lt;a href=\&quot;StructureDefinition-ICVPVaccineDetails.html\&quot; title=\&quot;ICVP - Vaccine Details\&quot;&gt;http://smart.who.int/icvp/StructureDefinition/ICVPVaccineDetails&lt;/a&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&amp;quot; &lt;/span&gt;&lt;b&gt;alias &lt;/b&gt;ICVPVaccineDetails &lt;b&gt;as &lt;/b&gt;&lt;b&gt;target&lt;/b&gt;\r\n\r\n&lt;b&gt;imports&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; &amp;quot;&lt;/span&gt;&lt;a href=\&quot;StructureMap-ICVPLMToIPS.html\&quot; title=\&quot;ICVPLMToIPS\&quot;&gt;http://smart.who.int/icvp/StructureMap/ICVPLMToIPS&lt;/a&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&amp;quot;\r\n&lt;/span&gt;&lt;b&gt;imports&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; &amp;quot;&lt;/span&gt;&lt;a href=\&quot;StructureMap-ICVPClaimtoICVPLM.html\&quot; title=\&quot;ICVPClaimtoICVPLM\&quot;&gt;http://smart.who.int/icvp/StructureMap/ICVPClaimtoICVPLM&lt;/a&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&amp;quot;\r\n&lt;/span&gt;\r\n&lt;b&gt;group &lt;/b&gt;ICVPClaimtoIPS&lt;span style=\&quot;color: navy\&quot;&gt;(&lt;/span&gt;&lt;b&gt;source&lt;/b&gt; &lt;span style=\&quot;color: maroon\&quot;&gt;ICVPClaim&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt; : &lt;/span&gt;ICVPPayload, &lt;b&gt;target&lt;/b&gt; &lt;span style=\&quot;color: maroon\&quot;&gt;IPS&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt; : &lt;/span&gt;Bundle&lt;span style=\&quot;color: navy\&quot;&gt;)&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;  ICVPClaim&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;&lt;b&gt;create&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt;(&lt;/span&gt;&lt;span style=\&quot;color: blue\&quot;&gt;'http://smart.who.int/icvp/StructureDefinition/ICVP'&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;)&lt;/span&gt;&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;model&lt;/span&gt;&lt;b&gt; then&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;    ICVPClaim&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;model&lt;b&gt; then &lt;/b&gt;ICVPClaimtoICVPLM&lt;span style=\&quot;color: navy\&quot;&gt;(&lt;/span&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;ICVPClaim&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;, &lt;/span&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;model&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;)&lt;/span&gt; &lt;i&gt;&amp;quot;rule1&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    ICVPClaim&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;IPS&lt;b&gt; then &lt;/b&gt;ICVPLMToIPS&lt;span style=\&quot;color: navy\&quot;&gt;(&lt;/span&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;model&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;, &lt;/span&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;IPS&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;)&lt;/span&gt; &lt;i&gt;&amp;quot;rule2&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n  &lt;span style=\&quot;color: navy\&quot;&gt;}&lt;/span&gt; &lt;i&gt;&amp;quot;rule3&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n&lt;span style=\&quot;color: navy\&quot;&gt;}\r\n\r\n&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;"
-  },
-  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.url">url</a>" : "http://smart.who.int/icvp/StructureMap/ICVPClaimtoIPS",
-  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.version">version</a>" : "0.3.0",
-  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.name">name</a>" : "ICVPClaimtoIPS",
-  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.status">status</a>" : "draft",
-  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.date">date</a>" : "2025-10-17T14:28:32+00:00",
-  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.publisher">publisher</a>" : "WHO",
-  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.contact">contact</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "WHO",
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://who.int"
-        }
-      ]
-    }
-  ],
-  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure">structure</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.url">url</a>" : "http://smart.who.int/icvp/StructureDefinition/ICVPMin",
-      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.mode">mode</a>" : "source",
-      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.alias">alias</a>" : "ICVPPayload"
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/Bundle",
-      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.mode">mode</a>" : "target",
-      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.alias">alias</a>" : "IPS"
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.url">url</a>" : "http://smart.who.int/icvp/StructureDefinition/ICVP",
-      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.mode">mode</a>" : "target",
-      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.alias">alias</a>" : "ICVPModel"
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.url">url</a>" : "http://smart.who.int/icvp/StructureDefinition/ICVPVaccineDetails",
-      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.mode">mode</a>" : "target",
-      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.alias">alias</a>" : "ICVPVaccineDetails"
-    }
-  ],
-  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.import">import</a>" : [
-    <a href="StructureMap-ICVPLMToIPS.html" style="color: Maroon">&#x1F517;</a> "http://smart.who.int/icvp/StructureMap/ICVPLMToIPS"<a href="StructureMap-ICVPClaimtoICVPLM.html" style="color: Maroon">&#x1F517;</a> ,
-    "http://smart.who.int/icvp/StructureMap/ICVPClaimtoICVPLM"
-  ],
-  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group">group</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.name">name</a>" : "ICVPClaimtoIPS",
-      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.typeMode">typeMode</a>" : "none",
-      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input">input</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.name">name</a>" : "ICVPClaim",
-          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.type">type</a>" : "ICVPPayload",
-          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.mode">mode</a>" : "source"
-        },
-        {
-          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.name">name</a>" : "IPS",
-          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.type">type</a>" : "Bundle",
-          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.mode">mode</a>" : "target"
-        }
-      ],
-      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule">rule</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "rule3",
-          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "ICVPClaim"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.variable">variable</a>" : "model",
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "create",
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
-                {
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueString</a>" : "http://smart.who.int/icvp/StructureDefinition/ICVP"
-                }
-              ]
-            }
-          ],
-          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "rule1",
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
-                {
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "ICVPClaim"
-                }
-              ],
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
-                {
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "model",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable"
-                }
-              ],
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.dependent">dependent</a>" : [
-                {
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.dependent.name">name</a>" : "ICVPClaimtoICVPLM",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.dependent.variable">variable</a>" : [
-                    "ICVPClaim",
-                    "model"
-                  ]
-                }
-              ]
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "rule2",
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
-                {
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "ICVPClaim"
-                }
-              ],
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
-                {
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "IPS",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable"
-                }
-              ],
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.dependent">dependent</a>" : [
-                {
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.dependent.name">name</a>" : "ICVPLMToIPS",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.dependent.variable">variable</a>" : [
-                    "model",
-                    "IPS"
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}</code></pre>
+  <div style="position: relative;">
+    <button class="btn-copy" style="position: absolute; top: 10px; right: 20px; z-index: 10;"
+            title="Click to copy json"
+            data-clipboard-target="#format-content"></button>
+    <pre class="json" style="white-space: pre; overflow-x: auto;"><code id="format-content" class="language-json" data-src="StructureMap-ICVPClaimtoIPS.json"></code></pre>
+  </div>
 
 
   <!-- insert notes if present -->
@@ -511,6 +378,7 @@
 <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
 <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
 <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+    <script type="text/javascript" src="assets/js/format-loader.js"> </script>
 <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
 <!-- Analytics Below
 ================================================== -->

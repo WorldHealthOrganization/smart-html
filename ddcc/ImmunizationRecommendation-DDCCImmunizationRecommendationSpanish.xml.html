@@ -257,49 +257,12 @@
 
 
 
-  <pre class="xml" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
-&lt;<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation">ImmunizationRecommendation</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;DDCCImmunizationRecommendationSpanish&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation.meta">meta</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://smart.who.int/ddcc/StructureDefinition/DDCCImmunizationRecommendation&quot;/&gt;
-  &lt;/meta&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation.text">text</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: ImmunizationRecommendation DDCCImmunizationRecommendationSpanish&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;DDCCImmunizationRecommendationSpanish&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcDDCCImmunizationRecommendationSpanish&quot;&gt; &lt;/a&gt;&lt;a name=&quot;DDCCImmunizationRecommendationSpanish-en-US&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a href=&quot;Patient-DDCCPatientSpanish.html&quot;&gt;Aulo Agerio(official) (no stated gender), DoB: 2003-03-03&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2021-05-06&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;recommendation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;vaccineCode&lt;/b&gt;: &lt;span title=&quot;Codes:{http://id.who.int/icd11/mms XM9QW8}&quot;&gt;XM9QW8&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;forecastStatus&lt;/b&gt;: &lt;span title=&quot;Codes:{http://terminology.hl7.org/CodeSystem/immunization-recommendation-status due}&quot;&gt;Due&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;DateCriterions&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=&quot;Codes:{http://loinc.org 30980-7}&quot;&gt;Date vaccine due&lt;/span&gt;&lt;/td&gt;&lt;td&gt;2021-05-20&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;supportingImmunization&lt;/b&gt;: &lt;a href=&quot;Immunization-DDCCImmunizationSpanish.html&quot;&gt;Immunization: extension = XM4YL8 (mms#XM4YL8),ESP,Test (DDCC Codes for examples#TEST),2021-05-30; status = completed; vaccineCode = XM9QW8; occurrence[x] = 2021-05-06; lotNumber = 123; expirationDate = 2021-06-30&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;<a name="end-xhtml"></a>
-  &lt;/text&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation.patient">patient</a>&gt;<a href="Patient-DDCCPatientSpanish.html" style="color: Maroon">&#x1F517;</a> 
-    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient/DDCCPatientSpanish&quot;/&gt;
-  &lt;/patient&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2021-05-06&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation.recommendation">recommendation</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation.recommendation.vaccineCode">vaccineCode</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://id.who.int/icd11/mms&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;XM9QW8&quot;/&gt;
-      &lt;/coding&gt;
-    &lt;/vaccineCode&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation.recommendation.forecastStatus">forecastStatus</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/immunization-recommendation-status&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;due&quot;/&gt;
-      &lt;/coding&gt;
-    &lt;/forecastStatus&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation.recommendation.dateCriterion">dateCriterion</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation.recommendation.dateCriterion.code">code</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;30980-7&quot;/&gt;
-        &lt;/coding&gt;
-      &lt;/code&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation.recommendation.dateCriterion.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2021-05-20&quot;/&gt;
-    &lt;/dateCriterion&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation.recommendation.supportingImmunization">supportingImmunization</a>&gt;<a href="Immunization-DDCCImmunizationSpanish.html" style="color: Maroon">&#x1F517;</a> 
-      &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Immunization/DDCCImmunizationSpanish&quot;/&gt;
-    &lt;/supportingImmunization&gt;
-  &lt;/recommendation&gt;
-&lt;/ImmunizationRecommendation&gt;</code></pre>
+  <div style="position: relative;">
+    <button class="btn-copy" style="position: absolute; top: 10px; right: 20px; z-index: 10;"
+            title="Click to copy xml"
+            data-clipboard-target="#format-content"></button>
+    <pre class="xml" style="white-space: pre; overflow-x: auto;"><code id="format-content" class="language-xml" data-src="ImmunizationRecommendation-DDCCImmunizationRecommendationSpanish.xml"></code></pre>
+  </div>
 
 
   <!-- insert notes if present -->
@@ -351,6 +314,7 @@
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+    <script type="text/javascript" src="assets/js/format-loader.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   <!-- Analytics Below
   ================================================== -->

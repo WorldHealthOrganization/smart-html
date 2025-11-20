@@ -320,67 +320,12 @@
 
 
 
-  <pre class="xml" style="white-space: pre; text-wrap: nowrap;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
-
-&lt;<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition">OperationDefinition</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.id">id</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#id">value</a>=&quot;ConsentPostCounseling&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.meta">meta</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/resource.html#Meta#Meta.profile">profile</a>
-             <a href="http://hl7.org/fhir/R4B/datatypes.html#canonical">value</a>=&quot;http://smart.who.int/base/StructureDefinition/SGTransaction&quot;/&gt;
-  &lt;/meta&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.text">text</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;extensions&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;Parameters&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Use&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Scope&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Cardinality&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Documentation&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
-  &lt;/text&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.extension">extension</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">url</a>=&quot;http://smart.who.int/base/StructureDefinition/Sgactorext&quot;&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.value[x]">valueReference</a>&gt;<a href="ActorDefinition-OCHIE.html" style="color: Maroon">&#x1F517;</a> 
-      &lt;<a href="http://hl7.org/fhir/R4B/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;ActorDefinition/OCHIE&quot;/&gt;
-    &lt;/valueReference&gt;
-  &lt;/extension&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.extension">extension</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">url</a>=&quot;http://smart.who.int/base/StructureDefinition/Sgactorext&quot;&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.value[x]">valueReference</a>&gt;<a href="ActorDefinition-OCHIE.html" style="color: Maroon">&#x1F517;</a> 
-      &lt;<a href="http://hl7.org/fhir/R4B/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;ActorDefinition/OCHIE&quot;/&gt;
-    &lt;/valueReference&gt;
-  &lt;/extension&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.extension">extension</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">url</a>=&quot;http://smart.who.int/base/StructureDefinition/Markdown&quot;&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.value[x]">valueMarkdown</a>
-                   <a href="http://hl7.org/fhir/R4B/datatypes.html#markdown">value</a>=&quot;Consent can be recorded based on a post counseling based on a blanket jurisdictional policy.&quot;/&gt;
-  &lt;/extension&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.extension">extension</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">url</a>=&quot;http://smart.who.int/base/StructureDefinition/Markdown&quot;&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.value[x]">valueMarkdown</a>
-                   <a href="http://hl7.org/fhir/R4B/datatypes.html#markdown">value</a>=&quot;The OCHIE shall support create and update per the  [IHE PCF Consent Recorder Capability Statement](https://profiles.ihe.net/ITI/PCF/CapabilityStatement-IHE.PCF.consentRecorder.html). &quot;/&gt;
-  &lt;/extension&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.extension">extension</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">url</a>=&quot;http://smart.who.int/base/StructureDefinition/Markdown&quot;&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.value[x]">valueMarkdown</a>
-                   <a href="http://hl7.org/fhir/R4B/datatypes.html#markdown">value</a>=&quot;The OCHIE SHALL act as  [IHE PCF Consent Recorder](https://profiles.ihe.net/ITI/PCF/volume-1.html#153111-consent-recorder) &quot;/&gt;
-  &lt;/extension&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.url">url</a>
-       <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">value</a>=&quot;http://smart.who.int/ips-pilgrimage/OperationDefinition/ConsentPostCounseling&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.version">version</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;1.0.0&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.name">name</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;RecordConsentBulk&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.title">title</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Record Consent - Post-Counseling&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.status">status</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.kind">kind</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;operation&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.experimental">experimental</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.date">date</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#dateTime">value</a>=&quot;2024-04-25T17:23:21+00:00&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.publisher">publisher</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;WHO&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.contact">contact</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;WHO&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;http://who.int&quot;/&gt;
-    &lt;/telecom&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;email&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;smart@who.int&quot;/&gt;
-    &lt;/telecom&gt;
-  &lt;/contact&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.description">description</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#markdown">value</a>=&quot;Record Consent - Post-Counseling. Intended in bulk&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;ConsentPostCounseling&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.system">system</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.type">type</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.instance">instance</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
-&lt;/OperationDefinition&gt;</code></pre>
+  <div style="position: relative;">
+    <button class="btn-copy" style="position: absolute; top: 10px; right: 20px; z-index: 10;"
+            title="Click to copy xml"
+            data-clipboard-target="#format-content"></button>
+    <pre class="xml" style="white-space: pre; overflow-x: auto;"><code id="format-content" class="language-xml" data-src="OperationDefinition-ConsentPostCounseling.xml"></code></pre>
+  </div>
 
 
   <!-- insert notes if present -->
@@ -432,6 +377,7 @@
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+    <script type="text/javascript" src="assets/js/format-loader.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   
   <!-- Analytics Below

@@ -255,145 +255,12 @@
 
 
 
-  <pre class="rdf" style="white-space: pre; overflow: hidden"><code class="language-turtle">
-@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
-@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
-@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
-
-# - resource -------------------------------------------------------------------
-
- a fhir:Bundle ;
-  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;DDCCTXSHEbundleexample1&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.meta">fhir:meta</a> [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://smart.who.int/ddcc/StructureDefinition/DDCCSubmitHealthEventRequest&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://smart.who.int/ddcc/StructureDefinition/DDCCSubmitHealthEventRequest&gt;     ] )
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;batch&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">fhir:entry</a> ( [
-<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://www.example.org/fhir/Parameters/DDCCVSTXSHEParameters1&quot;^^xsd:anyURI ] ;
-    ( <a href="http://hl7.org/fhir/R4/parameters.html#Parameters">fhir:resource</a> &lt;http://www.example.org/fhir/Parameters/DDCCVSTXSHEParameters1&gt; ) ;
-<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">fhir:request</a> [
-<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">fhir:method</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;POST&quot; ] ;
-<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;QuestionnaireResponse/$generateHealthCertificate&quot;^^xsd:anyURI ]     ]
-  ] ) . # 
-
-&lt;http://www.example.org/fhir/Parameters/DDCCVSTXSHEParameters1&gt; <a href="http://hl7.org/fhir/R4/parameters.html">a</a> fhir:Parameters ;
-  <a href="http://hl7.org/fhir/R4/parameters.html#Parameters.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;DDCCVSTXSHEParameters1&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/parameters.html#Parameters.meta">fhir:meta</a> [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://smart.who.int/ddcc/StructureDefinition/DDCCGenerateHealthCertificateParameters&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://smart.who.int/ddcc/StructureDefinition/DDCCGenerateHealthCertificateParameters&gt;     ] )
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter">fhir:parameter</a> ( [
-<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;response&quot; ] ;
-    ( <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse">fhir:Parameters.parameter.resource</a> [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html">a</a> fhir:QuestionnaireResponse ;
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;DDCCVSQuestionnaireResponseExample&quot; ] ;
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.meta">fhir:meta</a> [
-        ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://smart.who.int/ddcc/StructureDefinition/DDCCQuestionnaireResponse&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://smart.who.int/ddcc/StructureDefinition/DDCCQuestionnaireResponse&gt;         ] )       ] ;
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.questionnaire">fhir:questionnaire</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://smart.who.int/ddcc/DDCCVSCoreDataSetQuestionnaire&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://smart.who.int/ddcc/DDCCVSCoreDataSetQuestionnaire&gt;       ] ;
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;completed&quot; ] ;
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.subject">fhir:subject</a> [
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/DDCCPatientEnglish&quot; ]       ] ;
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.authored">fhir:authored</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2021-04-01&quot;^^xsd:date ] ;
-      ( <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item">fhir:item</a> [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;name&quot; ] ;
-        ( <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">fhir:answer</a> [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Aulus Agerius&quot; ]         ] )       ] [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;birthDate&quot; ] ;
-        ( <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">fhir:answer</a> [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#date">fhir:v</a> &quot;2003-03-03&quot;^^xsd:date ]         ] )       ] [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;identifier&quot; ] ;
-        ( <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">fhir:answer</a> [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1234567890&quot; ]         ] )       ] [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;sex&quot; ] ;
-        ( <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">fhir:answer</a> [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding">a</a> fhir:Coding ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/administrative-gender&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;male&quot; ]           ]         ] )       ] [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;vaccine&quot; ] ;
-        ( <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">fhir:answer</a> [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding">a</a> fhir:Coding ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://id.who.int/icd11/mms&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;XM0GQ8&quot; ]           ]         ] )       ] [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;brand&quot; ] ;
-        ( <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">fhir:answer</a> [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding">a</a> fhir:Coding ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://id.who.int/icd11/mms&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;XM3DT5&quot; ]           ]         ] )       ] [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;manufacturer&quot; ] ;
-        ( <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">fhir:answer</a> [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding">a</a> fhir:Coding ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://smart.who.int/ddcc/CodeSystem/DDCCExampleTestCodeSystem&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;TEST&quot; ]           ]         ] )       ] [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ma_holder&quot; ] ;
-        ( <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">fhir:answer</a> [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding">a</a> fhir:Coding ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://smart.who.int/ddcc/CodeSystem/DDCCExampleTestCodeSystem&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;TEST&quot; ]           ]         ] )       ] [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;lot&quot; ] ;
-        ( <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">fhir:answer</a> [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ER8732&quot; ]         ] )       ] [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;date&quot; ] ;
-        ( <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">fhir:answer</a> [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#date">fhir:v</a> &quot;2021-04-05&quot;^^xsd:date ]         ] )       ] [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;vaccine_valid&quot; ] ;
-        ( <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">fhir:answer</a> [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#date">fhir:v</a> &quot;2021-04-19&quot;^^xsd:date ]         ] )       ] [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;dose&quot; ] ;
-        ( <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">fhir:answer</a> [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> &quot;1&quot;^^xsd:integer ]         ] )       ] [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;total_doses&quot; ] ;
-        ( <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">fhir:answer</a> [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> &quot;2&quot;^^xsd:integer ]         ] )       ] [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;country&quot; ] ;
-        ( <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">fhir:answer</a> [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding">a</a> fhir:Coding ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:iso:std:iso:3166&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;USA&quot; ]           ]         ] )       ] [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;centre&quot; ] ;
-        ( <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">fhir:answer</a> [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vaccination Site&quot; ]         ] )       ] [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;hw&quot; ] ;
-        ( <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">fhir:answer</a> [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;lAH8TnzqAInqwkslHzOlSA&quot; ]         ] )       ] [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;disease&quot; ] ;
-        ( <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">fhir:answer</a> [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding">a</a> fhir:Coding ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://id.who.int/icd11/mms&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;RA01&quot; ]           ]         ] )       ] [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;due_date&quot; ] ;
-        ( <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">fhir:answer</a> [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#date">fhir:v</a> &quot;2021-04-28&quot;^^xsd:date ]         ] )       ] [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;pha&quot; ] ;
-        ( <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">fhir:answer</a> [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;dPD2PfwzBQyphcjeUiAdRP&quot; ]         ] )       ] [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;hcid&quot; ] ;
-        ( <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">fhir:answer</a> [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;bMlJkAt0V92RYhhG3fNt&quot; ]         ] )       ] [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;valid_from&quot; ] ;
-        ( <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">fhir:answer</a> [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#date">fhir:v</a> &quot;2021-04-05&quot;^^xsd:date ]         ] )       ] [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;valid_until&quot; ] ;
-        ( <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">fhir:answer</a> [
-<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#date">fhir:v</a> &quot;2022-04-05&quot;^^xsd:date ]         ] )       ] )     ] )
-  ] ) . # 
-
-</code></pre>
+  <div style="position: relative;">
+    <button class="btn-copy" style="position: absolute; top: 10px; right: 20px; z-index: 10;"
+            title="Click to copy ttl"
+            data-clipboard-target="#format-content"></button>
+    <pre class="rdf" style="white-space: pre; overflow-x: auto;"><code id="format-content" class="language-turtle" data-src="Bundle-DDCCTXSHEbundleexample1.ttl"></code></pre>
+  </div>
 
 
 
@@ -446,6 +313,7 @@
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+    <script type="text/javascript" src="assets/js/format-loader.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   <!-- Analytics Below
   ================================================== -->

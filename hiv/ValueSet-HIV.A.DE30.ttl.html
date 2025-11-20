@@ -320,75 +320,12 @@
 
 
 
-  <pre class="rdf" style="white-space: pre; overflow: hidden"><code class="language-turtle">
-@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
-@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
-@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
-@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
-
-# - resource -------------------------------------------------------------------
-
- a fhir:ValueSet ;
-  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;HIV.A.DE30&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.meta">fhir:meta</a> [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset&gt;     ] [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset&gt;     ] [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset&gt;     ] )
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">fhir:text</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;extensions&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet HIV.A.DE30&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;HIV.A.DE30\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcHIV.A.DE30\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profiles: &lt;a href=\&quot;http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablevalueset.html\&quot;&gt;CRMI Shareable ValueSet&lt;/a&gt;, &lt;a href=\&quot;http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablevalueset.html\&quot;&gt;CRMI Publishable ValueSet&lt;/a&gt;, &lt;a href=\&quot;http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-computablevalueset.html\&quot;&gt;CRMI Computable ValueSet&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;CodeSystem-HIVConcepts.html\&quot;&gt;&lt;code&gt;http://smart.who.int/hiv/CodeSystem/HIVConcepts&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46A.46DE31\&quot;&gt;HIV.A.DE31&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unmarried&lt;/td&gt;&lt;td&gt;Client does not have an active marriage contract&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46A.46DE32\&quot;&gt;HIV.A.DE32&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Never married&lt;/td&gt;&lt;td&gt;Client has never entered into a marriage contract&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46A.46DE33\&quot;&gt;HIV.A.DE33&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Married&lt;/td&gt;&lt;td&gt;A current marriage contract is active&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46A.46DE34\&quot;&gt;HIV.A.DE34&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Polygamous&lt;/td&gt;&lt;td&gt;Client is in a polygamous union&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46A.46DE35\&quot;&gt;HIV.A.DE35&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Divorced&lt;/td&gt;&lt;td&gt;Client is divorced, whereby marriage contract has been declared dissolved and inactive&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46A.46DE36\&quot;&gt;HIV.A.DE36&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Widowed&lt;/td&gt;&lt;td&gt;Client's spouse has died&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46A.46DE37\&quot;&gt;HIV.A.DE37&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unknown&lt;/td&gt;&lt;td&gt;Client does not wish to disclose marital status&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46A.46DE38\&quot;&gt;HIV.A.DE38&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Domestic partner&lt;/td&gt;&lt;td&gt;Client reports that they are in a domestic partnership&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46A.46DE39\&quot;&gt;HIV.A.DE39&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Annulled&lt;/td&gt;&lt;td&gt;Client's marriage contract has been declared null and to have not existed&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46A.46DE40\&quot;&gt;HIV.A.DE40&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Legally separated&lt;/td&gt;&lt;td&gt;Client is legally separated from their spouse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-HIVConcepts.html#HIVConcepts-HIV.46A.46DE41\&quot;&gt;HIV.A.DE41&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Interlocutory&lt;/td&gt;&lt;td&gt;Client is subject to an interlocutory decree&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://smart.who.int/hiv/ValueSet/HIV.A.DE30&quot;^^xsd:anyURI] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1.0.0&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;HIVADE30&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Marital Status ValueSet&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">fhir:experimental</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2025-07-08T23:21:58+02:00&quot;^^xsd:dateTime] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;WHO&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">fhir:contact</a> ( [
-<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;WHO&quot; ] ;
-    ( <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;http://who.int&quot; ]     ] )
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;Value set of client's current marital status &quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">fhir:compose</a> [
-    ( <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">fhir:include</a> [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://smart.who.int/hiv/CodeSystem/HIVConcepts&quot;^^xsd:anyURI ] ;
-      ( <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">fhir:concept</a> [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;HIV.A.DE31&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Unmarried&quot; ]       ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;HIV.A.DE32&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Never married&quot; ]       ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;HIV.A.DE33&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Married&quot; ]       ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;HIV.A.DE34&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Polygamous&quot; ]       ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;HIV.A.DE35&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Divorced&quot; ]       ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;HIV.A.DE36&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Widowed&quot; ]       ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;HIV.A.DE37&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Unknown&quot; ]       ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;HIV.A.DE38&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Domestic partner&quot; ]       ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;HIV.A.DE39&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Annulled&quot; ]       ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;HIV.A.DE40&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Legally separated&quot; ]       ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;HIV.A.DE41&quot; ] ;
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Interlocutory&quot; ]       ] )     ] )
-  ] . # 
-
-</code></pre>
+  <div style="position: relative;">
+    <button class="btn-copy" style="position: absolute; top: 10px; right: 20px; z-index: 10;"
+            title="Click to copy ttl"
+            data-clipboard-target="#format-content"></button>
+    <pre class="rdf" style="white-space: pre; overflow-x: auto;"><code id="format-content" class="language-turtle" data-src="ValueSet-HIV.A.DE30.ttl"></code></pre>
+  </div>
 
 
 
@@ -441,6 +378,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
 <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
 <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+    <script type="text/javascript" src="assets/js/format-loader.js"> </script>
 <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
 <!-- Analytics Below
 ================================================== -->

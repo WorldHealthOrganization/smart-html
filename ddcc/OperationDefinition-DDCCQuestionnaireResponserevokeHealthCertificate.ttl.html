@@ -272,63 +272,12 @@
 
 
 
-  <pre class="rdf" style="white-space: pre; overflow: hidden"><code class="language-turtle">
-@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
-@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
-@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
-
-# - resource -------------------------------------------------------------------
-
- a fhir:OperationDefinition ;
-  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DDCCQuestionnaireResponserevokeHealthCertificate&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.text">fhir:text</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: OperationDefinition DDCCQuestionnaireResponserevokeHealthCertificate&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;DDCCQuestionnaireResponserevokeHealthCertificate\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcDDCCQuestionnaireResponserevokeHealthCertificate\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;DDCCQuestionnaireResponserevokeHealthCertificate-en-US\&quot;&gt; &lt;/a&gt;&lt;h3&gt;Parameters&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Use&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Scope&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Cardinality&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Documentation&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;id&lt;/td&gt;&lt;td/&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/datatypes.html#id\&quot;&gt;id&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;The DDCC id of the DDCC Document.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OUT&lt;/td&gt;&lt;td&gt;return&lt;/td&gt;&lt;td/&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/datatypes.html#boolean\&quot;&gt;boolean&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;A boolean to determine if the revocation was successful or not.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://smart.who.int/ddcc/OperationDefinition/DDCCQuestionnaireResponserevokeHealthCertificate&quot;^^xsd:anyURI] ; # 
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1.0.1&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;QuestionnaireResponse_Revoke_Health_Certificate&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;OperationDefinition for revoking a health certificate (DDCC).&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;draft&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.kind">fhir:kind</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;operation&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.experimental">fhir:experimental</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean] ; # 
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2021-12-21&quot;^^xsd:date] ; # 
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;WHO&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.contact">fhir:contact</a> ( [
-<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;WHO&quot; ] ;
-    ( <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;http://who.int&quot; ]     ] )
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;Revoke a DDCC Document.&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.jurisdiction">fhir:jurisdiction</a> ( [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://unstats.un.org/unsd/methods/m49/m49.htm&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;001&quot; ]     ] )
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;revokeHealthCertificate&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean] ; # 
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean] ; # 
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.instance">fhir:instance</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean] ; # 
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter">fhir:parameter</a> ( [
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;id&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;in&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> &quot;1&quot;^^xsd:integer ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.documentation">fhir:documentation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;The DDCC id of the DDCC Document.&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;id&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;return&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;out&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> &quot;1&quot;^^xsd:integer ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.documentation">fhir:documentation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;A boolean to determine if the revocation was successful or not.&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;boolean&quot; ]
-  ] ) . # 
-
-</code></pre>
+  <div style="position: relative;">
+    <button class="btn-copy" style="position: absolute; top: 10px; right: 20px; z-index: 10;"
+            title="Click to copy ttl"
+            data-clipboard-target="#format-content"></button>
+    <pre class="rdf" style="white-space: pre; overflow-x: auto;"><code id="format-content" class="language-turtle" data-src="OperationDefinition-DDCCQuestionnaireResponserevokeHealthCertificate.ttl"></code></pre>
+  </div>
 
 
 
@@ -381,6 +330,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+    <script type="text/javascript" src="assets/js/format-loader.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   <!-- Analytics Below
   ================================================== -->

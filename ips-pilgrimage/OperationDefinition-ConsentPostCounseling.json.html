@@ -320,75 +320,12 @@
 
 
 
-  <pre class="json" style="white-space: pre; text-wrap: nowrap;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">
-{
-  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition">resourceType</a>" : "OperationDefinition",
-  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.id">id</a>" : "ConsentPostCounseling",
-  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.meta">meta</a>" : {
-    "<a href="http://hl7.org/fhir/R4B/resource.html#Meta#Meta.profile">profile</a>" : [
-      <a href="https://build.fhir.org/ig/WorldHealthOrganization/smart-base/StructureDefinition-SGTransaction.html" style="color: Maroon">&#x1F517;</a> "http://smart.who.int/base/StructureDefinition/SGTransaction"
-    ]
-  },
-  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.text">text</a>" : {
-    "<a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.status">status</a>" : "extensions",
-    "<a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;Parameters&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Use&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Scope&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Cardinality&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Documentation&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
-  },
-  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.extension">extension</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.url">url</a>" : "http://smart.who.int/base/StructureDefinition/Sgactorext",
-      "<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.value[x]">valueReference</a>" : {
-        <a href="ActorDefinition-OCHIE.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4B/references.html#Reference#Reference.reference">reference</a>" : "ActorDefinition/OCHIE"
-      }
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.url">url</a>" : "http://smart.who.int/base/StructureDefinition/Sgactorext",
-      "<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.value[x]">valueReference</a>" : {
-        <a href="ActorDefinition-OCHIE.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4B/references.html#Reference#Reference.reference">reference</a>" : "ActorDefinition/OCHIE"
-      }
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.url">url</a>" : "http://smart.who.int/base/StructureDefinition/Markdown",
-      "<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.value[x]">valueMarkdown</a>" : "Consent can be recorded based on a post counseling based on a blanket jurisdictional policy."
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.url">url</a>" : "http://smart.who.int/base/StructureDefinition/Markdown",
-      "<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.value[x]">valueMarkdown</a>" : "The OCHIE shall support create and update per the  [IHE PCF Consent Recorder Capability Statement](https://profiles.ihe.net/ITI/PCF/CapabilityStatement-IHE.PCF.consentRecorder.html). "
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.url">url</a>" : "http://smart.who.int/base/StructureDefinition/Markdown",
-      "<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.value[x]">valueMarkdown</a>" : "The OCHIE SHALL act as  [IHE PCF Consent Recorder](https://profiles.ihe.net/ITI/PCF/volume-1.html#153111-consent-recorder) "
-    }
-  ],
-  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.url">url</a>" : "http://smart.who.int/ips-pilgrimage/OperationDefinition/ConsentPostCounseling",
-  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.version">version</a>" : "1.0.0",
-  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.name">name</a>" : "RecordConsentBulk",
-  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.title">title</a>" : "Record Consent - Post-Counseling",
-  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.kind">kind</a>" : "operation",
-  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.experimental">experimental</a>" : false,
-  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.date">date</a>" : "2024-04-25T17:24:48+00:00",
-  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.publisher">publisher</a>" : "WHO",
-  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.contact">contact</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4B/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "WHO",
-      "<a href="http://hl7.org/fhir/R4B/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4B/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
-          "<a href="http://hl7.org/fhir/R4B/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://who.int"
-        },
-        {
-          "<a href="http://hl7.org/fhir/R4B/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
-          "<a href="http://hl7.org/fhir/R4B/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "smart@who.int"
-        }
-      ]
-    }
-  ],
-  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.description">description</a>" : "Record Consent - Post-Counseling. Intended in bulk",
-  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.code">code</a>" : "ConsentPostCounseling",
-  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.system">system</a>" : false,
-  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.type">type</a>" : true,
-  "<a href="http://hl7.org/fhir/R4B/operationdefinition.html#OperationDefinition.instance">instance</a>" : true
-}</code></pre>
+  <div style="position: relative;">
+    <button class="btn-copy" style="position: absolute; top: 10px; right: 20px; z-index: 10;"
+            title="Click to copy json"
+            data-clipboard-target="#format-content"></button>
+    <pre class="json" style="white-space: pre; overflow-x: auto;"><code id="format-content" class="language-json" data-src="OperationDefinition-ConsentPostCounseling.json"></code></pre>
+  </div>
 
 
   <!-- insert notes if present -->
@@ -440,6 +377,7 @@
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+    <script type="text/javascript" src="assets/js/format-loader.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   
   <!-- Analytics Below

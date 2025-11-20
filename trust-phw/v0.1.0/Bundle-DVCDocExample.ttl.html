@@ -310,174 +310,12 @@
 
 
 
-  <pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden"><code class="language-turtle">
-@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
-@prefix loinc: &lt;https://loinc.org/rdf/&gt; .
-@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
-@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
-@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
-
-# - resource -------------------------------------------------------------------
-
- a fhir:Bundle ;
-  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;DVCDocExample&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.meta">fhir:meta</a> [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://smart.who.int/trust-phw/StructureDefinition/DVCBundle&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://smart.who.int/trust-phw/StructureDefinition/DVCBundle&gt;     ] )
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en-GB&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.identifier">fhir:identifier</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:oid:2.16.724.4.8.10.200.10&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;175bd032-8b00-4728-b2dc-748bb1501aed&quot; ]
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;document&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.timestamp">fhir:timestamp</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:v</a> &quot;2024-02-11T11:32:00+01:00&quot;^^xsd:dateTime] ; # 
-  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">fhir:entry</a> ( [
-<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:uuid:24351938-53ea-4d4f-b07b-7f557656005e&quot;^^xsd:anyURI ] ;
-    ( <a href="http://hl7.org/fhir/R4/composition.html#Composition">fhir:resource</a> &lt;urn:uuid:24351938-53ea-4d4f-b07b-7f557656005e&gt; )
-  ] [
-<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:uuid:175863f7-fdea-4d11-92ff-f33345a560e4&quot;^^xsd:anyURI ] ;
-    ( <a href="http://hl7.org/fhir/R4/patient.html#Patient">fhir:resource</a> &lt;urn:uuid:175863f7-fdea-4d11-92ff-f33345a560e4&gt; )
-  ] [
-<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:uuid:bc283f8f-7092-4cc1-9d4d-8928b0341d00&quot;^^xsd:anyURI ] ;
-    ( <a href="http://hl7.org/fhir/R4/immunization.html#Immunization">fhir:resource</a> &lt;urn:uuid:bc283f8f-7092-4cc1-9d4d-8928b0341d00&gt; )
-  ] ) . # 
-
-&lt;urn:uuid:24351938-53ea-4d4f-b07b-7f557656005e&gt; <a href="http://hl7.org/fhir/R4/composition.html">a</a> fhir:Composition ;
-  <a href="http://hl7.org/fhir/R4/composition.html#Composition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;24351938-53ea-4d4f-b07b-7f557656005e&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/composition.html#Composition.meta">fhir:meta</a> [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://smart.who.int/trust-phw/StructureDefinition/DVCComposition&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://smart.who.int/trust-phw/StructureDefinition/DVCComposition&gt;     ] )
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/composition.html#Composition.text">fhir:text</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Composition_24351938-53ea-4d4f-b07b-7f557656005e\&quot;&gt; &lt;/a&gt;To be added&lt;/div&gt;&quot;^^rdf:XMLLiteral
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/composition.html#Composition.identifier">fhir:identifier</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:oid:2.16.724.4.8.10.200.10&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;d348b02a-3ab8-4cec-bbec-5186abca8c7d&quot; ]
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/composition.html#Composition.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;final&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/composition.html#Composition.type">fhir:type</a> [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-a loinc:82593-5 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;82593-5&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Immunization summary report&quot; ]     ] )
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/composition.html#Composition.subject">fhir:subject</a> [
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:175863f7-fdea-4d11-92ff-f33345a560e4&quot; ]
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/composition.html#Composition.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2017-12-11T14:30:00+01:00&quot;^^xsd:dateTime] ; # 
-  <a href="http://hl7.org/fhir/R4/composition.html#Composition.author">fhir:author</a> ( [
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:1c616b24-3895-48c4-9a02-9a64110351ef&quot; ]
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/composition.html#Composition.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient Summary as of December 11, 2017 14:30&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/composition.html#Composition.section">fhir:section</a> ( [
-<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Demographic information section&quot; ] ;
-<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">fhir:code</a> [
-      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-a loinc:45970-1 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;45970-1&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Demographic information section&quot; ]       ] )     ] ;
-<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">fhir:text</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;Sample patient&lt;/div&gt;&quot;^^rdf:XMLLiteral     ] ;
-    ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">fhir:entry</a> [
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/175863f7-fdea-4d11-92ff-f33345a560e4&quot; ]     ] )
-  ] [
-<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Vaccination&quot; ] ;
-<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">fhir:code</a> [
-      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-a loinc:11369-6 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;11369-6&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;History of Immunization note&quot; ]       ] )     ] ;
-<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.text">fhir:text</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;Vaccination stuff&lt;/div&gt;&quot;^^rdf:XMLLiteral     ] ;
-    ( <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">fhir:entry</a> [
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Immunization/bc283f8f-7092-4cc1-9d4d-8928b0341d00&quot; ]     ] )
-  ] ) . # 
-
-&lt;urn:uuid:175863f7-fdea-4d11-92ff-f33345a560e4&gt; <a href="http://hl7.org/fhir/R4/patient.html">a</a> fhir:Patient ;
-  <a href="http://hl7.org/fhir/R4/patient.html#Patient.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;175863f7-fdea-4d11-92ff-f33345a560e4&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/patient.html#Patient.meta">fhir:meta</a> [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://smart.who.int/trust-phw/StructureDefinition/DVCPatient&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://smart.who.int/trust-phw/StructureDefinition/DVCPatient&gt;     ] )
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/patient.html#Patient.text">fhir:text</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Patient_175863f7-fdea-4d11-92ff-f33345a560e4\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Patient 175863f7-fdea-4d11-92ff-f33345a560e4&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;175863f7-fdea-4d11-92ff-f33345a560e4\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hc175863f7-fdea-4d11-92ff-f33345a560e4\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-DVCPatient.html\&quot;&gt;DVC Patient&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p style=\&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\&quot;&gt;Test Patient(official) Female, DoB: 2023-02-04 ( Passport number)&lt;/p&gt;&lt;hr/&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Record is active\&quot;&gt;Active:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;The nationality of the patient.\&quot;&gt;Patient Nationality:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;code: &lt;span title=\&quot;Codes:\&quot;&gt;IND&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/patient.html#Patient.extension">fhir:extension</a> ( [
-    ( <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">fhir:extension</a> [
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;code&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
-        ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;IND&quot; ]         ] )       ]     ] ) ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/patient-nationality&quot;^^xsd:anyURI ]
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">fhir:identifier</a> ( [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">fhir:type</a> [
-      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/v2-0203&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;PPN&quot; ]       ] )     ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://uidai.gov.in/&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;123456789012&quot; ]
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/patient.html#Patient.active">fhir:active</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true] ; # 
-  <a href="http://hl7.org/fhir/R4/patient.html#Patient.name">fhir:name</a> ( [
-<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;official&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Test Patient&quot; ]
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/patient.html#Patient.gender">fhir:gender</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;female&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">fhir:birthDate</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#date">fhir:v</a> &quot;2023-02-04&quot;^^xsd:date] . # 
-
-&lt;urn:uuid:bc283f8f-7092-4cc1-9d4d-8928b0341d00&gt; <a href="http://hl7.org/fhir/R4/immunization.html">a</a> fhir:Immunization ;
-  <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;bc283f8f-7092-4cc1-9d4d-8928b0341d00&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.meta">fhir:meta</a> [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://smart.who.int/trust-phw/StructureDefinition/DVCImmunization&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://smart.who.int/trust-phw/StructureDefinition/DVCImmunization&gt;     ] )
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.text">fhir:text</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;extensions&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Immunization_bc283f8f-7092-4cc1-9d4d-8928b0341d00\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Immunization bc283f8f-7092-4cc1-9d4d-8928b0341d00&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;bc283f8f-7092-4cc1-9d4d-8928b0341d00\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcbc283f8f-7092-4cc1-9d4d-8928b0341d00\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-DVCImmunization.html\&quot;&gt;DVC Immunization&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;ProductID&lt;/b&gt;: PreQualProductIDs YellowFeverProductd2c75a15ed309658b3968519ddb31690: YellowFeverProductd2c75a15ed309658b3968519ddb31690&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;vaccineCode&lt;/b&gt;: &lt;span title=\&quot;Codes:\&quot;&gt;XM0N24&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a href=\&quot;Bundle-DVCDocExample.html#urn-uuid-175863f7-fdea-4d11-92ff-f33345a560e4\&quot;&gt;Test Patient(official) Female, DoB: 2023-02-04 ( Passport number)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;occurrence&lt;/b&gt;: 2024-05-23&lt;/p&gt;&lt;p&gt;&lt;b&gt;lotNumber&lt;/b&gt;: 67890&lt;/p&gt;&lt;h3&gt;Performers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Actor&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;code&gt;urn:uuid:086a66bd-63d0-442a-900f-b540f6b8cebe&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.extension">fhir:extension</a> ( [
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://smart.who.int/pcmt/StructureDefinition/ProductID&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding">a</a> fhir:Coding ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIDs&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;YellowFeverProductd2c75a15ed309658b3968519ddb31690&quot; ]     ]
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;completed&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.vaccineCode">fhir:vaccineCode</a> [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;XM0N24&quot; ]     ] )
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.patient">fhir:patient</a> [
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:175863f7-fdea-4d11-92ff-f33345a560e4&quot; ]
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.occurrence[x]">fhir:occurrence</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">a</a> fhir:dateTime ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2024-05-23&quot;^^xsd:date
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.lotNumber">fhir:lotNumber</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;67890&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.performer">fhir:performer</a> ( [
-<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.performer.actor">fhir:actor</a> [
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:086a66bd-63d0-442a-900f-b540f6b8cebe&quot; ]     ]
-  ] ) . # 
-
-</code></pre>
+  <div style="position: relative;">
+    <button class="btn-copy" style="position: absolute; top: 10px; right: 20px; z-index: 10;"
+            title="Click to copy ttl"
+            data-clipboard-target="#format-content"></button>
+    <pre class="rdf" style="white-space: pre; overflow-x: auto;"><code id="format-content" class="language-turtle" data-src="Bundle-DVCDocExample.ttl"></code></pre>
+  </div>
 
 
 
@@ -530,6 +368,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a
 <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
 <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
 <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+    <script type="text/javascript" src="assets/js/format-loader.js"> </script>
 <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
 <!-- Analytics Below
 ================================================== -->

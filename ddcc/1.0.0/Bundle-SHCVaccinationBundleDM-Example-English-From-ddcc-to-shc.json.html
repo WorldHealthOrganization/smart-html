@@ -255,66 +255,12 @@
 
 
 
-  <pre class="json" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
-  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle">resourceType</a>" : "Bundle",
-  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.id">id</a>" : "SHCVaccinationBundleDM-Example-English-From-ddcc-to-shc",
-  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">type</a>" : "collection",
-  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "resource:0",
-      "<a href="http://hl7.org/fhir/R4/patient.html#Patient">resource</a>" : {
-        "<a href="http://hl7.org/fhir/R4/patient.html">resourceType</a>" : "Patient",
-        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Patient_null\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Patient &lt;/b&gt;&lt;/p&gt;&lt;p style=\&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\&quot;&gt;Aulus Agerius (no stated gender), DoB: 2003-03-03&lt;/p&gt;&lt;hr/&gt;&lt;/div&gt;"
-        },
-        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.name">name</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.text">text</a>" : "Aulus Agerius"
-          }
-        ],
-        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">birthDate</a>" : "2003-03-03"
-      }
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "resource:1",
-      "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization">resource</a>" : {
-        "<a href="http://hl7.org/fhir/R4/immunization.html">resourceType</a>" : "Immunization",
-        "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.text">text</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Immunization_null\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Immunization &lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;vaccineCode&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://id.who.int/icd11/mms XM0CX4}\&quot;&gt;XM0CX4&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a href=\&quot;Bundle-SHCVaccinationBundleDM-Example-English-From-ddcc-to-shc.html#resource-0\&quot;&gt;Bundle: type = collection&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;occurrence&lt;/b&gt;: 2021-05-06&lt;/p&gt;&lt;p&gt;&lt;b&gt;manufacturer&lt;/b&gt;: Identifier: &lt;code&gt;http://smart.who.int/ddcc/CodeSystem/DDCCExampleTestCodeSystem&lt;/code&gt;/TEST&lt;/p&gt;&lt;p&gt;&lt;b&gt;lotNumber&lt;/b&gt;: 123&lt;/p&gt;&lt;h3&gt;Performers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Actor&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;Government Hospital&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
-        },
-        "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.status">status</a>" : "completed",
-        "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.vaccineCode">vaccineCode</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://id.who.int/icd11/mms",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "XM0CX4"
-            }
-          ]
-        },
-        "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.patient">patient</a>" : {
-          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "resource:0"
-        },
-        "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.occurrence[x]">occurrenceDateTime</a>" : "2021-05-06",
-        "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.manufacturer">manufacturer</a>" : {
-          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">identifier</a>" : {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://smart.who.int/ddcc/CodeSystem/DDCCExampleTestCodeSystem",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "TEST"
-          }
-        },
-        "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.lotNumber">lotNumber</a>" : "123",
-        "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.performer">performer</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/immunization.html#Immunization.performer.actor">actor</a>" : {
-              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Government Hospital"
-            }
-          }
-        ]
-      }
-    }
-  ]
-}</code></pre>
+  <div style="position: relative;">
+    <button class="btn-copy" style="position: absolute; top: 10px; right: 20px; z-index: 10;"
+            title="Click to copy json"
+            data-clipboard-target="#format-content"></button>
+    <pre class="json" style="white-space: pre; overflow-x: auto;"><code id="format-content" class="language-json" data-src="Bundle-SHCVaccinationBundleDM-Example-English-From-ddcc-to-shc.json"></code></pre>
+  </div>
 
 
   <!-- insert notes if present -->
@@ -366,6 +312,7 @@
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+    <script type="text/javascript" src="assets/js/format-loader.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   <!-- Analytics Below
   ================================================== -->

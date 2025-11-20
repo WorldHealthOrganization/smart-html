@@ -325,99 +325,12 @@
 
 
 
-  <pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden"><code class="language-turtle">
-@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
-@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
-@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
-@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
-
-# - resource -------------------------------------------------------------------
-
- a fhir:CodeSystem ;
-  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DisclosureStatements&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">fhir:text</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem DisclosureStatements&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;DisclosureStatements\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcDisclosureStatements\&quot;&gt; &lt;/a&gt;&lt;p&gt;This  code system &lt;code&gt;http://smart.who.int/trust-phw/CodeSystem/DisclosureStatements&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;disclose-icvp&lt;a name=\&quot;DisclosureStatements-disclose-icvp\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Disclose ICVP &lt;/td&gt;&lt;td&gt;Agree to disclose the full details of your vaccination history and demogrpahic information as is contained in the International Certification of Vaccination or Prophylaxsis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;disclose-icvp-narrative&lt;a name=\&quot;DisclosureStatements-disclose-icvp-narrative\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Disclose ICVP narrative&lt;/td&gt;&lt;td&gt;Agree to disclose a narrative summary of your vaccination history as is contained in the International Certification of Vaccination or Prophylaxsis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;disclose-icvp-demographic&lt;a name=\&quot;DisclosureStatements-disclose-icvp-demographic\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Disclose full details of ICVP demograhic narrative&lt;/td&gt;&lt;td&gt;Agree to disclose full details your demographic information as is contained in the International Certification of Vaccination or Prophylaxsis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;disclose-icvp-demographic-narrative&lt;a name=\&quot;DisclosureStatements-disclose-icvp-demographic-narrative\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Disclose ICVP demograhic narrative&lt;/td&gt;&lt;td&gt;Agree to disclose a narrative summary of your demographic information as is contained in the International Certification of Vaccination or Prophylaxsis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;disclose-icvp-demographic-name&lt;a name=\&quot;DisclosureStatements-disclose-icvp-demographic-name\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Disclose name&lt;/td&gt;&lt;td&gt;Agree to disclose name from demographic issuer information as is contained in the International Certification of Vaccination or Prophylaxsis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;disclose-icvp-demographic-sex&lt;a name=\&quot;DisclosureStatements-disclose-icvp-demographic-sex\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Disclose sex&lt;/td&gt;&lt;td&gt;Agree to disclose sex from demographic issuer information as is contained in the International Certification of Vaccination or Prophylaxsis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;disclose-icvp-demographic-dob&lt;a name=\&quot;DisclosureStatements-disclose-icvp-demographic-dob\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Disclose date of birth&lt;/td&gt;&lt;td&gt;Agree to disclose date of birth from demographic issuer information as is contained in the International Certification of Vaccination or Prophylaxsis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;disclose-icvp-demographic-nationality&lt;a name=\&quot;DisclosureStatements-disclose-icvp-demographic-nationality\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Disclose nationality&lt;/td&gt;&lt;td&gt;Agree to disclose nationality from demographic issuer information as is contained in the International Certification of Vaccination or Prophylaxsis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;disclose-icvp-demographic-national-id&lt;a name=\&quot;DisclosureStatements-disclose-icvp-demographic-national-id\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Disclose national ID&lt;/td&gt;&lt;td&gt;Agree to disclose national ID or passport number from demographic issuer information as is contained in the International Certification of Vaccination or Prophylaxsis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;disclose-icvp-vaccination&lt;a name=\&quot;DisclosureStatements-disclose-icvp-vaccination\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Disclose ICVP vaccination&lt;/td&gt;&lt;td&gt;Agree to disclose the full details of your vaccination history as is contained in the International Certification of Vaccination or Prophylaxsis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;disclose-icvp-vaccination-narrative&lt;a name=\&quot;DisclosureStatements-disclose-icvp-vaccination-narrative\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Disclose ICVP vaccination narrative&lt;/td&gt;&lt;td&gt;Agree to disclose a narrative summary of your vaccination information as is contained in the International Certification of Vaccination or Prophylaxsis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;disclose-icvp-vaccination-clinician&lt;a name=\&quot;DisclosureStatements-disclose-icvp-vaccination-clinician\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Disclose clinician name&lt;/td&gt;&lt;td&gt;Agree to disclose clinician name for this vaccination as is contained in the International Certification of Vaccination or Prophylaxsis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;disclose-icvp-vaccination-issuer&lt;a name=\&quot;DisclosureStatements-disclose-icvp-vaccination-issuer\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Disclose issuer&lt;/td&gt;&lt;td&gt;Agree to disclose issuer for this vaccination as is contained in the International Certification of Vaccination or Prophylaxsis&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://smart.who.int/trust-phw/CodeSystem/DisclosureStatements&quot;^^xsd:anyURI] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;0.1.0&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DisclosureStatements&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Disclosure Statements&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2025-10-07T06:40:24+00:00&quot;^^xsd:dateTime] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;WHO&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">fhir:contact</a> ( [
-<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;WHO&quot; ] ;
-    ( <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;http://who.int&quot; ]     ] )
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;Disclosure Statement Code System&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.jurisdiction">fhir:jurisdiction</a> ( [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://unstats.un.org/unsd/methods/m49/m49.htm&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;001&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;World&quot; ]     ] )
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">fhir:content</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;complete&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">fhir:count</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">fhir:v</a> &quot;13&quot;^^xsd:nonNegativeInteger] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">fhir:concept</a> ( [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;disclose-icvp&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Disclose ICVP &quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Agree to disclose the full details of your vaccination history and demogrpahic information as is contained in the International Certification of Vaccination or Prophylaxsis&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;disclose-icvp-narrative&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Disclose ICVP narrative&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Agree to disclose a narrative summary of your vaccination history as is contained in the International Certification of Vaccination or Prophylaxsis&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;disclose-icvp-demographic&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Disclose full details of ICVP demograhic narrative&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Agree to disclose full details your demographic information as is contained in the International Certification of Vaccination or Prophylaxsis&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;disclose-icvp-demographic-narrative&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Disclose ICVP demograhic narrative&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Agree to disclose a narrative summary of your demographic information as is contained in the International Certification of Vaccination or Prophylaxsis&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;disclose-icvp-demographic-name&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Disclose name&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Agree to disclose name from demographic issuer information as is contained in the International Certification of Vaccination or Prophylaxsis&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;disclose-icvp-demographic-sex&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Disclose sex&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Agree to disclose sex from demographic issuer information as is contained in the International Certification of Vaccination or Prophylaxsis&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;disclose-icvp-demographic-dob&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Disclose date of birth&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Agree to disclose date of birth from demographic issuer information as is contained in the International Certification of Vaccination or Prophylaxsis&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;disclose-icvp-demographic-nationality&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Disclose nationality&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Agree to disclose nationality from demographic issuer information as is contained in the International Certification of Vaccination or Prophylaxsis&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;disclose-icvp-demographic-national-id&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Disclose national ID&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Agree to disclose national ID or passport number from demographic issuer information as is contained in the International Certification of Vaccination or Prophylaxsis&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;disclose-icvp-vaccination&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Disclose ICVP vaccination&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Agree to disclose the full details of your vaccination history as is contained in the International Certification of Vaccination or Prophylaxsis&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;disclose-icvp-vaccination-narrative&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Disclose ICVP vaccination narrative&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Agree to disclose a narrative summary of your vaccination information as is contained in the International Certification of Vaccination or Prophylaxsis&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;disclose-icvp-vaccination-clinician&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Disclose clinician name&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Agree to disclose clinician name for this vaccination as is contained in the International Certification of Vaccination or Prophylaxsis&quot; ]
-  ] [
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;disclose-icvp-vaccination-issuer&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Disclose issuer&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Agree to disclose issuer for this vaccination as is contained in the International Certification of Vaccination or Prophylaxsis&quot; ]
-  ] ) . # 
-
-</code></pre>
+  <div style="position: relative;">
+    <button class="btn-copy" style="position: absolute; top: 10px; right: 20px; z-index: 10;"
+            title="Click to copy ttl"
+            data-clipboard-target="#format-content"></button>
+    <pre class="rdf" style="white-space: pre; overflow-x: auto;"><code id="format-content" class="language-turtle" data-src="CodeSystem-DisclosureStatements.ttl"></code></pre>
+  </div>
 
 
 
@@ -470,6 +383,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
 <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
 <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+    <script type="text/javascript" src="assets/js/format-loader.js"> </script>
 <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
 <!-- Analytics Below
 ================================================== -->

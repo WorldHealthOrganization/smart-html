@@ -270,62 +270,12 @@
 
 
 
-  <pre class="xml" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
-&lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition">OperationDefinition</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;DDCCQuestionnaireResponserevokeHealthCertificate&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.text">text</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: OperationDefinition DDCCQuestionnaireResponserevokeHealthCertificate&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;DDCCQuestionnaireResponserevokeHealthCertificate&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcDDCCQuestionnaireResponserevokeHealthCertificate&quot;&gt; &lt;/a&gt;&lt;a name=&quot;DDCCQuestionnaireResponserevokeHealthCertificate-en-US&quot;&gt; &lt;/a&gt;&lt;h3&gt;Parameters&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Use&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Scope&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Cardinality&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Documentation&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;id&lt;/td&gt;&lt;td/&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/datatypes.html#id&quot;&gt;id&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;The DDCC id of the DDCC Document.&lt;/p&gt;
-&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OUT&lt;/td&gt;&lt;td&gt;return&lt;/td&gt;&lt;td/&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/datatypes.html#boolean&quot;&gt;boolean&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;A boolean to determine if the revocation was successful or not.&lt;/p&gt;
-&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
-  &lt;/text&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.url">url</a>
-       <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://smart.who.int/ddcc/OperationDefinition/DDCCQuestionnaireResponserevokeHealthCertificate&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.0.0&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;QuestionnaireResponse_Revoke_Health_Certificate&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.title">title</a>
-         <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;OperationDefinition for revoking a health certificate (DDCC).&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.kind">kind</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;operation&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2021-12-21&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;WHO&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.contact">contact</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;WHO&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;http://who.int&quot;/&gt;
-    &lt;/telecom&gt;
-  &lt;/contact&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Revoke a DDCC Document.&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.jurisdiction">jurisdiction</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://unstats.un.org/unsd/methods/m49/m49.htm&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;001&quot;/&gt;
-    &lt;/coding&gt;
-  &lt;/jurisdiction&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;revokeHealthCertificate&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.instance">instance</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter">parameter</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;id&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;in&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.min">min</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>=&quot;1&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.max">max</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.documentation">documentation</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;The DDCC id of the DDCC Document.&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;id&quot;/&gt;
-  &lt;/parameter&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter">parameter</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;return&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;out&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.min">min</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>=&quot;1&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.max">max</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.documentation">documentation</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;A boolean to determine if the revocation was successful or not.&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;boolean&quot;/&gt;
-  &lt;/parameter&gt;
-&lt;/OperationDefinition&gt;</code></pre>
+  <div style="position: relative;">
+    <button class="btn-copy" style="position: absolute; top: 10px; right: 20px; z-index: 10;"
+            title="Click to copy xml"
+            data-clipboard-target="#format-content"></button>
+    <pre class="xml" style="white-space: pre; overflow-x: auto;"><code id="format-content" class="language-xml" data-src="OperationDefinition-DDCCQuestionnaireResponserevokeHealthCertificate.xml"></code></pre>
+  </div>
 
 
   <!-- insert notes if present -->
@@ -377,6 +327,7 @@
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+    <script type="text/javascript" src="assets/js/format-loader.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   <!-- Analytics Below
   ================================================== -->

@@ -308,42 +308,12 @@
 
 
 
-  <pre class="rdf" style="white-space: pre; overflow: hidden"><code class="language-turtle">
-@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
-@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
-@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
-@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
-
-# - resource -------------------------------------------------------------------
-
- a fhir:Organization ;
-  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/organization.html#Organization.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;890751f4-2924-4636-bab7-efffc7f3cf14&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/organization.html#Organization.text">fhir:text</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Organization 890751f4-2924-4636-bab7-efffc7f3cf14&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;890751f4-2924-4636-bab7-efffc7f3cf14\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hc890751f4-2924-4636-bab7-efffc7f3cf14\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;890751f4-2924-4636-bab7-efffc7f3cf14-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;urn:oid:2.16.528.1.1007.3.3&lt;/code&gt;/564738757&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Anorg Aniza Tion BV / The best custodian ever&lt;/p&gt;&lt;p&gt;&lt;b&gt;telecom&lt;/b&gt;: &lt;a href=\&quot;tel:+31-51-34343400\&quot;&gt;+31-51-34343400&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: Houttuinen 27 Dordrecht 3311 CE NL (work)&lt;/p&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/organization.html#Organization.identifier">fhir:identifier</a> ( [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:oid:2.16.528.1.1007.3.3&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;564738757&quot; ]
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/organization.html#Organization.active">fhir:active</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean] ; # 
-  <a href="http://hl7.org/fhir/R4/organization.html#Organization.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Anorg Aniza Tion BV / The best custodian ever&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/organization.html#Organization.telecom">fhir:telecom</a> ( [
-<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;phone&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;+31-51-34343400&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;work&quot; ]
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/organization.html#Organization.address">fhir:address</a> ( [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;work&quot; ] ;
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.line">fhir:line</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Houttuinen 27&quot; ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.city">fhir:city</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Dordrecht&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.postalCode">fhir:postalCode</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;3311 CE&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.country">fhir:country</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;NL&quot; ]
-  ] ) . # 
-
-</code></pre>
+  <div style="position: relative;">
+    <button class="btn-copy" style="position: absolute; top: 10px; right: 20px; z-index: 10;"
+            title="Click to copy ttl"
+            data-clipboard-target="#format-content"></button>
+    <pre class="rdf" style="white-space: pre; overflow-x: auto;"><code id="format-content" class="language-turtle" data-src="Organization-890751f4-2924-4636-bab7-efffc7f3cf14.ttl"></code></pre>
+  </div>
 
 
 
@@ -396,6 +366,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+    <script type="text/javascript" src="assets/js/format-loader.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   <!-- Analytics Below
   ================================================== -->

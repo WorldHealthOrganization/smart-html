@@ -270,102 +270,12 @@
 
 
 
-  <pre class="json" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
-  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap">resourceType</a>" : "StructureMap",
-  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.id">id</a>" : "BundleVSToAddBundle",
-  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.text">text</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: StructureMap BundleVSToAddBundle&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;BundleVSToAddBundle\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcBundleVSToAddBundle\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;BundleVSToAddBundle-en-US\&quot;&gt; &lt;/a&gt;&lt;pre class=\&quot;fml\&quot;&gt;\r\n&lt;b&gt;map&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; &amp;quot;&lt;/span&gt;http://smart.who.int/ddcc/StructureMap/BundleVSToAddBundle&lt;span style=\&quot;color: navy\&quot;&gt;&amp;quot; = &amp;quot;&lt;/span&gt;BundleVSToAddBundle&lt;span style=\&quot;color: navy\&quot;&gt;&amp;quot;\r\n\r\n&lt;/span&gt;&lt;b&gt;uses&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; &amp;quot;&lt;/span&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/bundle.html\&quot; title=\&quot;Bundle\&quot;&gt;http://hl7.org/fhir/StructureDefinition/Bundle&lt;/a&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&amp;quot; &lt;/span&gt;&lt;b&gt;alias &lt;/b&gt;DDCCBundle &lt;b&gt;as &lt;/b&gt;&lt;b&gt;source&lt;/b&gt;\r\n&lt;b&gt;uses&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; &amp;quot;&lt;/span&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/bundle.html\&quot; title=\&quot;Bundle\&quot;&gt;http://hl7.org/fhir/StructureDefinition/Bundle&lt;/a&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&amp;quot; &lt;/span&gt;&lt;b&gt;alias &lt;/b&gt;AddBundle &lt;b&gt;as &lt;/b&gt;&lt;b&gt;target&lt;/b&gt;\r\n\r\n&lt;b&gt;imports&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; &amp;quot;&lt;/span&gt;&lt;a href=\&quot;StructureMap-CoreDataSetVSToAddBundle.html\&quot; title=\&quot;CoreDataSetVSToAddBundle\&quot;&gt;http://smart.who.int/ddcc/StructureMap/CoreDataSetVSToAddBundle&lt;/a&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&amp;quot;\r\n&lt;/span&gt;\r\n&lt;b&gt;group &lt;/b&gt;BundleVSToAddBundle&lt;span style=\&quot;color: navy\&quot;&gt;(&lt;/span&gt;&lt;b&gt;source&lt;/b&gt; &lt;span style=\&quot;color: maroon\&quot;&gt;ddccbundle&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt; : &lt;/span&gt;DDCCBundle, &lt;b&gt;target&lt;/b&gt; &lt;span style=\&quot;color: maroon\&quot;&gt;bundle&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt; : &lt;/span&gt;AddBundle&lt;span style=\&quot;color: navy\&quot;&gt;)&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;  ddccbundle.entry first&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;ddcc&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;bundle&lt;b&gt; then &lt;/b&gt;CoreDataSetVSToAddBundle&lt;span style=\&quot;color: navy\&quot;&gt;(&lt;/span&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;ddcc&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;, &lt;/span&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;bundle&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;)&lt;/span&gt; &lt;i&gt;&amp;quot;get first entry from bundle&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n&lt;span style=\&quot;color: navy\&quot;&gt;}\r\n\r\n&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;"
-  },
-  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.url">url</a>" : "http://smart.who.int/ddcc/StructureMap/BundleVSToAddBundle",
-  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.version">version</a>" : "1.0.0",
-  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.name">name</a>" : "BundleVSToAddBundle",
-  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.status">status</a>" : "draft",
-  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.date">date</a>" : "2024-10-15T11:00:36+02:00",
-  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.publisher">publisher</a>" : "WHO",
-  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.contact">contact</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "WHO",
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://who.int"
-        }
-      ]
-    }
-  ],
-  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.jurisdiction">jurisdiction</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "001"
-        }
-      ]
-    }
-  ],
-  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure">structure</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/Bundle",
-      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.mode">mode</a>" : "source",
-      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.alias">alias</a>" : "DDCCBundle"
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/Bundle",
-      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.mode">mode</a>" : "target",
-      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.alias">alias</a>" : "AddBundle"
-    }
-  ],
-  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.import">import</a>" : [
-    <a href="StructureMap-CoreDataSetVSToAddBundle.html" style="color: Maroon">&#x1F517;</a> "http://smart.who.int/ddcc/StructureMap/CoreDataSetVSToAddBundle"
-  ],
-  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group">group</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.name">name</a>" : "BundleVSToAddBundle",
-      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.typeMode">typeMode</a>" : "none",
-      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input">input</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.name">name</a>" : "ddccbundle",
-          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.type">type</a>" : "DDCCBundle",
-          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.mode">mode</a>" : "source"
-        },
-        {
-          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.name">name</a>" : "bundle",
-          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.type">type</a>" : "AddBundle",
-          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.mode">mode</a>" : "target"
-        }
-      ],
-      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule">rule</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "get first entry from bundle",
-          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "ddccbundle",
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "entry",
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.listMode">listMode</a>" : "first",
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "ddcc"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "bundle",
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable"
-            }
-          ],
-          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.dependent">dependent</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.dependent.name">name</a>" : "CoreDataSetVSToAddBundle",
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.dependent.variable">variable</a>" : [
-                "ddcc",
-                "bundle"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}</code></pre>
+  <div style="position: relative;">
+    <button class="btn-copy" style="position: absolute; top: 10px; right: 20px; z-index: 10;"
+            title="Click to copy json"
+            data-clipboard-target="#format-content"></button>
+    <pre class="json" style="white-space: pre; overflow-x: auto;"><code id="format-content" class="language-json" data-src="StructureMap-BundleVSToAddBundle.json"></code></pre>
+  </div>
 
 
   <!-- insert notes if present -->
@@ -417,6 +327,7 @@
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+    <script type="text/javascript" src="assets/js/format-loader.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   <!-- Analytics Below
   ================================================== -->
