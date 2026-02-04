@@ -120,14 +120,25 @@ jobs:
           destination_dir: sitepreview/trust/${{ steps.get_version.outputs.version }}
           keep_files: true
 
-      - name: Upload release assets (package.tgz)
-        run: |
-          mkdir -p ./release-assets
-          mv ./source/output/package.tgz ./release-assets/
-
       - name: Fix output permissions
         run: |
           sudo chown -R $(id -u):$(id -g) ./source/output
+
+      - name: Find package.tgz
+        run: |
+          find . -name "package.tgz" 2>/dev/null || echo "Not found"
+          ls -la ./source/output/ || echo "output dir not found"
+
+
+      - name: Upload release assets (package.tgz)
+        run: |
+          mkdir -p ./release-assets
+          if [[ -f "./source/output/package.tgz" ]]; then
+            sudo mv ./source/output/package.tgz ./release-assets/
+          else
+            echo "package.tgz not found, skipping"
+          fi
+
 
       - name: Upload release assets (package.tgz)
         run: |
