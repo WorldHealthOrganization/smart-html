@@ -107,7 +107,7 @@ jobs:
         id: get_version
         run: |
           VERSION=$(jq -r '.version' source/publication-request.json)
-          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "version=v$VERSION" >> $GITHUB_OUTPUT
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
