@@ -85,16 +85,14 @@ jobs:
       - name: Run the IG publisher
         run: |
           docker run --rm --entrypoint /bin/sh -u root -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest -c "
-            apt-get update && apt-get install -y python3 python3-pip && ln -sf /usr/bin/python3 /usr/bin/python &&
-            pip3 install pyyaml &&
+            apt-get update && apt-get install -y python3 python3-yaml && ln -sf /usr/bin/python3 /usr/bin/python &&
             java -Xmx4g -jar ./publisher.jar publisher -ig source -package-cache-folder fhir-package-cache
           "
 
       - name: Run publisher command for publishing release
         run: |
           docker run --rm --entrypoint /bin/sh -u root -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest -c "
-            apt-get update && apt-get install -y python3 python3-pip && ln -sf /usr/bin/python3 /usr/bin/python &&
-            pip3 install pyyaml &&
+            apt-get update && apt-get install -y python3 python3-yaml && ln -sf /usr/bin/python3 /usr/bin/python &&
             ls -la /workspace/webroot &&
             java -Xmx4g -Dfile.encoding=UTF-8 -jar /workspace/publisher.jar -go-publish -package-cache-folder /workspace/fhir-package-cache -source /workspace/source -web /workspace/webroot -temp /workspace/temp -registry /workspace/ig-registry/fhir-ig-list.json -history /workspace/history-template -templates /workspace/webroot/templates
           "
