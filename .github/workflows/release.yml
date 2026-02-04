@@ -122,11 +122,14 @@ jobs:
           mkdir -p ./release-assets
           mv ./source/output/package.tgz ./release-assets/
 
-      - name: Upload updated fhir-ig-list.json as artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: fhir-ig-list.json
-          path: ig-registry/fhir-ig-list.json
+      - name: Fix output permissions
+        run: |
+          sudo chown -R $(id -u):$(id -g) ./source/output
+
+      - name: Upload release assets (package.tgz)
+        run: |
+          mkdir -p ./release-assets
+          mv ./source/output/package.tgz ./release-assets/
 
       - name: Upload package-feeds.json as artifact
         uses: actions/upload-artifact@v4
