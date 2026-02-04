@@ -140,11 +140,6 @@ jobs:
           fi
 
 
-      - name: Upload release assets (package.tgz)
-        run: |
-          mkdir -p ./release-assets
-          mv ./source/output/package.tgz ./release-assets/
-
       - name: Upload package-feeds.json as artifact
         uses: actions/upload-artifact@v4
         with:
