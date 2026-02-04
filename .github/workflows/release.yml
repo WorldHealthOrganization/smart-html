@@ -1,8 +1,8 @@
 name: ReleaseBuild
 
 on:
-  workflow_call:  # Reusable by other workflows
-  workflow_dispatch:  # Manual trigger by user
+  workflow_call:
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           path: source
-          fetch-depth: 0  # Fetch all history for all branches and tags.
+          fetch-depth: 0
 
       - name: Checkout HL7/fhir-ig-history-template to ./history-template
         uses: actions/checkout@v4
@@ -30,7 +30,7 @@ jobs:
         with:
           repository: WorldHealthOrganization/smart-html
           path: webroot
-          fetch-depth: 0  # Fetch all history for all branches and tags.
+          fetch-depth: 0
 
       - name: Checkout FHIR/ig-registry to ./ig-registry
         uses: actions/checkout@v4
@@ -65,27 +65,19 @@ jobs:
 
       - name: Setup publisher and install dependencies
         run: |
-          docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest /bin/sh -c "
-            npm install -g fsh-sushi &&
-            curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./publisher.jar --create-dirs
-          "
+          curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./publisher.jar
+          mkdir -p ./fhir-package-cache && chmod 777 ./fhir-package-cache
 
-      - name: Create package cache folder
-        run: |
-          docker run --rm -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest /bin/sh -c "
-            mkdir -p ./fhir-package-cache && chmod 777 ./fhir-package-cache
-          "
-
-      - name: Ensure write permissions for webroot and source directories
+      - name: Ensure write permissions
         run: |
           chmod -R 777 webroot
           chmod -R 777 source
-          chmod -R 777 fhir-package-cache
-          
+
       - name: Run the IG publisher
         run: |
           docker run --rm --entrypoint /bin/sh -u root -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest -c "
             apt-get update && apt-get install -y python3 python3-yaml && ln -sf /usr/bin/python3 /usr/bin/python &&
+            npm install -g fsh-sushi &&
             java -Xmx4g -jar ./publisher.jar publisher -ig source -package-cache-folder fhir-package-cache
           "
 
@@ -93,20 +85,23 @@ jobs:
         run: |
           docker run --rm --entrypoint /bin/sh -u root -v $(pwd):/workspace -w /workspace hl7fhir/ig-publisher-base:latest -c "
             apt-get update && apt-get install -y python3 python3-yaml && ln -sf /usr/bin/python3 /usr/bin/python &&
-            ls -la /workspace/webroot &&
-            java -Xmx4g -Dfile.encoding=UTF-8 -jar /workspace/publisher.jar -go-publish -package-cache-folder /workspace/fhir-package-cache -source /workspace/source -web /workspace/webroot -temp /workspace/temp -registry /workspace/ig-registry/fhir-ig-list.json -history /workspace/history-template -templates /workspace/webroot/templates
+            npm install -g fsh-sushi &&
+            java -Xmx4g -Dfile.encoding=UTF-8 -jar /workspace/publisher.jar -go-publish \
+              -package-cache-folder /workspace/fhir-package-cache \
+              -source /workspace/source \
+              -web /workspace/webroot \
+              -temp /workspace/temp \
+              -registry /workspace/ig-registry/fhir-ig-list.json \
+              -history /workspace/history-template \
+              -templates /workspace/webroot/templates
           "
 
       - name: Exclude files > 100MB from gh-pages and move to release-assets
         run: |
           mkdir -p ./release-assets
-          # Move all files larger than 100 MB to release-assets
           find ./webroot/ -type f -size +100M -exec mv {} ./release-assets/ \;
-          
-          # Prepare the deploy folder, only with files ≤ 100MB
           mkdir -p ./deploy
           rsync -av --exclude-from=<(find ./webroot/ -type f -size +100M -printf "%P\n") ./webroot/ ./deploy/
-
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
@@ -115,12 +110,10 @@ jobs:
           publish_dir: ./deploy
           destination_dir: sitepreview
 
-
-      - name: Upload release assets ( package.tgz)
+      - name: Upload release assets (package.tgz)
         run: |
           mkdir -p ./release-assets
           mv ./source/output/package.tgz ./release-assets/
-
 
       - name: Upload updated fhir-ig-list.json as artifact
         uses: actions/upload-artifact@v4
@@ -128,7 +121,7 @@ jobs:
           name: fhir-ig-list.json
           path: ig-registry/fhir-ig-list.json
 
-      - name: Upload updated fhir-ig-list.json as artifact
+      - name: Upload package-feeds.json as artifact
         uses: actions/upload-artifact@v4
         with:
           name: package-feeds.json
