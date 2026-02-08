@@ -762,11 +762,18 @@ This PR updates the FHIR Implementation Guide registry with latest information.
 
         self.log_disk_usage("before gh-pages push")
 
-        # ── Free space: remove repos no longer needed ──
-        for d in [self.history_dir, self.registry_dir, self.package_cache, self.source_dir]:
+        # ── Free space: remove repos & caches no longer needed ──
+        for d in [self.history_dir, self.registry_dir, self.package_cache, self.temp_dir]:
             if os.path.exists(d):
                 self.log_progress(f"🧹 Removing {d} to free disk space")
                 shutil.rmtree(d, ignore_errors=True)
+
+        # Clean bulky build artifacts inside source dir (keep source dir itself!)
+        for subdir in ['output', 'temp', 'fsh-generated', 'input-cache', 'template']:
+            p = os.path.join(self.source_dir, subdir)
+            if os.path.exists(p):
+                self.log_progress(f"🧹 Removing build artifact {p}")
+                shutil.rmtree(p, ignore_errors=True)
 
         self.log_disk_usage("after cleanup for gh-pages")
 
