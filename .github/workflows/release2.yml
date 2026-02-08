@@ -36,7 +36,7 @@ jobs:
       - name: Checkout caller repo
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 1
 
       - name: Use .github/release-config.yaml if present
         run: |
