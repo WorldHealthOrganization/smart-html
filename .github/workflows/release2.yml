@@ -38,6 +38,13 @@ jobs:
         with:
           fetch-depth: 1
 
+      # ← Add this
+      - name: Free disk space
+        run: |
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL
+          sudo docker image prune --all --force || true
+          df -h
+
       - name: Use .github/release-config.yaml if present
         run: |
           if [ -f ".github/release-config.yaml" ] && [ ! -f "release-config.yaml" ]; then
@@ -156,8 +163,6 @@ jobs:
             --global-config ".ci-tools/release-config.global.yaml" \
             --local-config "release-config.yaml" \
             --source "${{ github.workspace }}" \
-            --source-repo "https://github.com/${{ github.repository }}" \
-            --source-branch "${SOURCE_BRANCH}" \
             --webroot-repo "https://github.com/WorldHealthOrganization/smart-html" \
             --registry-repo "https://github.com/FHIR/ig-registry" \
             --ensure-pubreq \
@@ -169,3 +174,5 @@ jobs:
             --sitepreview-dir "${{ inputs.sitepreview_dir }}" \
             --enable-pr \
             --github-token "${{ secrets.GITHUB_TOKEN }}"
+#            --source-repo "https://github.com/${{ github.repository }}" \
+#            --source-branch "${SOURCE_BRANCH}" \
