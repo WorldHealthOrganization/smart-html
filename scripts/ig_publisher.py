@@ -82,6 +82,30 @@ def _normalize_sparse_list(paths):
     return norm
 
 
+def _dir_size_mb(path: str) -> float:
+    """Return total size of a directory in MB (returns 0 if path doesn't exist)."""
+    if not path or not os.path.exists(path):
+        return 0.0
+    total = 0
+    for dirpath, dirnames, filenames in os.walk(path):
+        for f in filenames:
+            fp = os.path.join(dirpath, f)
+            try:
+                total += os.path.getsize(fp)
+            except OSError:
+                pass
+    return total / (1024 * 1024)
+
+
+def _disk_free_mb(path: str = "/") -> float:
+    """Return free disk space in MB for the filesystem containing path."""
+    try:
+        st = os.statvfs(path)
+        return (st.f_bavail * st.f_frsize) / (1024 * 1024)
+    except Exception:
+        return -1
+
+
 class ReleasePublisher:
     def __init__(self, source_dir=None, source_repo=None, source_branch=None,
                  webroot_repo=None, webroot_branch=None,
@@ -137,6 +161,39 @@ class ReleasePublisher:
         # Check if running in GitHub Actions
         self.is_github_actions = os.environ.get('GITHUB_ACTIONS') == 'true'
 
+    # ──────────────────────────────────────────────
+    # Disk-space diagnostics
+    # ──────────────────────────────────────────────
+    def _key_dirs(self):
+        """Return list of (label, path) tuples for all directories worth tracking."""
+        return [
+            ("source",        self.source_dir),
+            ("webroot",       self.webroot_dir),
+            ("history",       self.history_dir),
+            ("registry",      self.registry_dir),
+            ("package-cache", self.package_cache),
+            ("temp",          self.temp_dir),
+            ("publisher.jar", self.publisher_jar),
+        ]
+
+    def log_disk_usage(self, label: str = ""):
+        """Log disk free space and sizes of all key directories."""
+        header = f"📊 Disk usage"
+        if label:
+            header += f" [{label}]"
+
+        free_mb = _disk_free_mb(self.base_dir)
+        lines = [header, f"   💾 Free disk space: {free_mb:,.0f} MB ({free_mb/1024:,.1f} GB)"]
+
+        for name, path in self._key_dirs():
+            if path and os.path.exists(path):
+                size = _dir_size_mb(path)
+                lines.append(f"   📁 {name:16s} {size:>8,.1f} MB  ({path})")
+            else:
+                lines.append(f"   📁 {name:16s}      —      ({path or 'N/A'})")
+
+        msg = "\n".join(lines)
+        self.log_progress(msg)
 
     def _maybe_write_pubreq(self):
         target = os.path.join(self.source_dir, 'publication-request.json')
@@ -567,6 +624,7 @@ This PR updates the FHIR Implementation Guide registry with latest information.
 
     def prepare(self):
         self.log_progress("🔄 Preparing repositories...")
+        self.log_disk_usage("before prepare")
 
         if self.is_github_actions:
             self.log_progress("🤖 Running in GitHub Actions environment")
@@ -574,6 +632,7 @@ This PR updates the FHIR Implementation Guide registry with latest information.
         # 1) Ensure source exists locally (so we can read publication-request.json)
         if self.source_repo:
             self.clone_repo(self.source_repo, self.source_dir, self.source_branch)
+            self.log_disk_usage("after clone source")
 
         if self.ensure_pubreq:
             self._maybe_write_pubreq()
@@ -601,6 +660,7 @@ This PR updates the FHIR Implementation Guide registry with latest information.
 
         # 4) Clone history
         self.clone_repo(self.history_repo, self.history_dir, self.history_branch)
+        self.log_disk_usage("after clone history")
 
         # 5) Clone webroot (sparse if requested)
         self.clone_repo(
@@ -610,6 +670,7 @@ This PR updates the FHIR Implementation Guide registry with latest information.
             use_sparse=self.enable_sparse_checkout,
             sparse_dirs=sparse_dirs_for_webroot
         )
+        self.log_disk_usage("after clone webroot")
 
         # Optional: sanity check, don't change sparse dirs after clone
         if self.enable_sparse_checkout and slug:
@@ -619,6 +680,7 @@ This PR updates the FHIR Implementation Guide registry with latest information.
 
         # 6) Clone registry
         self.clone_repo(self.registry_repo, self.registry_dir)
+        self.log_disk_usage("after clone registry")
 
         # 7) Ensure publisher.jar
         if not os.path.exists(self.publisher_jar):
@@ -630,6 +692,7 @@ This PR updates the FHIR Implementation Guide registry with latest information.
             ])
 
         os.makedirs(self.package_cache, exist_ok=True)
+        self.log_disk_usage("after prepare (complete)")
 
 
     def _rsync_copy(self, src, dest, excludes):
@@ -657,7 +720,8 @@ This PR updates the FHIR Implementation Guide registry with latest information.
 
         # Try clone gh-pages directly; fall back to orphan create
         try:
-            self.run_command(['git', 'clone', '--depth=1', '--branch', self.gh_pages_branch, remote, workdir])
+            self.run_command(['git', 'clone', '--depth=1', '--filter=blob:none',
+                              '--branch', self.gh_pages_branch, remote, workdir])
             return
         except Exception:
             pass
@@ -696,18 +760,23 @@ This PR updates the FHIR Implementation Guide registry with latest information.
             self.log_progress("Skipping gh-pages push (no GITHUB_TOKEN or GITHUB_REPOSITORY).")
             return
 
+        self.log_disk_usage("before gh-pages push")
+
         # ── Free space: remove repos no longer needed ──
         for d in [self.history_dir, self.registry_dir, self.package_cache, self.source_dir]:
             if os.path.exists(d):
                 self.log_progress(f"🧹 Removing {d} to free disk space")
                 shutil.rmtree(d, ignore_errors=True)
-        
+
+        self.log_disk_usage("after cleanup for gh-pages")
+
         ghdir = os.path.join(self.temp_dir, 'gh-pages-work')
         if os.path.exists(ghdir):
             shutil.rmtree(ghdir, ignore_errors=True)
         os.makedirs(self.temp_dir, exist_ok=True)
 
         self._ensure_gh_pages_checkout(ghdir)
+        self.log_disk_usage("after gh-pages clone")
 
         dest = os.path.join(ghdir, self.sitepreview_dir)
         os.makedirs(dest, exist_ok=True)
@@ -720,6 +789,7 @@ This PR updates the FHIR Implementation Guide registry with latest information.
 
         # Copy built site into sitepreview
         self._rsync_copy(self.webroot_dir, dest, excludes)
+        self.log_disk_usage("after rsync to sitepreview")
 
         # Ignore big zips in repo
         self._append_gitignore_line(ghdir, f"{self.sitepreview_dir}/ig-build-zips/")
@@ -755,6 +825,8 @@ This PR updates the FHIR Implementation Guide registry with latest information.
         git commit -m "Update {self.sitepreview_dir} from {ref_short} @ {sha}"
         '''])
 
+        self.log_disk_usage("after commit (before push)")
+
         # Try to run gc, but don't fail if it can't (another process might be doing it)
         try:
             self.run_command(['bash', '-lc', f'''
@@ -770,6 +842,8 @@ This PR updates the FHIR Implementation Guide registry with latest information.
         except Exception as e:
             self.log_progress(f"Warning: gc failed (non-fatal): {e}")
 
+        self.log_disk_usage("after git gc (before push)")
+
         # Push with retries
         last_err = None
         for i in range(3):
@@ -782,6 +856,7 @@ This PR updates the FHIR Implementation Guide registry with latest information.
                 git push origin {self.gh_pages_branch}
                 '''])
                 self.log_progress("✅ Pushed to gh-pages successfully.")
+                self.log_disk_usage("after gh-pages push (complete)")
                 return
             except Exception as e:
                 last_err = e
@@ -800,14 +875,23 @@ This PR updates the FHIR Implementation Guide registry with latest information.
 
     def run(self):
         try:
+            self.log_disk_usage("initial state")
             self.prepare()
+
+            self.log_disk_usage("before build")
             self.build()
+            self.log_disk_usage("after build")
+
             self.publish()
+            self.log_disk_usage("after publish")
+
             if self.publish_to_gh_pages:
                 self.push_sitepreview_to_gh_pages()
             self.log_progress("✅ Publication completed successfully!")
+            self.log_disk_usage("final state")
             self.create_prs_if_needed()
         except Exception as e:
+            self.log_disk_usage("at error")
             self.log_progress(f"❌ Error: {str(e)}")
             raise
 
@@ -859,7 +943,7 @@ def save_config(config):
 # ---------------- GUI (optional) ----------------
 if tk:
     class CustomCheckbox(tk.Canvas):
-        """Custom checkbox widget that supports theming and proper sizing"""
+        """Custom checkbox widget that supports theming and proper size"""
         def __init__(self, parent, text="", variable=None, command=None,
                      font=None, bg="#FFFFFF", fg="#000000",
                      check_color="#6C63FF", size=20):
@@ -957,9 +1041,6 @@ if tk:
 
     class ModernFHIRPublisherGUI:
         # (unchanged GUI code, other than using the corrected backend)
-        # ... keeping your GUI exactly as you had it ...
-        # To keep this message focused, I’m leaving GUI code as-is from your last paste.
-        # If you need me to re-emit the entire GUI block verbatim, say the word and I will.
         pass
 
 
@@ -1004,8 +1085,6 @@ def main():
         if not tk:
             print("❌ GUI not available: tkinter not found")
             sys.exit(1)
-        # If you want the full GUI class re-emitted, ask and I’ll include it.
-        # For now this placeholder will prevent accidental GUI start.
         print("GUI mode not emitted in this snippet.")
         sys.exit(0)
     else:
@@ -1028,9 +1107,8 @@ def main():
             gh_pages_branch=args.gh_pages_branch,
             exclude_paths=args.exclude,
             ensure_pubreq=args.ensure_pubreq,
-            # ADD THESE MISSING PARAMETERS:
-            enable_pr_creation=args.enable_pr,  # <-- This was missing!
-            github_token=args.github_token,      # <-- This was missing!
+            enable_pr_creation=args.enable_pr,
+            github_token=args.github_token,
             webroot_pr_target_branch=args.webroot_pr_target,
             registry_pr_target_branch=args.registry_pr_target,
             pubreq_overrides={
@@ -1045,8 +1123,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-
-
-
