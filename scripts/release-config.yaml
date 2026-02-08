@@ -1,6 +1,6 @@
 # Source repository settings
-source_repo: https://github.com/WorldHealthOrganization/smart-pcmt-vaxprequal
-source_branch: release-candidate  # Make sure this branch exists!
+#source_repo: https://github.com/WorldHealthOrganization/smart-pcmt-vaxprequal
+#source_branch: release-candidate  # Make sure this branch exists!
 source_dir: ./source  # Local directory for source
 
 # Webroot (smart-html) settings  
@@ -32,3 +32,4 @@ sitepreview_dir: sitepreview
 gh_pages_branch: gh-pages
 exclude_paths:
   - ig-build-zips/
+
