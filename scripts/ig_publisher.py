@@ -696,6 +696,12 @@ This PR updates the FHIR Implementation Guide registry with latest information.
             self.log_progress("Skipping gh-pages push (no GITHUB_TOKEN or GITHUB_REPOSITORY).")
             return
 
+        # ── Free space: remove repos no longer needed ──
+        for d in [self.history_dir, self.registry_dir, self.package_cache, self.source_dir]:
+            if os.path.exists(d):
+                self.log_progress(f"🧹 Removing {d} to free disk space")
+                shutil.rmtree(d, ignore_errors=True)
+        
         ghdir = os.path.join(self.temp_dir, 'gh-pages-work')
         if os.path.exists(ghdir):
             shutil.rmtree(ghdir, ignore_errors=True)
@@ -1039,6 +1045,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
 
 
