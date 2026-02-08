@@ -1,0 +1,171 @@
+name: IG Release with Preprocessing
+
+on:
+  workflow_call:
+    inputs:
+      pubreq_package_id:
+        type: string
+        required: false
+      pubreq_version:
+        type: string
+        required: false
+      pubreq_canonical:
+        type: string
+        required: false
+      pubreq_path:
+        type: string
+        required: false
+      sitepreview_dir:
+        type: string
+        required: false
+        default: sitepreview
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      # ──────────────────────────────────────────────
+      # 1. Checkout
+      # ──────────────────────────────────────────────
+      - name: Checkout caller repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Use .github/release-config.yaml if present
+        run: |
+          if [ -f ".github/release-config.yaml" ] && [ ! -f "release-config.yaml" ]; then
+            cp .github/release-config.yaml release-config.yaml
+            echo "Using caller .github/release-config.yaml"
+          fi
+
+      # ──────────────────────────────────────────────
+      # 2. Tool setup
+      # ──────────────────────────────────────────────
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+
+      - name: Install SUSHI
+        run: |
+          npm install -g fsh-sushi
+          sushi --version
+
+      - name: Install Graphviz
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y graphviz
+          dot -V
+
+      - name: Install Ruby & Jekyll
+        run: |
+          sudo apt-get install -y ruby-full build-essential zlib1g-dev
+          gem install --no-document jekyll bundler --user-install
+          echo "$(ruby -e 'print Gem.user_dir')/bin" >> $GITHUB_PATH
+
+      - name: Check Jekyll
+        run: |
+          jekyll -v
+          bundle -v
+
+      # ──────────────────────────────────────────────
+      # 3. Download CI tools (ig_publish.py + config)
+      # ──────────────────────────────────────────────
+      - name: Download scripts from smart-html
+        run: |
+          set -euxo pipefail
+          REF="${{ github.workflow_ref }}"
+          REF="${REF##*@}"
+          mkdir -p .ci-tools
+          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/${REF}/scripts/ig_publish.py" \
+            -o .ci-tools/ig_publish.py
+          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/${REF}/scripts/requirements.txt" \
+            -o .ci-tools/requirements.txt
+          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/${REF}/scripts/release-config.yaml" \
+            -o .ci-tools/release-config.global.yaml
+          chmod +x .ci-tools/ig_publish.py
+
+      - name: Install Python deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r .ci-tools/requirements.txt
+
+      # ──────────────────────────────────────────────
+      # 4. Pre-SUSHI preprocessing
+      #    (DAK generation, sushi-config update,
+      #     DMN questionnaire & transform)
+      # ──────────────────────────────────────────────
+      - name: Download pre-sushi scripts
+        run: |
+          set -euxo pipefail
+          mkdir -p input/scripts
+          BASE_URL="https://raw.githubusercontent.com/WorldHealthOrganization/smart-ig-template/master/scripts/pre-sushi"
+          for script in \
+            1-generate_dak_from_sushi.py \
+            2-update_sushi_config.py \
+            3-dmn_questionnaire_generator.py \
+            4-transform_dmn.py; do
+            curl -L -f -o "input/scripts/${script}" "${BASE_URL}/${script}" 2>/dev/null \
+              || echo "⚠  Failed to download ${script} (may not exist yet – continuing)"
+          done
+
+      - name: Run pre-sushi scripts
+        run: |
+          set -euo pipefail
+          for script in \
+            1-generate_dak_from_sushi.py \
+            2-update_sushi_config.py \
+            3-dmn_questionnaire_generator.py \
+            4-transform_dmn.py; do
+            if [[ -f "input/scripts/${script}" ]]; then
+              echo "▶ Running ${script} …"
+              python "input/scripts/${script}" || true
+            fi
+          done
+
+      # ──────────────────────────────────────────────
+      # 5. Build & publish via ig_publish.py
+      # ──────────────────────────────────────────────
+      - name: Build & publish (Python drives gh-pages)
+        env:
+          SOURCE_BRANCH: ${{ github.head_ref || github.ref_name }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          set -euxo pipefail
+          echo "Detected source branch: ${SOURCE_BRANCH}"
+          python .ci-tools/ig_publish.py \
+            --global-config ".ci-tools/release-config.global.yaml" \
+            --local-config "release-config.yaml" \
+            --source "${{ github.workspace }}" \
+            --source-repo "https://github.com/${{ github.repository }}" \
+            --source-branch "${SOURCE_BRANCH}" \
+            --webroot-repo "https://github.com/WorldHealthOrganization/smart-html" \
+            --registry-repo "https://github.com/FHIR/ig-registry" \
+            --ensure-pubreq \
+            --pubreq-package-id "${{ inputs.pubreq_package_id }}" \
+            --pubreq-version "${{ inputs.pubreq_version }}" \
+            --pubreq-canonical "${{ inputs.pubreq_canonical }}" \
+            --pubreq-path "${{ inputs.pubreq_path }}" \
+            --publish-gh-pages \
+            --sitepreview-dir "${{ inputs.sitepreview_dir }}" \
+            --enable-pr \
+            --github-token "${{ secrets.GITHUB_TOKEN }}"
