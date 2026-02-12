@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>CBOR Web Token (CWT) Claim - WHO SMART Trust v1.3.0</title>
+    <title>CBOR Web Token (CWT) Claim - WHO SMART Trust v1.4.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -232,7 +232,7 @@
         <div id="ig-status" class="ig-status-active">
           <p><span style="font-size:12pt;font-weight:bold">WHO SMART Trust</span>
             <br/>
-            <span style="display:inline-block;">1.3.0 - release
+            <span style="display:inline-block;">1.4.0 - release
 
 
 
@@ -274,7 +274,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the Trust (v1.3.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://smart.who.int/trust/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the Trust (v1.4.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://smart.who.int/trust/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -354,7 +354,7 @@ Abstract
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://smart.who.int/trust/StructureDefinition/CWT<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://smart.who.int/trust/StructureDefinition/CWT"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">1.3.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://smart.who.int/trust/StructureDefinition/CWT|1.3.0"/></span>
+      <span class="copy-text">1.4.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://smart.who.int/trust/StructureDefinition/CWT|1.4.0"/></span>
       </td>
     </tr>
 
@@ -370,7 +370,7 @@ Abstract
         
           Active
           
-            as of 2025-10-27
+            as of 2026-02-11
           
         
       </td>
@@ -467,7 +467,7 @@ Abstract
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Signature</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 2181399b-abbe-49e8-9d6f-3b48643122f7
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 71960363-8f32-47ea-aaae-2f7f1d6631dd
 document.getElementById('cbCWTK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('CWTK'), 'binding', document.getElementById('cbCWTK-binding').checked, document.getElementById('ppCWTK'));
 document.getElementById('cbCWTK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -482,7 +482,75 @@ filterDesc(document.getElementById('CWTK'), 'obligation', document.getElementByI
           <!-- 218 is size of empty table -->
           
         </div>
-      </div>
+      </div><div class="dak-api-content">
+<h2>API Information</h2>
+<div class="card"><div class="card-body">
+<h5>CBOR Web Token (CWT) Claim API</h5>
+<p>Logical Model for Data elements in CBOR Web Token (CWT) https://www.iana.org/assignments/cwt/cwt.xhtml</p>
+<p><strong>Version:</strong> 1.0.0</p>
+</div></div>
+<h2>Endpoints</h2>
+<div class="endpoint-card">
+<h3><span class='badge badge-get'>GET</span> /StructureDefinition-CWT.schema.json</h3>
+<h4>JSON Schema definition for the Logical Model StructureDefinition-CWT</h4>
+<p>This endpoint serves the JSON Schema definition for the Logical Model StructureDefinition-CWT.</p>
+</div>
+<h2>Schema Definition</h2>
+<div class="schema-card">
+<h3>StructureDefinition-CWT</h3>
+<p><strong>Description:</strong> Logical Model for Data elements in CBOR Web Token (CWT) https://www.iana.org/assignments/cwt/cwt.xhtml</p>
+<p><strong>Type:</strong> object</p>
+<details class='schema-details'><summary>Full Schema (JSON)</summary>
+<pre><code class='language-json'>
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/base/StructureDefinition-CWT.schema.json",
+  "title": "CBOR Web Token (CWT) Claim",
+  "description": "Logical Model for Data elements in CBOR Web Token (CWT) https://www.iana.org/assignments/cwt/cwt.xhtml",
+  "type": "object",
+  "properties": {
+    "resourceType": {
+      "type": "string",
+      "const": "CWT",
+      "description": "Resource type identifier for CWT logical model"
+    },
+    "header": {
+      "$ref": "http://smart.who.int/base/StructureDefinition-COSEHeader.schema.json",
+      "description": "Header"
+    },
+    "payload": {
+      "$ref": "http://smart.who.int/base/StructureDefinition-CWTPayload.schema.json",
+      "description": "Payload"
+    },
+    "signature": {
+      "type": "string",
+      "description": "Signature"
+    }
+  },
+  "required": [
+    "resourceType"
+  ],
+  "resourceDefinition": "http://smart.who.int/trust/StructureDefinition/CWT",
+  "fhir:parent": "http://hl7.org/fhir/StructureDefinition/Base"
+}
+</code></pre></details>
+</div>
+</div>
+
+<style>
+.dak-api-content { margin: 1rem 0; }
+.card, .schema-card, .endpoint-card { background:#f8f9fa; border:1px solid #dee2e6; border-radius:0.375rem; padding:1rem; margin:1rem 0; }
+.badge-get { background-color:#28a745; }
+.badge-post { background-color:#007bff; }
+.badge-put { background-color:#ffc107; color:#212529; }
+.badge-delete { background-color:#dc3545; }
+.badge-patch { background-color:#6f42c1; }
+.schema-details { margin:1rem 0; border:1px solid #dee2e6; border-radius:4px; }
+.schema-details summary { background:#f8f9fa; padding:0.75rem; cursor:pointer; border-bottom:1px solid #dee2e6; font-weight:500; }
+.schema-details pre { margin:1rem; background:#f8f9fa; border:1px solid #e9ecef; border-radius:4px; padding:1rem; overflow-x:auto; }
+</style>
+<p><em>This documentation is automatically generated from the OpenAPI specification.</em></p>
+
     </div>
     <a name="tabs-diff"> </a>
     <div id="tabs-diff">
@@ -511,7 +579,7 @@ filterDesc(document.getElementById('CWTK'), 'obligation', document.getElementByI
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Signature</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 2181399b-abbe-49e8-9d6f-3b48643122f7
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 71960363-8f32-47ea-aaae-2f7f1d6631dd
 document.getElementById('cbCWTD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('CWTD'), 'binding', document.getElementById('cbCWTD-binding').checked, document.getElementById('ppCWTD'));
 document.getElementById('cbCWTD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -554,7 +622,7 @@ filterDesc(document.getElementById('CWTD'), 'obligation', document.getElementByI
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Signature</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 2181399b-abbe-49e8-9d6f-3b48643122f7
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 71960363-8f32-47ea-aaae-2f7f1d6631dd
 document.getElementById('cbCWTS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('CWTS'), 'binding', document.getElementById('cbCWTS-binding').checked, document.getElementById('ppCWTS'));
 document.getElementById('cbCWTS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -653,7 +721,7 @@ Summary
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Signature</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 2181399b-abbe-49e8-9d6f-3b48643122f7
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 71960363-8f32-47ea-aaae-2f7f1d6631dd
 document.getElementById('cbCWTKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('CWTKA'), 'binding', document.getElementById('cbCWTKA-binding').checked, document.getElementById('ppCWTKA'));
 document.getElementById('cbCWTKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -697,7 +765,7 @@ filterDesc(document.getElementById('CWTKA'), 'obligation', document.getElementBy
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Signature</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 2181399b-abbe-49e8-9d6f-3b48643122f7
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 71960363-8f32-47ea-aaae-2f7f1d6631dd
 document.getElementById('cbCWTDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('CWTDA'), 'binding', document.getElementById('cbCWTDA-binding').checked, document.getElementById('ppCWTDA'));
 document.getElementById('cbCWTDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -739,7 +807,7 @@ filterDesc(document.getElementById('CWTDA'), 'obligation', document.getElementBy
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Signature</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 2181399b-abbe-49e8-9d6f-3b48643122f7
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 71960363-8f32-47ea-aaae-2f7f1d6631dd
 document.getElementById('cbCWTSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('CWTSA'), 'binding', document.getElementById('cbCWTSA-binding').checked, document.getElementById('ppCWTSA'));
 document.getElementById('cbCWTSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -859,7 +927,7 @@ Summary
 
 <div class="inner-wrapper">
   <p>
-    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.trust#1.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 27, 2025 08:39+0000">2025-10-27</span>
+    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.trust#1.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 11, 2026 14:17+0000">2026-02-11</span>
     <br/>
     <span style="color: var(--footer-highlight-text-color)">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

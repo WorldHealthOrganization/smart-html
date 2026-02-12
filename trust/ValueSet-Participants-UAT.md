@@ -1,4 +1,4 @@
-# WHO GDHCN Trust Network Participant - UAT - WHO SMART Trust v1.3.0
+# WHO GDHCN Trust Network Participant - UAT - WHO SMART Trust v1.4.0
 
 * [**Table of Contents**](toc.md)
 * [**Indices**](indices.md)
@@ -9,8 +9,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://smart.who.int/trust/ValueSet/Participants-UAT | *Version*:1.3.0 |
-| Active as of 2025-10-27 | *Computable Name*:Participants-UAT |
+| *Official URL*:http://smart.who.int/trust/ValueSet/Participants-UAT | *Version*:1.4.0 |
+| Active as of 2026-02-11 | *Computable Name*:Participants-UAT |
 
  
 ValueSet of GDHCN Trust Network Participants for User Acceptance Testing environment 
@@ -25,8 +25,6 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
 
 ### Expansion
 
-This value set contains 47 concepts
-
 -------
 
  Explanation of the columns that may appear on this page: 
@@ -40,6 +38,32 @@ This value set contains 47 concepts
 | Definition | An explanation of the meaning of the concept |
 | Comments | Additional notes about how to use the code |
 
+## API Information
+
+##### WHO GDHCN Trust Network Participant - UAT Schema API
+
+JSON Schema for WHO GDHCN Trust Network Participant - UAT ValueSet codes. Generated from FHIR expansions using IRI format.
+
+**Version:** 1.0.0
+
+## Endpoints
+
+### GET /ValueSet-Participants-UAT.schema.json
+
+#### JSON Schema definition for the enumeration ValueSet-Participants-UAT
+
+This endpoint serves the JSON Schema definition for the enumeration ValueSet-Participants-UAT.
+
+## Schema Definition
+
+### ValueSet-Participants-UAT
+
+**Description:** JSON Schema for WHO GDHCN Trust Network Participant - UAT ValueSet codes. Generated from FHIR expansions using IRI format.
+
+**Type:** string
+
+**This documentation is automatically generated from the OpenAPI specification.**
+
 
 
 ## Resource Content
@@ -49,12 +73,12 @@ This value set contains 47 concepts
   "resourceType" : "ValueSet",
   "id" : "Participants-UAT",
   "url" : "http://smart.who.int/trust/ValueSet/Participants-UAT",
-  "version" : "1.3.0",
+  "version" : "1.4.0",
   "name" : "Participants-UAT",
   "title" : "WHO GDHCN Trust Network Participant - UAT",
   "status" : "active",
   "experimental" : true,
-  "date" : "2025-10-27T08:38:34+00:00",
+  "date" : "2026-02-11T14:17:30+00:00",
   "publisher" : "WHO",
   "contact" : [
     {
@@ -199,6 +223,9 @@ This value set contains 47 concepts
       {
         "system" : "http://smart.who.int/trust/CodeSystems/Participants-UAT",
         "concept" : [
+          {
+            "code" : "IOM"
+          },
           {
             "code" : "WHO"
           },

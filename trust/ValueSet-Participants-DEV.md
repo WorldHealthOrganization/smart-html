@@ -1,4 +1,4 @@
-# WHO GDHCN Trust Network Participant - DEV - WHO SMART Trust v1.3.0
+# WHO GDHCN Trust Network Participant - DEV - WHO SMART Trust v1.4.0
 
 * [**Table of Contents**](toc.md)
 * [**Indices**](indices.md)
@@ -9,8 +9,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://smart.who.int/trust/ValueSet/Participants-DEV | *Version*:1.3.0 |
-| Active as of 2025-10-27 | *Computable Name*:Participants-DEV |
+| *Official URL*:http://smart.who.int/trust/ValueSet/Participants-DEV | *Version*:1.4.0 |
+| Active as of 2026-02-11 | *Computable Name*:Participants-DEV |
 
  
 ValueSet of GDHCN Trust Network Participants for Development environment 
@@ -25,8 +25,6 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
 
 ### Expansion
 
-This value set contains 50 concepts
-
 -------
 
  Explanation of the columns that may appear on this page: 
@@ -40,6 +38,32 @@ This value set contains 50 concepts
 | Definition | An explanation of the meaning of the concept |
 | Comments | Additional notes about how to use the code |
 
+## API Information
+
+##### WHO GDHCN Trust Network Participant - DEV Schema API
+
+JSON Schema for WHO GDHCN Trust Network Participant - DEV ValueSet codes. Generated from FHIR expansions using IRI format.
+
+**Version:** 1.0.0
+
+## Endpoints
+
+### GET /ValueSet-Participants-DEV.schema.json
+
+#### JSON Schema definition for the enumeration ValueSet-Participants-DEV
+
+This endpoint serves the JSON Schema definition for the enumeration ValueSet-Participants-DEV.
+
+## Schema Definition
+
+### ValueSet-Participants-DEV
+
+**Description:** JSON Schema for WHO GDHCN Trust Network Participant - DEV ValueSet codes. Generated from FHIR expansions using IRI format.
+
+**Type:** string
+
+**This documentation is automatically generated from the OpenAPI specification.**
+
 
 
 ## Resource Content
@@ -49,12 +73,12 @@ This value set contains 50 concepts
   "resourceType" : "ValueSet",
   "id" : "Participants-DEV",
   "url" : "http://smart.who.int/trust/ValueSet/Participants-DEV",
-  "version" : "1.3.0",
+  "version" : "1.4.0",
   "name" : "Participants-DEV",
   "title" : "WHO GDHCN Trust Network Participant - DEV",
   "status" : "active",
   "experimental" : true,
-  "date" : "2025-10-27T08:38:34+00:00",
+  "date" : "2026-02-11T14:17:30+00:00",
   "publisher" : "WHO",
   "contact" : [
     {

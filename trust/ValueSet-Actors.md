@@ -1,4 +1,4 @@
-# WHO GDHCN Actor ValueSet of actor codes - WHO SMART Trust v1.3.0
+# WHO GDHCN Actor ValueSet of actor codes - WHO SMART Trust v1.4.0
 
 * [**Table of Contents**](toc.md)
 * [**Indices**](indices.md)
@@ -9,8 +9,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://smart.who.int/trust/ValueSet/Actors | *Version*:1.3.0 |
-| Active as of 2025-10-27 | *Computable Name*:Actors |
+| *Official URL*:http://smart.who.int/trust/ValueSet/Actors | *Version*:1.4.0 |
+| Active as of 2026-02-11 | *Computable Name*:Actors |
 
  
 ValueSet of codes for actor codes 
@@ -20,8 +20,6 @@ ValueSet of codes for actor codes
 This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
 
 ### Logical Definition (CLD)
-
-* Include all codes defined in [`http://smart.who.int/trust/CodeSystem/Actors`](CodeSystem-Actors.md)version 📦1.3.0
 
  
 
@@ -40,6 +38,32 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
 | Definition | An explanation of the meaning of the concept |
 | Comments | Additional notes about how to use the code |
 
+## API Information
+
+##### WHO GDHCN Actor ValueSet of actor codes Schema API
+
+JSON Schema for WHO GDHCN Actor ValueSet of actor codes ValueSet codes. Generated from FHIR expansions using IRI format.
+
+**Version:** 1.0.0
+
+## Endpoints
+
+### GET /ValueSet-Actors.schema.json
+
+#### JSON Schema definition for the enumeration ValueSet-Actors
+
+This endpoint serves the JSON Schema definition for the enumeration ValueSet-Actors.
+
+## Schema Definition
+
+### ValueSet-Actors
+
+**Description:** JSON Schema for WHO GDHCN Actor ValueSet of actor codes ValueSet codes. Generated from FHIR expansions using IRI format.
+
+**Type:** string
+
+**This documentation is automatically generated from the OpenAPI specification.**
+
 
 
 ## Resource Content
@@ -49,12 +73,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "Actors",
   "url" : "http://smart.who.int/trust/ValueSet/Actors",
-  "version" : "1.3.0",
+  "version" : "1.4.0",
   "name" : "Actors",
   "title" : "WHO GDHCN Actor ValueSet of actor codes",
   "status" : "active",
   "experimental" : true,
-  "date" : "2025-10-27T08:38:34+00:00",
+  "date" : "2026-02-11T14:17:30+00:00",
   "publisher" : "WHO",
   "contact" : [
     {
