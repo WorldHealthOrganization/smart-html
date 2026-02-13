@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FHIR IG Publisher</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary: #6C63FF;
+            --primary-dark: #5A52D5;
+            --primary-light: #8B82FF;
+            --secondary: #FF6B9D;
+            --success: #00D4AA;
+            --warning: #FFB800;
+            --background: #F8F9FF;
+            --card: #FFFFFF;
+            --text: #2D3748;
+            --text-light: #718096;
+            --text-muted: #A0AEC0;
+            --border: #E2E8F0;
+            --shadow: rgba(99, 179, 237, 0.12);
+            --shadow-lg: rgba(99, 179, 237, 0.25);
+        }
+        
+        /* Dark mode colors */
+        [data-theme="dark"] {
+            --primary: #8B82FF;
+            --primary-dark: #9D95FF;
+            --primary-light: #A29BFF;
+            --secondary: #FF8DB4;
+            --success: #26E5CC;
+            --warning: #FFD166;
+            --background: #0F1419;
+            --card: #1A202C;
+            --text: #F7FAFC;
+            --text-light: #CBD5E0;
+            --text-muted: #718096;
+            --border: #2D3748;
+            --shadow: rgba(0, 0, 0, 0.3);
+            --shadow-lg: rgba(0, 0, 0, 0.5);
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            min-height: 100vh;
+            padding: 2rem;
+            line-height: 1.6;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .theme-toggle {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            z-index: 1000;
+            background: var(--card);
+            border: 2px solid var(--border);
+            border-radius: 50px;
+            padding: 0.75rem;
+            cursor: pointer;
+            box-shadow: 0 4px 12px var(--shadow);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-size: 1.5rem;
+        }
+        
+        .theme-toggle:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px var(--shadow-lg);
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--card);
+            border-radius: 24px;
+            box-shadow: 0 25px 50px -12px var(--shadow-lg);
+            overflow: hidden;
+            backdrop-filter: blur(20px);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: white;
+            padding: 3rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            pointer-events: none;
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .header-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.025em;
+        }
+        
+        .header p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+        
+        .content {
+            padding: 3rem;
+        }
+        
+        /* Fixed tabs - no more weird height behavior */
+        .tabs {
+            display: flex;
+            background: var(--background);
+            border-radius: 16px;
+            padding: 0.5rem;
+            margin-bottom: 2rem;
+            box-shadow: inset 0 2px 4px var(--shadow);
+        }
+        
+        .tab {
+            flex: 1;
+            padding: 1.25rem 1.5rem; /* Fixed consistent padding */
+            background: none;
+            border: none;
+            border-radius: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            color: var(--text-light);
+            position: relative;
+            min-height: 60px; /* Fixed height to prevent shrinking */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .tab.active {
+            background: var(--card);
+            color: var(--primary);
+            box-shadow: 0 4px 12px var(--shadow);
+            /* Removed translateY to fix height issue */
+            border: 2px solid var(--primary);
+            min-height: 60px; /* Ensure same height as inactive tabs */
+        }
+        
+        .tab:hover:not(.active) {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--text);
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+            animation: fadeInUp 0.5s ease-out;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .section {
+            background: var(--card);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 32px var(--shadow);
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+        
+        .section:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px var(--shadow-lg);
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--background);
+        }
+        
+        .section-icon {
+            font-size: 1.5rem;
+            margin-right: 0.75rem;
+        }
+        
+        .section h3 {
+            color: var(--text);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 0;
+        }
+        
+        .field-group {
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        
+        .field-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+        
+        .field-icon {
+            margin-right: 0.5rem;
+            color: var(--primary);
+        }
+        
+        label {
+            font-weight: 600;
+            color: var(--text);
+            font-size: 1rem;
+        }
+        
+        .field-description {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+        
+        /* Fixed input fields - now properly tall and editable */
+        input[type="text"], input[type="url"] {
+            width: 100%;
+            padding: 1.25rem 1.5rem; /* Increased padding for better height */
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            background: var(--card);
+            color: var(--text);
+            min-height: 56px; /* Fixed minimum height */
+            line-height: 1.5; /* Better line height for readability */
+        }
+        
+        input[type="text"]:focus, input[type="url"]:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.1);
+            transform: translateY(-1px);
+        }
+        
+        input[type="text"]::placeholder, input[type="url"]::placeholder {
+            color: var(--text-muted);
+        }
+        
+        .checkbox-container {
+            background: var(--background);
+            border-radius: 16px;
+            padding: 1.5rem;
+            border: 2px solid var(--border);
+            transition: all 0.3s ease;
+        }
+        
+        .checkbox-container:hover {
+            border-color: var(--primary);
+        }
+        
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        input[type="checkbox"] {
+            width: 1.25rem;
+            height: 1.25rem;
+            margin-right: 0.75rem;
+            accent-color: var(--primary);
+            cursor: pointer;
+        }
+        
+        .checkbox-label {
+            font-weight: 600;
+            color: var(--text);
+            cursor: pointer;
+        }
+        
+        .sparse-input {
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .sparse-input.disabled {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+        
+        .example-hint {
+            display: flex;
+            align-items: center;
+            margin-top: 0.75rem;
+            padding: 0.75rem;
+            background: var(--primary);
+            background: linear-gradient(135deg, rgba(108, 99, 255, 0.1) 0%, rgba(108, 99, 255, 0.05) 100%);
+            border-radius: 8px;
+            border-left: 3px solid var(--primary);
+        }
+        
+        .example-icon {
+            margin-right: 0.5rem;
+        }
+        
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        button {
+            padding: 1.25rem 2.5rem; /* Increased padding */
+            border: none;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            font-family: inherit;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            min-height: 56px; /* Consistent height with inputs */
+        }
+        
+        button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        button:hover::before {
+            left: 100%;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: white;
+            box-shadow: 0 4px 16px rgba(108, 99, 255, 0.3);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(108, 99, 255, 0.4);
+        }
+        
+        .btn-secondary {
+            background: var(--card);
+            color: var(--text);
+            border: 2px solid var(--border);
+            box-shadow: 0 2px 8px var(--shadow);
+        }
+        
+        .btn-secondary:hover {
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px var(--shadow);
+        }
+        
+        .progress {
+            display: none;
+            margin: 2rem 0;
+            text-align: center;
+            padding: 2rem;
+            background: var(--background);
+            border-radius: 16px;
+        }
+        
+        .progress-text {
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: var(--border);
+            border-radius: 4px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .progress-bar::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            animation: shimmer 2s ease-in-out infinite;
+        }
+        
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+        
+        .success-message {
+            background: linear-gradient(135deg, var(--success) 0%, #00E5CC 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 600;
+            margin-top: 1rem;
+            box-shadow: 0 4px 16px rgba(0, 212, 170, 0.3);
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            .header {
+                padding: 2rem;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 2rem;
+            }
+            
+            .tabs {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            .tab {
+                width: 100%;
+            }
+            
+            .button-group {
+                flex-direction: column;
+            }
+            
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="theme-toggle" onclick="toggleTheme()" id="themeToggle">
+        🌙
+    </div>
+    
+    <div class="container">
+        <div class="header">
+            <div class="header-content">
+                <div class="header-icon">🧬</div>
+                <h1>FHIR IG Publisher</h1>
+                <p>Beautiful interface for configuring and publishing FHIR Implementation Guides</p>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="tabs">
+                <button class="tab active" onclick="showTab('source')">📂 Source</button>
+                <button class="tab" onclick="showTab('repository')">🔗 Repository</button>
+                <button class="tab" onclick="showTab('advanced')">⚡ Advanced</button>
+            </div>
+            
+            <form id="publisherForm">
+                <div id="source" class="tab-content active">
+                    <div class="section">
+                        <div class="section-header">
+                            <span class="section-icon">📂</span>
+                            <h3>Source Configuration</h3>
+                        </div>
+                        
+                        <div class="field-group">
+                            <div class="field-header">
+                                <span class="field-icon">🌐</span>
+                                <label for="sourceRepo">Source Repository URL</label>
+                            </div>
+                            <div class="field-description">Git repository containing your FHIR IG source files</div>
+                            <input type="url" id="sourceRepo" name="sourceRepo" value="https://github.com/WorldHealthOrganization/smart-dak-pnc" placeholder="https://github.com/your-org/your-repo">
+                        </div>
+                        
+                        <div class="field-group">
+                            <div class="field-header">
+                                <span class="field-icon">🔀</span>
+                                <label for="sourceBranch">Source Branch</label>
+                            </div>
+                            <div class="field-description">Specific branch or tag to use from the source repository</div>
+                            <input type="text" id="sourceBranch" name="sourceBranch" value="v0.9.9_releaseCandidate" placeholder="main">
+                        </div>
+                        
+                        <div class="field-group">
+                            <div class="field-header">
+                                <span class="field-icon">📁</span>
+                                <label for="sourceDir">Local Source Directory</label>
+                            </div>
+                            <div class="field-description">Optional: Use existing local directory instead of cloning from repository</div>
+                            <input type="text" id="sourceDir" name="sourceDir" placeholder="/path/to/local/source">
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="repository" class="tab-content">
+                    <div class="section">
+                        <div class="section-header">
+                            <span class="section-icon">🔗</span>
+                            <h3>Repository Configuration</h3>
+                        </div>
+                        
+                        <div class="field-group">
+                            <div class="field-header">
+                                <span class="field-icon">📚</span>
+                                <label for="historyRepo">History Repository URL</label>
+                            </div>
+                            <div class="field-description">Repository containing the IG history template for version management</div>
+                            <input type="url" id="historyRepo" name="historyRepo" value="https://github.com/HL7/fhir-ig-history-template" placeholder="https://github.com/HL7/fhir-ig-history-template">
+                        </div>
+                        
+                        <div class="field-group">
+                            <div class="field-header">
+                                <span class="field-icon">🌿</span>
+                                <label for="historyBranch">History Branch</label>
+                            </div>
+                            <div class="field-description">Branch to use from the history repository</div>
+                            <input type="text" id="historyBranch" name="historyBranch" value="main" placeholder="main">
+                        </div>
+                        
+                        <div class="field-group">
+                            <div class="field-header">
+                                <span class="field-icon">🌍</span>
+                                <label for="webrootRepo">Webroot Repository URL</label>
+                            </div>
+                            <div class="field-description">Repository containing web publishing templates and assets</div>
+                            <input type="url" id="webrootRepo" name="webrootRepo" value="https://github.com/WorldHealthOrganization/smart-html" placeholder="https://github.com/WorldHealthOrganization/smart-html">
+                        </div>
+                        
+                        <div class="field-group">
+                            <div class="field-header">
+                                <span class="field-icon">🌳</span>
+                                <label for="webrootBranch">Webroot Branch</label>
+                            </div>
+                            <div class="field-description">Branch to use from the webroot repository</div>
+                            <input type="text" id="webrootBranch" name="webrootBranch" value="main" placeholder="main">
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="advanced" class="tab-content">
+                    <div class="section">
+                        <div class="section-header">
+                            <span class="section-icon">⚡</span>
+                            <h3>Sparse Checkout Optimization</h3>
+                        </div>
+                        
+                        <div class="checkbox-container">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="enableSparseCheckout" name="enableSparseCheckout">
+                                <label for="enableSparseCheckout" class="checkbox-label">Enable sparse checkout for webroot repository</label>
+                            </div>
+                            <div class="field-description">Optimize clone performance by downloading only specific folders instead of the entire repository</div>
+                            
+                            <div class="sparse-input disabled" id="sparseInput">
+                                <div class="field-group">
+                                    <div class="field-header">
+                                        <span class="field-icon">📁</span>
+                                        <label for="sparseDirs">Folders to Download</label>
+                                    </div>
+                                    <div class="field-description">Space-separated list of directories to include in the clone</div>
+                                    <input type="text" id="sparseDirs" name="sparseDirs" value="templates assets" placeholder="templates assets css js images">
+                                    
+                                    <div class="example-hint">
+                                        <span class="example-icon">💡</span>
+                                        <span><strong>Example:</strong> templates assets css js images</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="button-group">
+                    <button type="button" class="btn-secondary" onclick="saveConfig()">
+                        💾 Save Configuration
+                    </button>
+                    <button type="submit" class="btn-primary">
+                        🚀 Run Publisher
+                    </button>
+                </div>
+                
+                <div class="progress" id="progress">
+                    <div class="progress-text">🔄 Running FHIR IG Publisher...</div>
+                    <div class="progress-bar"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        // Theme management
+        function toggleTheme() {
+            const body = document.body;
+            const themeToggle = document.getElementById('themeToggle');
+            const currentTheme = body.getAttribute('data-theme');
+            
+            if (currentTheme === 'dark') {
+                body.setAttribute('data-theme', 'light');
+                themeToggle.textContent = '🌙';
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                themeToggle.textContent = '☀️';
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+        
+        // Load saved theme
+        function loadTheme() {
+            const savedTheme = localStorage.getItem('theme');
+            const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const themeToggle = document.getElementById('themeToggle');
+            
+            if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+                document.body.setAttribute('data-theme', 'dark');
+                themeToggle.textContent = '☀️';
+            } else {
+                document.body.setAttribute('data-theme', 'light');
+                themeToggle.textContent = '🌙';
+            }
+        }
+        
+        // Tab management
+        function showTab(tabName) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Remove active class from all tabs
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Show selected tab content
+            document.getElementById(tabName).classList.add('active');
+            
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+        }
+        
+        // Toggle sparse directories field
+        document.getElementById('enableSparseCheckout').addEventListener('change', function() {
+            const sparseInput = document.getElementById('sparseInput');
+            if (this.checked) {
+                sparseInput.classList.remove('disabled');
+            } else {
+                sparseInput.classList.add('disabled');
+            }
+        });
+        
+        // Form submission
+        document.getElementById('publisherForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const progress = document.getElementById('progress');
+            progress.style.display = 'block';
+            progress.scrollIntoView({ behavior: 'smooth' });
+            
+            const formData = new FormData(this);
+            const config = {};
+            
+            for (let [key, value] of formData.entries()) {
+                config[key] = value;
+            }
+            
+            // Handle sparse directories
+            config.enableSparseCheckout = document.getElementById('enableSparseCheckout').checked;
+            if (config.enableSparseCheckout) {
+                config.sparseDirs = config.sparseDirs ? config.sparseDirs.split(' ') : ['templates', 'assets'];
+            }
+            
+            console.log('Configuration:', config);
+            
+            // Simulate processing time
+            setTimeout(() => {
+                progress.style.display = 'none';
+                
+                const successDiv = document.createElement('div');
+                successDiv.className = 'success-message';
+                successDiv.innerHTML = '🎉 Publication completed successfully!<br>Your FHIR IG has been published.';
+                
+                const buttonGroup = document.querySelector('.button-group');
+                buttonGroup.insertAdjacentElement('afterend', successDiv);
+                
+                successDiv.scrollIntoView({ behavior: 'smooth' });
+            }, 4000);
+        });
+        
+        function saveConfig() {
+            const successDiv = document.createElement('div');
+            successDiv.className = 'success-message';
+            successDiv.innerHTML = '💾 Configuration saved successfully!';
+            successDiv.style.marginTop = '1rem';
+            
+            const buttonGroup = document.querySelector('.button-group');
+            
+            // Remove any existing success messages
+            const existingSuccess = buttonGroup.parentNode.querySelector('.success-message');
+            if (existingSuccess) {
+                existingSuccess.remove();
+            }
+            
+            buttonGroup.insertAdjacentElement('afterend', successDiv);
+            
+            // Remove success message after 3 seconds
+            setTimeout(() => {
+                if (successDiv.parentNode) {
+                    successDiv.remove();
+                }
+            }, 3000);
+        }
+        
+        // Initialize theme on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            loadTheme();
+        });
+    </script>
+</body>
+</html>

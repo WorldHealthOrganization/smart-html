@@ -1,0 +1,7 @@
+-r requirements.txt
+
+# Tkinter is part of Python stdlib, but requires the OS tk package.
+# On Linux:
+#   sudo apt-get install python3-tk
+# On macOS/Windows:
+#   usually included with Python installation
