@@ -1,0 +1,108 @@
+# Enhanced release configuration for SMART Guidelines with DAK support
+# This file should be placed in the root of repositories that want DAK processing
+
+# Standard IG Publisher configuration
+source_dir: "."
+webroot_repo: "https://github.com/costateixeira/smart-html"
+webroot_branch: "main"
+registry_repo: "https://github.com/costateixeira/ig-registry"
+history_repo: "https://github.com/HL7/fhir-ig-history-template"
+
+# DAK Processing configuration
+dak:
+  enabled: true  # Set to false to disable DAK processing
+  
+  # DAK scripts configuration
+  scripts:
+    # Download DAK scripts from smart-base repository
+    source_repo: "https://github.com/WorldHealthOrganization/smart-base"
+    source_branch: "main"
+    source_path: "input/scripts"
+    
+    # Scripts to run during preprocessing (before IG Publisher)
+    preprocessing:
+      - "generate_dak_from_sushi.py"      # Generate DAK config from sushi-config.yaml
+      - "update_sushi_config.py"          # Update sushi config with DAK settings
+      - "dmn_questionnaire_generator.py"  # Generate questionnaires from DMN files
+      - "transform_dmn.py"                # Transform DMN files to HTML
+    
+    # Scripts to run during postprocessing (after IG Publisher)
+    postprocessing:
+      - "generate_valueset_schemas.py"    # JSON schemas for ValueSets
+      - "generate_logical_model_schemas.py" # JSON schemas for Logical Models  
+      - "generate_jsonld_vocabularies.py" # JSON-LD vocabularies
+      - "generate_dak_api_hub.py"         # Comprehensive API documentation
+  
+  # File patterns to include in sparse checkout when cloning smart-base
+  sparse_includes:
+    - "/input/scripts/"
+    - "/input/includes/"
+  
+  # Output configuration
+  output:
+    # Additional files to preserve in sitepreview
+    preserve_patterns:
+      - "*.schema.json"
+      - "*.jsonld" 
+      - "*.openapi.json"
+      - "dak-api.html"
+    
+    # Files to exclude from deployment (too large)
+    exclude_patterns:
+      - "ig-build-zips/"
+      - "temp/"
+
+# GitHub Actions integration
+github:
+  # Enable pull request creation for updates
+  enable_pr_creation: true
+  
+  # PR target branches
+  webroot_pr_target: "main"
+  registry_pr_target: "master"
+  
+  # Comment on PRs with build status
+  pr_comments: true
+
+# Sparse checkout configuration for webroot
+sparse_checkout:
+  enabled: true
+  # Always include these paths
+  always_include:
+    - "/templates"
+    - "/publish-setup.json" 
+    - "/package-registry.json"
+    - "/package-feed.xml"
+    - "/publication-feed.xml"
+
+# Build optimization
+build:
+  # Java memory settings for IG Publisher
+  java_memory: "6g"
+  
+  # Timeout settings (in seconds)
+  timeouts:
+    preprocessing: 600   # 10 minutes for DAK preprocessing
+    ig_publisher: 1800   # 30 minutes for IG Publisher
+    postprocessing: 900  # 15 minutes for DAK postprocessing
+  
+  # Retry configuration
+  retries:
+    download_scripts: 3
+    git_operations: 3
+    processing_scripts: 1
+
+# Deployment configuration
+deployment:
+  sitepreview_dir: "sitepreview"
+  gh_pages_branch: "gh-pages"
+  
+  # Files/directories to exclude from deployment
+  exclude:
+    - "ig-build-zips/"
+    - ".git/"
+    - "temp/"
+    - "fhir-package-cache/"
+  
+  # Generate deployment summary
+  generate_summary: true
