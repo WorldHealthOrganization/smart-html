@@ -1,0 +1,22 @@
+DAKSRV : Validation Results
+=========================================
+
+err = 2, warn = 7, info = 0
+$--
+Generated $--. FHIR version $-- for smart.who.int.dak-srv#$-- (canonical = http://smart.who.int/dak-srv)
+ Build Errors : 2 / 5 / 0
+ /home/runner/work/smart-dak-srv/smart-dak-srv/.ci-tools/temp/ig-builds/smart.who.int.dak-srv#0.9.9/fsh-generated/resources/ImplementationGuide-smart.who.int.dak-srv : 2 / 2 / 1
+</table>
+== n/a ==
+ERROR: business-processes.html#/html/body/div/div/div/div/div/p/a at Line 299, column 88: The link 'SRV DAK_BPMN files.zip' for "here" cannot be resolved
+ERROR: system-requirements.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 304, column 12: The link 'SRV DAK_high-level functional and non-functional requirements.xlsx' for "SRV high-level functional and non-functional requirements.xlsx" cannot be resolved
+WARNING: /home/runner/work/smart-dak-srv/smart-dak-srv/.ci-tools/temp/ig-builds/smart.who.int.dak-srv#0.9.9/output/testing.html: Illegal HTML: illegal html element: static_server_port ( e.g. http://localhost:8087)
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-smart.who.int.dak-srv.json ==
+ERROR: ImplementationGuide/smart.who.int.dak-srv: ImplementationGuide.meta.profile[0]: Canonical URLs must be absolute URLs if they are not fragment references (SMARTImplementationGuide)
+WARNING: ImplementationGuide/smart.who.int.dak-srv: ImplementationGuide.meta.profile[0]: A definition could not be found for Canonical URL 'SMARTImplementationGuide'
+ERROR: ImplementationGuide/smart.who.int.dak-srv: ImplementationGuide.definition: ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide|4.0.1)
+WARNING: ImplementationGuide/smart.who.int.dak-srv: ImplementationGuide.meta.profile[0]: Profile reference 'SMARTImplementationGuide' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles

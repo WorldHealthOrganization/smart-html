@@ -1,0 +1,45 @@
+# smart.who.int.dak-srv#0.9.9: SMART DAK SRV
+
+## Pages
+
+* [Home](index.md)
+* [Mappings](maps.md)
+* [System Requirements](system-requirements.md)
+* [Adapting Guidelines for Country use](adapting.md)
+* [Trust Domains](trust_domain.md)
+* [Transactions](transactions.md)
+* [Indicators and Measures](indicators-measures.md)
+* [DAK API Documentation Hub](dak-api.md)
+* [Business Processes](business-processes.md)
+* [Testing](testing.md)
+* [Data Dictionary](dictionary.md)
+* [Decision-support logic](decision-logic.md)
+* [Codings](codings.md)
+* [Test Data](test-data.md)
+* [Security and Privacy Considerations](security-privacy.md)
+* [Non-functional Requirements](non-functional-requirements.md)
+* [Concepts](concepts.md)
+* [Artifact Index](artifacts.md)
+* [Deployment](deployment.md)
+* [Dependencies](dependencies.md)
+* [System Actors](system-actors.md)
+* [Generic Personas](personas.md)
+* [Indices](indices.md)
+* [Functional Requirements](functional-requirements.md)
+* [Downloads](downloads.md)
+* [Data Models and Exchange](data-models-and-exchange.md)
+* [References](references.md)
+* [Reference Implementations](reference-implementations.md)
+* [License](license.md)
+* [Business Requirements](business-requirements.md)
+* [Sequence Diagrams](sequence-diagrams.md)
+* [User Scenarios](scenarios.md)
+* [Scheduling logic](scheduling-logic.md)
+* [Changes](changes.md)
+* [Indicator and Performance Metrics](indicators.md)
+
+## Resources
+
+### ImplementationGuides
+
+* [SMART DAK SRV](index.md)

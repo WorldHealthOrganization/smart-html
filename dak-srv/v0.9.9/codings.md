@@ -1,0 +1,18 @@
+# Codings - SMART DAK SRV v0.9.9
+
+* [**Table of Contents**](toc.md)
+* [**Data Models and Exchange**](data-models-and-exchange.md)
+* **Codings**
+
+## Codings
+
+**This content is not yet available. The page will be updated as soon as the content is ready to be shared.**
+
+Note that the terminologies included in this implementation guide will need to be updated, because the ideal mechanism for distribution (as an expression) is not currently supported by the content logical definition constructs available in the FHIR ValueSet resource and all known implementations of it. Before use in a production environment, ensure you have the latest value sets based on the definitions for each value set (as defined in the inclusion/exclusion criteria for each one).
+
+The following terminology artifacts are included for this implementation guide:
+
+### CodeSystems
+
+### ValueSets
+
