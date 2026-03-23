@@ -361,24 +361,24 @@
         "path" : "http://smart.who.int/trust-phw/v0.1.0"
       }
     },
-    {
-      "path" : "dak-srv/package-list.json",
-      "package-id" : "smart.who.int.dak-srv",
-      "title" : "SMART DAK SRV",
-      "canonical" : "http://smart.who.int/dak-srv",
-      "category" : "base",
-      "ci-build" : "http://worldhealthorganization.github.io/smart-dak-srv",
-      "version-count" : 1,
-      "latest" : {
-        "version" : "0.9.9",
-        "date" : "2026-02-18",
-        "path" : "http://smart.who.int/dak-srv/v0.9.9"
-      },
-      "milestone" : {
-        "version" : "0.9.9",
-        "date" : "2026-02-18",
-        "path" : "http://smart.who.int/dak-srv/v0.9.9"
-      }
+  {
+    "path" : "dak-srv/package-list.json",
+    "package-id" : "smart.who.int.dak-srv",
+    "title" : "SMART DAK SRV",
+    "canonical" : "http://smart.who.int/dak-srv",
+    "category" : "base",
+    "ci-build" : "http://worldhealthorganization.github.io/smart-dak-srv",
+    "version-count" : 2,
+    "latest" : {
+      "version" : "1.0.0",
+      "date" : "2026-03-23",
+      "path" : "http://smart.who.int/dak-srv/v1.0.0"
+    },
+    "milestone" : {
+      "version" : "1.0.0",
+      "date" : "2026-03-23",
+      "path" : "http://smart.who.int/dak-srv/v1.0.0"
     }
+  }
   ]
 }

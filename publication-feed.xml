@@ -10,6 +10,17 @@
     <pubDate>Thu, 03 Oct 2024 05:49:46 +0200</pubDate>
     <language>en</language>
     <ttl>600</ttl>
+        <item>
+      <title>SMART DAK SRV version 1.0.0</title>
+      <description>1.0.0 Release</description>
+      <link>http://smart.who.int/dak-srv/v1.0.0/index.html</link>
+      <guid isPermaLink="true">http://smart.who.int/dak-srv/v1.0.0/index.html</guid>
+      <dc:creator>WHO</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Mon, 23 Mar 2026 12:42:48 +0000</pubDate>
+      <fhir:details>Publication run at 23/03/2026 by runner using Version 2.2.1 (Git# 25f7da538e12). Built 2026-03-20T11:03:18.361Z (3 days old) source id Unknown (todo)</fhir:details>
+    </item>
       <item>
       <title>SMART DAK SRV version 0.9.9</title>
       <description>0.9.9 pre-release</description>
