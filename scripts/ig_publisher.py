@@ -794,6 +794,9 @@ This PR updates the FHIR Implementation Guide registry with latest information.
         if 'ig-build-zips/' not in excludes:
             excludes.append('ig-build-zips/')
 
+        # Extract files > 100MB before copying to gh-pages
+        self._extract_large_files(self.webroot_dir)
+
         # Copy built site into sitepreview
         self._rsync_copy(self.webroot_dir, dest, excludes)
         self.log_disk_usage("after rsync to sitepreview")
@@ -880,6 +883,86 @@ This PR updates the FHIR Implementation Guide registry with latest information.
 
 
 
+    def _extract_large_files(self, source_dir, size_limit_mb=100):
+        """Move files larger than size_limit_mb from source_dir to a release-assets folder.
+        Returns list of moved file paths (relative to source_dir)."""
+        release_assets_dir = os.path.join(self.base_dir, 'release-assets')
+        os.makedirs(release_assets_dir, exist_ok=True)
+        moved = []
+        limit_bytes = size_limit_mb * 1024 * 1024
+        for dirpath, _, filenames in os.walk(source_dir):
+            # Skip .git directory
+            if '.git' in dirpath.split(os.sep):
+                continue
+            for fname in filenames:
+                fpath = os.path.join(dirpath, fname)
+                try:
+                    if os.path.getsize(fpath) > limit_bytes:
+                        rel = os.path.relpath(fpath, source_dir)
+                        dest = os.path.join(release_assets_dir, os.path.basename(fname))
+                        shutil.move(fpath, dest)
+                        size_mb = os.path.getsize(dest) / (1024 * 1024)
+                        self.log_progress(f"Moved large file ({size_mb:.1f} MB): {rel} -> release-assets/")
+                        moved.append(rel)
+                except OSError:
+                    pass
+        # Also copy package.tgz if it exists
+        pkg = os.path.join(self.source_dir, 'output', 'package.tgz')
+        if os.path.exists(pkg):
+            shutil.copy2(pkg, os.path.join(release_assets_dir, 'package.tgz'))
+            self.log_progress("Copied package.tgz to release-assets/")
+        return moved
+
+    def _upload_release_assets(self):
+        """Upload files in release-assets/ to the current GitHub release (if triggered by a release)."""
+        release_assets_dir = os.path.join(self.base_dir, 'release-assets')
+        if not os.path.exists(release_assets_dir) or not os.listdir(release_assets_dir):
+            self.log_progress("No release assets to upload.")
+            return
+
+        tag = os.environ.get('GITHUB_REF_NAME', '')
+        repo_slug = os.environ.get('GITHUB_REPOSITORY', '')
+
+        if not self.github_token or not repo_slug or not tag:
+            self.log_progress("Skipping release asset upload (no release context)")
+            return
+
+        # Use GitHub API to find the release by tag
+        api_url = f"https://api.github.com/repos/{repo_slug}/releases/tags/{tag}"
+        headers = {
+            "Authorization": f"Bearer {self.github_token}",
+            "Accept": "application/vnd.github.v3+json"
+        }
+        try:
+            resp = requests.get(api_url, headers=headers)
+            if resp.status_code != 200:
+                self.log_progress(f"No release found for tag {tag}, skipping asset upload")
+                return
+
+            upload_url = resp.json()['upload_url'].replace('{?name,label}', '')
+
+            for fname in os.listdir(release_assets_dir):
+                fpath = os.path.join(release_assets_dir, fname)
+                if not os.path.isfile(fpath):
+                    continue
+                size_mb = os.path.getsize(fpath) / (1024 * 1024)
+                self.log_progress(f"Uploading release asset: {fname} ({size_mb:.1f} MB)")
+                with open(fpath, 'rb') as f:
+                    upload_resp = requests.post(
+                        f"{upload_url}?name={fname}",
+                        headers={
+                            "Authorization": f"Bearer {self.github_token}",
+                            "Content-Type": "application/octet-stream"
+                        },
+                        data=f
+                    )
+                if upload_resp.status_code in (200, 201):
+                    self.log_progress(f"Uploaded {fname}")
+                else:
+                    self.log_progress(f"Failed to upload {fname}: {upload_resp.status_code}")
+        except Exception as e:
+            self.log_progress(f"Error uploading release assets: {e}")
+
     def run(self):
         try:
             self.log_disk_usage("initial state")
@@ -897,6 +980,7 @@ This PR updates the FHIR Implementation Guide registry with latest information.
             self.log_progress("✅ Publication completed successfully!")
             self.log_disk_usage("final state")
             self.create_prs_if_needed()
+            self._upload_release_assets()
         except Exception as e:
             self.log_disk_usage("at error")
             self.log_progress(f"❌ Error: {str(e)}")
