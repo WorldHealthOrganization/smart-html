@@ -1131,8 +1131,617 @@ if tk:
             self.update_visual()
 
     class ModernFHIRPublisherGUI:
-        # (unchanged GUI code, other than using the corrected backend)
-        pass
+        """Modern tkinter GUI for the FHIR IG Publisher release script."""
+
+        LIGHT_THEME = {
+            "bg": "#F5F5FA", "fg": "#2D3142", "card_bg": "#FFFFFF",
+            "primary": "#6C63FF", "primary_fg": "#FFFFFF",
+            "entry_bg": "#FFFFFF", "entry_fg": "#2D3142", "border": "#E0E0E0",
+            "log_bg": "#1E1E2E", "log_fg": "#E0E0E0",
+            "section_bg": "#FAFAFE", "section_fg": "#2D3142",
+        }
+        DARK_THEME = {
+            "bg": "#1E1E2E", "fg": "#E0E0E0", "card_bg": "#2A2D3E",
+            "primary": "#6C63FF", "primary_fg": "#FFFFFF",
+            "entry_bg": "#2A2D3E", "entry_fg": "#E0E0E0", "border": "#3A4356",
+            "log_bg": "#12121C", "log_fg": "#C0C0C0",
+            "section_bg": "#252838", "section_fg": "#E0E0E0",
+        }
+
+        _STRING_FIELDS = [
+            ("source_repo", "var_source_repo"),
+            ("source_branch", "var_source_branch"),
+            ("source_dir", "var_source_dir"),
+            ("webroot_repo", "var_webroot_repo"),
+            ("webroot_branch", "var_webroot_branch"),
+            ("history_repo", "var_history_repo"),
+            ("history_branch", "var_history_branch"),
+            ("registry_repo", "var_registry_repo"),
+            ("sitepreview_dir", "var_sitepreview_dir"),
+            ("gh_pages_branch", "var_gh_pages_branch"),
+            ("github_token", "var_github_token"),
+            ("webroot_pr_target_branch", "var_webroot_pr_target"),
+            ("registry_pr_target_branch", "var_registry_pr_target"),
+        ]
+        _BOOL_FIELDS = [
+            ("enable_sparse_checkout", "var_enable_sparse"),
+            ("publish_to_gh_pages", "var_publish_gh_pages"),
+            ("enable_pr_creation", "var_enable_pr"),
+        ]
+        _LIST_FIELDS = [
+            ("sparse_dirs", "txt_sparse_dirs"),
+            ("exclude_paths", "txt_exclude_paths"),
+        ]
+
+        def __init__(self, config=None):
+            self.config = config or {}
+            self.dark_mode = False
+            self.running = False
+            self.themed_widgets = []
+            self.checkboxes = []
+
+            self.root = tk.Tk()
+            self.root.title("FHIR IG Publisher")
+            self.root.geometry("900x700")
+            self.root.minsize(700, 500)
+            self.root.protocol("WM_DELETE_WINDOW", self._on_close)
+
+            self.font_title = tkfont.Font(family="Segoe UI", size=16, weight="bold")
+            self.font_heading = tkfont.Font(family="Segoe UI", size=11, weight="bold")
+            self.font_normal = tkfont.Font(family="Segoe UI", size=10)
+            self.font_mono = tkfont.Font(family="Consolas", size=9)
+
+            # tk variables
+            self.var_source_repo = tk.StringVar()
+            self.var_source_branch = tk.StringVar()
+            self.var_source_dir = tk.StringVar()
+            self.var_webroot_repo = tk.StringVar()
+            self.var_webroot_branch = tk.StringVar()
+            self.var_history_repo = tk.StringVar()
+            self.var_history_branch = tk.StringVar()
+            self.var_registry_repo = tk.StringVar()
+            self.var_enable_sparse = tk.BooleanVar()
+            self.var_publish_gh_pages = tk.BooleanVar()
+            self.var_sitepreview_dir = tk.StringVar(value="sitepreview")
+            self.var_gh_pages_branch = tk.StringVar(value="gh-pages")
+            self.var_enable_pr = tk.BooleanVar()
+            self.var_github_token = tk.StringVar()
+            self.var_webroot_pr_target = tk.StringVar(value="main")
+            self.var_registry_pr_target = tk.StringVar(value="master")
+            self.var_ensure_pubreq = tk.BooleanVar()
+            self.var_pubreq_path = tk.StringVar()
+            self.var_pubreq_canonical = tk.StringVar()
+            self.var_pubreq_package_id = tk.StringVar()
+            self.var_pubreq_version = tk.StringVar()
+
+            self._configure_ttk_styles()
+            self._build_toolbar()
+            self._build_notebook()
+            self._populate_from_config(self.config)
+            self._apply_theme()
+
+        # ── Theme ──
+        def _current_theme(self):
+            return self.DARK_THEME if self.dark_mode else self.LIGHT_THEME
+
+        def _configure_ttk_styles(self):
+            t = self._current_theme()
+            style = ttk.Style()
+            style.theme_use('clam')
+            style.configure("TNotebook", background=t["bg"], borderwidth=0)
+            style.configure("TNotebook.Tab", background=t["card_bg"],
+                            foreground=t["fg"], padding=[14, 8],
+                            font=self.font_normal)
+            style.map("TNotebook.Tab",
+                       background=[("selected", t["primary"])],
+                       foreground=[("selected", t["primary_fg"])])
+            style.configure("TFrame", background=t["bg"])
+            style.configure("TLabel", background=t["bg"], foreground=t["fg"])
+            style.configure("TLabelframe", background=t["section_bg"],
+                            foreground=t["fg"])
+            style.configure("TLabelframe.Label", background=t["section_bg"],
+                            foreground=t["primary"], font=self.font_heading)
+
+        def _toggle_theme(self):
+            self.dark_mode = not self.dark_mode
+            self.btn_theme.config(text="Light Mode" if self.dark_mode else "Dark Mode")
+            self._apply_theme()
+
+        def _apply_theme(self):
+            t = self._current_theme()
+            self.root.configure(bg=t["bg"])
+            self._configure_ttk_styles()
+
+            for widget, role in self.themed_widgets:
+                try:
+                    if role == "frame":
+                        widget.configure(bg=t["bg"])
+                    elif role == "label":
+                        widget.configure(bg=t["bg"], fg=t["fg"])
+                    elif role == "section_label":
+                        widget.configure(bg=t["section_bg"], fg=t["fg"])
+                    elif role == "entry":
+                        widget.configure(bg=t["entry_bg"], fg=t["entry_fg"],
+                                         insertbackground=t["entry_fg"],
+                                         highlightbackground=t["border"],
+                                         highlightcolor=t["primary"])
+                    elif role == "text":
+                        widget.configure(bg=t["entry_bg"], fg=t["entry_fg"],
+                                         insertbackground=t["entry_fg"],
+                                         highlightbackground=t["border"],
+                                         highlightcolor=t["primary"])
+                    elif role == "button_primary":
+                        widget.configure(bg=t["primary"], fg=t["primary_fg"],
+                                         activebackground="#5A52D5",
+                                         activeforeground=t["primary_fg"])
+                    elif role == "button_secondary":
+                        widget.configure(bg=t["card_bg"], fg=t["fg"],
+                                         activebackground=t["border"],
+                                         activeforeground=t["fg"])
+                    elif role == "section_frame":
+                        widget.configure(bg=t["section_bg"])
+                    elif role == "labelframe":
+                        widget.configure(bg=t["section_bg"], fg=t["primary"])
+                except tk.TclError:
+                    pass
+
+            for cb in self.checkboxes:
+                cb.update_colors(t["bg"], t["fg"], t["primary"])
+
+            self.log_text.configure(bg=t["log_bg"], fg=t["log_fg"],
+                                    insertbackground=t["log_fg"])
+
+        # ── Toolbar ──
+        def _build_toolbar(self):
+            t = self._current_theme()
+            toolbar = tk.Frame(self.root, bg=t["bg"])
+            toolbar.pack(fill=tk.X, padx=12, pady=(10, 5))
+            self.themed_widgets.append((toolbar, "frame"))
+
+            title = tk.Label(toolbar, text="FHIR IG Publisher",
+                             font=self.font_title, fg=t["primary"], bg=t["bg"])
+            title.pack(side=tk.LEFT)
+            self.themed_widgets.append((title, "frame"))
+
+            self.btn_run = tk.Button(toolbar, text="  Run  ",
+                                     font=self.font_normal,
+                                     command=self._on_run,
+                                     relief=tk.FLAT, cursor="hand2", bd=0,
+                                     bg=t["primary"], fg=t["primary_fg"],
+                                     activebackground="#5A52D5",
+                                     padx=16, pady=6)
+            self.btn_run.pack(side=tk.RIGHT, padx=(5, 0))
+            self.themed_widgets.append((self.btn_run, "button_primary"))
+
+            self.btn_save = tk.Button(toolbar, text="Save Config",
+                                      font=self.font_normal,
+                                      command=self._save_config,
+                                      relief=tk.FLAT, cursor="hand2", bd=0,
+                                      bg=t["card_bg"], fg=t["fg"],
+                                      padx=12, pady=6)
+            self.btn_save.pack(side=tk.RIGHT, padx=(5, 0))
+            self.themed_widgets.append((self.btn_save, "button_secondary"))
+
+            self.btn_theme = tk.Button(toolbar, text="Dark Mode",
+                                       font=self.font_normal,
+                                       command=self._toggle_theme,
+                                       relief=tk.FLAT, cursor="hand2", bd=0,
+                                       bg=t["card_bg"], fg=t["fg"],
+                                       padx=12, pady=6)
+            self.btn_theme.pack(side=tk.RIGHT, padx=(5, 0))
+            self.themed_widgets.append((self.btn_theme, "button_secondary"))
+
+        # ── Notebook ──
+        def _build_notebook(self):
+            self.notebook = ttk.Notebook(self.root)
+            self.notebook.pack(fill=tk.BOTH, expand=True, padx=12, pady=(0, 10))
+
+            self.tab_source = ttk.Frame(self.notebook, padding=20)
+            self.tab_repos = ttk.Frame(self.notebook, padding=20)
+            self.tab_advanced = ttk.Frame(self.notebook, padding=10)
+            self.tab_log = ttk.Frame(self.notebook, padding=10)
+
+            self.notebook.add(self.tab_source, text="  Source  ")
+            self.notebook.add(self.tab_repos, text="  Repositories  ")
+            self.notebook.add(self.tab_advanced, text="  Advanced  ")
+            self.notebook.add(self.tab_log, text="  Log  ")
+
+            self._build_source_tab(self.tab_source)
+            self._build_repos_tab(self.tab_repos)
+            self._build_advanced_tab(self.tab_advanced)
+            self._build_log_tab(self.tab_log)
+
+        # ── Helpers ──
+        def _add_labeled_entry(self, parent, label_text, var, row,
+                               browse=False, show=None, parent_role="label"):
+            t = self._current_theme()
+            lbl = tk.Label(parent, text=label_text, font=self.font_normal,
+                           anchor="w", bg=t["bg"], fg=t["fg"])
+            lbl.grid(row=row, column=0, sticky="w", padx=(0, 10), pady=6)
+            self.themed_widgets.append((lbl, parent_role))
+
+            entry = tk.Entry(parent, textvariable=var, font=self.font_normal,
+                             relief=tk.FLAT, bd=0, highlightthickness=1,
+                             highlightbackground=t["border"],
+                             highlightcolor=t["primary"],
+                             bg=t["entry_bg"], fg=t["entry_fg"],
+                             insertbackground=t["entry_fg"])
+            if show:
+                entry.configure(show=show)
+            self.themed_widgets.append((entry, "entry"))
+
+            if browse:
+                entry.grid(row=row, column=1, sticky="ew", pady=6, padx=(0, 5),
+                           ipady=6)
+                btn = tk.Button(parent, text="Browse...", font=self.font_normal,
+                                command=lambda: self._browse_directory(var),
+                                relief=tk.FLAT, cursor="hand2", bd=0,
+                                bg=t["card_bg"], fg=t["fg"],
+                                padx=10, pady=4)
+                btn.grid(row=row, column=2, sticky="e", pady=6)
+                self.themed_widgets.append((btn, "button_secondary"))
+            else:
+                entry.grid(row=row, column=1, columnspan=2, sticky="ew",
+                           pady=6, ipady=6)
+            return entry
+
+        def _add_labeled_text(self, parent, label_text, row, height=3,
+                              parent_role="label"):
+            t = self._current_theme()
+            lbl = tk.Label(parent, text=label_text, font=self.font_normal,
+                           anchor="w", bg=t["bg"], fg=t["fg"])
+            lbl.grid(row=row, column=0, sticky="nw", padx=(0, 10), pady=6)
+            self.themed_widgets.append((lbl, parent_role))
+
+            txt = tk.Text(parent, height=height, font=self.font_mono,
+                          wrap=tk.NONE, relief=tk.FLAT, bd=0,
+                          highlightthickness=1,
+                          highlightbackground=t["border"],
+                          highlightcolor=t["primary"],
+                          bg=t["entry_bg"], fg=t["entry_fg"],
+                          insertbackground=t["entry_fg"])
+            txt.grid(row=row, column=1, columnspan=2, sticky="ew", pady=6)
+            self.themed_widgets.append((txt, "text"))
+            return txt
+
+        def _make_section(self, parent, title):
+            t = self._current_theme()
+            frame = tk.LabelFrame(parent, text=title, font=self.font_heading,
+                                  bg=t["section_bg"], fg=t["primary"],
+                                  padx=12, pady=10, relief=tk.FLAT, bd=1,
+                                  highlightthickness=1,
+                                  highlightbackground=t["border"])
+            frame.pack(fill=tk.X, pady=(0, 12), padx=4)
+            frame.columnconfigure(1, weight=1)
+            self.themed_widgets.append((frame, "labelframe"))
+            return frame
+
+        # ── Tab builders ──
+        def _build_source_tab(self, parent):
+            parent.columnconfigure(1, weight=1)
+            self._add_labeled_entry(parent, "Source Repository URL:",
+                                    self.var_source_repo, 0)
+            self._add_labeled_entry(parent, "Source Branch:",
+                                    self.var_source_branch, 1)
+            self._add_labeled_entry(parent, "Source Directory:",
+                                    self.var_source_dir, 2, browse=True)
+
+            t = self._current_theme()
+            desc = tk.Label(parent, text=(
+                "Provide a source repository URL to clone, or point to an "
+                "existing local directory. If both are provided, the repo "
+                "will be cloned into the source directory."
+            ), font=self.font_normal, wraplength=700, justify=tk.LEFT,
+               bg=t["bg"], fg=t["fg"])
+            desc.grid(row=3, column=0, columnspan=3, sticky="w", pady=(20, 0))
+            self.themed_widgets.append((desc, "label"))
+
+        def _build_repos_tab(self, parent):
+            parent.columnconfigure(1, weight=1)
+            fields = [
+                ("Webroot Repository URL:", self.var_webroot_repo),
+                ("Webroot Branch:", self.var_webroot_branch),
+                ("History Repository URL:", self.var_history_repo),
+                ("History Branch:", self.var_history_branch),
+                ("Registry Repository URL:", self.var_registry_repo),
+            ]
+            for row, (label, var) in enumerate(fields):
+                self._add_labeled_entry(parent, label, var, row)
+
+        def _build_advanced_tab(self, parent):
+            t = self._current_theme()
+            # Scrollable container
+            canvas = tk.Canvas(parent, highlightthickness=0, bg=t["bg"])
+            scrollbar = ttk.Scrollbar(parent, orient=tk.VERTICAL,
+                                       command=canvas.yview)
+            self.adv_scroll_frame = tk.Frame(canvas, bg=t["bg"])
+            self.themed_widgets.append((canvas, "frame"))
+            self.themed_widgets.append((self.adv_scroll_frame, "frame"))
+
+            self.adv_scroll_frame.bind("<Configure>",
+                lambda e: canvas.configure(scrollregion=canvas.bbox("all")))
+
+            canvas_win = canvas.create_window((0, 0),
+                window=self.adv_scroll_frame, anchor="nw")
+
+            def _resize_canvas(event):
+                canvas.itemconfig(canvas_win, width=event.width)
+            canvas.bind("<Configure>", _resize_canvas)
+
+            canvas.configure(yscrollcommand=scrollbar.set)
+            canvas.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+            scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+
+            def _on_mousewheel(event):
+                canvas.yview_scroll(int(-1 * (event.delta / 120)), "units")
+            canvas.bind_all("<MouseWheel>", _on_mousewheel)
+            self._adv_canvas = canvas
+
+            # Section 1: Sparse Checkout
+            sec = self._make_section(self.adv_scroll_frame, "Sparse Checkout")
+            self.chk_sparse = CustomCheckbox(
+                sec, text="Enable sparse checkout",
+                variable=self.var_enable_sparse, font=self.font_normal,
+                bg=t["section_bg"], fg=t["fg"], check_color=t["primary"])
+            self.chk_sparse.grid(row=0, column=0, columnspan=3, sticky="w",
+                                 pady=(0, 5))
+            self.checkboxes.append(self.chk_sparse)
+            self.txt_sparse_dirs = self._add_labeled_text(
+                sec, "Directories (one per line):", 1,
+                parent_role="section_label")
+
+            # Section 2: GH-Pages Publishing
+            sec = self._make_section(self.adv_scroll_frame,
+                                     "GitHub Pages Publishing")
+            self.chk_gh_pages = CustomCheckbox(
+                sec, text="Publish to GitHub Pages",
+                variable=self.var_publish_gh_pages, font=self.font_normal,
+                bg=t["section_bg"], fg=t["fg"], check_color=t["primary"])
+            self.chk_gh_pages.grid(row=0, column=0, columnspan=3, sticky="w",
+                                   pady=(0, 5))
+            self.checkboxes.append(self.chk_gh_pages)
+            self._add_labeled_entry(sec, "Site Preview Dir:",
+                                    self.var_sitepreview_dir, 1,
+                                    parent_role="section_label")
+            self._add_labeled_entry(sec, "GH-Pages Branch:",
+                                    self.var_gh_pages_branch, 2,
+                                    parent_role="section_label")
+            self.txt_exclude_paths = self._add_labeled_text(
+                sec, "Exclude paths (one per line):", 3,
+                parent_role="section_label")
+
+            # Section 3: PR Creation
+            sec = self._make_section(self.adv_scroll_frame,
+                                     "Pull Request Creation")
+            self.chk_pr = CustomCheckbox(
+                sec, text="Enable automatic PR creation",
+                variable=self.var_enable_pr, font=self.font_normal,
+                bg=t["section_bg"], fg=t["fg"], check_color=t["primary"])
+            self.chk_pr.grid(row=0, column=0, columnspan=3, sticky="w",
+                             pady=(0, 5))
+            self.checkboxes.append(self.chk_pr)
+            self._add_labeled_entry(sec, "GitHub Token:",
+                                    self.var_github_token, 1, show="*",
+                                    parent_role="section_label")
+            self._add_labeled_entry(sec, "Webroot PR Target Branch:",
+                                    self.var_webroot_pr_target, 2,
+                                    parent_role="section_label")
+            self._add_labeled_entry(sec, "Registry PR Target Branch:",
+                                    self.var_registry_pr_target, 3,
+                                    parent_role="section_label")
+
+            # Section 4: Publication Request
+            sec = self._make_section(self.adv_scroll_frame,
+                                     "Publication Request Overrides")
+            self.chk_pubreq = CustomCheckbox(
+                sec, text="Ensure publication-request.json exists",
+                variable=self.var_ensure_pubreq, font=self.font_normal,
+                bg=t["section_bg"], fg=t["fg"], check_color=t["primary"])
+            self.chk_pubreq.grid(row=0, column=0, columnspan=3, sticky="w",
+                                 pady=(0, 5))
+            self.checkboxes.append(self.chk_pubreq)
+            self._add_labeled_entry(sec, "Path:", self.var_pubreq_path, 1,
+                                    parent_role="section_label")
+            self._add_labeled_entry(sec, "Canonical:",
+                                    self.var_pubreq_canonical, 2,
+                                    parent_role="section_label")
+            self._add_labeled_entry(sec, "Package ID:",
+                                    self.var_pubreq_package_id, 3,
+                                    parent_role="section_label")
+            self._add_labeled_entry(sec, "Version:",
+                                    self.var_pubreq_version, 4,
+                                    parent_role="section_label")
+
+        def _build_log_tab(self, parent):
+            t = self._current_theme()
+            btn_frame = tk.Frame(parent, bg=t["bg"])
+            btn_frame.pack(fill=tk.X, pady=(0, 5))
+            self.themed_widgets.append((btn_frame, "frame"))
+
+            btn_clear = tk.Button(btn_frame, text="Clear Log",
+                                  font=self.font_normal,
+                                  command=self._clear_log,
+                                  relief=tk.FLAT, cursor="hand2", bd=0,
+                                  bg=t["card_bg"], fg=t["fg"],
+                                  padx=10, pady=4)
+            btn_clear.pack(side=tk.RIGHT)
+            self.themed_widgets.append((btn_clear, "button_secondary"))
+
+            self.log_text = scrolledtext.ScrolledText(
+                parent, wrap=tk.WORD, font=self.font_mono,
+                state=tk.DISABLED, bg=t["log_bg"], fg=t["log_fg"],
+                insertbackground=t["log_fg"], relief=tk.FLAT, bd=0,
+                highlightthickness=1, highlightbackground=t["border"])
+            self.log_text.pack(fill=tk.BOTH, expand=True)
+
+        # ── Config I/O ──
+        def _populate_from_config(self, config):
+            for yaml_key, attr_name in self._STRING_FIELDS:
+                val = config.get(yaml_key, "")
+                getattr(self, attr_name).set(str(val) if val else "")
+
+            for yaml_key, attr_name in self._BOOL_FIELDS:
+                val = config.get(yaml_key, False)
+                getattr(self, attr_name).set(bool(val))
+
+            for yaml_key, attr_name in self._LIST_FIELDS:
+                widget = getattr(self, attr_name, None)
+                if widget:
+                    widget.delete("1.0", tk.END)
+                    vals = config.get(yaml_key, [])
+                    if isinstance(vals, list):
+                        widget.insert("1.0", "\n".join(
+                            str(v).lstrip("/") for v in vals))
+                    elif vals:
+                        widget.insert("1.0", str(vals))
+
+            for cb in self.checkboxes:
+                cb.update_visual()
+
+        def _collect_config(self):
+            cfg = {}
+            for yaml_key, attr_name in self._STRING_FIELDS:
+                val = getattr(self, attr_name).get().strip()
+                if val:
+                    cfg[yaml_key] = val
+            for yaml_key, attr_name in self._BOOL_FIELDS:
+                cfg[yaml_key] = getattr(self, attr_name).get()
+            for yaml_key, attr_name in self._LIST_FIELDS:
+                widget = getattr(self, attr_name, None)
+                if widget:
+                    text = widget.get("1.0", tk.END).strip()
+                    if text:
+                        cfg[yaml_key] = [l.strip() for l in text.splitlines()
+                                         if l.strip()]
+                    else:
+                        cfg[yaml_key] = []
+            return cfg
+
+        def _save_config(self):
+            try:
+                cfg = self._collect_config()
+                save_config(cfg)
+                messagebox.showinfo("Saved",
+                                    f"Configuration saved to {CONFIG_FILE}",
+                                    parent=self.root)
+            except Exception as e:
+                messagebox.showerror("Save Error",
+                                     f"Failed to save:\n{e}",
+                                     parent=self.root)
+
+        # ── Execution ──
+        def _on_run(self):
+            if self.running:
+                return
+            self.running = True
+            self.btn_run.config(state=tk.DISABLED, text="Running...")
+            self.notebook.select(self.tab_log)
+            kwargs = self._build_publisher_kwargs()
+            t = threading.Thread(target=self._publisher_thread, args=(kwargs,),
+                                 daemon=True)
+            t.start()
+
+        def _build_publisher_kwargs(self):
+            sparse_text = self.txt_sparse_dirs.get("1.0", tk.END).strip()
+            sparse_dirs = [l.strip() for l in sparse_text.splitlines()
+                           if l.strip()] if sparse_text else None
+            exclude_text = self.txt_exclude_paths.get("1.0", tk.END).strip()
+            exclude_paths = [l.strip() for l in exclude_text.splitlines()
+                             if l.strip()] if exclude_text else None
+            return {
+                "source_dir": self.var_source_dir.get().strip() or None,
+                "source_repo": self.var_source_repo.get().strip() or None,
+                "source_branch": self.var_source_branch.get().strip() or None,
+                "webroot_repo": self.var_webroot_repo.get().strip() or None,
+                "webroot_branch": self.var_webroot_branch.get().strip() or None,
+                "history_repo": self.var_history_repo.get().strip() or None,
+                "history_branch": self.var_history_branch.get().strip() or None,
+                "registry_repo": self.var_registry_repo.get().strip() or None,
+                "sparse_dirs": sparse_dirs,
+                "enable_sparse_checkout": self.var_enable_sparse.get(),
+                "progress_callback": self._thread_safe_log,
+                "github_token": self.var_github_token.get().strip() or None,
+                "enable_pr_creation": self.var_enable_pr.get(),
+                "publish_to_gh_pages": self.var_publish_gh_pages.get(),
+                "sitepreview_dir": self.var_sitepreview_dir.get().strip(),
+                "gh_pages_branch": self.var_gh_pages_branch.get().strip(),
+                "exclude_paths": exclude_paths,
+                "webroot_pr_target_branch":
+                    self.var_webroot_pr_target.get().strip(),
+                "registry_pr_target_branch":
+                    self.var_registry_pr_target.get().strip(),
+                "ensure_pubreq": self.var_ensure_pubreq.get(),
+                "pubreq_overrides": {
+                    "path": self.var_pubreq_path.get().strip() or None,
+                    "canonical":
+                        self.var_pubreq_canonical.get().strip() or None,
+                    "package_id":
+                        self.var_pubreq_package_id.get().strip() or None,
+                    "version": self.var_pubreq_version.get().strip() or None,
+                },
+            }
+
+        def _publisher_thread(self, kwargs):
+            success = False
+            error_msg = ""
+            try:
+                publisher = ReleasePublisher(**kwargs)
+                publisher.run()
+                success = True
+            except Exception as e:
+                error_msg = str(e)
+                self._thread_safe_log(f"FATAL ERROR: {e}")
+            finally:
+                self.root.after(0, self._on_run_complete, success, error_msg)
+
+        def _on_run_complete(self, success, error_msg=""):
+            self.running = False
+            self.btn_run.config(state=tk.NORMAL, text="  Run  ")
+            if success:
+                messagebox.showinfo("Complete",
+                                    "Publication completed successfully!",
+                                    parent=self.root)
+            else:
+                messagebox.showerror("Error",
+                                     f"Publication failed:\n{error_msg}",
+                                     parent=self.root)
+                self.notebook.select(self.tab_log)
+
+        def _thread_safe_log(self, message):
+            self.root.after(0, self._append_log, message)
+
+        def _append_log(self, message):
+            self.log_text.config(state=tk.NORMAL)
+            self.log_text.insert(tk.END, message + "\n")
+            self.log_text.see(tk.END)
+            self.log_text.config(state=tk.DISABLED)
+
+        def _clear_log(self):
+            self.log_text.config(state=tk.NORMAL)
+            self.log_text.delete("1.0", tk.END)
+            self.log_text.config(state=tk.DISABLED)
+
+        # ── Utilities ──
+        def _browse_directory(self, var):
+            initial = var.get() or os.getcwd()
+            chosen = filedialog.askdirectory(parent=self.root,
+                                             initialdir=initial,
+                                             title="Select Directory")
+            if chosen:
+                var.set(chosen)
+
+        def _on_close(self):
+            if self.running:
+                if not messagebox.askokcancel(
+                    "Publisher Running",
+                    "The publisher is still running. Close anyway?",
+                    parent=self.root
+                ):
+                    return
+            self.root.destroy()
+
+        def run(self):
+            self.root.mainloop()
 
 
 def main():
@@ -1176,7 +1785,12 @@ def main():
         if not tk:
             print("❌ GUI not available: tkinter not found")
             sys.exit(1)
-        print("GUI mode not emitted in this snippet.")
+        config = load_config(
+            global_path=args.global_config or os.environ.get("GLOBAL_RELEASE_CONFIG"),
+            local_path=args.local_config
+        )
+        gui = ModernFHIRPublisherGUI(config=config)
+        gui.run()
         sys.exit(0)
     else:
         config = load_config(global_path=args.global_config or os.environ.get("GLOBAL_RELEASE_CONFIG"),
