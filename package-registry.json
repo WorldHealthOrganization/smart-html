@@ -57,25 +57,25 @@
         "path" : "http://smart.who.int/icvp/0.3.0"
       }
     },
-    {
-      "path" : "trust/package-list.json",
-      "package-id" : "smart.who.int.trust",
-      "title" : "Trust",
-      "canonical" : "http://smart.who.int/trust",
-      "category" : "base",
-      "ci-build" : "http://worldhealthorganization.github.io/smart-trust",
-      "version-count" : 7,
-      "latest" : {
-        "version" : "1.4.0",
-        "date" : "2026-02-11",
-        "path" : "http://smart.who.int/trust/v1.4.0"
-      },
-      "milestone" : {
-        "version" : "1.4.0",
-        "date" : "2026-02-11",
-        "path" : "http://smart.who.int/trust/v1.4.0"
-      }
+  {
+    "path" : "trust/package-list.json",
+    "package-id" : "smart.who.int.trust",
+    "title" : "Trust",
+    "canonical" : "http://smart.who.int/trust",
+    "category" : "base",
+    "ci-build" : "http://worldhealthorganization.github.io/smart-trust",
+    "version-count" : 8,
+    "latest" : {
+      "version" : "1.5.0",
+      "date" : "2026-04-27",
+      "path" : "http://smart.who.int/trust/v1.5.0"
     },
+    "milestone" : {
+      "version" : "1.5.0",
+      "date" : "2026-04-27",
+      "path" : "http://smart.who.int/trust/v1.5.0"
+    }
+  },
     {
       "path" : "dak-immz/package-list.json",
       "package-id" : "smart.who.int.dak-immz",
