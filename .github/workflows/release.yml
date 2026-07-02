@@ -130,20 +130,17 @@ jobs:
       - name: "📊 Disk report: after all tool setup"
         run: df -h /
 
-      # ──────────────────────────────────────────────
-      # 3. Download CI tools (ig_publish.py + config)
-      # ──────────────────────────────────────────────
       - name: Download scripts from smart-html
         run: |
           set -euxo pipefail
           REF="${{ github.workflow_ref }}"
           REF="${REF##*@}"
           mkdir -p .ci-tools
-          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/refs/heads/main/scripts/ig_publisher.py" \
+          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/${REF}/scripts/ig_publisher.py" \
             -o .ci-tools/ig_publish.py
-          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/refs/heads/main/scripts/requirements.txt" \
+          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/${REF}/scripts/requirements.txt" \
             -o .ci-tools/requirements.txt
-          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/refs/heads/main/scripts/release-config.yaml" \
+          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/${REF}/scripts/release-config.yaml" \
             -o .ci-tools/release-config.global.yaml
           chmod +x .ci-tools/ig_publish.py
 
