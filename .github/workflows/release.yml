@@ -136,11 +136,11 @@ jobs:
           REF="${{ github.workflow_ref }}"
           REF="${REF##*@}"
           mkdir -p .ci-tools
-          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/refs/heads/releasewf-update/scripts/ig_publisher.py" \
+          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/refs/heads/releasewf-updates/scripts/ig_publisher.py" \
             -o .ci-tools/ig_publish.py
-          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/refs/heads/releasewf-update/scripts/requirements.txt" \
+          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/refs/heads/releasewf-updates/scripts/requirements.txt" \
             -o .ci-tools/requirements.txt
-          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/refs/heads/releasewf-update/scripts/release-config.yaml" \
+          curl -fsSL "https://raw.githubusercontent.com/WorldHealthOrganization/smart-html/refs/heads/releasewf-updates/scripts/release-config.yaml" \
             -o .ci-tools/release-config.global.yaml
 
       - name: Install Python deps
