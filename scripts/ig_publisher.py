@@ -602,6 +602,21 @@ This PR updates the FHIR Implementation Guide registry with latest information.
                 subprocess.run([sys.executable, script_path], check=True)
         finally:
             os.chdir(original_dir)
+    
+    def promote_jsonld_to_output_root(self):
+    
+        src_dir = os.path.join(self.source_dir, 'output', 'vocabulary')
+        dst_dir = os.path.join(self.source_dir, 'output')
+        if not os.path.isdir(src_dir):
+            self.log_progress(f"No {src_dir}; skipping JSON-LD root promotion")
+            return
+        count = 0
+        for name in sorted(os.listdir(src_dir)):
+            if name.endswith('.jsonld'):
+                shutil.copy2(os.path.join(src_dir, name), os.path.join(dst_dir, name))
+                count += 1
+        self.log_progress(f"Promoted {count} JSON-LD file(s) from output/vocabulary/ to output/ root")
+
     def publish(self):
         self.log_progress("📤 Publishing Implementation Guide...")
 
@@ -998,6 +1013,8 @@ This PR updates the FHIR Implementation Guide registry with latest information.
             # (mirrors ant-who.xml onGenerate.extend / onCheck.extend targets)
             self.run_template_scripts("post-generate")
             self.run_template_scripts("post-check")
+            self.promote_jsonld_to_output_root()   # ← NEW: copy vocabulary/*.jsonld to output/ root
+
             self.publish()
             self.log_disk_usage("after publish")
 
