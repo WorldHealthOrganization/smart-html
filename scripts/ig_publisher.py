@@ -578,7 +578,30 @@ This PR updates the FHIR Implementation Guide registry with latest information.
             # Always change back to original directory
             os.chdir(original_dir)
             self.log_progress(f"Returned to original directory: {original_dir}")
-
+    
+    def run_template_scripts(self, phase):
+        """Run every *.py in input/scripts/<phase> alphabetically, mirroring the
+        ant-who.xml extension targets (onGenerate/onCheck.runPost*Scripts).
+        Scripts execute with the source dir as CWD and receive no arguments,
+        matching the documented GitHub-workflow behavior in ant-who.xml."""
+        scripts_dir = os.path.join(self.source_dir, 'input', 'scripts', phase)
+        if not os.path.isdir(scripts_dir):
+            self.log_progress(f"No {phase} scripts dir at {scripts_dir}; skipping")
+            return
+        scripts = sorted(f for f in os.listdir(scripts_dir) if f.endswith('.py'))
+        if not scripts:
+            self.log_progress(f"No {phase} scripts found in {scripts_dir}; skipping")
+            return
+        self.log_progress(f"Running {len(scripts)} {phase} script(s) from {scripts_dir}")
+        original_dir = os.getcwd()
+        try:
+            os.chdir(self.source_dir)   # scripts use relative paths from CWD
+            for script in scripts:
+                script_path = os.path.join(scripts_dir, script)
+                self.log_progress(f"▶ Running {phase} script: {script}")
+                subprocess.run([sys.executable, script_path], check=True)
+        finally:
+            os.chdir(original_dir)
     def publish(self):
         self.log_progress("📤 Publishing Implementation Guide...")
 
@@ -971,7 +994,10 @@ This PR updates the FHIR Implementation Guide registry with latest information.
             self.log_disk_usage("before build")
             self.build()
             self.log_disk_usage("after build")
-
+            # Run template post-processing hooks against the generated output/
+            # (mirrors ant-who.xml onGenerate.extend / onCheck.extend targets)
+            self.run_template_scripts("post-generate")
+            self.run_template_scripts("post-check")
             self.publish()
             self.log_disk_usage("after publish")
 

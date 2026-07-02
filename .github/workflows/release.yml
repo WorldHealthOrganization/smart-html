@@ -184,7 +184,27 @@ jobs:
               python "input/scripts/${script}" || true
             fi
           done
+      # ──────────────────────────────────────────────
+      # 4b. Post-processing scripts (schemas, jsonld,
+      #     DAK API hub) — run by ig_publish.py between
+      #     build() and publish(), mirroring ant-who.xml
+      # ──────────────────────────────────────────────
+      - name: Download post-check scripts
+        run: |
+          set -euxo pipefail
+          mkdir -p input/scripts/post-check
+          BASE_URL="https://raw.githubusercontent.com/WorldHealthOrganization/smart-ig-template/master/scripts/post-check"
+          for script in \
+            03_generate_valueset_schemas.py \
+            04_generate_logical_model_schemas.py \
+            05_generate_jsonld_vocabularies.py \
+            06_generate_dak_api_hub.py; do
+            curl -L -f -o "input/scripts/post-check/${script}" "${BASE_URL}/${script}" \
+              || echo "⚠  Failed to download ${script} (continuing)"
+          done
 
+      # (Optional) post-generate scripts — add the same block pointing at
+      # .../scripts/post-generate with its filenames if/when those exist.
       - name: "📊 Disk report: before ig_publish.py"
         run: |
           df -h /
