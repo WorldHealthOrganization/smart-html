@@ -10,7 +10,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://smart.who.int/trust/Requirements/DistributeBusinessRules | *Version*:1.6.0 |
-| Active as of 2026-07-03 | *Computable Name*:Distribute Business Rules |
+| Active as of 2026-07-06 | *Computable Name*:Distribute Business Rules |
 
  
 Make received business rules available through a distrubution point to a Receiver 
@@ -45,7 +45,7 @@ Make received business rules available through a distrubution point to a Receive
   "title" : "Distribute business rules",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-03T08:24:29+00:00",
+  "date" : "2026-07-06T11:52:41+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

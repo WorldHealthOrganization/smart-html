@@ -10,7 +10,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://smart.who.int/trust/Requirements/ReceivePKUMaterial | *Version*:1.6.0 |
-| Active as of 2026-07-03 | *Computable Name*:Receive Public Keys |
+| Active as of 2026-07-06 | *Computable Name*:Receive Public Keys |
 
  
 Receive trust material from a Trust Network Participant, for distribution within the Trust Network 
@@ -45,7 +45,7 @@ Receive trust material from a Trust Network Participant, for distribution within
   "title" : "Receive PKI material",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-03T08:19:48+00:00",
+  "date" : "2026-07-06T11:47:47+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

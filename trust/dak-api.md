@@ -24,19 +24,33 @@ Enumeration of all available ValueSet schemas
 ##### Available Endpoints:
 
 * [ValueSet-KeyUsage.schema.json](schemas/ValueSet-KeyUsage.schema.json) - JSON Schema for WHO GDHCN Key Usage ValueSet Schema
+* [ValueSet-KeyUsage.jsonld](ValueSet-KeyUsage.jsonld) - JSON-LD vocabulary for WHO GDHCN Key Usage ValueSet Schema
 * [ValueSet-Participants-DEV.schema.json](schemas/ValueSet-Participants-DEV.schema.json) - JSON Schema for WHO GDHCN Trust Network Participant - DEV Schema
+* [ValueSet-Participants-DEV.jsonld](ValueSet-Participants-DEV.jsonld) - JSON-LD vocabulary for WHO GDHCN Trust Network Participant - DEV Schema
 * [ValueSet-Domains.schema.json](schemas/ValueSet-Domains.schema.json) - JSON Schema for WHO GDHCN Trust Domains Schema
+* [ValueSet-Domains.jsonld](ValueSet-Domains.jsonld) - JSON-LD vocabulary for WHO GDHCN Trust Domains Schema
 * [ValueSet-Domains-UAT.schema.json](schemas/ValueSet-Domains-UAT.schema.json) - JSON Schema for WHO GDHCN Trust Domains - UAT Schema
+* [ValueSet-Domains-UAT.jsonld](ValueSet-Domains-UAT.jsonld) - JSON-LD vocabulary for WHO GDHCN Trust Domains - UAT Schema
 * [ValueSet-Transactions.schema.json](schemas/ValueSet-Transactions.schema.json) - JSON Schema for WHO GDHCN Transaction Codes Schema
+* [ValueSet-Transactions.jsonld](ValueSet-Transactions.jsonld) - JSON-LD vocabulary for WHO GDHCN Transaction Codes Schema
 * [ValueSet-Actors.schema.json](schemas/ValueSet-Actors.schema.json) - JSON Schema for WHO GDHCN Actor ValueSet of actor codes Schema
+* [ValueSet-Actors.jsonld](ValueSet-Actors.jsonld) - JSON-LD vocabulary for WHO GDHCN Actor ValueSet of actor codes Schema
 * [ValueSet-KeyUsage-DEV.schema.json](schemas/ValueSet-KeyUsage-DEV.schema.json) - JSON Schema for WHO GDHCN Key Usage ValueSet - DEV Schema
+* [ValueSet-KeyUsage-DEV.jsonld](ValueSet-KeyUsage-DEV.jsonld) - JSON-LD vocabulary for WHO GDHCN Key Usage ValueSet - DEV Schema
 * [ValueSet-WHORegionalOffices.schema.json](schemas/ValueSet-WHORegionalOffices.schema.json) - JSON Schema for WHO Regional Offices Schema
+* [ValueSet-WHORegionalOffices.jsonld](ValueSet-WHORegionalOffices.jsonld) - JSON-LD vocabulary for WHO Regional Offices Schema
 * [ValueSet-KeyUsage-UAT.schema.json](schemas/ValueSet-KeyUsage-UAT.schema.json) - JSON Schema for WHO GDHCN Key Usage ValueSet - UAT Schema
+* [ValueSet-KeyUsage-UAT.jsonld](ValueSet-KeyUsage-UAT.jsonld) - JSON-LD vocabulary for WHO GDHCN Key Usage ValueSet - UAT Schema
 * [ValueSet-ConnectionTypes.schema.json](schemas/ValueSet-ConnectionTypes.schema.json) - JSON Schema for WHO GDHCN Connection Types Schema
+* [ValueSet-ConnectionTypes.jsonld](ValueSet-ConnectionTypes.jsonld) - JSON-LD vocabulary for WHO GDHCN Connection Types Schema
 * [ValueSet-Participants-UAT.schema.json](schemas/ValueSet-Participants-UAT.schema.json) - JSON Schema for WHO GDHCN Trust Network Participant - UAT Schema
+* [ValueSet-Participants-UAT.jsonld](ValueSet-Participants-UAT.jsonld) - JSON-LD vocabulary for WHO GDHCN Trust Network Participant - UAT Schema
 * [ValueSet-PayloadTypes.schema.json](schemas/ValueSet-PayloadTypes.schema.json) - JSON Schema for WHO GDHCN Payload Types Schema
+* [ValueSet-PayloadTypes.jsonld](ValueSet-PayloadTypes.jsonld) - JSON-LD vocabulary for WHO GDHCN Payload Types Schema
 * [ValueSet-Domains-DEV.schema.json](schemas/ValueSet-Domains-DEV.schema.json) - JSON Schema for WHO GDHCN Trust Domains - DEV Schema
+* [ValueSet-Domains-DEV.jsonld](ValueSet-Domains-DEV.jsonld) - JSON-LD vocabulary for WHO GDHCN Trust Domains - DEV Schema
 * [ValueSet-Participants.schema.json](schemas/ValueSet-Participants.schema.json) - JSON Schema for WHO GDHCN Trust Network Participant Schema
+* [ValueSet-Participants.jsonld](ValueSet-Participants.jsonld) - JSON-LD vocabulary for WHO GDHCN Trust Network Participant Schema
 
 #### LogicalModels.schema.json
 
@@ -61,6 +75,7 @@ JSON Schema for WHO GDHCN Key Usage ValueSet ValueSet codes. Generated from FHIR
 [🩺 FHIR](ValueSet-KeyUsage.md)
 [📄 JSON Schema](schemas/ValueSet-KeyUsage.schema.json)
 [🏷️ Displays](schemas/ValueSet-KeyUsage.displays.json)
+[🗂️ JSON-LD](ValueSet-KeyUsage.jsonld)
 [🔗 OpenAPI](schemas/ValueSet-KeyUsage.openapi.json)
 
 #### WHO GDHCN Trust Network Participant - DEV Schema
@@ -70,6 +85,7 @@ JSON Schema for WHO GDHCN Trust Network Participant - DEV ValueSet codes. Genera
 [🩺 FHIR](ValueSet-Participants-DEV.md)
 [📄 JSON Schema](schemas/ValueSet-Participants-DEV.schema.json)
 [🏷️ Displays](schemas/ValueSet-Participants-DEV.displays.json)
+[🗂️ JSON-LD](ValueSet-Participants-DEV.jsonld)
 [🔗 OpenAPI](schemas/ValueSet-Participants-DEV.openapi.json)
 
 #### WHO GDHCN Trust Domains Schema
@@ -79,6 +95,7 @@ JSON Schema for WHO GDHCN Trust Domains ValueSet codes. Generated from FHIR expa
 [🩺 FHIR](ValueSet-Domains.md)
 [📄 JSON Schema](schemas/ValueSet-Domains.schema.json)
 [🏷️ Displays](schemas/ValueSet-Domains.displays.json)
+[🗂️ JSON-LD](ValueSet-Domains.jsonld)
 [🔗 OpenAPI](schemas/ValueSet-Domains.openapi.json)
 
 #### WHO GDHCN Trust Domains - UAT Schema
@@ -88,6 +105,7 @@ JSON Schema for WHO GDHCN Trust Domains - UAT ValueSet codes. Generated from FHI
 [🩺 FHIR](ValueSet-Domains-UAT.md)
 [📄 JSON Schema](schemas/ValueSet-Domains-UAT.schema.json)
 [🏷️ Displays](schemas/ValueSet-Domains-UAT.displays.json)
+[🗂️ JSON-LD](ValueSet-Domains-UAT.jsonld)
 [🔗 OpenAPI](schemas/ValueSet-Domains-UAT.openapi.json)
 
 #### WHO GDHCN Transaction Codes Schema
@@ -97,6 +115,7 @@ JSON Schema for WHO GDHCN Transaction Codes ValueSet codes. Generated from FHIR 
 [🩺 FHIR](ValueSet-Transactions.md)
 [📄 JSON Schema](schemas/ValueSet-Transactions.schema.json)
 [🏷️ Displays](schemas/ValueSet-Transactions.displays.json)
+[🗂️ JSON-LD](ValueSet-Transactions.jsonld)
 [🔗 OpenAPI](schemas/ValueSet-Transactions.openapi.json)
 
 #### WHO GDHCN Actor ValueSet of actor codes Schema
@@ -106,6 +125,7 @@ JSON Schema for WHO GDHCN Actor ValueSet of actor codes ValueSet codes. Generate
 [🩺 FHIR](ValueSet-Actors.md)
 [📄 JSON Schema](schemas/ValueSet-Actors.schema.json)
 [🏷️ Displays](schemas/ValueSet-Actors.displays.json)
+[🗂️ JSON-LD](ValueSet-Actors.jsonld)
 [🔗 OpenAPI](schemas/ValueSet-Actors.openapi.json)
 
 #### WHO GDHCN Key Usage ValueSet - DEV Schema
@@ -115,6 +135,7 @@ JSON Schema for WHO GDHCN Key Usage ValueSet - DEV ValueSet codes. Generated fro
 [🩺 FHIR](ValueSet-KeyUsage-DEV.md)
 [📄 JSON Schema](schemas/ValueSet-KeyUsage-DEV.schema.json)
 [🏷️ Displays](schemas/ValueSet-KeyUsage-DEV.displays.json)
+[🗂️ JSON-LD](ValueSet-KeyUsage-DEV.jsonld)
 [🔗 OpenAPI](schemas/ValueSet-KeyUsage-DEV.openapi.json)
 
 #### WHO Regional Offices Schema
@@ -124,6 +145,7 @@ JSON Schema for WHO Regional Offices ValueSet codes. Generated from FHIR expansi
 [🩺 FHIR](ValueSet-WHORegionalOffices.md)
 [📄 JSON Schema](schemas/ValueSet-WHORegionalOffices.schema.json)
 [🏷️ Displays](schemas/ValueSet-WHORegionalOffices.displays.json)
+[🗂️ JSON-LD](ValueSet-WHORegionalOffices.jsonld)
 [🔗 OpenAPI](schemas/ValueSet-WHORegionalOffices.openapi.json)
 
 #### WHO GDHCN Key Usage ValueSet - UAT Schema
@@ -133,6 +155,7 @@ JSON Schema for WHO GDHCN Key Usage ValueSet - UAT ValueSet codes. Generated fro
 [🩺 FHIR](ValueSet-KeyUsage-UAT.md)
 [📄 JSON Schema](schemas/ValueSet-KeyUsage-UAT.schema.json)
 [🏷️ Displays](schemas/ValueSet-KeyUsage-UAT.displays.json)
+[🗂️ JSON-LD](ValueSet-KeyUsage-UAT.jsonld)
 [🔗 OpenAPI](schemas/ValueSet-KeyUsage-UAT.openapi.json)
 
 #### WHO GDHCN Connection Types Schema
@@ -142,6 +165,7 @@ JSON Schema for WHO GDHCN Connection Types ValueSet codes. Generated from FHIR e
 [🩺 FHIR](ValueSet-ConnectionTypes.md)
 [📄 JSON Schema](schemas/ValueSet-ConnectionTypes.schema.json)
 [🏷️ Displays](schemas/ValueSet-ConnectionTypes.displays.json)
+[🗂️ JSON-LD](ValueSet-ConnectionTypes.jsonld)
 [🔗 OpenAPI](schemas/ValueSet-ConnectionTypes.openapi.json)
 
 #### WHO GDHCN Trust Network Participant - UAT Schema
@@ -151,6 +175,7 @@ JSON Schema for WHO GDHCN Trust Network Participant - UAT ValueSet codes. Genera
 [🩺 FHIR](ValueSet-Participants-UAT.md)
 [📄 JSON Schema](schemas/ValueSet-Participants-UAT.schema.json)
 [🏷️ Displays](schemas/ValueSet-Participants-UAT.displays.json)
+[🗂️ JSON-LD](ValueSet-Participants-UAT.jsonld)
 [🔗 OpenAPI](schemas/ValueSet-Participants-UAT.openapi.json)
 
 #### WHO GDHCN Payload Types Schema
@@ -160,6 +185,7 @@ JSON Schema for WHO GDHCN Payload Types ValueSet codes. Generated from FHIR expa
 [🩺 FHIR](ValueSet-PayloadTypes.md)
 [📄 JSON Schema](schemas/ValueSet-PayloadTypes.schema.json)
 [🏷️ Displays](schemas/ValueSet-PayloadTypes.displays.json)
+[🗂️ JSON-LD](ValueSet-PayloadTypes.jsonld)
 [🔗 OpenAPI](schemas/ValueSet-PayloadTypes.openapi.json)
 
 #### WHO GDHCN Trust Domains - DEV Schema
@@ -169,6 +195,7 @@ JSON Schema for WHO GDHCN Trust Domains - DEV ValueSet codes. Generated from FHI
 [🩺 FHIR](ValueSet-Domains-DEV.md)
 [📄 JSON Schema](schemas/ValueSet-Domains-DEV.schema.json)
 [🏷️ Displays](schemas/ValueSet-Domains-DEV.displays.json)
+[🗂️ JSON-LD](ValueSet-Domains-DEV.jsonld)
 [🔗 OpenAPI](schemas/ValueSet-Domains-DEV.openapi.json)
 
 #### WHO GDHCN Trust Network Participant Schema
@@ -178,6 +205,7 @@ JSON Schema for WHO GDHCN Trust Network Participant ValueSet codes. Generated fr
 [🩺 FHIR](ValueSet-Participants.md)
 [📄 JSON Schema](schemas/ValueSet-Participants.schema.json)
 [🏷️ Displays](schemas/ValueSet-Participants.displays.json)
+[🗂️ JSON-LD](ValueSet-Participants.jsonld)
 [🔗 OpenAPI](schemas/ValueSet-Participants.openapi.json)
 
 ### Logical Model Schemas (5 available)
@@ -233,6 +261,7 @@ Complete API specification documentation for all available endpoints:
 API endpoints for WHO GDHCN Key Usage ValueSet Schema
 
 [📄 JSON Schema](schemas/ValueSet-KeyUsage.schema.json)
+[🗂️ JSON-LD](ValueSet-KeyUsage.jsonld)
 [🔗 OpenAPI](schemas/ValueSet-KeyUsage.openapi.json)
 
 #### ValueSet-Participants-DEV Endpoints
@@ -240,6 +269,7 @@ API endpoints for WHO GDHCN Key Usage ValueSet Schema
 API endpoints for WHO GDHCN Trust Network Participant - DEV Schema
 
 [📄 JSON Schema](schemas/ValueSet-Participants-DEV.schema.json)
+[🗂️ JSON-LD](ValueSet-Participants-DEV.jsonld)
 [🔗 OpenAPI](schemas/ValueSet-Participants-DEV.openapi.json)
 
 #### ValueSet-Domains Endpoints
@@ -247,6 +277,7 @@ API endpoints for WHO GDHCN Trust Network Participant - DEV Schema
 API endpoints for WHO GDHCN Trust Domains Schema
 
 [📄 JSON Schema](schemas/ValueSet-Domains.schema.json)
+[🗂️ JSON-LD](ValueSet-Domains.jsonld)
 [🔗 OpenAPI](schemas/ValueSet-Domains.openapi.json)
 
 #### ValueSet-Domains-UAT Endpoints
@@ -254,6 +285,7 @@ API endpoints for WHO GDHCN Trust Domains Schema
 API endpoints for WHO GDHCN Trust Domains - UAT Schema
 
 [📄 JSON Schema](schemas/ValueSet-Domains-UAT.schema.json)
+[🗂️ JSON-LD](ValueSet-Domains-UAT.jsonld)
 [🔗 OpenAPI](schemas/ValueSet-Domains-UAT.openapi.json)
 
 #### ValueSet-Transactions Endpoints
@@ -261,6 +293,7 @@ API endpoints for WHO GDHCN Trust Domains - UAT Schema
 API endpoints for WHO GDHCN Transaction Codes Schema
 
 [📄 JSON Schema](schemas/ValueSet-Transactions.schema.json)
+[🗂️ JSON-LD](ValueSet-Transactions.jsonld)
 [🔗 OpenAPI](schemas/ValueSet-Transactions.openapi.json)
 
 #### ValueSet-Actors Endpoints
@@ -268,6 +301,7 @@ API endpoints for WHO GDHCN Transaction Codes Schema
 API endpoints for WHO GDHCN Actor ValueSet of actor codes Schema
 
 [📄 JSON Schema](schemas/ValueSet-Actors.schema.json)
+[🗂️ JSON-LD](ValueSet-Actors.jsonld)
 [🔗 OpenAPI](schemas/ValueSet-Actors.openapi.json)
 
 #### ValueSet-KeyUsage-DEV Endpoints
@@ -275,6 +309,7 @@ API endpoints for WHO GDHCN Actor ValueSet of actor codes Schema
 API endpoints for WHO GDHCN Key Usage ValueSet - DEV Schema
 
 [📄 JSON Schema](schemas/ValueSet-KeyUsage-DEV.schema.json)
+[🗂️ JSON-LD](ValueSet-KeyUsage-DEV.jsonld)
 [🔗 OpenAPI](schemas/ValueSet-KeyUsage-DEV.openapi.json)
 
 #### ValueSet-WHORegionalOffices Endpoints
@@ -282,6 +317,7 @@ API endpoints for WHO GDHCN Key Usage ValueSet - DEV Schema
 API endpoints for WHO Regional Offices Schema
 
 [📄 JSON Schema](schemas/ValueSet-WHORegionalOffices.schema.json)
+[🗂️ JSON-LD](ValueSet-WHORegionalOffices.jsonld)
 [🔗 OpenAPI](schemas/ValueSet-WHORegionalOffices.openapi.json)
 
 #### ValueSet-KeyUsage-UAT Endpoints
@@ -289,6 +325,7 @@ API endpoints for WHO Regional Offices Schema
 API endpoints for WHO GDHCN Key Usage ValueSet - UAT Schema
 
 [📄 JSON Schema](schemas/ValueSet-KeyUsage-UAT.schema.json)
+[🗂️ JSON-LD](ValueSet-KeyUsage-UAT.jsonld)
 [🔗 OpenAPI](schemas/ValueSet-KeyUsage-UAT.openapi.json)
 
 #### ValueSet-ConnectionTypes Endpoints
@@ -296,6 +333,7 @@ API endpoints for WHO GDHCN Key Usage ValueSet - UAT Schema
 API endpoints for WHO GDHCN Connection Types Schema
 
 [📄 JSON Schema](schemas/ValueSet-ConnectionTypes.schema.json)
+[🗂️ JSON-LD](ValueSet-ConnectionTypes.jsonld)
 [🔗 OpenAPI](schemas/ValueSet-ConnectionTypes.openapi.json)
 
 #### ValueSet-Participants-UAT Endpoints
@@ -303,6 +341,7 @@ API endpoints for WHO GDHCN Connection Types Schema
 API endpoints for WHO GDHCN Trust Network Participant - UAT Schema
 
 [📄 JSON Schema](schemas/ValueSet-Participants-UAT.schema.json)
+[🗂️ JSON-LD](ValueSet-Participants-UAT.jsonld)
 [🔗 OpenAPI](schemas/ValueSet-Participants-UAT.openapi.json)
 
 #### ValueSet-PayloadTypes Endpoints
@@ -310,6 +349,7 @@ API endpoints for WHO GDHCN Trust Network Participant - UAT Schema
 API endpoints for WHO GDHCN Payload Types Schema
 
 [📄 JSON Schema](schemas/ValueSet-PayloadTypes.schema.json)
+[🗂️ JSON-LD](ValueSet-PayloadTypes.jsonld)
 [🔗 OpenAPI](schemas/ValueSet-PayloadTypes.openapi.json)
 
 #### ValueSet-Domains-DEV Endpoints
@@ -317,6 +357,7 @@ API endpoints for WHO GDHCN Payload Types Schema
 API endpoints for WHO GDHCN Trust Domains - DEV Schema
 
 [📄 JSON Schema](schemas/ValueSet-Domains-DEV.schema.json)
+[🗂️ JSON-LD](ValueSet-Domains-DEV.jsonld)
 [🔗 OpenAPI](schemas/ValueSet-Domains-DEV.openapi.json)
 
 #### ValueSet-Participants Endpoints
@@ -324,6 +365,7 @@ API endpoints for WHO GDHCN Trust Domains - DEV Schema
 API endpoints for WHO GDHCN Trust Network Participant Schema
 
 [📄 JSON Schema](schemas/ValueSet-Participants.schema.json)
+[🗂️ JSON-LD](ValueSet-Participants.jsonld)
 [🔗 OpenAPI](schemas/ValueSet-Participants.openapi.json)
 
 #### StructureDefinition-HCert Endpoints

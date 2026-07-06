@@ -10,7 +10,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://smart.who.int/trust/ValueSet/KeyUsage | *Version*:1.6.0 |
-| Active as of 2026-07-03 | *Computable Name*:KeyUsage |
+| Active as of 2026-07-06 | *Computable Name*:KeyUsage |
 
  
 ValueSet of codes for key usage codes for Production environment 
@@ -78,7 +78,7 @@ This endpoint serves the JSON Schema definition for the enumeration ValueSet-Key
   "title" : "WHO GDHCN  Key Usage ValueSet",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-03T08:19:48+00:00",
+  "date" : "2026-07-06T11:47:47+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

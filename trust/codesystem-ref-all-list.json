@@ -8,9 +8,9 @@
     "description" : "CodeSystem for WHO Refmart Country and Jurisidiction List available at https://xmart-api-public.who.int/REFMART/REF_COUNTRY for Production environment",
     "uses" : {
     },
-    "ValueSet-Participants.html" : "WHO GDHCN Trust Network Participant",
     "ConceptMap-ParticipantsToWHORegionalOffices.html" : "GDHCN Participants to WHO Regional Offices",
     "ValueSet-Participants-UAT.html" : "WHO GDHCN Trust Network Participant - UAT",
+    "ValueSet-Participants.html" : "WHO GDHCN Trust Network Participant",
     "ValueSet-Participants-DEV.html" : "WHO GDHCN Trust Network Participant - DEV"
   },
   {

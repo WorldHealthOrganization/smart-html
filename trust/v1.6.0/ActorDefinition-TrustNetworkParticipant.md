@@ -10,7 +10,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://smart.who.int/trust/ActorDefinition/TrustNetworkParticipant | *Version*:1.6.0 |
-| Active as of 2026-07-03 | *Computable Name*:Trust Network Participant |
+| Active as of 2026-07-06 | *Computable Name*:Trust Network Participant |
 
  
 Trust Network Participant which publishes and or receives PKI-material within a Trust Network 
@@ -39,7 +39,7 @@ Trust Network Participant which publishes and or receives PKI-material within a 
   "title" : "Trust Network Participant",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-03T08:19:48+00:00",
+  "date" : "2026-07-06T11:47:47+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

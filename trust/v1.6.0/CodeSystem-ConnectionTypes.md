@@ -10,7 +10,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://smart.who.int/trust/CodeSystem/ConnectionTypes | *Version*:1.6.0 |
-| Active as of 2026-07-03 | *Computable Name*:ConnectionTypes |
+| Active as of 2026-07-06 | *Computable Name*:ConnectionTypes |
 
  
 CodeSystem for GDHCN connection types 
@@ -33,7 +33,7 @@ CodeSystem for GDHCN connection types
   "title" : "WHO GDHCN Connection Types",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-03T08:19:48+00:00",
+  "date" : "2026-07-06T11:47:47+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

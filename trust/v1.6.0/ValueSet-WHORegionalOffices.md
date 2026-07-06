@@ -10,7 +10,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://smart.who.int/trust/ValueSet/WHORegionalOffices | *Version*:1.6.0 |
-| Active as of 2026-07-03 | *Computable Name*:WHORegionalOffices |
+| Active as of 2026-07-06 | *Computable Name*:WHORegionalOffices |
 
  
 ValueSet of WHO Regional Offices 
@@ -78,7 +78,7 @@ This endpoint serves the JSON Schema definition for the enumeration ValueSet-WHO
   "title" : "WHO Regional Offices",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-03T08:19:48+00:00",
+  "date" : "2026-07-06T11:47:47+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

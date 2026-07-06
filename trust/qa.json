@@ -6,8 +6,8 @@
   "status" : "draft",
   "package-id" : "smart.who.int.trust",
   "ig-ver" : "1.6.0",
-  "date" : "Fri, 03 Jul, 2026 08:24:29 +0000",
-  "dateISO8601" : "2026-07-03T08:24:29+00:00",
+  "date" : "Mon, 06 Jul, 2026 11:52:41 +0000",
+  "dateISO8601" : "2026-07-06T11:52:41+00:00",
   "errs" : 3993,
   "warnings" : 2001,
   "hints" : 864,
@@ -15,5 +15,5 @@
   "suppressed-warnings" : 0,
   "version" : "5.0.0",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 3047078808
+  "maxMemory" : 2988838456
 }

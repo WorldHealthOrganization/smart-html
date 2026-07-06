@@ -10,7 +10,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://smart.who.int/trust/Requirements/RequestVDHC | *Version*:1.6.0 |
-| Active as of 2026-07-03 | *Computable Name*:Request VDHC |
+| Active as of 2026-07-06 | *Computable Name*:Request VDHC |
 
  
 Request a Verifiable Digital Health Certificate from an Issuer 
@@ -45,7 +45,7 @@ Request a Verifiable Digital Health Certificate from an Issuer
   "title" : "Request Verifiable Digital Health Certificate",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-03T08:24:29+00:00",
+  "date" : "2026-07-06T11:52:41+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

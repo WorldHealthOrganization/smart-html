@@ -10,7 +10,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://smart.who.int/trust/ValueSet/Participants | *Version*:1.6.0 |
-| Active as of 2026-07-03 | *Computable Name*:Participants |
+| Active as of 2026-07-06 | *Computable Name*:Participants |
 
  
 ValueSet of GDHCN Trust Network Participants for Production environment 
@@ -78,7 +78,7 @@ This endpoint serves the JSON Schema definition for the enumeration ValueSet-Par
   "title" : "WHO GDHCN Trust Network Participant",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-03T08:24:29+00:00",
+  "date" : "2026-07-06T11:52:41+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

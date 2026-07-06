@@ -11,7 +11,7 @@
     "status" : "release",
     "sequence" : "Releases",
     "fhirversion" : "5.0.0",
-    "date" : "2026-07-03",
+    "date" : "2026-07-06",
     "current" : true,
     "desc" : "1.6.0 release"
   },

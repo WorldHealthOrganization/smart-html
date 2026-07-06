@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://smart.who.int/trust/ImplementationGuide/smart.who.int.trust | *Version*:1.6.0 |
-| Draft as of 2026-07-03 | *Computable Name*:Trust |
+| Draft as of 2026-07-06 | *Computable Name*:Trust |
 
 ### Summary
 
@@ -119,7 +119,7 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
   "title" : "WHO SMART Trust",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-07-03T08:24:29+00:00",
+  "date" : "2026-07-06T11:52:41+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

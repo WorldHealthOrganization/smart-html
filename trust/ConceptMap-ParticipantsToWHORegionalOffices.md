@@ -10,7 +10,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://smart.who.int/trust/ConceptMap/ParticipantsToWHORegionalOffices | *Version*:1.6.0 |
-| Active as of 2026-07-03 | *Computable Name*:ParticipantsToWHORegionalOffices |
+| Active as of 2026-07-06 | *Computable Name*:ParticipantsToWHORegionalOffices |
 
  
 ConceptMap from GDHCN Trust Network Production Participants to WHO Regional Offices. Participants that are not WHO Member States or State Parties (e.g. international organizations or non-member territories) have no mapping and are grouped under Other Participants. 
@@ -29,7 +29,7 @@ ConceptMap from GDHCN Trust Network Production Participants to WHO Regional Offi
   "title" : "GDHCN Participants to WHO Regional Offices",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-03T08:24:29+00:00",
+  "date" : "2026-07-06T11:52:41+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

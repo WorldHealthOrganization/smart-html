@@ -19,7 +19,7 @@
   fhir:title [ fhir:v "WHO GDHCN Trust Network Participants CodeSystem"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v true] ; # 
-  fhir:date [ fhir:v "2026-07-03T08:19:48+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-07-06T11:47:47+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "WHO"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "WHO" ] ;

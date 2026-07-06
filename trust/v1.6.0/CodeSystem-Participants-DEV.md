@@ -10,7 +10,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://smart.who.int/trust/CodeSystems/Participants-DEV | *Version*:1.6.0 |
-| Draft as of 2026-07-03 | *Computable Name*:Participants-DEV |
+| Draft as of 2026-07-06 | *Computable Name*:Participants-DEV |
 
  
 CodeSystem for GDHCN Trust Network Participants for Development environment 
@@ -33,7 +33,7 @@ CodeSystem for GDHCN Trust Network Participants for Development environment
   "title" : "WHO GDHCN Trust Network Participant - DEV",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-07-03T08:19:48+00:00",
+  "date" : "2026-07-06T11:47:47+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

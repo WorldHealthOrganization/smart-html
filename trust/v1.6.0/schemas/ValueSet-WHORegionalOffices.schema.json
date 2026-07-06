@@ -17,5 +17,5 @@
   "fhir:displays": "http://smart.who.int/trust/ValueSet-WHORegionalOffices.displays.json",
   "fhir:valueSet": "http://smart.who.int/trust/ValueSet/WHORegionalOffices",
   "fhir:version": "1.6.0",
-  "fhir:expansionTimestamp": "2026-07-03T08:23:04.335978"
+  "fhir:expansionTimestamp": "2026-07-06T11:51:13.751306"
 }

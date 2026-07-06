@@ -10,7 +10,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://smart.who.int/trust/CodeSystem/PayloadTypes | *Version*:1.6.0 |
-| Active as of 2026-07-03 | *Computable Name*:PayloadTypes |
+| Active as of 2026-07-06 | *Computable Name*:PayloadTypes |
 
  
 CodeSystem for GDHCN Payload types 
@@ -33,7 +33,7 @@ CodeSystem for GDHCN Payload types
   "title" : "WHO GDHCN Payload Types",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-03T08:24:29+00:00",
+  "date" : "2026-07-06T11:52:41+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

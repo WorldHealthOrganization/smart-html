@@ -10,7 +10,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://smart.who.int/trust/StructureDefinition/HCert | *Version*:1.6.0 |
-| Active as of 2026-07-03 | *Computable Name*:HCert |
+| Active as of 2026-07-06 | *Computable Name*:HCert |
 
  
 Logical Model for the HCERT 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-HCert.csv), [Excel](
   "name" : "HCert",
   "title" : "Health Certificate",
   "status" : "active",
-  "date" : "2026-07-03T08:24:29+00:00",
+  "date" : "2026-07-06T11:52:41+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",
