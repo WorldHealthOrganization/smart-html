@@ -12,7 +12,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization"^^xsd:anyURI ;
-       fhir:l <https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization>
+       fhir:link <https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization>
      ] )
   ] ; # 
   fhir:text [
@@ -21,22 +21,19 @@
   ] ; # 
   fhir:type ( [
      fhir:coding ( [
-       fhir:system [
-         fhir:v "http://terminology.hl7.org/CodeSystem/organization-type"^^xsd:anyURI ;
-         fhir:l <http://terminology.hl7.org/CodeSystem/organization-type>
-       ] ;
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/organization-type"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "govt" ]
      ] )
   ] ) ; # 
   fhir:name [ fhir:v "Albania"] ; # 
   fhir:endpoint ( [
-     fhir:l <http://smart.who.int/trust/Endpoint/GDHCNParticipantDID-ALB-All> ;
+     fhir:link <http://smart.who.int/trust/Endpoint/GDHCNParticipantDID-ALB-All> ;
      fhir:reference [ fhir:v "Endpoint/GDHCNParticipantDID-ALB-All" ]
   ] [
-     fhir:l <http://smart.who.int/trust/Endpoint/GDHCNParticipantDID-ALB-DSC> ;
+     fhir:link <http://smart.who.int/trust/Endpoint/GDHCNParticipantDID-ALB-DSC> ;
      fhir:reference [ fhir:v "Endpoint/GDHCNParticipantDID-ALB-DSC" ]
   ] [
-     fhir:l <http://smart.who.int/trust/Endpoint/GDHCNParticipantDID-ALB-SCA> ;
+     fhir:link <http://smart.who.int/trust/Endpoint/GDHCNParticipantDID-ALB-SCA> ;
      fhir:reference [ fhir:v "Endpoint/GDHCNParticipantDID-ALB-SCA" ]
   ] ) . # 
 

@@ -12,7 +12,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization"^^xsd:anyURI ;
-       fhir:l <https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization>
+       fhir:link <https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization>
      ] )
   ] ; # 
   fhir:text [
@@ -21,22 +21,19 @@
   ] ; # 
   fhir:type ( [
      fhir:coding ( [
-       fhir:system [
-         fhir:v "http://terminology.hl7.org/CodeSystem/organization-type"^^xsd:anyURI ;
-         fhir:l <http://terminology.hl7.org/CodeSystem/organization-type>
-       ] ;
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/organization-type"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "govt" ]
      ] )
   ] ) ; # 
   fhir:name [ fhir:v "France"] ; # 
   fhir:endpoint ( [
-     fhir:l <http://smart.who.int/trust/Endpoint/GDHCNParticipantDID-FRA-All> ;
+     fhir:link <http://smart.who.int/trust/Endpoint/GDHCNParticipantDID-FRA-All> ;
      fhir:reference [ fhir:v "Endpoint/GDHCNParticipantDID-FRA-All" ]
   ] [
-     fhir:l <http://smart.who.int/trust/Endpoint/GDHCNParticipantDID-FRA-DSC> ;
+     fhir:link <http://smart.who.int/trust/Endpoint/GDHCNParticipantDID-FRA-DSC> ;
      fhir:reference [ fhir:v "Endpoint/GDHCNParticipantDID-FRA-DSC" ]
   ] [
-     fhir:l <http://smart.who.int/trust/Endpoint/GDHCNParticipantDID-FRA-SCA> ;
+     fhir:link <http://smart.who.int/trust/Endpoint/GDHCNParticipantDID-FRA-SCA> ;
      fhir:reference [ fhir:v "Endpoint/GDHCNParticipantDID-FRA-SCA" ]
   ] ) . # 
 

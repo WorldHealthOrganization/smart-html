@@ -12,7 +12,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Endpoint"^^xsd:anyURI ;
-       fhir:l <https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Endpoint>
+       fhir:link <https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Endpoint>
      ] )
   ] ; # 
   fhir:text [
@@ -23,13 +23,10 @@
   fhir:connectionType ( [] ) ; # 
   fhir:name [ fhir:v "Albania Trustlist (DID v2) - Certificate Signing Authority\ndid:web:tng-cdn.who.int:v2:trustlist:-:ALB:SCA\nresolvable at https://tng-cdn.who.int/v2/trustlist/-/ALB/SCA/did.json"] ; # 
   fhir:managingOrganization [
-     fhir:l <http://smart.who.int/trust/Organization/GDHCNParticipant-ALB> ;
+     fhir:link <http://smart.who.int/trust/Organization/GDHCNParticipant-ALB> ;
      fhir:reference [ fhir:v "Organization/GDHCNParticipant-ALB" ]
   ] ; # 
-  fhir:address [
-     fhir:v "did:web:tng-cdn.who.int:v2:trustlist:-:ALB:SCA"^^xsd:anyURI ;
-     fhir:l fhir:did:web:tng-cdn.who.int:v2:trustlist:-:ALB:SCA
-  ] . # 
+  fhir:address [ fhir:v "did:web:tng-cdn.who.int:v2:trustlist:-:ALB:SCA"^^xsd:anyURI] . # 
 
 # -------------------------------------------------------------------------------------
 

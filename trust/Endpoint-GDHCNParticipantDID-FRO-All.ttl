@@ -12,7 +12,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Endpoint"^^xsd:anyURI ;
-       fhir:l <https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Endpoint>
+       fhir:link <https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Endpoint>
      ] )
   ] ; # 
   fhir:text [
@@ -23,13 +23,10 @@
   fhir:connectionType ( [] ) ; # 
   fhir:name [ fhir:v "Faroe Islands Trustlist (DID v2) - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:FRO\nresolvable at https://tng-cdn.who.int/v2/trustlist/-/FRO/did.json"] ; # 
   fhir:managingOrganization [
-     fhir:l <http://smart.who.int/trust/Organization/GDHCNParticipant-FRO> ;
+     fhir:link <http://smart.who.int/trust/Organization/GDHCNParticipant-FRO> ;
      fhir:reference [ fhir:v "Organization/GDHCNParticipant-FRO" ]
   ] ; # 
-  fhir:address [
-     fhir:v "did:web:tng-cdn.who.int:v2:trustlist:-:FRO"^^xsd:anyURI ;
-     fhir:l fhir:did:web:tng-cdn.who.int:v2:trustlist:-:FRO
-  ] . # 
+  fhir:address [ fhir:v "did:web:tng-cdn.who.int:v2:trustlist:-:FRO"^^xsd:anyURI] . # 
 
 # -------------------------------------------------------------------------------------
 

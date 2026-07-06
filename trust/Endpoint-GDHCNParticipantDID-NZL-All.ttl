@@ -12,7 +12,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Endpoint"^^xsd:anyURI ;
-       fhir:l <https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Endpoint>
+       fhir:link <https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Endpoint>
      ] )
   ] ; # 
   fhir:text [
@@ -23,13 +23,10 @@
   fhir:connectionType ( [] ) ; # 
   fhir:name [ fhir:v "New Zealand Trustlist (DID v2) - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:NZL\nresolvable at https://tng-cdn.who.int/v2/trustlist/-/NZL/did.json"] ; # 
   fhir:managingOrganization [
-     fhir:l <http://smart.who.int/trust/Organization/GDHCNParticipant-NZL> ;
+     fhir:link <http://smart.who.int/trust/Organization/GDHCNParticipant-NZL> ;
      fhir:reference [ fhir:v "Organization/GDHCNParticipant-NZL" ]
   ] ; # 
-  fhir:address [
-     fhir:v "did:web:tng-cdn.who.int:v2:trustlist:-:NZL"^^xsd:anyURI ;
-     fhir:l fhir:did:web:tng-cdn.who.int:v2:trustlist:-:NZL
-  ] . # 
+  fhir:address [ fhir:v "did:web:tng-cdn.who.int:v2:trustlist:-:NZL"^^xsd:anyURI] . # 
 
 # -------------------------------------------------------------------------------------
 

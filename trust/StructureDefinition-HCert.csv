@@ -3,11 +3,11 @@
 ","Health Certificate","Logical Model for the HCERT","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","n/a"
 "HCert.1","HCert.1","","","",0,1,"","","","http://smart.who.int/ddcc/StructureDefinition/HCertDCC {[]} {[]}
 ","HCERT EU DCC","HCERT EU DCC","","","","","","","","","",,,,,"",,,,"HCert.1",0,1,"",""
-"HCert.3","HCert.3","","","",0,*,"","","","http://smart.who.int/ddcc/StructureDefinition/DDCCCoreDataSet {[CanonicalType[http://smart.who.int/ddcc/StructureDefinition/DDCCCoreDataSetVS]]} {[]}
-","Vaccination Core Data Set claim","DDCC Vaccination claim (PROPOSED)","","","","","","","","","",,,,,"",,,,"HCert.3",0,*,"",""
-"HCert.4","HCert.4","","","",0,*,"","","","http://smart.who.int/ddcc/StructureDefinition/DDCCCoreDataSet {[CanonicalType[http://smart.who.int/ddcc/StructureDefinition/DDCCCoreDataSetTR]]} {[]}
-","Test Result Core Data Set claim","DDCC Test Result claim (PROPOSED)","","","","","","","","","",,,,,"",,,,"HCert.4",0,*,"",""
-"HCert.5","HCert.5","","","",0,*,"","","","string {[]} {[]}
-","VHL","URI of a Verifiable Health Link.  Of the form 'vhlink:/eyJ1cmwiOiJodHRwczovL2Vo....'","","","","","","","","","",,,,,"",,,,"HCert.5",0,*,"",""
-"HCert.-6","HCert.-6","","","",0,*,"","","","http://smart.who.int/trust-phw/StructureDefinition/DVC {[]} {[]}
-","DVC","Digital Vaccination Certificate (Proposed)","","","","","","","","","",,,,,"",,,,"HCert.-6",0,*,"",""
+"HCert.3","HCert.3","","","",0,1,"","","","http://smart.who.int/ddcc/StructureDefinition/DDCCCoreDataSet {[CanonicalType[http://smart.who.int/ddcc/StructureDefinition/DDCCCoreDataSetVS]]} {[]}
+","Vaccination Core Data Set claim","DDCC Vaccination claim (PROPOSED)","","","","","","","","","",,,,,"",,,,"HCert.3",0,1,"",""
+"HCert.4","HCert.4","","","",0,1,"","","","http://smart.who.int/ddcc/StructureDefinition/DDCCCoreDataSet {[CanonicalType[http://smart.who.int/ddcc/StructureDefinition/DDCCCoreDataSetTR]]} {[]}
+","Test Result Core Data Set claim","DDCC Test Result claim (PROPOSED)","","","","","","","","","",,,,,"",,,,"HCert.4",0,1,"",""
+"HCert.5","HCert.5","","","",0,1,"","","","string {[]} {[]}
+","VHL","URI of a Verifiable Health Link.  Of the form 'vhlink:/eyJ1cmwiOiJodHRwczovL2Vo....'","","","","","","","","","",,,,,"",,,,"HCert.5",0,1,"",""
+"HCert.-6","HCert.-6","","","",0,1,"","","","http://smart.who.int/trust-phw/StructureDefinition/DVCMin {[]} {[]}
+","DVCMin","Minimal Digital Vaccination Certificate Payload (Proposed)","","","","","","","","","",,,,,"",,,,"HCert.-6",0,1,"",""

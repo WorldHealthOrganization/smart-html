@@ -58,6 +58,6 @@
     }
   },
   "fhir:valueSet": "http://smart.who.int/trust/ValueSet/WHORegionalOffices",
-  "fhir:version": "1.5.0",
-  "fhir:expansionTimestamp": "2026-04-27T07:35:35.487223"
+  "fhir:version": "1.6.0",
+  "fhir:expansionTimestamp": "2026-07-03T08:27:18.510204"
 }

@@ -12,7 +12,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Endpoint"^^xsd:anyURI ;
-       fhir:l <https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Endpoint>
+       fhir:link <https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Endpoint>
      ] )
   ] ; # 
   fhir:text [
@@ -23,13 +23,10 @@
   fhir:connectionType ( [] ) ; # 
   fhir:name [ fhir:v "Spain Trustlist (DID v2) - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:ESP\nresolvable at https://tng-cdn.who.int/v2/trustlist/-/ESP/did.json"] ; # 
   fhir:managingOrganization [
-     fhir:l <http://smart.who.int/trust/Organization/GDHCNParticipant-ESP> ;
+     fhir:link <http://smart.who.int/trust/Organization/GDHCNParticipant-ESP> ;
      fhir:reference [ fhir:v "Organization/GDHCNParticipant-ESP" ]
   ] ; # 
-  fhir:address [
-     fhir:v "did:web:tng-cdn.who.int:v2:trustlist:-:ESP"^^xsd:anyURI ;
-     fhir:l fhir:did:web:tng-cdn.who.int:v2:trustlist:-:ESP
-  ] . # 
+  fhir:address [ fhir:v "did:web:tng-cdn.who.int:v2:trustlist:-:ESP"^^xsd:anyURI] . # 
 
 # -------------------------------------------------------------------------------------
 

@@ -12,7 +12,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Endpoint"^^xsd:anyURI ;
-       fhir:l <https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Endpoint>
+       fhir:link <https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Endpoint>
      ] )
   ] ; # 
   fhir:text [
@@ -23,13 +23,10 @@
   fhir:connectionType ( [] ) ; # 
   fhir:name [ fhir:v "Belgium Trustlist (DID v2) - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:BEL\nresolvable at https://tng-cdn.who.int/v2/trustlist/-/BEL/did.json"] ; # 
   fhir:managingOrganization [
-     fhir:l <http://smart.who.int/trust/Organization/GDHCNParticipant-BEL> ;
+     fhir:link <http://smart.who.int/trust/Organization/GDHCNParticipant-BEL> ;
      fhir:reference [ fhir:v "Organization/GDHCNParticipant-BEL" ]
   ] ; # 
-  fhir:address [
-     fhir:v "did:web:tng-cdn.who.int:v2:trustlist:-:BEL"^^xsd:anyURI ;
-     fhir:l fhir:did:web:tng-cdn.who.int:v2:trustlist:-:BEL
-  ] . # 
+  fhir:address [ fhir:v "did:web:tng-cdn.who.int:v2:trustlist:-:BEL"^^xsd:anyURI] . # 
 
 # -------------------------------------------------------------------------------------
 

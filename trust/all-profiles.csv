@@ -7,12 +7,12 @@
 ","Key ID used to verify the signature of the certificate","keyid (4)","","","","","","","","","",,,,,"",,,,"COSEHeader.4",0,1,"",""
 "CWT","CWT","CWT","","","",0,*,"","","","null {[]} {[]}
 ","CBOR Web Token (CWT) Claim","Logical Model for Data elements in CBOR Web Token (CWT) https://www.iana.org/assignments/cwt/cwt.xhtml","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"CWT","CWT.header","CWT.header","","","",0,1,"","","","http://smart.who.int/trust/StructureDefinition/COSEHeader {[]} {[]}
-","COSE Header","Header","","","","","","","","","",,,,,"",,,,"CWT.header",0,1,"",""
-"CWT","CWT.payload","CWT.payload","","","",0,1,"","","","http://smart.who.int/trust/StructureDefinition/CWTPayload {[]} {[]}
-","CWT Payload","Payload","","","","","","","","","",,,,,"",,,,"CWT.payload",0,1,"",""
-"CWT","CWT.signature","CWT.signature","","","",0,1,"","","","string {[]} {[]}
-","Signature","Signature","","","","","","","","","",,,,,"",,,,"CWT.signature",0,1,"",""
+"CWT","CWT.header","CWT.header","","","",1,1,"","","","http://smart.who.int/trust/StructureDefinition/COSEHeader {[]} {[]}
+","COSE Header","Header","","","","","","","","","",,,,,"",,,,"CWT.header",1,1,"",""
+"CWT","CWT.payload","CWT.payload","","","",1,1,"","","","http://smart.who.int/trust/StructureDefinition/CWTPayload {[]} {[]}
+","CWT Payload","Payload","","","","","","","","","",,,,,"",,,,"CWT.payload",1,1,"",""
+"CWT","CWT.signature","CWT.signature","","","",1,1,"","","","string {[]} {[]}
+","Signature","Signature","","","","","","","","","",,,,,"",,,,"CWT.signature",1,1,"",""
 "CWTPayload","CWTPayload","CWTPayload","","","",0,*,"","","","null {[]} {[]}
 ","CBOR Web Token (CWT) Payload (Common)","Logical Model for CBOR Web Token (CWT) Payload Logical Modelin CWT Payload https://www.iana.org/assignments/cwt/cwt.xhtml ","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "CWTPayload","CWTPayload.1","CWTPayload.1","","","",0,1,"","","","Coding {[]} {[]}
@@ -27,14 +27,14 @@
 ","Health Certificate","Logical Model for the HCERT","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "HCert","HCert.1","HCert.1","","","",0,1,"","","","http://smart.who.int/ddcc/StructureDefinition/HCertDCC {[]} {[]}
 ","HCERT EU DCC","HCERT EU DCC","","","","","","","","","",,,,,"",,,,"HCert.1",0,1,"",""
-"HCert","HCert.3","HCert.3","","","",0,*,"","","","http://smart.who.int/ddcc/StructureDefinition/DDCCCoreDataSet {[CanonicalType[http://smart.who.int/ddcc/StructureDefinition/DDCCCoreDataSetVS]]} {[]}
-","Vaccination Core Data Set claim","DDCC Vaccination claim (PROPOSED)","","","","","","","","","",,,,,"",,,,"HCert.3",0,*,"",""
-"HCert","HCert.4","HCert.4","","","",0,*,"","","","http://smart.who.int/ddcc/StructureDefinition/DDCCCoreDataSet {[CanonicalType[http://smart.who.int/ddcc/StructureDefinition/DDCCCoreDataSetTR]]} {[]}
-","Test Result Core Data Set claim","DDCC Test Result claim (PROPOSED)","","","","","","","","","",,,,,"",,,,"HCert.4",0,*,"",""
-"HCert","HCert.5","HCert.5","","","",0,*,"","","","string {[]} {[]}
-","VHL","URI of a Verifiable Health Link.  Of the form 'vhlink:/eyJ1cmwiOiJodHRwczovL2Vo....'","","","","","","","","","",,,,,"",,,,"HCert.5",0,*,"",""
-"HCert","HCert.-6","HCert.-6","","","",0,*,"","","","http://smart.who.int/trust-phw/StructureDefinition/DVC {[]} {[]}
-","DVC","Digital Vaccination Certificate (Proposed)","","","","","","","","","",,,,,"",,,,"HCert.-6",0,*,"",""
+"HCert","HCert.3","HCert.3","","","",0,1,"","","","http://smart.who.int/ddcc/StructureDefinition/DDCCCoreDataSet {[CanonicalType[http://smart.who.int/ddcc/StructureDefinition/DDCCCoreDataSetVS]]} {[]}
+","Vaccination Core Data Set claim","DDCC Vaccination claim (PROPOSED)","","","","","","","","","",,,,,"",,,,"HCert.3",0,1,"",""
+"HCert","HCert.4","HCert.4","","","",0,1,"","","","http://smart.who.int/ddcc/StructureDefinition/DDCCCoreDataSet {[CanonicalType[http://smart.who.int/ddcc/StructureDefinition/DDCCCoreDataSetTR]]} {[]}
+","Test Result Core Data Set claim","DDCC Test Result claim (PROPOSED)","","","","","","","","","",,,,,"",,,,"HCert.4",0,1,"",""
+"HCert","HCert.5","HCert.5","","","",0,1,"","","","string {[]} {[]}
+","VHL","URI of a Verifiable Health Link.  Of the form 'vhlink:/eyJ1cmwiOiJodHRwczovL2Vo....'","","","","","","","","","",,,,,"",,,,"HCert.5",0,1,"",""
+"HCert","HCert.-6","HCert.-6","","","",0,1,"","","","http://smart.who.int/trust-phw/StructureDefinition/DVCMin {[]} {[]}
+","DVCMin","Minimal Digital Vaccination Certificate Payload (Proposed)","","","","","","","","","",,,,,"",,,,"HCert.-6",0,1,"",""
 "SchemeInformation","SchemeInformation","SchemeInformation","","","",0,*,"","","","null {[]} {[]}
 ","Scheme Information","Logical Model for Information on the trusted list and its issuing scheme","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "SchemeInformation","SchemeInformation.versionIdentifier","SchemeInformation.versionIdentifier","","","",1,1,"","","","integer {[]} {[]}

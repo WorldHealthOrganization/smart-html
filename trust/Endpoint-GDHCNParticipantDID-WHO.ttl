@@ -12,7 +12,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Endpoint"^^xsd:anyURI ;
-       fhir:l <https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Endpoint>
+       fhir:link <https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Endpoint>
      ] )
   ] ; # 
   fhir:text [
@@ -23,13 +23,10 @@
   fhir:connectionType ( [] ) ; # 
   fhir:name [ fhir:v "WHO Trust List (DID v2)"] ; # 
   fhir:managingOrganization [
-     fhir:l <http://smart.who.int/trust/Organization/GDHCNParticipant-WHO> ;
+     fhir:link <http://smart.who.int/trust/Organization/GDHCNParticipant-WHO> ;
      fhir:reference [ fhir:v "Organization/GDHCNParticipant-WHO" ]
   ] ; # 
-  fhir:address [
-     fhir:v "http://tng-cdn.who.int/v2/trustlist/-/WHO/did.json"^^xsd:anyURI ;
-     fhir:l <http://tng-cdn.who.int/v2/trustlist/-/WHO/did.json>
-  ] . # 
+  fhir:address [ fhir:v "http://tng-cdn.who.int/v2/trustlist/-/WHO/did.json"^^xsd:anyURI] . # 
 
 # -------------------------------------------------------------------------------------
 
