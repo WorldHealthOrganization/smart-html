@@ -115,12 +115,6 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y graphviz
           dot -V
-
-      - name: Install Apache Ant
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y ant
-          ant -version
           
       - name: Install Ruby & Jekyll
         run: |
