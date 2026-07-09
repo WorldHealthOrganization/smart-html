@@ -1,0 +1,5 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+http://hl7.org/fhir/CodeSystem/medication-statement-status,4.0.1,draft,"2.16.840.1.113883.4.642.4.1379",Medication Status Codes,Medication  status  codes,"Medication Status Codes","ValueSet/medication-statement-status"
+http://hl7.org/fhir/administrative-gender,4.0.1,active,"2.16.840.1.113883.4.642.4.2",AdministrativeGender,AdministrativeGender,"The gender of a person used for administrative purposes.","ValueSet/administrative-gender"
+http://terminology.hl7.org/CodeSystem/v2-0203,5.0.0,active,"2.16.840.1.113883.18.108",IdentifierType,identifierType,"HL7-defined code system of concepts specifying type of identifier. Used in HL7 Version 2.x messaging data types CX, PLN, PPN, XCN and XON.","ValueSet/v2-0203"
+urn:iso:std:iso:3166,1.0.1,active,"1.0.3166.1",ISO3166Part1,ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code,"ISO 3166-1 establishes codes that represent the current names of countries, dependencies, and other areas of particular geopolitical interest, on the basis of country names obtained from the United Nations.","ValueSet/iso3166-1-3"

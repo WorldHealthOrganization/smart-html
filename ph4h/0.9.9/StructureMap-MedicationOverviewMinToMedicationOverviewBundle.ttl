@@ -1,0 +1,152 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/ph4h/StructureMap/MedicationOverviewMinToMedicationOverviewBundle> a fhir:StructureMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "MedicationOverviewMinToMedicationOverviewBundle"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap MedicationOverviewMinToMedicationOverviewBundle</b></p><a name=\"MedicationOverviewMinToMedicationOverviewBundle\"> </a><a name=\"hcMedicationOverviewMinToMedicationOverviewBundle\"> </a><pre class=\"fml\">#xD;\n<b>map</b><span style=\"color: navy\"> \"</span>http://smart.who.int/ph4h/StructureMap/MedicationOverviewMinToMedicationOverviewBundle<span style=\"color: navy\">\" = \"</span>MedicationOverviewMinToMedicationOverviewBundle<span style=\"color: navy\">\"#xD;\n#xD;\n</span><b>uses</b><span style=\"color: navy\"> \"</span><a href=\"StructureDefinition-MedicationOverviewMin.html\" title=\"Medication Overview (Minimal)\">http://smart.who.int/ph4h/StructureDefinition/MedicationOverviewMin</a><span style=\"color: navy\">\" </span><b>alias </b>MedicationOverviewMin <b>as </b><b>source</b>#xD;\n<b>uses</b><span style=\"color: navy\"> \"</span><a href=\"file://E:\\work\\ImplementationGuides\\ihe-pharm-meow\\output/StructureDefinition-MedicationOverview.html\" title=\"Medication Overview Bundle\">https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationOverview</a><span style=\"color: navy\">\" </span><b>alias </b>MedicationOverviewBundle <b>as </b><b>target</b>#xD;\n<b>uses</b><span style=\"color: navy\"> \"</span><a href=\"file://E:\\work\\ImplementationGuides\\ihe-pharm-meow\\output/StructureDefinition-MedicationOverviewLM.html\" title=\"Medication Overview (model)\">https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationOverviewLM</a><span style=\"color: navy\">\" </span><b>alias </b>MedicationOverviewLM <b>as </b><b>target</b>#xD;\n#xD;\n<b>imports</b><span style=\"color: navy\"> \"</span><a href=\"StructureMap-MedicationOverviewMinToMedicationOverviewLM.html\" title=\"MedicationOverviewMinToMedicationOverviewLM\">http://smart.who.int/ph4h/StructureMap/MedicationOverviewMinToMedicationOverviewLM</a><span style=\"color: navy\">\"#xD;\n</span><b>imports</b><span style=\"color: navy\"> \"</span><a href=\"StructureMap-MedicationOverviewLMToMedicationOverviewBundle.html\" title=\"MedicationOverviewLMToMedicationOverviewBundle\">http://smart.who.int/ph4h/StructureMap/MedicationOverviewLMToMedicationOverviewBundle</a><span style=\"color: navy\">\"#xD;\n</span>#xD;\n<b>group </b>MedicationOverviewMinToMedicationOverviewBundle<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">src</span><span style=\"color: navy\"> : </span>MedicationOverviewMin, <b>target</b> <span style=\"color: maroon\">tgt</span><span style=\"color: navy\"> : </span>MedicationOverviewBundle<span style=\"color: navy\">)</span><span style=\"color: navy\"> {#xD;\n</span>  src<span style=\"color: navy\"><b> -&gt; </b></span><b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'MedicationOverviewLM'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">lm</span><b> then</b><span style=\"color: navy\"> {#xD;\n</span>    src<span style=\"color: navy\"><b> -&gt; </b></span>lm<b> then </b>MedicationOverviewMinToMedicationOverviewLM<span style=\"color: navy\">(</span><span style=\"color: maroon\">src</span><span style=\"color: navy\">, </span><span style=\"color: maroon\">lm</span><span style=\"color: navy\">)</span> <i>\"stage1MinToLM\"</i><span style=\"color: navy\">;</span>#xD;\n    <span style=\"color: navy\">// </span><span style=\"color: green\">NOTE: the rule's source context must be a SOURCE-mode variable — `lm` is</span>#xD;\n    <span style=\"color: navy\">// </span><span style=\"color: green\">a target variable (created above) and may only appear as a dependent</span>#xD;\n    <span style=\"color: navy\">// </span><span style=\"color: green\">parameter. `lm -&gt; tgt then ...` fails with \"Unknown input variable lm\".</span>#xD;\n    src<span style=\"color: navy\"><b> -&gt; </b></span>tgt<b> then </b>MedicationOverviewLMToMedicationOverviewBundle<span style=\"color: navy\">(</span><span style=\"color: maroon\">lm</span><span style=\"color: navy\">, </span><span style=\"color: maroon\">tgt</span><span style=\"color: navy\">)</span> <i>\"stage2LMToBundle\"</i><span style=\"color: navy\">;</span>#xD;\n  <span style=\"color: navy\">}</span> <i>\"chainMinToBundle\"</i><span style=\"color: navy\">;</span>#xD;\n<span style=\"color: navy\">}#xD;\n#xD;\n</span></pre></div>"
+  ] ;
+  fhir:StructureMap.url [ fhir:value "http://smart.who.int/ph4h/StructureMap/MedicationOverviewMinToMedicationOverviewBundle"] ;
+  fhir:StructureMap.version [ fhir:value "0.9.9"] ;
+  fhir:StructureMap.name [ fhir:value "MedicationOverviewMinToMedicationOverviewBundle"] ;
+  fhir:StructureMap.status [ fhir:value "draft"] ;
+  fhir:StructureMap.date [ fhir:value "2026-07-09T08:34:46+00:00"^^xsd:dateTime] ;
+  fhir:StructureMap.publisher [ fhir:value "WHO"] ;
+  fhir:StructureMap.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "WHO" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://who.int" ]
+     ]
+  ] ;
+  fhir:StructureMap.structure [
+     fhir:index 0 ;
+     fhir:StructureMap.structure.url [
+       fhir:value "http://smart.who.int/ph4h/StructureDefinition/MedicationOverviewMin" ;
+       fhir:link <http://smart.who.int/ph4h/StructureDefinition/MedicationOverviewMin>
+     ] ;
+     fhir:StructureMap.structure.mode [ fhir:value "source" ] ;
+     fhir:StructureMap.structure.alias [ fhir:value "MedicationOverviewMin" ]
+  ], [
+     fhir:index 1 ;
+     fhir:StructureMap.structure.url [
+       fhir:value "https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationOverview" ;
+       fhir:link <https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationOverview>
+     ] ;
+     fhir:StructureMap.structure.mode [ fhir:value "target" ] ;
+     fhir:StructureMap.structure.alias [ fhir:value "MedicationOverviewBundle" ]
+  ], [
+     fhir:index 2 ;
+     fhir:StructureMap.structure.url [
+       fhir:value "https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationOverviewLM" ;
+       fhir:link <https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationOverviewLM>
+     ] ;
+     fhir:StructureMap.structure.mode [ fhir:value "target" ] ;
+     fhir:StructureMap.structure.alias [ fhir:value "MedicationOverviewLM" ]
+  ] ;
+  fhir:StructureMap.import [
+     fhir:value "http://smart.who.int/ph4h/StructureMap/MedicationOverviewMinToMedicationOverviewLM" ;
+     fhir:index 0 ;
+     fhir:link <http://smart.who.int/ph4h/StructureMap/MedicationOverviewMinToMedicationOverviewLM>
+  ], [
+     fhir:value "http://smart.who.int/ph4h/StructureMap/MedicationOverviewLMToMedicationOverviewBundle" ;
+     fhir:index 1 ;
+     fhir:link <http://smart.who.int/ph4h/StructureMap/MedicationOverviewLMToMedicationOverviewBundle>
+  ] ;
+  fhir:StructureMap.group [
+     fhir:index 0 ;
+     fhir:StructureMap.group.name [ fhir:value "MedicationOverviewMinToMedicationOverviewBundle" ] ;
+     fhir:StructureMap.group.typeMode [ fhir:value "none" ] ;
+     fhir:StructureMap.group.input [
+       fhir:index 0 ;
+       fhir:StructureMap.group.input.name [ fhir:value "src" ] ;
+       fhir:StructureMap.group.input.type [ fhir:value "MedicationOverviewMin" ] ;
+       fhir:StructureMap.group.input.mode [ fhir:value "source" ]
+     ], [
+       fhir:index 1 ;
+       fhir:StructureMap.group.input.name [ fhir:value "tgt" ] ;
+       fhir:StructureMap.group.input.type [ fhir:value "MedicationOverviewBundle" ] ;
+       fhir:StructureMap.group.input.mode [ fhir:value "target" ]
+     ] ;
+     fhir:StructureMap.group.rule [
+       fhir:index 0 ;
+       fhir:StructureMap.group.rule.name [ fhir:value "chainMinToBundle" ] ;
+       fhir:StructureMap.group.rule.source [
+         fhir:index 0 ;
+         fhir:StructureMap.group.rule.source.context [ fhir:value "src" ]
+       ] ;
+       fhir:StructureMap.group.rule.target [
+         fhir:index 0 ;
+         fhir:StructureMap.group.rule.target.contextType [ fhir:value "variable" ] ;
+         fhir:StructureMap.group.rule.target.variable [ fhir:value "lm" ] ;
+         fhir:StructureMap.group.rule.target.transform [ fhir:value "create" ] ;
+         fhir:StructureMap.group.rule.target.parameter [
+           fhir:index 0 ;
+           fhir:StructureMap.group.rule.target.parameter.valueString [ fhir:value "MedicationOverviewLM" ]
+         ]
+       ] ;
+       fhir:StructureMap.group.rule.rule [
+         fhir:index 0 ;
+         fhir:StructureMap.group.rule.name [ fhir:value "stage1MinToLM" ] ;
+         fhir:StructureMap.group.rule.source [
+           fhir:index 0 ;
+           fhir:StructureMap.group.rule.source.context [ fhir:value "src" ]
+         ] ;
+         fhir:StructureMap.group.rule.target [
+           fhir:index 0 ;
+           fhir:StructureMap.group.rule.target.context [ fhir:value "lm" ] ;
+           fhir:StructureMap.group.rule.target.contextType [ fhir:value "variable" ]
+         ] ;
+         fhir:StructureMap.group.rule.dependent [
+           fhir:index 0 ;
+           fhir:StructureMap.group.rule.dependent.name [ fhir:value "MedicationOverviewMinToMedicationOverviewLM" ] ;
+           fhir:StructureMap.group.rule.dependent.variable [
+             fhir:value "src" ;
+             fhir:index 0
+           ], [
+             fhir:value "lm" ;
+             fhir:index 1
+           ]
+         ]
+       ], [
+         fhir:index 1 ;
+         fhir:StructureMap.group.rule.name [ fhir:value "stage2LMToBundle" ] ;
+         fhir:StructureMap.group.rule.source [
+           fhir:index 0 ;
+           fhir:StructureMap.group.rule.source.context [ fhir:value "src" ]
+         ] ;
+         fhir:StructureMap.group.rule.target [
+           fhir:index 0 ;
+           fhir:StructureMap.group.rule.target.context [ fhir:value "tgt" ] ;
+           fhir:StructureMap.group.rule.target.contextType [ fhir:value "variable" ]
+         ] ;
+         fhir:StructureMap.group.rule.dependent [
+           fhir:index 0 ;
+           fhir:StructureMap.group.rule.dependent.name [ fhir:value "MedicationOverviewLMToMedicationOverviewBundle" ] ;
+           fhir:StructureMap.group.rule.dependent.variable [
+             fhir:value "lm" ;
+             fhir:index 0
+           ], [
+             fhir:value "tgt" ;
+             fhir:index 1
+           ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://smart.who.int/ph4h/StructureMap/MedicationOverviewMinToMedicationOverviewBundle.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

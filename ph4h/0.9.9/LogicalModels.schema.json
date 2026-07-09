@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "#/LogicalModels.schema.json",
+  "title": "Logical Model Enumeration Schema",
+  "description": "JSON Schema defining the structure of the Logical Model enumeration endpoint response",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "const": "logical_model"
+    },
+    "count": {
+      "type": "integer"
+    },
+    "schemas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "filename": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "logicalModelUrl": {
+            "type": "string"
+          },
+          "propertyCount": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "filename",
+          "title",
+          "url"
+        ]
+      }
+    }
+  },
+  "required": [
+    "type",
+    "count",
+    "schemas"
+  ],
+  "example": {
+    "type": "logical_model",
+    "count": 2,
+    "schemas": [
+      {
+        "filename": "StructureDefinition-MedicationOverviewMin.schema.json",
+        "id": "http://smart.who.int/base/StructureDefinition-MedicationOverviewMin.schema.json",
+        "title": "Medication Overview (Minimal)",
+        "description": "Minimal medication overview payload for use within a QR code payload. Based on the IHE Pharmacy Medication Overview logical model, with short element labels (one or two letters) and simple data",
+        "url": "./StructureDefinition-MedicationOverviewMin.schema.json",
+        "propertyCount": 10
+      },
+      {
+        "filename": "StructureDefinition-MedicationTreatmentLineMin.schema.json",
+        "id": "http://smart.who.int/base/StructureDefinition-MedicationTreatmentLineMin.schema.json",
+        "title": "Medication Treatment Line (Minimal)",
+        "description": "Minimal medication treatment line payload for use within a QR code payload. Based on the IHE Pharmacy Medication Treatment Line logical model, with short element labels (one or two letters) and simple data types suitable for encoding in a compact QR code payload.",
+        "url": "./StructureDefinition-MedicationTreatmentLineMin.schema.json",
+        "propertyCount": 10
+      }
+    ]
+  }
+}

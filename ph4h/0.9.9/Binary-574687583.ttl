@@ -1,0 +1,20 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/ph4h/Binary/574687583> a fhir:Binary ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "574687583"] ;
+  fhir:Binary.contentType [ fhir:value "application/fhir+json"] ;
+  fhir:Binary.data [ fhir:value "ewogICJyZXNvdXJjZVR5cGUiOiAiaHR0cDovL3NtYXJ0Lndoby5pbnQvcGg0aC9TdHJ1Y3R1cmVEZWZpbml0aW9uL01lZGljYXRpb25PdmVydmlld01pbiIsCiAgImlkIjogIjU3NDY4NzU4MyIsCiAgIm4iOiAiTWFydGhhIERlTGFyb3NhIiwKICAiZG9iIjogIjE5NzItMDUtMDEiLAogICJzIjogImZlbWFsZSIsCiAgIm0iOiBbCiAgICB7CiAgICAgICJtIjogIkwwMkJHMDMiLAogICAgICAiZXMiOiAiMjAxNS0wMy0wMSIsCiAgICAgICJkYSI6ICIyMDE1LTAzLTE1IiwKICAgICAgImQiOiAiMSB0YWJsZXQgb25jZSBkYWlseSIsCiAgICAgICJyIjogInRyZWF0bWVudCBmb3IgYnJlYXN0IGNhbmNlciIsCiAgICAgICJhIjogImFjdGl2ZSIKICAgIH0sCiAgICB7CiAgICAgICJtIjogIkcwMkNYMDQiLAogICAgICAiZXMiOiAiMjAxNi0wMS0wMSIsCiAgICAgICJkIjogImFzIGRpcmVjdGVkIgogICAgfQogIF0KfQo="^^xsd:base64Binary] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://smart.who.int/ph4h/Binary/574687583.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

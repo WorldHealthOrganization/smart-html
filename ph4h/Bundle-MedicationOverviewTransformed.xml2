@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="MedicationOverviewTransformed"/>
+  <identifier>
+    <system value="urn:ietf:rfc:4122"/>
+    <value value="6f87f79c-3e36-4f28-84ff-664e214e9dbb"/>
+  </identifier>
+  <type value="document"/>
+  <timestamp value="2026-06-29T18:45:08+05:30"/>
+  <entry>
+    <fullUrl value="urn:uuid:fcfad043-cee1-4b83-9d26-06f14e9755f1"/>
+    <resource>
+      <Composition>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Composition_null"> </a><p class="res-header-id"><b>Generated Narrative: Composition </b></p><p><b>status</b>: Final</p><p><b>type</b>: <span title="Codes:{http://loinc.org 56445-0}">Medication summary Document</span></p><p><b>date</b>: 2026-06-29 18:45:08+0530</p><p><b>author</b>: <a href="Bundle-MedicationOverviewTransformed.html#urn-uuid-e189e032-d251-42c2-9985-a7c9611cd02a">Martha DeLarosa Female, DoB: 1972-05-01 ( 574687583)</a></p><p><b>title</b>: Medication Overview</p></div>
+        </text>
+        <status value="final"/>
+        <type>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="56445-0"/>
+            <display value="Medication summary Document"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="urn:uuid:e189e032-d251-42c2-9985-a7c9611cd02a"/>
+        </subject>
+        <date value="2026-06-29T18:45:08+05:30"/>
+        <author>
+          <reference value="urn:uuid:e189e032-d251-42c2-9985-a7c9611cd02a"/>
+        </author>
+        <title value="Medication Overview"/>
+        <section>
+          <title value="Medication Treatment Lines"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="10160-0"/>
+              <display value="History of Medication use Narrative"/>
+            </coding>
+          </code>
+          <entry>
+            <display value="Medication Treatment Line"/>
+          </entry>
+          <entry>
+            <display value="Medication Treatment Line"/>
+          </entry>
+          <entry>
+            <display value="Medication Treatment Line"/>
+          </entry>
+          <entry>
+            <display value="Medication Treatment Line"/>
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:e189e032-d251-42c2-9985-a7c9611cd02a"/>
+    <resource>
+      <Patient>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_null"> </a><p class="res-header-id"><b>Generated Narrative: Patient </b></p><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Martha DeLarosa Female, DoB: 1972-05-01 ( 574687583)</p><hr/></div>
+        </text>
+        <identifier>
+          <value value="574687583"/>
+        </identifier>
+        <name>
+          <text value="Martha DeLarosa"/>
+        </name>
+        <gender value="female"/>
+        <birthDate value="1972-05-01"/>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:a3b2c272-3557-42db-a2a3-cc9e6f29b97f"/>
+    <resource>
+      <MedicationStatement>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationStatement_null"> </a><p class="res-header-id"><b>Generated Narrative: MedicationStatement </b></p><blockquote><p><b>R5: Indicates whether the medication is or is not being consumed or administered (new)</b></p><ul><li>code: <span title="Codes:">active</span></li></ul></blockquote><p><b>status</b>: Active</p><p><b>medication</b>: <span title="Codes:">L02BG03</span></p><p><b>subject</b>: <a href="Bundle-MedicationOverviewTransformed.html#urn-uuid-e189e032-d251-42c2-9985-a7c9611cd02a">Martha DeLarosa Female, DoB: 1972-05-01 ( 574687583)</a></p><p><b>effective</b>: 2015-03-01 --&gt; (ongoing)</p><p><b>dateAsserted</b>: 2015-03-15</p><p><b>reasonCode</b>: <span title="Codes:">treatment for breast cancer</span></p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>1 tablet once daily</td></tr></table></div>
+        </text>
+        <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence">
+          <extension url="code">
+            <valueCodeableConcept>
+              <coding>
+                <code value="active"/>
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+        </extension>
+        <status value="active"/>
+        <medicationCodeableConcept>
+          <coding>
+            <code value="L02BG03"/>
+          </coding>
+        </medicationCodeableConcept>
+        <subject>
+          <reference value="urn:uuid:e189e032-d251-42c2-9985-a7c9611cd02a"/>
+        </subject>
+        <effectivePeriod>
+          <start value="2015-03-01"/>
+        </effectivePeriod>
+        <dateAsserted value="2015-03-15"/>
+        <reasonCode>
+          <text value="treatment for breast cancer"/>
+        </reasonCode>
+        <dosage>
+          <text value="1 tablet once daily"/>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:cff955d9-1e85-473c-ae54-2388c49c94d7"/>
+    <resource>
+      <MedicationStatement>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationStatement_null"> </a><p class="res-header-id"><b>Generated Narrative: MedicationStatement </b></p><p><b>status</b>: Active</p><p><b>medication</b>: <span title="Codes:">G02CX04</span></p><p><b>subject</b>: <a href="Bundle-MedicationOverviewTransformed.html#urn-uuid-e189e032-d251-42c2-9985-a7c9611cd02a">Martha DeLarosa Female, DoB: 1972-05-01 ( 574687583)</a></p><p><b>effective</b>: 2016-01-01 --&gt; (ongoing)</p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>as directed</td></tr></table></div>
+        </text>
+        <status value="active"/>
+        <medicationCodeableConcept>
+          <coding>
+            <code value="G02CX04"/>
+          </coding>
+        </medicationCodeableConcept>
+        <subject>
+          <reference value="urn:uuid:e189e032-d251-42c2-9985-a7c9611cd02a"/>
+        </subject>
+        <effectivePeriod>
+          <start value="2016-01-01"/>
+        </effectivePeriod>
+        <dosage>
+          <text value="as directed"/>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:82585197-bcb9-4c6e-9852-89c5e8d19deb"/>
+    <resource>
+      <MedicationStatement>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationStatement_null"> </a><p class="res-header-id"><b>Generated Narrative: MedicationStatement </b></p><p><b>status</b>: Active</p><p><b>medication</b>: <span title="Codes:">G02CX04</span></p><p><b>subject</b>: <a href="Bundle-MedicationOverviewTransformed.html#urn-uuid-e189e032-d251-42c2-9985-a7c9611cd02a">Martha DeLarosa Female, DoB: 1972-05-01 ( 574687583)</a></p><p><b>effective</b>: 2016-01-01 --&gt; (ongoing)</p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>as directed 3</td></tr></table></div>
+        </text>
+        <status value="active"/>
+        <medicationCodeableConcept>
+          <coding>
+            <code value="G02CX04"/>
+          </coding>
+        </medicationCodeableConcept>
+        <subject>
+          <reference value="urn:uuid:e189e032-d251-42c2-9985-a7c9611cd02a"/>
+        </subject>
+        <effectivePeriod>
+          <start value="2016-01-01"/>
+        </effectivePeriod>
+        <dosage>
+          <text value="as directed 3"/>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:5a9de04a-d898-41c9-9d1b-51bd7f139a6e"/>
+    <resource>
+      <MedicationStatement>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationStatement_null"> </a><p class="res-header-id"><b>Generated Narrative: MedicationStatement </b></p><p><b>status</b>: Active</p><p><b>medication</b>: <span title="Codes:">G02CX04</span></p><p><b>subject</b>: <a href="Bundle-MedicationOverviewTransformed.html#urn-uuid-e189e032-d251-42c2-9985-a7c9611cd02a">Martha DeLarosa Female, DoB: 1972-05-01 ( 574687583)</a></p><p><b>effective</b>: 2016-01-01 --&gt; (ongoing)</p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>as directed 4</td></tr></table></div>
+        </text>
+        <status value="active"/>
+        <medicationCodeableConcept>
+          <coding>
+            <code value="G02CX04"/>
+          </coding>
+        </medicationCodeableConcept>
+        <subject>
+          <reference value="urn:uuid:e189e032-d251-42c2-9985-a7c9611cd02a"/>
+        </subject>
+        <effectivePeriod>
+          <start value="2016-01-01"/>
+        </effectivePeriod>
+        <dosage>
+          <text value="as directed 4"/>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+</Bundle>

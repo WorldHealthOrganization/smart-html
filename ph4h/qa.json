@@ -1,0 +1,19 @@
+{
+  "url" : "http://smart.who.int/ph4h/ImplementationGuide/smart.who.int.ph4h",
+  "name" : "PH4H",
+  "title" : "SMART PH4H",
+  "description" : "SMART PH4H Implementation Guide: Implementation Guides for Pan-American Highway for Digital Health, including profiles, value sets, maps, examples, and implementation notes.",
+  "status" : "draft",
+  "package-id" : "smart.who.int.ph4h",
+  "ig-ver" : "0.9.9",
+  "date" : "Thu, 09 Jul, 2026 08:39:10 +0000",
+  "dateISO8601" : "2026-07-09T08:39:10+00:00",
+  "errs" : 12,
+  "warnings" : 69,
+  "hints" : 62,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 2970974320
+}

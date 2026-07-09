@@ -1,0 +1,17 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"MedicationTreatmentLineMin","MedicationTreatmentLineMin","","","",0,*,"","","","null {[]} {[]}
+","Medication Treatment Line (Minimal)","Minimal medication treatment line payload for use within a QR code payload. Based on the IHE Pharmacy Medication Treatment Line logical model, with short element labels (one or two letters) and simple data types suitable for encoding in a compact QR code payload.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"MedicationTreatmentLineMin.m","MedicationTreatmentLineMin.m","","","",1,1,"","","","code {[]} {[]}
+","Medication (Active Ingredient)","Active ingredient of the medication.","","","","","","","","","",,,,,"",,,,"MedicationTreatmentLineMin.m",1,1,"",""
+"MedicationTreatmentLineMin.es","MedicationTreatmentLineMin.es","","","",0,1,"","","","date {[]} {[]}
+","Effective Start Date","Start date during which the medication treatment line is effective.","","","","","","","","","",,,,,"",,,,"MedicationTreatmentLineMin.es",0,1,"",""
+"MedicationTreatmentLineMin.ee","MedicationTreatmentLineMin.ee","","","",0,1,"","","","date {[]} {[]}
+","Effective End Date","End date during which the medication treatment line is effective.","","","","","","","","","",,,,,"",,,,"MedicationTreatmentLineMin.ee",0,1,"",""
+"MedicationTreatmentLineMin.da","MedicationTreatmentLineMin.da","","","",0,1,"","","","date {[]} {[]}
+","Date Asserted","Date the medication treatment line was asserted/recorded.","","","","","","","","","",,,,,"",,,,"MedicationTreatmentLineMin.da",0,1,"",""
+"MedicationTreatmentLineMin.d","MedicationTreatmentLineMin.d","","","",0,1,"","","","string {[]} {[]}
+","Dosage","Dosage instructions as free text.","","","","","","","","","",,,,,"",,,,"MedicationTreatmentLineMin.d",0,1,"",""
+"MedicationTreatmentLineMin.r","MedicationTreatmentLineMin.r","","","",0,1,"","","","string {[]} {[]}
+","Reason","Reason why the product has been prescribed.","","","","","","","","","",,,,,"",,,,"MedicationTreatmentLineMin.r",0,1,"",""
+"MedicationTreatmentLineMin.a","MedicationTreatmentLineMin.a","","","",0,1,"","","","code {[]} {[]}
+","Adherence Status","Status of patient adherence to the medication treatment line","","","","","","","","","",,"extensible","","http://hl7.org/fhir/ValueSet/medication-statement-status","",,,,"MedicationTreatmentLineMin.a",0,1,"",""

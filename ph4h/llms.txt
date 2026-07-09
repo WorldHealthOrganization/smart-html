@@ -1,0 +1,70 @@
+# smart.who.int.ph4h#0.9.9: SMART PH4H
+
+## Pages
+
+* [Home](index.md)
+* [User Scenarios](scenarios.md)
+* [Data Dictionary](dictionary.md)
+* [Non-functional Requirements](non-functional-requirements.md)
+* [Business Processes](business-processes.md)
+* [Indicators and Measures](indicators-measures.md)
+* [Downloads](downloads.md)
+* [Data Models and Exchange](data-models-and-exchange.md)
+* [Trust Domains](trust_domain.md)
+* [Codings](codings.md)
+* [Business Requirements](business-requirements.md)
+* [PH4H Trust Domain Policy](trust_domain_policy.md)
+* [Indices](indices.md)
+* [System Actors](system-actors.md)
+* [Testing](testing.md)
+* [Generic Personas](personas.md)
+* [Reference Implementations](reference-implementations.md)
+* [Dependencies](dependencies.md)
+* [Artifact Index](artifacts.md)
+* [Sequence Diagrams](sequence-diagrams.md)
+* [Functional Requirements](functional-requirements.md)
+* [Adapting Guidelines for Country use](adapting.md)
+* [Test Data](test-data.md)
+* [DAK API Documentation Hub](dak-api.md)
+* [Decision-support logic](decision-logic.md)
+* [License](license.md)
+* [PH4H Use Cases](trust_domain_use_cases.md)
+* [PH4H Technical Specifications](trust_domain_specifications.md)
+* [Transactions](transactions.md)
+* [Deployment](deployment.md)
+* [Changes](changes.md)
+* [Mappings](maps.md)
+* [References](references.md)
+* [Security and Privacy Considerations](security-privacy.md)
+* [Indicator and Performance Metrics](indicators.md)
+* [Concepts](concepts.md)
+
+## Resources
+
+### Logicals
+
+* [Medication Overview (Minimal)](StructureDefinition-MedicationOverviewMin.md)
+* [Medication Treatment Line (Minimal)](StructureDefinition-MedicationTreatmentLineMin.md)
+
+### Resource Profiles
+
+* [SMART Consent](StructureDefinition-SmartConsent.md)
+* [SMART Bundle (IPS)](StructureDefinition-SmartIPS.md)
+* [SMART Composition (IPS)](StructureDefinition-SmartIPSComposition.md)
+
+### ImplementationGuides
+
+* [SMART PH4H](index.md)
+
+### StructureMaps
+
+* [MedicationOverviewLMToMedicationOverviewBundle](StructureMap-MedicationOverviewLMToMedicationOverviewBundle.md)
+* [MedicationOverviewMinToMedicationOverviewBundle](StructureMap-MedicationOverviewMinToMedicationOverviewBundle.md)
+* [MedicationOverviewMinToMedicationOverviewLM](StructureMap-MedicationOverviewMinToMedicationOverviewLM.md)
+
+### Examples
+
+* [574687583 (Binary)](Binary-574687583.md)
+* [MedicationOverviewTransformed (Bundle)](Bundle-MedicationOverviewTransformed.md)
+* [c7781f44-6df8-4a8b-9e06-0b34263a47c6 (Consent)](Consent-c7781f44-6df8-4a8b-9e06-0b34263a47c6.md)
+* [ex-documentreference1 (DocumentReference)](DocumentReference-ex-documentreference1.md)

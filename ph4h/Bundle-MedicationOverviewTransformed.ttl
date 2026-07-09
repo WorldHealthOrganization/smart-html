@@ -1,0 +1,228 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/ph4h/Bundle/MedicationOverviewTransformed> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "MedicationOverviewTransformed"] ;
+  fhir:Bundle.identifier [
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:4122" ] ;
+     fhir:Identifier.value [ fhir:value "6f87f79c-3e36-4f28-84ff-664e214e9dbb" ]
+  ] ;
+  fhir:Bundle.type [ fhir:value "document"] ;
+  fhir:Bundle.timestamp [ fhir:value "2026-06-29T18:45:08+05:30"^^xsd:dateTime] ;
+  fhir:Bundle.entry [
+     fhir:index 0 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:fcfad043-cee1-4b83-9d26-06f14e9755f1" ] ;
+     fhir:Bundle.entry.resource <urn:uuid:fcfad043-cee1-4b83-9d26-06f14e9755f1>
+  ], [
+     fhir:index 1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:e189e032-d251-42c2-9985-a7c9611cd02a" ] ;
+     fhir:Bundle.entry.resource <urn:uuid:e189e032-d251-42c2-9985-a7c9611cd02a>
+  ], [
+     fhir:index 2 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:a3b2c272-3557-42db-a2a3-cc9e6f29b97f" ] ;
+     fhir:Bundle.entry.resource <urn:uuid:a3b2c272-3557-42db-a2a3-cc9e6f29b97f>
+  ], [
+     fhir:index 3 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:cff955d9-1e85-473c-ae54-2388c49c94d7" ] ;
+     fhir:Bundle.entry.resource <urn:uuid:cff955d9-1e85-473c-ae54-2388c49c94d7>
+  ], [
+     fhir:index 4 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:82585197-bcb9-4c6e-9852-89c5e8d19deb" ] ;
+     fhir:Bundle.entry.resource <urn:uuid:82585197-bcb9-4c6e-9852-89c5e8d19deb>
+  ], [
+     fhir:index 5 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:5a9de04a-d898-41c9-9d1b-51bd7f139a6e" ] ;
+     fhir:Bundle.entry.resource <urn:uuid:5a9de04a-d898-41c9-9d1b-51bd7f139a6e>
+  ] .
+
+<urn:uuid:fcfad043-cee1-4b83-9d26-06f14e9755f1> a fhir:Composition ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_null\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composition </b></p><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 56445-0}\">Medication summary Document</span></p><p><b>date</b>: 2026-06-29 18:45:08+0530</p><p><b>author</b>: <a href=\"Bundle-MedicationOverviewTransformed.html#urn-uuid-e189e032-d251-42c2-9985-a7c9611cd02a\">Martha DeLarosa Female, DoB: 1972-05-01 ( 574687583)</a></p><p><b>title</b>: Medication Overview</p></div>"
+  ] ;
+  fhir:Composition.status [ fhir:value "final"] ;
+  fhir:Composition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:56445-0 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "56445-0" ] ;
+       fhir:Coding.display [ fhir:value "Medication summary Document" ]
+     ]
+  ] ;
+  fhir:Composition.subject [
+     fhir:Reference.reference [ fhir:value "urn:uuid:e189e032-d251-42c2-9985-a7c9611cd02a" ]
+  ] ;
+  fhir:Composition.date [ fhir:value "2026-06-29T18:45:08+05:30"^^xsd:dateTime] ;
+  fhir:Composition.author [
+     fhir:index 0 ;
+     fhir:Reference.reference [ fhir:value "urn:uuid:e189e032-d251-42c2-9985-a7c9611cd02a" ]
+  ] ;
+  fhir:Composition.title [ fhir:value "Medication Overview"] ;
+  fhir:Composition.section [
+     fhir:index 0 ;
+     fhir:Composition.section.title [ fhir:value "Medication Treatment Lines" ] ;
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:10160-0 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "10160-0" ] ;
+         fhir:Coding.display [ fhir:value "History of Medication use Narrative" ]
+       ]
+     ] ;
+     fhir:Composition.section.entry [
+       fhir:index 0 ;
+       fhir:Reference.display [ fhir:value "Medication Treatment Line" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Reference.display [ fhir:value "Medication Treatment Line" ]
+     ], [
+       fhir:index 2 ;
+       fhir:Reference.display [ fhir:value "Medication Treatment Line" ]
+     ], [
+       fhir:index 3 ;
+       fhir:Reference.display [ fhir:value "Medication Treatment Line" ]
+     ]
+  ] .
+
+<urn:uuid:e189e032-d251-42c2-9985-a7c9611cd02a> a fhir:Patient ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_null\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient </b></p><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Martha DeLarosa Female, DoB: 1972-05-01 ( 574687583)</p><hr/></div>"
+  ] ;
+  fhir:Patient.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.value [ fhir:value "574687583" ]
+  ] ;
+  fhir:Patient.name [
+     fhir:index 0 ;
+     fhir:HumanName.text [ fhir:value "Martha DeLarosa" ]
+  ] ;
+  fhir:Patient.gender [ fhir:value "female"] ;
+  fhir:Patient.birthDate [ fhir:value "1972-05-01"^^xsd:date] .
+
+<urn:uuid:a3b2c272-3557-42db-a2a3-cc9e6f29b97f> a fhir:MedicationStatement ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationStatement_null\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationStatement </b></p><blockquote><p><b>R5: Indicates whether the medication is or is not being consumed or administered (new)</b></p><ul><li>code: <span title=\"Codes:\">active</span></li></ul></blockquote><p><b>status</b>: Active</p><p><b>medication</b>: <span title=\"Codes:\">L02BG03</span></p><p><b>subject</b>: <a href=\"Bundle-MedicationOverviewTransformed.html#urn-uuid-e189e032-d251-42c2-9985-a7c9611cd02a\">Martha DeLarosa Female, DoB: 1972-05-01 ( 574687583)</a></p><p><b>effective</b>: 2015-03-01 --&gt; (ongoing)</p><p><b>dateAsserted</b>: 2015-03-15</p><p><b>reasonCode</b>: <span title=\"Codes:\">treatment for breast cancer</span></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>1 tablet once daily</td></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "code" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.code [ fhir:value "active" ]
+         ]
+       ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence" ]
+  ] ;
+  fhir:MedicationStatement.status [ fhir:value "active"] ;
+  fhir:MedicationStatement.medicationCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.code [ fhir:value "L02BG03" ]
+     ]
+  ] ;
+  fhir:MedicationStatement.subject [
+     fhir:Reference.reference [ fhir:value "urn:uuid:e189e032-d251-42c2-9985-a7c9611cd02a" ]
+  ] ;
+  fhir:MedicationStatement.effectivePeriod [
+     fhir:Period.start [ fhir:value "2015-03-01"^^xsd:date ]
+  ] ;
+  fhir:MedicationStatement.dateAsserted [ fhir:value "2015-03-15"^^xsd:date] ;
+  fhir:MedicationStatement.reasonCode [
+     fhir:index 0 ;
+     fhir:CodeableConcept.text [ fhir:value "treatment for breast cancer" ]
+  ] ;
+  fhir:MedicationStatement.dosage [
+     fhir:index 0 ;
+     fhir:Dosage.text [ fhir:value "1 tablet once daily" ]
+  ] .
+
+<urn:uuid:cff955d9-1e85-473c-ae54-2388c49c94d7> a fhir:MedicationStatement ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationStatement_null\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationStatement </b></p><p><b>status</b>: Active</p><p><b>medication</b>: <span title=\"Codes:\">G02CX04</span></p><p><b>subject</b>: <a href=\"Bundle-MedicationOverviewTransformed.html#urn-uuid-e189e032-d251-42c2-9985-a7c9611cd02a\">Martha DeLarosa Female, DoB: 1972-05-01 ( 574687583)</a></p><p><b>effective</b>: 2016-01-01 --&gt; (ongoing)</p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>as directed</td></tr></table></div>"
+  ] ;
+  fhir:MedicationStatement.status [ fhir:value "active"] ;
+  fhir:MedicationStatement.medicationCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.code [ fhir:value "G02CX04" ]
+     ]
+  ] ;
+  fhir:MedicationStatement.subject [
+     fhir:Reference.reference [ fhir:value "urn:uuid:e189e032-d251-42c2-9985-a7c9611cd02a" ]
+  ] ;
+  fhir:MedicationStatement.effectivePeriod [
+     fhir:Period.start [ fhir:value "2016-01-01"^^xsd:date ]
+  ] ;
+  fhir:MedicationStatement.dosage [
+     fhir:index 0 ;
+     fhir:Dosage.text [ fhir:value "as directed" ]
+  ] .
+
+<urn:uuid:82585197-bcb9-4c6e-9852-89c5e8d19deb> a fhir:MedicationStatement ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationStatement_null\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationStatement </b></p><p><b>status</b>: Active</p><p><b>medication</b>: <span title=\"Codes:\">G02CX04</span></p><p><b>subject</b>: <a href=\"Bundle-MedicationOverviewTransformed.html#urn-uuid-e189e032-d251-42c2-9985-a7c9611cd02a\">Martha DeLarosa Female, DoB: 1972-05-01 ( 574687583)</a></p><p><b>effective</b>: 2016-01-01 --&gt; (ongoing)</p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>as directed 3</td></tr></table></div>"
+  ] ;
+  fhir:MedicationStatement.status [ fhir:value "active"] ;
+  fhir:MedicationStatement.medicationCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.code [ fhir:value "G02CX04" ]
+     ]
+  ] ;
+  fhir:MedicationStatement.subject [
+     fhir:Reference.reference [ fhir:value "urn:uuid:e189e032-d251-42c2-9985-a7c9611cd02a" ]
+  ] ;
+  fhir:MedicationStatement.effectivePeriod [
+     fhir:Period.start [ fhir:value "2016-01-01"^^xsd:date ]
+  ] ;
+  fhir:MedicationStatement.dosage [
+     fhir:index 0 ;
+     fhir:Dosage.text [ fhir:value "as directed 3" ]
+  ] .
+
+<urn:uuid:5a9de04a-d898-41c9-9d1b-51bd7f139a6e> a fhir:MedicationStatement ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationStatement_null\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationStatement </b></p><p><b>status</b>: Active</p><p><b>medication</b>: <span title=\"Codes:\">G02CX04</span></p><p><b>subject</b>: <a href=\"Bundle-MedicationOverviewTransformed.html#urn-uuid-e189e032-d251-42c2-9985-a7c9611cd02a\">Martha DeLarosa Female, DoB: 1972-05-01 ( 574687583)</a></p><p><b>effective</b>: 2016-01-01 --&gt; (ongoing)</p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>as directed 4</td></tr></table></div>"
+  ] ;
+  fhir:MedicationStatement.status [ fhir:value "active"] ;
+  fhir:MedicationStatement.medicationCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.code [ fhir:value "G02CX04" ]
+     ]
+  ] ;
+  fhir:MedicationStatement.subject [
+     fhir:Reference.reference [ fhir:value "urn:uuid:e189e032-d251-42c2-9985-a7c9611cd02a" ]
+  ] ;
+  fhir:MedicationStatement.effectivePeriod [
+     fhir:Period.start [ fhir:value "2016-01-01"^^xsd:date ]
+  ] ;
+  fhir:MedicationStatement.dosage [
+     fhir:index 0 ;
+     fhir:Dosage.text [ fhir:value "as directed 4" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://smart.who.int/ph4h/Bundle/MedicationOverviewTransformed.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

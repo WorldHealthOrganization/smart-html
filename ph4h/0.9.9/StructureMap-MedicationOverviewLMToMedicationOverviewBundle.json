@@ -1,0 +1,1920 @@
+{
+  "resourceType" : "StructureMap",
+  "id" : "MedicationOverviewLMToMedicationOverviewBundle",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap MedicationOverviewLMToMedicationOverviewBundle</b></p><a name=\"MedicationOverviewLMToMedicationOverviewBundle\"> </a><a name=\"hcMedicationOverviewLMToMedicationOverviewBundle\"> </a><pre class=\"fml\">\r\n<b>map</b><span style=\"color: navy\"> &quot;</span>http://smart.who.int/ph4h/StructureMap/MedicationOverviewLMToMedicationOverviewBundle<span style=\"color: navy\">&quot; = &quot;</span>MedicationOverviewLMToMedicationOverviewBundle<span style=\"color: navy\">&quot;\r\n\r\n</span><b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"file://E:\\work\\ImplementationGuides\\ihe-pharm-meow\\output/StructureDefinition-MedicationOverviewLM.html\" title=\"Medication Overview (model)\">https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationOverviewLM</a><span style=\"color: navy\">&quot; </span><b>alias </b>MedicationOverviewLM <b>as </b><b>source</b>\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"file://E:\\work\\ImplementationGuides\\ihe-pharm-meow\\output/StructureDefinition-PatientLM.html\" title=\"Patient (model)\">https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/PatientLM</a><span style=\"color: navy\">&quot; </span><b>alias </b>PatientLM <b>as </b><b>source</b>\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"file://E:\\work\\ImplementationGuides\\ihe-pharm-meow\\output/StructureDefinition-MedicationTreatmentLineLM.html\" title=\"Medication Treatment Line (model)\">https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationTreatmentLineLM</a><span style=\"color: navy\">&quot; </span><b>alias </b>MedicationTreatmentLineLM <b>as </b><b>source</b>\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"file://E:\\work\\ImplementationGuides\\ihe-pharm-meow\\output/StructureDefinition-PractitionerLM.html\" title=\"Practitioner (model)\">https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/PractitionerLM</a><span style=\"color: navy\">&quot; </span><b>alias </b>PractitionerLM <b>as </b><b>source</b>\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"file://E:\\work\\ImplementationGuides\\ihe-pharm-meow\\output/StructureDefinition-MedicationOverview.html\" title=\"Medication Overview Bundle\">https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationOverview</a><span style=\"color: navy\">&quot; </span><b>alias </b>MedicationOverviewBundle <b>as </b><b>target</b>\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"file://E:\\work\\ImplementationGuides\\ihe-pharm-meow\\output/StructureDefinition-MedicationOverviewComposition.html\" title=\"Medication Overview Composition\">https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationOverviewComposition</a><span style=\"color: navy\">&quot; </span><b>alias </b>MedicationOverviewComposition <b>as </b><b>target</b>\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"file://E:\\work\\ImplementationGuides\\ihe-pharm-meow\\output/StructureDefinition-MedicationTreatmentLine.html\" title=\"Medication Treatment Line\">https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationTreatmentLine</a><span style=\"color: navy\">&quot; </span><b>alias </b>MedicationTreatmentLine <b>as </b><b>target</b>\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"http://hl7.org/fhir/R4/patient.html\" title=\"Patient\">http://hl7.org/fhir/StructureDefinition/Patient</a><span style=\"color: navy\">&quot; </span><b>alias </b>Patient <b>as </b><b>target</b>\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"http://hl7.org/fhir/R4/practitioner.html\" title=\"Practitioner\">http://hl7.org/fhir/StructureDefinition/Practitioner</a><span style=\"color: navy\">&quot; </span><b>alias </b>Practitioner <b>as </b><b>target</b>\r\n\r\n<span style=\"color: navy\">// </span><span style=\"color: green\">---------------------------------------------------------------------------</span>\r\n<span style=\"color: navy\">// </span><span style=\"color: green\">Top-level group: assemble MedicationOverview Bundle (document)</span>\r\n<span style=\"color: navy\">// </span><span style=\"color: green\">---------------------------------------------------------------------------</span>\r\n<b>group </b>MedicationOverviewLMToMedicationOverviewBundle<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">src</span><span style=\"color: navy\"> : </span>MedicationOverviewLM, <b>target</b> <span style=\"color: maroon\">tgt</span><span style=\"color: navy\"> : </span>MedicationOverviewBundle<span style=\"color: navy\">)</span><span style=\"color: navy\"> {\r\n</span>  src<span style=\"color: navy\"><b> -&gt; </b></span>tgt.type = <span style=\"color: blue\">'document'</span> <i>&quot;bundleType&quot;</i><span style=\"color: navy\">;</span>\r\n  src<span style=\"color: navy\"><b> -&gt; </b></span>tgt.timestamp = <span style=\"color: navy\">(</span>now()<span style=\"color: navy\">)</span> <i>&quot;bundleTimestamp&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">Generate fixed UUIDs once; reuse them across entries and Reference targets.</span>\r\n  src<span style=\"color: navy\"><b> -&gt; </b></span> <b>uuid</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">bid</span><span style=\"color: navy\">, </span> <b>uuid</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">cid</span><span style=\"color: navy\">, </span> <b>uuid</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">pid</span><b> then</b><span style=\"color: navy\"> {\r\n</span>    <span style=\"color: navy\">// </span><span style=\"color: green\">Bundle.identifier (UUID identifier per RFC 4122)</span>\r\n    src<span style=\"color: navy\"><b> -&gt; </b></span> tgt.identifier<b> as </b><span style=\"color: maroon\">id</span><span style=\"color: navy\">, </span> id.system = <span style=\"color: blue\">'urn:ietf:rfc:4122'</span><span style=\"color: navy\">, </span> id.value = <span style=\"color: maroon\">bid</span> <i>&quot;bundleIdentifier&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Composition entry. The Composition group ALSO emits the treatment-line bundle</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">entries (passing tgt in), so each section.entry reference can share the same</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">UUID as its bundle entry — making the lines reachable from the Composition.</span>\r\n    src<span style=\"color: navy\"><b> -&gt; </b></span> tgt.entry<b> as </b><span style=\"color: maroon\">ce</span><span style=\"color: navy\">, </span> ce.fullUrl = <b>append</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'urn:uuid:'</span><span style=\"color: navy\">, </span><span style=\"color: maroon\">cid</span><span style=\"color: navy\">)</span><span style=\"color: navy\">, </span> ce.resource = <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'MedicationOverviewComposition'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">comp</span><b> then</b><span style=\"color: navy\"> {\r\n</span>      src<b> then </b>MedicationOverviewLMToComposition<span style=\"color: navy\">(</span><span style=\"color: maroon\">src</span><span style=\"color: navy\">, </span><span style=\"color: maroon\">comp</span><span style=\"color: navy\">, </span><span style=\"color: maroon\">pid</span><span style=\"color: navy\">, </span><span style=\"color: maroon\">tgt</span><span style=\"color: navy\">)</span> <i>&quot;compositionContent&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;compositionEntry&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Patient entry</span>\r\n    src.patient<b> as </b><span style=\"color: maroon\">pref</span><span style=\"color: navy\"><b> -&gt; </b></span> tgt.entry<b> as </b><span style=\"color: maroon\">pe</span><span style=\"color: navy\">, </span> pe.fullUrl = <b>append</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'urn:uuid:'</span><span style=\"color: navy\">, </span><span style=\"color: maroon\">pid</span><span style=\"color: navy\">)</span><span style=\"color: navy\">, </span> pe.resource = <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'Patient'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">pat</span><b> then</b><span style=\"color: navy\"> {\r\n</span>      pref<b> then </b>PatientLMToPatient<span style=\"color: navy\">(</span><span style=\"color: maroon\">pref</span><span style=\"color: navy\">, </span><span style=\"color: maroon\">pat</span><span style=\"color: navy\">)</span> <i>&quot;patientContent&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;patientEntry&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">}</span> <i>&quot;setEntries&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">---------------------------------------------------------------------------</span>\r\n<span style=\"color: navy\">// </span><span style=\"color: green\">MedicationOverviewLM -&gt; MedicationOverviewComposition</span>\r\n<span style=\"color: navy\">// </span><span style=\"color: green\">Receives the Patient entry's UUID (pid) so subject can reference it.</span>\r\n<span style=\"color: navy\">// </span><span style=\"color: green\">---------------------------------------------------------------------------</span>\r\n<b>group </b>MedicationOverviewLMToComposition<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">src</span><span style=\"color: navy\"> : </span>MedicationOverviewLM, <b>target</b> <span style=\"color: maroon\">tgt</span><span style=\"color: navy\"> : </span>MedicationOverviewComposition, <b>source</b> <span style=\"color: maroon\">pid</span>, <b>target</b> <span style=\"color: maroon\">bundle</span><span style=\"color: navy\"> : </span>MedicationOverviewBundle<span style=\"color: navy\">)</span><span style=\"color: navy\"> {\r\n</span>  src<span style=\"color: navy\"><b> -&gt; </b></span>tgt.status = <span style=\"color: blue\">'final'</span> <i>&quot;compStatus&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">Composition.type — LOINC 56445-0 &quot;Medication summary Document&quot;</span>\r\n  src<span style=\"color: navy\"><b> -&gt; </b></span> <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'Coding'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">cc</span><span style=\"color: navy\">, </span> cc.system = <span style=\"color: blue\">'http://loinc.org'</span><span style=\"color: navy\">, </span> cc.code = <span style=\"color: blue\">'56445-0'</span><span style=\"color: navy\">, </span> cc.display = <span style=\"color: blue\">'Medication summary Document'</span><span style=\"color: navy\">, </span> <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'CodeableConcept'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">ct</span><span style=\"color: navy\">, </span> ct.coding = <span style=\"color: maroon\">cc</span><span style=\"color: navy\">, </span> tgt.type = <span style=\"color: maroon\">ct</span> <i>&quot;compType&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">Composition.subject -&gt; Patient entry by uuid</span>\r\n  src<span style=\"color: navy\"><b> -&gt; </b></span> <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'Reference'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">subj</span><span style=\"color: navy\">, </span> subj.reference = <b>append</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'urn:uuid:'</span><span style=\"color: navy\">, </span><span style=\"color: maroon\">pid</span><span style=\"color: navy\">)</span><span style=\"color: navy\">, </span> tgt.subject = <span style=\"color: maroon\">subj</span> <i>&quot;compSubject&quot;</i><span style=\"color: navy\">;</span>\r\n  src<span style=\"color: navy\"><b> -&gt; </b></span>tgt.date = <span style=\"color: navy\">(</span>now()<span style=\"color: navy\">)</span> <i>&quot;compDate&quot;</i><span style=\"color: navy\">;</span>\r\n  src<span style=\"color: navy\"><b> -&gt; </b></span>tgt.title = <span style=\"color: blue\">'Medication Overview'</span> <i>&quot;compTitle&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">Composition.author is 1..* (required). The Min source carries no author, so</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">emit a display-only placeholder Reference to satisfy the cardinality.</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">TODO: replace with the real authoring Organization/Device once the source</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">(or a config value) provides it.</span>\r\n  src<span style=\"color: navy\"><b> -&gt; </b></span> <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'Reference'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">au</span><span style=\"color: navy\">, </span> au.display = <span style=\"color: blue\">'Medication Overview generator'</span><span style=\"color: navy\">, </span> tgt.author = <span style=\"color: maroon\">au</span> <i>&quot;compAuthor&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">Section: MedRecordTreatmentLine</span>\r\n  src<span style=\"color: navy\"><b> -&gt; </b></span>tgt.section<b> as </b><span style=\"color: maroon\">sect</span><b> then</b><span style=\"color: navy\"> {\r\n</span>    src<span style=\"color: navy\"><b> -&gt; </b></span>sect.title = <span style=\"color: blue\">'Medication Treatment Lines'</span> <i>&quot;sectTitle&quot;</i><span style=\"color: navy\">;</span>\r\n    src<span style=\"color: navy\"><b> -&gt; </b></span> <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'Coding'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">scc</span><span style=\"color: navy\">, </span> scc.system = <span style=\"color: blue\">'http://loinc.org'</span><span style=\"color: navy\">, </span> scc.code = <span style=\"color: blue\">'10160-0'</span><span style=\"color: navy\">, </span> scc.display = <span style=\"color: blue\">'History of Medication use Narrative'</span><span style=\"color: navy\">, </span> <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'CodeableConcept'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">sc</span><span style=\"color: navy\">, </span> sc.coding = <span style=\"color: maroon\">scc</span><span style=\"color: navy\">, </span> sect.code = <span style=\"color: maroon\">sc</span> <i>&quot;sectCode&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">One UUID per line, shared by the section.entry reference AND the bundle entry,</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">so each treatment line is reachable by forward traversal from the Composition</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">(mirrors the ICVP ICVPLMToIPS pattern). This is why the group receives the</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Bundle: the line entries are created here, not in the top-level group.</span>\r\n    src.medicationTreatmentLine<b> as </b><span style=\"color: maroon\">lref</span><span style=\"color: navy\"><b> -&gt; </b></span><b>uuid</b><span style=\"color: navy\">(</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">tid</span><b> then</b><span style=\"color: navy\"> {\r\n</span>      lref<span style=\"color: navy\"><b> -&gt; </b></span> sect.entry<b> as </b><span style=\"color: maroon\">se</span><span style=\"color: navy\">, </span> se.reference = <b>append</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'urn:uuid:'</span><span style=\"color: navy\">, </span><span style=\"color: maroon\">tid</span><span style=\"color: navy\">)</span> <i>&quot;sectEntry&quot;</i><span style=\"color: navy\">;</span>\r\n      lref<span style=\"color: navy\"><b> -&gt; </b></span> bundle.entry<b> as </b><span style=\"color: maroon\">te</span><span style=\"color: navy\">, </span> te.fullUrl = <b>append</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'urn:uuid:'</span><span style=\"color: navy\">, </span><span style=\"color: maroon\">tid</span><span style=\"color: navy\">)</span><span style=\"color: navy\">, </span> te.resource = <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'MedicationTreatmentLine'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">ms</span><b> then</b><span style=\"color: navy\"> {\r\n</span>        lref<b> then </b>MedicationTreatmentLineLMToMedicationStatement<span style=\"color: navy\">(</span><span style=\"color: maroon\">lref</span><span style=\"color: navy\">, </span><span style=\"color: maroon\">ms</span><span style=\"color: navy\">, </span><span style=\"color: maroon\">pid</span><span style=\"color: navy\">)</span> <i>&quot;lineContent&quot;</i><span style=\"color: navy\">;</span>\r\n      <span style=\"color: navy\">}</span> <i>&quot;lineEntry&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;treatmentLines&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">}</span> <i>&quot;sectionTreatmentLines&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">Attester from verification BackboneElement</span>\r\n  src.verification<b> as </b><span style=\"color: maroon\">v</span><span style=\"color: navy\"><b> -&gt; </b></span>tgt.attester<b> as </b><span style=\"color: maroon\">att</span><b> then</b><span style=\"color: navy\"> {\r\n</span>    v<span style=\"color: navy\"><b> -&gt; </b></span>att.mode = <span style=\"color: blue\">'professional'</span> <i>&quot;attMode&quot;</i><span style=\"color: navy\">;</span>\r\n    v.verificationTime<b> as </b><span style=\"color: maroon\">vt</span><span style=\"color: navy\"><b> -&gt; </b></span>att.time = <span style=\"color: maroon\">vt</span> <i>&quot;attTime&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">practicioner is Reference(PractitionerLM) in the LM — copy the reference</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">as-is ((pr.name.text) was invalid: References have no name).</span>\r\n    v.practicioner<b> as </b><span style=\"color: maroon\">pr</span><span style=\"color: navy\"><b> -&gt; </b></span>att.party = <span style=\"color: maroon\">pr</span> <i>&quot;attParty&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">}</span> <i>&quot;attester&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">Comment -&gt; R4 Composition has NO `note` element (R5-only). Use the</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">cross-version extension, mirroring the r4 profile's approach for adherence.</span>\r\n  src.comment<b> as </b><span style=\"color: maroon\">cm</span><span style=\"color: navy\"><b> -&gt; </b></span> <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'Extension'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">ext</span><span style=\"color: navy\">, </span> ext.url = <span style=\"color: blue\">'http://hl7.org/fhir/5.0/StructureDefinition/extension-Composition.note'</span><span style=\"color: navy\">, </span> <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'Annotation'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">nt</span><b> then</b><span style=\"color: navy\"> {\r\n</span>    cm.commentText<b> as </b><span style=\"color: maroon\">ctxt</span><span style=\"color: navy\"><b> -&gt; </b></span>nt.text = <span style=\"color: maroon\">ctxt</span> <i>&quot;noteText&quot;</i><span style=\"color: navy\">;</span>\r\n    cm.date<b> as </b><span style=\"color: maroon\">d</span><span style=\"color: navy\"><b> -&gt; </b></span>nt.time = <span style=\"color: maroon\">d</span> <i>&quot;noteTime&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">author is a Reference in the LM; Annotation.author[x] resolves by type.</span>\r\n    cm.author<b> as </b><span style=\"color: maroon\">a</span><span style=\"color: navy\"><b> -&gt; </b></span>nt.author = <span style=\"color: maroon\">a</span> <i>&quot;noteAuthor&quot;</i><span style=\"color: navy\">;</span>\r\n    cm<span style=\"color: navy\"><b> -&gt; </b></span> ext.value = <span style=\"color: maroon\">nt</span><span style=\"color: navy\">, </span> tgt.extension = <span style=\"color: maroon\">ext</span> <i>&quot;noteAssign&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">}</span> <i>&quot;noteFromComment&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">---------------------------------------------------------------------------</span>\r\n<span style=\"color: navy\">// </span><span style=\"color: green\">PatientLM -&gt; FHIR Patient</span>\r\n<span style=\"color: navy\">// </span><span style=\"color: green\">---------------------------------------------------------------------------</span>\r\n<b>group </b>PatientLMToPatient<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">src</span><span style=\"color: navy\"> : </span>PatientLM, <b>target</b> <span style=\"color: maroon\">tgt</span><span style=\"color: navy\"> : </span>Patient<span style=\"color: navy\">)</span><span style=\"color: navy\"> {\r\n</span>  src.identifier<b> as </b><span style=\"color: maroon\">id</span><span style=\"color: navy\"><b> -&gt; </b></span>tgt.identifier = <span style=\"color: maroon\">id</span> <i>&quot;patIdentifier&quot;</i><span style=\"color: navy\">;</span>\r\n  src.name<b> as </b><span style=\"color: maroon\">n</span><span style=\"color: navy\"><b> -&gt; </b></span>tgt.name = <span style=\"color: maroon\">n</span> <i>&quot;patName&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">gender: navigate instead of a FHIRPath evaluate — validator can't scope</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">rule variables inside (…) expressions.</span>\r\n  src.gender<b> as </b><span style=\"color: maroon\">g</span><b> then</b><span style=\"color: navy\"> {\r\n</span>    g.coding<b> as </b><span style=\"color: maroon\">gc</span><b> then</b><span style=\"color: navy\"> {\r\n</span>      gc.code<b> as </b><span style=\"color: maroon\">gcode</span><span style=\"color: navy\"><b> -&gt; </b></span>tgt.gender = <span style=\"color: maroon\">gcode</span> <i>&quot;patGenderCode&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;patGenderCoding&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">}</span> <i>&quot;patGender&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">dateOfBirth is dateTime in LM; birthDate is date — silent truncation expected.</span>\r\n  src.dateOfBirth<b> as </b><span style=\"color: maroon\">d</span><span style=\"color: navy\"><b> -&gt; </b></span>tgt.birthDate = <span style=\"color: maroon\">d</span> <i>&quot;patBirthDate&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">---------------------------------------------------------------------------</span>\r\n<span style=\"color: navy\">// </span><span style=\"color: green\">MedicationTreatmentLineLM -&gt; MedicationTreatmentLine (profile on MedicationStatement, R4)</span>\r\n<span style=\"color: navy\">// </span><span style=\"color: green\">Receives the Patient entry's UUID (pid) so MS.subject can reference it.</span>\r\n<span style=\"color: navy\">// </span><span style=\"color: green\">---------------------------------------------------------------------------</span>\r\n<b>group </b>MedicationTreatmentLineLMToMedicationStatement<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">src</span><span style=\"color: navy\"> : </span>MedicationTreatmentLineLM, <b>target</b> <span style=\"color: maroon\">tgt</span><span style=\"color: navy\"> : </span>MedicationTreatmentLine, <b>source</b> <span style=\"color: maroon\">pid</span><span style=\"color: navy\">)</span><span style=\"color: navy\"> {\r\n</span>  src.identifier<b> as </b><span style=\"color: maroon\">id</span><span style=\"color: navy\"><b> -&gt; </b></span>tgt.identifier = <span style=\"color: maroon\">id</span><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">subject -&gt; Patient entry by uuid (MS.subject is 1..1)</span>\r\n  src<span style=\"color: navy\"><b> -&gt; </b></span> <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'Reference'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">subj</span><span style=\"color: navy\">, </span> subj.reference = <b>append</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'urn:uuid:'</span><span style=\"color: navy\">, </span><span style=\"color: maroon\">pid</span><span style=\"color: navy\">)</span><span style=\"color: navy\">, </span> tgt.subject = <span style=\"color: maroon\">subj</span> <i>&quot;subject&quot;</i><span style=\"color: navy\">;</span>\r\n  src.status<b> as </b><span style=\"color: maroon\">st</span><span style=\"color: navy\"><b> -&gt; </b></span>tgt.status = <span style=\"color: maroon\">st</span><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">medication[x] choice -&gt; R4 medication[x] (no CodeableReference in R4;</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">the engine resolves medicationReference/medicationCodeableConcept by value type)</span>\r\n  src.medication<span style=\"color: navy\"> : </span>Reference<b> as </b><span style=\"color: maroon\">mr</span><span style=\"color: navy\"><b> -&gt; </b></span>tgt.medication = <span style=\"color: maroon\">mr</span> <i>&quot;medicationRef&quot;</i><span style=\"color: navy\">;</span>\r\n  src.medication<span style=\"color: navy\"> : </span>CodeableConcept<b> as </b><span style=\"color: maroon\">mc</span><span style=\"color: navy\"><b> -&gt; </b></span>tgt.medication = <span style=\"color: maroon\">mc</span> <i>&quot;medicationCC&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">effective[x] on R4 MedicationStatement — address the choice by base name.</span>\r\n  src.effectivePeriod<b> as </b><span style=\"color: maroon\">ep</span><span style=\"color: navy\"><b> -&gt; </b></span>tgt.effective = <span style=\"color: maroon\">ep</span><span style=\"color: navy\">;</span>\r\n  src.recordingMetadata<b> as </b><span style=\"color: maroon\">rm</span><b> then</b><span style=\"color: navy\"> {\r\n</span>    rm.recordedTime<b> as </b><span style=\"color: maroon\">rt</span><span style=\"color: navy\"><b> -&gt; </b></span>tgt.dateAsserted = <span style=\"color: maroon\">rt</span> <i>&quot;dateAsserted&quot;</i><span style=\"color: navy\">;</span>\r\n    rm.recorder<b> as </b><span style=\"color: maroon\">rc</span><span style=\"color: navy\"><b> -&gt; </b></span>tgt.informationSource = <span style=\"color: maroon\">rc</span> <i>&quot;informationSource&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">}</span><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">reason -&gt; R4 reasonCode (0..* CodeableConcept; no CodeableReference in R4)</span>\r\n  src.indication<b> as </b><span style=\"color: maroon\">ind</span><span style=\"color: navy\"><b> -&gt; </b></span>tgt.reasonCode = <span style=\"color: maroon\">ind</span> <i>&quot;reasonIndication&quot;</i><span style=\"color: navy\">;</span>\r\n  src.indicationText<b> as </b><span style=\"color: maroon\">it</span><span style=\"color: navy\"><b> -&gt; </b></span> <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'CodeableConcept'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">cc</span><span style=\"color: navy\">, </span> cc.text = <span style=\"color: maroon\">it</span><span style=\"color: navy\">, </span> tgt.reasonCode = <span style=\"color: maroon\">cc</span> <i>&quot;reasonIndicationText&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">intendedUse: no R4 MedicationStatement element and no extension slice in the</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">r4 MEOW profile — intentionally not mapped (stays LM-only).</span>\r\n  src.usageInstructions<b> as </b><span style=\"color: maroon\">ui</span><span style=\"color: navy\"><b> -&gt; </b></span>tgt.dosage = <span style=\"color: maroon\">ui</span> <i>&quot;dosage&quot;</i><span style=\"color: navy\">;</span>\r\n  src.preparationInstructions<b> as </b><span style=\"color: maroon\">pi</span><span style=\"color: navy\"><b> -&gt; </b></span> <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'Dosage'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">dos</span><span style=\"color: navy\">, </span> dos.text = <span style=\"color: maroon\">pi</span><span style=\"color: navy\">, </span> tgt.dosage = <span style=\"color: maroon\">dos</span> <i>&quot;prepInstructions&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">note = comment</span>\r\n  src.comment<b> as </b><span style=\"color: maroon\">cm</span><span style=\"color: navy\"><b> -&gt; </b></span><b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'Annotation'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">nt</span><b> then</b><span style=\"color: navy\"> {\r\n</span>    cm.commentText<b> as </b><span style=\"color: maroon\">ct</span><span style=\"color: navy\"><b> -&gt; </b></span>nt.text = <span style=\"color: maroon\">ct</span> <i>&quot;lineNoteText&quot;</i><span style=\"color: navy\">;</span>\r\n    cm.date<b> as </b><span style=\"color: maroon\">d</span><span style=\"color: navy\"><b> -&gt; </b></span>nt.time = <span style=\"color: maroon\">d</span> <i>&quot;lineNoteTime&quot;</i><span style=\"color: navy\">;</span>\r\n    cm.author<b> as </b><span style=\"color: maroon\">a</span><span style=\"color: navy\"><b> -&gt; </b></span>nt.author = <span style=\"color: maroon\">a</span> <i>&quot;lineNoteAuthor&quot;</i><span style=\"color: navy\">;</span>\r\n    cm<span style=\"color: navy\"><b> -&gt; </b></span>tgt.note = <span style=\"color: maroon\">nt</span> <i>&quot;lineNoteAssign&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">}</span> <i>&quot;lineNote&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">adherence -&gt; R4 has no MS.adherence; the r4 profile slices the R5</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">cross-version extension (1..1 in the profile, sub-extensions code/reason).</span>\r\n  src.treatmentStatus<b> as </b><span style=\"color: maroon\">ts</span><span style=\"color: navy\"><b> -&gt; </b></span> <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'Extension'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">ext</span><span style=\"color: navy\">, </span> ext.url = <span style=\"color: blue\">'http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence'</span><span style=\"color: navy\">, </span> <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'Extension'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">e1</span><span style=\"color: navy\">, </span> e1.url = <span style=\"color: blue\">'code'</span><span style=\"color: navy\">, </span> e1.value = <span style=\"color: maroon\">ts</span><span style=\"color: navy\">, </span> ext.extension = <span style=\"color: maroon\">e1</span><span style=\"color: navy\">, </span> tgt.extension = <span style=\"color: maroon\">ext</span> <i>&quot;extAdherence&quot;</i><span style=\"color: navy\">;</span>\r\n  src.treatmentStatusReasonCode<b> as </b><span style=\"color: maroon\">tsr</span><span style=\"color: navy\"><b> -&gt; </b></span> <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'Extension'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">ext</span><span style=\"color: navy\">, </span> ext.url = <span style=\"color: blue\">'http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence'</span><span style=\"color: navy\">, </span> <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'Extension'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">e1</span><span style=\"color: navy\">, </span> e1.url = <span style=\"color: blue\">'reason'</span><span style=\"color: navy\">, </span> e1.value = <span style=\"color: maroon\">tsr</span><span style=\"color: navy\">, </span> ext.extension = <span style=\"color: maroon\">e1</span><span style=\"color: navy\">, </span> tgt.extension = <span style=\"color: maroon\">ext</span> <i>&quot;extAdherenceReason&quot;</i><span style=\"color: navy\">;</span>\r\n  src.category<b> as </b><span style=\"color: maroon\">cat</span><span style=\"color: navy\"><b> -&gt; </b></span>tgt.category = <span style=\"color: maroon\">cat</span><span style=\"color: navy\">;</span>\r\n  src.derivedFrom<b> as </b><span style=\"color: maroon\">df</span><b> then</b><span style=\"color: navy\"> {\r\n</span>    df.request<b> as </b><span style=\"color: maroon\">rq</span><span style=\"color: navy\"><b> -&gt; </b></span>tgt.derivedFrom = <span style=\"color: maroon\">rq</span> <i>&quot;derivedFromRequest&quot;</i><span style=\"color: navy\">;</span>\r\n    df.statement<b> as </b><span style=\"color: maroon\">stm</span><span style=\"color: navy\"><b> -&gt; </b></span>tgt.derivedFrom = <span style=\"color: maroon\">stm</span> <i>&quot;derivedFromStatement&quot;</i><span style=\"color: navy\">;</span>\r\n    df.dispensation<b> as </b><span style=\"color: maroon\">dsp</span><span style=\"color: navy\"><b> -&gt; </b></span>tgt.derivedFrom = <span style=\"color: maroon\">dsp</span> <i>&quot;derivedFromDispensation&quot;</i><span style=\"color: navy\">;</span>\r\n    df.administration<b> as </b><span style=\"color: maroon\">adm</span><span style=\"color: navy\"><b> -&gt; </b></span>tgt.derivedFrom = <span style=\"color: maroon\">adm</span> <i>&quot;derivedFromAdministration&quot;</i><span style=\"color: navy\">;</span>\r\n    df.other<b> as </b><span style=\"color: maroon\">oth</span><span style=\"color: navy\"><b> -&gt; </b></span>tgt.derivedFrom = <span style=\"color: maroon\">oth</span> <i>&quot;derivedFromOther&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">}</span><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">Extension: artifact-version</span>\r\n  src.version<b> as </b><span style=\"color: maroon\">v</span><span style=\"color: navy\"><b> -&gt; </b></span> <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'Extension'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">ext</span><span style=\"color: navy\">, </span> ext.url = <span style=\"color: blue\">'http://hl7.org/fhir/StructureDefinition/artifact-version'</span><span style=\"color: navy\">, </span> ext.value = <span style=\"color: maroon\">v</span><span style=\"color: navy\">, </span> tgt.extension = <span style=\"color: maroon\">ext</span> <i>&quot;extVersion&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">Extension: VerificationInformation</span>\r\n  src.verificationInformation<b> as </b><span style=\"color: maroon\">vi</span><span style=\"color: navy\"><b> -&gt; </b></span><b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'Extension'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">ext</span><b> then</b><span style=\"color: navy\"> {\r\n</span>    vi<span style=\"color: navy\"><b> -&gt; </b></span>ext.url = <span style=\"color: blue\">'https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/ihe-ext-medicationstatement-verificationinformation'</span> <i>&quot;viUrl&quot;</i><span style=\"color: navy\">;</span>\r\n    vi.verifier<b> as </b><span style=\"color: maroon\">vr</span><span style=\"color: navy\"><b> -&gt; </b></span> <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'Extension'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">e1</span><span style=\"color: navy\">, </span> e1.url = <span style=\"color: blue\">'verifier'</span><span style=\"color: navy\">, </span> e1.value = <span style=\"color: maroon\">vr</span><span style=\"color: navy\">, </span> ext.extension = <span style=\"color: maroon\">e1</span> <i>&quot;viVerifier&quot;</i><span style=\"color: navy\">;</span>\r\n    vi.verificationTime<b> as </b><span style=\"color: maroon\">vt</span><span style=\"color: navy\"><b> -&gt; </b></span> <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'Extension'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">e2</span><span style=\"color: navy\">, </span> e2.url = <span style=\"color: blue\">'verificationTime'</span><span style=\"color: navy\">, </span> e2.value = <span style=\"color: maroon\">vt</span><span style=\"color: navy\">, </span> ext.extension = <span style=\"color: maroon\">e2</span> <i>&quot;viTime&quot;</i><span style=\"color: navy\">;</span>\r\n    vi<span style=\"color: navy\"><b> -&gt; </b></span>tgt.extension = <span style=\"color: maroon\">ext</span> <i>&quot;viAssign&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">}</span> <i>&quot;extVerification&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">Extension: Substitution</span>\r\n  src.substitution<b> as </b><span style=\"color: maroon\">sub</span><span style=\"color: navy\"><b> -&gt; </b></span><b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'Extension'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">ext</span><b> then</b><span style=\"color: navy\"> {\r\n</span>    sub<span style=\"color: navy\"><b> -&gt; </b></span>ext.url = <span style=\"color: blue\">'https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/ihe-ext-medicationstatement-substitution'</span> <i>&quot;subUrl&quot;</i><span style=\"color: navy\">;</span>\r\n    sub.substitutionType<b> as </b><span style=\"color: maroon\">t</span><span style=\"color: navy\"><b> -&gt; </b></span> <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'Extension'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">e1</span><span style=\"color: navy\">, </span> e1.url = <span style=\"color: blue\">'substitutionType'</span><span style=\"color: navy\">, </span> e1.value = <span style=\"color: maroon\">t</span><span style=\"color: navy\">, </span> ext.extension = <span style=\"color: maroon\">e1</span> <i>&quot;subType&quot;</i><span style=\"color: navy\">;</span>\r\n    sub.substitutionTypeReason<b> as </b><span style=\"color: maroon\">r</span><span style=\"color: navy\"><b> -&gt; </b></span> <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'Extension'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">e2</span><span style=\"color: navy\">, </span> e2.url = <span style=\"color: blue\">'substitutionTypeReason'</span><span style=\"color: navy\">, </span> e2.value = <span style=\"color: maroon\">r</span><span style=\"color: navy\">, </span> ext.extension = <span style=\"color: maroon\">e2</span> <i>&quot;subReason&quot;</i><span style=\"color: navy\">;</span>\r\n    sub.substitutionTypeReasonText<b> as </b><span style=\"color: maroon\">rt</span><span style=\"color: navy\"><b> -&gt; </b></span> <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'Extension'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">e3</span><span style=\"color: navy\">, </span> e3.url = <span style=\"color: blue\">'substitutionTypeReasonText'</span><span style=\"color: navy\">, </span> e3.value = <span style=\"color: maroon\">rt</span><span style=\"color: navy\">, </span> ext.extension = <span style=\"color: maroon\">e3</span> <i>&quot;subReasonText&quot;</i><span style=\"color: navy\">;</span>\r\n    sub<span style=\"color: navy\"><b> -&gt; </b></span>tgt.extension = <span style=\"color: maroon\">ext</span> <i>&quot;subAssign&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">}</span> <i>&quot;extSubstitution&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">---------------------------------------------------------------------------</span>\r\n<span style=\"color: navy\">// </span><span style=\"color: green\">PractitionerLM -&gt; FHIR Practitioner</span>\r\n<span style=\"color: navy\">// </span><span style=\"color: green\">---------------------------------------------------------------------------</span>\r\n<b>group </b>PractitionerLMToPractitioner<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">src</span><span style=\"color: navy\"> : </span>PractitionerLM, <b>target</b> <span style=\"color: maroon\">tgt</span><span style=\"color: navy\"> : </span>Practitioner<span style=\"color: navy\">)</span><span style=\"color: navy\"> {\r\n</span>  src.identifier<b> as </b><span style=\"color: maroon\">id</span><span style=\"color: navy\"><b> -&gt; </b></span>tgt.identifier = <span style=\"color: maroon\">id</span> <i>&quot;practIdentifier&quot;</i><span style=\"color: navy\">;</span>\r\n  src.name<b> as </b><span style=\"color: maroon\">n</span><span style=\"color: navy\"><b> -&gt; </b></span>tgt.name = <span style=\"color: maroon\">n</span> <i>&quot;practName&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span></pre></div>"
+  },
+  "url" : "http://smart.who.int/ph4h/StructureMap/MedicationOverviewLMToMedicationOverviewBundle",
+  "version" : "0.9.9",
+  "name" : "MedicationOverviewLMToMedicationOverviewBundle",
+  "status" : "draft",
+  "date" : "2026-07-09T08:34:46+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    }]
+  }],
+  "structure" : [{
+    "url" : "https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationOverviewLM",
+    "mode" : "source",
+    "alias" : "MedicationOverviewLM"
+  },
+  {
+    "url" : "https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/PatientLM",
+    "mode" : "source",
+    "alias" : "PatientLM"
+  },
+  {
+    "url" : "https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationTreatmentLineLM",
+    "mode" : "source",
+    "alias" : "MedicationTreatmentLineLM"
+  },
+  {
+    "url" : "https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/PractitionerLM",
+    "mode" : "source",
+    "alias" : "PractitionerLM"
+  },
+  {
+    "url" : "https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationOverview",
+    "mode" : "target",
+    "alias" : "MedicationOverviewBundle"
+  },
+  {
+    "url" : "https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationOverviewComposition",
+    "mode" : "target",
+    "alias" : "MedicationOverviewComposition"
+  },
+  {
+    "url" : "https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationTreatmentLine",
+    "mode" : "target",
+    "alias" : "MedicationTreatmentLine"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/Patient",
+    "mode" : "target",
+    "alias" : "Patient"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/Practitioner",
+    "mode" : "target",
+    "alias" : "Practitioner"
+  }],
+  "group" : [{
+    "name" : "MedicationOverviewLMToMedicationOverviewBundle",
+    "typeMode" : "none",
+    "documentation" : "---------------------------------------------------------------------------\r\nTop-level group: assemble MedicationOverview Bundle (document)\r\n---------------------------------------------------------------------------",
+    "input" : [{
+      "name" : "src",
+      "type" : "MedicationOverviewLM",
+      "mode" : "source"
+    },
+    {
+      "name" : "tgt",
+      "type" : "MedicationOverviewBundle",
+      "mode" : "target"
+    }],
+    "rule" : [{
+      "name" : "bundleType",
+      "source" : [{
+        "context" : "src"
+      }],
+      "target" : [{
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "type",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueString" : "document"
+        }]
+      }]
+    },
+    {
+      "name" : "bundleTimestamp",
+      "source" : [{
+        "context" : "src"
+      }],
+      "target" : [{
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "timestamp",
+        "transform" : "evaluate",
+        "parameter" : [{
+          "valueString" : "now()"
+        }]
+      }]
+    },
+    {
+      "name" : "setEntries",
+      "source" : [{
+        "context" : "src"
+      }],
+      "target" : [{
+        "contextType" : "variable",
+        "variable" : "bid",
+        "transform" : "uuid"
+      },
+      {
+        "contextType" : "variable",
+        "variable" : "cid",
+        "transform" : "uuid"
+      },
+      {
+        "contextType" : "variable",
+        "variable" : "pid",
+        "transform" : "uuid"
+      }],
+      "rule" : [{
+        "name" : "bundleIdentifier",
+        "source" : [{
+          "context" : "src"
+        }],
+        "target" : [{
+          "context" : "tgt",
+          "contextType" : "variable",
+          "element" : "identifier",
+          "variable" : "id"
+        },
+        {
+          "context" : "id",
+          "contextType" : "variable",
+          "element" : "system",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueString" : "urn:ietf:rfc:4122"
+          }]
+        },
+        {
+          "context" : "id",
+          "contextType" : "variable",
+          "element" : "value",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "bid"
+          }]
+        }]
+      },
+      {
+        "name" : "compositionEntry",
+        "source" : [{
+          "context" : "src"
+        }],
+        "target" : [{
+          "context" : "tgt",
+          "contextType" : "variable",
+          "element" : "entry",
+          "variable" : "ce"
+        },
+        {
+          "context" : "ce",
+          "contextType" : "variable",
+          "element" : "fullUrl",
+          "transform" : "append",
+          "parameter" : [{
+            "valueString" : "urn:uuid:"
+          },
+          {
+            "valueId" : "cid"
+          }]
+        },
+        {
+          "context" : "ce",
+          "contextType" : "variable",
+          "element" : "resource",
+          "variable" : "comp",
+          "transform" : "create",
+          "parameter" : [{
+            "valueString" : "MedicationOverviewComposition"
+          }]
+        }],
+        "rule" : [{
+          "name" : "compositionContent",
+          "source" : [{
+            "context" : "src"
+          }],
+          "dependent" : [{
+            "name" : "MedicationOverviewLMToComposition",
+            "variable" : ["src",
+            "comp",
+            "pid",
+            "tgt"]
+          }]
+        }]
+      },
+      {
+        "name" : "patientEntry",
+        "source" : [{
+          "context" : "src",
+          "element" : "patient",
+          "variable" : "pref"
+        }],
+        "target" : [{
+          "context" : "tgt",
+          "contextType" : "variable",
+          "element" : "entry",
+          "variable" : "pe"
+        },
+        {
+          "context" : "pe",
+          "contextType" : "variable",
+          "element" : "fullUrl",
+          "transform" : "append",
+          "parameter" : [{
+            "valueString" : "urn:uuid:"
+          },
+          {
+            "valueId" : "pid"
+          }]
+        },
+        {
+          "context" : "pe",
+          "contextType" : "variable",
+          "element" : "resource",
+          "variable" : "pat",
+          "transform" : "create",
+          "parameter" : [{
+            "valueString" : "Patient"
+          }]
+        }],
+        "rule" : [{
+          "name" : "patientContent",
+          "source" : [{
+            "context" : "pref"
+          }],
+          "dependent" : [{
+            "name" : "PatientLMToPatient",
+            "variable" : ["pref",
+            "pat"]
+          }]
+        }]
+      }]
+    }]
+  },
+  {
+    "name" : "MedicationOverviewLMToComposition",
+    "typeMode" : "none",
+    "documentation" : "---------------------------------------------------------------------------\r\nMedicationOverviewLM -> MedicationOverviewComposition\r\nReceives the Patient entry's UUID (pid) so subject can reference it.\r\n---------------------------------------------------------------------------",
+    "input" : [{
+      "name" : "src",
+      "type" : "MedicationOverviewLM",
+      "mode" : "source"
+    },
+    {
+      "name" : "tgt",
+      "type" : "MedicationOverviewComposition",
+      "mode" : "target"
+    },
+    {
+      "name" : "pid",
+      "mode" : "source"
+    },
+    {
+      "name" : "bundle",
+      "type" : "MedicationOverviewBundle",
+      "mode" : "target"
+    }],
+    "rule" : [{
+      "name" : "compStatus",
+      "source" : [{
+        "context" : "src"
+      }],
+      "target" : [{
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "status",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueString" : "final"
+        }]
+      }]
+    },
+    {
+      "name" : "compType",
+      "source" : [{
+        "context" : "src"
+      }],
+      "target" : [{
+        "contextType" : "variable",
+        "variable" : "cc",
+        "transform" : "create",
+        "parameter" : [{
+          "valueString" : "Coding"
+        }]
+      },
+      {
+        "context" : "cc",
+        "contextType" : "variable",
+        "element" : "system",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueString" : "http://loinc.org"
+        }]
+      },
+      {
+        "context" : "cc",
+        "contextType" : "variable",
+        "element" : "code",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueString" : "56445-0"
+        }]
+      },
+      {
+        "context" : "cc",
+        "contextType" : "variable",
+        "element" : "display",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueString" : "Medication summary Document"
+        }]
+      },
+      {
+        "contextType" : "variable",
+        "variable" : "ct",
+        "transform" : "create",
+        "parameter" : [{
+          "valueString" : "CodeableConcept"
+        }]
+      },
+      {
+        "context" : "ct",
+        "contextType" : "variable",
+        "element" : "coding",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "cc"
+        }]
+      },
+      {
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "type",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "ct"
+        }]
+      }]
+    },
+    {
+      "name" : "compSubject",
+      "source" : [{
+        "context" : "src"
+      }],
+      "target" : [{
+        "contextType" : "variable",
+        "variable" : "subj",
+        "transform" : "create",
+        "parameter" : [{
+          "valueString" : "Reference"
+        }]
+      },
+      {
+        "context" : "subj",
+        "contextType" : "variable",
+        "element" : "reference",
+        "transform" : "append",
+        "parameter" : [{
+          "valueString" : "urn:uuid:"
+        },
+        {
+          "valueId" : "pid"
+        }]
+      },
+      {
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "subject",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "subj"
+        }]
+      }]
+    },
+    {
+      "name" : "compDate",
+      "source" : [{
+        "context" : "src"
+      }],
+      "target" : [{
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "date",
+        "transform" : "evaluate",
+        "parameter" : [{
+          "valueString" : "now()"
+        }]
+      }]
+    },
+    {
+      "name" : "compTitle",
+      "source" : [{
+        "context" : "src"
+      }],
+      "target" : [{
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "title",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueString" : "Medication Overview"
+        }]
+      }]
+    },
+    {
+      "name" : "compAuthor",
+      "source" : [{
+        "context" : "src"
+      }],
+      "target" : [{
+        "contextType" : "variable",
+        "variable" : "au",
+        "transform" : "create",
+        "parameter" : [{
+          "valueString" : "Reference"
+        }]
+      },
+      {
+        "context" : "au",
+        "contextType" : "variable",
+        "element" : "display",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueString" : "Medication Overview generator"
+        }]
+      },
+      {
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "author",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "au"
+        }]
+      }]
+    },
+    {
+      "name" : "sectionTreatmentLines",
+      "source" : [{
+        "context" : "src"
+      }],
+      "target" : [{
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "section",
+        "variable" : "sect"
+      }],
+      "rule" : [{
+        "name" : "sectTitle",
+        "source" : [{
+          "context" : "src"
+        }],
+        "target" : [{
+          "context" : "sect",
+          "contextType" : "variable",
+          "element" : "title",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueString" : "Medication Treatment Lines"
+          }]
+        }]
+      },
+      {
+        "name" : "sectCode",
+        "source" : [{
+          "context" : "src"
+        }],
+        "target" : [{
+          "contextType" : "variable",
+          "variable" : "scc",
+          "transform" : "create",
+          "parameter" : [{
+            "valueString" : "Coding"
+          }]
+        },
+        {
+          "context" : "scc",
+          "contextType" : "variable",
+          "element" : "system",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueString" : "http://loinc.org"
+          }]
+        },
+        {
+          "context" : "scc",
+          "contextType" : "variable",
+          "element" : "code",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueString" : "10160-0"
+          }]
+        },
+        {
+          "context" : "scc",
+          "contextType" : "variable",
+          "element" : "display",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueString" : "History of Medication use Narrative"
+          }]
+        },
+        {
+          "contextType" : "variable",
+          "variable" : "sc",
+          "transform" : "create",
+          "parameter" : [{
+            "valueString" : "CodeableConcept"
+          }]
+        },
+        {
+          "context" : "sc",
+          "contextType" : "variable",
+          "element" : "coding",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "scc"
+          }]
+        },
+        {
+          "context" : "sect",
+          "contextType" : "variable",
+          "element" : "code",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "sc"
+          }]
+        }]
+      },
+      {
+        "name" : "treatmentLines",
+        "source" : [{
+          "context" : "src",
+          "element" : "medicationTreatmentLine",
+          "variable" : "lref"
+        }],
+        "target" : [{
+          "contextType" : "variable",
+          "variable" : "tid",
+          "transform" : "uuid"
+        }],
+        "rule" : [{
+          "name" : "sectEntry",
+          "source" : [{
+            "context" : "lref"
+          }],
+          "target" : [{
+            "context" : "sect",
+            "contextType" : "variable",
+            "element" : "entry",
+            "variable" : "se"
+          },
+          {
+            "context" : "se",
+            "contextType" : "variable",
+            "element" : "reference",
+            "transform" : "append",
+            "parameter" : [{
+              "valueString" : "urn:uuid:"
+            },
+            {
+              "valueId" : "tid"
+            }]
+          }]
+        },
+        {
+          "name" : "lineEntry",
+          "source" : [{
+            "context" : "lref"
+          }],
+          "target" : [{
+            "context" : "bundle",
+            "contextType" : "variable",
+            "element" : "entry",
+            "variable" : "te"
+          },
+          {
+            "context" : "te",
+            "contextType" : "variable",
+            "element" : "fullUrl",
+            "transform" : "append",
+            "parameter" : [{
+              "valueString" : "urn:uuid:"
+            },
+            {
+              "valueId" : "tid"
+            }]
+          },
+          {
+            "context" : "te",
+            "contextType" : "variable",
+            "element" : "resource",
+            "variable" : "ms",
+            "transform" : "create",
+            "parameter" : [{
+              "valueString" : "MedicationTreatmentLine"
+            }]
+          }],
+          "rule" : [{
+            "name" : "lineContent",
+            "source" : [{
+              "context" : "lref"
+            }],
+            "dependent" : [{
+              "name" : "MedicationTreatmentLineLMToMedicationStatement",
+              "variable" : ["lref",
+              "ms",
+              "pid"]
+            }]
+          }]
+        }]
+      }]
+    },
+    {
+      "name" : "attester",
+      "source" : [{
+        "context" : "src",
+        "element" : "verification",
+        "variable" : "v"
+      }],
+      "target" : [{
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "attester",
+        "variable" : "att"
+      }],
+      "rule" : [{
+        "name" : "attMode",
+        "source" : [{
+          "context" : "v"
+        }],
+        "target" : [{
+          "context" : "att",
+          "contextType" : "variable",
+          "element" : "mode",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueString" : "professional"
+          }]
+        }]
+      },
+      {
+        "name" : "attTime",
+        "source" : [{
+          "context" : "v",
+          "element" : "verificationTime",
+          "variable" : "vt"
+        }],
+        "target" : [{
+          "context" : "att",
+          "contextType" : "variable",
+          "element" : "time",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "vt"
+          }]
+        }]
+      },
+      {
+        "name" : "attParty",
+        "source" : [{
+          "context" : "v",
+          "element" : "practicioner",
+          "variable" : "pr"
+        }],
+        "target" : [{
+          "context" : "att",
+          "contextType" : "variable",
+          "element" : "party",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "pr"
+          }]
+        }]
+      }]
+    },
+    {
+      "name" : "noteFromComment",
+      "source" : [{
+        "context" : "src",
+        "element" : "comment",
+        "variable" : "cm"
+      }],
+      "target" : [{
+        "contextType" : "variable",
+        "variable" : "ext",
+        "transform" : "create",
+        "parameter" : [{
+          "valueString" : "Extension"
+        }]
+      },
+      {
+        "context" : "ext",
+        "contextType" : "variable",
+        "element" : "url",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueString" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Composition.note"
+        }]
+      },
+      {
+        "contextType" : "variable",
+        "variable" : "nt",
+        "transform" : "create",
+        "parameter" : [{
+          "valueString" : "Annotation"
+        }]
+      }],
+      "rule" : [{
+        "name" : "noteText",
+        "source" : [{
+          "context" : "cm",
+          "element" : "commentText",
+          "variable" : "ctxt"
+        }],
+        "target" : [{
+          "context" : "nt",
+          "contextType" : "variable",
+          "element" : "text",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "ctxt"
+          }]
+        }]
+      },
+      {
+        "name" : "noteTime",
+        "source" : [{
+          "context" : "cm",
+          "element" : "date",
+          "variable" : "d"
+        }],
+        "target" : [{
+          "context" : "nt",
+          "contextType" : "variable",
+          "element" : "time",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "d"
+          }]
+        }]
+      },
+      {
+        "name" : "noteAuthor",
+        "source" : [{
+          "context" : "cm",
+          "element" : "author",
+          "variable" : "a"
+        }],
+        "target" : [{
+          "context" : "nt",
+          "contextType" : "variable",
+          "element" : "author",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "a"
+          }]
+        }]
+      },
+      {
+        "name" : "noteAssign",
+        "source" : [{
+          "context" : "cm"
+        }],
+        "target" : [{
+          "context" : "ext",
+          "contextType" : "variable",
+          "element" : "value",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "nt"
+          }]
+        },
+        {
+          "context" : "tgt",
+          "contextType" : "variable",
+          "element" : "extension",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "ext"
+          }]
+        }]
+      }]
+    }]
+  },
+  {
+    "name" : "PatientLMToPatient",
+    "typeMode" : "none",
+    "documentation" : "---------------------------------------------------------------------------\r\nPatientLM -> FHIR Patient\r\n---------------------------------------------------------------------------",
+    "input" : [{
+      "name" : "src",
+      "type" : "PatientLM",
+      "mode" : "source"
+    },
+    {
+      "name" : "tgt",
+      "type" : "Patient",
+      "mode" : "target"
+    }],
+    "rule" : [{
+      "name" : "patIdentifier",
+      "source" : [{
+        "context" : "src",
+        "element" : "identifier",
+        "variable" : "id"
+      }],
+      "target" : [{
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "identifier",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "id"
+        }]
+      }]
+    },
+    {
+      "name" : "patName",
+      "source" : [{
+        "context" : "src",
+        "element" : "name",
+        "variable" : "n"
+      }],
+      "target" : [{
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "name",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "n"
+        }]
+      }]
+    },
+    {
+      "name" : "patGender",
+      "source" : [{
+        "context" : "src",
+        "element" : "gender",
+        "variable" : "g"
+      }],
+      "rule" : [{
+        "name" : "patGenderCoding",
+        "source" : [{
+          "context" : "g",
+          "element" : "coding",
+          "variable" : "gc"
+        }],
+        "rule" : [{
+          "name" : "patGenderCode",
+          "source" : [{
+            "context" : "gc",
+            "element" : "code",
+            "variable" : "gcode"
+          }],
+          "target" : [{
+            "context" : "tgt",
+            "contextType" : "variable",
+            "element" : "gender",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "gcode"
+            }]
+          }]
+        }]
+      }]
+    },
+    {
+      "name" : "patBirthDate",
+      "source" : [{
+        "context" : "src",
+        "element" : "dateOfBirth",
+        "variable" : "d"
+      }],
+      "target" : [{
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "birthDate",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "d"
+        }]
+      }]
+    }]
+  },
+  {
+    "name" : "MedicationTreatmentLineLMToMedicationStatement",
+    "typeMode" : "none",
+    "documentation" : "---------------------------------------------------------------------------\r\nMedicationTreatmentLineLM -> MedicationTreatmentLine (profile on MedicationStatement, R4)\r\nReceives the Patient entry's UUID (pid) so MS.subject can reference it.\r\n---------------------------------------------------------------------------",
+    "input" : [{
+      "name" : "src",
+      "type" : "MedicationTreatmentLineLM",
+      "mode" : "source"
+    },
+    {
+      "name" : "tgt",
+      "type" : "MedicationTreatmentLine",
+      "mode" : "target"
+    },
+    {
+      "name" : "pid",
+      "mode" : "source"
+    }],
+    "rule" : [{
+      "name" : "identifier",
+      "source" : [{
+        "context" : "src",
+        "element" : "identifier",
+        "variable" : "id"
+      }],
+      "target" : [{
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "identifier",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "id"
+        }]
+      }]
+    },
+    {
+      "name" : "subject",
+      "source" : [{
+        "context" : "src"
+      }],
+      "target" : [{
+        "contextType" : "variable",
+        "variable" : "subj",
+        "transform" : "create",
+        "parameter" : [{
+          "valueString" : "Reference"
+        }]
+      },
+      {
+        "context" : "subj",
+        "contextType" : "variable",
+        "element" : "reference",
+        "transform" : "append",
+        "parameter" : [{
+          "valueString" : "urn:uuid:"
+        },
+        {
+          "valueId" : "pid"
+        }]
+      },
+      {
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "subject",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "subj"
+        }]
+      }]
+    },
+    {
+      "name" : "status",
+      "source" : [{
+        "context" : "src",
+        "element" : "status",
+        "variable" : "st"
+      }],
+      "target" : [{
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "status",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "st"
+        }]
+      }]
+    },
+    {
+      "name" : "medicationRef",
+      "source" : [{
+        "context" : "src",
+        "type" : "Reference",
+        "element" : "medication",
+        "variable" : "mr"
+      }],
+      "target" : [{
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "medication",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "mr"
+        }]
+      }]
+    },
+    {
+      "name" : "medicationCC",
+      "source" : [{
+        "context" : "src",
+        "type" : "CodeableConcept",
+        "element" : "medication",
+        "variable" : "mc"
+      }],
+      "target" : [{
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "medication",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "mc"
+        }]
+      }]
+    },
+    {
+      "name" : "effectivePeriod",
+      "source" : [{
+        "context" : "src",
+        "element" : "effectivePeriod",
+        "variable" : "ep"
+      }],
+      "target" : [{
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "effective",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "ep"
+        }]
+      }]
+    },
+    {
+      "name" : "recordingMetadata",
+      "source" : [{
+        "context" : "src",
+        "element" : "recordingMetadata",
+        "variable" : "rm"
+      }],
+      "rule" : [{
+        "name" : "dateAsserted",
+        "source" : [{
+          "context" : "rm",
+          "element" : "recordedTime",
+          "variable" : "rt"
+        }],
+        "target" : [{
+          "context" : "tgt",
+          "contextType" : "variable",
+          "element" : "dateAsserted",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "rt"
+          }]
+        }]
+      },
+      {
+        "name" : "informationSource",
+        "source" : [{
+          "context" : "rm",
+          "element" : "recorder",
+          "variable" : "rc"
+        }],
+        "target" : [{
+          "context" : "tgt",
+          "contextType" : "variable",
+          "element" : "informationSource",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "rc"
+          }]
+        }]
+      }]
+    },
+    {
+      "name" : "reasonIndication",
+      "source" : [{
+        "context" : "src",
+        "element" : "indication",
+        "variable" : "ind"
+      }],
+      "target" : [{
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "reasonCode",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "ind"
+        }]
+      }]
+    },
+    {
+      "name" : "reasonIndicationText",
+      "source" : [{
+        "context" : "src",
+        "element" : "indicationText",
+        "variable" : "it"
+      }],
+      "target" : [{
+        "contextType" : "variable",
+        "variable" : "cc",
+        "transform" : "create",
+        "parameter" : [{
+          "valueString" : "CodeableConcept"
+        }]
+      },
+      {
+        "context" : "cc",
+        "contextType" : "variable",
+        "element" : "text",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "it"
+        }]
+      },
+      {
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "reasonCode",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "cc"
+        }]
+      }]
+    },
+    {
+      "name" : "dosage",
+      "source" : [{
+        "context" : "src",
+        "element" : "usageInstructions",
+        "variable" : "ui"
+      }],
+      "target" : [{
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "dosage",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "ui"
+        }]
+      }]
+    },
+    {
+      "name" : "prepInstructions",
+      "source" : [{
+        "context" : "src",
+        "element" : "preparationInstructions",
+        "variable" : "pi"
+      }],
+      "target" : [{
+        "contextType" : "variable",
+        "variable" : "dos",
+        "transform" : "create",
+        "parameter" : [{
+          "valueString" : "Dosage"
+        }]
+      },
+      {
+        "context" : "dos",
+        "contextType" : "variable",
+        "element" : "text",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "pi"
+        }]
+      },
+      {
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "dosage",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "dos"
+        }]
+      }]
+    },
+    {
+      "name" : "lineNote",
+      "source" : [{
+        "context" : "src",
+        "element" : "comment",
+        "variable" : "cm"
+      }],
+      "target" : [{
+        "contextType" : "variable",
+        "variable" : "nt",
+        "transform" : "create",
+        "parameter" : [{
+          "valueString" : "Annotation"
+        }]
+      }],
+      "rule" : [{
+        "name" : "lineNoteText",
+        "source" : [{
+          "context" : "cm",
+          "element" : "commentText",
+          "variable" : "ct"
+        }],
+        "target" : [{
+          "context" : "nt",
+          "contextType" : "variable",
+          "element" : "text",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "ct"
+          }]
+        }]
+      },
+      {
+        "name" : "lineNoteTime",
+        "source" : [{
+          "context" : "cm",
+          "element" : "date",
+          "variable" : "d"
+        }],
+        "target" : [{
+          "context" : "nt",
+          "contextType" : "variable",
+          "element" : "time",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "d"
+          }]
+        }]
+      },
+      {
+        "name" : "lineNoteAuthor",
+        "source" : [{
+          "context" : "cm",
+          "element" : "author",
+          "variable" : "a"
+        }],
+        "target" : [{
+          "context" : "nt",
+          "contextType" : "variable",
+          "element" : "author",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "a"
+          }]
+        }]
+      },
+      {
+        "name" : "lineNoteAssign",
+        "source" : [{
+          "context" : "cm"
+        }],
+        "target" : [{
+          "context" : "tgt",
+          "contextType" : "variable",
+          "element" : "note",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "nt"
+          }]
+        }]
+      }]
+    },
+    {
+      "name" : "extAdherence",
+      "source" : [{
+        "context" : "src",
+        "element" : "treatmentStatus",
+        "variable" : "ts"
+      }],
+      "target" : [{
+        "contextType" : "variable",
+        "variable" : "ext",
+        "transform" : "create",
+        "parameter" : [{
+          "valueString" : "Extension"
+        }]
+      },
+      {
+        "context" : "ext",
+        "contextType" : "variable",
+        "element" : "url",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueString" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence"
+        }]
+      },
+      {
+        "contextType" : "variable",
+        "variable" : "e1",
+        "transform" : "create",
+        "parameter" : [{
+          "valueString" : "Extension"
+        }]
+      },
+      {
+        "context" : "e1",
+        "contextType" : "variable",
+        "element" : "url",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueString" : "code"
+        }]
+      },
+      {
+        "context" : "e1",
+        "contextType" : "variable",
+        "element" : "value",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "ts"
+        }]
+      },
+      {
+        "context" : "ext",
+        "contextType" : "variable",
+        "element" : "extension",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "e1"
+        }]
+      },
+      {
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "extension",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "ext"
+        }]
+      }]
+    },
+    {
+      "name" : "extAdherenceReason",
+      "source" : [{
+        "context" : "src",
+        "element" : "treatmentStatusReasonCode",
+        "variable" : "tsr"
+      }],
+      "target" : [{
+        "contextType" : "variable",
+        "variable" : "ext",
+        "transform" : "create",
+        "parameter" : [{
+          "valueString" : "Extension"
+        }]
+      },
+      {
+        "context" : "ext",
+        "contextType" : "variable",
+        "element" : "url",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueString" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence"
+        }]
+      },
+      {
+        "contextType" : "variable",
+        "variable" : "e1",
+        "transform" : "create",
+        "parameter" : [{
+          "valueString" : "Extension"
+        }]
+      },
+      {
+        "context" : "e1",
+        "contextType" : "variable",
+        "element" : "url",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueString" : "reason"
+        }]
+      },
+      {
+        "context" : "e1",
+        "contextType" : "variable",
+        "element" : "value",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "tsr"
+        }]
+      },
+      {
+        "context" : "ext",
+        "contextType" : "variable",
+        "element" : "extension",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "e1"
+        }]
+      },
+      {
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "extension",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "ext"
+        }]
+      }]
+    },
+    {
+      "name" : "category",
+      "source" : [{
+        "context" : "src",
+        "element" : "category",
+        "variable" : "cat"
+      }],
+      "target" : [{
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "category",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "cat"
+        }]
+      }]
+    },
+    {
+      "name" : "derivedFrom",
+      "source" : [{
+        "context" : "src",
+        "element" : "derivedFrom",
+        "variable" : "df"
+      }],
+      "rule" : [{
+        "name" : "derivedFromRequest",
+        "source" : [{
+          "context" : "df",
+          "element" : "request",
+          "variable" : "rq"
+        }],
+        "target" : [{
+          "context" : "tgt",
+          "contextType" : "variable",
+          "element" : "derivedFrom",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "rq"
+          }]
+        }]
+      },
+      {
+        "name" : "derivedFromStatement",
+        "source" : [{
+          "context" : "df",
+          "element" : "statement",
+          "variable" : "stm"
+        }],
+        "target" : [{
+          "context" : "tgt",
+          "contextType" : "variable",
+          "element" : "derivedFrom",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "stm"
+          }]
+        }]
+      },
+      {
+        "name" : "derivedFromDispensation",
+        "source" : [{
+          "context" : "df",
+          "element" : "dispensation",
+          "variable" : "dsp"
+        }],
+        "target" : [{
+          "context" : "tgt",
+          "contextType" : "variable",
+          "element" : "derivedFrom",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "dsp"
+          }]
+        }]
+      },
+      {
+        "name" : "derivedFromAdministration",
+        "source" : [{
+          "context" : "df",
+          "element" : "administration",
+          "variable" : "adm"
+        }],
+        "target" : [{
+          "context" : "tgt",
+          "contextType" : "variable",
+          "element" : "derivedFrom",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "adm"
+          }]
+        }]
+      },
+      {
+        "name" : "derivedFromOther",
+        "source" : [{
+          "context" : "df",
+          "element" : "other",
+          "variable" : "oth"
+        }],
+        "target" : [{
+          "context" : "tgt",
+          "contextType" : "variable",
+          "element" : "derivedFrom",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "oth"
+          }]
+        }]
+      }]
+    },
+    {
+      "name" : "extVersion",
+      "source" : [{
+        "context" : "src",
+        "element" : "version",
+        "variable" : "v"
+      }],
+      "target" : [{
+        "contextType" : "variable",
+        "variable" : "ext",
+        "transform" : "create",
+        "parameter" : [{
+          "valueString" : "Extension"
+        }]
+      },
+      {
+        "context" : "ext",
+        "contextType" : "variable",
+        "element" : "url",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueString" : "http://hl7.org/fhir/StructureDefinition/artifact-version"
+        }]
+      },
+      {
+        "context" : "ext",
+        "contextType" : "variable",
+        "element" : "value",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "v"
+        }]
+      },
+      {
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "extension",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "ext"
+        }]
+      }]
+    },
+    {
+      "name" : "extVerification",
+      "source" : [{
+        "context" : "src",
+        "element" : "verificationInformation",
+        "variable" : "vi"
+      }],
+      "target" : [{
+        "contextType" : "variable",
+        "variable" : "ext",
+        "transform" : "create",
+        "parameter" : [{
+          "valueString" : "Extension"
+        }]
+      }],
+      "rule" : [{
+        "name" : "viUrl",
+        "source" : [{
+          "context" : "vi"
+        }],
+        "target" : [{
+          "context" : "ext",
+          "contextType" : "variable",
+          "element" : "url",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueString" : "https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/ihe-ext-medicationstatement-verificationinformation"
+          }]
+        }]
+      },
+      {
+        "name" : "viVerifier",
+        "source" : [{
+          "context" : "vi",
+          "element" : "verifier",
+          "variable" : "vr"
+        }],
+        "target" : [{
+          "contextType" : "variable",
+          "variable" : "e1",
+          "transform" : "create",
+          "parameter" : [{
+            "valueString" : "Extension"
+          }]
+        },
+        {
+          "context" : "e1",
+          "contextType" : "variable",
+          "element" : "url",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueString" : "verifier"
+          }]
+        },
+        {
+          "context" : "e1",
+          "contextType" : "variable",
+          "element" : "value",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "vr"
+          }]
+        },
+        {
+          "context" : "ext",
+          "contextType" : "variable",
+          "element" : "extension",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "e1"
+          }]
+        }]
+      },
+      {
+        "name" : "viTime",
+        "source" : [{
+          "context" : "vi",
+          "element" : "verificationTime",
+          "variable" : "vt"
+        }],
+        "target" : [{
+          "contextType" : "variable",
+          "variable" : "e2",
+          "transform" : "create",
+          "parameter" : [{
+            "valueString" : "Extension"
+          }]
+        },
+        {
+          "context" : "e2",
+          "contextType" : "variable",
+          "element" : "url",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueString" : "verificationTime"
+          }]
+        },
+        {
+          "context" : "e2",
+          "contextType" : "variable",
+          "element" : "value",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "vt"
+          }]
+        },
+        {
+          "context" : "ext",
+          "contextType" : "variable",
+          "element" : "extension",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "e2"
+          }]
+        }]
+      },
+      {
+        "name" : "viAssign",
+        "source" : [{
+          "context" : "vi"
+        }],
+        "target" : [{
+          "context" : "tgt",
+          "contextType" : "variable",
+          "element" : "extension",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "ext"
+          }]
+        }]
+      }]
+    },
+    {
+      "name" : "extSubstitution",
+      "source" : [{
+        "context" : "src",
+        "element" : "substitution",
+        "variable" : "sub"
+      }],
+      "target" : [{
+        "contextType" : "variable",
+        "variable" : "ext",
+        "transform" : "create",
+        "parameter" : [{
+          "valueString" : "Extension"
+        }]
+      }],
+      "rule" : [{
+        "name" : "subUrl",
+        "source" : [{
+          "context" : "sub"
+        }],
+        "target" : [{
+          "context" : "ext",
+          "contextType" : "variable",
+          "element" : "url",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueString" : "https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/ihe-ext-medicationstatement-substitution"
+          }]
+        }]
+      },
+      {
+        "name" : "subType",
+        "source" : [{
+          "context" : "sub",
+          "element" : "substitutionType",
+          "variable" : "t"
+        }],
+        "target" : [{
+          "contextType" : "variable",
+          "variable" : "e1",
+          "transform" : "create",
+          "parameter" : [{
+            "valueString" : "Extension"
+          }]
+        },
+        {
+          "context" : "e1",
+          "contextType" : "variable",
+          "element" : "url",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueString" : "substitutionType"
+          }]
+        },
+        {
+          "context" : "e1",
+          "contextType" : "variable",
+          "element" : "value",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "t"
+          }]
+        },
+        {
+          "context" : "ext",
+          "contextType" : "variable",
+          "element" : "extension",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "e1"
+          }]
+        }]
+      },
+      {
+        "name" : "subReason",
+        "source" : [{
+          "context" : "sub",
+          "element" : "substitutionTypeReason",
+          "variable" : "r"
+        }],
+        "target" : [{
+          "contextType" : "variable",
+          "variable" : "e2",
+          "transform" : "create",
+          "parameter" : [{
+            "valueString" : "Extension"
+          }]
+        },
+        {
+          "context" : "e2",
+          "contextType" : "variable",
+          "element" : "url",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueString" : "substitutionTypeReason"
+          }]
+        },
+        {
+          "context" : "e2",
+          "contextType" : "variable",
+          "element" : "value",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "r"
+          }]
+        },
+        {
+          "context" : "ext",
+          "contextType" : "variable",
+          "element" : "extension",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "e2"
+          }]
+        }]
+      },
+      {
+        "name" : "subReasonText",
+        "source" : [{
+          "context" : "sub",
+          "element" : "substitutionTypeReasonText",
+          "variable" : "rt"
+        }],
+        "target" : [{
+          "contextType" : "variable",
+          "variable" : "e3",
+          "transform" : "create",
+          "parameter" : [{
+            "valueString" : "Extension"
+          }]
+        },
+        {
+          "context" : "e3",
+          "contextType" : "variable",
+          "element" : "url",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueString" : "substitutionTypeReasonText"
+          }]
+        },
+        {
+          "context" : "e3",
+          "contextType" : "variable",
+          "element" : "value",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "rt"
+          }]
+        },
+        {
+          "context" : "ext",
+          "contextType" : "variable",
+          "element" : "extension",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "e3"
+          }]
+        }]
+      },
+      {
+        "name" : "subAssign",
+        "source" : [{
+          "context" : "sub"
+        }],
+        "target" : [{
+          "context" : "tgt",
+          "contextType" : "variable",
+          "element" : "extension",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "ext"
+          }]
+        }]
+      }]
+    }]
+  },
+  {
+    "name" : "PractitionerLMToPractitioner",
+    "typeMode" : "none",
+    "documentation" : "---------------------------------------------------------------------------\r\nPractitionerLM -> FHIR Practitioner\r\n---------------------------------------------------------------------------",
+    "input" : [{
+      "name" : "src",
+      "type" : "PractitionerLM",
+      "mode" : "source"
+    },
+    {
+      "name" : "tgt",
+      "type" : "Practitioner",
+      "mode" : "target"
+    }],
+    "rule" : [{
+      "name" : "practIdentifier",
+      "source" : [{
+        "context" : "src",
+        "element" : "identifier",
+        "variable" : "id"
+      }],
+      "target" : [{
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "identifier",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "id"
+        }]
+      }]
+    },
+    {
+      "name" : "practName",
+      "source" : [{
+        "context" : "src",
+        "element" : "name",
+        "variable" : "n"
+      }],
+      "target" : [{
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "name",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "n"
+        }]
+      }]
+    }]
+  }]
+}

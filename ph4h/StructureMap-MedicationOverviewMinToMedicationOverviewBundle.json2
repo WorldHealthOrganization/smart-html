@@ -1,0 +1,96 @@
+{
+  "resourceType" : "StructureMap",
+  "id" : "MedicationOverviewMinToMedicationOverviewBundle",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap MedicationOverviewMinToMedicationOverviewBundle</b></p><a name=\"MedicationOverviewMinToMedicationOverviewBundle\"> </a><a name=\"hcMedicationOverviewMinToMedicationOverviewBundle\"> </a><pre class=\"fml\">\r\n<b>map</b><span style=\"color: navy\"> &quot;</span>http://smart.who.int/ph4h/StructureMap/MedicationOverviewMinToMedicationOverviewBundle<span style=\"color: navy\">&quot; = &quot;</span>MedicationOverviewMinToMedicationOverviewBundle<span style=\"color: navy\">&quot;\r\n\r\n</span><b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"StructureDefinition-MedicationOverviewMin.html\" title=\"Medication Overview (Minimal)\">http://smart.who.int/ph4h/StructureDefinition/MedicationOverviewMin</a><span style=\"color: navy\">&quot; </span><b>alias </b>MedicationOverviewMin <b>as </b><b>source</b>\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"file://E:\\work\\ImplementationGuides\\ihe-pharm-meow\\output/StructureDefinition-MedicationOverview.html\" title=\"Medication Overview Bundle\">https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationOverview</a><span style=\"color: navy\">&quot; </span><b>alias </b>MedicationOverviewBundle <b>as </b><b>target</b>\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"file://E:\\work\\ImplementationGuides\\ihe-pharm-meow\\output/StructureDefinition-MedicationOverviewLM.html\" title=\"Medication Overview (model)\">https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationOverviewLM</a><span style=\"color: navy\">&quot; </span><b>alias </b>MedicationOverviewLM <b>as </b><b>target</b>\r\n\r\n<b>imports</b><span style=\"color: navy\"> &quot;</span><a href=\"StructureMap-MedicationOverviewMinToMedicationOverviewLM.html\" title=\"MedicationOverviewMinToMedicationOverviewLM\">http://smart.who.int/ph4h/StructureMap/MedicationOverviewMinToMedicationOverviewLM</a><span style=\"color: navy\">&quot;\r\n</span><b>imports</b><span style=\"color: navy\"> &quot;</span><a href=\"StructureMap-MedicationOverviewLMToMedicationOverviewBundle.html\" title=\"MedicationOverviewLMToMedicationOverviewBundle\">http://smart.who.int/ph4h/StructureMap/MedicationOverviewLMToMedicationOverviewBundle</a><span style=\"color: navy\">&quot;\r\n</span>\r\n<b>group </b>MedicationOverviewMinToMedicationOverviewBundle<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">src</span><span style=\"color: navy\"> : </span>MedicationOverviewMin, <b>target</b> <span style=\"color: maroon\">tgt</span><span style=\"color: navy\"> : </span>MedicationOverviewBundle<span style=\"color: navy\">)</span><span style=\"color: navy\"> {\r\n</span>  src<span style=\"color: navy\"><b> -&gt; </b></span><b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'MedicationOverviewLM'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">lm</span><b> then</b><span style=\"color: navy\"> {\r\n</span>    src<span style=\"color: navy\"><b> -&gt; </b></span>lm<b> then </b>MedicationOverviewMinToMedicationOverviewLM<span style=\"color: navy\">(</span><span style=\"color: maroon\">src</span><span style=\"color: navy\">, </span><span style=\"color: maroon\">lm</span><span style=\"color: navy\">)</span> <i>&quot;stage1MinToLM&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">NOTE: the rule's source context must be a SOURCE-mode variable — `lm` is</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">a target variable (created above) and may only appear as a dependent</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">parameter. `lm -&gt; tgt then ...` fails with &quot;Unknown input variable lm&quot;.</span>\r\n    src<span style=\"color: navy\"><b> -&gt; </b></span>tgt<b> then </b>MedicationOverviewLMToMedicationOverviewBundle<span style=\"color: navy\">(</span><span style=\"color: maroon\">lm</span><span style=\"color: navy\">, </span><span style=\"color: maroon\">tgt</span><span style=\"color: navy\">)</span> <i>&quot;stage2LMToBundle&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">}</span> <i>&quot;chainMinToBundle&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span></pre></div>"
+  },
+  "url" : "http://smart.who.int/ph4h/StructureMap/MedicationOverviewMinToMedicationOverviewBundle",
+  "version" : "0.9.9",
+  "name" : "MedicationOverviewMinToMedicationOverviewBundle",
+  "status" : "draft",
+  "date" : "2026-07-09T08:39:10+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    }]
+  }],
+  "structure" : [{
+    "url" : "http://smart.who.int/ph4h/StructureDefinition/MedicationOverviewMin",
+    "mode" : "source",
+    "alias" : "MedicationOverviewMin"
+  },
+  {
+    "url" : "https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationOverview",
+    "mode" : "target",
+    "alias" : "MedicationOverviewBundle"
+  },
+  {
+    "url" : "https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationOverviewLM",
+    "mode" : "target",
+    "alias" : "MedicationOverviewLM"
+  }],
+  "import" : ["http://smart.who.int/ph4h/StructureMap/MedicationOverviewMinToMedicationOverviewLM",
+  "http://smart.who.int/ph4h/StructureMap/MedicationOverviewLMToMedicationOverviewBundle"],
+  "group" : [{
+    "name" : "MedicationOverviewMinToMedicationOverviewBundle",
+    "typeMode" : "none",
+    "input" : [{
+      "name" : "src",
+      "type" : "MedicationOverviewMin",
+      "mode" : "source"
+    },
+    {
+      "name" : "tgt",
+      "type" : "MedicationOverviewBundle",
+      "mode" : "target"
+    }],
+    "rule" : [{
+      "name" : "chainMinToBundle",
+      "source" : [{
+        "context" : "src"
+      }],
+      "target" : [{
+        "contextType" : "variable",
+        "variable" : "lm",
+        "transform" : "create",
+        "parameter" : [{
+          "valueString" : "MedicationOverviewLM"
+        }]
+      }],
+      "rule" : [{
+        "name" : "stage1MinToLM",
+        "source" : [{
+          "context" : "src"
+        }],
+        "target" : [{
+          "context" : "lm",
+          "contextType" : "variable"
+        }],
+        "dependent" : [{
+          "name" : "MedicationOverviewMinToMedicationOverviewLM",
+          "variable" : ["src",
+          "lm"]
+        }]
+      },
+      {
+        "name" : "stage2LMToBundle",
+        "source" : [{
+          "context" : "src"
+        }],
+        "target" : [{
+          "context" : "tgt",
+          "contextType" : "variable"
+        }],
+        "dependent" : [{
+          "name" : "MedicationOverviewLMToMedicationOverviewBundle",
+          "variable" : ["lm",
+          "tgt"]
+        }]
+      }]
+    }]
+  }]
+}

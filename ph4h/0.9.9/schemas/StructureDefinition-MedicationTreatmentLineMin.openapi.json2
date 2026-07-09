@@ -1,0 +1,167 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Medication Treatment Line (Minimal) API",
+    "description": "Minimal medication treatment line payload for use within a QR code payload. Based on the IHE Pharmacy Medication Treatment Line logical model, with short element labels (one or two letters) and simple data types suitable for encoding in a compact QR code payload.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/StructureDefinition-MedicationTreatmentLineMin.schema.json": {
+      "get": {
+        "summary": "JSON Schema definition for the Logical Model StructureDefinition-MedicationTreatmentLineMin",
+        "description": "This endpoint serves the JSON Schema definition for the Logical Model StructureDefinition-MedicationTreatmentLineMin.",
+        "responses": {
+          "200": {
+            "description": "The JSON Schema for StructureDefinition-MedicationTreatmentLineMin",
+            "content": {
+              "application/schema+json": {
+                "schema": {
+                  "$ref": "./StructureDefinition-MedicationTreatmentLineMin.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "StructureDefinition-MedicationTreatmentLineMin": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "http://smart.who.int/base/StructureDefinition-MedicationTreatmentLineMin.schema.json",
+        "title": "Medication Treatment Line (Minimal)",
+        "description": "Minimal medication treatment line payload for use within a QR code payload. Based on the IHE Pharmacy Medication Treatment Line logical model, with short element labels (one or two letters) and simple data types suitable for encoding in a compact QR code payload.",
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "MedicationTreatmentLineMin",
+            "description": "Resource type identifier for MedicationTreatmentLineMin logical model"
+          },
+          "@context": {
+            "description": "JSON-LD context for this logical model with ValueSet vocabularies",
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uri",
+                "description": "URI reference to external JSON-LD context"
+              },
+              {
+                "type": "object",
+                "description": "Inline JSON-LD context",
+                "properties": {
+                  "@version": {
+                    "type": "number",
+                    "const": 1.1
+                  },
+                  "fhir": {
+                    "type": "string",
+                    "const": "http://hl7.org/fhir/"
+                  }
+                },
+                "additionalProperties": {
+                  "type": "string",
+                  "format": "uri"
+                }
+              },
+              {
+                "type": "array",
+                "description": "Array of JSON-LD context objects/URIs",
+                "items": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "format": "uri"
+                    },
+                    {
+                      "type": "object"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "@type": {
+            "type": "string",
+            "description": "JSON-LD type identifier for MedicationTreatmentLineMin logical model",
+            "examples": [
+              "LogicalModel-MedicationTreatmentLineMin"
+            ]
+          },
+          "m": {
+            "type": "string",
+            "description": "Active ingredient of the medication."
+          },
+          "es": {
+            "type": "string",
+            "format": "date",
+            "description": "Start date during which the medication treatment line is effective."
+          },
+          "ee": {
+            "type": "string",
+            "format": "date",
+            "description": "End date during which the medication treatment line is effective."
+          },
+          "da": {
+            "type": "string",
+            "format": "date",
+            "description": "Date the medication treatment line was asserted/recorded."
+          },
+          "d": {
+            "type": "string",
+            "description": "Dosage instructions as free text."
+          },
+          "r": {
+            "type": "string",
+            "description": "Reason why the product has been prescribed."
+          },
+          "a": {
+            "oneOf": [
+              {
+                "type": "string",
+                "description": "Code from ValueSet medication-statement-status (plain string)"
+              },
+              {
+                "type": "object",
+                "description": "Code from ValueSet medication-statement-status (JSON-LD structure)",
+                "properties": {
+                  "@type": {
+                    "type": "string",
+                    "const": "http://smart.who.int/base/ValueSet-medication-statement-status.jsonld",
+                    "description": "JSON-LD type reference to ValueSet medication-statement-status"
+                  },
+                  "@id": {
+                    "type": "string",
+                    "format": "uri",
+                    "description": "Full IRI of the code from ValueSet medication-statement-status"
+                  }
+                },
+                "required": [
+                  "@type",
+                  "@id"
+                ],
+                "additionalProperties": false
+              }
+            ],
+            "description": "Status of patient adherence to the medication treatment line"
+          }
+        },
+        "required": [
+          "resourceType",
+          "m"
+        ],
+        "resourceDefinition": "http://smart.who.int/ph4h/StructureDefinition/MedicationTreatmentLineMin",
+        "fhir:parent": "http://hl7.org/fhir/StructureDefinition/Base",
+        "jsonld:valuesets": [
+          "medication-statement-status"
+        ],
+        "jsonld:contextTemplate": {
+          "@version": 1.1,
+          "fhir": "http://hl7.org/fhir/",
+          "medication-statement-status": "http://smart.who.int/base/ValueSet-medication-statement-status.jsonld"
+        }
+      }
+    }
+  }
+}

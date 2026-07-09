@@ -1,0 +1,18 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"MedicationOverviewMin","MedicationOverviewMin","","","",0,*,"","","","null {[]} {[]}
+","Medication Overview (Minimal)","Minimal medication overview payload for use within a QR code payload. Based on the IHE Pharmacy Medication Overview logical model, with short element labels (one or two letters) and simple data","","","","","","","","","",,,,,"",,,,"Base",0,*,"","MedicationOverviewMin-TreatmentLines:If more than one medication treatment line is present, there can be a maximum of 3 medication treatment lines to ensure the overall payload remains compact enough for encoding in a QR code. {m.count() <= 3}
+"
+"MedicationOverviewMin.n","MedicationOverviewMin.n","","","",1,1,"","","","string {[]} {[]}
+","Patient Name","Patient Name","","","","","","","","","",,,,,"",,,,"MedicationOverviewMin.n",1,1,"",""
+"MedicationOverviewMin.dob","MedicationOverviewMin.dob","","","",1,1,"","","","date {[]} {[]}
+","Patient Date of Birth","Patient Date of Birth","","","","","","","","","",,,,,"",,,,"MedicationOverviewMin.dob",1,1,"",""
+"MedicationOverviewMin.s","MedicationOverviewMin.s","","","",1,1,"","","","code {[]} {[]}
+","Sex","Sex","","","","","","","","","",,"extensible","","http://hl7.org/fhir/ValueSet/administrative-gender","",,,,"MedicationOverviewMin.s",1,1,"",""
+"MedicationOverviewMin.nt","MedicationOverviewMin.nt","","","",0,1,"","","","code {[]} {[]}
+","Nationality","Nationality","","","","","","","","","",,"extensible","","http://hl7.org/fhir/ValueSet/iso3166-1-3","",,,,"MedicationOverviewMin.nt",0,1,"",""
+"MedicationOverviewMin.id","MedicationOverviewMin.id","","","",0,1,"","","","string {[]} {[]}
+","National Identifier","National Identifier","","","","","","","","","",,,,,"",,,,"MedicationOverviewMin.id",0,1,"",""
+"MedicationOverviewMin.dt","MedicationOverviewMin.dt","","","",0,1,"","","","code {[]} {[]}
+","National Identifier Type","Type of national identifier (e.g., social security number, national health ID, etc.)","","","","","","","","","",,"extensible","","http://terminology.hl7.org/ValueSet/v2-0203","",,,,"MedicationOverviewMin.dt",0,1,"",""
+"MedicationOverviewMin.m","MedicationOverviewMin.m","","","",0,*,"","","","http://smart.who.int/ph4h/StructureDefinition/MedicationTreatmentLineMin {[]} {[]}
+","Medication Treatment Lines","List of medication treatment lines associated with the patient, represented in a minimal format suitable for encoding in a compact QR code payload.","","","","","","","","","",,,,,"",,,,"MedicationOverviewMin.m",0,*,"",""

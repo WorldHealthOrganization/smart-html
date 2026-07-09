@@ -1,0 +1,56 @@
+{
+  "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "AdministrativeGender",
+    "title" : "AdministrativeGender",
+    "description" : "The gender of a person used for administrative purposes.",
+    "systems" : ["http://hl7.org/fhir/administrative-gender"],
+    "oids" : ["2.16.840.1.113883.4.642.3.1"],
+    "sources" : ["2.16.840.1.113883.4.642.3.1"],
+    "uses" : {
+    },
+    "StructureDefinition-MedicationOverviewMin.html" : "Medication Overview (Minimal)"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/iso3166-1-3",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "Iso3166-1-3",
+    "title" : "Iso 3166 Part 1: 3 Letter Codes",
+    "description" : "This value set defines the ISO 3166 Part 1 3-letter codes",
+    "systems" : ["urn:iso:std:iso:3166"],
+    "uses" : {
+    },
+    "StructureDefinition-MedicationOverviewMin.html" : "Medication Overview (Minimal)"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/medication-statement-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "Medication Status Codes",
+    "title" : "Medication  status  codes",
+    "description" : "Medication Status Codes",
+    "systems" : ["http://hl7.org/fhir/CodeSystem/medication-statement-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.367"],
+    "sources" : ["2.16.840.1.113883.4.642.3.367"],
+    "uses" : {
+    },
+    "StructureDefinition-MedicationTreatmentLineMin.html" : "Medication Treatment Line (Minimal)"
+  },
+  {
+    "url" : "http://terminology.hl7.org/ValueSet/v2-0203",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "Hl7VSIdentifierType",
+    "title" : "hl7VS-identifierType",
+    "description" : "Concepts specifying types of identififiers, as used in person and organization identification datatypes in HL7 Version 2 standards.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+    "oids" : ["2.16.840.1.113883.21.120"],
+    "sources" : ["2.16.840.1.113883.21.120"],
+    "uses" : {
+    },
+    "StructureDefinition-MedicationOverviewMin.html" : "Medication Overview (Minimal)"
+  }]
+}

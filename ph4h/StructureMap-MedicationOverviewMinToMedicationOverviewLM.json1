@@ -1,0 +1,560 @@
+{
+  "resourceType" : "StructureMap",
+  "id" : "MedicationOverviewMinToMedicationOverviewLM",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap MedicationOverviewMinToMedicationOverviewLM</b></p><a name=\"MedicationOverviewMinToMedicationOverviewLM\"> </a><a name=\"hcMedicationOverviewMinToMedicationOverviewLM\"> </a><pre class=\"fml\">\r\n<b>map</b><span style=\"color: navy\"> &quot;</span>http://smart.who.int/ph4h/StructureMap/MedicationOverviewMinToMedicationOverviewLM<span style=\"color: navy\">&quot; = &quot;</span>MedicationOverviewMinToMedicationOverviewLM<span style=\"color: navy\">&quot;\r\n\r\n</span><b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"StructureDefinition-MedicationOverviewMin.html\" title=\"Medication Overview (Minimal)\">http://smart.who.int/ph4h/StructureDefinition/MedicationOverviewMin</a><span style=\"color: navy\">&quot; </span><b>alias </b>MedicationOverviewMin <b>as </b><b>source</b>\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"StructureDefinition-MedicationTreatmentLineMin.html\" title=\"Medication Treatment Line (Minimal)\">http://smart.who.int/ph4h/StructureDefinition/MedicationTreatmentLineMin</a><span style=\"color: navy\">&quot; </span><b>alias </b>MedicationTreatmentLineMin <b>as </b><b>source</b>\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"file://E:\\work\\ImplementationGuides\\ihe-pharm-meow\\output/StructureDefinition-MedicationOverviewLM.html\" title=\"Medication Overview (model)\">https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationOverviewLM</a><span style=\"color: navy\">&quot; </span><b>alias </b>MedicationOverviewLM <b>as </b><b>target</b>\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"file://E:\\work\\ImplementationGuides\\ihe-pharm-meow\\output/StructureDefinition-PatientLM.html\" title=\"Patient (model)\">https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/PatientLM</a><span style=\"color: navy\">&quot; </span><b>alias </b>PatientLM <b>as </b><b>target</b>\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"file://E:\\work\\ImplementationGuides\\ihe-pharm-meow\\output/StructureDefinition-MedicationTreatmentLineLM.html\" title=\"Medication Treatment Line (model)\">https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationTreatmentLineLM</a><span style=\"color: navy\">&quot; </span><b>alias </b>MedicationTreatmentLineLM <b>as </b><b>target</b>\r\n\r\n<span style=\"color: navy\">// </span><span style=\"color: green\">---------------------------------------------------------------------------</span>\r\n<span style=\"color: navy\">// </span><span style=\"color: green\">Top-level group: 1 patient + 0..* medication treatment lines</span>\r\n<span style=\"color: navy\">// </span><span style=\"color: green\">---------------------------------------------------------------------------</span>\r\n<b>group </b>MedicationOverviewMinToMedicationOverviewLM<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">src</span><span style=\"color: navy\"> : </span>MedicationOverviewMin, <b>target</b> <span style=\"color: maroon\">tgt</span><span style=\"color: navy\"> : </span>MedicationOverviewLM<span style=\"color: navy\">)</span><span style=\"color: navy\"> {\r\n</span>  src<span style=\"color: navy\"><b> -&gt; </b></span>tgt.patient<b> as </b><span style=\"color: maroon\">patient</span><b> then </b>MedicationOverviewMinToPatientLM<span style=\"color: navy\">(</span><span style=\"color: maroon\">src</span><span style=\"color: navy\">, </span><span style=\"color: maroon\">patient</span><span style=\"color: navy\">)</span> <i>&quot;patient&quot;</i><span style=\"color: navy\">;</span>\r\n  src.m<b> as </b><span style=\"color: maroon\">line</span><span style=\"color: navy\"><b> -&gt; </b></span>tgt.medicationTreatmentLine<b> as </b><span style=\"color: maroon\">tline</span><b> then </b>MedicationTreatmentLineMinToMedicationTreatmentLineLM<span style=\"color: navy\">(</span><span style=\"color: maroon\">line</span><span style=\"color: navy\">, </span><span style=\"color: maroon\">tline</span><span style=\"color: navy\">)</span> <i>&quot;treatmentLine&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">---------------------------------------------------------------------------</span>\r\n<span style=\"color: navy\">// </span><span style=\"color: green\">MedicationOverviewMin demographic fields -&gt; PatientLM</span>\r\n<span style=\"color: navy\">// </span><span style=\"color: green\">---------------------------------------------------------------------------</span>\r\n<b>group </b>MedicationOverviewMinToPatientLM<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">src</span><span style=\"color: navy\"> : </span>MedicationOverviewMin, <b>target</b> <span style=\"color: maroon\">tgt</span><span style=\"color: navy\"> : </span>PatientLM<span style=\"color: navy\">)</span><span style=\"color: navy\"> {\r\n</span>  <span style=\"color: navy\">// </span><span style=\"color: green\">Name: create HumanName, populate, assign</span>\r\n  src.n<b> as </b><span style=\"color: maroon\">n</span><span style=\"color: navy\"><b> -&gt; </b></span> <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'HumanName'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">hn</span><span style=\"color: navy\">, </span> hn.text = <span style=\"color: maroon\">n</span><span style=\"color: navy\">, </span> tgt.name = <span style=\"color: maroon\">hn</span> <i>&quot;name&quot;</i><span style=\"color: navy\">;</span>\r\n  src.dob<b> as </b><span style=\"color: maroon\">dob</span><span style=\"color: navy\"><b> -&gt; </b></span>tgt.dateOfBirth = <span style=\"color: maroon\">dob</span> <i>&quot;dateOfBirth&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">Gender: create Coding, then CodeableConcept wrapping it, assign</span>\r\n  src.s<b> as </b><span style=\"color: maroon\">s</span><span style=\"color: navy\"><b> -&gt; </b></span> <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'Coding'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">gc</span><span style=\"color: navy\">, </span> gc.system = <span style=\"color: blue\">'http://hl7.org/fhir/administrative-gender'</span><span style=\"color: navy\">, </span> gc.code = <span style=\"color: maroon\">s</span><span style=\"color: navy\">, </span> <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'CodeableConcept'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">g</span><span style=\"color: navy\">, </span> g.coding = <span style=\"color: maroon\">gc</span><span style=\"color: navy\">, </span> tgt.gender = <span style=\"color: maroon\">g</span> <i>&quot;gender&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">Identifier: create Identifier, populate, assign. Identifier.type is intentionally</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">NOT emitted: the Min 'dt' code carries no code system, which produced</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">unvalidatable type.coding warnings (no system / not in IdentifierType VS).</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">Identifier.type is optional (0..1); the value alone is sufficient here.</span>\r\n  src.id<b> as </b><span style=\"color: maroon\">id</span><span style=\"color: navy\"><b> -&gt; </b></span><b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'Identifier'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">ident</span><b> then</b><span style=\"color: navy\"> {\r\n</span>    id<span style=\"color: navy\"><b> -&gt; </b></span>ident.value = <span style=\"color: maroon\">id</span> <i>&quot;identifierValue&quot;</i><span style=\"color: navy\">;</span>\r\n    id<span style=\"color: navy\"><b> -&gt; </b></span>tgt.identifier = <span style=\"color: maroon\">ident</span> <i>&quot;identifierAssign&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">}</span> <i>&quot;identifier&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">---------------------------------------------------------------------------</span>\r\n<span style=\"color: navy\">// </span><span style=\"color: green\">One MedicationTreatmentLineMin -&gt; one MedicationTreatmentLineLM</span>\r\n<span style=\"color: navy\">// </span><span style=\"color: green\">---------------------------------------------------------------------------</span>\r\n<b>group </b>MedicationTreatmentLineMinToMedicationTreatmentLineLM<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">src</span><span style=\"color: navy\"> : </span>MedicationTreatmentLineMin, <b>target</b> <span style=\"color: maroon\">tgt</span><span style=\"color: navy\"> : </span>MedicationTreatmentLineLM<span style=\"color: navy\">)</span><span style=\"color: navy\"> {\r\n</span>  <span style=\"color: navy\">// </span><span style=\"color: green\">Status: the Min source carries no record status; default to 'active'.</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">LM.status is 1..1 and the downstream R4 MedicationStatement.status is</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">1..1 required — without this rule, stage 2 emits status-less statements</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">that fail MEOW Bundle profile validation.</span>\r\n  src<span style=\"color: navy\"><b> -&gt; </b></span>tgt.status = <span style=\"color: blue\">'active'</span> <i>&quot;status&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">Medication: create Coding, then CodeableConcept wrapping it, assign.</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">The Min 'm' field is a bare code with no system; RACSEL production data uses</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">SNOMED CT, so tag it as SNOMED to satisfy validation.</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">NOTE: the ATC-coded example (e.g. L02BG03) is mislabelled by this fixed system.</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">If mixed code systems must be supported, the Min model should carry the system</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">alongside the code (e.g. an 'ms' field) rather than assuming SNOMED here.</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">Display intentionally NOT set: the Min 'm' field carries only a code, and</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">emitting the code as the display fails SNOMED display validation</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">(&quot;Wrong Display Name&quot;). Leaving it absent lets the term server supply it.</span>\r\n  src.m<b> as </b><span style=\"color: maroon\">med</span><span style=\"color: navy\"><b> -&gt; </b></span> <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'Coding'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">c</span><span style=\"color: navy\">, </span> c.system = <span style=\"color: blue\">'http://snomed.info/sct'</span><span style=\"color: navy\">, </span> c.code = <span style=\"color: maroon\">med</span><span style=\"color: navy\">, </span> <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'CodeableConcept'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">cc</span><span style=\"color: navy\">, </span> cc.coding = <span style=\"color: maroon\">c</span><span style=\"color: navy\">, </span> tgt.medication = <span style=\"color: maroon\">cc</span> <i>&quot;medication&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">Effective period: create Period, populate, assign</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">(Period uses .start/.end — NOT .low/.high; those are Range properties.)</span>\r\n  src<span style=\"color: navy\"><b> -&gt; </b></span><b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'Period'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">ep</span><b> then</b><span style=\"color: navy\"> {\r\n</span>    src.es<b> as </b><span style=\"color: maroon\">es</span><span style=\"color: navy\"><b> -&gt; </b></span>ep.start = <span style=\"color: maroon\">es</span> <i>&quot;effStart&quot;</i><span style=\"color: navy\">;</span>\r\n    src.ee<b> as </b><span style=\"color: maroon\">ee</span><span style=\"color: navy\"><b> -&gt; </b></span>ep.end = <span style=\"color: maroon\">ee</span> <i>&quot;effEnd&quot;</i><span style=\"color: navy\">;</span>\r\n    src<span style=\"color: navy\"><b> -&gt; </b></span>tgt.effectivePeriod = <span style=\"color: maroon\">ep</span> <i>&quot;effAssign&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">}</span> <i>&quot;effectivePeriod&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">recordingMetadata is a BackboneElement defined inline in the LM — navigate.</span>\r\n  src.da<b> as </b><span style=\"color: maroon\">da</span><span style=\"color: navy\"><b> -&gt; </b></span>tgt.recordingMetadata<b> as </b><span style=\"color: maroon\">rm</span><b> then</b><span style=\"color: navy\"> {\r\n</span>    da<span style=\"color: navy\"><b> -&gt; </b></span>rm.recordedTime = <span style=\"color: maroon\">da</span> <i>&quot;recordedTime&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">}</span> <i>&quot;dateAsserted&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">Dosage as free text. Route to preparationInstructions (a plain string array)</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">rather than comment.commentText: comment is a BackboneElement with several</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">1..1 sub-fields (author, date, commentText) that the Min source can't</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">populate, so creating a half-empty comment confuses matchbox's serializer.</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">preparationInstructions is a string field, no nested required structure.</span>\r\n  src.d<b> as </b><span style=\"color: maroon\">d</span><span style=\"color: navy\"><b> -&gt; </b></span>tgt.preparationInstructions = <span style=\"color: maroon\">d</span> <i>&quot;dosage&quot;</i><span style=\"color: navy\">;</span>\r\n  src.r<b> as </b><span style=\"color: maroon\">r</span><span style=\"color: navy\"><b> -&gt; </b></span>tgt.indicationText = <span style=\"color: maroon\">r</span> <i>&quot;reason&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">Adherence (treatmentStatus): MEOW requires adherence 1..1 downstream, so always</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">emit it. Default the code to 'active' and override with the source 'a' when it is</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">present. System is medication-statement-status (see $adherenceStatusVS alias — the</span>\r\n  <span style=\"color: navy\">// </span><span style=\"color: green\">R4 stand-in for the R5 adherence value set), which includes 'active'.</span>\r\n  src<span style=\"color: navy\"><b> -&gt; </b></span> <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'Coding'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">tsc</span><span style=\"color: navy\">, </span> tsc.system = <span style=\"color: blue\">'http://hl7.org/fhir/CodeSystem/medication-statement-status'</span><span style=\"color: navy\">, </span> tsc.code = <span style=\"color: blue\">'active'</span><span style=\"color: navy\">, </span> <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'CodeableConcept'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">ts</span><span style=\"color: navy\">, </span> ts.coding = <span style=\"color: maroon\">tsc</span><span style=\"color: navy\">, </span> tgt.treatmentStatus = <span style=\"color: maroon\">ts</span><b> then</b><span style=\"color: navy\"> {\r\n</span>    src.a<b> as </b><span style=\"color: maroon\">a</span><span style=\"color: navy\"><b> -&gt; </b></span>tsc.code = <span style=\"color: maroon\">a</span> <i>&quot;adherenceValue&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">}</span> <i>&quot;adherence&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span></pre></div>"
+  },
+  "url" : "http://smart.who.int/ph4h/StructureMap/MedicationOverviewMinToMedicationOverviewLM",
+  "version" : "0.9.9",
+  "name" : "MedicationOverviewMinToMedicationOverviewLM",
+  "status" : "draft",
+  "date" : "2026-07-09T08:39:10+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    }]
+  }],
+  "structure" : [{
+    "url" : "http://smart.who.int/ph4h/StructureDefinition/MedicationOverviewMin",
+    "mode" : "source",
+    "alias" : "MedicationOverviewMin"
+  },
+  {
+    "url" : "http://smart.who.int/ph4h/StructureDefinition/MedicationTreatmentLineMin",
+    "mode" : "source",
+    "alias" : "MedicationTreatmentLineMin"
+  },
+  {
+    "url" : "https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationOverviewLM",
+    "mode" : "target",
+    "alias" : "MedicationOverviewLM"
+  },
+  {
+    "url" : "https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/PatientLM",
+    "mode" : "target",
+    "alias" : "PatientLM"
+  },
+  {
+    "url" : "https://profiles.ihe.net/PHARM/MEOW/StructureDefinition/MedicationTreatmentLineLM",
+    "mode" : "target",
+    "alias" : "MedicationTreatmentLineLM"
+  }],
+  "group" : [{
+    "name" : "MedicationOverviewMinToMedicationOverviewLM",
+    "typeMode" : "none",
+    "documentation" : "---------------------------------------------------------------------------\r\nTop-level group: 1 patient + 0..* medication treatment lines\r\n---------------------------------------------------------------------------",
+    "input" : [{
+      "name" : "src",
+      "type" : "MedicationOverviewMin",
+      "mode" : "source"
+    },
+    {
+      "name" : "tgt",
+      "type" : "MedicationOverviewLM",
+      "mode" : "target"
+    }],
+    "rule" : [{
+      "name" : "patient",
+      "source" : [{
+        "context" : "src"
+      }],
+      "target" : [{
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "patient",
+        "variable" : "patient"
+      }],
+      "dependent" : [{
+        "name" : "MedicationOverviewMinToPatientLM",
+        "variable" : ["src",
+        "patient"]
+      }]
+    },
+    {
+      "name" : "treatmentLine",
+      "source" : [{
+        "context" : "src",
+        "element" : "m",
+        "variable" : "line"
+      }],
+      "target" : [{
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "medicationTreatmentLine",
+        "variable" : "tline"
+      }],
+      "dependent" : [{
+        "name" : "MedicationTreatmentLineMinToMedicationTreatmentLineLM",
+        "variable" : ["line",
+        "tline"]
+      }]
+    }]
+  },
+  {
+    "name" : "MedicationOverviewMinToPatientLM",
+    "typeMode" : "none",
+    "documentation" : "---------------------------------------------------------------------------\r\nMedicationOverviewMin demographic fields -> PatientLM\r\n---------------------------------------------------------------------------",
+    "input" : [{
+      "name" : "src",
+      "type" : "MedicationOverviewMin",
+      "mode" : "source"
+    },
+    {
+      "name" : "tgt",
+      "type" : "PatientLM",
+      "mode" : "target"
+    }],
+    "rule" : [{
+      "name" : "name",
+      "source" : [{
+        "context" : "src",
+        "element" : "n",
+        "variable" : "n"
+      }],
+      "target" : [{
+        "contextType" : "variable",
+        "variable" : "hn",
+        "transform" : "create",
+        "parameter" : [{
+          "valueString" : "HumanName"
+        }]
+      },
+      {
+        "context" : "hn",
+        "contextType" : "variable",
+        "element" : "text",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "n"
+        }]
+      },
+      {
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "name",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "hn"
+        }]
+      }]
+    },
+    {
+      "name" : "dateOfBirth",
+      "source" : [{
+        "context" : "src",
+        "element" : "dob",
+        "variable" : "dob"
+      }],
+      "target" : [{
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "dateOfBirth",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "dob"
+        }]
+      }]
+    },
+    {
+      "name" : "gender",
+      "source" : [{
+        "context" : "src",
+        "element" : "s",
+        "variable" : "s"
+      }],
+      "target" : [{
+        "contextType" : "variable",
+        "variable" : "gc",
+        "transform" : "create",
+        "parameter" : [{
+          "valueString" : "Coding"
+        }]
+      },
+      {
+        "context" : "gc",
+        "contextType" : "variable",
+        "element" : "system",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueString" : "http://hl7.org/fhir/administrative-gender"
+        }]
+      },
+      {
+        "context" : "gc",
+        "contextType" : "variable",
+        "element" : "code",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "s"
+        }]
+      },
+      {
+        "contextType" : "variable",
+        "variable" : "g",
+        "transform" : "create",
+        "parameter" : [{
+          "valueString" : "CodeableConcept"
+        }]
+      },
+      {
+        "context" : "g",
+        "contextType" : "variable",
+        "element" : "coding",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "gc"
+        }]
+      },
+      {
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "gender",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "g"
+        }]
+      }]
+    },
+    {
+      "name" : "identifier",
+      "source" : [{
+        "context" : "src",
+        "element" : "id",
+        "variable" : "id"
+      }],
+      "target" : [{
+        "contextType" : "variable",
+        "variable" : "ident",
+        "transform" : "create",
+        "parameter" : [{
+          "valueString" : "Identifier"
+        }]
+      }],
+      "rule" : [{
+        "name" : "identifierValue",
+        "source" : [{
+          "context" : "id"
+        }],
+        "target" : [{
+          "context" : "ident",
+          "contextType" : "variable",
+          "element" : "value",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "id"
+          }]
+        }]
+      },
+      {
+        "name" : "identifierAssign",
+        "source" : [{
+          "context" : "id"
+        }],
+        "target" : [{
+          "context" : "tgt",
+          "contextType" : "variable",
+          "element" : "identifier",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "ident"
+          }]
+        }]
+      }]
+    }]
+  },
+  {
+    "name" : "MedicationTreatmentLineMinToMedicationTreatmentLineLM",
+    "typeMode" : "none",
+    "documentation" : "---------------------------------------------------------------------------\r\nOne MedicationTreatmentLineMin -> one MedicationTreatmentLineLM\r\n---------------------------------------------------------------------------",
+    "input" : [{
+      "name" : "src",
+      "type" : "MedicationTreatmentLineMin",
+      "mode" : "source"
+    },
+    {
+      "name" : "tgt",
+      "type" : "MedicationTreatmentLineLM",
+      "mode" : "target"
+    }],
+    "rule" : [{
+      "name" : "status",
+      "source" : [{
+        "context" : "src"
+      }],
+      "target" : [{
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "status",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueString" : "active"
+        }]
+      }]
+    },
+    {
+      "name" : "medication",
+      "source" : [{
+        "context" : "src",
+        "element" : "m",
+        "variable" : "med"
+      }],
+      "target" : [{
+        "contextType" : "variable",
+        "variable" : "c",
+        "transform" : "create",
+        "parameter" : [{
+          "valueString" : "Coding"
+        }]
+      },
+      {
+        "context" : "c",
+        "contextType" : "variable",
+        "element" : "system",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueString" : "http://snomed.info/sct"
+        }]
+      },
+      {
+        "context" : "c",
+        "contextType" : "variable",
+        "element" : "code",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "med"
+        }]
+      },
+      {
+        "contextType" : "variable",
+        "variable" : "cc",
+        "transform" : "create",
+        "parameter" : [{
+          "valueString" : "CodeableConcept"
+        }]
+      },
+      {
+        "context" : "cc",
+        "contextType" : "variable",
+        "element" : "coding",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "c"
+        }]
+      },
+      {
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "medication",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "cc"
+        }]
+      }]
+    },
+    {
+      "name" : "effectivePeriod",
+      "source" : [{
+        "context" : "src"
+      }],
+      "target" : [{
+        "contextType" : "variable",
+        "variable" : "ep",
+        "transform" : "create",
+        "parameter" : [{
+          "valueString" : "Period"
+        }]
+      }],
+      "rule" : [{
+        "name" : "effStart",
+        "source" : [{
+          "context" : "src",
+          "element" : "es",
+          "variable" : "es"
+        }],
+        "target" : [{
+          "context" : "ep",
+          "contextType" : "variable",
+          "element" : "start",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "es"
+          }]
+        }]
+      },
+      {
+        "name" : "effEnd",
+        "source" : [{
+          "context" : "src",
+          "element" : "ee",
+          "variable" : "ee"
+        }],
+        "target" : [{
+          "context" : "ep",
+          "contextType" : "variable",
+          "element" : "end",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "ee"
+          }]
+        }]
+      },
+      {
+        "name" : "effAssign",
+        "source" : [{
+          "context" : "src"
+        }],
+        "target" : [{
+          "context" : "tgt",
+          "contextType" : "variable",
+          "element" : "effectivePeriod",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "ep"
+          }]
+        }]
+      }]
+    },
+    {
+      "name" : "dateAsserted",
+      "source" : [{
+        "context" : "src",
+        "element" : "da",
+        "variable" : "da"
+      }],
+      "target" : [{
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "recordingMetadata",
+        "variable" : "rm"
+      }],
+      "rule" : [{
+        "name" : "recordedTime",
+        "source" : [{
+          "context" : "da"
+        }],
+        "target" : [{
+          "context" : "rm",
+          "contextType" : "variable",
+          "element" : "recordedTime",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "da"
+          }]
+        }]
+      }]
+    },
+    {
+      "name" : "dosage",
+      "source" : [{
+        "context" : "src",
+        "element" : "d",
+        "variable" : "d"
+      }],
+      "target" : [{
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "preparationInstructions",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "d"
+        }]
+      }]
+    },
+    {
+      "name" : "reason",
+      "source" : [{
+        "context" : "src",
+        "element" : "r",
+        "variable" : "r"
+      }],
+      "target" : [{
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "indicationText",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "r"
+        }]
+      }]
+    },
+    {
+      "name" : "adherence",
+      "source" : [{
+        "context" : "src"
+      }],
+      "target" : [{
+        "contextType" : "variable",
+        "variable" : "tsc",
+        "transform" : "create",
+        "parameter" : [{
+          "valueString" : "Coding"
+        }]
+      },
+      {
+        "context" : "tsc",
+        "contextType" : "variable",
+        "element" : "system",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueString" : "http://hl7.org/fhir/CodeSystem/medication-statement-status"
+        }]
+      },
+      {
+        "context" : "tsc",
+        "contextType" : "variable",
+        "element" : "code",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueString" : "active"
+        }]
+      },
+      {
+        "contextType" : "variable",
+        "variable" : "ts",
+        "transform" : "create",
+        "parameter" : [{
+          "valueString" : "CodeableConcept"
+        }]
+      },
+      {
+        "context" : "ts",
+        "contextType" : "variable",
+        "element" : "coding",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "tsc"
+        }]
+      },
+      {
+        "context" : "tgt",
+        "contextType" : "variable",
+        "element" : "treatmentStatus",
+        "transform" : "copy",
+        "parameter" : [{
+          "valueId" : "ts"
+        }]
+      }],
+      "rule" : [{
+        "name" : "adherenceValue",
+        "source" : [{
+          "context" : "src",
+          "element" : "a",
+          "variable" : "a"
+        }],
+        "target" : [{
+          "context" : "tsc",
+          "contextType" : "variable",
+          "element" : "code",
+          "transform" : "copy",
+          "parameter" : [{
+            "valueId" : "a"
+          }]
+        }]
+      }]
+    }]
+  }]
+}

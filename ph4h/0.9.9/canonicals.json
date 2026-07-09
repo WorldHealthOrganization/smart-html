@@ -1,0 +1,63 @@
+[{
+  "id" : "smart.who.int.ph4h",
+  "type" : "ImplementationGuide",
+  "url" : "http://smart.who.int/ph4h/ImplementationGuide/smart.who.int.ph4h",
+  "version" : "0.9.9",
+  "name" : "PH4H"
+},
+{
+  "id" : "MedicationOverviewMin",
+  "type" : "StructureDefinition",
+  "url" : "http://smart.who.int/ph4h/StructureDefinition/MedicationOverviewMin",
+  "version" : "0.9.9",
+  "name" : "MedicationOverviewMin"
+},
+{
+  "id" : "MedicationTreatmentLineMin",
+  "type" : "StructureDefinition",
+  "url" : "http://smart.who.int/ph4h/StructureDefinition/MedicationTreatmentLineMin",
+  "version" : "0.9.9",
+  "name" : "MedicationTreatmentLineMin"
+},
+{
+  "id" : "SmartConsent",
+  "type" : "StructureDefinition",
+  "url" : "http://smart.who.int/ph4h/StructureDefinition/SmartConsent",
+  "version" : "0.9.9",
+  "name" : "SmartConsent"
+},
+{
+  "id" : "SmartIPS",
+  "type" : "StructureDefinition",
+  "url" : "http://smart.who.int/ph4h/StructureDefinition/SmartIPS",
+  "version" : "0.9.9",
+  "name" : "SmartIPS"
+},
+{
+  "id" : "SmartIPSComposition",
+  "type" : "StructureDefinition",
+  "url" : "http://smart.who.int/ph4h/StructureDefinition/SmartIPSComposition",
+  "version" : "0.9.9",
+  "name" : "SmartIPSComposition"
+},
+{
+  "id" : "MedicationOverviewLMToMedicationOverviewBundle",
+  "type" : "StructureMap",
+  "url" : "http://smart.who.int/ph4h/StructureMap/MedicationOverviewLMToMedicationOverviewBundle",
+  "version" : "0.9.9",
+  "name" : "MedicationOverviewLMToMedicationOverviewBundle"
+},
+{
+  "id" : "MedicationOverviewMinToMedicationOverviewBundle",
+  "type" : "StructureMap",
+  "url" : "http://smart.who.int/ph4h/StructureMap/MedicationOverviewMinToMedicationOverviewBundle",
+  "version" : "0.9.9",
+  "name" : "MedicationOverviewMinToMedicationOverviewBundle"
+},
+{
+  "id" : "MedicationOverviewMinToMedicationOverviewLM",
+  "type" : "StructureMap",
+  "url" : "http://smart.who.int/ph4h/StructureMap/MedicationOverviewMinToMedicationOverviewLM",
+  "version" : "0.9.9",
+  "name" : "MedicationOverviewMinToMedicationOverviewLM"
+}]
