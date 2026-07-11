@@ -1,0 +1,66 @@
+# Example: How to integrate with smart-base ghbuild workflow
+
+# This is an example of the code that should be added to the smart-base 
+# ghbuild workflow to trigger the publication release workflow.
+
+# Add this step after the successful gh-pages deployment:
+
+- name: Trigger publication release for release branches
+  if: env.IS_DEFAULT_BRANCH == 'false' && startsWith(github.ref_name, 'release-')
+  run: |
+    echo "Release branch detected: ${{ github.ref_name }}"
+    echo "Checking if deployment was successful..."
+    
+    # Only trigger if this is a WHO organization repository
+    if [[ "${{ github.repository_owner }}" == "WorldHealthOrganization" ]]; then
+      echo "Triggering publication release workflow in smart-html..."
+      
+      # Extract repository name
+      REPO_NAME="${{ github.repository }}"
+      REPO_NAME="${REPO_NAME#*/}"
+      
+      # Skip if this is smart-html itself
+      if [[ "$REPO_NAME" == "smart-html" ]]; then
+        echo "Skipping publication release - this is smart-html repository"
+        exit 0
+      fi
+      
+      # Only trigger for smart-* repositories
+      if [[ ! "$REPO_NAME" =~ ^smart-.+ ]]; then
+        echo "Skipping publication release - not a smart-* repository"
+        exit 0
+      fi
+      
+      # Trigger the publication release workflow via repository_dispatch
+      curl -X POST \
+        -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+        -H "Accept: application/vnd.github.v3+json" \
+        "https://api.github.com/repos/WorldHealthOrganization/smart-html/dispatches" \
+        -d "{
+          \"event_type\": \"release-publication-request\",
+          \"client_payload\": {
+            \"source_repository\": \"$REPO_NAME\",
+            \"release_branch\": \"${{ github.ref_name }}\",
+            \"source_owner\": \"${{ github.repository_owner }}\",
+            \"workflow_run_id\": \"${{ github.run_id }}\",
+            \"commit_sha\": \"${{ github.sha }}\"
+          }
+        }"
+      
+      echo "✅ Publication release request sent to smart-html repository"
+    else
+      echo "⚠️ Skipping publication release - not a WHO organization repository"
+    fi
+  env:
+    GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+# Alternative approach using workflow_call:
+# (This could be used instead of repository_dispatch)
+
+- name: Call publication release workflow directly
+  if: env.IS_DEFAULT_BRANCH == 'false' && startsWith(github.ref_name, 'release-')
+  uses: WorldHealthOrganization/smart-html/.github/workflows/publication-release.yml@main
+  with:
+    source_repository: ${{ github.event.repository.name }}
+    release_branch: ${{ github.ref_name }}
+    source_owner: ${{ github.repository_owner }}
