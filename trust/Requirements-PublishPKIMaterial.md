@@ -1,4 +1,4 @@
-# Publish PKI material - WHO SMART Trust v1.6.0
+# Publish PKI material - WHO SMART Trust v1.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Indices**](indices.md)
@@ -9,8 +9,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://smart.who.int/trust/Requirements/PublishPKIMaterial | *Version*:1.6.0 |
-| Active as of 2026-07-06 | *Computable Name*:Publish Public Keys |
+| *Official URL*:http://smart.who.int/trust/Requirements/PublishPKIMaterial | *Version*:1.7.0 |
+| Active as of 2026-07-30 | *Computable Name*:Publish Public Keys |
 
  
 Publish trust material to a Trust Anchor 
@@ -40,12 +40,12 @@ Publish trust material to a Trust Anchor
     "profile" : ["http://smart.who.int/base/StructureDefinition/SGRequirements"]
   },
   "url" : "http://smart.who.int/trust/Requirements/PublishPKIMaterial",
-  "version" : "1.6.0",
+  "version" : "1.7.0",
   "name" : "Publish Public Keys",
   "title" : "Publish PKI material",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-06T11:52:41+00:00",
+  "date" : "2026-07-30T11:57:48+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

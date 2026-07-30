@@ -29,6 +29,10 @@
     "-6": {
       "$ref": "http://smart.who.int/base/StructureDefinition-DVCMin.schema.json",
       "description": "Minimal Digital Vaccination Certificate Payload (Proposed)"
+    },
+    "-7": {
+      "$ref": "http://smart.who.int/base/StructureDefinition-MedicationTreatmentLineMin.schema.json",
+      "description": "Medication Treatment Line Minimal (Proposed)"
     }
   },
   "required": [

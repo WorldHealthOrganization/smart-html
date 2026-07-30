@@ -1,4 +1,4 @@
-# Distribute business rules - WHO SMART Trust v1.6.0
+# Distribute business rules - WHO SMART Trust v1.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Indices**](indices.md)
@@ -9,8 +9,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://smart.who.int/trust/Requirements/DistributeBusinessRules | *Version*:1.6.0 |
-| Active as of 2026-07-06 | *Computable Name*:Distribute Business Rules |
+| *Official URL*:http://smart.who.int/trust/Requirements/DistributeBusinessRules | *Version*:1.7.0 |
+| Active as of 2026-07-30 | *Computable Name*:Distribute Business Rules |
 
  
 Make received business rules available through a distrubution point to a Receiver 
@@ -40,12 +40,12 @@ Make received business rules available through a distrubution point to a Receive
     "profile" : ["http://smart.who.int/base/StructureDefinition/SGRequirements"]
   },
   "url" : "http://smart.who.int/trust/Requirements/DistributeBusinessRules",
-  "version" : "1.6.0",
+  "version" : "1.7.0",
   "name" : "Distribute Business Rules",
   "title" : "Distribute business rules",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-06T11:52:41+00:00",
+  "date" : "2026-07-30T11:57:48+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

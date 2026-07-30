@@ -5,15 +5,15 @@
   "description" : "SMART Trust Implementation Guide",
   "status" : "draft",
   "package-id" : "smart.who.int.trust",
-  "ig-ver" : "1.6.0",
-  "date" : "Mon, 06 Jul, 2026 11:52:41 +0000",
-  "dateISO8601" : "2026-07-06T11:52:41+00:00",
-  "errs" : 3993,
-  "warnings" : 2001,
-  "hints" : 864,
+  "ig-ver" : "1.7.0",
+  "date" : "Thu, 30 Jul, 2026 11:57:48 +0000",
+  "dateISO8601" : "2026-07-30T11:57:48+00:00",
+  "errs" : 4102,
+  "warnings" : 2056,
+  "hints" : 884,
   "suppressed-hints" : 0,
   "suppressed-warnings" : 0,
   "version" : "5.0.0",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 2988838456
+  "maxMemory" : 3720209064
 }

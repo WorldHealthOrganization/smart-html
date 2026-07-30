@@ -56,6 +56,9 @@
     "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#CAN": {
       "en": "CAN"
     },
+    "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#CHL": {
+      "en": "CHL"
+    },
     "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#CYP": {
       "en": "CYP"
     },
@@ -116,11 +119,17 @@
     "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#OMN": {
       "en": "OMN"
     },
+    "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#PAN": {
+      "en": "PAN"
+    },
     "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#POL": {
       "en": "POL"
     },
     "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#PRT": {
       "en": "PRT"
+    },
+    "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#PRY": {
+      "en": "PRY"
     },
     "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#SAU": {
       "en": "SAU"
@@ -151,6 +160,9 @@
     },
     "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#TUR": {
       "en": "TUR"
+    },
+    "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#URY": {
+      "en": "URY"
     },
     "http://smart.who.int/trust/CodeSystems/Participants-UAT#IOM": {
       "en": "IOM"
@@ -193,6 +205,6 @@
     }
   },
   "fhir:valueSet": "http://smart.who.int/trust/ValueSet/Participants-UAT",
-  "fhir:version": "1.6.0",
-  "fhir:expansionTimestamp": "2026-07-06T11:55:30.017321"
+  "fhir:version": "1.7.0",
+  "fhir:expansionTimestamp": "2026-07-30T12:01:34.781242"
 }

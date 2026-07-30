@@ -1,4 +1,4 @@
-# WHO GDHCN Payload Types - WHO SMART Trust v1.6.0
+# WHO GDHCN Payload Types - WHO SMART Trust v1.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Indices**](indices.md)
@@ -9,8 +9,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://smart.who.int/trust/CodeSystem/PayloadTypes | *Version*:1.6.0 |
-| Active as of 2026-07-06 | *Computable Name*:PayloadTypes |
+| *Official URL*:http://smart.who.int/trust/CodeSystem/PayloadTypes | *Version*:1.7.0 |
+| Active as of 2026-07-30 | *Computable Name*:PayloadTypes |
 
  
 CodeSystem for GDHCN Payload types 
@@ -28,12 +28,12 @@ CodeSystem for GDHCN Payload types
   "resourceType" : "CodeSystem",
   "id" : "PayloadTypes",
   "url" : "http://smart.who.int/trust/CodeSystem/PayloadTypes",
-  "version" : "1.6.0",
+  "version" : "1.7.0",
   "name" : "PayloadTypes",
   "title" : "WHO GDHCN Payload Types",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-06T11:52:41+00:00",
+  "date" : "2026-07-30T11:57:48+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

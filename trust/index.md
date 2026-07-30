@@ -1,4 +1,4 @@
-# Home - WHO SMART Trust v1.6.0
+# Home - WHO SMART Trust v1.7.0
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://smart.who.int/trust/ImplementationGuide/smart.who.int.trust | *Version*:1.6.0 |
-| Draft as of 2026-07-06 | *Computable Name*:Trust |
+| *Official URL*:http://smart.who.int/trust/ImplementationGuide/smart.who.int.trust | *Version*:1.7.0 |
+| Draft as of 2026-07-30 | *Computable Name*:Trust |
 
 ### Summary
 
@@ -114,12 +114,12 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
     "profile" : ["http://smart.who.int/base/StructureDefinition/SGImplementationGuide"]
   },
   "url" : "http://smart.who.int/trust/ImplementationGuide/smart.who.int.trust",
-  "version" : "1.6.0",
+  "version" : "1.7.0",
   "name" : "Trust",
   "title" : "WHO SMART Trust",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-07-06T11:52:41+00:00",
+  "date" : "2026-07-30T11:57:48+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",
@@ -146,7 +146,7 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r5",
-    "version" : "7.2.0"
+    "version" : "7.3.0"
   },
   {
     "id" : "hl7_fhir_uv_extensions_r5",
@@ -177,6 +177,12 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
     "uri" : "https://profiles.ihe.net/ITI/mCSD/ImplementationGuide/ihe.iti.mcsd",
     "packageId" : "ihe.iti.mcsd",
     "version" : "3.8.0"
+  },
+  {
+    "id" : "smart_who_int_ph4h",
+    "uri" : "http://smart.who.int/ph4h/ImplementationGuide/smart.who.int.ph4h",
+    "packageId" : "smart.who.int.ph4h",
+    "version" : "0.9.9"
   }],
   "definition" : {
     "extension" : [{
@@ -187,6 +193,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical:abstract"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-CWT.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/CWT"
@@ -199,6 +209,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-CWTPayload.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/CWTPayload"
@@ -211,6 +225,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-COSEHeader.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/COSEHeader"
@@ -223,6 +241,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Requirements"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Requirements-DistributeBusinessRules.html"
       }],
       "reference" : {
         "reference" : "Requirements/DistributeBusinessRules"
@@ -235,6 +257,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Requirements"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Requirements-DistributeBusinessRulesCertLogic.html"
       }],
       "reference" : {
         "reference" : "Requirements/DistributeBusinessRulesCertLogic"
@@ -247,6 +273,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Requirements"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Requirements-DistributeBusinessRulesFHIR.html"
       }],
       "reference" : {
         "reference" : "Requirements/DistributeBusinessRulesFHIR"
@@ -259,6 +289,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Requirements"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Requirements-DistributePKIMaterial.html"
       }],
       "reference" : {
         "reference" : "Requirements/DistributePKIMaterial"
@@ -271,6 +305,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Requirements"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Requirements-DistributePKIMaterialDID.html"
       }],
       "reference" : {
         "reference" : "Requirements/DistributePKIMaterialDID"
@@ -283,6 +321,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Requirements"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Requirements-DistributePKIMaterialAPI.html"
       }],
       "reference" : {
         "reference" : "Requirements/DistributePKIMaterialAPI"
@@ -295,6 +337,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ConceptMap"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ConceptMap-ParticipantsToWHORegionalOffices.html"
       }],
       "reference" : {
         "reference" : "ConceptMap/ParticipantsToWHORegionalOffices"
@@ -307,6 +353,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-ALB.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-ALB"
@@ -318,6 +368,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-ALB-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-ALB-UAT"
@@ -329,6 +383,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-AND.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-AND"
@@ -340,6 +398,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-AND-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-AND-DEV"
@@ -351,6 +413,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-AND-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-AND-UAT"
@@ -362,6 +428,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-ARG-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-ARG-DEV"
@@ -373,6 +443,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-ARM.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-ARM"
@@ -384,6 +458,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-ARM-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-ARM-DEV"
@@ -395,6 +473,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-ARM-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-ARM-UAT"
@@ -406,6 +488,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-BEL.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-BEL"
@@ -417,6 +503,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-BEL-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-BEL-UAT"
@@ -428,6 +518,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-BEN.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-BEN"
@@ -439,6 +533,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-BEN-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-BEN-UAT"
@@ -450,6 +548,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-BHS-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-BHS-DEV"
@@ -461,6 +563,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-BLZ-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-BLZ-DEV"
@@ -472,6 +578,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-BRA.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-BRA"
@@ -483,6 +593,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-BRA-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-BRA-DEV"
@@ -494,6 +608,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-BRA-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-BRA-UAT"
@@ -505,6 +623,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-BRB-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-BRB-DEV"
@@ -516,6 +638,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-CAN-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-CAN-UAT"
@@ -527,6 +653,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-CHL-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-CHL-DEV"
@@ -538,6 +668,25 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-CHL-UAT.html"
+      }],
+      "reference" : {
+        "reference" : "Organization/GDHCNParticipant-CHL-UAT"
+      },
+      "name" : "GDHCNParticipant-CHL-UAT",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-COL-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-COL-DEV"
@@ -549,6 +698,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-CRI-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-CRI-DEV"
@@ -560,6 +713,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-CYP.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-CYP"
@@ -571,6 +728,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-CYP-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-CYP-DEV"
@@ -582,6 +743,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-CYP-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-CYP-UAT"
@@ -593,6 +758,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-CZE.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-CZE"
@@ -604,6 +773,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-CZE-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-CZE-UAT"
@@ -615,6 +788,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-DOM-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-DOM-DEV"
@@ -626,6 +803,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-ECU-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-ECU-DEV"
@@ -637,6 +818,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-ECU-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-ECU-UAT"
@@ -648,6 +833,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-ESP.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-ESP"
@@ -659,6 +848,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-ESP-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-ESP-UAT"
@@ -670,6 +863,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-EST.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-EST"
@@ -681,6 +878,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-EST-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-EST-DEV"
@@ -692,6 +893,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-EST-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-EST-UAT"
@@ -703,6 +908,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-FIN.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-FIN"
@@ -714,6 +923,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-FIN-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-FIN-UAT"
@@ -725,6 +938,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-FRA.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-FRA"
@@ -736,6 +953,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-FRA-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-FRA-UAT"
@@ -747,6 +968,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-FRO.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-FRO"
@@ -758,6 +983,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-FRO-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-FRO-UAT"
@@ -769,6 +998,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-GTM-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-GTM-DEV"
@@ -780,6 +1013,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-GTM-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-GTM-UAT"
@@ -791,6 +1028,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-HND-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-HND-DEV"
@@ -802,6 +1043,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-HRV-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-HRV-UAT"
@@ -813,6 +1058,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-IDN.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-IDN"
@@ -824,6 +1073,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-IDN-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-IDN-DEV"
@@ -835,6 +1088,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-IDN-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-IDN-UAT"
@@ -846,6 +1103,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-IOM-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-IOM-UAT"
@@ -857,6 +1118,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-IRL.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-IRL"
@@ -868,6 +1133,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-IRL-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-IRL-UAT"
@@ -879,6 +1148,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-ISL.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-ISL"
@@ -890,6 +1163,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-LTU.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-LTU"
@@ -901,6 +1178,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-LTU-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-LTU-UAT"
@@ -912,6 +1193,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-LVA.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-LVA"
@@ -923,6 +1208,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-LVA-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-LVA-DEV"
@@ -934,6 +1223,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-LVA-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-LVA-UAT"
@@ -945,6 +1238,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-MCO.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-MCO"
@@ -956,6 +1253,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-MCO-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-MCO-UAT"
@@ -967,6 +1268,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-MLT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-MLT"
@@ -978,6 +1283,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-MLT-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-MLT-UAT"
@@ -989,6 +1298,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-MYS.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-MYS"
@@ -1000,6 +1313,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-MYS-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-MYS-UAT"
@@ -1011,6 +1328,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-NLD.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-NLD"
@@ -1022,6 +1343,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-NLD-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-NLD-UAT"
@@ -1033,6 +1358,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-NZL.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-NZL"
@@ -1044,6 +1373,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-NZL-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-NZL-UAT"
@@ -1055,6 +1388,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-OMN.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-OMN"
@@ -1066,6 +1403,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-OMN-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-OMN-DEV"
@@ -1077,6 +1418,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-OMN-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-OMN-UAT"
@@ -1088,6 +1433,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-PAN-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-PAN-DEV"
@@ -1099,6 +1448,25 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-PAN-UAT.html"
+      }],
+      "reference" : {
+        "reference" : "Organization/GDHCNParticipant-PAN-UAT"
+      },
+      "name" : "GDHCNParticipant-PAN-UAT",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-PER-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-PER-DEV"
@@ -1110,6 +1478,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-POL.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-POL"
@@ -1121,6 +1493,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-POL-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-POL-UAT"
@@ -1132,6 +1508,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-PRT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-PRT"
@@ -1143,6 +1523,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-PRT-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-PRT-UAT"
@@ -1154,6 +1538,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-PRY-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-PRY-DEV"
@@ -1165,6 +1553,25 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-PRY-UAT.html"
+      }],
+      "reference" : {
+        "reference" : "Organization/GDHCNParticipant-PRY-UAT"
+      },
+      "name" : "GDHCNParticipant-PRY-UAT",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-SAU-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-SAU-UAT"
@@ -1176,6 +1583,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-SGP.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-SGP"
@@ -1187,6 +1598,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-SGP-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-SGP-DEV"
@@ -1198,6 +1613,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-SGP-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-SGP-UAT"
@@ -1209,6 +1628,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-SLV-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-SLV-DEV"
@@ -1220,6 +1643,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-SLV-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-SLV-UAT"
@@ -1231,6 +1658,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-SMR.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-SMR"
@@ -1242,6 +1673,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-SMR-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-SMR-DEV"
@@ -1253,6 +1688,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-SMR-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-SMR-UAT"
@@ -1264,6 +1703,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-SUR-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-SUR-DEV"
@@ -1275,6 +1718,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-SVK.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-SVK"
@@ -1286,6 +1733,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-SVK-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-SVK-UAT"
@@ -1297,6 +1748,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-SVN.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-SVN"
@@ -1308,6 +1763,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-SVN-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-SVN-DEV"
@@ -1319,6 +1778,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-SVN-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-SVN-UAT"
@@ -1330,6 +1793,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-SWE.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-SWE"
@@ -1341,6 +1808,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-SWE-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-SWE-UAT"
@@ -1352,6 +1823,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-TGO.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-TGO"
@@ -1363,6 +1838,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-TGO-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-TGO-DEV"
@@ -1374,6 +1853,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-TGO-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-TGO-UAT"
@@ -1385,6 +1868,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-THA.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-THA"
@@ -1396,6 +1883,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-THA-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-THA-UAT"
@@ -1407,6 +1898,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-TUR.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-TUR"
@@ -1418,6 +1913,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-TUR-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-TUR-UAT"
@@ -1429,6 +1928,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-URY-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-URY-DEV"
@@ -1440,6 +1943,25 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-URY-UAT.html"
+      }],
+      "reference" : {
+        "reference" : "Organization/GDHCNParticipant-URY-UAT"
+      },
+      "name" : "GDHCNParticipant-URY-UAT",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-USA-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-USA-DEV"
@@ -1451,6 +1973,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-WHO.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-WHO"
@@ -1462,6 +1988,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-WHO-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-WHO-DEV"
@@ -1473,6 +2003,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-WHO-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-WHO-UAT"
@@ -1484,6 +2018,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-XCL-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-XCL-DEV"
@@ -1495,6 +2033,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-XML-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-XML-DEV"
@@ -1506,6 +2048,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-XXA-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-XXA-DEV"
@@ -1517,6 +2063,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-XXA-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-XXA-UAT"
@@ -1528,6 +2078,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-XXB-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-XXB-DEV"
@@ -1539,6 +2093,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-XXB-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-XXB-UAT"
@@ -1550,6 +2108,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-XXC-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-XXC-DEV"
@@ -1561,6 +2123,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-XXC-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-XXC-UAT"
@@ -1572,6 +2138,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-XXD-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-XXD-DEV"
@@ -1583,6 +2153,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-XXD-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-XXD-UAT"
@@ -1594,6 +2168,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-XXE-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-XXE-DEV"
@@ -1605,6 +2183,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-XXF-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-XXF-DEV"
@@ -1616,6 +2198,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-XXG-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-XXG-DEV"
@@ -1627,6 +2213,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-XXH-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-XXH-DEV"
@@ -1638,6 +2228,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-XXI-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-XXI-DEV"
@@ -1649,6 +2243,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-XXJ-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-XXJ-DEV"
@@ -1660,6 +2258,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-XXK-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-XXK-DEV"
@@ -1671,6 +2273,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-XXO-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-XXO-DEV"
@@ -1682,6 +2288,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-XXO-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-XXO-UAT"
@@ -1693,6 +2303,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-XXP-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-XXP-DEV"
@@ -1704,6 +2318,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-XXQ-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-XXQ-UAT"
@@ -1715,6 +2333,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-XXS-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-XXS-UAT"
@@ -1726,6 +2348,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-XXU-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-XXU-DEV"
@@ -1737,6 +2363,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-XXU-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-XXU-UAT"
@@ -1748,6 +2378,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-XXV-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-XXV-DEV"
@@ -1759,6 +2393,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-XXV-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-XXV-UAT"
@@ -1770,6 +2408,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-XXX-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-XXX-DEV"
@@ -1781,6 +2423,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-XXX-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-XXX-UAT"
@@ -1792,6 +2438,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-XYK-DEV.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-XYK-DEV"
@@ -1803,6 +2453,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-XYK-UAT.html"
       }],
       "reference" : {
         "reference" : "Organization/GDHCNParticipant-XYK-UAT"
@@ -1814,6 +2468,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-ALB-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-ALB-All"
@@ -1826,6 +2484,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-ALB-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-ALB-DSC"
@@ -1837,6 +2499,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-ALB-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-ALB-SCA"
@@ -1848,6 +2514,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-ALB-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-ALB-UAT-All"
@@ -1860,6 +2530,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-ALB-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-ALB-UAT-DSC"
@@ -1871,6 +2545,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-ALB-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-ALB-UAT-SCA"
@@ -1882,6 +2560,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-AND-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-AND-All"
@@ -1894,6 +2576,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-AND-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-AND-DEV-All"
@@ -1906,6 +2592,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-AND-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-AND-DEV-DSC"
@@ -1917,6 +2607,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-AND-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-AND-DEV-SCA"
@@ -1928,6 +2622,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-AND-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-AND-DSC"
@@ -1939,6 +2637,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-AND-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-AND-SCA"
@@ -1950,6 +2652,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-AND-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-AND-UAT-All"
@@ -1962,6 +2668,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-AND-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-AND-UAT-DSC"
@@ -1973,6 +2683,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-AND-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-AND-UAT-SCA"
@@ -1984,6 +2698,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-ARG-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-ARG-DEV-All"
@@ -1996,6 +2714,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-ARG-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-ARG-DEV-DSC"
@@ -2007,6 +2729,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-ARG-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-ARG-DEV-SCA"
@@ -2018,6 +2744,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-ARM-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-ARM-All"
@@ -2030,6 +2760,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-ARM-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-ARM-DEV-All"
@@ -2042,6 +2776,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-ARM-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-ARM-DEV-DSC"
@@ -2053,6 +2791,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-ARM-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-ARM-DEV-SCA"
@@ -2064,6 +2806,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-ARM-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-ARM-DSC"
@@ -2075,6 +2821,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-ARM-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-ARM-SCA"
@@ -2086,6 +2836,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-ARM-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-ARM-UAT-All"
@@ -2098,6 +2852,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-ARM-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-ARM-UAT-DSC"
@@ -2109,6 +2867,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-ARM-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-ARM-UAT-SCA"
@@ -2120,6 +2882,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-BEL-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-BEL-All"
@@ -2132,6 +2898,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-BEL-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-BEL-DSC"
@@ -2143,6 +2913,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-BEL-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-BEL-SCA"
@@ -2154,6 +2928,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-BEL-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-BEL-UAT-All"
@@ -2166,6 +2944,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-BEL-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-BEL-UAT-DSC"
@@ -2177,6 +2959,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-BEL-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-BEL-UAT-SCA"
@@ -2188,6 +2974,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-BEN-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-BEN-All"
@@ -2200,6 +2990,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-BEN-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-BEN-DSC"
@@ -2211,6 +3005,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-BEN-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-BEN-SCA"
@@ -2222,6 +3020,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-BEN-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-BEN-UAT-All"
@@ -2234,6 +3036,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-BEN-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-BEN-UAT-DSC"
@@ -2245,6 +3051,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-BEN-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-BEN-UAT-SCA"
@@ -2256,6 +3066,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-BHS-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-BHS-DEV-All"
@@ -2268,6 +3082,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-BHS-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-BHS-DEV-DSC"
@@ -2279,6 +3097,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-BHS-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-BHS-DEV-SCA"
@@ -2290,6 +3112,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-BLZ-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-BLZ-DEV-All"
@@ -2302,6 +3128,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-BLZ-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-BLZ-DEV-DSC"
@@ -2313,6 +3143,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-BLZ-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-BLZ-DEV-SCA"
@@ -2324,6 +3158,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-BRA-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-BRA-All"
@@ -2336,6 +3174,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-BRA-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-BRA-DEV-All"
@@ -2348,6 +3190,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-BRA-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-BRA-DEV-DSC"
@@ -2359,6 +3205,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-BRA-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-BRA-DEV-SCA"
@@ -2370,6 +3220,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-BRA-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-BRA-DSC"
@@ -2381,6 +3235,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-BRA-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-BRA-SCA"
@@ -2392,6 +3250,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-BRA-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-BRA-UAT-All"
@@ -2404,6 +3266,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-BRA-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-BRA-UAT-DSC"
@@ -2415,6 +3281,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-BRA-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-BRA-UAT-SCA"
@@ -2426,6 +3296,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-BRB-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-BRB-DEV-All"
@@ -2438,6 +3312,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-BRB-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-BRB-DEV-DSC"
@@ -2449,6 +3327,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-BRB-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-BRB-DEV-SCA"
@@ -2460,6 +3342,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-CAN-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-CAN-UAT-All"
@@ -2472,6 +3358,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-CAN-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-CAN-UAT-DSC"
@@ -2483,6 +3373,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-CAN-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-CAN-UAT-SCA"
@@ -2494,6 +3388,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-CHL-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-CHL-DEV-All"
@@ -2506,6 +3404,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-CHL-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-CHL-DEV-DSC"
@@ -2517,6 +3419,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-CHL-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-CHL-DEV-SCA"
@@ -2528,6 +3434,56 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-CHL-UAT-All.html"
+      }],
+      "reference" : {
+        "reference" : "Endpoint/GDHCNParticipantDID-CHL-UAT-All"
+      },
+      "name" : "GDHCNParticipantDID-CHL-UAT-All",
+      "description" : "Chile Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:CHL\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/CHL/did.json",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-CHL-UAT-DSC.html"
+      }],
+      "reference" : {
+        "reference" : "Endpoint/GDHCNParticipantDID-CHL-UAT-DSC"
+      },
+      "name" : "GDHCNParticipantDID-CHL-UAT-DSC",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-CHL-UAT-SCA.html"
+      }],
+      "reference" : {
+        "reference" : "Endpoint/GDHCNParticipantDID-CHL-UAT-SCA"
+      },
+      "name" : "GDHCNParticipantDID-CHL-UAT-SCA",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-COL-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-COL-DEV-All"
@@ -2540,6 +3496,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-COL-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-COL-DEV-DSC"
@@ -2551,6 +3511,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-COL-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-COL-DEV-SCA"
@@ -2562,6 +3526,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-CRI-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-CRI-DEV-All"
@@ -2574,6 +3542,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-CRI-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-CRI-DEV-DSC"
@@ -2585,6 +3557,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-CRI-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-CRI-DEV-SCA"
@@ -2596,6 +3572,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-CYP-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-CYP-All"
@@ -2608,6 +3588,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-CYP-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-CYP-DEV-All"
@@ -2620,6 +3604,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-CYP-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-CYP-DEV-DSC"
@@ -2631,6 +3619,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-CYP-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-CYP-DEV-SCA"
@@ -2642,6 +3634,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-CYP-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-CYP-DSC"
@@ -2653,6 +3649,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-CYP-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-CYP-SCA"
@@ -2664,6 +3664,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-CYP-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-CYP-UAT-All"
@@ -2676,6 +3680,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-CYP-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-CYP-UAT-DSC"
@@ -2687,6 +3695,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-CYP-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-CYP-UAT-SCA"
@@ -2698,6 +3710,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-CZE-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-CZE-All"
@@ -2710,6 +3726,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-CZE-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-CZE-DSC"
@@ -2721,6 +3741,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-CZE-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-CZE-SCA"
@@ -2732,6 +3756,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-CZE-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-CZE-UAT-All"
@@ -2744,6 +3772,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-CZE-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-CZE-UAT-DSC"
@@ -2755,6 +3787,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-CZE-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-CZE-UAT-SCA"
@@ -2766,6 +3802,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-DOM-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-DOM-DEV-All"
@@ -2778,6 +3818,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-DOM-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-DOM-DEV-DSC"
@@ -2789,6 +3833,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-DOM-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-DOM-DEV-SCA"
@@ -2800,6 +3848,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-ECU-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-ECU-DEV-All"
@@ -2812,6 +3864,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-ECU-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-ECU-DEV-DSC"
@@ -2823,6 +3879,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-ECU-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-ECU-DEV-SCA"
@@ -2834,6 +3894,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-ECU-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-ECU-UAT-All"
@@ -2846,6 +3910,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-ECU-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-ECU-UAT-DSC"
@@ -2857,6 +3925,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-ECU-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-ECU-UAT-SCA"
@@ -2868,6 +3940,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-ESP-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-ESP-All"
@@ -2880,6 +3956,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-ESP-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-ESP-DSC"
@@ -2891,6 +3971,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-ESP-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-ESP-SCA"
@@ -2902,6 +3986,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-ESP-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-ESP-UAT-All"
@@ -2914,6 +4002,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-ESP-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-ESP-UAT-DSC"
@@ -2925,6 +4017,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-ESP-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-ESP-UAT-SCA"
@@ -2936,6 +4032,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-EST-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-EST-All"
@@ -2948,6 +4048,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-EST-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-EST-DEV-All"
@@ -2960,6 +4064,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-EST-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-EST-DEV-DSC"
@@ -2971,6 +4079,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-EST-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-EST-DEV-SCA"
@@ -2982,6 +4094,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-EST-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-EST-DSC"
@@ -2993,6 +4109,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-EST-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-EST-SCA"
@@ -3004,6 +4124,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-EST-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-EST-UAT-All"
@@ -3016,6 +4140,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-EST-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-EST-UAT-DSC"
@@ -3027,6 +4155,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-EST-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-EST-UAT-SCA"
@@ -3038,6 +4170,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-FIN-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-FIN-All"
@@ -3050,6 +4186,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-FIN-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-FIN-DSC"
@@ -3061,6 +4201,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-FIN-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-FIN-SCA"
@@ -3072,6 +4216,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-FIN-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-FIN-UAT-All"
@@ -3084,6 +4232,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-FIN-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-FIN-UAT-DSC"
@@ -3095,6 +4247,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-FIN-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-FIN-UAT-SCA"
@@ -3106,6 +4262,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-FRA-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-FRA-All"
@@ -3118,6 +4278,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-FRA-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-FRA-DSC"
@@ -3129,6 +4293,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-FRA-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-FRA-SCA"
@@ -3140,6 +4308,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-FRA-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-FRA-UAT-All"
@@ -3152,6 +4324,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-FRA-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-FRA-UAT-DSC"
@@ -3163,6 +4339,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-FRA-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-FRA-UAT-SCA"
@@ -3174,6 +4354,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-FRO-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-FRO-All"
@@ -3186,6 +4370,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-FRO-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-FRO-DSC"
@@ -3197,6 +4385,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-FRO-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-FRO-SCA"
@@ -3208,6 +4400,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-FRO-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-FRO-UAT-All"
@@ -3220,6 +4416,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-FRO-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-FRO-UAT-DSC"
@@ -3231,6 +4431,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-FRO-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-FRO-UAT-SCA"
@@ -3242,6 +4446,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-GTM-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-GTM-DEV-All"
@@ -3254,6 +4462,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-GTM-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-GTM-DEV-DSC"
@@ -3265,6 +4477,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-GTM-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-GTM-DEV-SCA"
@@ -3276,6 +4492,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-GTM-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-GTM-UAT-All"
@@ -3288,6 +4508,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-GTM-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-GTM-UAT-DSC"
@@ -3299,6 +4523,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-GTM-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-GTM-UAT-SCA"
@@ -3310,6 +4538,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-HND-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-HND-DEV-All"
@@ -3322,6 +4554,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-HND-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-HND-DEV-DSC"
@@ -3333,6 +4569,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-HND-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-HND-DEV-SCA"
@@ -3344,6 +4584,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-HRV-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-HRV-UAT-All"
@@ -3356,6 +4600,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-HRV-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-HRV-UAT-DSC"
@@ -3367,6 +4615,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-HRV-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-HRV-UAT-SCA"
@@ -3378,6 +4630,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-IDN-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-IDN-All"
@@ -3390,6 +4646,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-IDN-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-IDN-DEV-All"
@@ -3402,6 +4662,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-IDN-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-IDN-DEV-DSC"
@@ -3413,6 +4677,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-IDN-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-IDN-DEV-SCA"
@@ -3424,6 +4692,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-IDN-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-IDN-DSC"
@@ -3435,6 +4707,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-IDN-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-IDN-SCA"
@@ -3446,6 +4722,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-IDN-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-IDN-UAT-All"
@@ -3458,6 +4738,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-IDN-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-IDN-UAT-DSC"
@@ -3469,6 +4753,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-IDN-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-IDN-UAT-SCA"
@@ -3480,6 +4768,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-IOM-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-IOM-UAT-All"
@@ -3492,6 +4784,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-IOM-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-IOM-UAT-DSC"
@@ -3503,6 +4799,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-IOM-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-IOM-UAT-SCA"
@@ -3514,6 +4814,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-IRL-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-IRL-All"
@@ -3526,6 +4830,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-IRL-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-IRL-DSC"
@@ -3537,6 +4845,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-IRL-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-IRL-SCA"
@@ -3548,6 +4860,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-IRL-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-IRL-UAT-All"
@@ -3560,6 +4876,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-IRL-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-IRL-UAT-DSC"
@@ -3571,6 +4891,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-IRL-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-IRL-UAT-SCA"
@@ -3582,6 +4906,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-ISL-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-ISL-All"
@@ -3594,6 +4922,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-ISL-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-ISL-DSC"
@@ -3605,6 +4937,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-ISL-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-ISL-SCA"
@@ -3616,6 +4952,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-LTU-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-LTU-All"
@@ -3628,6 +4968,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-LTU-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-LTU-DSC"
@@ -3639,6 +4983,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-LTU-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-LTU-SCA"
@@ -3650,6 +4998,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-LTU-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-LTU-UAT-All"
@@ -3662,6 +5014,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-LTU-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-LTU-UAT-DSC"
@@ -3673,6 +5029,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-LTU-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-LTU-UAT-SCA"
@@ -3684,6 +5044,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-LVA-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-LVA-All"
@@ -3696,6 +5060,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-LVA-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-LVA-DEV-All"
@@ -3708,6 +5076,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-LVA-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-LVA-DEV-DSC"
@@ -3719,6 +5091,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-LVA-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-LVA-DEV-SCA"
@@ -3730,6 +5106,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-LVA-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-LVA-DSC"
@@ -3741,6 +5121,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-LVA-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-LVA-SCA"
@@ -3752,6 +5136,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-LVA-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-LVA-UAT-All"
@@ -3764,6 +5152,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-LVA-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-LVA-UAT-DSC"
@@ -3775,6 +5167,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-LVA-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-LVA-UAT-SCA"
@@ -3786,6 +5182,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-MCO-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-MCO-All"
@@ -3798,6 +5198,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-MCO-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-MCO-DSC"
@@ -3809,6 +5213,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-MCO-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-MCO-SCA"
@@ -3820,6 +5228,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-MCO-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-MCO-UAT-All"
@@ -3832,6 +5244,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-MCO-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-MCO-UAT-DSC"
@@ -3843,6 +5259,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-MCO-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-MCO-UAT-SCA"
@@ -3854,6 +5274,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-MLT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-MLT-All"
@@ -3866,6 +5290,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-MLT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-MLT-DSC"
@@ -3877,6 +5305,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-MLT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-MLT-SCA"
@@ -3888,6 +5320,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-MLT-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-MLT-UAT-All"
@@ -3900,6 +5336,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-MLT-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-MLT-UAT-DSC"
@@ -3911,6 +5351,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-MLT-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-MLT-UAT-SCA"
@@ -3922,6 +5366,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-MYS-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-MYS-All"
@@ -3934,6 +5382,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-MYS-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-MYS-DSC"
@@ -3945,6 +5397,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-MYS-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-MYS-SCA"
@@ -3956,6 +5412,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-MYS-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-MYS-UAT-All"
@@ -3968,6 +5428,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-MYS-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-MYS-UAT-DSC"
@@ -3979,6 +5443,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-MYS-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-MYS-UAT-SCA"
@@ -3990,6 +5458,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-NLD-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-NLD-All"
@@ -4002,6 +5474,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-NLD-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-NLD-DSC"
@@ -4013,6 +5489,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-NLD-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-NLD-SCA"
@@ -4024,6 +5504,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-NLD-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-NLD-UAT-All"
@@ -4036,6 +5520,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-NLD-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-NLD-UAT-DSC"
@@ -4047,6 +5535,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-NLD-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-NLD-UAT-SCA"
@@ -4058,6 +5550,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-NZL-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-NZL-All"
@@ -4070,6 +5566,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-NZL-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-NZL-DSC"
@@ -4081,6 +5581,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-NZL-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-NZL-SCA"
@@ -4092,6 +5596,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-NZL-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-NZL-UAT-All"
@@ -4104,6 +5612,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-NZL-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-NZL-UAT-DSC"
@@ -4115,6 +5627,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-NZL-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-NZL-UAT-SCA"
@@ -4126,6 +5642,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-OMN-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-OMN-All"
@@ -4138,6 +5658,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-OMN-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-OMN-DEV-All"
@@ -4150,6 +5674,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-OMN-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-OMN-DEV-DSC"
@@ -4161,6 +5689,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-OMN-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-OMN-DEV-SCA"
@@ -4172,6 +5704,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-OMN-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-OMN-DSC"
@@ -4183,6 +5719,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-OMN-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-OMN-SCA"
@@ -4194,6 +5734,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-OMN-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-OMN-UAT-All"
@@ -4206,6 +5750,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-OMN-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-OMN-UAT-DSC"
@@ -4217,6 +5765,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-OMN-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-OMN-UAT-SCA"
@@ -4228,6 +5780,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-PAN-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-PAN-DEV-All"
@@ -4240,6 +5796,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-PAN-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-PAN-DEV-DSC"
@@ -4251,6 +5811,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-PAN-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-PAN-DEV-SCA"
@@ -4262,6 +5826,56 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-PAN-UAT-All.html"
+      }],
+      "reference" : {
+        "reference" : "Endpoint/GDHCNParticipantDID-PAN-UAT-All"
+      },
+      "name" : "GDHCNParticipantDID-PAN-UAT-All",
+      "description" : "Panama Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:PAN\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/PAN/did.json",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-PAN-UAT-DSC.html"
+      }],
+      "reference" : {
+        "reference" : "Endpoint/GDHCNParticipantDID-PAN-UAT-DSC"
+      },
+      "name" : "GDHCNParticipantDID-PAN-UAT-DSC",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-PAN-UAT-SCA.html"
+      }],
+      "reference" : {
+        "reference" : "Endpoint/GDHCNParticipantDID-PAN-UAT-SCA"
+      },
+      "name" : "GDHCNParticipantDID-PAN-UAT-SCA",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-PER-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-PER-DEV-All"
@@ -4274,6 +5888,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-PER-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-PER-DEV-DSC"
@@ -4285,6 +5903,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-PER-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-PER-DEV-SCA"
@@ -4296,6 +5918,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-POL-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-POL-All"
@@ -4308,6 +5934,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-POL-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-POL-DSC"
@@ -4319,6 +5949,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-POL-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-POL-SCA"
@@ -4330,6 +5964,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-POL-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-POL-UAT-All"
@@ -4342,6 +5980,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-POL-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-POL-UAT-DSC"
@@ -4353,6 +5995,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-POL-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-POL-UAT-SCA"
@@ -4364,6 +6010,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-PRT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-PRT-All"
@@ -4376,6 +6026,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-PRT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-PRT-DSC"
@@ -4387,6 +6041,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-PRT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-PRT-SCA"
@@ -4398,6 +6056,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-PRT-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-PRT-UAT-All"
@@ -4410,6 +6072,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-PRT-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-PRT-UAT-DSC"
@@ -4421,6 +6087,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-PRT-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-PRT-UAT-SCA"
@@ -4432,6 +6102,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-PRY-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-PRY-DEV-All"
@@ -4444,6 +6118,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-PRY-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-PRY-DEV-DSC"
@@ -4455,6 +6133,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-PRY-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-PRY-DEV-SCA"
@@ -4466,6 +6148,56 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-PRY-UAT-All.html"
+      }],
+      "reference" : {
+        "reference" : "Endpoint/GDHCNParticipantDID-PRY-UAT-All"
+      },
+      "name" : "GDHCNParticipantDID-PRY-UAT-All",
+      "description" : "Paraguay Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:PRY\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/PRY/did.json",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-PRY-UAT-DSC.html"
+      }],
+      "reference" : {
+        "reference" : "Endpoint/GDHCNParticipantDID-PRY-UAT-DSC"
+      },
+      "name" : "GDHCNParticipantDID-PRY-UAT-DSC",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-PRY-UAT-SCA.html"
+      }],
+      "reference" : {
+        "reference" : "Endpoint/GDHCNParticipantDID-PRY-UAT-SCA"
+      },
+      "name" : "GDHCNParticipantDID-PRY-UAT-SCA",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SAU-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SAU-UAT-All"
@@ -4478,6 +6210,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SAU-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SAU-UAT-DSC"
@@ -4489,6 +6225,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SAU-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SAU-UAT-SCA"
@@ -4500,6 +6240,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SGP-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SGP-All"
@@ -4512,6 +6256,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SGP-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SGP-DEV-All"
@@ -4524,6 +6272,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SGP-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SGP-DEV-DSC"
@@ -4535,6 +6287,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SGP-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SGP-DEV-SCA"
@@ -4546,6 +6302,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SGP-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SGP-DSC"
@@ -4557,6 +6317,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SGP-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SGP-SCA"
@@ -4568,6 +6332,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SGP-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SGP-UAT-All"
@@ -4580,6 +6348,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SGP-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SGP-UAT-DSC"
@@ -4591,6 +6363,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SGP-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SGP-UAT-SCA"
@@ -4602,6 +6378,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SLV-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SLV-DEV-All"
@@ -4614,6 +6394,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SLV-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SLV-DEV-DSC"
@@ -4625,6 +6409,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SLV-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SLV-DEV-SCA"
@@ -4636,6 +6424,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SLV-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SLV-UAT-All"
@@ -4648,6 +6440,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SLV-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SLV-UAT-DSC"
@@ -4659,6 +6455,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SLV-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SLV-UAT-SCA"
@@ -4670,6 +6470,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SMR-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SMR-All"
@@ -4682,6 +6486,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SMR-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SMR-DEV-All"
@@ -4694,6 +6502,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SMR-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SMR-DEV-DSC"
@@ -4705,6 +6517,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SMR-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SMR-DEV-SCA"
@@ -4716,6 +6532,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SMR-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SMR-DSC"
@@ -4727,6 +6547,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SMR-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SMR-SCA"
@@ -4738,6 +6562,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SMR-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SMR-UAT-All"
@@ -4750,6 +6578,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SMR-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SMR-UAT-DSC"
@@ -4761,6 +6593,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SMR-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SMR-UAT-SCA"
@@ -4772,6 +6608,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SUR-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SUR-DEV-All"
@@ -4784,6 +6624,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SUR-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SUR-DEV-DSC"
@@ -4795,6 +6639,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SUR-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SUR-DEV-SCA"
@@ -4806,6 +6654,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SVK-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SVK-All"
@@ -4818,6 +6670,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SVK-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SVK-DSC"
@@ -4829,6 +6685,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SVK-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SVK-SCA"
@@ -4840,6 +6700,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SVK-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SVK-UAT-All"
@@ -4852,6 +6716,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SVK-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SVK-UAT-DSC"
@@ -4863,6 +6731,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SVK-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SVK-UAT-SCA"
@@ -4874,6 +6746,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SVN-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SVN-All"
@@ -4886,6 +6762,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SVN-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SVN-DEV-All"
@@ -4898,6 +6778,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SVN-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SVN-DEV-DSC"
@@ -4909,6 +6793,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SVN-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SVN-DEV-SCA"
@@ -4920,6 +6808,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SVN-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SVN-DSC"
@@ -4931,6 +6823,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SVN-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SVN-SCA"
@@ -4942,6 +6838,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SVN-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SVN-UAT-All"
@@ -4954,6 +6854,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SVN-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SVN-UAT-DSC"
@@ -4965,6 +6869,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SVN-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SVN-UAT-SCA"
@@ -4976,6 +6884,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SWE-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SWE-All"
@@ -4988,6 +6900,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SWE-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SWE-DSC"
@@ -4999,6 +6915,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SWE-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SWE-SCA"
@@ -5010,6 +6930,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SWE-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SWE-UAT-All"
@@ -5022,6 +6946,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SWE-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SWE-UAT-DSC"
@@ -5033,6 +6961,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-SWE-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-SWE-UAT-SCA"
@@ -5044,6 +6976,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-TGO-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-TGO-All"
@@ -5056,6 +6992,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-TGO-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-TGO-DEV-All"
@@ -5068,6 +7008,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-TGO-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-TGO-DEV-DSC"
@@ -5079,6 +7023,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-TGO-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-TGO-DEV-SCA"
@@ -5090,6 +7038,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-TGO-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-TGO-DSC"
@@ -5101,6 +7053,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-TGO-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-TGO-SCA"
@@ -5112,6 +7068,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-TGO-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-TGO-UAT-All"
@@ -5124,6 +7084,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-TGO-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-TGO-UAT-DSC"
@@ -5135,6 +7099,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-TGO-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-TGO-UAT-SCA"
@@ -5146,6 +7114,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-THA-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-THA-All"
@@ -5158,6 +7130,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-THA-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-THA-DSC"
@@ -5169,6 +7145,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-THA-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-THA-SCA"
@@ -5180,6 +7160,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-THA-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-THA-UAT-All"
@@ -5192,6 +7176,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-THA-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-THA-UAT-DSC"
@@ -5203,6 +7191,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-THA-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-THA-UAT-SCA"
@@ -5214,6 +7206,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-TUR-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-TUR-All"
@@ -5226,6 +7222,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-TUR-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-TUR-DSC"
@@ -5237,6 +7237,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-TUR-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-TUR-SCA"
@@ -5248,6 +7252,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-TUR-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-TUR-UAT-All"
@@ -5260,6 +7268,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-TUR-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-TUR-UAT-DSC"
@@ -5271,6 +7283,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-TUR-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-TUR-UAT-SCA"
@@ -5282,6 +7298,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-URY-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-URY-DEV-All"
@@ -5294,6 +7314,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-URY-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-URY-DEV-DSC"
@@ -5305,6 +7329,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-URY-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-URY-DEV-SCA"
@@ -5316,6 +7344,56 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-URY-UAT-All.html"
+      }],
+      "reference" : {
+        "reference" : "Endpoint/GDHCNParticipantDID-URY-UAT-All"
+      },
+      "name" : "GDHCNParticipantDID-URY-UAT-All",
+      "description" : "Uruguay Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:URY\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/URY/did.json",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-URY-UAT-DSC.html"
+      }],
+      "reference" : {
+        "reference" : "Endpoint/GDHCNParticipantDID-URY-UAT-DSC"
+      },
+      "name" : "GDHCNParticipantDID-URY-UAT-DSC",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-URY-UAT-SCA.html"
+      }],
+      "reference" : {
+        "reference" : "Endpoint/GDHCNParticipantDID-URY-UAT-SCA"
+      },
+      "name" : "GDHCNParticipantDID-URY-UAT-SCA",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-USA-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-USA-DEV-All"
@@ -5328,6 +7406,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-USA-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-USA-DEV-DSC"
@@ -5339,6 +7421,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-USA-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-USA-DEV-SCA"
@@ -5350,6 +7436,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-WHO.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-WHO"
@@ -5361,6 +7451,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-WHO-DEV.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-WHO-DEV"
@@ -5372,6 +7466,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-WHO-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-WHO-DEV-All"
@@ -5384,6 +7482,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-WHO-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-WHO-DEV-DSC"
@@ -5395,6 +7497,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-WHO-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-WHO-DEV-SCA"
@@ -5406,6 +7512,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-WHO-UAT.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-WHO-UAT"
@@ -5417,6 +7527,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-WHO-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-WHO-UAT-All"
@@ -5429,6 +7543,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-WHO-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-WHO-UAT-DSC"
@@ -5440,6 +7558,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-WHO-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-WHO-UAT-SCA"
@@ -5451,6 +7573,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XCL-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XCL-DEV-All"
@@ -5463,6 +7589,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XCL-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XCL-DEV-DSC"
@@ -5474,6 +7604,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XCL-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XCL-DEV-SCA"
@@ -5485,6 +7619,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XML-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XML-DEV-All"
@@ -5497,6 +7635,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XML-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XML-DEV-DSC"
@@ -5508,6 +7650,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XML-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XML-DEV-SCA"
@@ -5519,6 +7665,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXA-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXA-DEV-All"
@@ -5531,6 +7681,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXA-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXA-DEV-DSC"
@@ -5542,6 +7696,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXA-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXA-DEV-SCA"
@@ -5553,6 +7711,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXA-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXA-UAT-All"
@@ -5565,6 +7727,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXA-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXA-UAT-DSC"
@@ -5576,6 +7742,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXA-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXA-UAT-SCA"
@@ -5587,6 +7757,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXB-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXB-DEV-All"
@@ -5599,6 +7773,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXB-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXB-DEV-DSC"
@@ -5610,6 +7788,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXB-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXB-DEV-SCA"
@@ -5621,6 +7803,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXB-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXB-UAT-All"
@@ -5633,6 +7819,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXB-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXB-UAT-DSC"
@@ -5644,6 +7834,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXB-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXB-UAT-SCA"
@@ -5655,6 +7849,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXC-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXC-DEV-All"
@@ -5667,6 +7865,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXC-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXC-DEV-DSC"
@@ -5678,6 +7880,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXC-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXC-DEV-SCA"
@@ -5689,6 +7895,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXC-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXC-UAT-All"
@@ -5701,6 +7911,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXC-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXC-UAT-DSC"
@@ -5712,6 +7926,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXC-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXC-UAT-SCA"
@@ -5723,6 +7941,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXD-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXD-DEV-All"
@@ -5735,6 +7957,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXD-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXD-DEV-DSC"
@@ -5746,6 +7972,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXD-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXD-DEV-SCA"
@@ -5757,6 +7987,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXD-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXD-UAT-All"
@@ -5769,6 +8003,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXD-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXD-UAT-DSC"
@@ -5780,6 +8018,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXD-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXD-UAT-SCA"
@@ -5791,6 +8033,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXE-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXE-DEV-All"
@@ -5803,6 +8049,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXE-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXE-DEV-DSC"
@@ -5814,6 +8064,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXE-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXE-DEV-SCA"
@@ -5825,6 +8079,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXF-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXF-DEV-All"
@@ -5837,6 +8095,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXF-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXF-DEV-DSC"
@@ -5848,6 +8110,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXF-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXF-DEV-SCA"
@@ -5859,6 +8125,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXG-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXG-DEV-All"
@@ -5871,6 +8141,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXG-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXG-DEV-DSC"
@@ -5882,6 +8156,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXG-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXG-DEV-SCA"
@@ -5893,6 +8171,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXH-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXH-DEV-All"
@@ -5905,6 +8187,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXH-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXH-DEV-DSC"
@@ -5916,6 +8202,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXH-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXH-DEV-SCA"
@@ -5927,6 +8217,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXI-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXI-DEV-All"
@@ -5939,6 +8233,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXI-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXI-DEV-DSC"
@@ -5950,6 +8248,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXI-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXI-DEV-SCA"
@@ -5961,6 +8263,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXJ-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXJ-DEV-All"
@@ -5973,6 +8279,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXJ-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXJ-DEV-DSC"
@@ -5984,6 +8294,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXJ-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXJ-DEV-SCA"
@@ -5995,6 +8309,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXK-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXK-DEV-All"
@@ -6007,6 +8325,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXK-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXK-DEV-DSC"
@@ -6018,6 +8340,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXK-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXK-DEV-SCA"
@@ -6029,6 +8355,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXO-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXO-DEV-All"
@@ -6041,6 +8371,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXO-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXO-DEV-DSC"
@@ -6052,6 +8386,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXO-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXO-DEV-SCA"
@@ -6063,6 +8401,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXO-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXO-UAT-All"
@@ -6075,6 +8417,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXO-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXO-UAT-DSC"
@@ -6086,6 +8432,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXO-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXO-UAT-SCA"
@@ -6097,6 +8447,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXP-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXP-DEV-All"
@@ -6109,6 +8463,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXP-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXP-DEV-DSC"
@@ -6120,6 +8478,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXP-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXP-DEV-SCA"
@@ -6131,6 +8493,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXQ-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXQ-UAT-All"
@@ -6143,6 +8509,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXQ-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXQ-UAT-DSC"
@@ -6154,6 +8524,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXQ-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXQ-UAT-SCA"
@@ -6165,6 +8539,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXS-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXS-UAT-All"
@@ -6177,6 +8555,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXS-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXS-UAT-DSC"
@@ -6188,6 +8570,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXS-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXS-UAT-SCA"
@@ -6199,6 +8585,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXU-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXU-DEV-All"
@@ -6211,6 +8601,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXU-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXU-DEV-DSC"
@@ -6222,6 +8616,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXU-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXU-DEV-SCA"
@@ -6233,6 +8631,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXU-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXU-UAT-All"
@@ -6245,6 +8647,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXU-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXU-UAT-DSC"
@@ -6256,6 +8662,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXU-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXU-UAT-SCA"
@@ -6267,6 +8677,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXV-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXV-DEV-All"
@@ -6279,6 +8693,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXV-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXV-DEV-DSC"
@@ -6290,6 +8708,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXV-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXV-DEV-SCA"
@@ -6301,6 +8723,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXV-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXV-UAT-All"
@@ -6313,6 +8739,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXV-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXV-UAT-DSC"
@@ -6324,6 +8754,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXV-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXV-UAT-SCA"
@@ -6335,6 +8769,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXX-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXX-DEV-All"
@@ -6347,6 +8785,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXX-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXX-DEV-DSC"
@@ -6358,6 +8800,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXX-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXX-DEV-SCA"
@@ -6369,6 +8815,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXX-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXX-UAT-All"
@@ -6381,6 +8831,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXX-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXX-UAT-DSC"
@@ -6392,6 +8846,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XXX-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XXX-UAT-SCA"
@@ -6403,6 +8861,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XYK-DEV-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XYK-DEV-All"
@@ -6415,6 +8877,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XYK-DEV-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XYK-DEV-DSC"
@@ -6426,6 +8892,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XYK-DEV-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XYK-DEV-SCA"
@@ -6437,6 +8907,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XYK-UAT-All.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XYK-UAT-All"
@@ -6449,6 +8923,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XYK-UAT-DSC.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XYK-UAT-DSC"
@@ -6460,6 +8938,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-XYK-UAT-SCA.html"
       }],
       "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-XYK-UAT-SCA"
@@ -6471,6 +8953,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-HCert.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/HCert"
@@ -6483,6 +8969,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ActorDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ActorDefinition-Holder.html"
       }],
       "reference" : {
         "reference" : "ActorDefinition/Holder"
@@ -6495,6 +8985,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Requirements"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Requirements-IssuerVDHC.html"
       }],
       "reference" : {
         "reference" : "Requirements/IssuerVDHC"
@@ -6507,6 +9001,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ActorDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ActorDefinition-Issuer.html"
       }],
       "reference" : {
         "reference" : "ActorDefinition/Issuer"
@@ -6519,6 +9017,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Requirements"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Requirements-ProvideVDHC.html"
       }],
       "reference" : {
         "reference" : "Requirements/ProvideVDHC"
@@ -6531,6 +9033,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Requirements"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Requirements-PublishBusinessRules.html"
       }],
       "reference" : {
         "reference" : "Requirements/PublishBusinessRules"
@@ -6543,6 +9049,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Requirements"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Requirements-PublishBusinessRulesCertLogic.html"
       }],
       "reference" : {
         "reference" : "Requirements/PublishBusinessRulesCertLogic"
@@ -6555,6 +9065,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Requirements"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Requirements-PublishBusinessRulesFHIR.html"
       }],
       "reference" : {
         "reference" : "Requirements/PublishBusinessRulesFHIR"
@@ -6567,6 +9081,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Requirements"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Requirements-PublishPKIMaterial.html"
       }],
       "reference" : {
         "reference" : "Requirements/PublishPKIMaterial"
@@ -6579,6 +9097,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Requirements"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Requirements-PublishPKIMaterialDID.html"
       }],
       "reference" : {
         "reference" : "Requirements/PublishPKIMaterialDID"
@@ -6591,6 +9113,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Requirements"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Requirements-PublishPKIMaterialAPI.html"
       }],
       "reference" : {
         "reference" : "Requirements/PublishPKIMaterialAPI"
@@ -6603,6 +9129,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Requirements"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Requirements-ReceiveBusinessRules.html"
       }],
       "reference" : {
         "reference" : "Requirements/ReceiveBusinessRules"
@@ -6615,6 +9145,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Requirements"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Requirements-ReceiveBusinessRulesCertLogic.html"
       }],
       "reference" : {
         "reference" : "Requirements/ReceiveBusinessRulesCertLogic"
@@ -6627,6 +9161,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Requirements"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Requirements-ReceiveBusinessRulesFHIR.html"
       }],
       "reference" : {
         "reference" : "Requirements/ReceiveBusinessRulesFHIR"
@@ -6639,6 +9177,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Requirements"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Requirements-ReceivePKUMaterial.html"
       }],
       "reference" : {
         "reference" : "Requirements/ReceivePKUMaterial"
@@ -6651,6 +9193,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Requirements"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Requirements-ReceivePKUMaterialDID.html"
       }],
       "reference" : {
         "reference" : "Requirements/ReceivePKUMaterialDID"
@@ -6663,6 +9209,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Requirements"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Requirements-ReceivePKUMaterialAPI.html"
       }],
       "reference" : {
         "reference" : "Requirements/ReceivePKUMaterialAPI"
@@ -6675,6 +9225,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Requirements"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Requirements-ReceiveVDHC.html"
       }],
       "reference" : {
         "reference" : "Requirements/ReceiveVDHC"
@@ -6687,6 +9241,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ActorDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ActorDefinition-Receiver.html"
       }],
       "reference" : {
         "reference" : "ActorDefinition/Receiver"
@@ -6699,6 +9257,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Requirements"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Requirements-RequestVDHC.html"
       }],
       "reference" : {
         "reference" : "Requirements/RequestVDHC"
@@ -6711,6 +9273,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Requirements"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Requirements-RetrieveBusinessRules.html"
       }],
       "reference" : {
         "reference" : "Requirements/RetrieveBusinessRules"
@@ -6723,6 +9289,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Requirements"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Requirements-RetrieveBusinessRulesCertLogic.html"
       }],
       "reference" : {
         "reference" : "Requirements/RetrieveBusinessRulesCertLogic"
@@ -6735,6 +9305,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Requirements"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Requirements-RetrieveBusinessRulesFHIR.html"
       }],
       "reference" : {
         "reference" : "Requirements/RetrieveBusinessRulesFHIR"
@@ -6747,6 +9321,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Requirements"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Requirements-RetrievePKIMaterial.html"
       }],
       "reference" : {
         "reference" : "Requirements/RetrievePKIMaterial"
@@ -6759,6 +9337,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Requirements"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Requirements-RetrievePKIMaterialDID.html"
       }],
       "reference" : {
         "reference" : "Requirements/RetrievePKIMaterialDID"
@@ -6771,6 +9353,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Requirements"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Requirements-RetrievePKIMaterialAPI.html"
       }],
       "reference" : {
         "reference" : "Requirements/RetrievePKIMaterialAPI"
@@ -6783,6 +9369,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical:abstract"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-SchemeInformation.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/SchemeInformation"
@@ -6795,6 +9385,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ActorDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ActorDefinition-TrustNetworkAnchor.html"
       }],
       "reference" : {
         "reference" : "ActorDefinition/TrustNetworkAnchor"
@@ -6807,6 +9401,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ActorDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ActorDefinition-TrustNetworkParticipant.html"
       }],
       "reference" : {
         "reference" : "ActorDefinition/TrustNetworkParticipant"
@@ -6819,6 +9417,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Requirements"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Requirements-UtilizeVDHC.html"
       }],
       "reference" : {
         "reference" : "Requirements/UtilizeVDHC"
@@ -6831,6 +9433,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KeyUsage.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KeyUsage"
@@ -6843,6 +9449,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KeyUsage-DEV.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KeyUsage-DEV"
@@ -6855,6 +9465,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-KeyUsage-UAT.html"
       }],
       "reference" : {
         "reference" : "ValueSet/KeyUsage-UAT"
@@ -6867,6 +9481,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Actors.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Actors"
@@ -6879,6 +9497,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ConnectionTypes.html"
       }],
       "reference" : {
         "reference" : "ValueSet/ConnectionTypes"
@@ -6891,6 +9513,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-ConnectionTypes.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/ConnectionTypes"
@@ -6903,6 +9529,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-KeyUsage.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/KeyUsage"
@@ -6915,6 +9545,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-KeyUsage-DEV.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/KeyUsage-DEV"
@@ -6927,6 +9561,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-KeyUsage-UAT.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/KeyUsage-UAT"
@@ -6939,6 +9577,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-PayloadTypes.html"
       }],
       "reference" : {
         "reference" : "ValueSet/PayloadTypes"
@@ -6951,6 +9593,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-PayloadTypes.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/PayloadTypes"
@@ -6963,6 +9609,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Transactions.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Transactions"
@@ -6975,6 +9625,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Transactions.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Transactions"
@@ -6987,6 +9641,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Actors.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Actors"
@@ -6999,6 +9657,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Domains.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Domains"
@@ -7011,6 +9673,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Domains.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Domains"
@@ -7023,6 +9689,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Domains-DEV.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Domains-DEV"
@@ -7035,6 +9705,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Domains-DEV.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Domains-DEV"
@@ -7047,6 +9721,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Domains-UAT.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Domains-UAT"
@@ -7059,6 +9737,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Domains-UAT.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Domains-UAT"
@@ -7071,6 +9753,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Participants.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Participants"
@@ -7083,6 +9769,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Participants-DEV.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Participants-DEV"
@@ -7095,6 +9785,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Participants-DEV.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Participants-DEV"
@@ -7107,6 +9801,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-Participants-UAT.html"
       }],
       "reference" : {
         "reference" : "ValueSet/Participants-UAT"
@@ -7119,6 +9817,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Participants-UAT.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Participants-UAT"
@@ -7131,6 +9833,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-Participants.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/Participants"
@@ -7143,6 +9849,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-RefMartCountryList.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/RefMartCountryList"
@@ -7155,6 +9865,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-WHORegionalOffices.html"
       }],
       "reference" : {
         "reference" : "ValueSet/WHORegionalOffices"
@@ -7167,6 +9881,10 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-WHORegionalOffices.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/WHORegionalOffices"
@@ -7409,7 +10127,7 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
         "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
         "code" : "releaselabel"
       },
-      "value" : "active"
+      "value" : "release"
     },
     {
       "code" : {

@@ -35,6 +35,8 @@
 ","VHL","URI of a Verifiable Health Link.  Of the form 'vhlink:/eyJ1cmwiOiJodHRwczovL2Vo....'","","","","","","","","","",,,,,"",,,,"HCert.5",0,1,"",""
 "HCert","HCert.-6","HCert.-6","","","",0,1,"","","","http://smart.who.int/trust-phw/StructureDefinition/DVCMin {[]} {[]}
 ","DVCMin","Minimal Digital Vaccination Certificate Payload (Proposed)","","","","","","","","","",,,,,"",,,,"HCert.-6",0,1,"",""
+"HCert","HCert.-7","HCert.-7","","","",0,1,"","","","http://smart.who.int/ph4h/StructureDefinition/MedicationTreatmentLineMin {[]} {[]}
+","Medication Treatment Line Minimal (Proposed)","Medication Treatment Line Minimal (Proposed)","","","","","","","","","",,,,,"",,,,"HCert.-7",0,1,"",""
 "SchemeInformation","SchemeInformation","SchemeInformation","","","",0,*,"","","","null {[]} {[]}
 ","Scheme Information","Logical Model for Information on the trusted list and its issuing scheme","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "SchemeInformation","SchemeInformation.versionIdentifier","SchemeInformation.versionIdentifier","","","",1,1,"","","","integer {[]} {[]}

@@ -1,4 +1,4 @@
-# Utilize a Verifiable Digital Health Certificate - WHO SMART Trust v1.6.0
+# Utilize a Verifiable Digital Health Certificate - WHO SMART Trust v1.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Indices**](indices.md)
@@ -9,8 +9,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://smart.who.int/trust/Requirements/UtilizeVDHC | *Version*:1.6.0 |
-| Active as of 2026-07-06 | *Computable Name*:Utilize VDHC |
+| *Official URL*:http://smart.who.int/trust/Requirements/UtilizeVDHC | *Version*:1.7.0 |
+| Active as of 2026-07-30 | *Computable Name*:Utilize VDHC |
 
  
 Utilize a Verifiable Digital Health Certificate that was provided by a Holder 
@@ -40,12 +40,12 @@ Utilize a Verifiable Digital Health Certificate that was provided by a Holder
     "profile" : ["http://smart.who.int/base/StructureDefinition/SGRequirements"]
   },
   "url" : "http://smart.who.int/trust/Requirements/UtilizeVDHC",
-  "version" : "1.6.0",
+  "version" : "1.7.0",
   "name" : "Utilize VDHC",
   "title" : "Utilize a Verifiable Digital Health Certificate",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-06T11:52:41+00:00",
+  "date" : "2026-07-30T11:57:48+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

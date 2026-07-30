@@ -1,4 +1,4 @@
-# Scheme Information - WHO SMART Trust v1.6.0
+# Scheme Information - WHO SMART Trust v1.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Indices**](indices.md)
@@ -9,8 +9,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://smart.who.int/trust/StructureDefinition/SchemeInformation | *Version*:1.6.0 |
-| Draft as of 2026-07-06 | *Computable Name*:SchemeInformation |
+| *Official URL*:http://smart.who.int/trust/StructureDefinition/SchemeInformation | *Version*:1.7.0 |
+| Draft as of 2026-07-30 | *Computable Name*:SchemeInformation |
 
  
 Logical Model for Information on the trusted list and its issuing scheme 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-SchemeInformation.cs
   "resourceType" : "StructureDefinition",
   "id" : "SchemeInformation",
   "url" : "http://smart.who.int/trust/StructureDefinition/SchemeInformation",
-  "version" : "1.6.0",
+  "version" : "1.7.0",
   "name" : "SchemeInformation",
   "title" : "Scheme Information",
   "status" : "draft",
-  "date" : "2026-07-06T11:52:41+00:00",
+  "date" : "2026-07-30T11:57:48+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

@@ -1,4 +1,4 @@
-# WHO RefMart Jurisidiction List - WHO SMART Trust v1.6.0
+# WHO RefMart Jurisidiction List - WHO SMART Trust v1.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Indices**](indices.md)
@@ -9,8 +9,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://smart.who.int/refmart/CodeSystems/REF_COUNTRY | *Version*:1.6.0 |
-| Draft as of 2026-07-06 | *Computable Name*:RefMartCountryList |
+| *Official URL*:http://smart.who.int/refmart/CodeSystems/REF_COUNTRY | *Version*:1.7.0 |
+| Draft as of 2026-07-30 | *Computable Name*:RefMartCountryList |
 
  
 CodeSystem for WHO Refmart Country and Jurisidiction List available at https://xmart-api-public.who.int/REFMART/REF_COUNTRY for Production environment 
@@ -30,12 +30,12 @@ CodeSystem for WHO Refmart Country and Jurisidiction List available at https://x
   "resourceType" : "CodeSystem",
   "id" : "RefMartCountryList",
   "url" : "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY",
-  "version" : "1.6.0",
+  "version" : "1.7.0",
   "name" : "RefMartCountryList",
   "title" : "WHO RefMart Jurisidiction List",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-07-06T11:52:41+00:00",
+  "date" : "2026-07-30T11:57:48+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",
@@ -648,7 +648,7 @@ CodeSystem for WHO Refmart Country and Jurisidiction List available at https://x
   },
   {
     "code" : "NRU",
-    "display" : "Nauru"
+    "display" : "Naoero"
   },
   {
     "code" : "NPL",

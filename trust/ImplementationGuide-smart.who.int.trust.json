@@ -9,12 +9,12 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide smart.who.int.trust</b></p><a name=\"smart.who.int.trust\"> </a><a name=\"hcsmart.who.int.trust\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"file://C:\\work\\ImplementationGuides\\ig-release\\who\\smart-base\\output/StructureDefinition-SGImplementationGuide.html\">SMART Guidelines ImplementationGuide</a></p></div><h2>Trust</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/trust/ImplementationGuide/smart.who.int.trust</pre><div><p>SMART Trust Implementation Guide</p>\n</div></div>"
   },
   "url" : "http://smart.who.int/trust/ImplementationGuide/smart.who.int.trust",
-  "version" : "1.6.0",
+  "version" : "1.7.0",
   "name" : "Trust",
   "title" : "WHO SMART Trust",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-07-06T11:52:41+00:00",
+  "date" : "2026-07-30T11:57:48+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",
@@ -41,7 +41,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r5",
-    "version" : "7.2.0"
+    "version" : "7.3.0"
   },
   {
     "id" : "hl7_fhir_uv_extensions_r5",
@@ -72,6 +72,12 @@
     "uri" : "https://profiles.ihe.net/ITI/mCSD/ImplementationGuide/ihe.iti.mcsd",
     "packageId" : "ihe.iti.mcsd",
     "version" : "3.8.0"
+  },
+  {
+    "id" : "smart_who_int_ph4h",
+    "uri" : "http://smart.who.int/ph4h/ImplementationGuide/smart.who.int.ph4h",
+    "packageId" : "smart.who.int.ph4h",
+    "version" : "0.9.9"
   }],
   "definition" : {
     "extension" : [{
@@ -427,6 +433,17 @@
         "reference" : "Organization/GDHCNParticipant-CHL-DEV"
       },
       "name" : "GDHCNParticipant-CHL-DEV",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/GDHCNParticipant-CHL-UAT"
+      },
+      "name" : "GDHCNParticipant-CHL-UAT",
       "isExample" : false
     },
     {
@@ -996,6 +1013,17 @@
         "valueString" : "Organization"
       }],
       "reference" : {
+        "reference" : "Organization/GDHCNParticipant-PAN-UAT"
+      },
+      "name" : "GDHCNParticipant-PAN-UAT",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
         "reference" : "Organization/GDHCNParticipant-PER-DEV"
       },
       "name" : "GDHCNParticipant-PER-DEV",
@@ -1054,6 +1082,17 @@
         "reference" : "Organization/GDHCNParticipant-PRY-DEV"
       },
       "name" : "GDHCNParticipant-PRY-DEV",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/GDHCNParticipant-PRY-UAT"
+      },
+      "name" : "GDHCNParticipant-PRY-UAT",
       "isExample" : false
     },
     {
@@ -1329,6 +1368,17 @@
         "reference" : "Organization/GDHCNParticipant-URY-DEV"
       },
       "name" : "GDHCNParticipant-URY-DEV",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/GDHCNParticipant-URY-UAT"
+      },
+      "name" : "GDHCNParticipant-URY-UAT",
       "isExample" : false
     },
     {
@@ -2417,6 +2467,40 @@
         "reference" : "Endpoint/GDHCNParticipantDID-CHL-DEV-SCA"
       },
       "name" : "GDHCNParticipantDID-CHL-DEV-SCA",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Endpoint"
+      }],
+      "reference" : {
+        "reference" : "Endpoint/GDHCNParticipantDID-CHL-UAT-All"
+      },
+      "name" : "GDHCNParticipantDID-CHL-UAT-All",
+      "description" : "Chile Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:CHL\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/CHL/did.json",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Endpoint"
+      }],
+      "reference" : {
+        "reference" : "Endpoint/GDHCNParticipantDID-CHL-UAT-DSC"
+      },
+      "name" : "GDHCNParticipantDID-CHL-UAT-DSC",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Endpoint"
+      }],
+      "reference" : {
+        "reference" : "Endpoint/GDHCNParticipantDID-CHL-UAT-SCA"
+      },
+      "name" : "GDHCNParticipantDID-CHL-UAT-SCA",
       "isExample" : false
     },
     {
@@ -4159,6 +4243,40 @@
         "valueString" : "Endpoint"
       }],
       "reference" : {
+        "reference" : "Endpoint/GDHCNParticipantDID-PAN-UAT-All"
+      },
+      "name" : "GDHCNParticipantDID-PAN-UAT-All",
+      "description" : "Panama Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:PAN\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/PAN/did.json",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Endpoint"
+      }],
+      "reference" : {
+        "reference" : "Endpoint/GDHCNParticipantDID-PAN-UAT-DSC"
+      },
+      "name" : "GDHCNParticipantDID-PAN-UAT-DSC",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Endpoint"
+      }],
+      "reference" : {
+        "reference" : "Endpoint/GDHCNParticipantDID-PAN-UAT-SCA"
+      },
+      "name" : "GDHCNParticipantDID-PAN-UAT-SCA",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Endpoint"
+      }],
+      "reference" : {
         "reference" : "Endpoint/GDHCNParticipantDID-PER-DEV-All"
       },
       "name" : "GDHCNParticipantDID-PER-DEV-All",
@@ -4355,6 +4473,40 @@
         "reference" : "Endpoint/GDHCNParticipantDID-PRY-DEV-SCA"
       },
       "name" : "GDHCNParticipantDID-PRY-DEV-SCA",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Endpoint"
+      }],
+      "reference" : {
+        "reference" : "Endpoint/GDHCNParticipantDID-PRY-UAT-All"
+      },
+      "name" : "GDHCNParticipantDID-PRY-UAT-All",
+      "description" : "Paraguay Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:PRY\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/PRY/did.json",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Endpoint"
+      }],
+      "reference" : {
+        "reference" : "Endpoint/GDHCNParticipantDID-PRY-UAT-DSC"
+      },
+      "name" : "GDHCNParticipantDID-PRY-UAT-DSC",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Endpoint"
+      }],
+      "reference" : {
+        "reference" : "Endpoint/GDHCNParticipantDID-PRY-UAT-SCA"
+      },
+      "name" : "GDHCNParticipantDID-PRY-UAT-SCA",
       "isExample" : false
     },
     {
@@ -5205,6 +5357,40 @@
         "reference" : "Endpoint/GDHCNParticipantDID-URY-DEV-SCA"
       },
       "name" : "GDHCNParticipantDID-URY-DEV-SCA",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Endpoint"
+      }],
+      "reference" : {
+        "reference" : "Endpoint/GDHCNParticipantDID-URY-UAT-All"
+      },
+      "name" : "GDHCNParticipantDID-URY-UAT-All",
+      "description" : "Uruguay Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:URY\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/URY/did.json",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Endpoint"
+      }],
+      "reference" : {
+        "reference" : "Endpoint/GDHCNParticipantDID-URY-UAT-DSC"
+      },
+      "name" : "GDHCNParticipantDID-URY-UAT-DSC",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Endpoint"
+      }],
+      "reference" : {
+        "reference" : "Endpoint/GDHCNParticipantDID-URY-UAT-SCA"
+      },
+      "name" : "GDHCNParticipantDID-URY-UAT-SCA",
       "isExample" : false
     },
     {
@@ -7304,7 +7490,7 @@
         "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
         "code" : "releaselabel"
       },
-      "value" : "active"
+      "value" : "release"
     },
     {
       "code" : {

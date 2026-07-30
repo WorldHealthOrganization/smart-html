@@ -142,6 +142,6 @@
     }
   },
   "fhir:valueSet": "http://smart.who.int/trust/ValueSet/Participants",
-  "fhir:version": "1.6.0",
-  "fhir:expansionTimestamp": "2026-07-06T11:55:30.018779"
+  "fhir:version": "1.7.0",
+  "fhir:expansionTimestamp": "2026-07-30T12:01:34.781468"
 }

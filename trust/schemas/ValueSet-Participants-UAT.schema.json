@@ -12,6 +12,7 @@
     "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#BEN",
     "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#BRA",
     "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#CAN",
+    "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#CHL",
     "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#CYP",
     "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#CZE",
     "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#ECU",
@@ -32,8 +33,10 @@
     "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#NLD",
     "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#NZL",
     "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#OMN",
+    "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#PAN",
     "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#POL",
     "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#PRT",
+    "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#PRY",
     "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#SAU",
     "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#SGP",
     "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#SLV",
@@ -44,6 +47,7 @@
     "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#TGO",
     "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#THA",
     "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#TUR",
+    "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#URY",
     "http://smart.who.int/trust/CodeSystems/Participants-UAT#IOM",
     "http://smart.who.int/trust/CodeSystems/Participants-UAT#WHO",
     "http://smart.who.int/trust/CodeSystems/Participants-UAT#XXA",
@@ -61,6 +65,6 @@
   "narrative": "This schema validates IRI-formatted codes for the WHO GDHCN Trust Network Participant - UAT ValueSet. Each enum value includes the system URI in the format {systemuri}#{code} to match JSON-LD enumeration IRIs. Display values are available at http://smart.who.int/trust/ValueSet-Participants-UAT.displays.json. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
   "fhir:displays": "http://smart.who.int/trust/ValueSet-Participants-UAT.displays.json",
   "fhir:valueSet": "http://smart.who.int/trust/ValueSet/Participants-UAT",
-  "fhir:version": "1.6.0",
-  "fhir:expansionTimestamp": "2026-07-06T11:55:30.017321"
+  "fhir:version": "1.7.0",
+  "fhir:expansionTimestamp": "2026-07-30T12:01:34.781242"
 }

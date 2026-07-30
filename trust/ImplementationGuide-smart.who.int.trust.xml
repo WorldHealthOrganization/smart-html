@@ -10,12 +10,12 @@
 </div></div>
   </text>
   <url value="http://smart.who.int/trust/ImplementationGuide/smart.who.int.trust"/>
-  <version value="1.6.0"/>
+  <version value="1.7.0"/>
   <name value="Trust"/>
   <title value="WHO SMART Trust"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2026-07-06T11:52:41+00:00"/>
+  <date value="2026-07-30T11:57:48+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -40,7 +40,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r5"/>
-    <version value="7.2.0"/>
+    <version value="7.3.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_uv_extensions_r5">
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
@@ -66,6 +66,11 @@
     <uri value="https://profiles.ihe.net/ITI/mCSD/ImplementationGuide/ihe.iti.mcsd"/>
     <packageId value="ihe.iti.mcsd"/>
     <version value="3.8.0"/>
+  </dependsOn>
+  <dependsOn id="smart_who_int_ph4h">
+    <uri value="http://smart.who.int/ph4h/ImplementationGuide/smart.who.int.ph4h"/>
+    <packageId value="smart.who.int.ph4h"/>
+    <version value="0.9.9"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
@@ -389,6 +394,16 @@
         <reference value="Organization/GDHCNParticipant-CHL-DEV"/>
       </reference>
       <name value="GDHCNParticipant-CHL-DEV"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/GDHCNParticipant-CHL-UAT"/>
+      </reference>
+      <name value="GDHCNParticipant-CHL-UAT"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -906,6 +921,16 @@
         <valueString value="Organization"/>
       </extension>
       <reference>
+        <reference value="Organization/GDHCNParticipant-PAN-UAT"/>
+      </reference>
+      <name value="GDHCNParticipant-PAN-UAT"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
         <reference value="Organization/GDHCNParticipant-PER-DEV"/>
       </reference>
       <name value="GDHCNParticipant-PER-DEV"/>
@@ -959,6 +984,16 @@
         <reference value="Organization/GDHCNParticipant-PRY-DEV"/>
       </reference>
       <name value="GDHCNParticipant-PRY-DEV"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/GDHCNParticipant-PRY-UAT"/>
+      </reference>
+      <name value="GDHCNParticipant-PRY-UAT"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -1209,6 +1244,16 @@
         <reference value="Organization/GDHCNParticipant-URY-DEV"/>
       </reference>
       <name value="GDHCNParticipant-URY-DEV"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/GDHCNParticipant-URY-UAT"/>
+      </reference>
+      <name value="GDHCNParticipant-URY-UAT"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -2200,6 +2245,37 @@
         <reference value="Endpoint/GDHCNParticipantDID-CHL-DEV-SCA"/>
       </reference>
       <name value="GDHCNParticipantDID-CHL-DEV-SCA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-CHL-UAT-All"/>
+      </reference>
+      <name value="GDHCNParticipantDID-CHL-UAT-All"/>
+      <description value="Chile Trustlist (DID v2) - UAT - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:CHL&#xA;resolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/CHL/did.json"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-CHL-UAT-DSC"/>
+      </reference>
+      <name value="GDHCNParticipantDID-CHL-UAT-DSC"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-CHL-UAT-SCA"/>
+      </reference>
+      <name value="GDHCNParticipantDID-CHL-UAT-SCA"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -3788,6 +3864,37 @@
         <valueString value="Endpoint"/>
       </extension>
       <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-PAN-UAT-All"/>
+      </reference>
+      <name value="GDHCNParticipantDID-PAN-UAT-All"/>
+      <description value="Panama Trustlist (DID v2) - UAT - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:PAN&#xA;resolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/PAN/did.json"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-PAN-UAT-DSC"/>
+      </reference>
+      <name value="GDHCNParticipantDID-PAN-UAT-DSC"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-PAN-UAT-SCA"/>
+      </reference>
+      <name value="GDHCNParticipantDID-PAN-UAT-SCA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
         <reference value="Endpoint/GDHCNParticipantDID-PER-DEV-All"/>
       </reference>
       <name value="GDHCNParticipantDID-PER-DEV-All"/>
@@ -3967,6 +4074,37 @@
         <reference value="Endpoint/GDHCNParticipantDID-PRY-DEV-SCA"/>
       </reference>
       <name value="GDHCNParticipantDID-PRY-DEV-SCA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-PRY-UAT-All"/>
+      </reference>
+      <name value="GDHCNParticipantDID-PRY-UAT-All"/>
+      <description value="Paraguay Trustlist (DID v2) - UAT - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:PRY&#xA;resolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/PRY/did.json"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-PRY-UAT-DSC"/>
+      </reference>
+      <name value="GDHCNParticipantDID-PRY-UAT-DSC"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-PRY-UAT-SCA"/>
+      </reference>
+      <name value="GDHCNParticipantDID-PRY-UAT-SCA"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -4742,6 +4880,37 @@
         <reference value="Endpoint/GDHCNParticipantDID-URY-DEV-SCA"/>
       </reference>
       <name value="GDHCNParticipantDID-URY-DEV-SCA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-URY-UAT-All"/>
+      </reference>
+      <name value="GDHCNParticipantDID-URY-UAT-All"/>
+      <description value="Uruguay Trustlist (DID v2) - UAT - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:URY&#xA;resolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/URY/did.json"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-URY-UAT-DSC"/>
+      </reference>
+      <name value="GDHCNParticipantDID-URY-UAT-DSC"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-URY-UAT-SCA"/>
+      </reference>
+      <name value="GDHCNParticipantDID-URY-UAT-SCA"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -6680,7 +6849,7 @@
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
         <code value="releaselabel"/>
       </code>
-      <value value="active"/>
+      <value value="release"/>
     </parameter>
     <parameter>
       <code>

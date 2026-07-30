@@ -1,4 +1,4 @@
-# Trust Network Anchor - WHO SMART Trust v1.6.0
+# Trust Network Anchor - WHO SMART Trust v1.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Indices**](indices.md)
@@ -9,8 +9,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://smart.who.int/trust/ActorDefinition/TrustNetworkAnchor | *Version*:1.6.0 |
-| Active as of 2026-07-06 | *Computable Name*:Trust Network Anchor |
+| *Official URL*:http://smart.who.int/trust/ActorDefinition/TrustNetworkAnchor | *Version*:1.7.0 |
+| Active as of 2026-07-30 | *Computable Name*:Trust Network Anchor |
 
  
 Trust Anchor which receives and distributes PKI-material within a Trust Network 
@@ -34,12 +34,12 @@ Trust Anchor which receives and distributes PKI-material within a Trust Network
     "profile" : ["http://smart.who.int/base/StructureDefinition/SGActor"]
   },
   "url" : "http://smart.who.int/trust/ActorDefinition/TrustNetworkAnchor",
-  "version" : "1.6.0",
+  "version" : "1.7.0",
   "name" : "Trust Network Anchor",
   "title" : "Trust Network Anchor",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-06T11:52:41+00:00",
+  "date" : "2026-07-30T11:57:48+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",
