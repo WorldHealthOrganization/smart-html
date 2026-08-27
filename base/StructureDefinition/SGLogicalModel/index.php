@@ -7,19 +7,19 @@ function Redirect($url)
 
 $accept = $_SERVER['HTTP_ACCEPT'];
 if (strpos($accept, 'application/json+fhir') !== false)
-  Redirect('http://smart.who.int/base/0.2.0/StructureDefinition-SGLogicalModel.json2');
+  Redirect('https://smart.who.int/base/1.0.0/StructureDefinition-SGLogicalModel.json2');
 elseif (strpos($accept, 'application/fhir+json') !== false)
-  Redirect('http://smart.who.int/base/0.2.0/StructureDefinition-SGLogicalModel.json1');
+  Redirect('https://smart.who.int/base/1.0.0/StructureDefinition-SGLogicalModel.json1');
 elseif (strpos($accept, 'json') !== false)
-  Redirect('http://smart.who.int/base/0.2.0/StructureDefinition-SGLogicalModel.json');
+  Redirect('https://smart.who.int/base/1.0.0/StructureDefinition-SGLogicalModel.json');
 elseif (strpos($accept, 'application/xml+fhir') !== false)
-  Redirect('http://smart.who.int/base/0.2.0/StructureDefinition-SGLogicalModel.xml2');
+  Redirect('https://smart.who.int/base/1.0.0/StructureDefinition-SGLogicalModel.xml2');
 elseif (strpos($accept, 'application/fhir+xml') !== false)
-  Redirect('http://smart.who.int/base/0.2.0/StructureDefinition-SGLogicalModel.xml1');
+  Redirect('https://smart.who.int/base/1.0.0/StructureDefinition-SGLogicalModel.xml1');
 elseif (strpos($accept, 'html') !== false)
-  Redirect('http://smart.who.int/base/0.2.0/StructureDefinition-SGLogicalModel.html');
+  Redirect('https://smart.who.int/base/1.0.0/StructureDefinition-SGLogicalModel.html');
 else 
-  Redirect('http://smart.who.int/base/0.2.0/StructureDefinition-SGLogicalModel.xml');
+  Redirect('https://smart.who.int/base/1.0.0/StructureDefinition-SGLogicalModel.xml');
 ?>
     
 You should not be seeing this page. If you do, PHP has failed badly.

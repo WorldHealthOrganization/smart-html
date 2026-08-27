@@ -1,0 +1,63 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"DAK","DAK","","","",0,*,"","","","null {[]} {[]}
+","Digital Adaptation Kit (DAK)","Logical Model for representing a complete Digital Adaptation Kit (DAK) with metadata and all 9 DAK components","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"DAK.id","DAK.id","","","",1,1,"","","","string {[]} {[]}
+","DAK ID","Identifier for the DAK (e.g., smart.who.int.base)","","","","","","","","","",,,,,"",,,,"DAK.id",1,1,"",""
+"DAK.name","DAK.name","","","",1,1,"","","","string {[]} {[]}
+","DAK Name","Short name for the DAK (e.g., Base)","","","","","","","","","",,,,,"",,,,"DAK.name",1,1,"",""
+"DAK.title","DAK.title","","","",1,1,"","","","string {[]} {[]}
+","DAK Title","Full title of the DAK (e.g., SMART Base)","","","","","","","","","",,,,,"",,,,"DAK.title",1,1,"",""
+"DAK.description[x]","DAK.description[x]","","","",1,1,"","","","string {[]} {[]}
+uri {[]} {[]}","DAK Description","Description of the DAK - either Markdown content or a URI to a Markdown file (absolute or relative to repository root)","","","","","","","","","",,,,,"",,,,"DAK.description[x]",1,1,"",""
+"DAK.version","DAK.version","","","",1,1,"","","","string {[]} {[]}
+","DAK Version","Version of the DAK","","","","","","","","","",,,,,"",,,,"DAK.version",1,1,"",""
+"DAK.status","DAK.status","","","",1,1,"","","","code {[]} {[]}
+","DAK Status","Publication status of the DAK","","","","","","","","","",,,,,"",,,,"DAK.status",1,1,"",""
+"DAK.publicationUrl","DAK.publicationUrl","","","",1,1,"","","","url {[]} {[]}
+","Publication URL","Canonical URL for the published DAK (e.g., https://smart.who.int/base for WHO repositories)","","","","","","","","","",,,,,"",,,,"DAK.publicationUrl",1,1,"",""
+"DAK.previewUrl","DAK.previewUrl","","","",1,1,"","","","url {[]} {[]}
+","Preview URL","Preview URL for the current CI build (e.g., https://worldhealthorganization.github.io/smart-base)","","","","","","","","","",,,,,"",,,,"DAK.previewUrl",1,1,"",""
+"DAK.canonicalUrl","DAK.canonicalUrl","","","",1,1,"","","","url {[]} {[]}
+","Canonical URL","The canonical URL to use for this DAK instance - equals publicationUrl for release branches, previewUrl for development branches","","","","","","","","","",,,,,"",,,,"DAK.canonicalUrl",1,1,"",""
+"DAK.license","DAK.license","","","",1,1,"","","","code {[]} {[]}
+","License","License under which the DAK is published","","","","","","","","","",,,,,"",,,,"DAK.license",1,1,"",""
+"DAK.copyrightYear","DAK.copyrightYear","","","",1,1,"","","","string {[]} {[]}
+","Copyright Year","Year or year range for copyright","","","","","","","","","",,,,,"",,,,"DAK.copyrightYear",1,1,"",""
+"DAK.publisher","DAK.publisher","","","",1,1,"","","","BackboneElement {[]} {[]}
+","Publisher","Organization responsible for publishing the DAK","","","","","","","","","",,,,,"",,,,"DAK.publisher",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"DAK.publisher.id","DAK.publisher.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"DAK.publisher.extension","DAK.publisher.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"DAK.publisher.modifierExtension","DAK.publisher.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"DAK.publisher.name","DAK.publisher.name","","","",1,1,"","","","string {[]} {[]}
+","Publisher Name","Name of the publishing organization","","","","","","","","","",,,,,"",,,,"DAK.publisher.name",1,1,"",""
+"DAK.publisher.url","DAK.publisher.url","","","",0,1,"","","","url {[]} {[]}
+","Publisher URL","URL of the publishing organization","","","","","","","","","",,,,,"",,,,"DAK.publisher.url",0,1,"",""
+"DAK.healthInterventions","DAK.healthInterventions","","","",0,*,"","","","http://smart.who.int/base/StructureDefinition/HealthInterventionsSource {[]} {[]}
+","Health Interventions and Recommendations","Overview of the health interventions and WHO, regional or national recommendations included within the DAK","","","","","","","","","",,,,,"",,,,"DAK.healthInterventions",0,*,"",""
+"DAK.personas","DAK.personas","","","",0,*,"","","","http://smart.who.int/base/StructureDefinition/GenericPersonaSource {[]} {[]}
+","Generic Personas","Depiction of the human and system actors","","","","","","","","","",,,,,"",,,,"DAK.personas",0,*,"",""
+"DAK.userScenarios","DAK.userScenarios","","","",0,*,"","","","http://smart.who.int/base/StructureDefinition/UserScenarioSource {[]} {[]}
+","User Scenarios","Narratives that describe how the different personas may interact with each other","","","","","","","","","",,,,,"",,,,"DAK.userScenarios",0,*,"",""
+"DAK.businessProcesses","DAK.businessProcesses","","","",0,*,"","","","http://smart.who.int/base/StructureDefinition/BusinessProcessWorkflowSource {[]} {[]}
+","Generic Business Processes and Workflows","Business processes and workflows for achieving health programme objectives","","","","","","","","","",,,,,"",,,,"DAK.businessProcesses",0,*,"",""
+"DAK.dataElements","DAK.dataElements","","","",0,*,"","","","http://smart.who.int/base/StructureDefinition/CoreDataElementSource {[]} {[]}
+","Core Data Elements","Data elements required throughout the different points of a workflow","","","","","","","","","",,,,,"",,,,"DAK.dataElements",0,*,"",""
+"DAK.decisionLogic","DAK.decisionLogic","","","",0,*,"","","","http://smart.who.int/base/StructureDefinition/DecisionSupportLogicSource {[]} {[]}
+","Decision-Support Logic","Decision-support logic and algorithms to support appropriate service delivery","","","","","","","","","",,,,,"",,,,"DAK.decisionLogic",0,*,"",""
+"DAK.indicators","DAK.indicators","","","",0,*,"","","","http://smart.who.int/base/StructureDefinition/ProgramIndicatorSource {[]} {[]}
+","Program Indicators","Core set of indicators for decision-making, performance metrics and reporting","","","","","","","","","",,,,,"",,,,"DAK.indicators",0,*,"",""
+"DAK.requirements","DAK.requirements","","","",0,*,"","","","http://smart.who.int/base/StructureDefinition/RequirementsSource {[]} {[]}
+","Functional and Non-Functional Requirements","High-level list of core functions and capabilities that the system must have","","","","","","","","","",,,,,"",,,,"DAK.requirements",0,*,"",""
+"DAK.testScenarios","DAK.testScenarios","","","",0,*,"","","","http://smart.who.int/base/StructureDefinition/TestScenarioSource {[]} {[]}
+","Test Scenarios","Set of test scenarios to validate an implementation of the DAK","","","","","","","","","",,,,,"",,,,"DAK.testScenarios",0,*,"",""

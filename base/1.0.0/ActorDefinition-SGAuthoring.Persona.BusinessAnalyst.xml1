@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="SGAuthoring.Persona.BusinessAnalyst"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ActorDefinition SGAuthoring.Persona.BusinessAnalyst</b></p><a name="SGAuthoring.Persona.BusinessAnalyst"> </a><a name="hcSGAuthoring.Persona.BusinessAnalyst"> </a><table class="grid"><tr><td><b>Actor: BusinessAnalyst </b></td><td>Business Analyst</td><td>Type: person </td></tr><tr><td colspan="3"/></tr></table></div><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><p class="res-header-id"><b>Narratif généré : ActorDefinition SGAuthoring.Persona.BusinessAnalyst</b></p><a name="fr-SGAuthoring.Persona.BusinessAnalyst"> </a><a name="fr-hcSGAuthoring.Persona.BusinessAnalyst"> </a><table class="grid"><tr><td><b>Acteur : BusinessAnalyst </b></td><td>Business Analyst</td><td>Type : person </td></tr><tr><td colspan="3"/></tr></table></div><div xml:lang="ar" lang="ar"><hr/><p><b>Arabic</b></p><hr/><p class="res-header-id"><b>السرد المُنشأ: ActorDefinition SGAuthoring.Persona.BusinessAnalyst</b></p><a name="ar-SGAuthoring.Persona.BusinessAnalyst"> </a><a name="ar-hcSGAuthoring.Persona.BusinessAnalyst"> </a><table class="grid"><tr><td><b>الفاعل: BusinessAnalyst </b></td><td>Business Analyst</td><td>اكتب: person </td></tr><tr><td colspan="3"/></tr></table></div><div xml:lang="zh" lang="zh"><hr/><p><b>Chinese</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ActorDefinition SGAuthoring.Persona.BusinessAnalyst</b></p><a name="zh-SGAuthoring.Persona.BusinessAnalyst"> </a><a name="zh-hcSGAuthoring.Persona.BusinessAnalyst"> </a><table class="grid"><tr><td><b>Actor: BusinessAnalyst </b></td><td>Business Analyst</td><td>Type: person </td></tr><tr><td colspan="3"/></tr></table></div><div xml:lang="ru" lang="ru"><hr/><p><b>Russian</b></p><hr/><p class="res-header-id"><b>Сгенерированный нарратив: ActorDefinition SGAuthoring.Persona.BusinessAnalyst</b></p><a name="ru-SGAuthoring.Persona.BusinessAnalyst"> </a><a name="ru-hcSGAuthoring.Persona.BusinessAnalyst"> </a><table class="grid"><tr><td><b>Актер: BusinessAnalyst </b></td><td>Business Analyst</td><td>Тип: person </td></tr><tr><td colspan="3"/></tr></table></div><div xml:lang="es" lang="es"><hr/><p><b>Spanish</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ActorDefinition SGAuthoring.Persona.BusinessAnalyst</b></p><a name="es-SGAuthoring.Persona.BusinessAnalyst"> </a><a name="es-hcSGAuthoring.Persona.BusinessAnalyst"> </a><table class="grid"><tr><td><b>Actor: BusinessAnalyst </b></td><td>Business Analyst</td><td>Type: person </td></tr><tr><td colspan="3"/></tr></table></div></div>
+  </text>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.url">
+    <valueUri value="http://smart.who.int/base/ActorDefinition/SGAuthoring.Persona.BusinessAnalyst"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.version">
+    <valueString value="1.0.0"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.name">
+    <valueString value="BusinessAnalyst"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.title">
+    <valueString value="Business Analyst"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.status">
+    <valueCode value="draft"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.experimental">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.date">
+    <valueDateTime value="2026-08-27T08:31:36+00:00"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.publisher">
+    <valueString value="WHO"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.contact">
+    <valueContactDetail>
+      <name value="WHO"/>
+      <telecom>
+        <system value="url"/>
+        <value value="http://who.int"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.description">
+    <valueMarkdown value="A digital health informatician specializing in business analysis who authors&#xA;L2 DAK components. Business analysts translate clinical guidelines and&#xA;normative products into structured DAK artifacts including business processes,&#xA;data dictionaries, decision-support logic, and requirements.&#xA;&#xA;Key activities:&#xA;- Review L1 source documents and extract structured content&#xA;- Author generic personas based on task-shifting guidelines&#xA;- Create user scenario narratives&#xA;- Design BPMN 2.0 business process diagrams&#xA;- Define core data elements and data dictionary&#xA;- Develop decision-support logic tables (DMN standard)&#xA;- Develop scheduling logic tables&#xA;- Define indicators and performance metrics&#xA;- Capture functional and non-functional requirements&#xA;- Streamline content across DAK components for consistency&#xA;&#xA;**Source**: IG Starter Kit, L2 DAK Authoring, Section 2.1 &quot;Fill in DAK components&quot;;&#xA;Community of Practice page"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.jurisdiction"/>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.type">
+    <valueCode value="person"/>
+  </extension>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/fhir-types"/>
+      <code value="ActorDefinition"/>
+    </coding>
+  </code>
+</Basic>

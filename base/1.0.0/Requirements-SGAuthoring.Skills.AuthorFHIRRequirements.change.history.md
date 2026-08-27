@@ -1,0 +1,6 @@
+#  - SMART Base v1.0.0
+
+## : SkillAuthorFHIRRequirements - Change History
+
+History of changes for SGAuthoring.Skills.AuthorFHIRRequirements .
+

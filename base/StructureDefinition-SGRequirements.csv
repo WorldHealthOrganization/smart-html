@@ -26,12 +26,16 @@ dom-4dom-3dom-5","","N/A"
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Requirements.extension:task","Requirements.extension","task","","",0,*,"","","","Extension {[CanonicalType[http://smart.who.int/base/StructureDefinition/SGTask]]} {[]}
+","Extension","Extension to reference SMART Guidelines task type","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Requirements.extension:satisfies","Requirements.extension","satisfies","","",0,*,"","","","Extension {[CanonicalType[http://smart.who.int/base/StructureDefinition/Satisfies]]} {[]}
 ","Extension","Indicates that if the conditions for this requirement are satisified, then that it should be viewed as satisifying  the referenced requirement.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Requirements.extension:userstory","Requirements.extension","userstory","","",0,*,"","","","Extension {[CanonicalType[http://smart.who.int/base/StructureDefinition/SGUserStory]]} {[]}
-","Extension","Smart Guidelines extension to support structured User Stories (As a <Actor> I want to <capability> so that <benfit>) extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Extension","Smart Guidelines extension to support structured User Stories (As a `Actor` I want to `capability` so that `benefit`) extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Requirements.modifierExtension","Requirements.modifierExtension","","extensions

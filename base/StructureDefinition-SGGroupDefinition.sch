@@ -13,7 +13,7 @@
     <sch:title>f:Group</sch:title>
     <sch:rule context="f:Group">
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/cqf-library']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/cqf-library': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/cqf-expression']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/cqf-expression': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/characteristicExpression']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/characteristicExpression': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:identifier) &gt;= 1">identifier: minimum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:active) &gt;= 1">active: minimum cardinality of 'active' is 1</sch:assert>
     </sch:rule>
@@ -36,13 +36,14 @@
   <sch:pattern>
     <sch:title>f:Group/f:managingEntity</sch:title>
     <sch:rule context="f:Group/f:managingEntity">
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/artifact-canonicalReference']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/artifact-canonicalReference': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/artifact-reference']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/artifact-reference': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:title>f:Group/f:member/f:entity</sch:title>
     <sch:rule context="f:Group/f:member/f:entity">
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/artifact-canonicalReference']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/artifact-canonicalReference': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/artifact-reference']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/artifact-reference': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/artifact-uriReference']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/artifact-uriReference': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

@@ -1,0 +1,615 @@
+# Classification of Digital Health Interventions v2 - SMART Base v1.0.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Classification of Digital Health Interventions v2**
+
+## CodeSystem: Classification of Digital Health Interventions v2 (Experimental) 
+
+| | |
+| :--- | :--- |
+| *Official URL*:http://smart.who.int/base/CodeSystem/CDHIv2 | *Version*:1.0.0 |
+| Active as of 2026-08-27 | *Computable Name*:CDHIv2 |
+| **Copyright/Legal**: WHO © 2023. Some rights reserved. CC BY-NC-SA 3.0 IGO. | |
+
+ 
+CodeSystem for the Classification of Digital Interventions, Services and Applications in Health (CDISAH), second edition (2023). ISBN 978-92-4-008194-9. 
+Organised into four groups based on the primary user: 
+1. Persons
+1. Healthcare providers
+1. Health management and support personnel
+1. Data services
+ 
+New categories vs v1: 1.4.4, 1.6.2, 1.8, 2.5.6, 2.11, 3.1.5, 3.5.7, 3.5.8, 3.8, 4.3.5, 4.4.2, 4.4.3, 4.5. See ConceptMap CDHIv1toCDHIv2 for the full mapping from the first edition. 
+
+ This Code system is referenced in the content logical definition of the following value sets: 
+
+* [Classification of Digital Health Interventions v2](ValueSet-CDHIv2.md)
+* [Digital Health Interventions for Persons](ValueSet-CDHIv2.1.md)
+* [Digital Health Interventions for Healthcare Providers](ValueSet-CDHIv2.2.md)
+* [Digital Health Interventions for Health Management and Support Personnel](ValueSet-CDHIv2.3.md)
+* [Digital Health Interventions: Data Services](ValueSet-CDHIv2.4.md)
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "CodeSystem",
+  "id" : "CDHIv2",
+  "url" : "http://smart.who.int/base/CodeSystem/CDHIv2",
+  "version" : "1.0.0",
+  "name" : "CDHIv2",
+  "title" : "Classification of Digital Health Interventions v2",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2026-08-27T08:35:55+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    }]
+  }],
+  "description" : "CodeSystem for the Classification of Digital Interventions, Services and Applications in Health\n(CDISAH), second edition (2023). ISBN 978-92-4-008194-9.\n\nOrganised into four groups based on the primary user:\n  1. Persons\n  2. Healthcare providers\n  3. Health management and support personnel\n  4. Data services\n\nNew categories vs v1: 1.4.4, 1.6.2, 1.8, 2.5.6, 2.11, 3.1.5, 3.5.7, 3.5.8, 3.8, 4.3.5, 4.4.2, 4.4.3, 4.5.\nSee ConceptMap CDHIv1toCDHIv2 for the full mapping from the first edition.",
+  "copyright" : "WHO © 2023. Some rights reserved. CC BY-NC-SA 3.0 IGO.",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 138,
+  "concept" : [{
+    "code" : "1",
+    "display" : "Persons"
+  },
+  {
+    "code" : "1.1",
+    "display" : "Targeted communication to Persons"
+  },
+  {
+    "code" : "1.1.1",
+    "display" : "Transmit health event alerts to specific population group(s)"
+  },
+  {
+    "code" : "1.1.2",
+    "display" : "Transmit targeted health information to person(s) based on health status or demographics"
+  },
+  {
+    "code" : "1.1.3",
+    "display" : "Transmit targeted alerts and reminders to person(s)"
+  },
+  {
+    "code" : "1.1.4",
+    "display" : "Transmit diagnostics result, or availability of result, to person(s)"
+  },
+  {
+    "code" : "1.2",
+    "display" : "Untargeted communication to Persons"
+  },
+  {
+    "code" : "1.2.1",
+    "display" : "Transmit untargeted health information to an undefined population"
+  },
+  {
+    "code" : "1.2.2",
+    "display" : "Transmit untargeted health event alerts to undefined group"
+  },
+  {
+    "code" : "1.3",
+    "display" : "Person to Person communication"
+  },
+  {
+    "code" : "1.3.1",
+    "display" : "Peer group for individuals"
+  },
+  {
+    "code" : "1.4",
+    "display" : "Personal health tracking"
+  },
+  {
+    "code" : "1.4.1",
+    "display" : "Access by the individual to own medical or summary health records"
+  },
+  {
+    "code" : "1.4.2",
+    "display" : "Self monitoring of health or diagnostic data by the individual"
+  },
+  {
+    "code" : "1.4.3",
+    "display" : "Active data capture/documentation by an individual"
+  },
+  {
+    "code" : "1.4.4",
+    "display" : "Access by the individual to verifiable documentation of a health event or health status"
+  },
+  {
+    "code" : "1.5",
+    "display" : "Person based reporting"
+  },
+  {
+    "code" : "1.5.1",
+    "display" : "Reporting of health system feedback by persons"
+  },
+  {
+    "code" : "1.5.2",
+    "display" : "Reporting of public health events by persons"
+  },
+  {
+    "code" : "1.6",
+    "display" : "On demand communication with persons"
+  },
+  {
+    "code" : "1.6.1",
+    "display" : "Look-up of information on health and health services by individuals"
+  },
+  {
+    "code" : "1.6.2",
+    "display" : "Simulated human-like conversations with individual(s)"
+  },
+  {
+    "code" : "1.7",
+    "display" : "Person-centred financial transactions"
+  },
+  {
+    "code" : "1.7.1",
+    "display" : "Transmit or manage out-of-pocket payments by individuals"
+  },
+  {
+    "code" : "1.7.2",
+    "display" : "Transmit or manage vouchers to individuals for health services"
+  },
+  {
+    "code" : "1.7.3",
+    "display" : "Transmit or manage incentives to individuals for health services"
+  },
+  {
+    "code" : "1.8",
+    "display" : "Person-centred consent management"
+  },
+  {
+    "code" : "1.8.1",
+    "display" : "Manage provision and withdrawal of consent by individuals"
+  },
+  {
+    "code" : "2",
+    "display" : "Healthcare providers"
+  },
+  {
+    "code" : "2.1",
+    "display" : "Identification and registration of persons"
+  },
+  {
+    "code" : "2.1.1",
+    "display" : "Verify a person's unique identity"
+  },
+  {
+    "code" : "2.1.2",
+    "display" : "Enrol person(s) for health services/clinical care plan"
+  },
+  {
+    "code" : "2.2",
+    "display" : "Person-centred health records"
+  },
+  {
+    "code" : "2.2.1",
+    "display" : "Longitudinal tracking of person's health status and services"
+  },
+  {
+    "code" : "2.2.2",
+    "display" : "Manage person-centred structured clinical records"
+  },
+  {
+    "code" : "2.2.3",
+    "display" : "Manage person-centred unstructured clinical records (e.g. notes, images, documents)"
+  },
+  {
+    "code" : "2.2.4",
+    "display" : "Routine health indicator data collection and management"
+  },
+  {
+    "code" : "2.3",
+    "display" : "Healthcare provider decision support"
+  },
+  {
+    "code" : "2.3.1",
+    "display" : "Provide prompts and alerts based according to protocol"
+  },
+  {
+    "code" : "2.3.2",
+    "display" : "Provide checklist according to protocol"
+  },
+  {
+    "code" : "2.3.3",
+    "display" : "Screen persons by risk or other health status"
+  },
+  {
+    "code" : "2.4",
+    "display" : "Telemedicine"
+  },
+  {
+    "code" : "2.4.1",
+    "display" : "Consultations between remote person and healthcare provider"
+  },
+  {
+    "code" : "2.4.2",
+    "display" : "Remote monitoring of person's health or diagnostic data by provider"
+  },
+  {
+    "code" : "2.4.3",
+    "display" : "Transmission of medical data (e.g. images, notes, and videos) to healthcare provider"
+  },
+  {
+    "code" : "2.4.4",
+    "display" : "Consultations for case management between healthcare providers"
+  },
+  {
+    "code" : "2.5",
+    "display" : "Healthcare provider communication"
+  },
+  {
+    "code" : "2.5.1",
+    "display" : "Communication from healthcare provider to supervisor(s)"
+  },
+  {
+    "code" : "2.5.2",
+    "display" : "Communication and performance feedback to healthcare provider(s)"
+  },
+  {
+    "code" : "2.5.3",
+    "display" : "Transmit routine news and workflow notifications to healthcare provider(s)"
+  },
+  {
+    "code" : "2.5.4",
+    "display" : "Transmit non-routine health event alerts to healthcare provider(s)"
+  },
+  {
+    "code" : "2.5.5",
+    "display" : "Peer group for healthcare providers"
+  },
+  {
+    "code" : "2.5.6",
+    "display" : "Generative AI for tailored content creation"
+  },
+  {
+    "code" : "2.6",
+    "display" : "Referral coordination"
+  },
+  {
+    "code" : "2.6.1",
+    "display" : "Coordinate emergency response and transport"
+  },
+  {
+    "code" : "2.6.2",
+    "display" : "Manage referrals between points of service within health sector"
+  },
+  {
+    "code" : "2.6.3",
+    "display" : "Manage referrals between health and other sectors (social services, police, justice, economic support schemes)"
+  },
+  {
+    "code" : "2.7",
+    "display" : "Scheduling and activity planning for healthcare providers"
+  },
+  {
+    "code" : "2.7.1",
+    "display" : "Identify persons in need of services"
+  },
+  {
+    "code" : "2.7.2",
+    "display" : "Schedule healthcare provider's activities"
+  },
+  {
+    "code" : "2.8",
+    "display" : "Healthcare provider training"
+  },
+  {
+    "code" : "2.8.1",
+    "display" : "Provide training content to healthcare provider(s)"
+  },
+  {
+    "code" : "2.8.2",
+    "display" : "Assess capacity of healthcare provider(s)"
+  },
+  {
+    "code" : "2.9",
+    "display" : "Prescription and medication management"
+  },
+  {
+    "code" : "2.9.1",
+    "display" : "Transmit or track prescription orders"
+  },
+  {
+    "code" : "2.9.2",
+    "display" : "Track individual's medication consumption"
+  },
+  {
+    "code" : "2.9.3",
+    "display" : "Report adverse drug effects"
+  },
+  {
+    "code" : "2.10",
+    "display" : "Laboratory and diagnostics imaging management"
+  },
+  {
+    "code" : "2.10.1",
+    "display" : "Transmit person's diagnostic result to healthcare provider"
+  },
+  {
+    "code" : "2.10.2",
+    "display" : "Transmit and track diagnostic orders"
+  },
+  {
+    "code" : "2.10.3",
+    "display" : "Capture diagnostic results from digital devices"
+  },
+  {
+    "code" : "2.10.4",
+    "display" : "Track biological specimens"
+  },
+  {
+    "code" : "2.11",
+    "display" : "Healthcare provider financial transactions"
+  },
+  {
+    "code" : "2.11.1",
+    "display" : "Verify individual's health coverage and financing scheme membership"
+  },
+  {
+    "code" : "2.11.2",
+    "display" : "Receive payments from individuals"
+  },
+  {
+    "code" : "3",
+    "display" : "Health management and support personnel"
+  },
+  {
+    "code" : "3.1",
+    "display" : "Human resource management"
+  },
+  {
+    "code" : "3.1.1",
+    "display" : "List health workforce cadres and related identification information"
+  },
+  {
+    "code" : "3.1.2",
+    "display" : "Monitor performance of healthcare provider(s)"
+  },
+  {
+    "code" : "3.1.3",
+    "display" : "Manage registration/certification of healthcare provider(s)"
+  },
+  {
+    "code" : "3.1.4",
+    "display" : "Record training credentials of healthcare provider(s)"
+  },
+  {
+    "code" : "3.1.5",
+    "display" : "Manage health workforce activities"
+  },
+  {
+    "code" : "3.2",
+    "display" : "Supply chain management"
+  },
+  {
+    "code" : "3.2.1",
+    "display" : "Manage inventory and distribution of health commodities"
+  },
+  {
+    "code" : "3.2.2",
+    "display" : "Notify stock levels of health commodities"
+  },
+  {
+    "code" : "3.2.3",
+    "display" : "Monitor cold-chain sensitive commodities"
+  },
+  {
+    "code" : "3.2.4",
+    "display" : "Register licensed drugs and health commodities"
+  },
+  {
+    "code" : "3.2.5",
+    "display" : "Manage procurement of commodities"
+  },
+  {
+    "code" : "3.2.6",
+    "display" : "Report counterfeit or substandard drugs by persons"
+  },
+  {
+    "code" : "3.3",
+    "display" : "Public health event notification"
+  },
+  {
+    "code" : "3.3.1",
+    "display" : "Notification of public health events from point of diagnosis"
+  },
+  {
+    "code" : "3.4",
+    "display" : "Civil Registration and Vital Statistics (CRVS)"
+  },
+  {
+    "code" : "3.4.1",
+    "display" : "Notify, register and certify birth event"
+  },
+  {
+    "code" : "3.4.2",
+    "display" : "Notify, register and certify death event"
+  },
+  {
+    "code" : "3.5",
+    "display" : "Health system financial management"
+  },
+  {
+    "code" : "3.5.1",
+    "display" : "Register and verify health coverage scheme membership of persons"
+  },
+  {
+    "code" : "3.5.2",
+    "display" : "Track and manage insurance billing and claims processes"
+  },
+  {
+    "code" : "3.5.3",
+    "display" : "Transmit and manage payments to health facilities"
+  },
+  {
+    "code" : "3.5.4",
+    "display" : "Transmit and manage routine payroll payment to healthcare provider(s)"
+  },
+  {
+    "code" : "3.5.5",
+    "display" : "Transmit or manage financial incentives to healthcare provider(s)"
+  },
+  {
+    "code" : "3.5.6",
+    "display" : "Manage and plan budget allocations, revenue and expenditures"
+  },
+  {
+    "code" : "3.5.7",
+    "display" : "Determine level of subsidies for health coverage schemes"
+  },
+  {
+    "code" : "3.5.8",
+    "display" : "Collect health insurance contributions"
+  },
+  {
+    "code" : "3.6",
+    "display" : "Equipment and asset management"
+  },
+  {
+    "code" : "3.6.1",
+    "display" : "Monitor status and maintenance of health equipment"
+  },
+  {
+    "code" : "3.6.2",
+    "display" : "Track regulation and licensing of medical equipment"
+  },
+  {
+    "code" : "3.7",
+    "display" : "Facility management"
+  },
+  {
+    "code" : "3.7.1",
+    "display" : "List health facilities and related information"
+  },
+  {
+    "code" : "3.7.2",
+    "display" : "Assess health facilities"
+  },
+  {
+    "code" : "3.8",
+    "display" : "Person-centred health certificate management"
+  },
+  {
+    "code" : "3.8.1",
+    "display" : "Register and store current health certificate information"
+  },
+  {
+    "code" : "3.8.2",
+    "display" : "Retrieve and validate current health certificate information"
+  },
+  {
+    "code" : "3.8.3",
+    "display" : "Revoke and update health certificate"
+  },
+  {
+    "code" : "4",
+    "display" : "Data services"
+  },
+  {
+    "code" : "4.1",
+    "display" : "Data Management"
+  },
+  {
+    "code" : "4.1.1",
+    "display" : "Form creation for data acquisition"
+  },
+  {
+    "code" : "4.1.2",
+    "display" : "Data storage and aggregation"
+  },
+  {
+    "code" : "4.1.3",
+    "display" : "Data synthesis and visualizations"
+  },
+  {
+    "code" : "4.1.4",
+    "display" : "Automated analysis of data to generate new information or predictions on future events"
+  },
+  {
+    "code" : "4.2",
+    "display" : "Data coding"
+  },
+  {
+    "code" : "4.2.1",
+    "display" : "Parse unstructured data into structured data"
+  },
+  {
+    "code" : "4.2.2",
+    "display" : "Merge, de-duplicate and curate coded datasets or terminologies"
+  },
+  {
+    "code" : "4.2.3",
+    "display" : "Classify disease codes or cause of mortality"
+  },
+  {
+    "code" : "4.3",
+    "display" : "Geospatial information management"
+  },
+  {
+    "code" : "4.3.1",
+    "display" : "Map location of health facilities/structures and households"
+  },
+  {
+    "code" : "4.3.2",
+    "display" : "Map location of health event"
+  },
+  {
+    "code" : "4.3.3",
+    "display" : "Map location of persons and settlements"
+  },
+  {
+    "code" : "4.3.4",
+    "display" : "Map location of healthcare provider(s)"
+  },
+  {
+    "code" : "4.3.5",
+    "display" : "Map health and health indicator data to geographic data"
+  },
+  {
+    "code" : "4.4",
+    "display" : "Data exchange and interoperability"
+  },
+  {
+    "code" : "4.4.1",
+    "display" : "Point-to-point data integration"
+  },
+  {
+    "code" : "4.4.2",
+    "display" : "Standards-compliant interoperability"
+  },
+  {
+    "code" : "4.4.3",
+    "display" : "Message routing"
+  },
+  {
+    "code" : "4.5",
+    "display" : "Data governance compliance"
+  },
+  {
+    "code" : "4.5.1",
+    "display" : "Authentication and authorisation"
+  },
+  {
+    "code" : "4.5.2",
+    "display" : "Data privacy protection"
+  },
+  {
+    "code" : "4.5.3",
+    "display" : "Data consent and provenance"
+  },
+  {
+    "code" : "4.5.4",
+    "display" : "Trust architecture"
+  }]
+}
+
+```

@@ -1,0 +1,14 @@
+# Can author example scenarios - TTL Representation - SMART Base v1.0.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Can author example scenarios**
+
+## : Can author example scenarios - TTL Representation
+
+| |
+| :--- |
+| Draft as of 2026-08-27 |
+
+[Raw ttl](Requirements-SGAuthoring.Skills.AuthorExampleScenarios.ttl) | [Download](Requirements-SGAuthoring.Skills.AuthorExampleScenarios.ttl)
+

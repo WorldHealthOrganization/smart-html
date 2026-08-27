@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="SGAuthoring.Skills.ManageReleases"/>
+  <meta>
+    <profile value="http://smart.who.int/base/StructureDefinition/SGRequirements"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Requirements SGAuthoring.Skills.ManageReleases</b></p><a name="SGAuthoring.Skills.ManageReleases"> </a><a name="hcSGAuthoring.Skills.ManageReleases"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-SGRequirements.html">SMART Guidelines Requirements</a></p></div><p>These requirements apply to the actor <a href="ActorDefinition-SGAuthoring.Persona.PublicationManager.html">Publication Manager</a></p><table class="grid"><tr><td><b><a name="REL-01"> </a></b>Determine version number</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can review changes since last release, determine if changes are breaking, and update version number following semantic versioning.</p>
+</div></td></tr><tr><td><b><a name="REL-02"> </a></b>Update IG status for release</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can update IG and all conformance artifacts: status to active, version without label, releaseLabel to release, and date to current date.</p>
+</div></td></tr><tr><td><b><a name="REL-03"> </a></b>Create publication-request.json</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can create a correct publication-request.json with matching package-id, version, path, ci-build, and first/subsequent flags.</p>
+</div></td></tr><tr><td><b><a name="REL-04"> </a></b>Create release tag</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can create a GitHub release and tag in the form vX.Y.Z to trigger the automated publication workflow.</p>
+</div></td></tr><tr><td><b><a name="REL-05"> </a></b>Verify publication</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can verify the publication workflow succeeded and the IG is available at the sitepreview URL.</p>
+</div></td></tr><tr><td><b><a name="REL-06"> </a></b>Reset to draft</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can reset the main branch to draft status with updated version number after publication.</p>
+</div></td></tr><tr><td><b><a name="REL-07"> </a></b>Maintain change log</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can maintain a changes page with release summary, known issues, and categorized changes (non-compatible, compatible substantive, non-substantive).</p>
+</div></td></tr></table></div><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><p class="res-header-id"><b>Narratif généré : Requirements SGAuthoring.Skills.ManageReleases</b></p><a name="fr-SGAuthoring.Skills.ManageReleases"> </a><a name="fr-hcSGAuthoring.Skills.ManageReleases"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-SGRequirements.html">SMART Guidelines Requirements</a></p></div><p>Ces exigences s'appliquent à l'acteur <a href="ActorDefinition-SGAuthoring.Persona.PublicationManager.html">Publication Manager</a></p><table class="grid"><tr><td><b><a name="fr-REL-01"> </a></b>Determine version number</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can review changes since last release, determine if changes are breaking, and update version number following semantic versioning.</p>
+</div></td></tr><tr><td><b><a name="fr-REL-02"> </a></b>Update IG status for release</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can update IG and all conformance artifacts: status to active, version without label, releaseLabel to release, and date to current date.</p>
+</div></td></tr><tr><td><b><a name="fr-REL-03"> </a></b>Create publication-request.json</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can create a correct publication-request.json with matching package-id, version, path, ci-build, and first/subsequent flags.</p>
+</div></td></tr><tr><td><b><a name="fr-REL-04"> </a></b>Create release tag</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can create a GitHub release and tag in the form vX.Y.Z to trigger the automated publication workflow.</p>
+</div></td></tr><tr><td><b><a name="fr-REL-05"> </a></b>Verify publication</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can verify the publication workflow succeeded and the IG is available at the sitepreview URL.</p>
+</div></td></tr><tr><td><b><a name="fr-REL-06"> </a></b>Reset to draft</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can reset the main branch to draft status with updated version number after publication.</p>
+</div></td></tr><tr><td><b><a name="fr-REL-07"> </a></b>Maintain change log</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can maintain a changes page with release summary, known issues, and categorized changes (non-compatible, compatible substantive, non-substantive).</p>
+</div></td></tr></table></div><div xml:lang="ar" lang="ar"><hr/><p><b>Arabic</b></p><hr/><p class="res-header-id"><b>السرد المُنشأ: Requirements SGAuthoring.Skills.ManageReleases</b></p><a name="ar-SGAuthoring.Skills.ManageReleases"> </a><a name="ar-hcSGAuthoring.Skills.ManageReleases"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">الملف الشخصي: <a href="StructureDefinition-SGRequirements.html">SMART Guidelines Requirements</a></p></div><p>تنطبق هذه المتطلبات على الممثل <a href="ActorDefinition-SGAuthoring.Persona.PublicationManager.html">Publication Manager</a></p><table class="grid"><tr><td><b><a name="ar-REL-01"> </a></b>Determine version number</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can review changes since last release, determine if changes are breaking, and update version number following semantic versioning.</p>
+</div></td></tr><tr><td><b><a name="ar-REL-02"> </a></b>Update IG status for release</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can update IG and all conformance artifacts: status to active, version without label, releaseLabel to release, and date to current date.</p>
+</div></td></tr><tr><td><b><a name="ar-REL-03"> </a></b>Create publication-request.json</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can create a correct publication-request.json with matching package-id, version, path, ci-build, and first/subsequent flags.</p>
+</div></td></tr><tr><td><b><a name="ar-REL-04"> </a></b>Create release tag</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can create a GitHub release and tag in the form vX.Y.Z to trigger the automated publication workflow.</p>
+</div></td></tr><tr><td><b><a name="ar-REL-05"> </a></b>Verify publication</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can verify the publication workflow succeeded and the IG is available at the sitepreview URL.</p>
+</div></td></tr><tr><td><b><a name="ar-REL-06"> </a></b>Reset to draft</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can reset the main branch to draft status with updated version number after publication.</p>
+</div></td></tr><tr><td><b><a name="ar-REL-07"> </a></b>Maintain change log</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can maintain a changes page with release summary, known issues, and categorized changes (non-compatible, compatible substantive, non-substantive).</p>
+</div></td></tr></table></div><div xml:lang="zh" lang="zh"><hr/><p><b>Chinese</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Requirements SGAuthoring.Skills.ManageReleases</b></p><a name="zh-SGAuthoring.Skills.ManageReleases"> </a><a name="zh-hcSGAuthoring.Skills.ManageReleases"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-SGRequirements.html">SMART Guidelines Requirements</a></p></div><p>These requirements apply to the actor <a href="ActorDefinition-SGAuthoring.Persona.PublicationManager.html">Publication Manager</a></p><table class="grid"><tr><td><b><a name="zh-REL-01"> </a></b>Determine version number</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can review changes since last release, determine if changes are breaking, and update version number following semantic versioning.</p>
+</div></td></tr><tr><td><b><a name="zh-REL-02"> </a></b>Update IG status for release</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can update IG and all conformance artifacts: status to active, version without label, releaseLabel to release, and date to current date.</p>
+</div></td></tr><tr><td><b><a name="zh-REL-03"> </a></b>Create publication-request.json</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can create a correct publication-request.json with matching package-id, version, path, ci-build, and first/subsequent flags.</p>
+</div></td></tr><tr><td><b><a name="zh-REL-04"> </a></b>Create release tag</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can create a GitHub release and tag in the form vX.Y.Z to trigger the automated publication workflow.</p>
+</div></td></tr><tr><td><b><a name="zh-REL-05"> </a></b>Verify publication</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can verify the publication workflow succeeded and the IG is available at the sitepreview URL.</p>
+</div></td></tr><tr><td><b><a name="zh-REL-06"> </a></b>Reset to draft</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can reset the main branch to draft status with updated version number after publication.</p>
+</div></td></tr><tr><td><b><a name="zh-REL-07"> </a></b>Maintain change log</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can maintain a changes page with release summary, known issues, and categorized changes (non-compatible, compatible substantive, non-substantive).</p>
+</div></td></tr></table></div><div xml:lang="ru" lang="ru"><hr/><p><b>Russian</b></p><hr/><p class="res-header-id"><b>Сгенерированный нарратив: Requirements SGAuthoring.Skills.ManageReleases</b></p><a name="ru-SGAuthoring.Skills.ManageReleases"> </a><a name="ru-hcSGAuthoring.Skills.ManageReleases"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Профиль: <a href="StructureDefinition-SGRequirements.html">SMART Guidelines Requirements</a></p></div><p>Эти требования распространяются и на актера <a href="ActorDefinition-SGAuthoring.Persona.PublicationManager.html">Publication Manager</a></p><table class="grid"><tr><td><b><a name="ru-REL-01"> </a></b>Determine version number</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can review changes since last release, determine if changes are breaking, and update version number following semantic versioning.</p>
+</div></td></tr><tr><td><b><a name="ru-REL-02"> </a></b>Update IG status for release</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can update IG and all conformance artifacts: status to active, version without label, releaseLabel to release, and date to current date.</p>
+</div></td></tr><tr><td><b><a name="ru-REL-03"> </a></b>Create publication-request.json</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can create a correct publication-request.json with matching package-id, version, path, ci-build, and first/subsequent flags.</p>
+</div></td></tr><tr><td><b><a name="ru-REL-04"> </a></b>Create release tag</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can create a GitHub release and tag in the form vX.Y.Z to trigger the automated publication workflow.</p>
+</div></td></tr><tr><td><b><a name="ru-REL-05"> </a></b>Verify publication</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can verify the publication workflow succeeded and the IG is available at the sitepreview URL.</p>
+</div></td></tr><tr><td><b><a name="ru-REL-06"> </a></b>Reset to draft</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can reset the main branch to draft status with updated version number after publication.</p>
+</div></td></tr><tr><td><b><a name="ru-REL-07"> </a></b>Maintain change log</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can maintain a changes page with release summary, known issues, and categorized changes (non-compatible, compatible substantive, non-substantive).</p>
+</div></td></tr></table></div><div xml:lang="es" lang="es"><hr/><p><b>Spanish</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Requirements SGAuthoring.Skills.ManageReleases</b></p><a name="es-SGAuthoring.Skills.ManageReleases"> </a><a name="es-hcSGAuthoring.Skills.ManageReleases"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-SGRequirements.html">SMART Guidelines Requirements</a></p></div><p>These requirements apply to the actor <a href="ActorDefinition-SGAuthoring.Persona.PublicationManager.html">Publication Manager</a></p><table class="grid"><tr><td><b><a name="es-REL-01"> </a></b>Determine version number</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can review changes since last release, determine if changes are breaking, and update version number following semantic versioning.</p>
+</div></td></tr><tr><td><b><a name="es-REL-02"> </a></b>Update IG status for release</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can update IG and all conformance artifacts: status to active, version without label, releaseLabel to release, and date to current date.</p>
+</div></td></tr><tr><td><b><a name="es-REL-03"> </a></b>Create publication-request.json</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can create a correct publication-request.json with matching package-id, version, path, ci-build, and first/subsequent flags.</p>
+</div></td></tr><tr><td><b><a name="es-REL-04"> </a></b>Create release tag</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can create a GitHub release and tag in the form vX.Y.Z to trigger the automated publication workflow.</p>
+</div></td></tr><tr><td><b><a name="es-REL-05"> </a></b>Verify publication</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can verify the publication workflow succeeded and the IG is available at the sitepreview URL.</p>
+</div></td></tr><tr><td><b><a name="es-REL-06"> </a></b>Reset to draft</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can reset the main branch to draft status with updated version number after publication.</p>
+</div></td></tr><tr><td><b><a name="es-REL-07"> </a></b>Maintain change log</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can maintain a changes page with release summary, known issues, and categorized changes (non-compatible, compatible substantive, non-substantive).</p>
+</div></td></tr></table></div></div>
+  </text>
+  <extension url="http://smart.who.int/base/StructureDefinition/SGTask">
+    <valueCoding>
+      <system value="http://smart.who.int/base/CodeSystem/SGTasks"/>
+      <code value="userTask"/>
+      <display value="User Task"/>
+    </valueCoding>
+  </extension>
+  <extension url="http://smart.who.int/base/StructureDefinition/SGTask">
+    <valueCoding>
+      <system value="http://smart.who.int/base/CodeSystem/SGTasks"/>
+      <code value="userTask"/>
+      <display value="User Task"/>
+    </valueCoding>
+  </extension>
+  <extension url="http://smart.who.int/base/StructureDefinition/SGTask">
+    <valueCoding>
+      <system value="http://smart.who.int/base/CodeSystem/SGTasks"/>
+      <code value="userTask"/>
+      <display value="User Task"/>
+    </valueCoding>
+  </extension>
+  <extension url="http://smart.who.int/base/StructureDefinition/SGTask">
+    <valueCoding>
+      <system value="http://smart.who.int/base/CodeSystem/SGTasks"/>
+      <code value="userTask"/>
+      <display value="User Task"/>
+    </valueCoding>
+  </extension>
+  <extension url="http://smart.who.int/base/StructureDefinition/SGTask">
+    <valueCoding>
+      <system value="http://smart.who.int/base/CodeSystem/SGTasks"/>
+      <code value="userTask"/>
+      <display value="User Task"/>
+    </valueCoding>
+  </extension>
+  <extension url="http://smart.who.int/base/StructureDefinition/SGTask">
+    <valueCoding>
+      <system value="http://smart.who.int/base/CodeSystem/SGTasks"/>
+      <code value="userTask"/>
+      <display value="User Task"/>
+    </valueCoding>
+  </extension>
+  <extension url="http://smart.who.int/base/StructureDefinition/SGTask">
+    <valueCoding>
+      <system value="http://smart.who.int/base/CodeSystem/SGTasks"/>
+      <code value="userTask"/>
+      <display value="User Task"/>
+    </valueCoding>
+  </extension>
+  <extension url="http://smart.who.int/base/StructureDefinition/SGUserStory">
+    <extension url="http://smart.who.int/base/StructureDefinition/SGString">
+      <valueString value="manage versioning, release tags, and the publication workflow"/>
+    </extension>
+    <extension url="http://smart.who.int/base/StructureDefinition/SGString">
+      <valueString value="IG releases follow semantic versioning and are published through a governed, repeatable process"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.url">
+    <valueUri value="http://smart.who.int/base/Requirements/SGAuthoring.Skills.ManageReleases"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.version">
+    <valueString value="1.0.0"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.name">
+    <valueString value="SkillManageReleases"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.title">
+    <valueString value="Can manage releases"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.status">
+    <valueCode value="draft"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.experimental">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.date">
+    <valueDateTime value="2026-08-27T08:31:36+00:00"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.publisher">
+    <valueString value="WHO"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.contact">
+    <valueContactDetail>
+      <name value="WHO"/>
+      <telecom>
+        <system value="url"/>
+        <value value="http://who.int"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.description">
+    <valueMarkdown value="Capability to manage versioning, publication-request.json, release tags, and publication workflow."/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.jurisdiction"/>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.actor">
+    <valueCanonical value="http://smart.who.int/base/ActorDefinition/SGAuthoring.Persona.PublicationManager"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="REL-01"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.label">
+      <valueString value="Determine version number"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Can review changes since last release, determine if changes are breaking, and update version number following semantic versioning."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="REL-02"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.label">
+      <valueString value="Update IG status for release"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Can update IG and all conformance artifacts: status to active, version without label, releaseLabel to release, and date to current date."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="REL-03"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.label">
+      <valueString value="Create publication-request.json"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Can create a correct publication-request.json with matching package-id, version, path, ci-build, and first/subsequent flags."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="REL-04"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.label">
+      <valueString value="Create release tag"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Can create a GitHub release and tag in the form vX.Y.Z to trigger the automated publication workflow."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="REL-05"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.label">
+      <valueString value="Verify publication"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Can verify the publication workflow succeeded and the IG is available at the sitepreview URL."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="REL-06"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.label">
+      <valueString value="Reset to draft"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Can reset the main branch to draft status with updated version number after publication."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="REL-07"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.label">
+      <valueString value="Maintain change log"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Can maintain a changes page with release summary, known issues, and categorized changes (non-compatible, compatible substantive, non-substantive)."/>
+    </extension>
+  </extension>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/fhir-types"/>
+      <code value="Requirements"/>
+    </coding>
+  </code>
+</Basic>

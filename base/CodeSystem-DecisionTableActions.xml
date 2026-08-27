@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="DecisionTableActions"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: CodeSystem DecisionTableActions</b></p><a name="DecisionTableActions"> </a><a name="hcDecisionTableActions"> </a><p>This case-insensitive code system <code>http://smart.who.int/base/CodeSystem/DecisionTableActions</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">output<a name="DecisionTableActions-output"> </a></td><td>Output</td></tr><tr><td style="white-space:nowrap">guidance<a name="DecisionTableActions-guidance"> </a></td><td>Guidance</td></tr><tr><td style="white-space:nowrap">annotation<a name="DecisionTableActions-annotation"> </a></td><td>Annotation</td></tr></table></div><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><p class="res-header-id"><b>Narratif généré : CodeSystem DecisionTableActions</b></p><a name="fr-DecisionTableActions"> </a><a name="fr-hcDecisionTableActions"> </a><p>This case-insensitive code system <code>http://smart.who.int/base/CodeSystem/DecisionTableActions</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style="white-space:nowrap">output<a name="fr-DecisionTableActions-output"> </a></td><td>Output</td></tr><tr><td style="white-space:nowrap">guidance<a name="fr-DecisionTableActions-guidance"> </a></td><td>Guidance</td></tr><tr><td style="white-space:nowrap">annotation<a name="fr-DecisionTableActions-annotation"> </a></td><td>Annotation</td></tr></table></div><div xml:lang="ar" lang="ar"><hr/><p><b>Arabic</b></p><hr/><p class="res-header-id"><b>السرد المُنشأ: CodeSystem DecisionTableActions</b></p><a name="ar-DecisionTableActions"> </a><a name="ar-hcDecisionTableActions"> </a><p>يُعرّف هذا case-insensitive نظام الشيفرة <code>http://smart.who.int/base/CodeSystem/DecisionTableActions</code> الرمز التالي<f test="code-count != 1">s</f>:</p><table class="codes"><tr><td style="white-space:nowrap"><b>الكود</b></td><td><b>العرض</b></td></tr><tr><td style="white-space:nowrap">output<a name="ar-DecisionTableActions-output"> </a></td><td>Output</td></tr><tr><td style="white-space:nowrap">guidance<a name="ar-DecisionTableActions-guidance"> </a></td><td>Guidance</td></tr><tr><td style="white-space:nowrap">annotation<a name="ar-DecisionTableActions-annotation"> </a></td><td>Annotation</td></tr></table></div><div xml:lang="zh" lang="zh"><hr/><p><b>Chinese</b></p><hr/><p class="res-header-id"><b>Generated Narrative: 代码系统 DecisionTableActions</b></p><a name="zh-DecisionTableActions"> </a><a name="zh-hcDecisionTableActions"> </a><p>This case-insensitive code system <code>http://smart.who.int/base/CodeSystem/DecisionTableActions</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">output<a name="zh-DecisionTableActions-output"> </a></td><td>Output</td></tr><tr><td style="white-space:nowrap">guidance<a name="zh-DecisionTableActions-guidance"> </a></td><td>Guidance</td></tr><tr><td style="white-space:nowrap">annotation<a name="zh-DecisionTableActions-annotation"> </a></td><td>Annotation</td></tr></table></div><div xml:lang="ru" lang="ru"><hr/><p><b>Russian</b></p><hr/><p class="res-header-id"><b>Сгенерированный нарратив: CodeSystem DecisionTableActions</b></p><a name="ru-DecisionTableActions"> </a><a name="ru-hcDecisionTableActions"> </a><p>Данная система кодов <code>http://smart.who.int/base/CodeSystem/DecisionTableActions</code> case-insensitive определяет следующие коды:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Код</b></td><td><b>Отображение</b></td></tr><tr><td style="white-space:nowrap">output<a name="ru-DecisionTableActions-output"> </a></td><td>Output</td></tr><tr><td style="white-space:nowrap">guidance<a name="ru-DecisionTableActions-guidance"> </a></td><td>Guidance</td></tr><tr><td style="white-space:nowrap">annotation<a name="ru-DecisionTableActions-annotation"> </a></td><td>Annotation</td></tr></table></div><div xml:lang="es" lang="es"><hr/><p><b>Spanish</b></p><hr/><p class="res-header-id"><b>Generated Narrative: SistemaDeCodigos DecisionTableActions</b></p><a name="es-DecisionTableActions"> </a><a name="es-hcDecisionTableActions"> </a><p>This case-insensitive code system <code>http://smart.who.int/base/CodeSystem/DecisionTableActions</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">output<a name="es-DecisionTableActions-output"> </a></td><td>Output</td></tr><tr><td style="white-space:nowrap">guidance<a name="es-DecisionTableActions-guidance"> </a></td><td>Guidance</td></tr><tr><td style="white-space:nowrap">annotation<a name="es-DecisionTableActions-annotation"> </a></td><td>Annotation</td></tr></table></div></div>
+  </text>
+  <url value="http://smart.who.int/base/CodeSystem/DecisionTableActions"/>
+  <version value="1.0.0"/>
+  <name value="DecisionTableActions"/>
+  <title value="Smart Guidelines Actions (columns) for Decision Tables"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-27T08:35:55+00:00"/>
+  <publisher value="WHO"/>
+  <contact>
+    <name value="WHO"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://who.int"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem for Smart Guidelines Documentation Actions for Decision Tables&quot;"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="output"/>
+    <display value="Output"/>
+  </concept>
+  <concept>
+    <code value="guidance"/>
+    <display value="Guidance"/>
+  </concept>
+  <concept>
+    <code value="annotation"/>
+    <display value="Annotation"/>
+  </concept>
+</CodeSystem>

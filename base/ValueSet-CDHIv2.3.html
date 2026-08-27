@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Digital Health Interventions for Health Management and Support Personnel - SMART Base v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+    <link href="assets/css/fa-all.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/who.css" rel="stylesheet"/>
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"9.126"}
+    h3,h4,h5,h6{--heading-prefix:"9.126"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+
+      <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+        <div id="stripe"> </div>
+        <div class="container">  <!-- container -->
+          <!-- HEADER CONTENT -->
+  
+          <nav class="navbar navbar-inverse">
+            <!--status-bar-->
+            <div class="container">
+              <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+              </button>
+              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+              <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Authoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="authoring-process.html">Process</a>
+      </li>
+      <li>
+        <a href="authoring-personas.html">Personas</a>
+      </li>
+      <li>
+        <a href="authoring-skills.html">Skills</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Indices
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Artifact Index</a>
+      </li>
+      <li>
+        <a href="dak-api.html">DAK API</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+              </div>  <!-- /.nav-collapse -->
+
+              <div class="sf_colsIn col-md-8  navbar-right-container" data-sf-element="LanguageSelectorSearch" data-placeholder-label="Language Selector and Search" style="display: flex; justify-content: flex-end; align-items: center;">
+                <!-- This div will be pushed to the right -->
+                <div class="language-selector" style="margin-left: auto; background-color: #00477d; color: white;">
+                  <i class="fa fa-language fa-lg"></i>
+                  <label for="language-selector"> </label>
+                  <select onChange="openLink(value)" id="language-selector" name="language-selector">
+                    <option disabled selected>Select language</option>
+                    <option value="en" class="selected">English</option>
+                  </select>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+                <!-- Search Content -->
+              </div>
+            </div>  <!-- /.container -->
+          </nav>  <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+        </div>  <!-- /container -->
+      </div>  <!-- /segment-navbar -->
+      
+
+      <div class="container" style=" justify-content: space-between; align-items: left;">
+
+        <!-- Placeholder for child template header declarations -->
+<div id="project-nav">
+    <a id="who-logo" no-external="true" href="index.html">
+      
+<img height="50" style="margin:7px" alt="Welcome on standards website" src="assets/images/h-logo-blue.svg"/>
+        
+    </a>
+</div>
+
+ <div id="family-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir">  </a>
+</div> 
+
+
+        <div id="ig-status" class="ig-status-active">
+          <p><span style="font-size:12pt;font-weight:bold">SMART Base</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Digital Health Interventions for Health Management and Support Personnel</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART Base (v1.0.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://smart.who.int/base/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-CDHIv2.3.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-CDHIv2.3.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-CDHIv2.3.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: Digital Health Interventions for Health Management and Support Personnel
+(Experimental)
+  </h2>
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://smart.who.int/base/ValueSet/CDHIv2.3<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://smart.who.int/base/ValueSet/CDHIv2.3"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.0.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://smart.who.int/base/ValueSet/CDHIv2.3|1.0.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2026-08-27
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">CDHIv2.3</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Digital Health Interventions whose primary user group is Health Management and Support Personnel. Group 3 of the Classification of Digital Interventions, Services and Applications in Health v2 (CDISAH, 2023).</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<p>This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)</p>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="CDHIv2.3"> </a><a name="hcCDHIv2.3"> </a>
+<ul><li>Include these codes as defined in <a href="CodeSystem-CDHIv2.html"><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;1.0.0</span><table class="none" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3">3</a></td><td style="color: #cccccc">Health management and support personnel</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.461">3.1</a></td><td style="color: #cccccc">Human resource management</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.461.461">3.1.1</a></td><td style="color: #cccccc">List health workforce cadres and related identification information</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.461.462">3.1.2</a></td><td style="color: #cccccc">Monitor performance of healthcare provider(s)</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.461.463">3.1.3</a></td><td style="color: #cccccc">Manage registration/certification of healthcare provider(s)</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.461.464">3.1.4</a></td><td style="color: #cccccc">Record training credentials of healthcare provider(s)</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.461.465">3.1.5</a></td><td style="color: #cccccc">Manage health workforce activities</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.462">3.2</a></td><td style="color: #cccccc">Supply chain management</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.462.461">3.2.1</a></td><td style="color: #cccccc">Manage inventory and distribution of health commodities</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.462.462">3.2.2</a></td><td style="color: #cccccc">Notify stock levels of health commodities</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.462.463">3.2.3</a></td><td style="color: #cccccc">Monitor cold-chain sensitive commodities</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.462.464">3.2.4</a></td><td style="color: #cccccc">Register licensed drugs and health commodities</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.462.465">3.2.5</a></td><td style="color: #cccccc">Manage procurement of commodities</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.462.466">3.2.6</a></td><td style="color: #cccccc">Report counterfeit or substandard drugs by persons</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.463">3.3</a></td><td style="color: #cccccc">Public health event notification</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.463.461">3.3.1</a></td><td style="color: #cccccc">Notification of public health events from point of diagnosis</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.464">3.4</a></td><td style="color: #cccccc">Civil Registration and Vital Statistics (CRVS)</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.464.461">3.4.1</a></td><td style="color: #cccccc">Notify, register and certify birth event</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.464.462">3.4.2</a></td><td style="color: #cccccc">Notify, register and certify death event</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.465">3.5</a></td><td style="color: #cccccc">Health system financial management</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.465.461">3.5.1</a></td><td style="color: #cccccc">Register and verify health coverage scheme membership of persons</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.465.462">3.5.2</a></td><td style="color: #cccccc">Track and manage insurance billing and claims processes</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.465.463">3.5.3</a></td><td style="color: #cccccc">Transmit and manage payments to health facilities</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.465.464">3.5.4</a></td><td style="color: #cccccc">Transmit and manage routine payroll payment to healthcare provider(s)</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.465.465">3.5.5</a></td><td style="color: #cccccc">Transmit or manage financial incentives to healthcare provider(s)</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.465.466">3.5.6</a></td><td style="color: #cccccc">Manage and plan budget allocations, revenue and expenditures</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.465.467">3.5.7</a></td><td style="color: #cccccc">Determine level of subsidies for health coverage schemes</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.465.468">3.5.8</a></td><td style="color: #cccccc">Collect health insurance contributions</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.466">3.6</a></td><td style="color: #cccccc">Equipment and asset management</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.466.461">3.6.1</a></td><td style="color: #cccccc">Monitor status and maintenance of health equipment</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.466.462">3.6.2</a></td><td style="color: #cccccc">Track regulation and licensing of medical equipment</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.467">3.7</a></td><td style="color: #cccccc">Facility management</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.467.461">3.7.1</a></td><td style="color: #cccccc">List health facilities and related information</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.467.462">3.7.2</a></td><td style="color: #cccccc">Assess health facilities</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.468">3.8</a></td><td style="color: #cccccc">Person-centred health certificate management</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.468.461">3.8.1</a></td><td style="color: #cccccc">Register and store current health certificate information</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.468.462">3.8.2</a></td><td style="color: #cccccc">Retrieve and validate current health certificate information</td></tr><tr><td><a href="CodeSystem-CDHIv2.html#CDHIv2-3.468.463">3.8.3</a></td><td style="color: #cccccc">Revoke and update health certificate</td></tr></table></li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"/><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on <a href="CodeSystem-CDHIv2.html">codesystem Classification of Digital Health Interventions v2 v1.0.0 (CodeSystem)</a><span class="copy-text-inline"><button data-clipboard-text="http://smart.who.int/base/CodeSystem/CDHIv2|1.0.0" title="Click to Copy URL" class="btn-copy"> </button></span></p><p>This value set contains 38 concepts</p><table class="codes" data-fhir="generated"><tr><td><b>System</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3">3</a></td><td>Health management and support personnel</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3&quot;, &quot;display&quot;: &quot;Health management and support personnel&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3&quot;&gt;&lt;display value=&quot;Health management and support personnel&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.1"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.461">3.1</a></td><td>Human resource management</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.1&quot;, &quot;display&quot;: &quot;Human resource management&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.1&quot;&gt;&lt;display value=&quot;Human resource management&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.1.1"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.461.461">3.1.1</a></td><td>List health workforce cadres and related identification information</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.1.1&quot;, &quot;display&quot;: &quot;List health workforce cadres and related identification information&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.1.1&quot;&gt;&lt;display value=&quot;List health workforce cadres and related identification information&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.1.2"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.461.462">3.1.2</a></td><td>Monitor performance of healthcare provider(s)</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.1.2&quot;, &quot;display&quot;: &quot;Monitor performance of healthcare provider(s)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.1.2&quot;&gt;&lt;display value=&quot;Monitor performance of healthcare provider(s)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.1.3"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.461.463">3.1.3</a></td><td>Manage registration/certification of healthcare provider(s)</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.1.3&quot;, &quot;display&quot;: &quot;Manage registration/certification of healthcare provider(s)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.1.3&quot;&gt;&lt;display value=&quot;Manage registration/certification of healthcare provider(s)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.1.4"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.461.464">3.1.4</a></td><td>Record training credentials of healthcare provider(s)</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.1.4&quot;, &quot;display&quot;: &quot;Record training credentials of healthcare provider(s)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.1.4&quot;&gt;&lt;display value=&quot;Record training credentials of healthcare provider(s)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.1.5"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.461.465">3.1.5</a></td><td>Manage health workforce activities</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.1.5&quot;, &quot;display&quot;: &quot;Manage health workforce activities&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.1.5&quot;&gt;&lt;display value=&quot;Manage health workforce activities&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.2"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.462">3.2</a></td><td>Supply chain management</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.2&quot;, &quot;display&quot;: &quot;Supply chain management&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.2&quot;&gt;&lt;display value=&quot;Supply chain management&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.2.1"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.462.461">3.2.1</a></td><td>Manage inventory and distribution of health commodities</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.2.1&quot;, &quot;display&quot;: &quot;Manage inventory and distribution of health commodities&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.2.1&quot;&gt;&lt;display value=&quot;Manage inventory and distribution of health commodities&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.2.2"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.462.462">3.2.2</a></td><td>Notify stock levels of health commodities</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.2.2&quot;, &quot;display&quot;: &quot;Notify stock levels of health commodities&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.2.2&quot;&gt;&lt;display value=&quot;Notify stock levels of health commodities&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.2.3"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.462.463">3.2.3</a></td><td>Monitor cold-chain sensitive commodities</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.2.3&quot;, &quot;display&quot;: &quot;Monitor cold-chain sensitive commodities&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.2.3&quot;&gt;&lt;display value=&quot;Monitor cold-chain sensitive commodities&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.2.4"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.462.464">3.2.4</a></td><td>Register licensed drugs and health commodities</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.2.4&quot;, &quot;display&quot;: &quot;Register licensed drugs and health commodities&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.2.4&quot;&gt;&lt;display value=&quot;Register licensed drugs and health commodities&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.2.5"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.462.465">3.2.5</a></td><td>Manage procurement of commodities</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.2.5&quot;, &quot;display&quot;: &quot;Manage procurement of commodities&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.2.5&quot;&gt;&lt;display value=&quot;Manage procurement of commodities&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.2.6"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.462.466">3.2.6</a></td><td>Report counterfeit or substandard drugs by persons</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.2.6&quot;, &quot;display&quot;: &quot;Report counterfeit or substandard drugs by persons&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.2.6&quot;&gt;&lt;display value=&quot;Report counterfeit or substandard drugs by persons&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.3"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.463">3.3</a></td><td>Public health event notification</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.3&quot;, &quot;display&quot;: &quot;Public health event notification&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.3&quot;&gt;&lt;display value=&quot;Public health event notification&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.3.1"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.463.461">3.3.1</a></td><td>Notification of public health events from point of diagnosis</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.3.1&quot;, &quot;display&quot;: &quot;Notification of public health events from point of diagnosis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.3.1&quot;&gt;&lt;display value=&quot;Notification of public health events from point of diagnosis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.4"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.464">3.4</a></td><td>Civil Registration and Vital Statistics (CRVS)</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.4&quot;, &quot;display&quot;: &quot;Civil Registration and Vital Statistics (CRVS)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.4&quot;&gt;&lt;display value=&quot;Civil Registration and Vital Statistics (CRVS)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.4.1"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.464.461">3.4.1</a></td><td>Notify, register and certify birth event</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.4.1&quot;, &quot;display&quot;: &quot;Notify, register and certify birth event&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.4.1&quot;&gt;&lt;display value=&quot;Notify, register and certify birth event&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.4.2"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.464.462">3.4.2</a></td><td>Notify, register and certify death event</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.4.2&quot;, &quot;display&quot;: &quot;Notify, register and certify death event&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.4.2&quot;&gt;&lt;display value=&quot;Notify, register and certify death event&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.5"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.465">3.5</a></td><td>Health system financial management</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.5&quot;, &quot;display&quot;: &quot;Health system financial management&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.5&quot;&gt;&lt;display value=&quot;Health system financial management&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.5.1"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.465.461">3.5.1</a></td><td>Register and verify health coverage scheme membership of persons</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.5.1&quot;, &quot;display&quot;: &quot;Register and verify health coverage scheme membership of persons&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.5.1&quot;&gt;&lt;display value=&quot;Register and verify health coverage scheme membership of persons&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.5.2"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.465.462">3.5.2</a></td><td>Track and manage insurance billing and claims processes</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.5.2&quot;, &quot;display&quot;: &quot;Track and manage insurance billing and claims processes&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.5.2&quot;&gt;&lt;display value=&quot;Track and manage insurance billing and claims processes&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.5.3"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.465.463">3.5.3</a></td><td>Transmit and manage payments to health facilities</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.5.3&quot;, &quot;display&quot;: &quot;Transmit and manage payments to health facilities&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.5.3&quot;&gt;&lt;display value=&quot;Transmit and manage payments to health facilities&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.5.4"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.465.464">3.5.4</a></td><td>Transmit and manage routine payroll payment to healthcare provider(s)</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.5.4&quot;, &quot;display&quot;: &quot;Transmit and manage routine payroll payment to healthcare provider(s)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.5.4&quot;&gt;&lt;display value=&quot;Transmit and manage routine payroll payment to healthcare provider(s)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.5.5"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.465.465">3.5.5</a></td><td>Transmit or manage financial incentives to healthcare provider(s)</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.5.5&quot;, &quot;display&quot;: &quot;Transmit or manage financial incentives to healthcare provider(s)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.5.5&quot;&gt;&lt;display value=&quot;Transmit or manage financial incentives to healthcare provider(s)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.5.6"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.465.466">3.5.6</a></td><td>Manage and plan budget allocations, revenue and expenditures</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.5.6&quot;, &quot;display&quot;: &quot;Manage and plan budget allocations, revenue and expenditures&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.5.6&quot;&gt;&lt;display value=&quot;Manage and plan budget allocations, revenue and expenditures&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.5.7"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.465.467">3.5.7</a></td><td>Determine level of subsidies for health coverage schemes</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.5.7&quot;, &quot;display&quot;: &quot;Determine level of subsidies for health coverage schemes&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.5.7&quot;&gt;&lt;display value=&quot;Determine level of subsidies for health coverage schemes&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.5.8"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.465.468">3.5.8</a></td><td>Collect health insurance contributions</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.5.8&quot;, &quot;display&quot;: &quot;Collect health insurance contributions&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.5.8&quot;&gt;&lt;display value=&quot;Collect health insurance contributions&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.6"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.466">3.6</a></td><td>Equipment and asset management</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.6&quot;, &quot;display&quot;: &quot;Equipment and asset management&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.6&quot;&gt;&lt;display value=&quot;Equipment and asset management&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.6.1"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.466.461">3.6.1</a></td><td>Monitor status and maintenance of health equipment</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.6.1&quot;, &quot;display&quot;: &quot;Monitor status and maintenance of health equipment&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.6.1&quot;&gt;&lt;display value=&quot;Monitor status and maintenance of health equipment&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.6.2"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.466.462">3.6.2</a></td><td>Track regulation and licensing of medical equipment</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.6.2&quot;, &quot;display&quot;: &quot;Track regulation and licensing of medical equipment&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.6.2&quot;&gt;&lt;display value=&quot;Track regulation and licensing of medical equipment&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.7"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.467">3.7</a></td><td>Facility management</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.7&quot;, &quot;display&quot;: &quot;Facility management&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.7&quot;&gt;&lt;display value=&quot;Facility management&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.7.1"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.467.461">3.7.1</a></td><td>List health facilities and related information</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.7.1&quot;, &quot;display&quot;: &quot;List health facilities and related information&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.7.1&quot;&gt;&lt;display value=&quot;List health facilities and related information&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.7.2"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.467.462">3.7.2</a></td><td>Assess health facilities</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.7.2&quot;, &quot;display&quot;: &quot;Assess health facilities&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.7.2&quot;&gt;&lt;display value=&quot;Assess health facilities&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.8"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.468">3.8</a></td><td>Person-centred health certificate management</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.8&quot;, &quot;display&quot;: &quot;Person-centred health certificate management&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.8&quot;&gt;&lt;display value=&quot;Person-centred health certificate management&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.8.1"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.468.461">3.8.1</a></td><td>Register and store current health certificate information</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.8.1&quot;, &quot;display&quot;: &quot;Register and store current health certificate information&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.8.1&quot;&gt;&lt;display value=&quot;Register and store current health certificate information&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.8.2"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.468.462">3.8.2</a></td><td>Retrieve and validate current health certificate information</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.8.2&quot;, &quot;display&quot;: &quot;Retrieve and validate current health certificate information&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.8.2&quot;&gt;&lt;display value=&quot;Retrieve and validate current health certificate information&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/CDHIv2-3.8.3"> </a><code>http://smart.who.int/base/CodeSystem/CDHIv2</code></td><td style="white-space:nowrap">  <a href="CodeSystem-CDHIv2.html#CDHIv2-3.468.463">3.8.3</a></td><td>Revoke and update health certificate</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;3.8.3&quot;, &quot;display&quot;: &quot;Revoke and update health certificate&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/CDHIv2&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;3.8.3&quot;&gt;&lt;display value=&quot;Revoke and update health certificate&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+</div><div class="dak-api-content">
+<h2>API Information</h2>
+<div class="card"><div class="card-body">
+<h5>Digital Health Interventions for Health Management and Support Personnel Schema API</h5>
+<p>JSON Schema for Digital Health Interventions for Health Management and Support Personnel ValueSet codes. Generated from FHIR expansions using IRI format.</p>
+<p><strong>Version:</strong> 1.0.0</p>
+</div></div>
+<h2>Endpoints</h2>
+<div class="endpoint-card">
+<h3><span class='badge badge-get'>GET</span> /ValueSet-CDHIv2.3.schema.json</h3>
+<h4>JSON Schema definition for the enumeration ValueSet-CDHIv2.3</h4>
+<p>This endpoint serves the JSON Schema definition for the enumeration ValueSet-CDHIv2.3.</p>
+</div>
+<h2>Schema Definition</h2>
+<div class="schema-card">
+<h3>ValueSet-CDHIv2.3</h3>
+<p><strong>Description:</strong> JSON Schema for Digital Health Interventions for Health Management and Support Personnel ValueSet codes. Generated from FHIR expansions using IRI format.</p>
+<p><strong>Type:</strong> string</p>
+<details class='schema-details'><summary>Full Schema (JSON)</summary>
+<pre><code class='language-json'>
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/base/ValueSet-CDHIv2.3.schema.json",
+  "title": "Digital Health Interventions for Health Management and Support Personnel Schema",
+  "description": "JSON Schema for Digital Health Interventions for Health Management and Support Personnel ValueSet codes. Generated from FHIR expansions using IRI format.",
+  "type": "string",
+  "enum": [
+    "http://smart.who.int/base/CodeSystem/CDHIv2#1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#1.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#1.1.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#1.1.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#1.1.3",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#1.1.4",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#1.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#1.2.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#1.2.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#1.3",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#1.3.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#1.4",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#1.4.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#1.4.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#1.4.3",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#1.4.4",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#1.5",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#1.5.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#1.5.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#1.6",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#1.6.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#1.6.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#1.7",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#1.7.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#1.7.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#1.7.3",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#1.8",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#1.8.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.1.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.1.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.2.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.2.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.2.3",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.2.4",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.3",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.3.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.3.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.3.3",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.4",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.4.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.4.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.4.3",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.4.4",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.5",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.5.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.5.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.5.3",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.5.4",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.5.5",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.5.6",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.6",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.6.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.6.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.6.3",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.7",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.7.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.7.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.8",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.8.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.8.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.9",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.9.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.9.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.9.3",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.10",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.10.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.10.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.10.3",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.10.4",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.11",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.11.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#2.11.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.1.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.1.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.1.3",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.1.4",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.1.5",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.2.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.2.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.2.3",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.2.4",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.2.5",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.2.6",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.3",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.3.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.4",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.4.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.4.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.5",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.5.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.5.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.5.3",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.5.4",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.5.5",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.5.6",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.5.7",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.5.8",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.6",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.6.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.6.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.7",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.7.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.7.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.8",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.8.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.8.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.8.3",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#4",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#4.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#4.1.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#4.1.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#4.1.3",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#4.1.4",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#4.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#4.2.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#4.2.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#4.2.3",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#4.3",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#4.3.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#4.3.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#4.3.3",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#4.3.4",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#4.3.5",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#4.4",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#4.4.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#4.4.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#4.4.3",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#4.5",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#4.5.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#4.5.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#4.5.3",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#4.5.4",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.1.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.1.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.1.3",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.1.4",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.1.5",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.2.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.2.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.2.3",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.2.4",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.2.5",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.2.6",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.3",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.3.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.4",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.4.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.4.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.5",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.5.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.5.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.5.3",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.5.4",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.5.5",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.5.6",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.5.7",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.5.8",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.6",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.6.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.6.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.7",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.7.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.7.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.8",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.8.1",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.8.2",
+    "http://smart.who.int/base/CodeSystem/CDHIv2#3.8.3"
+  ],
+  "narrative": "This schema validates IRI-formatted codes for the Digital Health Interventions for Health Management and Support Personnel ValueSet. Each enum value includes the system URI in the format {systemuri}#{code} to match JSON-LD enumeration IRIs. Display values are available at http://smart.who.int/base/ValueSet-CDHIv2.3.displays.json. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+  "fhir:displays": "http://smart.who.int/base/ValueSet-CDHIv2.3.displays.json",
+  "fhir:valueSet": "http://smart.who.int/base/ValueSet/CDHIv2.3",
+  "fhir:version": "1.0.0",
+  "fhir:expansionTimestamp": "2026-08-27T08:37:54.610727"
+}
+</code></pre></details>
+</div>
+</div>
+
+<style>
+.dak-api-content { margin: 1rem 0; }
+.card, .schema-card, .endpoint-card { background:#f8f9fa; border:1px solid #dee2e6; border-radius:0.375rem; padding:1rem; margin:1rem 0; }
+.badge-get { background-color:#28a745; }
+.badge-post { background-color:#007bff; }
+.badge-put { background-color:#ffc107; color:#212529; }
+.badge-delete { background-color:#dc3545; }
+.badge-patch { background-color:#6f42c1; }
+.schema-details { margin:1rem 0; border:1px solid #dee2e6; border-radius:4px; }
+.schema-details summary { background:#f8f9fa; padding:0.75rem; cursor:pointer; border-bottom:1px solid #dee2e6; font-weight:500; }
+.schema-details pre { margin:1rem; background:#f8f9fa; border:1px solid #e9ecef; border-radius:4px; padding:1rem; overflow-x:auto; }
+</style>
+<p><em>This documentation is automatically generated from the OpenAPI specification.</em></p>
+  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-content -->
+
+<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
+<a name="bottom"> </a>
+<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+<div class="container">  <!-- container -->
+
+<div class="inner-wrapper">
+  <p>
+    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.base#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 27, 2026 08:35+0000">2026-08-27</span>
+    <br/>
+    <span style="color: var(--footer-highlight-text-color)">
+                Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+| <a style="color: #81BEF7" target="_blank" href="http://smart.who.int/base/history.html">Version History</a> | <a style="color: #81BEF7" rel="license" href="license.html">License</a>
+    </span>
+  </p>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-footer -->
+
+<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+<div class="container">  <!-- container -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+<script type="text/javascript" src="assets/js/respond.min.js"> </script>
+<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+<script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+<!-- Analytics Below
+================================================== -->
+
+
+
+

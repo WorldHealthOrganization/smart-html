@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="SGAuthoring.Persona.Terminologist"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ActorDefinition SGAuthoring.Persona.Terminologist</b></p><a name="SGAuthoring.Persona.Terminologist"> </a><a name="hcSGAuthoring.Persona.Terminologist"> </a><table class="grid"><tr><td><b>Actor: Terminologist </b></td><td>Terminologist</td><td>Type: person </td></tr><tr><td colspan="3"/></tr></table></div><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><p class="res-header-id"><b>Narratif généré : ActorDefinition SGAuthoring.Persona.Terminologist</b></p><a name="fr-SGAuthoring.Persona.Terminologist"> </a><a name="fr-hcSGAuthoring.Persona.Terminologist"> </a><table class="grid"><tr><td><b>Acteur : Terminologist </b></td><td>Terminologist</td><td>Type : person </td></tr><tr><td colspan="3"/></tr></table></div><div xml:lang="ar" lang="ar"><hr/><p><b>Arabic</b></p><hr/><p class="res-header-id"><b>السرد المُنشأ: ActorDefinition SGAuthoring.Persona.Terminologist</b></p><a name="ar-SGAuthoring.Persona.Terminologist"> </a><a name="ar-hcSGAuthoring.Persona.Terminologist"> </a><table class="grid"><tr><td><b>الفاعل: Terminologist </b></td><td>Terminologist</td><td>اكتب: person </td></tr><tr><td colspan="3"/></tr></table></div><div xml:lang="zh" lang="zh"><hr/><p><b>Chinese</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ActorDefinition SGAuthoring.Persona.Terminologist</b></p><a name="zh-SGAuthoring.Persona.Terminologist"> </a><a name="zh-hcSGAuthoring.Persona.Terminologist"> </a><table class="grid"><tr><td><b>Actor: Terminologist </b></td><td>Terminologist</td><td>Type: person </td></tr><tr><td colspan="3"/></tr></table></div><div xml:lang="ru" lang="ru"><hr/><p><b>Russian</b></p><hr/><p class="res-header-id"><b>Сгенерированный нарратив: ActorDefinition SGAuthoring.Persona.Terminologist</b></p><a name="ru-SGAuthoring.Persona.Terminologist"> </a><a name="ru-hcSGAuthoring.Persona.Terminologist"> </a><table class="grid"><tr><td><b>Актер: Terminologist </b></td><td>Terminologist</td><td>Тип: person </td></tr><tr><td colspan="3"/></tr></table></div><div xml:lang="es" lang="es"><hr/><p><b>Spanish</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ActorDefinition SGAuthoring.Persona.Terminologist</b></p><a name="es-SGAuthoring.Persona.Terminologist"> </a><a name="es-hcSGAuthoring.Persona.Terminologist"> </a><table class="grid"><tr><td><b>Actor: Terminologist </b></td><td>Terminologist</td><td>Type: person </td></tr><tr><td colspan="3"/></tr></table></div></div>
+  </text>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.url">
+    <valueUri value="http://smart.who.int/base/ActorDefinition/SGAuthoring.Persona.Terminologist"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.version">
+    <valueString value="1.0.0"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.name">
+    <valueString value="Terminologist"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.title">
+    <valueString value="Terminologist"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.status">
+    <valueCode value="draft"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.experimental">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.date">
+    <valueDateTime value="2026-08-27T08:31:36+00:00"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.publisher">
+    <valueString value="WHO"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.contact">
+    <valueContactDetail>
+      <name value="WHO"/>
+      <telecom>
+        <system value="url"/>
+        <value value="http://who.int"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.description">
+    <valueMarkdown value="A specialist responsible for ensuring semantic interoperability of SMART&#xA;Guidelines through proper terminology management. Terminologists manage&#xA;the WHO Commons dictionary, concept mappings, and ensure every data element&#xA;is mapped to approved standard terminologies.&#xA;&#xA;Key activities:&#xA;- Map data elements to WHO Commons dictionary concepts&#xA;- Create and maintain CodeSystem resources&#xA;- Create and maintain ValueSet resources&#xA;- Create ConceptMap resources for cross-terminology mappings&#xA;- Map to ICD-11, SNOMED CT, LOINC, IPS, and WHO FIC&#xA;- Onboard new concepts into the Commons dictionary&#xA;- Verify no duplicate or overlapping concept definitions&#xA;- Review terminology bindings in logical models and profiles&#xA;- Flag unapproved concepts as QA issues before publication&#xA;&#xA;**Source**: IG Starter Kit, Governance Concepts page;&#xA;L3 authoring pages for CodeSystems, ValueSets, ConceptMaps"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.jurisdiction"/>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.type">
+    <valueCode value="person"/>
+  </extension>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/fhir-types"/>
+      <code value="ActorDefinition"/>
+    </coding>
+  </code>
+</Basic>

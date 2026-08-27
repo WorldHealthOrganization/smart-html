@@ -1,0 +1,19 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"ProgramIndicator","ProgramIndicator","","","",0,*,"","","","null {[]} {[]}
+","Program Indicator (DAK)","Logical Model for representing Program Indicators from a DAK. Core set of indicators that need to be aggregated for decision-making, performance metrics and subnational and national reporting.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"ProgramIndicator.id","ProgramIndicator.id","","","",1,1,"","","","id {[]} {[]}
+","Indicator ID","Identifier for the program indicator","","","","","","","","","",,,,,"",,,,"ProgramIndicator.id",1,1,"",""
+"ProgramIndicator.description[x]","ProgramIndicator.description[x]","","","",0,1,"","","","string {[]} {[]}
+uri {[]} {[]}","Description","Description of the program indicator - either Markdown content or a URI to a Markdown file (absolute or relative to repository root)","","","","","","","","","",,,,,"",,,,"ProgramIndicator.description[x]",0,1,"",""
+"ProgramIndicator.name","ProgramIndicator.name","","","",1,1,"","","","string {[]} {[]}
+","Name","Name of the indicator","","","","","","","","","",,,,,"",,,,"ProgramIndicator.name",1,1,"",""
+"ProgramIndicator.definition","ProgramIndicator.definition","","","",1,1,"","","","markdown {[]} {[]}
+","Definition","Definition of what the indicator measures","","","","","","","","","",,,,,"",,,,"ProgramIndicator.definition",1,1,"",""
+"ProgramIndicator.numerator","ProgramIndicator.numerator","","","",1,1,"","","","markdown {[]} {[]}
+","Numerator","Description of the numerator calculation","","","","","","","","","",,,,,"",,,,"ProgramIndicator.numerator",1,1,"",""
+"ProgramIndicator.denominator","ProgramIndicator.denominator","","","",1,1,"","","","markdown {[]} {[]}
+","Denominator","Description of the denominator calculation","","","","","","","","","",,,,,"",,,,"ProgramIndicator.denominator",1,1,"",""
+"ProgramIndicator.disaggregation","ProgramIndicator.disaggregation","","","",1,1,"","","","markdown {[]} {[]}
+","Disaggregation","Description of how the indicator should be disaggregated","","","","","","","","","",,,,,"",,,,"ProgramIndicator.disaggregation",1,1,"",""
+"ProgramIndicator.references","ProgramIndicator.references","","","",0,*,"","","","id {[]} {[]}
+","References","References to Health Intervention IDs providing additional context","","","","","","","","","",,,,,"",,,,"ProgramIndicator.references",0,*,"",""

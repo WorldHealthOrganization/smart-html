@@ -1,0 +1,37 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "6a4deac9-e767-4ec7-829c-cf632446e4c2-3",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/6a4deac9-e767-4ec7-829c-cf632446e4c2-3",
+  "name" : "IntersectionDocumentationSectionsAndDocumentationSections",
+  "title" : "Intersection of Smart Guidelines Documentation Section And Smart Guidelines Documentation Section",
+  "status" : "active",
+  "date" : "2026-08-27T08:37:06+00:00",
+  "concept" : [{
+    "code" : "request-trigger",
+    "display" : "Request Trigger Events"
+  },
+  {
+    "code" : "request-semantics",
+    "display" : "Request Message Semantics"
+  },
+  {
+    "code" : "request-actions",
+    "display" : "Request Expected Actions"
+  },
+  {
+    "code" : "response-trigger",
+    "display" : "Response Trigger Events"
+  },
+  {
+    "code" : "response-semantics",
+    "display" : "Response Message Semantics"
+  },
+  {
+    "code" : "response-actions",
+    "display" : "Response Expected Actions"
+  },
+  {
+    "code" : "security-considerations",
+    "display" : "Security Considerations"
+  }]
+}

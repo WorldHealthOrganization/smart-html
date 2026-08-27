@@ -1,0 +1,435 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Classification of Digital Health System Categories v1 - JSON Representation - SMART Base v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+    <link href="assets/css/fa-all.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/who.css" rel="stylesheet"/>
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"9.149"}
+    h3,h4,h5,h6{--heading-prefix:"9.149"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+
+      <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+        <div id="stripe"> </div>
+        <div class="container">  <!-- container -->
+          <!-- HEADER CONTENT -->
+  
+          <nav class="navbar navbar-inverse">
+            <!--status-bar-->
+            <div class="container">
+              <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+              </button>
+              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+              <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Authoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="authoring-process.html">Process</a>
+      </li>
+      <li>
+        <a href="authoring-personas.html">Personas</a>
+      </li>
+      <li>
+        <a href="authoring-skills.html">Skills</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Indices
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Artifact Index</a>
+      </li>
+      <li>
+        <a href="dak-api.html">DAK API</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+              </div>  <!-- /.nav-collapse -->
+
+              <div class="sf_colsIn col-md-8  navbar-right-container" data-sf-element="LanguageSelectorSearch" data-placeholder-label="Language Selector and Search" style="display: flex; justify-content: flex-end; align-items: center;">
+                <!-- This div will be pushed to the right -->
+                <div class="language-selector" style="margin-left: auto; background-color: #00477d; color: white;">
+                  <i class="fa fa-language fa-lg"></i>
+                  <label for="language-selector"> </label>
+                  <select onChange="openLink(value)" id="language-selector" name="language-selector">
+                    <option disabled selected>Select language</option>
+                    <option value="en" class="selected">English</option>
+                  </select>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+                <!-- Search Content -->
+              </div>
+            </div>  <!-- /.container -->
+          </nav>  <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+        </div>  <!-- /container -->
+      </div>  <!-- /segment-navbar -->
+      
+
+      <div class="container" style=" justify-content: space-between; align-items: left;">
+
+        <!-- Placeholder for child template header declarations -->
+<div id="project-nav">
+    <a id="who-logo" no-external="true" href="index.html">
+      
+<img height="50" style="margin:7px" alt="Welcome on standards website" src="assets/images/h-logo-blue.svg"/>
+        
+    </a>
+</div>
+
+ <div id="family-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir">  </a>
+</div> 
+
+
+        <div id="ig-status" class="ig-status-active">
+          <p><span style="font-size:12pt;font-weight:bold">SMART Base</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Classification of Digital Health System Categories v1</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">This page is part of the SMART Base (v1.0.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://smart.who.int/base/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-CDSCv1.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-CDSCv1.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-CDSCv1.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Classification of Digital Health System Categories v1 - JSON Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2026-08-27
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-CDSCv1.json" no-download="true">Raw json</a> | <a href="CodeSystem-CDSCv1.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
+  "<a href="http://hl7.org/fhir/R4/resource.html#CodeSystem.id">id</a>" : "CDSCv1",
+  "<a href="http://hl7.org/fhir/R4/domainresource.html#CodeSystem.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;div xml:lang=\&quot;en\&quot; lang=\&quot;en\&quot;&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;English&lt;/b&gt;&lt;/p&gt;&lt;hr/&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem CDSCv1&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;CDSCv1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcCDSCv1\&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-insensitive code system &lt;code&gt;http://smart.who.int/base/CodeSystem/CDSCv1&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;A&lt;a name=\&quot;CDSCv1-A\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Census, population information &amp;amp; data warehouse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;B&lt;a name=\&quot;CDSCv1-B\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Civil Registration and Vital Statistics&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;C&lt;a name=\&quot;CDSCv1-C\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Client applications&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;D&lt;a name=\&quot;CDSCv1-D\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Client communication system&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;E&lt;a name=\&quot;CDSCv1-E\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Clinical terminology and classifications&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;F&lt;a name=\&quot;CDSCv1-F\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Community-based Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;G&lt;a name=\&quot;CDSCv1-G\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Data interchange interoperability and accessibility&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;H&lt;a name=\&quot;CDSCv1-H\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Electronic Medical Record&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;I&lt;a name=\&quot;CDSCv1-I\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Emergency response system&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J&lt;a name=\&quot;CDSCv1-J\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Environmental monitoring systems&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;K&lt;a name=\&quot;CDSCv1-K\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Facility Management Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L&lt;a name=\&quot;CDSCv1-L\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Geographic Information Systems&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M&lt;a name=\&quot;CDSCv1-M\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Health finance and insurance system&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;N&lt;a name=\&quot;CDSCv1-N\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Health Management Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;O&lt;a name=\&quot;CDSCv1-O\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Human Resource Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;P&lt;a name=\&quot;CDSCv1-P\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Identification registries and directories&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Q&lt;a name=\&quot;CDSCv1-Q\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Knowledge Management&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;R&lt;a name=\&quot;CDSCv1-R\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Laboratory and Diagnostic System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;S&lt;a name=\&quot;CDSCv1-S\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Learning and Training System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;T&lt;a name=\&quot;CDSCv1-T\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Logistics Management Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;U&lt;a name=\&quot;CDSCv1-U\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pharmacy Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;V&lt;a name=\&quot;CDSCv1-V\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Public health and disease surveillance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W&lt;a name=\&quot;CDSCv1-W\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Research information system&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;X&lt;a name=\&quot;CDSCv1-X\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SHR and health information repositories&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Y&lt;a name=\&quot;CDSCv1-Y\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Telemedicine&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;div xml:lang=\&quot;fr\&quot; lang=\&quot;fr\&quot;&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;French&lt;/b&gt;&lt;/p&gt;&lt;hr/&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : CodeSystem CDSCv1&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;fr-CDSCv1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;fr-hcCDSCv1\&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-insensitive code system &lt;code&gt;http://smart.who.int/base/CodeSystem/CDSCv1&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Affichage&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;A&lt;a name=\&quot;fr-CDSCv1-A\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Census, population information &amp;amp; data warehouse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;B&lt;a name=\&quot;fr-CDSCv1-B\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Civil Registration and Vital Statistics&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;C&lt;a name=\&quot;fr-CDSCv1-C\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Client applications&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;D&lt;a name=\&quot;fr-CDSCv1-D\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Client communication system&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;E&lt;a name=\&quot;fr-CDSCv1-E\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Clinical terminology and classifications&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;F&lt;a name=\&quot;fr-CDSCv1-F\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Community-based Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;G&lt;a name=\&quot;fr-CDSCv1-G\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Data interchange interoperability and accessibility&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;H&lt;a name=\&quot;fr-CDSCv1-H\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Electronic Medical Record&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;I&lt;a name=\&quot;fr-CDSCv1-I\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Emergency response system&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J&lt;a name=\&quot;fr-CDSCv1-J\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Environmental monitoring systems&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;K&lt;a name=\&quot;fr-CDSCv1-K\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Facility Management Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L&lt;a name=\&quot;fr-CDSCv1-L\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Geographic Information Systems&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M&lt;a name=\&quot;fr-CDSCv1-M\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Health finance and insurance system&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;N&lt;a name=\&quot;fr-CDSCv1-N\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Health Management Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;O&lt;a name=\&quot;fr-CDSCv1-O\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Human Resource Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;P&lt;a name=\&quot;fr-CDSCv1-P\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Identification registries and directories&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Q&lt;a name=\&quot;fr-CDSCv1-Q\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Knowledge Management&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;R&lt;a name=\&quot;fr-CDSCv1-R\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Laboratory and Diagnostic System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;S&lt;a name=\&quot;fr-CDSCv1-S\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Learning and Training System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;T&lt;a name=\&quot;fr-CDSCv1-T\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Logistics Management Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;U&lt;a name=\&quot;fr-CDSCv1-U\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pharmacy Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;V&lt;a name=\&quot;fr-CDSCv1-V\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Public health and disease surveillance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W&lt;a name=\&quot;fr-CDSCv1-W\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Research information system&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;X&lt;a name=\&quot;fr-CDSCv1-X\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SHR and health information repositories&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Y&lt;a name=\&quot;fr-CDSCv1-Y\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Telemedicine&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;div xml:lang=\&quot;ar\&quot; lang=\&quot;ar\&quot;&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;Arabic&lt;/b&gt;&lt;/p&gt;&lt;hr/&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;السرد المُنشأ: CodeSystem CDSCv1&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ar-CDSCv1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;ar-hcCDSCv1\&quot;&gt; &lt;/a&gt;&lt;p&gt;يُعرّف هذا case-insensitive نظام الشيفرة &lt;code&gt;http://smart.who.int/base/CodeSystem/CDSCv1&lt;/code&gt; الرمز التالي&lt;f test=\&quot;code-count != 1\&quot;&gt;s&lt;/f&gt;:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;الكود&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;العرض&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;A&lt;a name=\&quot;ar-CDSCv1-A\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Census, population information &amp;amp; data warehouse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;B&lt;a name=\&quot;ar-CDSCv1-B\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Civil Registration and Vital Statistics&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;C&lt;a name=\&quot;ar-CDSCv1-C\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Client applications&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;D&lt;a name=\&quot;ar-CDSCv1-D\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Client communication system&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;E&lt;a name=\&quot;ar-CDSCv1-E\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Clinical terminology and classifications&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;F&lt;a name=\&quot;ar-CDSCv1-F\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Community-based Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;G&lt;a name=\&quot;ar-CDSCv1-G\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Data interchange interoperability and accessibility&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;H&lt;a name=\&quot;ar-CDSCv1-H\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Electronic Medical Record&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;I&lt;a name=\&quot;ar-CDSCv1-I\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Emergency response system&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J&lt;a name=\&quot;ar-CDSCv1-J\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Environmental monitoring systems&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;K&lt;a name=\&quot;ar-CDSCv1-K\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Facility Management Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L&lt;a name=\&quot;ar-CDSCv1-L\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Geographic Information Systems&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M&lt;a name=\&quot;ar-CDSCv1-M\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Health finance and insurance system&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;N&lt;a name=\&quot;ar-CDSCv1-N\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Health Management Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;O&lt;a name=\&quot;ar-CDSCv1-O\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Human Resource Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;P&lt;a name=\&quot;ar-CDSCv1-P\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Identification registries and directories&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Q&lt;a name=\&quot;ar-CDSCv1-Q\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Knowledge Management&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;R&lt;a name=\&quot;ar-CDSCv1-R\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Laboratory and Diagnostic System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;S&lt;a name=\&quot;ar-CDSCv1-S\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Learning and Training System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;T&lt;a name=\&quot;ar-CDSCv1-T\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Logistics Management Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;U&lt;a name=\&quot;ar-CDSCv1-U\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pharmacy Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;V&lt;a name=\&quot;ar-CDSCv1-V\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Public health and disease surveillance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W&lt;a name=\&quot;ar-CDSCv1-W\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Research information system&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;X&lt;a name=\&quot;ar-CDSCv1-X\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SHR and health information repositories&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Y&lt;a name=\&quot;ar-CDSCv1-Y\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Telemedicine&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;div xml:lang=\&quot;zh\&quot; lang=\&quot;zh\&quot;&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;Chinese&lt;/b&gt;&lt;/p&gt;&lt;hr/&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: 代码系统 CDSCv1&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;zh-CDSCv1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;zh-hcCDSCv1\&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-insensitive code system &lt;code&gt;http://smart.who.int/base/CodeSystem/CDSCv1&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;A&lt;a name=\&quot;zh-CDSCv1-A\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Census, population information &amp;amp; data warehouse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;B&lt;a name=\&quot;zh-CDSCv1-B\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Civil Registration and Vital Statistics&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;C&lt;a name=\&quot;zh-CDSCv1-C\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Client applications&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;D&lt;a name=\&quot;zh-CDSCv1-D\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Client communication system&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;E&lt;a name=\&quot;zh-CDSCv1-E\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Clinical terminology and classifications&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;F&lt;a name=\&quot;zh-CDSCv1-F\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Community-based Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;G&lt;a name=\&quot;zh-CDSCv1-G\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Data interchange interoperability and accessibility&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;H&lt;a name=\&quot;zh-CDSCv1-H\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Electronic Medical Record&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;I&lt;a name=\&quot;zh-CDSCv1-I\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Emergency response system&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J&lt;a name=\&quot;zh-CDSCv1-J\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Environmental monitoring systems&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;K&lt;a name=\&quot;zh-CDSCv1-K\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Facility Management Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L&lt;a name=\&quot;zh-CDSCv1-L\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Geographic Information Systems&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M&lt;a name=\&quot;zh-CDSCv1-M\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Health finance and insurance system&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;N&lt;a name=\&quot;zh-CDSCv1-N\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Health Management Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;O&lt;a name=\&quot;zh-CDSCv1-O\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Human Resource Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;P&lt;a name=\&quot;zh-CDSCv1-P\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Identification registries and directories&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Q&lt;a name=\&quot;zh-CDSCv1-Q\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Knowledge Management&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;R&lt;a name=\&quot;zh-CDSCv1-R\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Laboratory and Diagnostic System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;S&lt;a name=\&quot;zh-CDSCv1-S\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Learning and Training System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;T&lt;a name=\&quot;zh-CDSCv1-T\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Logistics Management Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;U&lt;a name=\&quot;zh-CDSCv1-U\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pharmacy Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;V&lt;a name=\&quot;zh-CDSCv1-V\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Public health and disease surveillance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W&lt;a name=\&quot;zh-CDSCv1-W\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Research information system&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;X&lt;a name=\&quot;zh-CDSCv1-X\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SHR and health information repositories&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Y&lt;a name=\&quot;zh-CDSCv1-Y\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Telemedicine&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;div xml:lang=\&quot;ru\&quot; lang=\&quot;ru\&quot;&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;Russian&lt;/b&gt;&lt;/p&gt;&lt;hr/&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Сгенерированный нарратив: CodeSystem CDSCv1&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ru-CDSCv1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;ru-hcCDSCv1\&quot;&gt; &lt;/a&gt;&lt;p&gt;Данная система кодов &lt;code&gt;http://smart.who.int/base/CodeSystem/CDSCv1&lt;/code&gt; case-insensitive определяет следующие коды:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Код&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Отображение&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;A&lt;a name=\&quot;ru-CDSCv1-A\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Census, population information &amp;amp; data warehouse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;B&lt;a name=\&quot;ru-CDSCv1-B\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Civil Registration and Vital Statistics&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;C&lt;a name=\&quot;ru-CDSCv1-C\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Client applications&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;D&lt;a name=\&quot;ru-CDSCv1-D\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Client communication system&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;E&lt;a name=\&quot;ru-CDSCv1-E\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Clinical terminology and classifications&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;F&lt;a name=\&quot;ru-CDSCv1-F\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Community-based Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;G&lt;a name=\&quot;ru-CDSCv1-G\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Data interchange interoperability and accessibility&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;H&lt;a name=\&quot;ru-CDSCv1-H\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Electronic Medical Record&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;I&lt;a name=\&quot;ru-CDSCv1-I\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Emergency response system&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J&lt;a name=\&quot;ru-CDSCv1-J\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Environmental monitoring systems&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;K&lt;a name=\&quot;ru-CDSCv1-K\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Facility Management Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L&lt;a name=\&quot;ru-CDSCv1-L\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Geographic Information Systems&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M&lt;a name=\&quot;ru-CDSCv1-M\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Health finance and insurance system&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;N&lt;a name=\&quot;ru-CDSCv1-N\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Health Management Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;O&lt;a name=\&quot;ru-CDSCv1-O\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Human Resource Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;P&lt;a name=\&quot;ru-CDSCv1-P\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Identification registries and directories&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Q&lt;a name=\&quot;ru-CDSCv1-Q\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Knowledge Management&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;R&lt;a name=\&quot;ru-CDSCv1-R\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Laboratory and Diagnostic System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;S&lt;a name=\&quot;ru-CDSCv1-S\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Learning and Training System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;T&lt;a name=\&quot;ru-CDSCv1-T\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Logistics Management Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;U&lt;a name=\&quot;ru-CDSCv1-U\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pharmacy Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;V&lt;a name=\&quot;ru-CDSCv1-V\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Public health and disease surveillance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W&lt;a name=\&quot;ru-CDSCv1-W\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Research information system&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;X&lt;a name=\&quot;ru-CDSCv1-X\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SHR and health information repositories&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Y&lt;a name=\&quot;ru-CDSCv1-Y\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Telemedicine&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;div xml:lang=\&quot;es\&quot; lang=\&quot;es\&quot;&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;Spanish&lt;/b&gt;&lt;/p&gt;&lt;hr/&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: SistemaDeCodigos CDSCv1&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;es-CDSCv1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;es-hcCDSCv1\&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-insensitive code system &lt;code&gt;http://smart.who.int/base/CodeSystem/CDSCv1&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;A&lt;a name=\&quot;es-CDSCv1-A\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Census, population information &amp;amp; data warehouse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;B&lt;a name=\&quot;es-CDSCv1-B\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Civil Registration and Vital Statistics&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;C&lt;a name=\&quot;es-CDSCv1-C\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Client applications&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;D&lt;a name=\&quot;es-CDSCv1-D\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Client communication system&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;E&lt;a name=\&quot;es-CDSCv1-E\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Clinical terminology and classifications&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;F&lt;a name=\&quot;es-CDSCv1-F\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Community-based Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;G&lt;a name=\&quot;es-CDSCv1-G\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Data interchange interoperability and accessibility&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;H&lt;a name=\&quot;es-CDSCv1-H\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Electronic Medical Record&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;I&lt;a name=\&quot;es-CDSCv1-I\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Emergency response system&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;J&lt;a name=\&quot;es-CDSCv1-J\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Environmental monitoring systems&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;K&lt;a name=\&quot;es-CDSCv1-K\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Facility Management Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;L&lt;a name=\&quot;es-CDSCv1-L\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Geographic Information Systems&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;M&lt;a name=\&quot;es-CDSCv1-M\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Health finance and insurance system&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;N&lt;a name=\&quot;es-CDSCv1-N\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Health Management Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;O&lt;a name=\&quot;es-CDSCv1-O\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Human Resource Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;P&lt;a name=\&quot;es-CDSCv1-P\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Identification registries and directories&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Q&lt;a name=\&quot;es-CDSCv1-Q\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Knowledge Management&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;R&lt;a name=\&quot;es-CDSCv1-R\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Laboratory and Diagnostic System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;S&lt;a name=\&quot;es-CDSCv1-S\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Learning and Training System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;T&lt;a name=\&quot;es-CDSCv1-T\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Logistics Management Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;U&lt;a name=\&quot;es-CDSCv1-U\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pharmacy Information System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;V&lt;a name=\&quot;es-CDSCv1-V\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Public health and disease surveillance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;W&lt;a name=\&quot;es-CDSCv1-W\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Research information system&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;X&lt;a name=\&quot;es-CDSCv1-X\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SHR and health information repositories&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Y&lt;a name=\&quot;es-CDSCv1-Y\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Telemedicine&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "http://smart.who.int/base/CodeSystem/CDSCv1",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "1.0.0",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "CDSCv1",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "Classification of Digital Health System Categories v1",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">experimental</a>" : true,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2026-08-27T08:35:55+00:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "WHO",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "WHO",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://who.int"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>" : "CodeSystem for Classification of Digital Health System Categories v1. Autogenerated from DAK artifacts",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a>" : false,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a>" : "complete",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a>" : 25,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "A",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Census, population information &amp; data warehouse"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "B",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Civil Registration and Vital Statistics"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "C",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Client applications"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "D",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Client communication system"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "E",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Clinical terminology and classifications"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "F",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Community-based Information System"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "G",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Data interchange interoperability and accessibility"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "H",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Electronic Medical Record"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "I",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Emergency response system"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "J",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Environmental monitoring systems"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "K",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Facility Management Information System"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "L",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Geographic Information Systems"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "M",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Health finance and insurance system"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "N",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Health Management Information System"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "O",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Human Resource Information System"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "P",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Identification registries and directories"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Q",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Knowledge Management"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "R",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Laboratory and Diagnostic System"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "S",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Learning and Training System"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "T",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Logistics Management Information System"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "U",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pharmacy Information System"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "V",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Public health and disease surveillance"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "W",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Research information system"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "X",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SHR and health information repositories"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "Y",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Telemedicine"
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-content -->
+
+<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
+<a name="bottom"> </a>
+<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+<div class="container">  <!-- container -->
+
+<div class="inner-wrapper">
+  <p>
+    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.base#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 27, 2026 08:35+0000">2026-08-27</span>
+    <br/>
+    <span style="color: var(--footer-highlight-text-color)">
+                Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+| <a style="color: #81BEF7" target="_blank" href="http://smart.who.int/base/history.html">Version History</a> | <a style="color: #81BEF7" rel="license" href="license.html">License</a>
+    </span>
+  </p>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-footer -->
+
+<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+<div class="container">  <!-- container -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+<script type="text/javascript" src="assets/js/respond.min.js"> </script>
+<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+<script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+<!-- Analytics Below
+================================================== -->
+
+
+
+

@@ -1,0 +1,1238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ActivityDefinition xmlns="http://hl7.org/fhir">
+  <id value="SGDecisionTableGuidance"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationactivity"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/>
+  <table class="narrative-table">
+    <tbody>
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="metadata"> </a>Metadata</th>
+
+
+</tr>
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Version</th>
+
+
+
+<td class="content-container">1.0.0</td>
+
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Status</th>
+
+
+
+<td class="content-container">Draft</td>
+
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Steward (Publisher)</th>
+
+
+
+<td class="content-container">WHO</td>
+
+
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Steward Contact</th>
+
+
+
+<td class="content-container">WHO</td>
+
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Resource Kind</th>
+
+
+
+<td class="content-container">CommunicationRequest</td>
+
+
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Resource Profile</th>
+
+
+
+<td class="content-container"><a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-communicationrequest.html">CPG Communication Request</a></td>
+
+
+</tr>
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Intent</th>
+
+
+
+<td class="content-container">Proposal</td>
+
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <th colspan="2" scope="row" class="row-header">Generated using version 0.5.6 of the sample-content-ig Liquid templates</th>
+</tr>
+
+    </tbody>
+  </table>
+</div><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/>
+  <table class="narrative-table">
+    <tbody>
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="metadata"> </a>Metadata</th>
+
+
+</tr>
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Version</th>
+
+
+
+<td class="content-container">1.0.0</td>
+
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Status</th>
+
+
+
+<td class="content-container">Draft</td>
+
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Steward (Publisher)</th>
+
+
+
+<td class="content-container">WHO</td>
+
+
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Steward Contact</th>
+
+
+
+<td class="content-container">WHO</td>
+
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Resource Kind</th>
+
+
+
+<td class="content-container">CommunicationRequest</td>
+
+
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Resource Profile</th>
+
+
+
+<td class="content-container"><a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-communicationrequest.html">CPG Communication Request</a></td>
+
+
+</tr>
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Intent</th>
+
+
+
+<td class="content-container">Proposal</td>
+
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <th colspan="2" scope="row" class="row-header">Generated using version 0.5.6 of the sample-content-ig Liquid templates</th>
+</tr>
+
+    </tbody>
+  </table>
+</div><div xml:lang="ar" lang="ar"><hr/><p><b>Arabic</b></p><hr/>
+  <table class="narrative-table">
+    <tbody>
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="metadata"> </a>Metadata</th>
+
+
+</tr>
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Version</th>
+
+
+
+<td class="content-container">1.0.0</td>
+
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Status</th>
+
+
+
+<td class="content-container">Draft</td>
+
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Steward (Publisher)</th>
+
+
+
+<td class="content-container">WHO</td>
+
+
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Steward Contact</th>
+
+
+
+<td class="content-container">WHO</td>
+
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Resource Kind</th>
+
+
+
+<td class="content-container">CommunicationRequest</td>
+
+
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Resource Profile</th>
+
+
+
+<td class="content-container"><a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-communicationrequest.html">CPG Communication Request</a></td>
+
+
+</tr>
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Intent</th>
+
+
+
+<td class="content-container">Proposal</td>
+
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <th colspan="2" scope="row" class="row-header">Generated using version 0.5.6 of the sample-content-ig Liquid templates</th>
+</tr>
+
+    </tbody>
+  </table>
+</div><div xml:lang="zh" lang="zh"><hr/><p><b>Chinese</b></p><hr/>
+  <table class="narrative-table">
+    <tbody>
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="metadata"> </a>Metadata</th>
+
+
+</tr>
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Version</th>
+
+
+
+<td class="content-container">1.0.0</td>
+
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Status</th>
+
+
+
+<td class="content-container">Draft</td>
+
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Steward (Publisher)</th>
+
+
+
+<td class="content-container">WHO</td>
+
+
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Steward Contact</th>
+
+
+
+<td class="content-container">WHO</td>
+
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Resource Kind</th>
+
+
+
+<td class="content-container">CommunicationRequest</td>
+
+
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Resource Profile</th>
+
+
+
+<td class="content-container"><a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-communicationrequest.html">CPG Communication Request</a></td>
+
+
+</tr>
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Intent</th>
+
+
+
+<td class="content-container">Proposal</td>
+
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <th colspan="2" scope="row" class="row-header">Generated using version 0.5.6 of the sample-content-ig Liquid templates</th>
+</tr>
+
+    </tbody>
+  </table>
+</div><div xml:lang="ru" lang="ru"><hr/><p><b>Russian</b></p><hr/>
+  <table class="narrative-table">
+    <tbody>
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="metadata"> </a>Metadata</th>
+
+
+</tr>
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Version</th>
+
+
+
+<td class="content-container">1.0.0</td>
+
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Status</th>
+
+
+
+<td class="content-container">черновик</td>
+
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Steward (Publisher)</th>
+
+
+
+<td class="content-container">WHO</td>
+
+
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Steward Contact</th>
+
+
+
+<td class="content-container">WHO</td>
+
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Resource Kind</th>
+
+
+
+<td class="content-container">CommunicationRequest</td>
+
+
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Resource Profile</th>
+
+
+
+<td class="content-container"><a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-communicationrequest.html">CPG Communication Request</a></td>
+
+
+</tr>
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Intent</th>
+
+
+
+<td class="content-container">Proposal</td>
+
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <th colspan="2" scope="row" class="row-header">Generated using version 0.5.6 of the sample-content-ig Liquid templates</th>
+</tr>
+
+    </tbody>
+  </table>
+</div><div xml:lang="es" lang="es"><hr/><p><b>Spanish</b></p><hr/>
+  <table class="narrative-table">
+    <tbody>
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="metadata"> </a>Metadata</th>
+
+
+</tr>
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Version</th>
+
+
+
+<td class="content-container">1.0.0</td>
+
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Status</th>
+
+
+
+<td class="content-container">Draft</td>
+
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Steward (Publisher)</th>
+
+
+
+<td class="content-container">WHO</td>
+
+
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Steward Contact</th>
+
+
+
+<td class="content-container">WHO</td>
+
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Resource Kind</th>
+
+
+
+<td class="content-container">CommunicationRequest</td>
+
+
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Resource Profile</th>
+
+
+
+<td class="content-container"><a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-communicationrequest.html">CPG Communication Request</a></td>
+
+
+</tr>
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Intent</th>
+
+
+
+<td class="content-container">Proposal</td>
+
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <th colspan="2" scope="row" class="row-header">Generated using version 0.5.6 of the sample-content-ig Liquid templates</th>
+</tr>
+
+    </tbody>
+  </table>
+</div></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <url value="http://smart.who.int/base/ActivityDefinition/SGDecisionTableGuidance"/>
+  <version value="1.0.0"/>
+  <name value="SGDecisionTableGuidance"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-06-07"/>
+  <publisher value="WHO"/>
+  <contact>
+    <name value="WHO"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://who.int"/>
+    </telecom>
+  </contact>
+  <kind value="CommunicationRequest"/>
+  <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest"/>
+  <intent value="proposal"/>
+  <doNotPerform value="false"/>
+</ActivityDefinition>

@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title> - SMART Base v0.2.0</title>
+    <title>SMART Guidelines Requirements - Examples - SMART Base v1.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -46,8 +46,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:""}
-    h3,h4,h5,h6{--heading-prefix:""}</style>
+    <style type="text/css">h2{--heading-prefix:"9.110"}
+    h3,h4,h5,h6{--heading-prefix:"9.110"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
 
       <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
@@ -71,6 +71,22 @@
   <li>
     <a href="index.html">Home</a>
   </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Authoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="authoring-process.html">Process</a>
+      </li>
+      <li>
+        <a href="authoring-personas.html">Personas</a>
+      </li>
+      <li>
+        <a href="authoring-skills.html">Skills</a>
+      </li>
+    </ul>
+  </li>
   <li>
     <a href="downloads.html">Downloads</a>
   </li>
@@ -81,6 +97,9 @@
     <ul class="dropdown-menu">
       <li>
         <a href="artifacts.html">Artifact Index</a>
+      </li>
+      <li>
+        <a href="dak-api.html">DAK API</a>
       </li>
     </ul>
   </li>
@@ -112,6 +131,8 @@
         <!-- Placeholder for child template header declarations -->
 <div id="project-nav">
     <a id="who-logo" no-external="true" href="index.html">
+      
+<img height="50" style="margin:7px" alt="Welcome on standards website" src="assets/images/h-logo-blue.svg"/>
         
     </a>
 </div>
@@ -121,10 +142,10 @@
 </div> 
 
 
-        <div id="ig-status" class="ig-status-draft">
+        <div id="ig-status" class="ig-status-active">
           <p><span style="font-size:12pt;font-weight:bold">SMART Base</span>
             <br/>
-            <span style="display:inline-block;">0.2.0 - ci-build
+            <span style="display:inline-block;">1.0.0 - release
 
 
             </span>
@@ -139,7 +160,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>SMART Guidelines Requirements</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -152,7 +173,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 6" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART Base (v0.2.0: Releases Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/base/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART Base (v1.0.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://smart.who.int/base/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -187,6 +208,16 @@
 
 
 
+
+
+
+  
+    
+      <li class="active">
+        <a href="#">Examples</a>
+      </li>
+    
+  
 
 
 
@@ -225,7 +256,7 @@
         
           Draft
           
-            as of 2025-04-02
+            as of 2026-08-27
           
         
       </td>
@@ -241,7 +272,258 @@
 
 
 
-  <p><b>No examples are currently available for the  Profile.</b></p>
+  <p>Examples for the SGRequirements Profile.</p>
+  <table style="grid">
+    <tbody>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.AuthorActorDefinitions.html">Can author actor definitions</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.AuthorBusinessProcesses.html">Can author business processes</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.AuthorCQL.html">Can author CQL</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.AuthorCodeSystems.html">Can author code systems</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.AuthorConceptMaps.html">Can author concept maps</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.AuthorDataDictionary.html">Can author data dictionary</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.AuthorDecisionLogic.html">Can author decision-support logic</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.AuthorExampleScenarios.html">Can author example scenarios</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.AuthorFHIRProfiles.html">Can author FHIR profiles</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.AuthorFHIRRequirements.html">Can author FHIR requirements</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.AuthorFunctionalRequirements.html">Can author functional requirements</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.AuthorIndicators.html">Can author indicators</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.AuthorLogicalModels.html">Can author logical models</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.AuthorMeasures.html">Can author measures</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.AuthorPersonas.html">Can author personas</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.AuthorPlanDefinitions.html">Can author plan definitions</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.AuthorQuestionnaires.html">Can author questionnaires</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.AuthorSchedulingLogic.html">Can author scheduling logic</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.AuthorStructureMaps.html">Can author structure maps</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.AuthorTestCases.html">Can author test cases</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.AuthorUserScenarios.html">Can author user scenarios</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.AuthorValueSets.html">Can author value sets</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.BuildIG.html">Can build IG</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.ConfigureIG.html">Can configure IG</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.InterpretClinicalRecommendations.html">Can interpret clinical recommendations</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.ManageGovernance.html">Can manage governance</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.ManageReleases.html">Can manage releases</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.ManageStakeholders.html">Can manage stakeholders</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.MapConcepts.html">Can map concepts</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.PlanIterations.html">Can plan iterations</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.ReviewAndApproveContent.html">Can review and approve content</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.ReviewChecklist.html">Can review checklist</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.ReviewL1Guidelines.html">Can review L1 guidelines</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.ReviewTerminology.html">Can review terminology</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.ReviewTranslations.html">Can review translations</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.RunQAChecks.html">Can run QA checks</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.ScopeDAK.html">Can scope DAK</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.TranslateContent.html">Can translate content</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.ValidateArtifactConformance.html">Can validate artifact conformance</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.ValidateDAKContent.html">Can validate DAK content</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Requirements-SGAuthoring.Skills.ValidateL3Functionality.html">Can validate L3 functionality</a>
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
 
 
 <!-- insert notes if present -->
@@ -268,7 +550,7 @@
 
 <div class="inner-wrapper">
   <p>
-    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.base#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Apr 2, 2025 12:10+0200">2025-04-02</span>
+    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.base#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 27, 2026 08:35+0000">2026-08-27</span>
     <br/>
     <span style="color: var(--footer-highlight-text-color)">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

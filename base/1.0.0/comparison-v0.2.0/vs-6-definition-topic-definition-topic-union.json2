@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "40d85090-fd27-471b-b3b7-93a57d71b484-17",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/40d85090-fd27-471b-b3b7-93a57d71b484-17",
+  "name" : "UnionDefinitionTopicAndDefinitionTopic",
+  "title" : "Union of DefinitionTopic And DefinitionTopic",
+  "status" : "draft",
+  "date" : "2026-08-27T08:33:42+00:00"
+}

@@ -1,0 +1,2518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="smart.who.int.base"/>
+  <meta>
+    <profile value="http://smart.who.int/base/StructureDefinition/SGImplementationGuide"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ImplementationGuide smart.who.int.base</b></p><a name="smart.who.int.base"> </a><a name="hcsmart.who.int.base"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-SGImplementationGuide.html">SMART Guidelines ImplementationGuide</a></p></div><h2>Base</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/base/ImplementationGuide/smart.who.int.base</pre><div><p>Base SMART Guidelines implementation guide to be used as the base dependency for all SMART Guidelines IGs</p>
+</div></div><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><p class="res-header-id"><b>Narratif généré : ImplementationGuide smart.who.int.base</b></p><a name="fr-smart.who.int.base"> </a><a name="fr-hcsmart.who.int.base"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-SGImplementationGuide.html">SMART Guidelines ImplementationGuide</a></p></div><h2>Base</h2><p>L'URL officielle pour ce guide d'implémentation est : </p><pre>http://smart.who.int/base/ImplementationGuide/smart.who.int.base</pre><div><p>Base SMART Guidelines implementation guide to be used as the base dependency for all SMART Guidelines IGs</p>
+</div></div><div xml:lang="ar" lang="ar"><hr/><p><b>Arabic</b></p><hr/><p class="res-header-id"><b>السرد المُنشأ: ImplementationGuide smart.who.int.base</b></p><a name="ar-smart.who.int.base"> </a><a name="ar-hcsmart.who.int.base"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">الملف الشخصي: <a href="StructureDefinition-SGImplementationGuide.html">SMART Guidelines ImplementationGuide</a></p></div><h2>Base</h2><p>الرابط الرسمي لدليل التنفيذ هذا هو </p><pre>http://smart.who.int/base/ImplementationGuide/smart.who.int.base</pre><div><p>Base SMART Guidelines implementation guide to be used as the base dependency for all SMART Guidelines IGs</p>
+</div></div><div xml:lang="zh" lang="zh"><hr/><p><b>Chinese</b></p><hr/><p class="res-header-id"><b>Generated Narrative: 实施指南 smart.who.int.base</b></p><a name="zh-smart.who.int.base"> </a><a name="zh-hcsmart.who.int.base"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-SGImplementationGuide.html">SMART Guidelines ImplementationGuide</a></p></div><h2>Base</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/base/ImplementationGuide/smart.who.int.base</pre><div><p>Base SMART Guidelines implementation guide to be used as the base dependency for all SMART Guidelines IGs</p>
+</div></div><div xml:lang="ru" lang="ru"><hr/><p><b>Russian</b></p><hr/><p class="res-header-id"><b>Сгенерированный нарратив: ImplementationGuide smart.who.int.base</b></p><a name="ru-smart.who.int.base"> </a><a name="ru-hcsmart.who.int.base"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Профиль: <a href="StructureDefinition-SGImplementationGuide.html">SMART Guidelines ImplementationGuide</a></p></div><h2>Base</h2><p>Официальный URL-адрес для этого руководства по реализации: </p><pre>http://smart.who.int/base/ImplementationGuide/smart.who.int.base</pre><div><p>Base SMART Guidelines implementation guide to be used as the base dependency for all SMART Guidelines IGs</p>
+</div></div><div xml:lang="es" lang="es"><hr/><p><b>Spanish</b></p><hr/><p class="res-header-id"><b>Generated Narrative: GuiaDeImplementacion smart.who.int.base</b></p><a name="es-smart.who.int.base"> </a><a name="es-hcsmart.who.int.base"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-SGImplementationGuide.html">SMART Guidelines ImplementationGuide</a></p></div><h2>Base</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/base/ImplementationGuide/smart.who.int.base</pre><div><p>Base SMART Guidelines implementation guide to be used as the base dependency for all SMART Guidelines IGs</p>
+</div></div></div>
+  </text>
+  <url value="http://smart.who.int/base/ImplementationGuide/smart.who.int.base"/>
+  <version value="1.0.0"/>
+  <name value="Base"/>
+  <title value="SMART Base"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-27T08:31:36+00:00"/>
+  <publisher value="WHO"/>
+  <contact>
+    <name value="WHO"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://who.int"/>
+    </telecom>
+  </contact>
+  <description value="Base SMART Guidelines implementation guide to be used as the base dependency for all SMART Guidelines IGs"/>
+  <packageId value="smart.who.int.base"/>
+  <license value="CC-BY-SA-3.0-IGO"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7_terminology">
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology"/>
+    <version value="7.3.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_extensions_r4">
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="5.3.0"/>
+  </dependsOn>
+  <dependsOn id="cql">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ImplementationGuide.dependsOn.reason">
+      <valueMarkdown value="This IG uses CQL profiles and capabilities provided by the Using CQL With FHIR IG"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/uv/cql/ImplementationGuide/hl7.fhir.uv.cql"/>
+    <packageId value="hl7.fhir.uv.cql"/>
+    <version value="2.0.0"/>
+  </dependsOn>
+  <dependsOn id="cpg">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ImplementationGuide.dependsOn.reason">
+      <valueMarkdown value="For Decision Tables"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/uv/cpg/ImplementationGuide/hl7.fhir.uv.cpg"/>
+    <packageId value="hl7.fhir.uv.cpg"/>
+    <version value="2.0.0"/>
+  </dependsOn>
+  <dependsOn id="crmi">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ImplementationGuide.dependsOn.reason">
+      <valueMarkdown value="This IG uses content management profiles and capabilities provided by the Canonical Resource Management Infrastructure (CRMI) IG"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/uv/crmi/ImplementationGuide/hl7.fhir.uv.crmi"/>
+    <packageId value="hl7.fhir.uv.crmi"/>
+    <version value="2.0.0"/>
+  </dependsOn>
+  <dependsOn id="sdc">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ImplementationGuide.dependsOn.reason">
+      <valueMarkdown value="This IG uses questionnaire profiles and capabilities provided by the Structure Data Capture (SDC) IG"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc"/>
+    <packageId value="hl7.fhir.uv.sdc"/>
+    <version value="4.0.0"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2023+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="release"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="i18n-default-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="en"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="i18n-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="fr"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="i18n-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ar"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="i18n-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="zh"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="i18n-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ru"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="i18n-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="es"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid-ig"/>
+      </extension>
+      <extension url="value">
+        <valueString value="templates/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://smart.who.int/base/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools.r4#1.1.2"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2023+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="release"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="i18n-default-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="en"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="i18n-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="fr"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="i18n-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ar"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="i18n-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="zh"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="i18n-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ru"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="i18n-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="es"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid-ig"/>
+      </extension>
+      <extension url="value">
+        <valueString value="templates/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://smart.who.int/base/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <grouping id="Conformance">
+      <name value="Conformance"/>
+      <description value="constraints and profile structures for SMART Guidelines resources"/>
+    </grouping>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/SGAuthoring.Persona.BusinessAnalyst"/>
+      </reference>
+      <name value="Business Analyst"/>
+      <description value="A digital health informatician specializing in business analysis who authors&#xA;L2 DAK components. Business analysts translate clinical guidelines and&#xA;normative products into structured DAK artifacts including business processes,&#xA;data dictionaries, decision-support logic, and requirements.&#xA;&#xA;Key activities:&#xA;- Review L1 source documents and extract structured content&#xA;- Author generic personas based on task-shifting guidelines&#xA;- Create user scenario narratives&#xA;- Design BPMN 2.0 business process diagrams&#xA;- Define core data elements and data dictionary&#xA;- Develop decision-support logic tables (DMN standard)&#xA;- Develop scheduling logic tables&#xA;- Define indicators and performance metrics&#xA;- Capture functional and non-functional requirements&#xA;- Streamline content across DAK components for consistency&#xA;&#xA;**Source**: IG Starter Kit, L2 DAK Authoring, Section 2.1 &quot;Fill in DAK components&quot;;&#xA;Community of Practice page"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BusinessProcessWorkflow"/>
+      </reference>
+      <name value="Business Process Workflow (DAK)"/>
+      <description value="Logical Model for representing Generic Business Processes and Workflows from a DAK. A business process is a set of related activities or tasks performed together to achieve the objectives of the health programme area."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BusinessProcessWorkflowSource"/>
+      </reference>
+      <name value="Business Process Workflow Source"/>
+      <description value="Source reference for Business Process Workflow - exactly one of the following must be provided:&#xA;- url (url data type): URL to retrieve BusinessProcessWorkflow definition from input/ or external source&#xA;- canonical (canonical data type): Canonical URI pointing to the BusinessProcessWorkflow definition&#xA;- instance: Inline BusinessProcessWorkflow instance data"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.AuthorActorDefinitions"/>
+      </reference>
+      <name value="Can author actor definitions"/>
+      <description value="Capability to create FHIR ActorDefinitions from L2 personas, reusing existing definitions from the Commons repository."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.AuthorBusinessProcesses"/>
+      </reference>
+      <name value="Can author business processes"/>
+      <description value="Capability to create BPMN 2.0 business process diagrams for DAK workflows."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.AuthorCodeSystems"/>
+      </reference>
+      <name value="Can author code systems"/>
+      <description value="Capability to create and maintain FHIR CodeSystem resources."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.AuthorConceptMaps"/>
+      </reference>
+      <name value="Can author concept maps"/>
+      <description value="Capability to create FHIR ConceptMap resources for cross-terminology mappings."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.AuthorCQL"/>
+      </reference>
+      <name value="Can author CQL"/>
+      <description value="Capability to write Clinical Quality Language (CQL) for decision logic, scheduling logic, and indicator calculations."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.AuthorDataDictionary"/>
+      </reference>
+      <name value="Can author data dictionary"/>
+      <description value="Capability to define core data elements and map to standard terminologies."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.AuthorDecisionLogic"/>
+      </reference>
+      <name value="Can author decision-support logic"/>
+      <description value="Capability to develop decision-support logic tables following the DMN standard."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.AuthorExampleScenarios"/>
+      </reference>
+      <name value="Can author example scenarios"/>
+      <description value="Capability to create ExampleScenario resources from L2 user scenarios."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.AuthorFHIRProfiles"/>
+      </reference>
+      <name value="Can author FHIR profiles"/>
+      <description value="Capability to create FHIR profiles (StructureDefinitions) constraining base FHIR resources."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.AuthorFHIRRequirements"/>
+      </reference>
+      <name value="Can author FHIR requirements"/>
+      <description value="Capability to create FHIR Requirements resources from L2 functional and non-functional requirements."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.AuthorFunctionalRequirements"/>
+      </reference>
+      <name value="Can author functional requirements"/>
+      <description value="Capability to define high-level functional and non-functional requirements linked to personas and business processes."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.AuthorIndicators"/>
+      </reference>
+      <name value="Can author indicators"/>
+      <description value="Capability to define indicators and performance metrics with numerator/denominator specifications."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.AuthorLogicalModels"/>
+      </reference>
+      <name value="Can author logical models"/>
+      <description value="Capability to create FHIR logical models (StructureDefinitions) from L2 data dictionaries."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.AuthorMeasures"/>
+      </reference>
+      <name value="Can author measures"/>
+      <description value="Capability to create FHIR Measure resources from L2 indicators."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.AuthorPersonas"/>
+      </reference>
+      <name value="Can author personas"/>
+      <description value="Capability to define generic personas based on task-shifting guidelines and ground-truthing interviews."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.AuthorPlanDefinitions"/>
+      </reference>
+      <name value="Can author plan definitions"/>
+      <description value="Capability to create FHIR PlanDefinitions for business processes and decision tables."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.AuthorQuestionnaires"/>
+      </reference>
+      <name value="Can author questionnaires"/>
+      <description value="Capability to create FHIR Questionnaire resources aligned with L2 forms and data collection needs."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.AuthorSchedulingLogic"/>
+      </reference>
+      <name value="Can author scheduling logic"/>
+      <description value="Capability to develop scheduling logic tables following the DMN standard."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.AuthorStructureMaps"/>
+      </reference>
+      <name value="Can author structure maps"/>
+      <description value="Capability to create FHIR StructureMaps for data extraction from QuestionnaireResponses to FHIR resources."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.AuthorTestCases"/>
+      </reference>
+      <name value="Can author test cases"/>
+      <description value="Capability to create TestPlan, TestScript, and example instances for validation of L3 artifacts."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.AuthorUserScenarios"/>
+      </reference>
+      <name value="Can author user scenarios"/>
+      <description value="Capability to create user scenario narratives depicting typical interactions in health programme workflows."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.AuthorValueSets"/>
+      </reference>
+      <name value="Can author value sets"/>
+      <description value="Capability to create and maintain FHIR ValueSet resources with appropriate terminology bindings."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.BuildIG"/>
+      </reference>
+      <name value="Can build IG"/>
+      <description value="Capability to run the FHIR IG Publisher build process and verify output."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.ConfigureIG"/>
+      </reference>
+      <name value="Can configure IG"/>
+      <description value="Capability to set up and configure a FHIR Implementation Guide (sushi-config, canonical URL, packages)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.InterpretClinicalRecommendations"/>
+      </reference>
+      <name value="Can interpret clinical recommendations"/>
+      <description value="Capability to interpret clinical recommendations from L1 source documents with domain expertise."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.ManageGovernance"/>
+      </reference>
+      <name value="Can manage governance"/>
+      <description value="Capability to manage cross-IG governance for shared artifacts including common personas, terminology, and libraries."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.ManageReleases"/>
+      </reference>
+      <name value="Can manage releases"/>
+      <description value="Capability to manage versioning, publication-request.json, release tags, and publication workflow."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.ManageStakeholders"/>
+      </reference>
+      <name value="Can manage stakeholders"/>
+      <description value="Capability to engage SMEs, coordinate consultations, and manage the RASCI matrix for DAK development."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.MapConcepts"/>
+      </reference>
+      <name value="Can map concepts"/>
+      <description value="Capability to map data elements to WHO Commons dictionary, ICD-11, SNOMED CT, LOINC, and other standard terminologies."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.PlanIterations"/>
+      </reference>
+      <name value="Can plan iterations"/>
+      <description value="Capability to plan sprint iterations, maintain the DAK backlog, draft the project roadmap, and facilitate retrospectives."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.ReviewAndApproveContent"/>
+      </reference>
+      <name value="Can review and approve content"/>
+      <description value="Capability to review and formally approve SMART Guidelines content at decision gates in the authoring lifecycle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.ReviewChecklist"/>
+      </reference>
+      <name value="Can review checklist"/>
+      <description value="Capability to review the SMART Guidelines publication checklist across L1-L4 layers and global requirements."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.ReviewL1Guidelines"/>
+      </reference>
+      <name value="Can review L1 guidelines"/>
+      <description value="Capability to review WHO L1 narrative guidelines and normative products for accuracy and completeness."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.ReviewTerminology"/>
+      </reference>
+      <name value="Can review terminology"/>
+      <description value="Capability to review and validate terminology bindings, code systems, and value sets for correctness and completeness."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.ReviewTranslations"/>
+      </reference>
+      <name value="Can review translations"/>
+      <description value="Capability to review translated content for accuracy and completeness."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.RunQAChecks"/>
+      </reference>
+      <name value="Can run QA checks"/>
+      <description value="Capability to run and interpret IG Publisher QA validation reports."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.ScopeDAK"/>
+      </reference>
+      <name value="Can scope DAK"/>
+      <description value="Capability to define DAK scope, identify source documents, and establish the development process and governance."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.TranslateContent"/>
+      </reference>
+      <name value="Can translate content"/>
+      <description value="Capability to translate IG content across UN languages."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.ValidateArtifactConformance"/>
+      </reference>
+      <name value="Can validate artifact conformance"/>
+      <description value="Capability to verify conformance to CRMI Shareable, Publishable, Computable, and Executable profiles."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.ValidateDAKContent"/>
+      </reference>
+      <name value="Can validate DAK content"/>
+      <description value="Capability to review and validate DAK components against L1 source documents and for cross-component consistency."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/SGAuthoring.Skills.ValidateL3Functionality"/>
+      </reference>
+      <name value="Can validate L3 functionality"/>
+      <description value="Capability to test StructureMap extraction, CQL execution, and measure calculation using reference tooling."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CDHIv1"/>
+      </reference>
+      <name value="Classification of Digital Health Interventions v1"/>
+      <description value="Value Set for Classification of Digital Health Interventions v1. Autogenerated from DAK artifacts"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CDHIv1"/>
+      </reference>
+      <name value="Classification of Digital Health Interventions v1"/>
+      <description value="CodeSystem for Classification of Digital Health Interventions v1. Autogenerated from DAK artifacts"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CDHIv2"/>
+      </reference>
+      <name value="Classification of Digital Health Interventions v2"/>
+      <description value="Value Set for the Classification of Digital Interventions, Services and Applications in Health (CDISAH), second edition (2023)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CDHIv2"/>
+      </reference>
+      <name value="Classification of Digital Health Interventions v2"/>
+      <description value="CodeSystem for the Classification of Digital Interventions, Services and Applications in Health&#xA;(CDISAH), second edition (2023). ISBN 978-92-4-008194-9.&#xA;&#xA;Organised into four groups based on the primary user:&#xA;  1. Persons&#xA;  2. Healthcare providers&#xA;  3. Health management and support personnel&#xA;  4. Data services&#xA;&#xA;New categories vs v1: 1.4.4, 1.6.2, 1.8, 2.5.6, 2.11, 3.1.5, 3.5.7, 3.5.8, 3.8, 4.3.5, 4.4.2, 4.4.3, 4.5.&#xA;See ConceptMap CDHIv1toCDHIv2 for the full mapping from the first edition."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CDSCv2"/>
+      </reference>
+      <name value="Classification of Digital Health Services and Application Types v2"/>
+      <description value="CodeSystem for the Classification of Digital Health Services and Application Types v2,&#xA;as defined in the Classification of Digital Interventions, Services and Applications in Health&#xA;(CDISAH), second edition (2023). ISBN 978-92-4-008194-9.&#xA;&#xA;Services and Application Types represent the types of software, ICT systems and services&#xA;or communication channels that deliver or execute digital health interventions (DHIs) and&#xA;health content.&#xA;&#xA;The types are organised into five representations within the Digital Health Architecture:&#xA;  A. Point of service&#xA;  B. Health system/Provider administration&#xA;  C. Registries and Directories&#xA;  D. Data Management services&#xA;  E. Surveillance and Response"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CDSCv1"/>
+      </reference>
+      <name value="Classification of Digital Health System Categories v1"/>
+      <description value="CodeSystem for Classification of Digital Health System Categories v1. Autogenerated from DAK artifacts"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/DAK.Persona.System.ClientRegistry"/>
+      </reference>
+      <name value="Client Registry / Master Patient Index"/>
+      <description value="A digital system that creates, maintains, and provides authoritative unique&#xA;identifiers for individuals (persons) accessing health services, enabling&#xA;cross-facility patient matching and de-duplication.&#xA;&#xA;The client registry supports DHIs including:&#xA;- Verify a person's unique identity (2.1.1)&#xA;- Enrol person(s) for health services/clinical care plan (2.1.2)&#xA;- Merge, de-duplicate and curate coded datasets (4.2.2)&#xA;- Standards-compliant interoperability to link records across systems (4.4.2)&#xA;&#xA;**Services and Application Types**:&#xA;- C6 — Identification registries and directories&#xA;- C8 — Master patient index"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/SGAuthoring.Persona.ClinicalSME"/>
+      </reference>
+      <name value="Clinical Subject Matter Expert"/>
+      <description value="A clinician or subject matter expert (SME) of a specific health area who&#xA;validates the clinical accuracy and completeness of DAK content against&#xA;WHO guidelines and other normative products. SMEs should be the authors&#xA;of the source documents or recognized experts actively engaged in, if not&#xA;leading, the collaborative development of the DAKs.&#xA;&#xA;Key activities:&#xA;- Validate that DAK components accurately reflect L1 recommendations&#xA;- Provide clinical ground-truthing through country visits and interviews&#xA;- Identify gaps or needed changes in DAK content&#xA;- Review decision-support logic for clinical correctness&#xA;- Confirm that workflows represent 80% of clinical scenarios&#xA;- Validate personas against real-world practice settings&#xA;- Advise on cross-programme overlaps (e.g. TB/HIV indicators)&#xA;&#xA;**Source**: IG Starter Kit, L2 DAK Authoring, Sections 1 &quot;Plan&quot; and 2.2 &quot;Validate&quot;"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/DAK.Persona.CommunityHealthWorker"/>
+      </reference>
+      <name value="Community Health Worker"/>
+      <description value="A frontline member of the health workforce who delivers health interventions&#xA;at the community level, acting as a link between communities and formal health&#xA;facilities. Community health workers are a key sub-group of healthcare providers.&#xA;&#xA;Community health workers use DHIs to:&#xA;- Register and follow-up community members (2.1, 2.2.1)&#xA;- Receive community-based decision support and job aids (2.3)&#xA;- Report public health events from point of diagnosis (3.3.1)&#xA;- Access mobile training and competency assessments (2.8)&#xA;- Communicate with supervising clinical staff (2.5.1)&#xA;- Manage their daily visit planning and activities (2.7)&#xA;&#xA;**ISCO-08**: 3255 (Community health workers), 5321 (Health care assistants).&#xA;&#xA;**Examples**: Village health worker, health extension worker, community health&#xA;volunteer, lay health advisor, peer educator, traditional birth attendant,&#xA;community case manager."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/SGAuthoring.Persona.ContentReviewer"/>
+      </reference>
+      <name value="Content Reviewer / Approver"/>
+      <description value="A designated reviewer responsible for approving SMART Guidelines content&#xA;at key decision gates in the authoring lifecycle. Content Reviewers ensure&#xA;that DAK and IG content meets quality standards, accurately reflects WHO&#xA;normative guidance, and is ready to proceed to the next phase.&#xA;&#xA;Content Reviewers may be senior technical officers, programme leads, or&#xA;designated governance committee members. They provide formal sign-off at&#xA;phase transitions (L2→L3, draft→publication).&#xA;&#xA;Key activities:&#xA;- Review and approve L2 DAK content before L3 authoring begins&#xA;- Review and approve L3 IG content before publication&#xA;- Assess whether content changes are breaking or non-breaking&#xA;- Approve draft publications for stakeholder circulation&#xA;- Provide final sign-off for release publication&#xA;- Ensure content aligns with WHO guidelines governance policies&#xA;- Participate in cross-programme content harmonization reviews&#xA;&#xA;**Source**: IG Starter Kit, Publication page (review process);&#xA;DAK Authoring, Section 2.2 &quot;Validate DAK content with SMEs&quot;"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/CoreDataElement"/>
+      </reference>
+      <name value="Core Data Element (DAK)"/>
+      <description value="Logical Model for representing Core Data Elements from a DAK. A core data element can be one of: a ValueSet, a CodeSystem, a ConceptMap, or a Logical Model adherent to SGLogicalModel. This is the ONE EXCEPTION to allowing FHIR R4 models into the DAK LMs."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/CoreDataElementSource"/>
+      </reference>
+      <name value="Core Data Element Source"/>
+      <description value="Source reference for Core Data Element - exactly one of the following must be provided:&#xA;- url (url data type): URL to retrieve CoreDataElement definition from input/ or external source&#xA;- canonical (canonical data type): Canonical URI pointing to the CoreDataElement definition&#xA;- instance: Inline CoreDataElement instance data"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CoreDataElementType"/>
+      </reference>
+      <name value="Core Data Element Type"/>
+      <description value="CodeSystem for Core Data Element types - defines the type of FHIR resource that a Core Data Element references."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CoreDataElementTypeVS"/>
+      </reference>
+      <name value="Core Data Element Type Value Set"/>
+      <description value="Value set of core data element types"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DecisionSupportLogicSource"/>
+      </reference>
+      <name value="Decision Support Logic Source"/>
+      <description value="Source reference for Decision Support Logic - exactly one of the following must be provided:&#xA;- url (url data type): URL to retrieve DecisionSupportLogic definition from input/ or external source&#xA;- canonical (canonical data type): Canonical URI pointing to the DecisionSupportLogic definition&#xA;- instance: Inline DecisionSupportLogic instance data"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DecisionSupportLogic"/>
+      </reference>
+      <name value="Decision-Support Logic (DAK)"/>
+      <description value="Logical Model for representing Decision-Support Logic from a DAK. Decision-support logic and algorithms to support appropriate service delivery in accordance with WHO clinical, public health and data use guidelines."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DAK"/>
+      </reference>
+      <name value="Digital Adaptation Kit (DAK)"/>
+      <description value="Logical Model for representing a complete Digital Adaptation Kit (DAK) with metadata and all 9 DAK components"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CDHIv1.1"/>
+      </reference>
+      <name value="Digital Health Interventions for Clients"/>
+      <description value="Digital Health Interventions whose primary user group is Clients (persons using health services). Group 1 of the Classification of Digital Health Interventions v1 (2018)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CDHIv2.3"/>
+      </reference>
+      <name value="Digital Health Interventions for Health Management and Support Personnel"/>
+      <description value="Digital Health Interventions whose primary user group is Health Management and Support Personnel. Group 3 of the Classification of Digital Interventions, Services and Applications in Health v2 (CDISAH, 2023)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CDHIv1.3"/>
+      </reference>
+      <name value="Digital Health Interventions for Health System Managers"/>
+      <description value="Digital Health Interventions whose primary user group is Health System Managers. Group 3 of the Classification of Digital Health Interventions v1 (2018)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CDHIv1.2"/>
+      </reference>
+      <name value="Digital Health Interventions for Health Workers"/>
+      <description value="Digital Health Interventions whose primary user group is Health Workers. Group 2 of the Classification of Digital Health Interventions v1 (2018)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CDHIv2.2"/>
+      </reference>
+      <name value="Digital Health Interventions for Healthcare Providers"/>
+      <description value="Digital Health Interventions whose primary user group is Healthcare Providers. Group 2 of the Classification of Digital Interventions, Services and Applications in Health v2 (CDISAH, 2023)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CDHIv2.1"/>
+      </reference>
+      <name value="Digital Health Interventions for Persons"/>
+      <description value="Digital Health Interventions whose primary user group is Persons (health service users). Group 1 of the Classification of Digital Interventions, Services and Applications in Health v2 (CDISAH, 2023)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CDHIv1.4"/>
+      </reference>
+      <name value="Digital Health Interventions: Data Services"/>
+      <description value="Crosscutting Data Services DHIs. Group 4 of the Classification of Digital Health Interventions v1 (2018)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CDHIv2.4"/>
+      </reference>
+      <name value="Digital Health Interventions: Data Services"/>
+      <description value="Crosscutting Data Services DHIs. Group 4 of the Classification of Digital Interventions, Services and Applications in Health v2 (CDISAH, 2023)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DublinCore"/>
+      </reference>
+      <name value="Dublin Core Metadata Element Set"/>
+      <description value="Logical Model representing Dublin Core metadata elements as defined at https://www.dublincore.org/specifications/dublin-core/dcmi-terms/"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/DAK.Persona.System.EMR"/>
+      </reference>
+      <name value="Electronic Medical Record (EMR) System"/>
+      <description value="A secure, digital system that holds information about people's health and&#xA;clinical care managed by healthcare providers. Also referred to as an&#xA;Electronic Health Record (EHR).&#xA;&#xA;The EMR system supports DHIs including:&#xA;- Longitudinal tracking of person's health status and services (2.2.1)&#xA;- Management of structured clinical records (2.2.2)&#xA;- Management of unstructured clinical records such as notes and images (2.2.3)&#xA;- Clinical decision support prompts and checklists (2.3)&#xA;- Person identification and registration (2.1)&#xA;- Prescription and medication management (2.9)&#xA;- Laboratory results reception (2.10.1)&#xA;- Routine health indicator data collection (2.2.4)&#xA;&#xA;**Services and Application Type**: A5 — Electronic medical record systems&#xA;&#xA;**Functional areas**: Clinical decision support, record management,&#xA;person registration, appointment scheduling, referral tracking."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/SGAuthoring.Persona.FHIRModeller"/>
+      </reference>
+      <name value="FHIR Modeller"/>
+      <description value="An L3 author who creates machine-readable FHIR artifacts from L2 DAK&#xA;specifications. FHIR Modellers use FSH (FHIR Shorthand), SUSHI, and&#xA;the IG Publisher toolchain to produce conformant Implementation Guides.&#xA;&#xA;Key activities:&#xA;- Verify L2 input availability and consistency&#xA;- Author FHIR Logical Models from L2 data dictionaries&#xA;- Create FHIR Profiles (StructureDefinitions)&#xA;- Author FHIR Questionnaires from L2 forms&#xA;- Write CQL for decision logic, scheduling logic, and indicators&#xA;- Create StructureMaps for data extraction&#xA;- Author PlanDefinitions for business processes and decision tables&#xA;- Create ActorDefinitions from L2 personas (reusing Commons repository)&#xA;- Create ExampleScenario resources from L2 user scenarios&#xA;- Author FHIR Measure resources from L2 indicators&#xA;- Create FHIR Requirements resources&#xA;- Develop test cases (TestPlan, TestScript, example instances)&#xA;- Ensure all artifacts conform to CRMI Shareable/Publishable profiles&#xA;&#xA;**Source**: IG Starter Kit, L2-L3 Overview and all L3 authoring pages"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/FHIRSchemaBase"/>
+      </reference>
+      <name value="FHIR Schema Base (SMART Guidelines)"/>
+      <description value="Base logical model providing the common schema metadata interface inherited by all SMART Guidelines logical models. Every SMART Guidelines logical model schema derives from this base, which documents the shared FHIR and JSON-LD metadata properties used by the JSON Schema generation pipeline."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Requirements"/>
+      </reference>
+      <name value="Functional and Non-Functional Requirements (DAK)"/>
+      <description value="Logical Model for representing Functional and Non-Functional Requirements from a DAK. A high-level list of core functions and capabilities that the system must have to meet the end users' needs."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/FunctionalRequirement"/>
+      </reference>
+      <name value="Functional Requirement (DAK)"/>
+      <description value="Logical Model for representing functional requirement from a DAK"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/GenericPersona"/>
+      </reference>
+      <name value="Generic Persona (DAK)"/>
+      <description value="Logical Model for representing Generic Personas from a DAK. Depiction of the human and system actors. Human actors are end users, supervisors and related stakeholders who would be interacting with the digital system or involved in the clinical care, public health or health system pathway."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/GenericPersonaSource"/>
+      </reference>
+      <name value="Generic Persona Source"/>
+      <description value="Source reference for Generic Persona - exactly one of the following must be provided:&#xA;- url (url data type): URL to retrieve GenericPersona definition from input/ or external source&#xA;- canonical (canonical data type): Canonical URI pointing to the GenericPersona definition&#xA;- instance: Inline GenericPersona instance data"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/DAK.Persona.DataManager"/>
+      </reference>
+      <name value="Health Data Manager and Analyst"/>
+      <description value="A professional who manages, analyses, and disseminates health data to support&#xA;evidence-based decision-making. This corresponds to the 'Data services' user&#xA;group in CDISAH v2, providing crosscutting functionality across the health system.&#xA;&#xA;Data managers use DHIs to:&#xA;- Create data collection forms and manage data acquisition (4.1.1)&#xA;- Store and aggregate health data (4.1.2)&#xA;- Synthesise and visualise data for reporting and dashboards (4.1.3)&#xA;- Apply automated analytics and predictive modelling including AI/ML (4.1.4)&#xA;- Parse, de-duplicate, and curate coded datasets and terminologies (4.2)&#xA;- Classify disease codes and causes of mortality (4.2.3)&#xA;- Map geographic locations of facilities, events, populations, and providers (4.3)&#xA;- Enable point-to-point data integration and standards-compliant interoperability (4.4)&#xA;- Maintain data governance including authentication, privacy, and consent (4.5)&#xA;&#xA;**ISCO-08**: 2120 (Mathematicians, actuaries and statisticians), 2521 (Database&#xA;designers and administrators), 2523 (Computer network professionals), 3120&#xA;(Computer network and systems technicians).&#xA;&#xA;**Examples**: Biostatistician, epidemiologist, health informatician, data analyst,&#xA;DHIS2 administrator, GIS specialist, interoperability engineer, terminology manager."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/DAK.Persona.System.InteropPlatform"/>
+      </reference>
+      <name value="Health Information Exchange / Interoperability Platform"/>
+      <description value="A middleware system or shared infrastructure that enables health data exchange&#xA;between disparate health information systems using standard protocols and formats.&#xA;&#xA;The interoperability platform supports DHIs including:&#xA;- Point-to-point data integration (4.4.1)&#xA;- Standards-compliant interoperability (4.4.2)&#xA;- Message routing to appropriate architecture components (4.4.3)&#xA;- Data storage and aggregation across systems (4.1.2)&#xA;&#xA;**Services and Application Type**: D2 — Data interchange and interoperability&#xA;&#xA;**Functional areas**: Semantic interoperability, technical interoperability,&#xA;information exchange, data mediation, enterprise service bus."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/HealthInterventions"/>
+      </reference>
+      <name value="Health Interventions and Recommendations (DAK)"/>
+      <description value="Logical Model for representing Health Interventions and Recommendations from a DAK. Overview of the health interventions and WHO, regional or national recommendations included within the DAK."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/HealthInterventionsSource"/>
+      </reference>
+      <name value="Health Interventions Source"/>
+      <description value="Source reference for Health Interventions - exactly one of the following must be provided:&#xA;- url (url data type): URL to retrieve HealthInterventions definition from input/ or external source&#xA;- canonical (canonical data type): Canonical URI pointing to the HealthInterventions definition&#xA;- instance: Inline HealthInterventions instance data"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/DAK.Persona.System.HMIS"/>
+      </reference>
+      <name value="Health Management Information System (HMIS)"/>
+      <description value="A digital system used to collect, process, report, and use aggregate health data&#xA;for programme planning, monitoring, and evaluation at district and national levels.&#xA;&#xA;The HMIS supports DHIs including:&#xA;- Routine health indicator data collection and management (2.2.4)&#xA;- Non-routine data collection and management (4.1.1)&#xA;- Data storage and aggregation (4.1.2)&#xA;- Data synthesis and visualisations (4.1.3)&#xA;- Data exchange across systems (4.4)&#xA;&#xA;**Services and Application Type**: D6 — Health Management Information Systems (HMIS)&#xA;&#xA;**Functional areas**: Data collection, reporting dashboards, target monitoring,&#xA;programme performance tracking, data quality management."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CDSCv1"/>
+      </reference>
+      <name value="Health System Challenges"/>
+      <description value="Value set for Health System Challenges (Classification of Digital Health System Categories v1, 2018). Includes all 25 system category codes (A–Y)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/DAK.Persona.HealthSystemManager"/>
+      </reference>
+      <name value="Health System Manager"/>
+      <description value="A professional involved in the administration and oversight of health systems.&#xA;&#xA;Health system managers use DHIs to:&#xA;- Manage health workforce information, performance, and certification (3.1)&#xA;- Oversee supply chain, inventory, cold chain, and procurement (3.2)&#xA;- Receive notifications of public health events (3.3)&#xA;- Register and certify vital events — births and deaths (3.4)&#xA;- Administer health coverage schemes, billing, payroll, and budgets (3.5)&#xA;- Monitor and track health equipment and assets (3.6)&#xA;- Manage health facility information and conduct assessments (3.7)&#xA;- Manage person-centred health certificate information (3.8)&#xA;&#xA;**ISCO-08**: 1342 (Health services managers), 2446 (Social work professionals&#xA;n.e.c.), 3354 (Government social benefits officials), 4311 (Accounting and&#xA;bookkeeping clerks).&#xA;&#xA;**Examples**: District health officer, programme manager, supply chain officer,&#xA;HMIS coordinator, hospital administrator, vital registration officer,&#xA;health insurance administrator."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/DAK.Persona.HealthcareProvider"/>
+      </reference>
+      <name value="Healthcare Provider"/>
+      <description value="A member of the health workforce who delivers health interventions. This group&#xA;has also been described as 'health workers' or 'healthcare workers'.&#xA;&#xA;Healthcare providers use DHIs to:&#xA;- Identify and register persons for health services (2.1)&#xA;- Manage person-centred health records (2.2)&#xA;- Receive clinical decision support prompts and checklists (2.3)&#xA;- Conduct telemedicine consultations and remote monitoring (2.4)&#xA;- Communicate with supervisors, peers, and receive AI-assisted content (2.5)&#xA;- Coordinate referrals and emergency transport (2.6)&#xA;- Schedule and plan their clinical activities (2.7)&#xA;- Access training content and assessments (2.8)&#xA;- Manage prescriptions and medication adherence (2.9)&#xA;- Order and receive laboratory and diagnostic results (2.10)&#xA;- Verify health coverage and receive payments from individuals (2.11)&#xA;&#xA;**ISCO-08**: 2211 (Generalist medical practitioners), 2212 (Specialist medical&#xA;practitioners), 2221 (Nursing professionals), 2222 (Midwifery professionals),&#xA;3211 (Medical imaging and therapeutic equipment technicians), 3212 (Medical&#xA;and pathology laboratory technicians), 3213 (Pharmaceutical technicians and&#xA;assistants), 3221 (Nursing associate professionals), 3222 (Midwifery associate&#xA;professionals), 3255 (Community health workers).&#xA;&#xA;**Examples**: Physician, nurse, midwife, clinical officer, pharmacist,&#xA;laboratory technician, dentist, allied health professional."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/CDHIv1Hierarchy"/>
+      </reference>
+      <name value="Hierarchy of the Classification of Digital Health Interventions v1"/>
+      <description value="Mapping to represent hierarchy within the Classification of Digital Health Interventions v1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/CDHIv2Hierarchy"/>
+      </reference>
+      <name value="Hierarchy of the Classification of Digital Health Interventions v2"/>
+      <description value="Mapping to represent hierarchy within the Classification of Digital Interventions, Services and Applications in Health (CDISAH) v2."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ISCO08"/>
+      </reference>
+      <name value="International Standard Classification of Occupations 2008"/>
+      <description value="ISCO-08 codes from the International Labour Organization official classification"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ISCO08ValueSet"/>
+      </reference>
+      <name value="ISCO-08 Value Set"/>
+      <description value="Extensible value set of ISCO-08 codes for persona classification"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/DAK.Persona.System.LIS"/>
+      </reference>
+      <name value="Laboratory Information System (LIS)"/>
+      <description value="A digital system that manages the complete lifecycle of laboratory test orders,&#xA;specimen tracking, result production, and result reporting to healthcare providers&#xA;and persons.&#xA;&#xA;The LIS supports DHIs including:&#xA;- Transmit and track diagnostic orders (2.10.2)&#xA;- Capture diagnostic results from digital devices (2.10.3)&#xA;- Transmit person's diagnostic result to healthcare provider (2.10.1)&#xA;- Transmit diagnostics result or availability of result to person(s) (1.1.4)&#xA;- Track biological specimens (2.10.4)&#xA;&#xA;**Services and Application Type**: A6 — Laboratory information systems&#xA;&#xA;**Functional areas**: Lab requests/test ordering, sample tracking, sample&#xA;processing, results reporting."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/LinkIdExt"/>
+      </reference>
+      <name value="LinkIdExt"/>
+      <description value="Smart Guidelines link identifier extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/DAK.Persona.System.LMIS"/>
+      </reference>
+      <name value="Logistics Management Information System (LMIS)"/>
+      <description value="A digital system that manages the health supply chain from quantification&#xA;and forecasting through distribution, inventory management, and consumption tracking.&#xA;&#xA;The LMIS supports DHIs including:&#xA;- Manage inventory and distribution of health commodities (3.2.1)&#xA;- Notify stock levels of health commodities (3.2.2)&#xA;- Monitor cold-chain sensitive commodities (3.2.3)&#xA;- Register licensed drugs and health commodities (3.2.4)&#xA;- Manage procurement of commodities (3.2.5)&#xA;&#xA;**Services and Application Type**: B6 — Logistics management information systems (LMIS)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/CDHIv1toCDHIv2"/>
+      </reference>
+      <name value="Mapping from CDHI v1 to CDISAH v2"/>
+      <description value="Mapping from the Classification of Digital Health Interventions v1 (CDHI v1, 2018)&#xA;to the Classification of Digital Interventions, Services and Applications in Health v2&#xA;(CDISAH v2, 2023).&#xA;&#xA;Key structural changes reflected in this map:&#xA;- User group labels updated throughout (e.g. 'Clients' → 'Persons',&#xA;  'Health workers' → 'Healthcare providers', 'Health system managers' →&#xA;  'Health management and support personnel').&#xA;- Civil Registration and Vital Statistics (CRVS) consolidated: six v1 codes&#xA;  (3.4.1–3.4.6) merged into two v2 codes (3.4.1, 3.4.2).&#xA;- Health financing section restructured: v1 3.5.1 (insurance membership) and&#xA;  3.5.2 (billing) updated; v1 3.5.3–3.5.6 shifted by one (now 3.5.4–3.5.6 + new 3.5.3).&#xA;- Data services (group 4) substantially revised: 4.1.1 changed scope,&#xA;  4.3 expanded from 4 to 5 codes, 4.4 split from 1 to 3 codes, 4.5 is entirely new.&#xA;- New v2 categories with no v1 equivalent are listed as 'unmatched' targets."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/CDSCv1toCDSCv2"/>
+      </reference>
+      <name value="Mapping from CDSC v1 to Services and Application Types v2"/>
+      <description value="Mapping from the Classification of Digital Health System Categories v1 (CDSCv1, 2018)&#xA;to the Classification of Digital Health Services and Application Types v2 (CDSCv2, 2023).&#xA;&#xA;The v1 used 25 single-letter codes (A–Y). The v2 completely restructured this into&#xA;5 representations within the digital health enterprise architecture, each with&#xA;alphanumeric codes (A1–A9, B1–B8, C1–C11, D1–D8, E1–E2).&#xA;&#xA;Several new v2 categories have no v1 equivalent:&#xA;A3 (Decision support), A4 (Diagnostics), B1 (Blood bank), B3 (Health program monitoring),&#xA;B7 (Patient administration), C4 (Facility registries), C5 (Health worker registry),&#xA;C7 (Immunisation information), C8 (Master patient index), C9 (Product catalogues),&#xA;C10 (Public Key directories), D1 (Analytics), D3 (Data warehouses)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Markdown"/>
+      </reference>
+      <name value="Markdown"/>
+      <description value="Markdown extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/NonFunctionalRequirement"/>
+      </reference>
+      <name value="Non-Functional Requirement (DAK)"/>
+      <description value="Logical Model for representing non-functional requirement from a DAK"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/DAK.Persona.Person"/>
+      </reference>
+      <name value="Person (Health Service User)"/>
+      <description value="A member of the public who is a potential or current user of health services,&#xA;including health prevention and wellness activities. Other terms used for this&#xA;group include 'patient', 'client', 'individual', and 'health service user'.&#xA;Caregivers of individuals receiving health services are also included.&#xA;&#xA;Persons interact with DHIs to:&#xA;- Receive targeted (1.1) and untargeted (1.2) health communications&#xA;- Communicate with other persons as peers (1.3)&#xA;- Track their own health data and records (1.4)&#xA;- Report health events and system feedback (1.5)&#xA;- Access health information on demand including via chatbot/AI (1.6)&#xA;- Manage their financial transactions related to health services (1.7)&#xA;- Manage their consent for health data access and sharing (1.8)&#xA;&#xA;**ISCO-08**: Not applicable (non-occupational role).&#xA;&#xA;**Examples**: Patient, pregnant woman, caregiver, child, community member,&#xA;health scheme beneficiary, person living with a chronic condition."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Persona"/>
+      </reference>
+      <name value="Persona (DAK)"/>
+      <description value="Logical Model for representing Personas from a DAK"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ProgramIndicator"/>
+      </reference>
+      <name value="Program Indicator (DAK)"/>
+      <description value="Logical Model for representing Program Indicators from a DAK. Core set of indicators that need to be aggregated for decision-making, performance metrics and subnational and national reporting."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ProgramIndicatorSource"/>
+      </reference>
+      <name value="Program Indicator Source"/>
+      <description value="Source reference for Program Indicator - exactly one of the following must be provided:&#xA;- url (url data type): URL to retrieve ProgramIndicator definition from input/ or external source&#xA;- canonical (canonical data type): Canonical URI pointing to the ProgramIndicator definition&#xA;- instance: Inline ProgramIndicator instance data"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/SGAuthoring.Persona.ProgrammeManager"/>
+      </reference>
+      <name value="Programme Manager"/>
+      <description value="A programme manager responsible for the overall coordination and management&#xA;of the Digital Adaptation Kit (DAK) development process. Programme managers&#xA;lead scoping, resource allocation, timeline planning, and stakeholder engagement.&#xA;&#xA;The DAK development team should be small (&lt;10 people) and nimble. The Programme&#xA;Manager ensures the team is empowered to self-organize and manage DAK-related&#xA;work including collaboration with stakeholders, content development, validation,&#xA;and publication.&#xA;&#xA;Key activities:&#xA;- Define DAK scope and purpose&#xA;- Form and coordinate the DAK development team&#xA;- Establish development process and governance&#xA;- Define RASCI matrix for roles and responsibilities&#xA;- Plan sprint iterations and maintain the DAK backlog&#xA;- Coordinate SME consultations (workshops, country visits)&#xA;- Draft project roadmap with milestone dates&#xA;- Assess and secure resources and budget&#xA;&#xA;**Source**: IG Starter Kit, L2 DAK Authoring, Section 1 &quot;Plan&quot;"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/DAK.Persona.System.SurveillanceSystem"/>
+      </reference>
+      <name value="Public Health and Disease Surveillance System"/>
+      <description value="A digital system for detecting, monitoring, investigating, and responding to&#xA;disease outbreaks and public health threats.&#xA;&#xA;The surveillance system supports DHIs including:&#xA;- Notification of public health events from point of diagnosis (3.3.1)&#xA;- Transmit health event alerts to specific population group(s) (1.1.1)&#xA;- Map location of health event (4.3.2)&#xA;- Data synthesis and visualizations for outbreak response (4.1.3)&#xA;- Automated analysis of data to generate predictions (4.1.4)&#xA;&#xA;**Services and Application Type**: E2 — Public health and disease surveillance systems"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/SGAuthoring.Persona.PublicationManager"/>
+      </reference>
+      <name value="Publication Manager"/>
+      <description value="A specialist responsible for managing the FHIR Implementation Guide&#xA;configuration, build process, versioning, and release publication workflow.&#xA;Publication Managers ensure IGs are correctly configured, built, and&#xA;published to smart.who.int following the established publication process.&#xA;&#xA;Key activities:&#xA;- Set up IG repositories from smart-ig-empty template&#xA;- Configure sushi-config.yaml (canonical URL, package ID, dependencies)&#xA;- Enable GitHub Pages and CI build workflows&#xA;- Run FHIR IG Publisher builds and verify output&#xA;- Manage semantic versioning (major.minor.patch)&#xA;- Create publication-request.json for releases&#xA;- Create release branches, tags, and GitHub releases&#xA;- Monitor automated publication workflows&#xA;- Coordinate with WHO SMART Guidelines team for smart.who.int updates&#xA;- Manage cross-IG governance for shared artifacts&#xA;- Reset main branch to draft status after publication&#xA;&#xA;**Source**: IG Starter Kit, IG Setup, IG Publication, and IG Configuration pages"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/SGAuthoring.Persona.QCReviewer"/>
+      </reference>
+      <name value="Quality Control Reviewer"/>
+      <description value="A quality assurance specialist responsible for reviewing SMART Guidelines&#xA;Implementation Guides for publication readiness. QC Reviewers use the&#xA;publication checklist across L1-L4 layers, interpret QA validation reports,&#xA;and verify artifact conformance and cross-component consistency.&#xA;&#xA;Key activities:&#xA;- Run and interpret IG Publisher QA reports (qa.html)&#xA;- Review publication checklist across L1, L2, L3, L4, and Global sections&#xA;- Verify conformance to Shareable, Publishable, Computable, Executable profiles&#xA;- Validate StructureMap extraction produces expected output&#xA;- Verify CQL execution and measure calculations&#xA;- Check cross-component consistency (personas, data elements, processes)&#xA;- Validate all artifacts have required title, description, and mappings&#xA;- Confirm naming conventions and reference resolution&#xA;- Review change log completeness and versioning compliance&#xA;&#xA;**Source**: IG Starter Kit, QA Check page, Checklist page, Validating IG page"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/DAK.DT.IMMZ.D2.DT.BCGQuestionnaire"/>
+      </reference>
+      <name value="Questionnaire for IMMZ.D2 Determine required vaccination(s) if any"/>
+      <description value="Auto-generated questionnaire for decision table DAK.DT.IMMZ.D2.DT.BCG"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RequirementsSource"/>
+      </reference>
+      <name value="Requirements Source"/>
+      <description value="Source reference for Requirements - exactly one of the following must be provided:&#xA;- url (url data type): URL to retrieve Requirements definition from input/ or external source&#xA;- canonical (canonical data type): Canonical URI pointing to the Requirements definition&#xA;- instance: Inline Requirements instance data"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Satisfies"/>
+      </reference>
+      <name value="Satisfies"/>
+      <description value="Indicates that if the conditions for this requirement are satisified, then that it should be viewed as satisifying  the referenced requirement."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CDSCv2"/>
+      </reference>
+      <name value="Services and Application Types"/>
+      <description value="Value set for Services and Application Types (Classification of Digital Health Services and Application Types v2, CDISAH 2023). Includes all codes across the five architecture groups (A–E)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CDSCv2.D"/>
+      </reference>
+      <name value="Services and Application Types: Data Management Services"/>
+      <description value="Services and systems that support the collection, aggregation, storage, analysis, and exchange of health data. Group D of the Classification of Digital Health Services and Application Types v2 (CDISAH, 2023)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CDSCv2.B"/>
+      </reference>
+      <name value="Services and Application Types: Health System/Provider Administration"/>
+      <description value="Systems that support the administrative and managerial functions of health systems and healthcare organisations. Group B of the Classification of Digital Health Services and Application Types v2 (CDISAH, 2023)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CDSCv2.A"/>
+      </reference>
+      <name value="Services and Application Types: Point of Service"/>
+      <description value="Systems that facilitate the provision and delivery of healthcare services to persons at the point of care. Group A of the Classification of Digital Health Services and Application Types v2 (CDISAH, 2023)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CDSCv2.C"/>
+      </reference>
+      <name value="Services and Application Types: Registries and Directories"/>
+      <description value="Systems that create, maintain, and provide authoritative master records for persons, providers, facilities, products and health events. Group C of the Classification of Digital Health Services and Application Types v2 (CDISAH, 2023)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CDSCv2.E"/>
+      </reference>
+      <name value="Services and Application Types: Surveillance and Response"/>
+      <description value="Systems that support the detection, monitoring, and response to disease outbreaks and public health threats. Group E of the Classification of Digital Health Services and Application Types v2 (CDISAH, 2023)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGActorExt"/>
+      </reference>
+      <name value="SGActorExt"/>
+      <description value="Smart Guidelines Actor Reference extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGcode"/>
+      </reference>
+      <name value="SGcode"/>
+      <description value="Smart Guidelines code extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/SGDecisionTableGuidance"/>
+      </reference>
+      <name value="SGDecisionTableGuidance"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGDocumentation"/>
+      </reference>
+      <name value="SGDocumentation"/>
+      <description value="Smart Guidelines Documentation extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGMarkdown"/>
+      </reference>
+      <name value="SGMarkdown"/>
+      <description value="Smart Guidelines markdown extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGRequirementExt"/>
+      </reference>
+      <name value="SGRequirementExt"/>
+      <description value="Smart Guidelines Requirements extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGString"/>
+      </reference>
+      <name value="SGString"/>
+      <description value="Smart Guidelines (required) string extension for use in a complex extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGTask"/>
+      </reference>
+      <name value="SGTask"/>
+      <description value="Extension to reference SMART Guidelines task type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGUserStory"/>
+      </reference>
+      <name value="SGUserStory"/>
+      <description value="Smart Guidelines extension to support structured User Stories (As a `Actor` I want to `capability` so that `benefit`) extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/DecisionTableActions"/>
+      </reference>
+      <name value="Smart Guidelines Actions (columns) for Decision Tables"/>
+      <description value="CodeSystem for Smart Guidelines Documentation Actions for Decision Tables&quot;"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGActivityDefinition"/>
+      </reference>
+      <name value="SMART Guidelines ActivityDefinition"/>
+      <description value="The minimum expectations for ActivityDefinition resources used in SMART Guidelines"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Conformance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGActor"/>
+      </reference>
+      <name value="SMART Guidelines Actor"/>
+      <description value="Structure and constraints for ActorDefinition resources used in SMART Guidelines"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Conformance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/SGAuthoringPersonaTypes"/>
+      </reference>
+      <name value="SMART Guidelines Authoring Persona Types"/>
+      <description value="CodeSystem for SMART Guidelines authoring persona types.&#xA;These represent roles involved in the authoring, review, and publication&#xA;of SMART Guidelines and Digital Adaptation Kits, as distinct from&#xA;the clinical/health personas defined within a DAK."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SGAuthoringPersonaTypesVS"/>
+      </reference>
+      <name value="SMART Guidelines Authoring Persona Types ValueSet"/>
+      <description value="ValueSet for SMART Guidelines authoring persona types"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/SGAuthoringSkills"/>
+      </reference>
+      <name value="SMART Guidelines Authoring Skills"/>
+      <description value="CodeSystem for SMART Guidelines authoring skill capabilities.&#xA;Each code represents a discrete skill that an authoring persona may possess.&#xA;Skills are used to define Requirements resources as capability statements."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SGAuthoringSkillsVS"/>
+      </reference>
+      <name value="SMART Guidelines Authoring Skills ValueSet"/>
+      <description value="ValueSet for all SMART Guidelines authoring skill capabilities"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGBusinessProcess"/>
+      </reference>
+      <name value="SMART Guidelines Business Process"/>
+      <description value="Structure and constraints for Business Processes represented in SMART Guidelines"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Conformance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGCodeSystem"/>
+      </reference>
+      <name value="SMART Guidelines CodeSystem"/>
+      <description value="Defines the minimum expectations for CodeSystem resources used in SMART Guidelines"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Conformance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGCommunicationRequest"/>
+      </reference>
+      <name value="SMART Guidelines Communication Request"/>
+      <description value="Provide communication"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGConceptMap"/>
+      </reference>
+      <name value="SMART Guidelines ConceptMap"/>
+      <description value="Defines the minimum expectations for ConceptMap resources used in SMART Guidelines"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Conformance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGDecisionTable"/>
+      </reference>
+      <name value="SMART Guidelines Decision Table"/>
+      <description value="Defines the minimum expectations for PlanDefinition resources used in SMART Guidelines which are derived from DAK Decision Tables"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/DecisionTableActions"/>
+      </reference>
+      <name value="Smart Guidelines Decision Table Actions"/>
+      <description value="Value Set for Smart Guidelines Documentation Decision Table Actions"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/DocumentationSection"/>
+      </reference>
+      <name value="Smart Guidelines Documentation Section"/>
+      <description value="Value Set for Smart Guidelines Documentation Section to autogenerate documentation from artifacts"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/DocumentationSections"/>
+      </reference>
+      <name value="Smart Guidelines Documentation Section"/>
+      <description value="CodeSystem for Smart Guidelines Documentation Section to autogenerate documentation from artifacts"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGGraphDefinition"/>
+      </reference>
+      <name value="SMART Guidelines GraphDefinition"/>
+      <description value="The minimum expectations for GraphDefinition resources used in SMART Guidelines"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Conformance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGGroupDefinition"/>
+      </reference>
+      <name value="SMART Guidelines Group Definition"/>
+      <description value="Structure and constraints for Group Definitions represented in SMART Guidelines"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Conformance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGImplementationGuide"/>
+      </reference>
+      <name value="SMART Guidelines ImplementationGuide"/>
+      <description value="Defines the minimum expectations for ImplementationGuide resources used in SMART Guidelines"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Conformance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGLibrary"/>
+      </reference>
+      <name value="SMART Guidelines Library"/>
+      <description value="Defines the minimum expectations for Library resources used in SMART Guidelines"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Conformance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGLogicalModel"/>
+      </reference>
+      <name value="SMART Guidelines Logical Model"/>
+      <description value="Defines the minimum expectations for Logical Models used in SMART Guidelines"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Conformance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGMeasure"/>
+      </reference>
+      <name value="SMART Guidelines Measure"/>
+      <description value="Defines the minimum expectations for Measure resources used in SMART Guidelines"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Conformance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/SGPersonaTypes"/>
+      </reference>
+      <name value="SMART Guidelines Persona Types"/>
+      <description value="CodeSystem for SMART Guidelines Persona Types"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SGPersonaTypesVS"/>
+      </reference>
+      <name value="Smart Guidelines Persona Types Value Set"/>
+      <description value="Value Set for Smart Guidelines Persona Section to autogenerate documentation from artifacts"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGPlanDefinition"/>
+      </reference>
+      <name value="SMART Guidelines PlanDefinition"/>
+      <description value="Defines the minimum expectations for PlanDefinition resources used in SMART Guidelines"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Conformance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGQuestionnaire"/>
+      </reference>
+      <name value="SMART Guidelines Questionnaire"/>
+      <description value="Defines the minimum expectations for Questionnaire resources used in SMART Guidelines"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Conformance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGRequirements"/>
+      </reference>
+      <name value="SMART Guidelines Requirements"/>
+      <description value="Smart Guidelines Requirements"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGStructureDefinition"/>
+      </reference>
+      <name value="SMART Guidelines StructureDefinition"/>
+      <description value="Defines the minimum expectations for StructureDefinition resources used in SMART Guidelines"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Conformance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGStructureMap"/>
+      </reference>
+      <name value="SMART Guidelines StructureMap"/>
+      <description value="Defines the minimum expectations for StructureMap resources used in SMART Guidelines"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Conformance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/SGTasks"/>
+      </reference>
+      <name value="SMART Guidelines Tasks"/>
+      <description value="CodeSystem for SMART Guidelines tasks which are specializations of the Business Process Modeling Notatiton (BPMN) tasks, which are included in this codesystem&#xA;&#xA;See [BPMN Spectification](https://www.omg.org/spec/BPMN) for more info.  The descriptions were adapted from the [normative human readable documentation](https://www.omg.org/spec/BPMN/2.0.2/PDF)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGTransaction"/>
+      </reference>
+      <name value="SMART Guidelines Transaction"/>
+      <description value="Structure and constraints for TransactionDefinition resources used in SMART Guidelines"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Conformance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SGValueSet"/>
+      </reference>
+      <name value="SMART Guidelines ValueSet"/>
+      <description value="Defines the minimum expectations for ValueSet resources used in SMART Guidelines"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Conformance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SushiConfigLogicalModel"/>
+      </reference>
+      <name value="SUSHI Configuration Logical Model"/>
+      <description value="Logical model defining the structure of sushi-config.yaml files used for FHIR Implementation Guide configuration. This model captures the essential metadata and configuration parameters needed for IG publishing."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/SGAuthoring.Persona.TechnicalOfficer"/>
+      </reference>
+      <name value="Technical Officer"/>
+      <description value="A health area technical officer who coordinates the work on the DAK and&#xA;performs first-pass review and validation of DAK content. Technical officers&#xA;are part of the DAK development team and serve as the primary bridge between&#xA;the development team and the broader group of Subject Matter Experts.&#xA;&#xA;Key activities:&#xA;- Coordinate DAK development work within the health programme area&#xA;- Perform first-pass review of drafted DAK components&#xA;- Validate that components accurately reflect L1 recommendations&#xA;- Identify gaps, ambiguities, and alternatives in DAK content&#xA;- Prepare agendas and questions for SME consultation meetings&#xA;- Ensure content is software-neutral and context-appropriate&#xA;- Spread awareness of SMART Guidelines within the department&#xA;&#xA;**Source**: IG Starter Kit, L2 DAK Authoring, Section 2.2 &quot;Validate DAK content with SMEs&quot;"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/SGAuthoring.Persona.Terminologist"/>
+      </reference>
+      <name value="Terminologist"/>
+      <description value="A specialist responsible for ensuring semantic interoperability of SMART&#xA;Guidelines through proper terminology management. Terminologists manage&#xA;the WHO Commons dictionary, concept mappings, and ensure every data element&#xA;is mapped to approved standard terminologies.&#xA;&#xA;Key activities:&#xA;- Map data elements to WHO Commons dictionary concepts&#xA;- Create and maintain CodeSystem resources&#xA;- Create and maintain ValueSet resources&#xA;- Create ConceptMap resources for cross-terminology mappings&#xA;- Map to ICD-11, SNOMED CT, LOINC, IPS, and WHO FIC&#xA;- Onboard new concepts into the Commons dictionary&#xA;- Verify no duplicate or overlapping concept definitions&#xA;- Review terminology bindings in logical models and profiles&#xA;- Flag unapproved concepts as QA issues before publication&#xA;&#xA;**Source**: IG Starter Kit, Governance Concepts page;&#xA;L3 authoring pages for CodeSystems, ValueSets, ConceptMaps"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/TestScenario"/>
+      </reference>
+      <name value="Test Scenario (DAK)"/>
+      <description value="Logical Model for representing Test Scenarios from a DAK. A set of test scenarios to validate an implementation of the DAK."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/TestScenarioSource"/>
+      </reference>
+      <name value="Test Scenario Source"/>
+      <description value="Source reference for Test Scenario - exactly one of the following must be provided:&#xA;- url (url data type): URL to retrieve TestScenario definition from input/ or external source&#xA;- canonical (canonical data type): Canonical URI pointing to the TestScenario definition&#xA;- instance: Inline TestScenario instance data"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/SGAuthoring.Persona.Translator"/>
+      </reference>
+      <name value="Translator"/>
+      <description value="A language specialist responsible for translating SMART Guidelines&#xA;Implementation Guide content across UN languages to support global&#xA;adoption and adaptation.&#xA;&#xA;Key activities:&#xA;- Translate IG narrative content across UN languages&#xA;- Translate FHIR resource display names and descriptions&#xA;- Review translated content for accuracy and clinical correctness&#xA;- Manage .pot/.po translation template files&#xA;- Coordinate with clinical SMEs for domain-specific terminology&#xA;- Ensure translated examples are available for each non-abstract profile&#xA;&#xA;**Source**: IG Starter Kit, Checklist L4 (example resources per UN language);&#xA;PR 288 translation skill infrastructure"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/UserScenario"/>
+      </reference>
+      <name value="User Scenario (DAK)"/>
+      <description value="Logical Model for representing User Scenarios from a DAK. Narratives that describe how the different personas may interact with each other."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/UserScenarioSource"/>
+      </reference>
+      <name value="User Scenario Source"/>
+      <description value="Source reference for User Scenario - exactly one of the following must be provided:&#xA;- url (url data type): URL to retrieve UserScenario definition from input/ or external source&#xA;- canonical (canonical data type): Canonical URI pointing to the UserScenario definition&#xA;- instance: Inline UserScenario instance data"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <page>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+        <valueUrl value="toc.html"/>
+      </extension>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index.html"/>
+        </extension>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="authoring-process.html"/>
+        </extension>
+        <nameUrl value="authoring-process.html"/>
+        <title value="Authoring Process"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="authoring-personas.html"/>
+        </extension>
+        <nameUrl value="authoring-personas.html"/>
+        <title value="Authoring Personas"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="authoring-skills.html"/>
+        </extension>
+        <nameUrl value="authoring-skills.html"/>
+        <title value="Authoring Skills"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="changes.html"/>
+        </extension>
+        <nameUrl value="changes.html"/>
+        <title value="Changes"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="downloads.html"/>
+        </extension>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="license.html"/>
+        </extension>
+        <nameUrl value="license.html"/>
+        <title value="License"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="dak-api.html"/>
+        </extension>
+        <nameUrl value="dak-api.html"/>
+        <title value="DAK API Documentation Hub"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

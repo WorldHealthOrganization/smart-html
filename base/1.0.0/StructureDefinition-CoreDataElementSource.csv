@@ -1,0 +1,12 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"CoreDataElementSource","CoreDataElementSource","","","",0,*,"","","","null {[]} {[]}
+","Core Data Element Source","Source reference for Core Data Element - exactly one of the following must be provided:
+- url (url data type): URL to retrieve CoreDataElement definition from input/ or external source
+- canonical (canonical data type): Canonical URI pointing to the CoreDataElement definition
+- instance: Inline CoreDataElement instance data","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"CoreDataElementSource.url","CoreDataElementSource.url","","","",0,1,"","","","url {[]} {[]}
+","URL","URL to retrieve CoreDataElement definition from input/ or external source","","","","","","","","","",,,,,"",,,,"CoreDataElementSource.url",0,1,"",""
+"CoreDataElementSource.canonical","CoreDataElementSource.canonical","","","",0,1,"","","","canonical {[]} {[CanonicalType[http://smart.who.int/base/StructureDefinition/CoreDataElement]]}
+","Canonical","Canonical URI pointing to the CoreDataElement definition","","","","","","","","","",,,,,"",,,,"CoreDataElementSource.canonical",0,1,"",""
+"CoreDataElementSource.instance","CoreDataElementSource.instance","","","",0,1,"","","","http://smart.who.int/base/StructureDefinition/CoreDataElement {[]} {[]}
+","Instance","Inline CoreDataElement instance data","","","","","","","","","",,,,,"",,,,"CoreDataElementSource.instance",0,1,"",""

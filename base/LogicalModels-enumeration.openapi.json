@@ -1,0 +1,499 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "LogicalModels Enumeration API",
+    "description": "API endpoint providing an enumeration of all available Logical Model schemas",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/LogicalModels.schema.json": {
+      "get": {
+        "summary": "Get enumeration of all logical_model schemas",
+        "description": "Returns a list of all available logical_model schemas with metadata",
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved logical_model enumeration",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EnumerationResponse"
+                },
+                "example": {
+                  "type": "logical_model",
+                  "count": 25,
+                  "schemas": [
+                    {
+                      "filename": "StructureDefinition-DecisionSupportLogic.schema.json",
+                      "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-DecisionSupportLogic.schema.json",
+                      "title": "Decision-Support Logic (DAK)",
+                      "description": "Logical Model for representing Decision-Support Logic from a DAK. Decision-support logic and algorithms to support appropriate service delivery in accordance with WHO clinical, public health and data use guidelines.",
+                      "url": "./StructureDefinition-DecisionSupportLogic.schema.json",
+                      "propertyCount": 4
+                    },
+                    {
+                      "filename": "StructureDefinition-HealthInterventions.schema.json",
+                      "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-HealthInterventions.schema.json",
+                      "title": "Health Interventions and Recommendations (DAK)",
+                      "description": "Logical Model for representing Health Interventions and Recommendations from a DAK. Overview of the health interventions and WHO, regional or national recommendations included within the DAK.",
+                      "url": "./StructureDefinition-HealthInterventions.schema.json",
+                      "propertyCount": 4
+                    },
+                    {
+                      "filename": "StructureDefinition-HealthInterventionsSource.schema.json",
+                      "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-HealthInterventionsSource.schema.json",
+                      "title": "Health Interventions Source",
+                      "description": "Source reference for Health Interventions - exactly one of the following must be provided:\n- url (url data type): URL to retrieve HealthInterventions definition from input/ or external source\n- canonical (canonical data type): Canonical URI pointing to the HealthInterventions definition\n- instance: Inline HealthInterventions instance data",
+                      "url": "./StructureDefinition-HealthInterventionsSource.schema.json",
+                      "propertyCount": 4
+                    },
+                    {
+                      "filename": "StructureDefinition-Requirements.schema.json",
+                      "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-Requirements.schema.json",
+                      "title": "Functional and Non-Functional Requirements (DAK)",
+                      "description": "Logical Model for representing Functional and Non-Functional Requirements from a DAK. A high-level list of core functions and capabilities that the system must have to meet the end users' needs.",
+                      "url": "./StructureDefinition-Requirements.schema.json",
+                      "propertyCount": 8
+                    },
+                    {
+                      "filename": "StructureDefinition-ProgramIndicator.schema.json",
+                      "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-ProgramIndicator.schema.json",
+                      "title": "Program Indicator (DAK)",
+                      "description": "Logical Model for representing Program Indicators from a DAK. Core set of indicators that need to be aggregated for decision-making, performance metrics and subnational and national reporting.",
+                      "url": "./StructureDefinition-ProgramIndicator.schema.json",
+                      "propertyCount": 9
+                    },
+                    {
+                      "filename": "StructureDefinition-CoreDataElement.schema.json",
+                      "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-CoreDataElement.schema.json",
+                      "title": "Core Data Element (DAK)",
+                      "description": "Logical Model for representing Core Data Elements from a DAK. A core data element can be one of: a ValueSet, a CodeSystem, a ConceptMap, or a Logical Model adherent to SGLogicalModel. This is the ONE EXCEPTION to allowing FHIR R4 models into the DAK LMs.",
+                      "url": "./StructureDefinition-CoreDataElement.schema.json",
+                      "propertyCount": 7
+                    },
+                    {
+                      "filename": "StructureDefinition-DublinCore.schema.json",
+                      "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-DublinCore.schema.json",
+                      "title": "Dublin Core Metadata Element Set",
+                      "description": "Logical Model representing Dublin Core metadata elements as defined at https://www.dublincore.org/specifications/dublin-core/dcmi-terms/",
+                      "url": "./StructureDefinition-DublinCore.schema.json",
+                      "propertyCount": 16
+                    },
+                    {
+                      "filename": "StructureDefinition-DecisionSupportLogicSource.schema.json",
+                      "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-DecisionSupportLogicSource.schema.json",
+                      "title": "Decision Support Logic Source",
+                      "description": "Source reference for Decision Support Logic - exactly one of the following must be provided:\n- url (url data type): URL to retrieve DecisionSupportLogic definition from input/ or external source\n- canonical (canonical data type): Canonical URI pointing to the DecisionSupportLogic definition\n- instance: Inline DecisionSupportLogic instance data",
+                      "url": "./StructureDefinition-DecisionSupportLogicSource.schema.json",
+                      "propertyCount": 4
+                    },
+                    {
+                      "filename": "StructureDefinition-SushiConfigLogicalModel.schema.json",
+                      "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-SushiConfigLogicalModel.schema.json",
+                      "title": "SUSHI Configuration Logical Model",
+                      "description": "Logical model defining the structure of sushi-config.yaml files used for FHIR Implementation Guide configuration. This model captures the essential metadata and configuration parameters needed for IG publishing.",
+                      "url": "./StructureDefinition-SushiConfigLogicalModel.schema.json",
+                      "propertyCount": 43
+                    },
+                    {
+                      "filename": "StructureDefinition-UserScenarioSource.schema.json",
+                      "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-UserScenarioSource.schema.json",
+                      "title": "User Scenario Source",
+                      "description": "Source reference for User Scenario - exactly one of the following must be provided:\n- url (url data type): URL to retrieve UserScenario definition from input/ or external source\n- canonical (canonical data type): Canonical URI pointing to the UserScenario definition\n- instance: Inline UserScenario instance data",
+                      "url": "./StructureDefinition-UserScenarioSource.schema.json",
+                      "propertyCount": 4
+                    },
+                    {
+                      "filename": "StructureDefinition-TestScenarioSource.schema.json",
+                      "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-TestScenarioSource.schema.json",
+                      "title": "Test Scenario Source",
+                      "description": "Source reference for Test Scenario - exactly one of the following must be provided:\n- url (url data type): URL to retrieve TestScenario definition from input/ or external source\n- canonical (canonical data type): Canonical URI pointing to the TestScenario definition\n- instance: Inline TestScenario instance data",
+                      "url": "./StructureDefinition-TestScenarioSource.schema.json",
+                      "propertyCount": 4
+                    },
+                    {
+                      "filename": "StructureDefinition-CoreDataElementSource.schema.json",
+                      "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-CoreDataElementSource.schema.json",
+                      "title": "Core Data Element Source",
+                      "description": "Source reference for Core Data Element - exactly one of the following must be provided:\n- url (url data type): URL to retrieve CoreDataElement definition from input/ or external source\n- canonical (canonical data type): Canonical URI pointing to the CoreDataElement definition\n- instance: Inline CoreDataElement instance data",
+                      "url": "./StructureDefinition-CoreDataElementSource.schema.json",
+                      "propertyCount": 4
+                    },
+                    {
+                      "filename": "StructureDefinition-Persona.schema.json",
+                      "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-Persona.schema.json",
+                      "title": "Persona (DAK)",
+                      "description": "Logical Model for representing Personas from a DAK",
+                      "url": "./StructureDefinition-Persona.schema.json",
+                      "propertyCount": 8
+                    },
+                    {
+                      "filename": "StructureDefinition-BusinessProcessWorkflow.schema.json",
+                      "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-BusinessProcessWorkflow.schema.json",
+                      "title": "Business Process Workflow (DAK)",
+                      "description": "Logical Model for representing Generic Business Processes and Workflows from a DAK. A business process is a set of related activities or tasks performed together to achieve the objectives of the health programme area.",
+                      "url": "./StructureDefinition-BusinessProcessWorkflow.schema.json",
+                      "propertyCount": 11
+                    },
+                    {
+                      "filename": "StructureDefinition-NonFunctionalRequirement.schema.json",
+                      "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-NonFunctionalRequirement.schema.json",
+                      "title": "Non-Functional Requirement (DAK)",
+                      "description": "Logical Model for representing non-functional requirement from a DAK",
+                      "url": "./StructureDefinition-NonFunctionalRequirement.schema.json",
+                      "propertyCount": 5
+                    },
+                    {
+                      "filename": "StructureDefinition-GenericPersona.schema.json",
+                      "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-GenericPersona.schema.json",
+                      "title": "Generic Persona (DAK)",
+                      "description": "Logical Model for representing Generic Personas from a DAK. Depiction of the human and system actors. Human actors are end users, supervisors and related stakeholders who would be interacting with the digital system or involved in the clinical care, public health or health system pathway.",
+                      "url": "./StructureDefinition-GenericPersona.schema.json",
+                      "propertyCount": 8
+                    },
+                    {
+                      "filename": "StructureDefinition-FunctionalRequirement.schema.json",
+                      "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-FunctionalRequirement.schema.json",
+                      "title": "Functional Requirement (DAK)",
+                      "description": "Logical Model for representing functional requirement from a DAK",
+                      "url": "./StructureDefinition-FunctionalRequirement.schema.json",
+                      "propertyCount": 7
+                    },
+                    {
+                      "filename": "StructureDefinition-GenericPersonaSource.schema.json",
+                      "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-GenericPersonaSource.schema.json",
+                      "title": "Generic Persona Source",
+                      "description": "Source reference for Generic Persona - exactly one of the following must be provided:\n- url (url data type): URL to retrieve GenericPersona definition from input/ or external source\n- canonical (canonical data type): Canonical URI pointing to the GenericPersona definition\n- instance: Inline GenericPersona instance data",
+                      "url": "./StructureDefinition-GenericPersonaSource.schema.json",
+                      "propertyCount": 4
+                    },
+                    {
+                      "filename": "StructureDefinition-UserScenario.schema.json",
+                      "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-UserScenario.schema.json",
+                      "title": "User Scenario (DAK)",
+                      "description": "Logical Model for representing User Scenarios from a DAK. Narratives that describe how the different personas may interact with each other.",
+                      "url": "./StructureDefinition-UserScenario.schema.json",
+                      "propertyCount": 5
+                    },
+                    {
+                      "filename": "StructureDefinition-RequirementsSource.schema.json",
+                      "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-RequirementsSource.schema.json",
+                      "title": "Requirements Source",
+                      "description": "Source reference for Requirements - exactly one of the following must be provided:\n- url (url data type): URL to retrieve Requirements definition from input/ or external source\n- canonical (canonical data type): Canonical URI pointing to the Requirements definition\n- instance: Inline Requirements instance data",
+                      "url": "./StructureDefinition-RequirementsSource.schema.json",
+                      "propertyCount": 4
+                    },
+                    {
+                      "filename": "StructureDefinition-BusinessProcessWorkflowSource.schema.json",
+                      "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-BusinessProcessWorkflowSource.schema.json",
+                      "title": "Business Process Workflow Source",
+                      "description": "Source reference for Business Process Workflow - exactly one of the following must be provided:\n- url (url data type): URL to retrieve BusinessProcessWorkflow definition from input/ or external source\n- canonical (canonical data type): Canonical URI pointing to the BusinessProcessWorkflow definition\n- instance: Inline BusinessProcessWorkflow instance data",
+                      "url": "./StructureDefinition-BusinessProcessWorkflowSource.schema.json",
+                      "propertyCount": 4
+                    },
+                    {
+                      "filename": "StructureDefinition-DAK.schema.json",
+                      "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-DAK.schema.json",
+                      "title": "Digital Adaptation Kit (DAK)",
+                      "description": "Logical Model for representing a complete Digital Adaptation Kit (DAK) with metadata and all 9 DAK components",
+                      "url": "./StructureDefinition-DAK.schema.json",
+                      "propertyCount": 24
+                    },
+                    {
+                      "filename": "StructureDefinition-TestScenario.schema.json",
+                      "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-TestScenario.schema.json",
+                      "title": "Test Scenario (DAK)",
+                      "description": "Logical Model for representing Test Scenarios from a DAK. A set of test scenarios to validate an implementation of the DAK.",
+                      "url": "./StructureDefinition-TestScenario.schema.json",
+                      "propertyCount": 3
+                    },
+                    {
+                      "filename": "StructureDefinition-ProgramIndicatorSource.schema.json",
+                      "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-ProgramIndicatorSource.schema.json",
+                      "title": "Program Indicator Source",
+                      "description": "Source reference for Program Indicator - exactly one of the following must be provided:\n- url (url data type): URL to retrieve ProgramIndicator definition from input/ or external source\n- canonical (canonical data type): Canonical URI pointing to the ProgramIndicator definition\n- instance: Inline ProgramIndicator instance data",
+                      "url": "./StructureDefinition-ProgramIndicatorSource.schema.json",
+                      "propertyCount": 4
+                    },
+                    {
+                      "filename": "StructureDefinition-FHIRSchemaBase.schema.json",
+                      "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-FHIRSchemaBase.schema.json",
+                      "title": "FHIR Schema Base (SMART Guidelines)",
+                      "description": "Base logical model providing the common schema metadata interface inherited by all SMART Guidelines logical models. Every SMART Guidelines logical model schema derives from this base, which documents the shared FHIR and JSON-LD metadata properties used by the JSON Schema generation pipeline.",
+                      "url": "./StructureDefinition-FHIRSchemaBase.schema.json",
+                      "propertyCount": 5
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "EnumerationResponse": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "#/LogicalModels.schema.json",
+        "title": "Logical Model Enumeration Schema",
+        "description": "JSON Schema defining the structure of the Logical Model enumeration endpoint response",
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "const": "logical_model"
+          },
+          "count": {
+            "type": "integer"
+          },
+          "schemas": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "filename": {
+                  "type": "string"
+                },
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "logicalModelUrl": {
+                  "type": "string"
+                },
+                "propertyCount": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "filename",
+                "title",
+                "url"
+              ]
+            }
+          }
+        },
+        "required": [
+          "type",
+          "count",
+          "schemas"
+        ],
+        "example": {
+          "type": "logical_model",
+          "count": 25,
+          "schemas": [
+            {
+              "filename": "StructureDefinition-DecisionSupportLogic.schema.json",
+              "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-DecisionSupportLogic.schema.json",
+              "title": "Decision-Support Logic (DAK)",
+              "description": "Logical Model for representing Decision-Support Logic from a DAK. Decision-support logic and algorithms to support appropriate service delivery in accordance with WHO clinical, public health and data use guidelines.",
+              "url": "./StructureDefinition-DecisionSupportLogic.schema.json",
+              "propertyCount": 4
+            },
+            {
+              "filename": "StructureDefinition-HealthInterventions.schema.json",
+              "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-HealthInterventions.schema.json",
+              "title": "Health Interventions and Recommendations (DAK)",
+              "description": "Logical Model for representing Health Interventions and Recommendations from a DAK. Overview of the health interventions and WHO, regional or national recommendations included within the DAK.",
+              "url": "./StructureDefinition-HealthInterventions.schema.json",
+              "propertyCount": 4
+            },
+            {
+              "filename": "StructureDefinition-HealthInterventionsSource.schema.json",
+              "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-HealthInterventionsSource.schema.json",
+              "title": "Health Interventions Source",
+              "description": "Source reference for Health Interventions - exactly one of the following must be provided:\n- url (url data type): URL to retrieve HealthInterventions definition from input/ or external source\n- canonical (canonical data type): Canonical URI pointing to the HealthInterventions definition\n- instance: Inline HealthInterventions instance data",
+              "url": "./StructureDefinition-HealthInterventionsSource.schema.json",
+              "propertyCount": 4
+            },
+            {
+              "filename": "StructureDefinition-Requirements.schema.json",
+              "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-Requirements.schema.json",
+              "title": "Functional and Non-Functional Requirements (DAK)",
+              "description": "Logical Model for representing Functional and Non-Functional Requirements from a DAK. A high-level list of core functions and capabilities that the system must have to meet the end users' needs.",
+              "url": "./StructureDefinition-Requirements.schema.json",
+              "propertyCount": 8
+            },
+            {
+              "filename": "StructureDefinition-ProgramIndicator.schema.json",
+              "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-ProgramIndicator.schema.json",
+              "title": "Program Indicator (DAK)",
+              "description": "Logical Model for representing Program Indicators from a DAK. Core set of indicators that need to be aggregated for decision-making, performance metrics and subnational and national reporting.",
+              "url": "./StructureDefinition-ProgramIndicator.schema.json",
+              "propertyCount": 9
+            },
+            {
+              "filename": "StructureDefinition-CoreDataElement.schema.json",
+              "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-CoreDataElement.schema.json",
+              "title": "Core Data Element (DAK)",
+              "description": "Logical Model for representing Core Data Elements from a DAK. A core data element can be one of: a ValueSet, a CodeSystem, a ConceptMap, or a Logical Model adherent to SGLogicalModel. This is the ONE EXCEPTION to allowing FHIR R4 models into the DAK LMs.",
+              "url": "./StructureDefinition-CoreDataElement.schema.json",
+              "propertyCount": 7
+            },
+            {
+              "filename": "StructureDefinition-DublinCore.schema.json",
+              "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-DublinCore.schema.json",
+              "title": "Dublin Core Metadata Element Set",
+              "description": "Logical Model representing Dublin Core metadata elements as defined at https://www.dublincore.org/specifications/dublin-core/dcmi-terms/",
+              "url": "./StructureDefinition-DublinCore.schema.json",
+              "propertyCount": 16
+            },
+            {
+              "filename": "StructureDefinition-DecisionSupportLogicSource.schema.json",
+              "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-DecisionSupportLogicSource.schema.json",
+              "title": "Decision Support Logic Source",
+              "description": "Source reference for Decision Support Logic - exactly one of the following must be provided:\n- url (url data type): URL to retrieve DecisionSupportLogic definition from input/ or external source\n- canonical (canonical data type): Canonical URI pointing to the DecisionSupportLogic definition\n- instance: Inline DecisionSupportLogic instance data",
+              "url": "./StructureDefinition-DecisionSupportLogicSource.schema.json",
+              "propertyCount": 4
+            },
+            {
+              "filename": "StructureDefinition-SushiConfigLogicalModel.schema.json",
+              "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-SushiConfigLogicalModel.schema.json",
+              "title": "SUSHI Configuration Logical Model",
+              "description": "Logical model defining the structure of sushi-config.yaml files used for FHIR Implementation Guide configuration. This model captures the essential metadata and configuration parameters needed for IG publishing.",
+              "url": "./StructureDefinition-SushiConfigLogicalModel.schema.json",
+              "propertyCount": 43
+            },
+            {
+              "filename": "StructureDefinition-UserScenarioSource.schema.json",
+              "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-UserScenarioSource.schema.json",
+              "title": "User Scenario Source",
+              "description": "Source reference for User Scenario - exactly one of the following must be provided:\n- url (url data type): URL to retrieve UserScenario definition from input/ or external source\n- canonical (canonical data type): Canonical URI pointing to the UserScenario definition\n- instance: Inline UserScenario instance data",
+              "url": "./StructureDefinition-UserScenarioSource.schema.json",
+              "propertyCount": 4
+            },
+            {
+              "filename": "StructureDefinition-TestScenarioSource.schema.json",
+              "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-TestScenarioSource.schema.json",
+              "title": "Test Scenario Source",
+              "description": "Source reference for Test Scenario - exactly one of the following must be provided:\n- url (url data type): URL to retrieve TestScenario definition from input/ or external source\n- canonical (canonical data type): Canonical URI pointing to the TestScenario definition\n- instance: Inline TestScenario instance data",
+              "url": "./StructureDefinition-TestScenarioSource.schema.json",
+              "propertyCount": 4
+            },
+            {
+              "filename": "StructureDefinition-CoreDataElementSource.schema.json",
+              "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-CoreDataElementSource.schema.json",
+              "title": "Core Data Element Source",
+              "description": "Source reference for Core Data Element - exactly one of the following must be provided:\n- url (url data type): URL to retrieve CoreDataElement definition from input/ or external source\n- canonical (canonical data type): Canonical URI pointing to the CoreDataElement definition\n- instance: Inline CoreDataElement instance data",
+              "url": "./StructureDefinition-CoreDataElementSource.schema.json",
+              "propertyCount": 4
+            },
+            {
+              "filename": "StructureDefinition-Persona.schema.json",
+              "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-Persona.schema.json",
+              "title": "Persona (DAK)",
+              "description": "Logical Model for representing Personas from a DAK",
+              "url": "./StructureDefinition-Persona.schema.json",
+              "propertyCount": 8
+            },
+            {
+              "filename": "StructureDefinition-BusinessProcessWorkflow.schema.json",
+              "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-BusinessProcessWorkflow.schema.json",
+              "title": "Business Process Workflow (DAK)",
+              "description": "Logical Model for representing Generic Business Processes and Workflows from a DAK. A business process is a set of related activities or tasks performed together to achieve the objectives of the health programme area.",
+              "url": "./StructureDefinition-BusinessProcessWorkflow.schema.json",
+              "propertyCount": 11
+            },
+            {
+              "filename": "StructureDefinition-NonFunctionalRequirement.schema.json",
+              "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-NonFunctionalRequirement.schema.json",
+              "title": "Non-Functional Requirement (DAK)",
+              "description": "Logical Model for representing non-functional requirement from a DAK",
+              "url": "./StructureDefinition-NonFunctionalRequirement.schema.json",
+              "propertyCount": 5
+            },
+            {
+              "filename": "StructureDefinition-GenericPersona.schema.json",
+              "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-GenericPersona.schema.json",
+              "title": "Generic Persona (DAK)",
+              "description": "Logical Model for representing Generic Personas from a DAK. Depiction of the human and system actors. Human actors are end users, supervisors and related stakeholders who would be interacting with the digital system or involved in the clinical care, public health or health system pathway.",
+              "url": "./StructureDefinition-GenericPersona.schema.json",
+              "propertyCount": 8
+            },
+            {
+              "filename": "StructureDefinition-FunctionalRequirement.schema.json",
+              "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-FunctionalRequirement.schema.json",
+              "title": "Functional Requirement (DAK)",
+              "description": "Logical Model for representing functional requirement from a DAK",
+              "url": "./StructureDefinition-FunctionalRequirement.schema.json",
+              "propertyCount": 7
+            },
+            {
+              "filename": "StructureDefinition-GenericPersonaSource.schema.json",
+              "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-GenericPersonaSource.schema.json",
+              "title": "Generic Persona Source",
+              "description": "Source reference for Generic Persona - exactly one of the following must be provided:\n- url (url data type): URL to retrieve GenericPersona definition from input/ or external source\n- canonical (canonical data type): Canonical URI pointing to the GenericPersona definition\n- instance: Inline GenericPersona instance data",
+              "url": "./StructureDefinition-GenericPersonaSource.schema.json",
+              "propertyCount": 4
+            },
+            {
+              "filename": "StructureDefinition-UserScenario.schema.json",
+              "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-UserScenario.schema.json",
+              "title": "User Scenario (DAK)",
+              "description": "Logical Model for representing User Scenarios from a DAK. Narratives that describe how the different personas may interact with each other.",
+              "url": "./StructureDefinition-UserScenario.schema.json",
+              "propertyCount": 5
+            },
+            {
+              "filename": "StructureDefinition-RequirementsSource.schema.json",
+              "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-RequirementsSource.schema.json",
+              "title": "Requirements Source",
+              "description": "Source reference for Requirements - exactly one of the following must be provided:\n- url (url data type): URL to retrieve Requirements definition from input/ or external source\n- canonical (canonical data type): Canonical URI pointing to the Requirements definition\n- instance: Inline Requirements instance data",
+              "url": "./StructureDefinition-RequirementsSource.schema.json",
+              "propertyCount": 4
+            },
+            {
+              "filename": "StructureDefinition-BusinessProcessWorkflowSource.schema.json",
+              "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-BusinessProcessWorkflowSource.schema.json",
+              "title": "Business Process Workflow Source",
+              "description": "Source reference for Business Process Workflow - exactly one of the following must be provided:\n- url (url data type): URL to retrieve BusinessProcessWorkflow definition from input/ or external source\n- canonical (canonical data type): Canonical URI pointing to the BusinessProcessWorkflow definition\n- instance: Inline BusinessProcessWorkflow instance data",
+              "url": "./StructureDefinition-BusinessProcessWorkflowSource.schema.json",
+              "propertyCount": 4
+            },
+            {
+              "filename": "StructureDefinition-DAK.schema.json",
+              "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-DAK.schema.json",
+              "title": "Digital Adaptation Kit (DAK)",
+              "description": "Logical Model for representing a complete Digital Adaptation Kit (DAK) with metadata and all 9 DAK components",
+              "url": "./StructureDefinition-DAK.schema.json",
+              "propertyCount": 24
+            },
+            {
+              "filename": "StructureDefinition-TestScenario.schema.json",
+              "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-TestScenario.schema.json",
+              "title": "Test Scenario (DAK)",
+              "description": "Logical Model for representing Test Scenarios from a DAK. A set of test scenarios to validate an implementation of the DAK.",
+              "url": "./StructureDefinition-TestScenario.schema.json",
+              "propertyCount": 3
+            },
+            {
+              "filename": "StructureDefinition-ProgramIndicatorSource.schema.json",
+              "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-ProgramIndicatorSource.schema.json",
+              "title": "Program Indicator Source",
+              "description": "Source reference for Program Indicator - exactly one of the following must be provided:\n- url (url data type): URL to retrieve ProgramIndicator definition from input/ or external source\n- canonical (canonical data type): Canonical URI pointing to the ProgramIndicator definition\n- instance: Inline ProgramIndicator instance data",
+              "url": "./StructureDefinition-ProgramIndicatorSource.schema.json",
+              "propertyCount": 4
+            },
+            {
+              "filename": "StructureDefinition-FHIRSchemaBase.schema.json",
+              "id": "https://worldhealthorganization.github.io/smart-base/branches/v1.0.0/StructureDefinition-FHIRSchemaBase.schema.json",
+              "title": "FHIR Schema Base (SMART Guidelines)",
+              "description": "Base logical model providing the common schema metadata interface inherited by all SMART Guidelines logical models. Every SMART Guidelines logical model schema derives from this base, which documents the shared FHIR and JSON-LD metadata properties used by the JSON Schema generation pipeline.",
+              "url": "./StructureDefinition-FHIRSchemaBase.schema.json",
+              "propertyCount": 5
+            }
+          ]
+        }
+      }
+    }
+  }
+}

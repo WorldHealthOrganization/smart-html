@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Hierarchy of the Classification of Digital Health Interventions v2 - SMART Base v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+    <link href="assets/css/fa-all.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/who.css" rel="stylesheet"/>
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"9.159"}
+    h3,h4,h5,h6{--heading-prefix:"9.159"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+
+      <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+        <div id="stripe"> </div>
+        <div class="container">  <!-- container -->
+          <!-- HEADER CONTENT -->
+  
+          <nav class="navbar navbar-inverse">
+            <!--status-bar-->
+            <div class="container">
+              <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+              </button>
+              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+              <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Authoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="authoring-process.html">Process</a>
+      </li>
+      <li>
+        <a href="authoring-personas.html">Personas</a>
+      </li>
+      <li>
+        <a href="authoring-skills.html">Skills</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Indices
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Artifact Index</a>
+      </li>
+      <li>
+        <a href="dak-api.html">DAK API</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+              </div>  <!-- /.nav-collapse -->
+
+              <div class="sf_colsIn col-md-8  navbar-right-container" data-sf-element="LanguageSelectorSearch" data-placeholder-label="Language Selector and Search" style="display: flex; justify-content: flex-end; align-items: center;">
+                <!-- This div will be pushed to the right -->
+                <div class="language-selector" style="margin-left: auto; background-color: #00477d; color: white;">
+                  <i class="fa fa-language fa-lg"></i>
+                  <label for="language-selector"> </label>
+                  <select onChange="openLink(value)" id="language-selector" name="language-selector">
+                    <option disabled selected>Select language</option>
+                    <option value="en" class="selected">English</option>
+                  </select>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+                <!-- Search Content -->
+              </div>
+            </div>  <!-- /.container -->
+          </nav>  <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+        </div>  <!-- /container -->
+      </div>  <!-- /segment-navbar -->
+      
+
+      <div class="container" style=" justify-content: space-between; align-items: left;">
+
+        <!-- Placeholder for child template header declarations -->
+<div id="project-nav">
+    <a id="who-logo" no-external="true" href="index.html">
+      
+<img height="50" style="margin:7px" alt="Welcome on standards website" src="assets/images/h-logo-blue.svg"/>
+        
+    </a>
+</div>
+
+ <div id="family-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir">  </a>
+</div> 
+
+
+        <div id="ig-status" class="ig-status-active">
+          <p><span style="font-size:12pt;font-weight:bold">SMART Base</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Hierarchy of the Classification of Digital Health Interventions v2</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART Base (v1.0.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a data-no-external="true" href="http://smart.who.int/base/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ConceptMap-CDHIv2Hierarchy.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ConceptMap-CDHIv2Hierarchy.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ConceptMap-CDHIv2Hierarchy.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+
+  <h2 id="root">ConceptMap: Hierarchy of the Classification of Digital Health Interventions v2
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://smart.who.int/base/ConceptMap/CDHIv2Hierarchy<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://smart.who.int/base/ConceptMap/CDHIv2Hierarchy"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.0.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://smart.who.int/base/ConceptMap/CDHIv2Hierarchy|1.0.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2026-08-27
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">CDHIv2Hierarchy</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+<p>
+<p>Mapping to represent hierarchy within the Classification of Digital Interventions, Services and Applications in Health (CDISAH) v2.</p>
+
+</p>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+<!--  <p>
+  Formats: <a href="ConceptMap-CDHIv2Hierarchy.xml.html">XML</a>, <a href="ConceptMap-CDHIv2Hierarchy.json.html">JSON</a>, <a href="ConceptMap-CDHIv2Hierarchy.ttl.html">Turtle</a>
+  </p>-->
+
+  
+
+
+  <div data-fhir="generated"><p class="res-header-id"/><a name="CDHIv2Hierarchy"> </a><a name="hcCDHIv2Hierarchy"> </a><p>Mapping from <a href="ValueSet-CDHIv2.html">Classification of Digital Health Interventions v2</a> to <a href="ValueSet-CDHIv2.html">Classification of Digital Health Interventions v2</a></p><br/><p>Mapping from <a href="CodeSystem-CDHIv2.html">Classification of Digital Health Interventions v2</a> to <a href="CodeSystem-CDHIv2.html">Classification of Digital Health Interventions v2</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>1.1 (Targeted communication to Persons)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>1 (Persons)</td></tr><tr><td>1.1.1 (Transmit health event alerts to specific population group(s))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>1.1 (Targeted communication to Persons)</td></tr><tr><td>1.1.2 (Transmit targeted health information to person(s) based on health status or demographics)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>1.1 (Targeted communication to Persons)</td></tr><tr><td>1.1.3 (Transmit targeted alerts and reminders to person(s))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>1.1 (Targeted communication to Persons)</td></tr><tr><td>1.1.4 (Transmit diagnostics result, or availability of result, to person(s))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>1.1 (Targeted communication to Persons)</td></tr><tr><td>1.2 (Untargeted communication to Persons)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>1 (Persons)</td></tr><tr><td>1.2.1 (Transmit untargeted health information to an undefined population)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>1.2 (Untargeted communication to Persons)</td></tr><tr><td>1.2.2 (Transmit untargeted health event alerts to undefined group)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>1.2 (Untargeted communication to Persons)</td></tr><tr><td>1.3 (Person to Person communication)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>1 (Persons)</td></tr><tr><td>1.3.1 (Peer group for individuals)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>1.3 (Person to Person communication)</td></tr><tr><td>1.4 (Personal health tracking)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>1 (Persons)</td></tr><tr><td>1.4.1 (Access by the individual to own medical or summary health records)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>1.4 (Personal health tracking)</td></tr><tr><td>1.4.2 (Self monitoring of health or diagnostic data by the individual)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>1.4 (Personal health tracking)</td></tr><tr><td>1.4.3 (Active data capture/documentation by an individual)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>1.4 (Personal health tracking)</td></tr><tr><td>1.4.4 (Access by the individual to verifiable documentation of a health event or health status)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>1.4 (Personal health tracking)</td></tr><tr><td>1.5 (Person based reporting)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>1 (Persons)</td></tr><tr><td>1.5.1 (Reporting of health system feedback by persons)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>1.5 (Person based reporting)</td></tr><tr><td>1.5.2 (Reporting of public health events by persons)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>1.5 (Person based reporting)</td></tr><tr><td>1.6 (On demand communication with persons)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>1 (Persons)</td></tr><tr><td>1.6.1 (Look-up of information on health and health services by individuals)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>1.6 (On demand communication with persons)</td></tr><tr><td>1.6.2 (Simulated human-like conversations with individual(s))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>1.6 (On demand communication with persons)</td></tr><tr><td>1.7 (Person-centred financial transactions)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>1 (Persons)</td></tr><tr><td>1.7.1 (Transmit or manage out-of-pocket payments by individuals)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>1.7 (Person-centred financial transactions)</td></tr><tr><td>1.7.2 (Transmit or manage vouchers to individuals for health services)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>1.7 (Person-centred financial transactions)</td></tr><tr><td>1.7.3 (Transmit or manage incentives to individuals for health services)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>1.7 (Person-centred financial transactions)</td></tr><tr><td>1.8 (Person-centred consent management)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>1 (Persons)</td></tr><tr><td>1.8.1 (Manage provision and withdrawal of consent by individuals)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>1.8 (Person-centred consent management)</td></tr><tr><td>2.1 (Identification and registration of persons)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2 (Healthcare providers)</td></tr><tr><td>2.1.1 (Verify a person's unique identity)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.1 (Identification and registration of persons)</td></tr><tr><td>2.1.2 (Enrol person(s) for health services/clinical care plan)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.1 (Identification and registration of persons)</td></tr><tr><td>2.2 (Person-centred health records)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2 (Healthcare providers)</td></tr><tr><td>2.2.1 (Longitudinal tracking of person's health status and services)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.2 (Person-centred health records)</td></tr><tr><td>2.2.2 (Manage person-centred structured clinical records)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.2 (Person-centred health records)</td></tr><tr><td>2.2.3 (Manage person-centred unstructured clinical records (e.g. notes, images, documents))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.2 (Person-centred health records)</td></tr><tr><td>2.2.4 (Routine health indicator data collection and management)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.2 (Person-centred health records)</td></tr><tr><td>2.3 (Healthcare provider decision support)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2 (Healthcare providers)</td></tr><tr><td>2.3.1 (Provide prompts and alerts based according to protocol)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.3 (Healthcare provider decision support)</td></tr><tr><td>2.3.2 (Provide checklist according to protocol)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.3 (Healthcare provider decision support)</td></tr><tr><td>2.3.3 (Screen persons by risk or other health status)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.3 (Healthcare provider decision support)</td></tr><tr><td>2.4 (Telemedicine)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2 (Healthcare providers)</td></tr><tr><td>2.4.1 (Consultations between remote person and healthcare provider)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.4 (Telemedicine)</td></tr><tr><td>2.4.2 (Remote monitoring of person's health or diagnostic data by provider)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.4 (Telemedicine)</td></tr><tr><td>2.4.3 (Transmission of medical data (e.g. images, notes, and videos) to healthcare provider)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.4 (Telemedicine)</td></tr><tr><td>2.4.4 (Consultations for case management between healthcare providers)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.4 (Telemedicine)</td></tr><tr><td>2.5 (Healthcare provider communication)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2 (Healthcare providers)</td></tr><tr><td>2.5.1 (Communication from healthcare provider to supervisor(s))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.5 (Healthcare provider communication)</td></tr><tr><td>2.5.2 (Communication and performance feedback to healthcare provider(s))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.5 (Healthcare provider communication)</td></tr><tr><td>2.5.3 (Transmit routine news and workflow notifications to healthcare provider(s))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.5 (Healthcare provider communication)</td></tr><tr><td>2.5.4 (Transmit non-routine health event alerts to healthcare provider(s))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.5 (Healthcare provider communication)</td></tr><tr><td>2.5.5 (Peer group for healthcare providers)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.5 (Healthcare provider communication)</td></tr><tr><td>2.5.6 (Generative AI for tailored content creation)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.5 (Healthcare provider communication)</td></tr><tr><td>2.6 (Referral coordination)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2 (Healthcare providers)</td></tr><tr><td>2.6.1 (Coordinate emergency response and transport)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.6 (Referral coordination)</td></tr><tr><td>2.6.2 (Manage referrals between points of service within health sector)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.6 (Referral coordination)</td></tr><tr><td>2.6.3 (Manage referrals between health and other sectors (social services, police, justice, economic support schemes))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.6 (Referral coordination)</td></tr><tr><td>2.7 (Scheduling and activity planning for healthcare providers)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2 (Healthcare providers)</td></tr><tr><td>2.7.1 (Identify persons in need of services)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.7 (Scheduling and activity planning for healthcare providers)</td></tr><tr><td>2.7.2 (Schedule healthcare provider's activities)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.7 (Scheduling and activity planning for healthcare providers)</td></tr><tr><td>2.8 (Healthcare provider training)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2 (Healthcare providers)</td></tr><tr><td>2.8.1 (Provide training content to healthcare provider(s))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.8 (Healthcare provider training)</td></tr><tr><td>2.8.2 (Assess capacity of healthcare provider(s))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.8 (Healthcare provider training)</td></tr><tr><td>2.9 (Prescription and medication management)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2 (Healthcare providers)</td></tr><tr><td>2.9.1 (Transmit or track prescription orders)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.9 (Prescription and medication management)</td></tr><tr><td>2.9.2 (Track individual's medication consumption)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.9 (Prescription and medication management)</td></tr><tr><td>2.9.3 (Report adverse drug effects)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.9 (Prescription and medication management)</td></tr><tr><td>2.10 (Laboratory and diagnostics imaging management)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2 (Healthcare providers)</td></tr><tr><td>2.10.1 (Transmit person's diagnostic result to healthcare provider)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.10 (Laboratory and diagnostics imaging management)</td></tr><tr><td>2.10.2 (Transmit and track diagnostic orders)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.10 (Laboratory and diagnostics imaging management)</td></tr><tr><td>2.10.3 (Capture diagnostic results from digital devices)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.10 (Laboratory and diagnostics imaging management)</td></tr><tr><td>2.10.4 (Track biological specimens)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.10 (Laboratory and diagnostics imaging management)</td></tr><tr><td>2.11 (Healthcare provider financial transactions)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2 (Healthcare providers)</td></tr><tr><td>2.11.1 (Verify individual's health coverage and financing scheme membership)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.11 (Healthcare provider financial transactions)</td></tr><tr><td>2.11.2 (Receive payments from individuals)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>2.11 (Healthcare provider financial transactions)</td></tr><tr><td>3.1 (Human resource management)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3 (Health management and support personnel)</td></tr><tr><td>3.1.1 (List health workforce cadres and related identification information)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3.1 (Human resource management)</td></tr><tr><td>3.1.2 (Monitor performance of healthcare provider(s))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3.1 (Human resource management)</td></tr><tr><td>3.1.3 (Manage registration/certification of healthcare provider(s))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3.1 (Human resource management)</td></tr><tr><td>3.1.4 (Record training credentials of healthcare provider(s))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3.1 (Human resource management)</td></tr><tr><td>3.1.5 (Manage health workforce activities)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3.1 (Human resource management)</td></tr><tr><td>3.2 (Supply chain management)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3 (Health management and support personnel)</td></tr><tr><td>3.2.1 (Manage inventory and distribution of health commodities)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3.2 (Supply chain management)</td></tr><tr><td>3.2.2 (Notify stock levels of health commodities)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3.2 (Supply chain management)</td></tr><tr><td>3.2.3 (Monitor cold-chain sensitive commodities)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3.2 (Supply chain management)</td></tr><tr><td>3.2.4 (Register licensed drugs and health commodities)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3.2 (Supply chain management)</td></tr><tr><td>3.2.5 (Manage procurement of commodities)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3.2 (Supply chain management)</td></tr><tr><td>3.2.6 (Report counterfeit or substandard drugs by persons)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3.2 (Supply chain management)</td></tr><tr><td>3.3 (Public health event notification)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3 (Health management and support personnel)</td></tr><tr><td>3.3.1 (Notification of public health events from point of diagnosis)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3.3 (Public health event notification)</td></tr><tr><td>3.4 (Civil Registration and Vital Statistics (CRVS))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3 (Health management and support personnel)</td></tr><tr><td>3.4.1 (Notify, register and certify birth event)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3.4 (Civil Registration and Vital Statistics (CRVS))</td></tr><tr><td>3.4.2 (Notify, register and certify death event)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3.4 (Civil Registration and Vital Statistics (CRVS))</td></tr><tr><td>3.5 (Health system financial management)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3 (Health management and support personnel)</td></tr><tr><td>3.5.1 (Register and verify health coverage scheme membership of persons)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3.5 (Health system financial management)</td></tr><tr><td>3.5.2 (Track and manage insurance billing and claims processes)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3.5 (Health system financial management)</td></tr><tr><td>3.5.3 (Transmit and manage payments to health facilities)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3.5 (Health system financial management)</td></tr><tr><td>3.5.4 (Transmit and manage routine payroll payment to healthcare provider(s))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3.5 (Health system financial management)</td></tr><tr><td>3.5.5 (Transmit or manage financial incentives to healthcare provider(s))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3.5 (Health system financial management)</td></tr><tr><td>3.5.6 (Manage and plan budget allocations, revenue and expenditures)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3.5 (Health system financial management)</td></tr><tr><td>3.5.7 (Determine level of subsidies for health coverage schemes)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3.5 (Health system financial management)</td></tr><tr><td>3.5.8 (Collect health insurance contributions)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3.5 (Health system financial management)</td></tr><tr><td>3.6 (Equipment and asset management)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3 (Health management and support personnel)</td></tr><tr><td>3.6.1 (Monitor status and maintenance of health equipment)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3.6 (Equipment and asset management)</td></tr><tr><td>3.6.2 (Track regulation and licensing of medical equipment)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3.6 (Equipment and asset management)</td></tr><tr><td>3.7 (Facility management)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3 (Health management and support personnel)</td></tr><tr><td>3.7.1 (List health facilities and related information)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3.7 (Facility management)</td></tr><tr><td>3.7.2 (Assess health facilities)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3.7 (Facility management)</td></tr><tr><td>3.8 (Person-centred health certificate management)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3 (Health management and support personnel)</td></tr><tr><td>3.8.1 (Register and store current health certificate information)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3.8 (Person-centred health certificate management)</td></tr><tr><td>3.8.2 (Retrieve and validate current health certificate information)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3.8 (Person-centred health certificate management)</td></tr><tr><td>3.8.3 (Revoke and update health certificate)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>3.8 (Person-centred health certificate management)</td></tr><tr><td>4.1 (Data Management)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>4 (Data services)</td></tr><tr><td>4.1.1 (Form creation for data acquisition)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>4.1 (Data Management)</td></tr><tr><td>4.1.2 (Data storage and aggregation)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>4.1 (Data Management)</td></tr><tr><td>4.1.3 (Data synthesis and visualizations)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>4.1 (Data Management)</td></tr><tr><td>4.1.4 (Automated analysis of data to generate new information or predictions on future events)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>4.1 (Data Management)</td></tr><tr><td>4.2 (Data coding)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>4 (Data services)</td></tr><tr><td>4.2.1 (Parse unstructured data into structured data)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>4.2 (Data coding)</td></tr><tr><td>4.2.2 (Merge, de-duplicate and curate coded datasets or terminologies)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>4.2 (Data coding)</td></tr><tr><td>4.2.3 (Classify disease codes or cause of mortality)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>4.2 (Data coding)</td></tr><tr><td>4.3 (Geospatial information management)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>4 (Data services)</td></tr><tr><td>4.3.1 (Map location of health facilities/structures and households)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>4.3 (Geospatial information management)</td></tr><tr><td>4.3.2 (Map location of health event)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>4.3 (Geospatial information management)</td></tr><tr><td>4.3.3 (Map location of persons and settlements)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>4.3 (Geospatial information management)</td></tr><tr><td>4.3.4 (Map location of healthcare provider(s))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>4.3 (Geospatial information management)</td></tr><tr><td>4.3.5 (Map health and health indicator data to geographic data)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>4.3 (Geospatial information management)</td></tr><tr><td>4.4 (Data exchange and interoperability)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>4 (Data services)</td></tr><tr><td>4.4.1 (Point-to-point data integration)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>4.4 (Data exchange and interoperability)</td></tr><tr><td>4.4.2 (Standards-compliant interoperability)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>4.4 (Data exchange and interoperability)</td></tr><tr><td>4.4.3 (Message routing)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>4.4 (Data exchange and interoperability)</td></tr><tr><td>4.5 (Data governance compliance)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>4 (Data services)</td></tr><tr><td>4.5.1 (Authentication and authorisation)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>4.5 (Data governance compliance)</td></tr><tr><td>4.5.2 (Data privacy protection)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>4.5 (Data governance compliance)</td></tr><tr><td>4.5.3 (Data consent and provenance)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>4.5 (Data governance compliance)</td></tr><tr><td>4.5.4 (Trust architecture)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">narrower</a></td><td>4.5 (Data governance compliance)</td></tr></table></div>
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-content -->
+
+<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
+<a name="bottom"> </a>
+<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+<div class="container">  <!-- container -->
+
+<div class="inner-wrapper">
+  <p>
+    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.base#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 27, 2026 08:31+0000">2026-08-27</span>
+    <br/>
+    <span style="color: var(--footer-highlight-text-color)">
+                Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+| <a style="color: #81BEF7" target="_blank" href="http://smart.who.int/base/history.html">Version History</a> | <a style="color: #81BEF7" rel="license" href="license.html">License</a>
+    </span>
+  </p>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-footer -->
+
+<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+<div class="container">  <!-- container -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+<script type="text/javascript" src="assets/js/respond.min.js"> </script>
+<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+<script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+<!-- Analytics Below
+================================================== -->
+
+
+
+

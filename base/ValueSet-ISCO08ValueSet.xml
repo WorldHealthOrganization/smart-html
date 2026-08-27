@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ISCO08ValueSet"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet ISCO08ValueSet</b></p><a name="ISCO08ValueSet"> </a><a name="hcISCO08ValueSet"> </a><ul><li>Include all codes defined in <a href="CodeSystem-ISCO08.html"><code>http://www.ilo.org/public/english/bureau/stat/isco/isco08/</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;1.0.0</span></li></ul></div><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><p class="res-header-id"><b>Narratif généré : EnsembleValeurs ISCO08ValueSet</b></p><a name="fr-ISCO08ValueSet"> </a><a name="fr-hcISCO08ValueSet"> </a><ul><li>Include tous les codes définis dans <a href="CodeSystem-ISCO08.html"><code>http://www.ilo.org/public/english/bureau/stat/isco/isco08/</code></a><span title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification"> version &#x1F4E6;1.0.0</span></li></ul></div><div xml:lang="ar" lang="ar"><hr/><p><b>Arabic</b></p><hr/><p class="res-header-id"><b>السرد المُنشأ: ValueSet ISCO08ValueSet</b></p><a name="ar-ISCO08ValueSet"> </a><a name="ar-hcISCO08ValueSet"> </a><ul><li>Include جميع الرموز المحددة في <a href="CodeSystem-ISCO08.html"><code>http://www.ilo.org/public/english/bureau/stat/isco/isco08/</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> الإصدار &#x1F4E6;1.0.0</span></li></ul></div><div xml:lang="zh" lang="zh"><hr/><p><b>Chinese</b></p><hr/><p class="res-header-id"><b>Generated Narrative: 取值集合 ISCO08ValueSet</b></p><a name="zh-ISCO08ValueSet"> </a><a name="zh-hcISCO08ValueSet"> </a><ul><li>Include all codes defined in <a href="CodeSystem-ISCO08.html"><code>http://www.ilo.org/public/english/bureau/stat/isco/isco08/</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;1.0.0</span></li></ul></div><div xml:lang="ru" lang="ru"><hr/><p><b>Russian</b></p><hr/><p class="res-header-id"><b>Сгенерированный нарратив: ValueSet ISCO08ValueSet</b></p><a name="ru-ISCO08ValueSet"> </a><a name="ru-hcISCO08ValueSet"> </a><ul><li>Include все коды, определенные в <a href="CodeSystem-ISCO08.html"><code>http://www.ilo.org/public/english/bureau/stat/isco/isco08/</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> версия &#x1F4E6;1.0.0</span></li></ul></div><div xml:lang="es" lang="es"><hr/><p><b>Spanish</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ConjuntoValores / ConjuntoDeValores ISCO08ValueSet</b></p><a name="es-ISCO08ValueSet"> </a><a name="es-hcISCO08ValueSet"> </a><ul><li>Include all codes defined in <a href="CodeSystem-ISCO08.html"><code>http://www.ilo.org/public/english/bureau/stat/isco/isco08/</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;1.0.0</span></li></ul></div></div>
+  </text>
+  <url value="http://smart.who.int/base/ValueSet/ISCO08ValueSet"/>
+  <version value="1.0.0"/>
+  <name value="ISCO08ValueSet"/>
+  <title value="ISCO-08 Value Set"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-27T08:35:55+00:00"/>
+  <publisher value="WHO"/>
+  <contact>
+    <name value="WHO"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://who.int"/>
+    </telecom>
+  </contact>
+  <description value="Extensible value set of ISCO-08 codes for persona classification"/>
+  <compose>
+    <include>
+      <system value="http://www.ilo.org/public/english/bureau/stat/isco/isco08/"/>
+    </include>
+  </compose>
+</ValueSet>

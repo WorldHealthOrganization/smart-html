@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "40d85090-fd27-471b-b3b7-93a57d71b484-45",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/40d85090-fd27-471b-b3b7-93a57d71b484-45",
+  "name" : "IntersectionGoalCategoryAndGoalCategory",
+  "title" : "Intersection of Goal category And Goal category",
+  "status" : "draft",
+  "date" : "2026-08-27T08:33:43+00:00"
+}

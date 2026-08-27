@@ -1,0 +1,225 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/base/Basic/SGAuthoring.Skills.BuildIG> a fhir:Basic ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "SGAuthoring.Skills.BuildIG"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://smart.who.int/base/StructureDefinition/SGRequirements" ;
+       fhir:index 0 ;
+       fhir:link <http://smart.who.int/base/StructureDefinition/SGRequirements>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Requirements SGAuthoring.Skills.BuildIG</b></p><a name=\"SGAuthoring.Skills.BuildIG\"> </a><a name=\"hcSGAuthoring.Skills.BuildIG\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-SGRequirements.html\">SMART Guidelines Requirements</a></p></div><p>These requirements apply to the following actors: </p><ul><li><a href=\"ActorDefinition-SGAuthoring.Persona.PublicationManager.html\">Publication Manager</a></li><li><a href=\"ActorDefinition-SGAuthoring.Persona.FHIRModeller.html\">FHIR Modeller</a></li></ul><table class=\"grid\"><tr><td><b><a name=\"BUILD-01\"> </a></b>Run IG Publisher locally</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can run the FHIR IG Publisher build process locally and interpret build output.</p>\n</div></td></tr><tr><td><b><a name=\"BUILD-02\"> </a></b>Verify GitHub Pages build</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can verify CI builds on GitHub Pages (org.github.io/repo for default branch, /branches/branch_name for other branches).</p>\n</div></td></tr><tr><td><b><a name=\"BUILD-03\"> </a></b>Verify FHIR build</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can verify builds on build.fhir.org/ig/ for tooling and registry recognition.</p>\n</div></td></tr><tr><td><b><a name=\"BUILD-04\"> </a></b>Interpret build errors</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can interpret IG Publisher build errors and resolve common issues (missing dependencies, invalid references, SUSHI errors).</p>\n</div></td></tr></table></div><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : Requirements SGAuthoring.Skills.BuildIG</b></p><a name=\"fr-SGAuthoring.Skills.BuildIG\"> </a><a name=\"fr-hcSGAuthoring.Skills.BuildIG\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-SGRequirements.html\">SMART Guidelines Requirements</a></p></div><p>Ces exigences s'appliquent aux acteurs suivants : </p><ul><li><a href=\"ActorDefinition-SGAuthoring.Persona.PublicationManager.html\">Publication Manager</a></li><li><a href=\"ActorDefinition-SGAuthoring.Persona.FHIRModeller.html\">FHIR Modeller</a></li></ul><table class=\"grid\"><tr><td><b><a name=\"fr-BUILD-01\"> </a></b>Run IG Publisher locally</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can run the FHIR IG Publisher build process locally and interpret build output.</p>\n</div></td></tr><tr><td><b><a name=\"fr-BUILD-02\"> </a></b>Verify GitHub Pages build</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can verify CI builds on GitHub Pages (org.github.io/repo for default branch, /branches/branch_name for other branches).</p>\n</div></td></tr><tr><td><b><a name=\"fr-BUILD-03\"> </a></b>Verify FHIR build</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can verify builds on build.fhir.org/ig/ for tooling and registry recognition.</p>\n</div></td></tr><tr><td><b><a name=\"fr-BUILD-04\"> </a></b>Interpret build errors</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can interpret IG Publisher build errors and resolve common issues (missing dependencies, invalid references, SUSHI errors).</p>\n</div></td></tr></table></div><div xml:lang=\"ar\" lang=\"ar\"><hr/><p><b>Arabic</b></p><hr/><p class=\"res-header-id\"><b>السرد المُنشأ: Requirements SGAuthoring.Skills.BuildIG</b></p><a name=\"ar-SGAuthoring.Skills.BuildIG\"> </a><a name=\"ar-hcSGAuthoring.Skills.BuildIG\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">الملف الشخصي: <a href=\"StructureDefinition-SGRequirements.html\">SMART Guidelines Requirements</a></p></div><p>تنطبق هذه المتطلبات على الجهات التالية </p><ul><li><a href=\"ActorDefinition-SGAuthoring.Persona.PublicationManager.html\">Publication Manager</a></li><li><a href=\"ActorDefinition-SGAuthoring.Persona.FHIRModeller.html\">FHIR Modeller</a></li></ul><table class=\"grid\"><tr><td><b><a name=\"ar-BUILD-01\"> </a></b>Run IG Publisher locally</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can run the FHIR IG Publisher build process locally and interpret build output.</p>\n</div></td></tr><tr><td><b><a name=\"ar-BUILD-02\"> </a></b>Verify GitHub Pages build</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can verify CI builds on GitHub Pages (org.github.io/repo for default branch, /branches/branch_name for other branches).</p>\n</div></td></tr><tr><td><b><a name=\"ar-BUILD-03\"> </a></b>Verify FHIR build</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can verify builds on build.fhir.org/ig/ for tooling and registry recognition.</p>\n</div></td></tr><tr><td><b><a name=\"ar-BUILD-04\"> </a></b>Interpret build errors</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can interpret IG Publisher build errors and resolve common issues (missing dependencies, invalid references, SUSHI errors).</p>\n</div></td></tr></table></div><div xml:lang=\"zh\" lang=\"zh\"><hr/><p><b>Chinese</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Requirements SGAuthoring.Skills.BuildIG</b></p><a name=\"zh-SGAuthoring.Skills.BuildIG\"> </a><a name=\"zh-hcSGAuthoring.Skills.BuildIG\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-SGRequirements.html\">SMART Guidelines Requirements</a></p></div><p>These requirements apply to the following actors: </p><ul><li><a href=\"ActorDefinition-SGAuthoring.Persona.PublicationManager.html\">Publication Manager</a></li><li><a href=\"ActorDefinition-SGAuthoring.Persona.FHIRModeller.html\">FHIR Modeller</a></li></ul><table class=\"grid\"><tr><td><b><a name=\"zh-BUILD-01\"> </a></b>Run IG Publisher locally</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can run the FHIR IG Publisher build process locally and interpret build output.</p>\n</div></td></tr><tr><td><b><a name=\"zh-BUILD-02\"> </a></b>Verify GitHub Pages build</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can verify CI builds on GitHub Pages (org.github.io/repo for default branch, /branches/branch_name for other branches).</p>\n</div></td></tr><tr><td><b><a name=\"zh-BUILD-03\"> </a></b>Verify FHIR build</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can verify builds on build.fhir.org/ig/ for tooling and registry recognition.</p>\n</div></td></tr><tr><td><b><a name=\"zh-BUILD-04\"> </a></b>Interpret build errors</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can interpret IG Publisher build errors and resolve common issues (missing dependencies, invalid references, SUSHI errors).</p>\n</div></td></tr></table></div><div xml:lang=\"ru\" lang=\"ru\"><hr/><p><b>Russian</b></p><hr/><p class=\"res-header-id\"><b>Сгенерированный нарратив: Requirements SGAuthoring.Skills.BuildIG</b></p><a name=\"ru-SGAuthoring.Skills.BuildIG\"> </a><a name=\"ru-hcSGAuthoring.Skills.BuildIG\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Профиль: <a href=\"StructureDefinition-SGRequirements.html\">SMART Guidelines Requirements</a></p></div><p>Эти требования применяются к следующим субъектам: </p><ul><li><a href=\"ActorDefinition-SGAuthoring.Persona.PublicationManager.html\">Publication Manager</a></li><li><a href=\"ActorDefinition-SGAuthoring.Persona.FHIRModeller.html\">FHIR Modeller</a></li></ul><table class=\"grid\"><tr><td><b><a name=\"ru-BUILD-01\"> </a></b>Run IG Publisher locally</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can run the FHIR IG Publisher build process locally and interpret build output.</p>\n</div></td></tr><tr><td><b><a name=\"ru-BUILD-02\"> </a></b>Verify GitHub Pages build</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can verify CI builds on GitHub Pages (org.github.io/repo for default branch, /branches/branch_name for other branches).</p>\n</div></td></tr><tr><td><b><a name=\"ru-BUILD-03\"> </a></b>Verify FHIR build</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can verify builds on build.fhir.org/ig/ for tooling and registry recognition.</p>\n</div></td></tr><tr><td><b><a name=\"ru-BUILD-04\"> </a></b>Interpret build errors</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can interpret IG Publisher build errors and resolve common issues (missing dependencies, invalid references, SUSHI errors).</p>\n</div></td></tr></table></div><div xml:lang=\"es\" lang=\"es\"><hr/><p><b>Spanish</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Requirements SGAuthoring.Skills.BuildIG</b></p><a name=\"es-SGAuthoring.Skills.BuildIG\"> </a><a name=\"es-hcSGAuthoring.Skills.BuildIG\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-SGRequirements.html\">SMART Guidelines Requirements</a></p></div><p>These requirements apply to the following actors: </p><ul><li><a href=\"ActorDefinition-SGAuthoring.Persona.PublicationManager.html\">Publication Manager</a></li><li><a href=\"ActorDefinition-SGAuthoring.Persona.FHIRModeller.html\">FHIR Modeller</a></li></ul><table class=\"grid\"><tr><td><b><a name=\"es-BUILD-01\"> </a></b>Run IG Publisher locally</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can run the FHIR IG Publisher build process locally and interpret build output.</p>\n</div></td></tr><tr><td><b><a name=\"es-BUILD-02\"> </a></b>Verify GitHub Pages build</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can verify CI builds on GitHub Pages (org.github.io/repo for default branch, /branches/branch_name for other branches).</p>\n</div></td></tr><tr><td><b><a name=\"es-BUILD-03\"> </a></b>Verify FHIR build</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can verify builds on build.fhir.org/ig/ for tooling and registry recognition.</p>\n</div></td></tr><tr><td><b><a name=\"es-BUILD-04\"> </a></b>Interpret build errors</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can interpret IG Publisher build errors and resolve common issues (missing dependencies, invalid references, SUSHI errors).</p>\n</div></td></tr></table></div></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://smart.who.int/base/StructureDefinition/SGTask" ] ;
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "http://smart.who.int/base/CodeSystem/SGTasks" ] ;
+       fhir:Coding.code [ fhir:value "scriptTask" ] ;
+       fhir:Coding.display [ fhir:value "Script Task" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://smart.who.int/base/StructureDefinition/SGTask" ] ;
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "http://smart.who.int/base/CodeSystem/SGTasks" ] ;
+       fhir:Coding.code [ fhir:value "userTask" ] ;
+       fhir:Coding.display [ fhir:value "User Task" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Extension.url [ fhir:value "http://smart.who.int/base/StructureDefinition/SGTask" ] ;
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "http://smart.who.int/base/CodeSystem/SGTasks" ] ;
+       fhir:Coding.code [ fhir:value "userTask" ] ;
+       fhir:Coding.display [ fhir:value "User Task" ]
+     ]
+  ], [
+     fhir:index 3 ;
+     fhir:Extension.url [ fhir:value "http://smart.who.int/base/StructureDefinition/SGTask" ] ;
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "http://smart.who.int/base/CodeSystem/SGTasks" ] ;
+       fhir:Coding.code [ fhir:value "userTask" ] ;
+       fhir:Coding.display [ fhir:value "User Task" ]
+     ]
+  ], [
+     fhir:index 4 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://smart.who.int/base/StructureDefinition/SGString" ] ;
+       fhir:Extension.valueString [ fhir:value "run the FHIR IG Publisher build process and verify output" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://smart.who.int/base/StructureDefinition/SGString" ] ;
+       fhir:Extension.valueString [ fhir:value "IG builds are verified locally and on CI before publication" ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://smart.who.int/base/StructureDefinition/SGUserStory" ]
+  ], [
+     fhir:index 5 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.url" ] ;
+     fhir:Extension.valueUri [ fhir:value "http://smart.who.int/base/Requirements/SGAuthoring.Skills.BuildIG" ]
+  ], [
+     fhir:index 6 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.version" ] ;
+     fhir:Extension.valueString [ fhir:value "1.0.0" ]
+  ], [
+     fhir:index 7 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.name" ] ;
+     fhir:Extension.valueString [ fhir:value "SkillBuildIG" ]
+  ], [
+     fhir:index 8 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.title" ] ;
+     fhir:Extension.valueString [ fhir:value "Can build IG" ]
+  ], [
+     fhir:index 9 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.status" ] ;
+     fhir:Extension.valueCode [ fhir:value "draft" ]
+  ], [
+     fhir:index 10 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.experimental" ] ;
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ], [
+     fhir:index 11 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.date" ] ;
+     fhir:Extension.valueDateTime [ fhir:value "2026-08-27T08:35:55+00:00"^^xsd:dateTime ]
+  ], [
+     fhir:index 12 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.publisher" ] ;
+     fhir:Extension.valueString [ fhir:value "WHO" ]
+  ], [
+     fhir:index 13 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.contact" ] ;
+     fhir:Extension.valueContactDetail [
+       fhir:ContactDetail.name [ fhir:value "WHO" ] ;
+       fhir:ContactDetail.telecom [
+         fhir:index 0 ;
+         fhir:ContactPoint.system [ fhir:value "url" ] ;
+         fhir:ContactPoint.value [ fhir:value "http://who.int" ]
+       ]
+     ]
+  ], [
+     fhir:index 14 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.description" ] ;
+     fhir:Extension.valueMarkdown [ fhir:value "Capability to run the FHIR IG Publisher build process and verify output." ]
+  ], [
+     fhir:index 15 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.jurisdiction" ]
+  ], [
+     fhir:index 16 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.actor" ] ;
+     fhir:Extension.valueCanonical [
+       fhir:value "http://smart.who.int/base/ActorDefinition/SGAuthoring.Persona.PublicationManager" ;
+       fhir:link <http://smart.who.int/base/ActorDefinition/SGAuthoring.Persona.PublicationManager>
+     ]
+  ], [
+     fhir:index 17 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.actor" ] ;
+     fhir:Extension.valueCanonical [
+       fhir:value "http://smart.who.int/base/ActorDefinition/SGAuthoring.Persona.FHIRModeller" ;
+       fhir:link <http://smart.who.int/base/ActorDefinition/SGAuthoring.Persona.FHIRModeller>
+     ]
+  ], [
+     fhir:index 18 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key" ] ;
+       fhir:Extension.valueId [ fhir:value "BUILD-01" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.label" ] ;
+       fhir:Extension.valueString [ fhir:value "Run IG Publisher locally" ]
+     ], [
+       fhir:index 2 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance" ] ;
+       fhir:Extension.valueCode [ fhir:value "SHALL" ]
+     ], [
+       fhir:index 3 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "Can run the FHIR IG Publisher build process locally and interpret build output." ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ], [
+     fhir:index 19 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key" ] ;
+       fhir:Extension.valueId [ fhir:value "BUILD-02" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.label" ] ;
+       fhir:Extension.valueString [ fhir:value "Verify GitHub Pages build" ]
+     ], [
+       fhir:index 2 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance" ] ;
+       fhir:Extension.valueCode [ fhir:value "SHALL" ]
+     ], [
+       fhir:index 3 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "Can verify CI builds on GitHub Pages (org.github.io/repo for default branch, /branches/branch_name for other branches)." ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ], [
+     fhir:index 20 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key" ] ;
+       fhir:Extension.valueId [ fhir:value "BUILD-03" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.label" ] ;
+       fhir:Extension.valueString [ fhir:value "Verify FHIR build" ]
+     ], [
+       fhir:index 2 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance" ] ;
+       fhir:Extension.valueCode [ fhir:value "SHALL" ]
+     ], [
+       fhir:index 3 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "Can verify builds on build.fhir.org/ig/ for tooling and registry recognition." ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ], [
+     fhir:index 21 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key" ] ;
+       fhir:Extension.valueId [ fhir:value "BUILD-04" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.label" ] ;
+       fhir:Extension.valueString [ fhir:value "Interpret build errors" ]
+     ], [
+       fhir:index 2 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance" ] ;
+       fhir:Extension.valueCode [ fhir:value "SHALL" ]
+     ], [
+       fhir:index 3 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "Can interpret IG Publisher build errors and resolve common issues (missing dependencies, invalid references, SUSHI errors)." ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ] ;
+  fhir:Basic.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/fhir-types" ] ;
+       fhir:Coding.code [ fhir:value "Requirements" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://smart.who.int/base/Basic/SGAuthoring.Skills.BuildIG.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

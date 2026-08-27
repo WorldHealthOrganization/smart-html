@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="SGAuthoring.Skills.PlanIterations"/>
+  <meta>
+    <profile value="http://smart.who.int/base/StructureDefinition/SGRequirements"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Requirements SGAuthoring.Skills.PlanIterations</b></p><a name="SGAuthoring.Skills.PlanIterations"> </a><a name="hcSGAuthoring.Skills.PlanIterations"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-SGRequirements.html">SMART Guidelines Requirements</a></p></div><p>These requirements apply to the actor <a href="ActorDefinition-SGAuthoring.Persona.ProgrammeManager.html">Programme Manager</a></p><table class="grid"><tr><td><b><a name="ITERATE-01"> </a></b>Maintain DAK backlog</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can create and maintain a prioritized, estimated backlog of work items, decomposing big items into smaller items accomplishable in days.</p>
+</div></td></tr><tr><td><b><a name="ITERATE-02"> </a></b>Plan iteration scope</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can plan fixed-length iterations (1 month or less) considering team capacity, prior results, and backlog items.</p>
+</div></td></tr><tr><td><b><a name="ITERATE-03"> </a></b>Define iteration goals</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can define iteration goals that create coherence and focus for the team during each sprint.</p>
+</div></td></tr><tr><td><b><a name="ITERATE-04"> </a></b>Facilitate retrospectives</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHOULD">SHOULD</a></td><td><div><p>Can facilitate retrospective meetings to assess what went well, identify problems, and improve team effectiveness.</p>
+</div></td></tr><tr><td><b><a name="ITERATE-05"> </a></b>Draft project roadmap</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can draft a project roadmap with estimates for each phase and key milestone dates.</p>
+</div></td></tr></table></div><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><p class="res-header-id"><b>Narratif généré : Requirements SGAuthoring.Skills.PlanIterations</b></p><a name="fr-SGAuthoring.Skills.PlanIterations"> </a><a name="fr-hcSGAuthoring.Skills.PlanIterations"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-SGRequirements.html">SMART Guidelines Requirements</a></p></div><p>Ces exigences s'appliquent à l'acteur <a href="ActorDefinition-SGAuthoring.Persona.ProgrammeManager.html">Programme Manager</a></p><table class="grid"><tr><td><b><a name="fr-ITERATE-01"> </a></b>Maintain DAK backlog</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can create and maintain a prioritized, estimated backlog of work items, decomposing big items into smaller items accomplishable in days.</p>
+</div></td></tr><tr><td><b><a name="fr-ITERATE-02"> </a></b>Plan iteration scope</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can plan fixed-length iterations (1 month or less) considering team capacity, prior results, and backlog items.</p>
+</div></td></tr><tr><td><b><a name="fr-ITERATE-03"> </a></b>Define iteration goals</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can define iteration goals that create coherence and focus for the team during each sprint.</p>
+</div></td></tr><tr><td><b><a name="fr-ITERATE-04"> </a></b>Facilitate retrospectives</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHOULD">SHOULD</a></td><td><div><p>Can facilitate retrospective meetings to assess what went well, identify problems, and improve team effectiveness.</p>
+</div></td></tr><tr><td><b><a name="fr-ITERATE-05"> </a></b>Draft project roadmap</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can draft a project roadmap with estimates for each phase and key milestone dates.</p>
+</div></td></tr></table></div><div xml:lang="ar" lang="ar"><hr/><p><b>Arabic</b></p><hr/><p class="res-header-id"><b>السرد المُنشأ: Requirements SGAuthoring.Skills.PlanIterations</b></p><a name="ar-SGAuthoring.Skills.PlanIterations"> </a><a name="ar-hcSGAuthoring.Skills.PlanIterations"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">الملف الشخصي: <a href="StructureDefinition-SGRequirements.html">SMART Guidelines Requirements</a></p></div><p>تنطبق هذه المتطلبات على الممثل <a href="ActorDefinition-SGAuthoring.Persona.ProgrammeManager.html">Programme Manager</a></p><table class="grid"><tr><td><b><a name="ar-ITERATE-01"> </a></b>Maintain DAK backlog</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can create and maintain a prioritized, estimated backlog of work items, decomposing big items into smaller items accomplishable in days.</p>
+</div></td></tr><tr><td><b><a name="ar-ITERATE-02"> </a></b>Plan iteration scope</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can plan fixed-length iterations (1 month or less) considering team capacity, prior results, and backlog items.</p>
+</div></td></tr><tr><td><b><a name="ar-ITERATE-03"> </a></b>Define iteration goals</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can define iteration goals that create coherence and focus for the team during each sprint.</p>
+</div></td></tr><tr><td><b><a name="ar-ITERATE-04"> </a></b>Facilitate retrospectives</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHOULD">SHOULD</a></td><td><div><p>Can facilitate retrospective meetings to assess what went well, identify problems, and improve team effectiveness.</p>
+</div></td></tr><tr><td><b><a name="ar-ITERATE-05"> </a></b>Draft project roadmap</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can draft a project roadmap with estimates for each phase and key milestone dates.</p>
+</div></td></tr></table></div><div xml:lang="zh" lang="zh"><hr/><p><b>Chinese</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Requirements SGAuthoring.Skills.PlanIterations</b></p><a name="zh-SGAuthoring.Skills.PlanIterations"> </a><a name="zh-hcSGAuthoring.Skills.PlanIterations"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-SGRequirements.html">SMART Guidelines Requirements</a></p></div><p>These requirements apply to the actor <a href="ActorDefinition-SGAuthoring.Persona.ProgrammeManager.html">Programme Manager</a></p><table class="grid"><tr><td><b><a name="zh-ITERATE-01"> </a></b>Maintain DAK backlog</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can create and maintain a prioritized, estimated backlog of work items, decomposing big items into smaller items accomplishable in days.</p>
+</div></td></tr><tr><td><b><a name="zh-ITERATE-02"> </a></b>Plan iteration scope</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can plan fixed-length iterations (1 month or less) considering team capacity, prior results, and backlog items.</p>
+</div></td></tr><tr><td><b><a name="zh-ITERATE-03"> </a></b>Define iteration goals</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can define iteration goals that create coherence and focus for the team during each sprint.</p>
+</div></td></tr><tr><td><b><a name="zh-ITERATE-04"> </a></b>Facilitate retrospectives</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHOULD">SHOULD</a></td><td><div><p>Can facilitate retrospective meetings to assess what went well, identify problems, and improve team effectiveness.</p>
+</div></td></tr><tr><td><b><a name="zh-ITERATE-05"> </a></b>Draft project roadmap</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can draft a project roadmap with estimates for each phase and key milestone dates.</p>
+</div></td></tr></table></div><div xml:lang="ru" lang="ru"><hr/><p><b>Russian</b></p><hr/><p class="res-header-id"><b>Сгенерированный нарратив: Requirements SGAuthoring.Skills.PlanIterations</b></p><a name="ru-SGAuthoring.Skills.PlanIterations"> </a><a name="ru-hcSGAuthoring.Skills.PlanIterations"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Профиль: <a href="StructureDefinition-SGRequirements.html">SMART Guidelines Requirements</a></p></div><p>Эти требования распространяются и на актера <a href="ActorDefinition-SGAuthoring.Persona.ProgrammeManager.html">Programme Manager</a></p><table class="grid"><tr><td><b><a name="ru-ITERATE-01"> </a></b>Maintain DAK backlog</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can create and maintain a prioritized, estimated backlog of work items, decomposing big items into smaller items accomplishable in days.</p>
+</div></td></tr><tr><td><b><a name="ru-ITERATE-02"> </a></b>Plan iteration scope</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can plan fixed-length iterations (1 month or less) considering team capacity, prior results, and backlog items.</p>
+</div></td></tr><tr><td><b><a name="ru-ITERATE-03"> </a></b>Define iteration goals</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can define iteration goals that create coherence and focus for the team during each sprint.</p>
+</div></td></tr><tr><td><b><a name="ru-ITERATE-04"> </a></b>Facilitate retrospectives</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHOULD">SHOULD</a></td><td><div><p>Can facilitate retrospective meetings to assess what went well, identify problems, and improve team effectiveness.</p>
+</div></td></tr><tr><td><b><a name="ru-ITERATE-05"> </a></b>Draft project roadmap</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can draft a project roadmap with estimates for each phase and key milestone dates.</p>
+</div></td></tr></table></div><div xml:lang="es" lang="es"><hr/><p><b>Spanish</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Requirements SGAuthoring.Skills.PlanIterations</b></p><a name="es-SGAuthoring.Skills.PlanIterations"> </a><a name="es-hcSGAuthoring.Skills.PlanIterations"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-SGRequirements.html">SMART Guidelines Requirements</a></p></div><p>These requirements apply to the actor <a href="ActorDefinition-SGAuthoring.Persona.ProgrammeManager.html">Programme Manager</a></p><table class="grid"><tr><td><b><a name="es-ITERATE-01"> </a></b>Maintain DAK backlog</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can create and maintain a prioritized, estimated backlog of work items, decomposing big items into smaller items accomplishable in days.</p>
+</div></td></tr><tr><td><b><a name="es-ITERATE-02"> </a></b>Plan iteration scope</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can plan fixed-length iterations (1 month or less) considering team capacity, prior results, and backlog items.</p>
+</div></td></tr><tr><td><b><a name="es-ITERATE-03"> </a></b>Define iteration goals</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can define iteration goals that create coherence and focus for the team during each sprint.</p>
+</div></td></tr><tr><td><b><a name="es-ITERATE-04"> </a></b>Facilitate retrospectives</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHOULD">SHOULD</a></td><td><div><p>Can facilitate retrospective meetings to assess what went well, identify problems, and improve team effectiveness.</p>
+</div></td></tr><tr><td><b><a name="es-ITERATE-05"> </a></b>Draft project roadmap</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can draft a project roadmap with estimates for each phase and key milestone dates.</p>
+</div></td></tr></table></div></div>
+  </text>
+  <extension url="http://smart.who.int/base/StructureDefinition/SGTask">
+    <valueCoding>
+      <system value="http://smart.who.int/base/CodeSystem/SGTasks"/>
+      <code value="userTask"/>
+      <display value="User Task"/>
+    </valueCoding>
+  </extension>
+  <extension url="http://smart.who.int/base/StructureDefinition/SGTask">
+    <valueCoding>
+      <system value="http://smart.who.int/base/CodeSystem/SGTasks"/>
+      <code value="userTask"/>
+      <display value="User Task"/>
+    </valueCoding>
+  </extension>
+  <extension url="http://smart.who.int/base/StructureDefinition/SGTask">
+    <valueCoding>
+      <system value="http://smart.who.int/base/CodeSystem/SGTasks"/>
+      <code value="userTask"/>
+      <display value="User Task"/>
+    </valueCoding>
+  </extension>
+  <extension url="http://smart.who.int/base/StructureDefinition/SGTask">
+    <valueCoding>
+      <system value="http://smart.who.int/base/CodeSystem/SGTasks"/>
+      <code value="userTask"/>
+      <display value="User Task"/>
+    </valueCoding>
+  </extension>
+  <extension url="http://smart.who.int/base/StructureDefinition/SGTask">
+    <valueCoding>
+      <system value="http://smart.who.int/base/CodeSystem/SGTasks"/>
+      <code value="userTask"/>
+      <display value="User Task"/>
+    </valueCoding>
+  </extension>
+  <extension url="http://smart.who.int/base/StructureDefinition/SGUserStory">
+    <extension url="http://smart.who.int/base/StructureDefinition/SGString">
+      <valueString value="plan sprint iterations, maintain the backlog, and facilitate retrospectives"/>
+    </extension>
+    <extension url="http://smart.who.int/base/StructureDefinition/SGString">
+      <valueString value="DAK development proceeds in focused, time-boxed increments with continuous improvement"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.url">
+    <valueUri value="http://smart.who.int/base/Requirements/SGAuthoring.Skills.PlanIterations"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.version">
+    <valueString value="1.0.0"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.name">
+    <valueString value="SkillPlanIterations"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.title">
+    <valueString value="Can plan iterations"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.status">
+    <valueCode value="draft"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.experimental">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.date">
+    <valueDateTime value="2026-08-27T08:35:55+00:00"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.publisher">
+    <valueString value="WHO"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.contact">
+    <valueContactDetail>
+      <name value="WHO"/>
+      <telecom>
+        <system value="url"/>
+        <value value="http://who.int"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.description">
+    <valueMarkdown value="Capability to plan sprint iterations, maintain the DAK backlog, draft the project roadmap, and facilitate retrospectives."/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.jurisdiction"/>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.actor">
+    <valueCanonical value="http://smart.who.int/base/ActorDefinition/SGAuthoring.Persona.ProgrammeManager"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="ITERATE-01"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.label">
+      <valueString value="Maintain DAK backlog"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Can create and maintain a prioritized, estimated backlog of work items, decomposing big items into smaller items accomplishable in days."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="ITERATE-02"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.label">
+      <valueString value="Plan iteration scope"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Can plan fixed-length iterations (1 month or less) considering team capacity, prior results, and backlog items."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="ITERATE-03"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.label">
+      <valueString value="Define iteration goals"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Can define iteration goals that create coherence and focus for the team during each sprint."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="ITERATE-04"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.label">
+      <valueString value="Facilitate retrospectives"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHOULD"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Can facilitate retrospective meetings to assess what went well, identify problems, and improve team effectiveness."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="ITERATE-05"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.label">
+      <valueString value="Draft project roadmap"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Can draft a project roadmap with estimates for each phase and key milestone dates."/>
+    </extension>
+  </extension>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/fhir-types"/>
+      <code value="Requirements"/>
+    </coding>
+  </code>
+</Basic>

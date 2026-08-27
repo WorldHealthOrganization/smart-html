@@ -1,0 +1,15 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "6a4deac9-e767-4ec7-829c-cf632446e4c2-24",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/6a4deac9-e767-4ec7-829c-cf632446e4c2-24",
+  "name" : "IntersectionActionParticipantRoleAndActionParticipantRole",
+  "title" : "Intersection of Action participant role And Action participant role",
+  "status" : "draft",
+  "date" : "2026-08-27T08:37:08+00:00",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://hl7.org/fhir/ValueSet/practitioner-role|4.0.1",
+      "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype|4.0.1"]
+    }]
+  }
+}

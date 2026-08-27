@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/base/ValueSet/CDSCv2> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "CDSCv2"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet CDSCv2</b></p><a name=\"CDSCv2\"> </a><a name=\"hcCDSCv2\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-CDSCv2.html\"><code>http://smart.who.int/base/CodeSystem/CDSCv2</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?1.0.0</span></li></ul></div><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs CDSCv2</b></p><a name=\"fr-CDSCv2\"> </a><a name=\"fr-hcCDSCv2\"> </a><ul><li>Include tous les codes définis dans <a href=\"CodeSystem-CDSCv2.html\"><code>http://smart.who.int/base/CodeSystem/CDSCv2</code></a><span title=\"La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification\"> version ?1.0.0</span></li></ul></div><div xml:lang=\"ar\" lang=\"ar\"><hr/><p><b>Arabic</b></p><hr/><p class=\"res-header-id\"><b>السرد المُنشأ: ValueSet CDSCv2</b></p><a name=\"ar-CDSCv2\"> </a><a name=\"ar-hcCDSCv2\"> </a><ul><li>Include جميع الرموز المحددة في <a href=\"CodeSystem-CDSCv2.html\"><code>http://smart.who.int/base/CodeSystem/CDSCv2</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> الإصدار ?1.0.0</span></li></ul></div><div xml:lang=\"zh\" lang=\"zh\"><hr/><p><b>Chinese</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: 取值集合 CDSCv2</b></p><a name=\"zh-CDSCv2\"> </a><a name=\"zh-hcCDSCv2\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-CDSCv2.html\"><code>http://smart.who.int/base/CodeSystem/CDSCv2</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?1.0.0</span></li></ul></div><div xml:lang=\"ru\" lang=\"ru\"><hr/><p><b>Russian</b></p><hr/><p class=\"res-header-id\"><b>Сгенерированный нарратив: ValueSet CDSCv2</b></p><a name=\"ru-CDSCv2\"> </a><a name=\"ru-hcCDSCv2\"> </a><ul><li>Include все коды, определенные в <a href=\"CodeSystem-CDSCv2.html\"><code>http://smart.who.int/base/CodeSystem/CDSCv2</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> версия ?1.0.0</span></li></ul></div><div xml:lang=\"es\" lang=\"es\"><hr/><p><b>Spanish</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ConjuntoValores / ConjuntoDeValores CDSCv2</b></p><a name=\"es-CDSCv2\"> </a><a name=\"es-hcCDSCv2\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-CDSCv2.html\"><code>http://smart.who.int/base/CodeSystem/CDSCv2</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?1.0.0</span></li></ul></div></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "http://smart.who.int/base/ValueSet/CDSCv2"] ;
+  fhir:ValueSet.version [ fhir:value "1.0.0"] ;
+  fhir:ValueSet.name [ fhir:value "CDSCv2"] ;
+  fhir:ValueSet.title [ fhir:value "Services and Application Types"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-08-27T08:31:36+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "WHO"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "WHO" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://who.int" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Value set for Services and Application Types (Classification of Digital Health Services and Application Types v2, CDISAH 2023). Includes all codes across the five architecture groups (A–E)."] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://smart.who.int/base/CodeSystem/CDSCv2" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://smart.who.int/base/ValueSet/CDSCv2.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="SGAuthoring.Skills.AuthorPersonas"/>
+  <meta>
+    <profile value="http://smart.who.int/base/StructureDefinition/SGRequirements"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Requirements SGAuthoring.Skills.AuthorPersonas</b></p><a name="SGAuthoring.Skills.AuthorPersonas"> </a><a name="hcSGAuthoring.Skills.AuthorPersonas"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-SGRequirements.html">SMART Guidelines Requirements</a></p></div><p>These requirements apply to the actor <a href="ActorDefinition-SGAuthoring.Persona.BusinessAnalyst.html">Business Analyst</a></p><table class="grid"><tr><td><b><a name="PERSONA-01"> </a></b>Identify personas from L1 guidance</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can identify personas referenced in L1 normative guidance.</p>
+</div></td></tr><tr><td><b><a name="PERSONA-02"> </a></b>Identify personas from SME consultations</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can identify personas participating in workflows through consultations with SMEs.</p>
+</div></td></tr><tr><td><b><a name="PERSONA-03"> </a></b>Define persona competencies</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can define descriptions, competencies, and essential interventions performed by each persona.</p>
+</div></td></tr><tr><td><b><a name="PERSONA-04"> </a></b>Ensure cross-component consistency</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can verify that the same persona names are used consistently across all DAK components.</p>
+</div></td></tr><tr><td><b><a name="PERSONA-05"> </a></b>Validate through facility interviews</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHOULD">SHOULD</a></td><td><div><p>Can validate personas through in-person interviews at health facilities.</p>
+</div></td></tr></table></div><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><p class="res-header-id"><b>Narratif généré : Requirements SGAuthoring.Skills.AuthorPersonas</b></p><a name="fr-SGAuthoring.Skills.AuthorPersonas"> </a><a name="fr-hcSGAuthoring.Skills.AuthorPersonas"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-SGRequirements.html">SMART Guidelines Requirements</a></p></div><p>Ces exigences s'appliquent à l'acteur <a href="ActorDefinition-SGAuthoring.Persona.BusinessAnalyst.html">Business Analyst</a></p><table class="grid"><tr><td><b><a name="fr-PERSONA-01"> </a></b>Identify personas from L1 guidance</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can identify personas referenced in L1 normative guidance.</p>
+</div></td></tr><tr><td><b><a name="fr-PERSONA-02"> </a></b>Identify personas from SME consultations</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can identify personas participating in workflows through consultations with SMEs.</p>
+</div></td></tr><tr><td><b><a name="fr-PERSONA-03"> </a></b>Define persona competencies</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can define descriptions, competencies, and essential interventions performed by each persona.</p>
+</div></td></tr><tr><td><b><a name="fr-PERSONA-04"> </a></b>Ensure cross-component consistency</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can verify that the same persona names are used consistently across all DAK components.</p>
+</div></td></tr><tr><td><b><a name="fr-PERSONA-05"> </a></b>Validate through facility interviews</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHOULD">SHOULD</a></td><td><div><p>Can validate personas through in-person interviews at health facilities.</p>
+</div></td></tr></table></div><div xml:lang="ar" lang="ar"><hr/><p><b>Arabic</b></p><hr/><p class="res-header-id"><b>السرد المُنشأ: Requirements SGAuthoring.Skills.AuthorPersonas</b></p><a name="ar-SGAuthoring.Skills.AuthorPersonas"> </a><a name="ar-hcSGAuthoring.Skills.AuthorPersonas"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">الملف الشخصي: <a href="StructureDefinition-SGRequirements.html">SMART Guidelines Requirements</a></p></div><p>تنطبق هذه المتطلبات على الممثل <a href="ActorDefinition-SGAuthoring.Persona.BusinessAnalyst.html">Business Analyst</a></p><table class="grid"><tr><td><b><a name="ar-PERSONA-01"> </a></b>Identify personas from L1 guidance</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can identify personas referenced in L1 normative guidance.</p>
+</div></td></tr><tr><td><b><a name="ar-PERSONA-02"> </a></b>Identify personas from SME consultations</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can identify personas participating in workflows through consultations with SMEs.</p>
+</div></td></tr><tr><td><b><a name="ar-PERSONA-03"> </a></b>Define persona competencies</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can define descriptions, competencies, and essential interventions performed by each persona.</p>
+</div></td></tr><tr><td><b><a name="ar-PERSONA-04"> </a></b>Ensure cross-component consistency</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can verify that the same persona names are used consistently across all DAK components.</p>
+</div></td></tr><tr><td><b><a name="ar-PERSONA-05"> </a></b>Validate through facility interviews</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHOULD">SHOULD</a></td><td><div><p>Can validate personas through in-person interviews at health facilities.</p>
+</div></td></tr></table></div><div xml:lang="zh" lang="zh"><hr/><p><b>Chinese</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Requirements SGAuthoring.Skills.AuthorPersonas</b></p><a name="zh-SGAuthoring.Skills.AuthorPersonas"> </a><a name="zh-hcSGAuthoring.Skills.AuthorPersonas"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-SGRequirements.html">SMART Guidelines Requirements</a></p></div><p>These requirements apply to the actor <a href="ActorDefinition-SGAuthoring.Persona.BusinessAnalyst.html">Business Analyst</a></p><table class="grid"><tr><td><b><a name="zh-PERSONA-01"> </a></b>Identify personas from L1 guidance</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can identify personas referenced in L1 normative guidance.</p>
+</div></td></tr><tr><td><b><a name="zh-PERSONA-02"> </a></b>Identify personas from SME consultations</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can identify personas participating in workflows through consultations with SMEs.</p>
+</div></td></tr><tr><td><b><a name="zh-PERSONA-03"> </a></b>Define persona competencies</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can define descriptions, competencies, and essential interventions performed by each persona.</p>
+</div></td></tr><tr><td><b><a name="zh-PERSONA-04"> </a></b>Ensure cross-component consistency</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can verify that the same persona names are used consistently across all DAK components.</p>
+</div></td></tr><tr><td><b><a name="zh-PERSONA-05"> </a></b>Validate through facility interviews</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHOULD">SHOULD</a></td><td><div><p>Can validate personas through in-person interviews at health facilities.</p>
+</div></td></tr></table></div><div xml:lang="ru" lang="ru"><hr/><p><b>Russian</b></p><hr/><p class="res-header-id"><b>Сгенерированный нарратив: Requirements SGAuthoring.Skills.AuthorPersonas</b></p><a name="ru-SGAuthoring.Skills.AuthorPersonas"> </a><a name="ru-hcSGAuthoring.Skills.AuthorPersonas"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Профиль: <a href="StructureDefinition-SGRequirements.html">SMART Guidelines Requirements</a></p></div><p>Эти требования распространяются и на актера <a href="ActorDefinition-SGAuthoring.Persona.BusinessAnalyst.html">Business Analyst</a></p><table class="grid"><tr><td><b><a name="ru-PERSONA-01"> </a></b>Identify personas from L1 guidance</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can identify personas referenced in L1 normative guidance.</p>
+</div></td></tr><tr><td><b><a name="ru-PERSONA-02"> </a></b>Identify personas from SME consultations</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can identify personas participating in workflows through consultations with SMEs.</p>
+</div></td></tr><tr><td><b><a name="ru-PERSONA-03"> </a></b>Define persona competencies</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can define descriptions, competencies, and essential interventions performed by each persona.</p>
+</div></td></tr><tr><td><b><a name="ru-PERSONA-04"> </a></b>Ensure cross-component consistency</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can verify that the same persona names are used consistently across all DAK components.</p>
+</div></td></tr><tr><td><b><a name="ru-PERSONA-05"> </a></b>Validate through facility interviews</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHOULD">SHOULD</a></td><td><div><p>Can validate personas through in-person interviews at health facilities.</p>
+</div></td></tr></table></div><div xml:lang="es" lang="es"><hr/><p><b>Spanish</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Requirements SGAuthoring.Skills.AuthorPersonas</b></p><a name="es-SGAuthoring.Skills.AuthorPersonas"> </a><a name="es-hcSGAuthoring.Skills.AuthorPersonas"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-SGRequirements.html">SMART Guidelines Requirements</a></p></div><p>These requirements apply to the actor <a href="ActorDefinition-SGAuthoring.Persona.BusinessAnalyst.html">Business Analyst</a></p><table class="grid"><tr><td><b><a name="es-PERSONA-01"> </a></b>Identify personas from L1 guidance</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can identify personas referenced in L1 normative guidance.</p>
+</div></td></tr><tr><td><b><a name="es-PERSONA-02"> </a></b>Identify personas from SME consultations</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can identify personas participating in workflows through consultations with SMEs.</p>
+</div></td></tr><tr><td><b><a name="es-PERSONA-03"> </a></b>Define persona competencies</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can define descriptions, competencies, and essential interventions performed by each persona.</p>
+</div></td></tr><tr><td><b><a name="es-PERSONA-04"> </a></b>Ensure cross-component consistency</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL">SHALL</a></td><td><div><p>Can verify that the same persona names are used consistently across all DAK components.</p>
+</div></td></tr><tr><td><b><a name="es-PERSONA-05"> </a></b>Validate through facility interviews</td><td><a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHOULD">SHOULD</a></td><td><div><p>Can validate personas through in-person interviews at health facilities.</p>
+</div></td></tr></table></div></div>
+  </text>
+  <extension url="http://smart.who.int/base/StructureDefinition/SGTask">
+    <valueCoding>
+      <system value="http://smart.who.int/base/CodeSystem/SGTasks"/>
+      <code value="userTask"/>
+      <display value="User Task"/>
+    </valueCoding>
+  </extension>
+  <extension url="http://smart.who.int/base/StructureDefinition/SGTask">
+    <valueCoding>
+      <system value="http://smart.who.int/base/CodeSystem/SGTasks"/>
+      <code value="userTask"/>
+      <display value="User Task"/>
+    </valueCoding>
+  </extension>
+  <extension url="http://smart.who.int/base/StructureDefinition/SGTask">
+    <valueCoding>
+      <system value="http://smart.who.int/base/CodeSystem/SGTasks"/>
+      <code value="userTask"/>
+      <display value="User Task"/>
+    </valueCoding>
+  </extension>
+  <extension url="http://smart.who.int/base/StructureDefinition/SGTask">
+    <valueCoding>
+      <system value="http://smart.who.int/base/CodeSystem/SGTasks"/>
+      <code value="userTask"/>
+      <display value="User Task"/>
+    </valueCoding>
+  </extension>
+  <extension url="http://smart.who.int/base/StructureDefinition/SGTask">
+    <valueCoding>
+      <system value="http://smart.who.int/base/CodeSystem/SGTasks"/>
+      <code value="userTask"/>
+      <display value="User Task"/>
+    </valueCoding>
+  </extension>
+  <extension url="http://smart.who.int/base/StructureDefinition/SGUserStory">
+    <extension url="http://smart.who.int/base/StructureDefinition/SGString">
+      <valueString value="define generic personas from L1 guidance and SME consultations"/>
+    </extension>
+    <extension url="http://smart.who.int/base/StructureDefinition/SGString">
+      <valueString value="workflows accurately reflect the roles and competencies of health workers in real-world settings"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.url">
+    <valueUri value="http://smart.who.int/base/Requirements/SGAuthoring.Skills.AuthorPersonas"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.version">
+    <valueString value="1.0.0"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.name">
+    <valueString value="SkillAuthorPersonas"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.title">
+    <valueString value="Can author personas"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.status">
+    <valueCode value="draft"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.experimental">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.date">
+    <valueDateTime value="2026-08-27T08:31:36+00:00"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.publisher">
+    <valueString value="WHO"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.contact">
+    <valueContactDetail>
+      <name value="WHO"/>
+      <telecom>
+        <system value="url"/>
+        <value value="http://who.int"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.description">
+    <valueMarkdown value="Capability to define generic personas based on task-shifting guidelines and ground-truthing interviews."/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.jurisdiction"/>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.actor">
+    <valueCanonical value="http://smart.who.int/base/ActorDefinition/SGAuthoring.Persona.BusinessAnalyst"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="PERSONA-01"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.label">
+      <valueString value="Identify personas from L1 guidance"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Can identify personas referenced in L1 normative guidance."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="PERSONA-02"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.label">
+      <valueString value="Identify personas from SME consultations"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Can identify personas participating in workflows through consultations with SMEs."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="PERSONA-03"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.label">
+      <valueString value="Define persona competencies"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Can define descriptions, competencies, and essential interventions performed by each persona."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="PERSONA-04"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.label">
+      <valueString value="Ensure cross-component consistency"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Can verify that the same persona names are used consistently across all DAK components."/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key">
+      <valueId value="PERSONA-05"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.label">
+      <valueString value="Validate through facility interviews"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance">
+      <valueCode value="SHOULD"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
+      <valueMarkdown value="Can validate personas through in-person interviews at health facilities."/>
+    </extension>
+  </extension>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/fhir-types"/>
+      <code value="Requirements"/>
+    </coding>
+  </code>
+</Basic>

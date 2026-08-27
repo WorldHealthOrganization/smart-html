@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "40d85090-fd27-471b-b3b7-93a57d71b484-54",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/40d85090-fd27-471b-b3b7-93a57d71b484-54",
+  "name" : "IntersectionGoalStartEventAndGoalStartEvent",
+  "title" : "Intersection of Goal start event And Goal start event",
+  "status" : "draft",
+  "date" : "2026-08-27T08:33:43+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "32485007",
+        "display" : "Admission to hospital"
+      },
+      {
+        "code" : "308283009",
+        "display" : "Discharge from hospital"
+      },
+      {
+        "code" : "442137000",
+        "display" : "Completion time of procedure"
+      },
+      {
+        "code" : "386216000",
+        "display" : "Childbirth"
+      }]
+    }]
+  }
+}

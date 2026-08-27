@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "6a4deac9-e767-4ec7-829c-cf632446e4c2-18",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/6a4deac9-e767-4ec7-829c-cf632446e4c2-18",
+  "name" : "IntersectionDefinitionTopicAndDefinitionTopic",
+  "title" : "Intersection of DefinitionTopic And DefinitionTopic",
+  "status" : "draft",
+  "date" : "2026-08-27T08:37:08+00:00"
+}

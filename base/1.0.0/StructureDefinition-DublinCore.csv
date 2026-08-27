@@ -1,0 +1,33 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"DublinCore","DublinCore","","","",0,*,"","","","null {[]} {[]}
+","Dublin Core Metadata Element Set","Logical Model representing Dublin Core metadata elements as defined at https://www.dublincore.org/specifications/dublin-core/dcmi-terms/","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"DublinCore.title","DublinCore.title","","","",0,1,"","","","string {[]} {[]}
+","Title","A name given to the resource","","","","","","","","","",,,,,"",,,,"DublinCore.title",0,1,"",""
+"DublinCore.creator","DublinCore.creator","","","",0,*,"","","","string {[]} {[]}
+","Creator","An entity responsible for making the resource","","","","","","","","","",,,,,"",,,,"DublinCore.creator",0,*,"",""
+"DublinCore.subject","DublinCore.subject","","","",0,*,"","","","string {[]} {[]}
+","Subject","The topic of the resource","","","","","","","","","",,,,,"",,,,"DublinCore.subject",0,*,"",""
+"DublinCore.description","DublinCore.description","","","",0,1,"","","","markdown {[]} {[]}
+","Description","An account of the resource","","","","","","","","","",,,,,"",,,,"DublinCore.description",0,1,"",""
+"DublinCore.publisher","DublinCore.publisher","","","",0,1,"","","","string {[]} {[]}
+","Publisher","An entity responsible for making the resource available","","","","","","","","","",,,,,"",,,,"DublinCore.publisher",0,1,"",""
+"DublinCore.contributor","DublinCore.contributor","","","",0,*,"","","","string {[]} {[]}
+","Contributor","An entity responsible for making contributions to the resource","","","","","","","","","",,,,,"",,,,"DublinCore.contributor",0,*,"",""
+"DublinCore.date","DublinCore.date","","","",0,1,"","","","date {[]} {[]}
+","Date","A point or period of time associated with an event in the lifecycle of the resource","","","","","","","","","",,,,,"",,,,"DublinCore.date",0,1,"",""
+"DublinCore.type","DublinCore.type","","","",0,*,"","","","string {[]} {[]}
+","Type","The nature or genre of the resource","","","","","","","","","",,,,,"",,,,"DublinCore.type",0,*,"",""
+"DublinCore.format","DublinCore.format","","","",0,1,"","","","string {[]} {[]}
+","Format","The file format, physical medium, or dimensions of the resource","","","","","","","","","",,,,,"",,,,"DublinCore.format",0,1,"",""
+"DublinCore.identifier","DublinCore.identifier","","","",0,*,"","","","string {[]} {[]}
+","Identifier","An unambiguous reference to the resource within a given context","","","","","","","","","",,,,,"",,,,"DublinCore.identifier",0,*,"",""
+"DublinCore.source","DublinCore.source","","","",0,1,"","","","string {[]} {[]}
+","Source","A related resource from which the described resource is derived","","","","","","","","","",,,,,"",,,,"DublinCore.source",0,1,"",""
+"DublinCore.language","DublinCore.language","","","",0,1,"","","","string {[]} {[]}
+","Language","A language of the resource","","","","","","","","","",,,,,"",,,,"DublinCore.language",0,1,"",""
+"DublinCore.relation","DublinCore.relation","","","",0,*,"","","","string {[]} {[]}
+","Relation","A related resource","","","","","","","","","",,,,,"",,,,"DublinCore.relation",0,*,"",""
+"DublinCore.coverage","DublinCore.coverage","","","",0,1,"","","","string {[]} {[]}
+","Coverage","The spatial or temporal topic of the resource","","","","","","","","","",,,,,"",,,,"DublinCore.coverage",0,1,"",""
+"DublinCore.rights","DublinCore.rights","","","",0,1,"","","","string {[]} {[]}
+","Rights","Information about rights held in and over the resource","","","","","","","","","",,,,,"",,,,"DublinCore.rights",0,1,"",""

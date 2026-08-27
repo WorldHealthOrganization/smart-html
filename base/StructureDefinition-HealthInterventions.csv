@@ -1,0 +1,9 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"HealthInterventions","HealthInterventions","","","",0,*,"","","","null {[]} {[]}
+","Health Interventions and Recommendations (DAK)","Logical Model for representing Health Interventions and Recommendations from a DAK. Overview of the health interventions and WHO, regional or national recommendations included within the DAK.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"HealthInterventions.id","HealthInterventions.id","","","",1,1,"","","","id {[]} {[]}
+","Health Intervention ID","An identifier for the health intervention","","","","","","","","","",,,,,"",,,,"HealthInterventions.id",1,1,"",""
+"HealthInterventions.description[x]","HealthInterventions.description[x]","","","",0,1,"","","","string {[]} {[]}
+uri {[]} {[]}","Description","Description of the health intervention - either Markdown content or a URI to a Markdown file (absolute or relative to repository root)","","","","","","","","","",,,,,"",,,,"HealthInterventions.description[x]",0,1,"",""
+"HealthInterventions.reference","HealthInterventions.reference","","","",1,*,"","","","http://smart.who.int/base/StructureDefinition/DublinCore {[]} {[]}
+","Reference","Reference data element using Dublin Core metadata","","","","","","","","","",,,,,"",,,,"HealthInterventions.reference",1,*,"",""

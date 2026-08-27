@@ -1,0 +1,274 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/base/Basic/SGAuthoring.Skills.AuthorBusinessProcesses> a fhir:Basic ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "SGAuthoring.Skills.AuthorBusinessProcesses"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://smart.who.int/base/StructureDefinition/SGRequirements" ;
+       fhir:index 0 ;
+       fhir:link <http://smart.who.int/base/StructureDefinition/SGRequirements>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Requirements SGAuthoring.Skills.AuthorBusinessProcesses</b></p><a name=\"SGAuthoring.Skills.AuthorBusinessProcesses\"> </a><a name=\"hcSGAuthoring.Skills.AuthorBusinessProcesses\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-SGRequirements.html\">SMART Guidelines Requirements</a></p></div><p>These requirements apply to the actor <a href=\"ActorDefinition-SGAuthoring.Persona.BusinessAnalyst.html\">Business Analyst</a></p><table class=\"grid\"><tr><td><b><a name=\"BPMN-01\"> </a></b>Create BPMN 2.0 diagrams</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can create business process diagrams following the BPMN 2.0 standard.</p>\n</div></td></tr><tr><td><b><a name=\"BPMN-02\"> </a></b>Create overview process diagram</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can create an overview diagram reflecting all key business processes for the health area.</p>\n</div></td></tr><tr><td><b><a name=\"BPMN-03\"> </a></b>Create detailed workflow annotations</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can create detailed workflow annotations for each identified business process with activities, decision points, and interactions.</p>\n</div></td></tr><tr><td><b><a name=\"BPMN-04\"> </a></b>Apply 80/20 generalization rule</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can ensure workflows capture 80% of the scenario, leaving 20% for country-level adaptation.</p>\n</div></td></tr><tr><td><b><a name=\"BPMN-05\"> </a></b>Use swimlanes for personas</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can assign activities to the correct persona swimlanes in BPMN diagrams.</p>\n</div></td></tr><tr><td><b><a name=\"BPMN-06\"> </a></b>Identify sub-processes</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHOULD\">SHOULD</a></td><td><div><p>Can identify repeating activities and refactor them into sub-processes or referenced business processes.</p>\n</div></td></tr></table></div><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : Requirements SGAuthoring.Skills.AuthorBusinessProcesses</b></p><a name=\"fr-SGAuthoring.Skills.AuthorBusinessProcesses\"> </a><a name=\"fr-hcSGAuthoring.Skills.AuthorBusinessProcesses\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-SGRequirements.html\">SMART Guidelines Requirements</a></p></div><p>Ces exigences s'appliquent à l'acteur <a href=\"ActorDefinition-SGAuthoring.Persona.BusinessAnalyst.html\">Business Analyst</a></p><table class=\"grid\"><tr><td><b><a name=\"fr-BPMN-01\"> </a></b>Create BPMN 2.0 diagrams</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can create business process diagrams following the BPMN 2.0 standard.</p>\n</div></td></tr><tr><td><b><a name=\"fr-BPMN-02\"> </a></b>Create overview process diagram</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can create an overview diagram reflecting all key business processes for the health area.</p>\n</div></td></tr><tr><td><b><a name=\"fr-BPMN-03\"> </a></b>Create detailed workflow annotations</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can create detailed workflow annotations for each identified business process with activities, decision points, and interactions.</p>\n</div></td></tr><tr><td><b><a name=\"fr-BPMN-04\"> </a></b>Apply 80/20 generalization rule</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can ensure workflows capture 80% of the scenario, leaving 20% for country-level adaptation.</p>\n</div></td></tr><tr><td><b><a name=\"fr-BPMN-05\"> </a></b>Use swimlanes for personas</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can assign activities to the correct persona swimlanes in BPMN diagrams.</p>\n</div></td></tr><tr><td><b><a name=\"fr-BPMN-06\"> </a></b>Identify sub-processes</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHOULD\">SHOULD</a></td><td><div><p>Can identify repeating activities and refactor them into sub-processes or referenced business processes.</p>\n</div></td></tr></table></div><div xml:lang=\"ar\" lang=\"ar\"><hr/><p><b>Arabic</b></p><hr/><p class=\"res-header-id\"><b>السرد المُنشأ: Requirements SGAuthoring.Skills.AuthorBusinessProcesses</b></p><a name=\"ar-SGAuthoring.Skills.AuthorBusinessProcesses\"> </a><a name=\"ar-hcSGAuthoring.Skills.AuthorBusinessProcesses\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">الملف الشخصي: <a href=\"StructureDefinition-SGRequirements.html\">SMART Guidelines Requirements</a></p></div><p>تنطبق هذه المتطلبات على الممثل <a href=\"ActorDefinition-SGAuthoring.Persona.BusinessAnalyst.html\">Business Analyst</a></p><table class=\"grid\"><tr><td><b><a name=\"ar-BPMN-01\"> </a></b>Create BPMN 2.0 diagrams</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can create business process diagrams following the BPMN 2.0 standard.</p>\n</div></td></tr><tr><td><b><a name=\"ar-BPMN-02\"> </a></b>Create overview process diagram</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can create an overview diagram reflecting all key business processes for the health area.</p>\n</div></td></tr><tr><td><b><a name=\"ar-BPMN-03\"> </a></b>Create detailed workflow annotations</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can create detailed workflow annotations for each identified business process with activities, decision points, and interactions.</p>\n</div></td></tr><tr><td><b><a name=\"ar-BPMN-04\"> </a></b>Apply 80/20 generalization rule</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can ensure workflows capture 80% of the scenario, leaving 20% for country-level adaptation.</p>\n</div></td></tr><tr><td><b><a name=\"ar-BPMN-05\"> </a></b>Use swimlanes for personas</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can assign activities to the correct persona swimlanes in BPMN diagrams.</p>\n</div></td></tr><tr><td><b><a name=\"ar-BPMN-06\"> </a></b>Identify sub-processes</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHOULD\">SHOULD</a></td><td><div><p>Can identify repeating activities and refactor them into sub-processes or referenced business processes.</p>\n</div></td></tr></table></div><div xml:lang=\"zh\" lang=\"zh\"><hr/><p><b>Chinese</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Requirements SGAuthoring.Skills.AuthorBusinessProcesses</b></p><a name=\"zh-SGAuthoring.Skills.AuthorBusinessProcesses\"> </a><a name=\"zh-hcSGAuthoring.Skills.AuthorBusinessProcesses\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-SGRequirements.html\">SMART Guidelines Requirements</a></p></div><p>These requirements apply to the actor <a href=\"ActorDefinition-SGAuthoring.Persona.BusinessAnalyst.html\">Business Analyst</a></p><table class=\"grid\"><tr><td><b><a name=\"zh-BPMN-01\"> </a></b>Create BPMN 2.0 diagrams</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can create business process diagrams following the BPMN 2.0 standard.</p>\n</div></td></tr><tr><td><b><a name=\"zh-BPMN-02\"> </a></b>Create overview process diagram</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can create an overview diagram reflecting all key business processes for the health area.</p>\n</div></td></tr><tr><td><b><a name=\"zh-BPMN-03\"> </a></b>Create detailed workflow annotations</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can create detailed workflow annotations for each identified business process with activities, decision points, and interactions.</p>\n</div></td></tr><tr><td><b><a name=\"zh-BPMN-04\"> </a></b>Apply 80/20 generalization rule</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can ensure workflows capture 80% of the scenario, leaving 20% for country-level adaptation.</p>\n</div></td></tr><tr><td><b><a name=\"zh-BPMN-05\"> </a></b>Use swimlanes for personas</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can assign activities to the correct persona swimlanes in BPMN diagrams.</p>\n</div></td></tr><tr><td><b><a name=\"zh-BPMN-06\"> </a></b>Identify sub-processes</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHOULD\">SHOULD</a></td><td><div><p>Can identify repeating activities and refactor them into sub-processes or referenced business processes.</p>\n</div></td></tr></table></div><div xml:lang=\"ru\" lang=\"ru\"><hr/><p><b>Russian</b></p><hr/><p class=\"res-header-id\"><b>Сгенерированный нарратив: Requirements SGAuthoring.Skills.AuthorBusinessProcesses</b></p><a name=\"ru-SGAuthoring.Skills.AuthorBusinessProcesses\"> </a><a name=\"ru-hcSGAuthoring.Skills.AuthorBusinessProcesses\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Профиль: <a href=\"StructureDefinition-SGRequirements.html\">SMART Guidelines Requirements</a></p></div><p>Эти требования распространяются и на актера <a href=\"ActorDefinition-SGAuthoring.Persona.BusinessAnalyst.html\">Business Analyst</a></p><table class=\"grid\"><tr><td><b><a name=\"ru-BPMN-01\"> </a></b>Create BPMN 2.0 diagrams</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can create business process diagrams following the BPMN 2.0 standard.</p>\n</div></td></tr><tr><td><b><a name=\"ru-BPMN-02\"> </a></b>Create overview process diagram</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can create an overview diagram reflecting all key business processes for the health area.</p>\n</div></td></tr><tr><td><b><a name=\"ru-BPMN-03\"> </a></b>Create detailed workflow annotations</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can create detailed workflow annotations for each identified business process with activities, decision points, and interactions.</p>\n</div></td></tr><tr><td><b><a name=\"ru-BPMN-04\"> </a></b>Apply 80/20 generalization rule</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can ensure workflows capture 80% of the scenario, leaving 20% for country-level adaptation.</p>\n</div></td></tr><tr><td><b><a name=\"ru-BPMN-05\"> </a></b>Use swimlanes for personas</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can assign activities to the correct persona swimlanes in BPMN diagrams.</p>\n</div></td></tr><tr><td><b><a name=\"ru-BPMN-06\"> </a></b>Identify sub-processes</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHOULD\">SHOULD</a></td><td><div><p>Can identify repeating activities and refactor them into sub-processes or referenced business processes.</p>\n</div></td></tr></table></div><div xml:lang=\"es\" lang=\"es\"><hr/><p><b>Spanish</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Requirements SGAuthoring.Skills.AuthorBusinessProcesses</b></p><a name=\"es-SGAuthoring.Skills.AuthorBusinessProcesses\"> </a><a name=\"es-hcSGAuthoring.Skills.AuthorBusinessProcesses\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-SGRequirements.html\">SMART Guidelines Requirements</a></p></div><p>These requirements apply to the actor <a href=\"ActorDefinition-SGAuthoring.Persona.BusinessAnalyst.html\">Business Analyst</a></p><table class=\"grid\"><tr><td><b><a name=\"es-BPMN-01\"> </a></b>Create BPMN 2.0 diagrams</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can create business process diagrams following the BPMN 2.0 standard.</p>\n</div></td></tr><tr><td><b><a name=\"es-BPMN-02\"> </a></b>Create overview process diagram</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can create an overview diagram reflecting all key business processes for the health area.</p>\n</div></td></tr><tr><td><b><a name=\"es-BPMN-03\"> </a></b>Create detailed workflow annotations</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can create detailed workflow annotations for each identified business process with activities, decision points, and interactions.</p>\n</div></td></tr><tr><td><b><a name=\"es-BPMN-04\"> </a></b>Apply 80/20 generalization rule</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can ensure workflows capture 80% of the scenario, leaving 20% for country-level adaptation.</p>\n</div></td></tr><tr><td><b><a name=\"es-BPMN-05\"> </a></b>Use swimlanes for personas</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can assign activities to the correct persona swimlanes in BPMN diagrams.</p>\n</div></td></tr><tr><td><b><a name=\"es-BPMN-06\"> </a></b>Identify sub-processes</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHOULD\">SHOULD</a></td><td><div><p>Can identify repeating activities and refactor them into sub-processes or referenced business processes.</p>\n</div></td></tr></table></div></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://smart.who.int/base/StructureDefinition/SGTask" ] ;
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "http://smart.who.int/base/CodeSystem/SGTasks" ] ;
+       fhir:Coding.code [ fhir:value "userTask" ] ;
+       fhir:Coding.display [ fhir:value "User Task" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://smart.who.int/base/StructureDefinition/SGTask" ] ;
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "http://smart.who.int/base/CodeSystem/SGTasks" ] ;
+       fhir:Coding.code [ fhir:value "userTask" ] ;
+       fhir:Coding.display [ fhir:value "User Task" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Extension.url [ fhir:value "http://smart.who.int/base/StructureDefinition/SGTask" ] ;
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "http://smart.who.int/base/CodeSystem/SGTasks" ] ;
+       fhir:Coding.code [ fhir:value "userTask" ] ;
+       fhir:Coding.display [ fhir:value "User Task" ]
+     ]
+  ], [
+     fhir:index 3 ;
+     fhir:Extension.url [ fhir:value "http://smart.who.int/base/StructureDefinition/SGTask" ] ;
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "http://smart.who.int/base/CodeSystem/SGTasks" ] ;
+       fhir:Coding.code [ fhir:value "userTask" ] ;
+       fhir:Coding.display [ fhir:value "User Task" ]
+     ]
+  ], [
+     fhir:index 4 ;
+     fhir:Extension.url [ fhir:value "http://smart.who.int/base/StructureDefinition/SGTask" ] ;
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "http://smart.who.int/base/CodeSystem/SGTasks" ] ;
+       fhir:Coding.code [ fhir:value "userTask" ] ;
+       fhir:Coding.display [ fhir:value "User Task" ]
+     ]
+  ], [
+     fhir:index 5 ;
+     fhir:Extension.url [ fhir:value "http://smart.who.int/base/StructureDefinition/SGTask" ] ;
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "http://smart.who.int/base/CodeSystem/SGTasks" ] ;
+       fhir:Coding.code [ fhir:value "userTask" ] ;
+       fhir:Coding.display [ fhir:value "User Task" ]
+     ]
+  ], [
+     fhir:index 6 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://smart.who.int/base/StructureDefinition/SGString" ] ;
+       fhir:Extension.valueString [ fhir:value "create BPMN 2.0 business process diagrams for DAK workflows" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://smart.who.int/base/StructureDefinition/SGString" ] ;
+       fhir:Extension.valueString [ fhir:value "health programme workflows are clearly documented and implementable across country contexts" ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://smart.who.int/base/StructureDefinition/SGUserStory" ]
+  ], [
+     fhir:index 7 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.url" ] ;
+     fhir:Extension.valueUri [ fhir:value "http://smart.who.int/base/Requirements/SGAuthoring.Skills.AuthorBusinessProcesses" ]
+  ], [
+     fhir:index 8 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.version" ] ;
+     fhir:Extension.valueString [ fhir:value "1.0.0" ]
+  ], [
+     fhir:index 9 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.name" ] ;
+     fhir:Extension.valueString [ fhir:value "SkillAuthorBusinessProcesses" ]
+  ], [
+     fhir:index 10 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.title" ] ;
+     fhir:Extension.valueString [ fhir:value "Can author business processes" ]
+  ], [
+     fhir:index 11 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.status" ] ;
+     fhir:Extension.valueCode [ fhir:value "draft" ]
+  ], [
+     fhir:index 12 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.experimental" ] ;
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ], [
+     fhir:index 13 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.date" ] ;
+     fhir:Extension.valueDateTime [ fhir:value "2026-08-27T08:35:55+00:00"^^xsd:dateTime ]
+  ], [
+     fhir:index 14 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.publisher" ] ;
+     fhir:Extension.valueString [ fhir:value "WHO" ]
+  ], [
+     fhir:index 15 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.contact" ] ;
+     fhir:Extension.valueContactDetail [
+       fhir:ContactDetail.name [ fhir:value "WHO" ] ;
+       fhir:ContactDetail.telecom [
+         fhir:index 0 ;
+         fhir:ContactPoint.system [ fhir:value "url" ] ;
+         fhir:ContactPoint.value [ fhir:value "http://who.int" ]
+       ]
+     ]
+  ], [
+     fhir:index 16 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.description" ] ;
+     fhir:Extension.valueMarkdown [ fhir:value "Capability to create BPMN 2.0 business process diagrams for DAK workflows." ]
+  ], [
+     fhir:index 17 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.jurisdiction" ]
+  ], [
+     fhir:index 18 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.actor" ] ;
+     fhir:Extension.valueCanonical [
+       fhir:value "http://smart.who.int/base/ActorDefinition/SGAuthoring.Persona.BusinessAnalyst" ;
+       fhir:link <http://smart.who.int/base/ActorDefinition/SGAuthoring.Persona.BusinessAnalyst>
+     ]
+  ], [
+     fhir:index 19 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key" ] ;
+       fhir:Extension.valueId [ fhir:value "BPMN-01" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.label" ] ;
+       fhir:Extension.valueString [ fhir:value "Create BPMN 2.0 diagrams" ]
+     ], [
+       fhir:index 2 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance" ] ;
+       fhir:Extension.valueCode [ fhir:value "SHALL" ]
+     ], [
+       fhir:index 3 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "Can create business process diagrams following the BPMN 2.0 standard." ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ], [
+     fhir:index 20 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key" ] ;
+       fhir:Extension.valueId [ fhir:value "BPMN-02" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.label" ] ;
+       fhir:Extension.valueString [ fhir:value "Create overview process diagram" ]
+     ], [
+       fhir:index 2 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance" ] ;
+       fhir:Extension.valueCode [ fhir:value "SHALL" ]
+     ], [
+       fhir:index 3 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "Can create an overview diagram reflecting all key business processes for the health area." ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ], [
+     fhir:index 21 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key" ] ;
+       fhir:Extension.valueId [ fhir:value "BPMN-03" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.label" ] ;
+       fhir:Extension.valueString [ fhir:value "Create detailed workflow annotations" ]
+     ], [
+       fhir:index 2 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance" ] ;
+       fhir:Extension.valueCode [ fhir:value "SHALL" ]
+     ], [
+       fhir:index 3 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "Can create detailed workflow annotations for each identified business process with activities, decision points, and interactions." ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ], [
+     fhir:index 22 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key" ] ;
+       fhir:Extension.valueId [ fhir:value "BPMN-04" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.label" ] ;
+       fhir:Extension.valueString [ fhir:value "Apply 80/20 generalization rule" ]
+     ], [
+       fhir:index 2 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance" ] ;
+       fhir:Extension.valueCode [ fhir:value "SHALL" ]
+     ], [
+       fhir:index 3 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "Can ensure workflows capture 80% of the scenario, leaving 20% for country-level adaptation." ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ], [
+     fhir:index 23 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key" ] ;
+       fhir:Extension.valueId [ fhir:value "BPMN-05" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.label" ] ;
+       fhir:Extension.valueString [ fhir:value "Use swimlanes for personas" ]
+     ], [
+       fhir:index 2 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance" ] ;
+       fhir:Extension.valueCode [ fhir:value "SHALL" ]
+     ], [
+       fhir:index 3 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "Can assign activities to the correct persona swimlanes in BPMN diagrams." ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ], [
+     fhir:index 24 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key" ] ;
+       fhir:Extension.valueId [ fhir:value "BPMN-06" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.label" ] ;
+       fhir:Extension.valueString [ fhir:value "Identify sub-processes" ]
+     ], [
+       fhir:index 2 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance" ] ;
+       fhir:Extension.valueCode [ fhir:value "SHOULD" ]
+     ], [
+       fhir:index 3 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "Can identify repeating activities and refactor them into sub-processes or referenced business processes." ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ] ;
+  fhir:Basic.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/fhir-types" ] ;
+       fhir:Coding.code [ fhir:value "Requirements" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://smart.who.int/base/Basic/SGAuthoring.Skills.AuthorBusinessProcesses.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

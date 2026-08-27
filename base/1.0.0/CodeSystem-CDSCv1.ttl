@@ -1,0 +1,144 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/base/CodeSystem/CDSCv1> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "CDSCv1"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem CDSCv1</b></p><a name=\"CDSCv1\"> </a><a name=\"hcCDSCv1\"> </a><p>This case-insensitive code system <code>http://smart.who.int/base/CodeSystem/CDSCv1</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">A<a name=\"CDSCv1-A\"> </a></td><td>Census, population information &amp; data warehouse</td></tr><tr><td style=\"white-space:nowrap\">B<a name=\"CDSCv1-B\"> </a></td><td>Civil Registration and Vital Statistics</td></tr><tr><td style=\"white-space:nowrap\">C<a name=\"CDSCv1-C\"> </a></td><td>Client applications</td></tr><tr><td style=\"white-space:nowrap\">D<a name=\"CDSCv1-D\"> </a></td><td>Client communication system</td></tr><tr><td style=\"white-space:nowrap\">E<a name=\"CDSCv1-E\"> </a></td><td>Clinical terminology and classifications</td></tr><tr><td style=\"white-space:nowrap\">F<a name=\"CDSCv1-F\"> </a></td><td>Community-based Information System</td></tr><tr><td style=\"white-space:nowrap\">G<a name=\"CDSCv1-G\"> </a></td><td>Data interchange interoperability and accessibility</td></tr><tr><td style=\"white-space:nowrap\">H<a name=\"CDSCv1-H\"> </a></td><td>Electronic Medical Record</td></tr><tr><td style=\"white-space:nowrap\">I<a name=\"CDSCv1-I\"> </a></td><td>Emergency response system</td></tr><tr><td style=\"white-space:nowrap\">J<a name=\"CDSCv1-J\"> </a></td><td>Environmental monitoring systems</td></tr><tr><td style=\"white-space:nowrap\">K<a name=\"CDSCv1-K\"> </a></td><td>Facility Management Information System</td></tr><tr><td style=\"white-space:nowrap\">L<a name=\"CDSCv1-L\"> </a></td><td>Geographic Information Systems</td></tr><tr><td style=\"white-space:nowrap\">M<a name=\"CDSCv1-M\"> </a></td><td>Health finance and insurance system</td></tr><tr><td style=\"white-space:nowrap\">N<a name=\"CDSCv1-N\"> </a></td><td>Health Management Information System</td></tr><tr><td style=\"white-space:nowrap\">O<a name=\"CDSCv1-O\"> </a></td><td>Human Resource Information System</td></tr><tr><td style=\"white-space:nowrap\">P<a name=\"CDSCv1-P\"> </a></td><td>Identification registries and directories</td></tr><tr><td style=\"white-space:nowrap\">Q<a name=\"CDSCv1-Q\"> </a></td><td>Knowledge Management</td></tr><tr><td style=\"white-space:nowrap\">R<a name=\"CDSCv1-R\"> </a></td><td>Laboratory and Diagnostic System</td></tr><tr><td style=\"white-space:nowrap\">S<a name=\"CDSCv1-S\"> </a></td><td>Learning and Training System</td></tr><tr><td style=\"white-space:nowrap\">T<a name=\"CDSCv1-T\"> </a></td><td>Logistics Management Information System</td></tr><tr><td style=\"white-space:nowrap\">U<a name=\"CDSCv1-U\"> </a></td><td>Pharmacy Information System</td></tr><tr><td style=\"white-space:nowrap\">V<a name=\"CDSCv1-V\"> </a></td><td>Public health and disease surveillance</td></tr><tr><td style=\"white-space:nowrap\">W<a name=\"CDSCv1-W\"> </a></td><td>Research information system</td></tr><tr><td style=\"white-space:nowrap\">X<a name=\"CDSCv1-X\"> </a></td><td>SHR and health information repositories</td></tr><tr><td style=\"white-space:nowrap\">Y<a name=\"CDSCv1-Y\"> </a></td><td>Telemedicine</td></tr></table></div><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : CodeSystem CDSCv1</b></p><a name=\"fr-CDSCv1\"> </a><a name=\"fr-hcCDSCv1\"> </a><p>This case-insensitive code system <code>http://smart.who.int/base/CodeSystem/CDSCv1</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">A<a name=\"fr-CDSCv1-A\"> </a></td><td>Census, population information &amp; data warehouse</td></tr><tr><td style=\"white-space:nowrap\">B<a name=\"fr-CDSCv1-B\"> </a></td><td>Civil Registration and Vital Statistics</td></tr><tr><td style=\"white-space:nowrap\">C<a name=\"fr-CDSCv1-C\"> </a></td><td>Client applications</td></tr><tr><td style=\"white-space:nowrap\">D<a name=\"fr-CDSCv1-D\"> </a></td><td>Client communication system</td></tr><tr><td style=\"white-space:nowrap\">E<a name=\"fr-CDSCv1-E\"> </a></td><td>Clinical terminology and classifications</td></tr><tr><td style=\"white-space:nowrap\">F<a name=\"fr-CDSCv1-F\"> </a></td><td>Community-based Information System</td></tr><tr><td style=\"white-space:nowrap\">G<a name=\"fr-CDSCv1-G\"> </a></td><td>Data interchange interoperability and accessibility</td></tr><tr><td style=\"white-space:nowrap\">H<a name=\"fr-CDSCv1-H\"> </a></td><td>Electronic Medical Record</td></tr><tr><td style=\"white-space:nowrap\">I<a name=\"fr-CDSCv1-I\"> </a></td><td>Emergency response system</td></tr><tr><td style=\"white-space:nowrap\">J<a name=\"fr-CDSCv1-J\"> </a></td><td>Environmental monitoring systems</td></tr><tr><td style=\"white-space:nowrap\">K<a name=\"fr-CDSCv1-K\"> </a></td><td>Facility Management Information System</td></tr><tr><td style=\"white-space:nowrap\">L<a name=\"fr-CDSCv1-L\"> </a></td><td>Geographic Information Systems</td></tr><tr><td style=\"white-space:nowrap\">M<a name=\"fr-CDSCv1-M\"> </a></td><td>Health finance and insurance system</td></tr><tr><td style=\"white-space:nowrap\">N<a name=\"fr-CDSCv1-N\"> </a></td><td>Health Management Information System</td></tr><tr><td style=\"white-space:nowrap\">O<a name=\"fr-CDSCv1-O\"> </a></td><td>Human Resource Information System</td></tr><tr><td style=\"white-space:nowrap\">P<a name=\"fr-CDSCv1-P\"> </a></td><td>Identification registries and directories</td></tr><tr><td style=\"white-space:nowrap\">Q<a name=\"fr-CDSCv1-Q\"> </a></td><td>Knowledge Management</td></tr><tr><td style=\"white-space:nowrap\">R<a name=\"fr-CDSCv1-R\"> </a></td><td>Laboratory and Diagnostic System</td></tr><tr><td style=\"white-space:nowrap\">S<a name=\"fr-CDSCv1-S\"> </a></td><td>Learning and Training System</td></tr><tr><td style=\"white-space:nowrap\">T<a name=\"fr-CDSCv1-T\"> </a></td><td>Logistics Management Information System</td></tr><tr><td style=\"white-space:nowrap\">U<a name=\"fr-CDSCv1-U\"> </a></td><td>Pharmacy Information System</td></tr><tr><td style=\"white-space:nowrap\">V<a name=\"fr-CDSCv1-V\"> </a></td><td>Public health and disease surveillance</td></tr><tr><td style=\"white-space:nowrap\">W<a name=\"fr-CDSCv1-W\"> </a></td><td>Research information system</td></tr><tr><td style=\"white-space:nowrap\">X<a name=\"fr-CDSCv1-X\"> </a></td><td>SHR and health information repositories</td></tr><tr><td style=\"white-space:nowrap\">Y<a name=\"fr-CDSCv1-Y\"> </a></td><td>Telemedicine</td></tr></table></div><div xml:lang=\"ar\" lang=\"ar\"><hr/><p><b>Arabic</b></p><hr/><p class=\"res-header-id\"><b>السرد المُنشأ: CodeSystem CDSCv1</b></p><a name=\"ar-CDSCv1\"> </a><a name=\"ar-hcCDSCv1\"> </a><p>يُعرّف هذا case-insensitive نظام الشيفرة <code>http://smart.who.int/base/CodeSystem/CDSCv1</code> الرمز التالي<f test=\"code-count != 1\">s</f>:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>الكود</b></td><td><b>العرض</b></td></tr><tr><td style=\"white-space:nowrap\">A<a name=\"ar-CDSCv1-A\"> </a></td><td>Census, population information &amp; data warehouse</td></tr><tr><td style=\"white-space:nowrap\">B<a name=\"ar-CDSCv1-B\"> </a></td><td>Civil Registration and Vital Statistics</td></tr><tr><td style=\"white-space:nowrap\">C<a name=\"ar-CDSCv1-C\"> </a></td><td>Client applications</td></tr><tr><td style=\"white-space:nowrap\">D<a name=\"ar-CDSCv1-D\"> </a></td><td>Client communication system</td></tr><tr><td style=\"white-space:nowrap\">E<a name=\"ar-CDSCv1-E\"> </a></td><td>Clinical terminology and classifications</td></tr><tr><td style=\"white-space:nowrap\">F<a name=\"ar-CDSCv1-F\"> </a></td><td>Community-based Information System</td></tr><tr><td style=\"white-space:nowrap\">G<a name=\"ar-CDSCv1-G\"> </a></td><td>Data interchange interoperability and accessibility</td></tr><tr><td style=\"white-space:nowrap\">H<a name=\"ar-CDSCv1-H\"> </a></td><td>Electronic Medical Record</td></tr><tr><td style=\"white-space:nowrap\">I<a name=\"ar-CDSCv1-I\"> </a></td><td>Emergency response system</td></tr><tr><td style=\"white-space:nowrap\">J<a name=\"ar-CDSCv1-J\"> </a></td><td>Environmental monitoring systems</td></tr><tr><td style=\"white-space:nowrap\">K<a name=\"ar-CDSCv1-K\"> </a></td><td>Facility Management Information System</td></tr><tr><td style=\"white-space:nowrap\">L<a name=\"ar-CDSCv1-L\"> </a></td><td>Geographic Information Systems</td></tr><tr><td style=\"white-space:nowrap\">M<a name=\"ar-CDSCv1-M\"> </a></td><td>Health finance and insurance system</td></tr><tr><td style=\"white-space:nowrap\">N<a name=\"ar-CDSCv1-N\"> </a></td><td>Health Management Information System</td></tr><tr><td style=\"white-space:nowrap\">O<a name=\"ar-CDSCv1-O\"> </a></td><td>Human Resource Information System</td></tr><tr><td style=\"white-space:nowrap\">P<a name=\"ar-CDSCv1-P\"> </a></td><td>Identification registries and directories</td></tr><tr><td style=\"white-space:nowrap\">Q<a name=\"ar-CDSCv1-Q\"> </a></td><td>Knowledge Management</td></tr><tr><td style=\"white-space:nowrap\">R<a name=\"ar-CDSCv1-R\"> </a></td><td>Laboratory and Diagnostic System</td></tr><tr><td style=\"white-space:nowrap\">S<a name=\"ar-CDSCv1-S\"> </a></td><td>Learning and Training System</td></tr><tr><td style=\"white-space:nowrap\">T<a name=\"ar-CDSCv1-T\"> </a></td><td>Logistics Management Information System</td></tr><tr><td style=\"white-space:nowrap\">U<a name=\"ar-CDSCv1-U\"> </a></td><td>Pharmacy Information System</td></tr><tr><td style=\"white-space:nowrap\">V<a name=\"ar-CDSCv1-V\"> </a></td><td>Public health and disease surveillance</td></tr><tr><td style=\"white-space:nowrap\">W<a name=\"ar-CDSCv1-W\"> </a></td><td>Research information system</td></tr><tr><td style=\"white-space:nowrap\">X<a name=\"ar-CDSCv1-X\"> </a></td><td>SHR and health information repositories</td></tr><tr><td style=\"white-space:nowrap\">Y<a name=\"ar-CDSCv1-Y\"> </a></td><td>Telemedicine</td></tr></table></div><div xml:lang=\"zh\" lang=\"zh\"><hr/><p><b>Chinese</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: 代码系统 CDSCv1</b></p><a name=\"zh-CDSCv1\"> </a><a name=\"zh-hcCDSCv1\"> </a><p>This case-insensitive code system <code>http://smart.who.int/base/CodeSystem/CDSCv1</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">A<a name=\"zh-CDSCv1-A\"> </a></td><td>Census, population information &amp; data warehouse</td></tr><tr><td style=\"white-space:nowrap\">B<a name=\"zh-CDSCv1-B\"> </a></td><td>Civil Registration and Vital Statistics</td></tr><tr><td style=\"white-space:nowrap\">C<a name=\"zh-CDSCv1-C\"> </a></td><td>Client applications</td></tr><tr><td style=\"white-space:nowrap\">D<a name=\"zh-CDSCv1-D\"> </a></td><td>Client communication system</td></tr><tr><td style=\"white-space:nowrap\">E<a name=\"zh-CDSCv1-E\"> </a></td><td>Clinical terminology and classifications</td></tr><tr><td style=\"white-space:nowrap\">F<a name=\"zh-CDSCv1-F\"> </a></td><td>Community-based Information System</td></tr><tr><td style=\"white-space:nowrap\">G<a name=\"zh-CDSCv1-G\"> </a></td><td>Data interchange interoperability and accessibility</td></tr><tr><td style=\"white-space:nowrap\">H<a name=\"zh-CDSCv1-H\"> </a></td><td>Electronic Medical Record</td></tr><tr><td style=\"white-space:nowrap\">I<a name=\"zh-CDSCv1-I\"> </a></td><td>Emergency response system</td></tr><tr><td style=\"white-space:nowrap\">J<a name=\"zh-CDSCv1-J\"> </a></td><td>Environmental monitoring systems</td></tr><tr><td style=\"white-space:nowrap\">K<a name=\"zh-CDSCv1-K\"> </a></td><td>Facility Management Information System</td></tr><tr><td style=\"white-space:nowrap\">L<a name=\"zh-CDSCv1-L\"> </a></td><td>Geographic Information Systems</td></tr><tr><td style=\"white-space:nowrap\">M<a name=\"zh-CDSCv1-M\"> </a></td><td>Health finance and insurance system</td></tr><tr><td style=\"white-space:nowrap\">N<a name=\"zh-CDSCv1-N\"> </a></td><td>Health Management Information System</td></tr><tr><td style=\"white-space:nowrap\">O<a name=\"zh-CDSCv1-O\"> </a></td><td>Human Resource Information System</td></tr><tr><td style=\"white-space:nowrap\">P<a name=\"zh-CDSCv1-P\"> </a></td><td>Identification registries and directories</td></tr><tr><td style=\"white-space:nowrap\">Q<a name=\"zh-CDSCv1-Q\"> </a></td><td>Knowledge Management</td></tr><tr><td style=\"white-space:nowrap\">R<a name=\"zh-CDSCv1-R\"> </a></td><td>Laboratory and Diagnostic System</td></tr><tr><td style=\"white-space:nowrap\">S<a name=\"zh-CDSCv1-S\"> </a></td><td>Learning and Training System</td></tr><tr><td style=\"white-space:nowrap\">T<a name=\"zh-CDSCv1-T\"> </a></td><td>Logistics Management Information System</td></tr><tr><td style=\"white-space:nowrap\">U<a name=\"zh-CDSCv1-U\"> </a></td><td>Pharmacy Information System</td></tr><tr><td style=\"white-space:nowrap\">V<a name=\"zh-CDSCv1-V\"> </a></td><td>Public health and disease surveillance</td></tr><tr><td style=\"white-space:nowrap\">W<a name=\"zh-CDSCv1-W\"> </a></td><td>Research information system</td></tr><tr><td style=\"white-space:nowrap\">X<a name=\"zh-CDSCv1-X\"> </a></td><td>SHR and health information repositories</td></tr><tr><td style=\"white-space:nowrap\">Y<a name=\"zh-CDSCv1-Y\"> </a></td><td>Telemedicine</td></tr></table></div><div xml:lang=\"ru\" lang=\"ru\"><hr/><p><b>Russian</b></p><hr/><p class=\"res-header-id\"><b>Сгенерированный нарратив: CodeSystem CDSCv1</b></p><a name=\"ru-CDSCv1\"> </a><a name=\"ru-hcCDSCv1\"> </a><p>Данная система кодов <code>http://smart.who.int/base/CodeSystem/CDSCv1</code> case-insensitive определяет следующие коды:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Код</b></td><td><b>Отображение</b></td></tr><tr><td style=\"white-space:nowrap\">A<a name=\"ru-CDSCv1-A\"> </a></td><td>Census, population information &amp; data warehouse</td></tr><tr><td style=\"white-space:nowrap\">B<a name=\"ru-CDSCv1-B\"> </a></td><td>Civil Registration and Vital Statistics</td></tr><tr><td style=\"white-space:nowrap\">C<a name=\"ru-CDSCv1-C\"> </a></td><td>Client applications</td></tr><tr><td style=\"white-space:nowrap\">D<a name=\"ru-CDSCv1-D\"> </a></td><td>Client communication system</td></tr><tr><td style=\"white-space:nowrap\">E<a name=\"ru-CDSCv1-E\"> </a></td><td>Clinical terminology and classifications</td></tr><tr><td style=\"white-space:nowrap\">F<a name=\"ru-CDSCv1-F\"> </a></td><td>Community-based Information System</td></tr><tr><td style=\"white-space:nowrap\">G<a name=\"ru-CDSCv1-G\"> </a></td><td>Data interchange interoperability and accessibility</td></tr><tr><td style=\"white-space:nowrap\">H<a name=\"ru-CDSCv1-H\"> </a></td><td>Electronic Medical Record</td></tr><tr><td style=\"white-space:nowrap\">I<a name=\"ru-CDSCv1-I\"> </a></td><td>Emergency response system</td></tr><tr><td style=\"white-space:nowrap\">J<a name=\"ru-CDSCv1-J\"> </a></td><td>Environmental monitoring systems</td></tr><tr><td style=\"white-space:nowrap\">K<a name=\"ru-CDSCv1-K\"> </a></td><td>Facility Management Information System</td></tr><tr><td style=\"white-space:nowrap\">L<a name=\"ru-CDSCv1-L\"> </a></td><td>Geographic Information Systems</td></tr><tr><td style=\"white-space:nowrap\">M<a name=\"ru-CDSCv1-M\"> </a></td><td>Health finance and insurance system</td></tr><tr><td style=\"white-space:nowrap\">N<a name=\"ru-CDSCv1-N\"> </a></td><td>Health Management Information System</td></tr><tr><td style=\"white-space:nowrap\">O<a name=\"ru-CDSCv1-O\"> </a></td><td>Human Resource Information System</td></tr><tr><td style=\"white-space:nowrap\">P<a name=\"ru-CDSCv1-P\"> </a></td><td>Identification registries and directories</td></tr><tr><td style=\"white-space:nowrap\">Q<a name=\"ru-CDSCv1-Q\"> </a></td><td>Knowledge Management</td></tr><tr><td style=\"white-space:nowrap\">R<a name=\"ru-CDSCv1-R\"> </a></td><td>Laboratory and Diagnostic System</td></tr><tr><td style=\"white-space:nowrap\">S<a name=\"ru-CDSCv1-S\"> </a></td><td>Learning and Training System</td></tr><tr><td style=\"white-space:nowrap\">T<a name=\"ru-CDSCv1-T\"> </a></td><td>Logistics Management Information System</td></tr><tr><td style=\"white-space:nowrap\">U<a name=\"ru-CDSCv1-U\"> </a></td><td>Pharmacy Information System</td></tr><tr><td style=\"white-space:nowrap\">V<a name=\"ru-CDSCv1-V\"> </a></td><td>Public health and disease surveillance</td></tr><tr><td style=\"white-space:nowrap\">W<a name=\"ru-CDSCv1-W\"> </a></td><td>Research information system</td></tr><tr><td style=\"white-space:nowrap\">X<a name=\"ru-CDSCv1-X\"> </a></td><td>SHR and health information repositories</td></tr><tr><td style=\"white-space:nowrap\">Y<a name=\"ru-CDSCv1-Y\"> </a></td><td>Telemedicine</td></tr></table></div><div xml:lang=\"es\" lang=\"es\"><hr/><p><b>Spanish</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: SistemaDeCodigos CDSCv1</b></p><a name=\"es-CDSCv1\"> </a><a name=\"es-hcCDSCv1\"> </a><p>This case-insensitive code system <code>http://smart.who.int/base/CodeSystem/CDSCv1</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">A<a name=\"es-CDSCv1-A\"> </a></td><td>Census, population information &amp; data warehouse</td></tr><tr><td style=\"white-space:nowrap\">B<a name=\"es-CDSCv1-B\"> </a></td><td>Civil Registration and Vital Statistics</td></tr><tr><td style=\"white-space:nowrap\">C<a name=\"es-CDSCv1-C\"> </a></td><td>Client applications</td></tr><tr><td style=\"white-space:nowrap\">D<a name=\"es-CDSCv1-D\"> </a></td><td>Client communication system</td></tr><tr><td style=\"white-space:nowrap\">E<a name=\"es-CDSCv1-E\"> </a></td><td>Clinical terminology and classifications</td></tr><tr><td style=\"white-space:nowrap\">F<a name=\"es-CDSCv1-F\"> </a></td><td>Community-based Information System</td></tr><tr><td style=\"white-space:nowrap\">G<a name=\"es-CDSCv1-G\"> </a></td><td>Data interchange interoperability and accessibility</td></tr><tr><td style=\"white-space:nowrap\">H<a name=\"es-CDSCv1-H\"> </a></td><td>Electronic Medical Record</td></tr><tr><td style=\"white-space:nowrap\">I<a name=\"es-CDSCv1-I\"> </a></td><td>Emergency response system</td></tr><tr><td style=\"white-space:nowrap\">J<a name=\"es-CDSCv1-J\"> </a></td><td>Environmental monitoring systems</td></tr><tr><td style=\"white-space:nowrap\">K<a name=\"es-CDSCv1-K\"> </a></td><td>Facility Management Information System</td></tr><tr><td style=\"white-space:nowrap\">L<a name=\"es-CDSCv1-L\"> </a></td><td>Geographic Information Systems</td></tr><tr><td style=\"white-space:nowrap\">M<a name=\"es-CDSCv1-M\"> </a></td><td>Health finance and insurance system</td></tr><tr><td style=\"white-space:nowrap\">N<a name=\"es-CDSCv1-N\"> </a></td><td>Health Management Information System</td></tr><tr><td style=\"white-space:nowrap\">O<a name=\"es-CDSCv1-O\"> </a></td><td>Human Resource Information System</td></tr><tr><td style=\"white-space:nowrap\">P<a name=\"es-CDSCv1-P\"> </a></td><td>Identification registries and directories</td></tr><tr><td style=\"white-space:nowrap\">Q<a name=\"es-CDSCv1-Q\"> </a></td><td>Knowledge Management</td></tr><tr><td style=\"white-space:nowrap\">R<a name=\"es-CDSCv1-R\"> </a></td><td>Laboratory and Diagnostic System</td></tr><tr><td style=\"white-space:nowrap\">S<a name=\"es-CDSCv1-S\"> </a></td><td>Learning and Training System</td></tr><tr><td style=\"white-space:nowrap\">T<a name=\"es-CDSCv1-T\"> </a></td><td>Logistics Management Information System</td></tr><tr><td style=\"white-space:nowrap\">U<a name=\"es-CDSCv1-U\"> </a></td><td>Pharmacy Information System</td></tr><tr><td style=\"white-space:nowrap\">V<a name=\"es-CDSCv1-V\"> </a></td><td>Public health and disease surveillance</td></tr><tr><td style=\"white-space:nowrap\">W<a name=\"es-CDSCv1-W\"> </a></td><td>Research information system</td></tr><tr><td style=\"white-space:nowrap\">X<a name=\"es-CDSCv1-X\"> </a></td><td>SHR and health information repositories</td></tr><tr><td style=\"white-space:nowrap\">Y<a name=\"es-CDSCv1-Y\"> </a></td><td>Telemedicine</td></tr></table></div></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "http://smart.who.int/base/CodeSystem/CDSCv1"] ;
+  fhir:CodeSystem.version [ fhir:value "1.0.0"] ;
+  fhir:CodeSystem.name [ fhir:value "CDSCv1"] ;
+  fhir:CodeSystem.title [ fhir:value "Classification of Digital Health System Categories v1"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-08-27T08:31:36+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "WHO"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "WHO" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://who.int" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "CodeSystem for Classification of Digital Health System Categories v1. Autogenerated from DAK artifacts"] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "25"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "A" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Census, population information & data warehouse" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "B" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Civil Registration and Vital Statistics" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "C" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Client applications" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "D" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Client communication system" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "E" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Clinical terminology and classifications" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "F" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Community-based Information System" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "G" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Data interchange interoperability and accessibility" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "H" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Electronic Medical Record" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "I" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Emergency response system" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "J" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Environmental monitoring systems" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "K" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Facility Management Information System" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "L" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Geographic Information Systems" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "M" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Health finance and insurance system" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "N" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Health Management Information System" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "O" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Human Resource Information System" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "P" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Identification registries and directories" ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Q" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Knowledge Management" ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "R" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Laboratory and Diagnostic System" ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "S" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Learning and Training System" ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "T" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Logistics Management Information System" ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "U" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pharmacy Information System" ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "V" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Public health and disease surveillance" ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "W" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Research information system" ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "X" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SHR and health information repositories" ]
+  ], [
+     fhir:index 24 ;
+     fhir:CodeSystem.concept.code [ fhir:value "Y" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Telemedicine" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://smart.who.int/base/CodeSystem/CDSCv1.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

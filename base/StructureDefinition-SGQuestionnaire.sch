@@ -14,6 +14,9 @@
     <sch:rule context="f:Questionnaire">
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/web-source']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/web-source': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://smart.who.int/base/StructureDefinition/SGActorExt']) &gt;= 1">extension with URL = 'http://smart.who.int/base/StructureDefinition/SGActorExt': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://smart.who.int/base/StructureDefinition/SGcode']) &gt;= 1">extension with URL = 'http://smart.who.int/base/StructureDefinition/SGcode': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:name) &gt;= 1">name: minimum cardinality of 'name' is 1</sch:assert>
       <sch:assert test="count(f:publisher) &gt;= 1">publisher: minimum cardinality of 'publisher' is 1</sch:assert>
     </sch:rule>

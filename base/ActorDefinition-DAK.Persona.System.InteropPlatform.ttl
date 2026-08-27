@@ -1,0 +1,88 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/base/Basic/DAK.Persona.System.InteropPlatform> a fhir:Basic ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "DAK.Persona.System.InteropPlatform"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ActorDefinition DAK.Persona.System.InteropPlatform</b></p><a name=\"DAK.Persona.System.InteropPlatform\"> </a><a name=\"hcDAK.Persona.System.InteropPlatform\"> </a><table class=\"grid\"><tr><td><b>Actor: InteroperabilityPlatform </b></td><td>Health Information Exchange / Interoperability Platform</td><td>Type: system </td></tr><tr><td colspan=\"3\"><div><p>https://www.who.int/publications/i/item/9789240081949</p>\n</div></td></tr></table></div><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : ActorDefinition DAK.Persona.System.InteropPlatform</b></p><a name=\"fr-DAK.Persona.System.InteropPlatform\"> </a><a name=\"fr-hcDAK.Persona.System.InteropPlatform\"> </a><table class=\"grid\"><tr><td><b>Acteur : InteroperabilityPlatform </b></td><td>Health Information Exchange / Interoperability Platform</td><td>Type : system </td></tr><tr><td colspan=\"3\"><div><p>https://www.who.int/publications/i/item/9789240081949</p>\n</div></td></tr></table></div><div xml:lang=\"ar\" lang=\"ar\"><hr/><p><b>Arabic</b></p><hr/><p class=\"res-header-id\"><b>السرد المُنشأ: ActorDefinition DAK.Persona.System.InteropPlatform</b></p><a name=\"ar-DAK.Persona.System.InteropPlatform\"> </a><a name=\"ar-hcDAK.Persona.System.InteropPlatform\"> </a><table class=\"grid\"><tr><td><b>الفاعل: InteroperabilityPlatform </b></td><td>Health Information Exchange / Interoperability Platform</td><td>اكتب: system </td></tr><tr><td colspan=\"3\"><div><p>https://www.who.int/publications/i/item/9789240081949</p>\n</div></td></tr></table></div><div xml:lang=\"zh\" lang=\"zh\"><hr/><p><b>Chinese</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ActorDefinition DAK.Persona.System.InteropPlatform</b></p><a name=\"zh-DAK.Persona.System.InteropPlatform\"> </a><a name=\"zh-hcDAK.Persona.System.InteropPlatform\"> </a><table class=\"grid\"><tr><td><b>Actor: InteroperabilityPlatform </b></td><td>Health Information Exchange / Interoperability Platform</td><td>Type: system </td></tr><tr><td colspan=\"3\"><div><p>https://www.who.int/publications/i/item/9789240081949</p>\n</div></td></tr></table></div><div xml:lang=\"ru\" lang=\"ru\"><hr/><p><b>Russian</b></p><hr/><p class=\"res-header-id\"><b>Сгенерированный нарратив: ActorDefinition DAK.Persona.System.InteropPlatform</b></p><a name=\"ru-DAK.Persona.System.InteropPlatform\"> </a><a name=\"ru-hcDAK.Persona.System.InteropPlatform\"> </a><table class=\"grid\"><tr><td><b>Актер: InteroperabilityPlatform </b></td><td>Health Information Exchange / Interoperability Platform</td><td>Тип: system </td></tr><tr><td colspan=\"3\"><div><p>https://www.who.int/publications/i/item/9789240081949</p>\n</div></td></tr></table></div><div xml:lang=\"es\" lang=\"es\"><hr/><p><b>Spanish</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ActorDefinition DAK.Persona.System.InteropPlatform</b></p><a name=\"es-DAK.Persona.System.InteropPlatform\"> </a><a name=\"es-hcDAK.Persona.System.InteropPlatform\"> </a><table class=\"grid\"><tr><td><b>Actor: InteroperabilityPlatform </b></td><td>Health Information Exchange / Interoperability Platform</td><td>Type: system </td></tr><tr><td colspan=\"3\"><div><p>https://www.who.int/publications/i/item/9789240081949</p>\n</div></td></tr></table></div></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.url" ] ;
+     fhir:Extension.valueUri [ fhir:value "http://smart.who.int/base/ActorDefinition/DAK.Persona.System.InteropPlatform" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.version" ] ;
+     fhir:Extension.valueString [ fhir:value "1.0.0" ]
+  ], [
+     fhir:index 2 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.name" ] ;
+     fhir:Extension.valueString [ fhir:value "InteroperabilityPlatform" ]
+  ], [
+     fhir:index 3 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.title" ] ;
+     fhir:Extension.valueString [ fhir:value "Health Information Exchange / Interoperability Platform" ]
+  ], [
+     fhir:index 4 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.status" ] ;
+     fhir:Extension.valueCode [ fhir:value "draft" ]
+  ], [
+     fhir:index 5 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.experimental" ] ;
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ], [
+     fhir:index 6 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.date" ] ;
+     fhir:Extension.valueDateTime [ fhir:value "2026-08-27T08:35:55+00:00"^^xsd:dateTime ]
+  ], [
+     fhir:index 7 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.publisher" ] ;
+     fhir:Extension.valueString [ fhir:value "WHO" ]
+  ], [
+     fhir:index 8 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.contact" ] ;
+     fhir:Extension.valueContactDetail [
+       fhir:ContactDetail.name [ fhir:value "WHO" ] ;
+       fhir:ContactDetail.telecom [
+         fhir:index 0 ;
+         fhir:ContactPoint.system [ fhir:value "url" ] ;
+         fhir:ContactPoint.value [ fhir:value "http://who.int" ]
+       ]
+     ]
+  ], [
+     fhir:index 9 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.description" ] ;
+     fhir:Extension.valueMarkdown [ fhir:value "A middleware system or shared infrastructure that enables health data exchange\nbetween disparate health information systems using standard protocols and formats.\n\nThe interoperability platform supports DHIs including:\n- Point-to-point data integration (4.4.1)\n- Standards-compliant interoperability (4.4.2)\n- Message routing to appropriate architecture components (4.4.3)\n- Data storage and aggregation across systems (4.1.2)\n\n**Services and Application Type**: D2 — Data interchange and interoperability\n\n**Functional areas**: Semantic interoperability, technical interoperability,\ninformation exchange, data mediation, enterprise service bus." ]
+  ], [
+     fhir:index 10 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.jurisdiction" ]
+  ], [
+     fhir:index 11 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.type" ] ;
+     fhir:Extension.valueCode [ fhir:value "system" ]
+  ], [
+     fhir:index 12 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.documentation" ] ;
+     fhir:Extension.valueMarkdown [ fhir:value "https://www.who.int/publications/i/item/9789240081949" ]
+  ] ;
+  fhir:Basic.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/fhir-types" ] ;
+       fhir:Coding.code [ fhir:value "ActorDefinition" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://smart.who.int/base/Basic/DAK.Persona.System.InteropPlatform.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="DAK.Persona.DataManager"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ActorDefinition DAK.Persona.DataManager</b></p><a name="DAK.Persona.DataManager"> </a><a name="hcDAK.Persona.DataManager"> </a><table class="grid"><tr><td><b>Actor: DataManager </b></td><td>Health Data Manager and Analyst</td><td>Type: person </td></tr><tr><td colspan="3"><div><p>https://www.who.int/publications/i/item/9789240081949</p>
+</div></td></tr></table></div><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><p class="res-header-id"><b>Narratif généré : ActorDefinition DAK.Persona.DataManager</b></p><a name="fr-DAK.Persona.DataManager"> </a><a name="fr-hcDAK.Persona.DataManager"> </a><table class="grid"><tr><td><b>Acteur : DataManager </b></td><td>Health Data Manager and Analyst</td><td>Type : person </td></tr><tr><td colspan="3"><div><p>https://www.who.int/publications/i/item/9789240081949</p>
+</div></td></tr></table></div><div xml:lang="ar" lang="ar"><hr/><p><b>Arabic</b></p><hr/><p class="res-header-id"><b>السرد المُنشأ: ActorDefinition DAK.Persona.DataManager</b></p><a name="ar-DAK.Persona.DataManager"> </a><a name="ar-hcDAK.Persona.DataManager"> </a><table class="grid"><tr><td><b>الفاعل: DataManager </b></td><td>Health Data Manager and Analyst</td><td>اكتب: person </td></tr><tr><td colspan="3"><div><p>https://www.who.int/publications/i/item/9789240081949</p>
+</div></td></tr></table></div><div xml:lang="zh" lang="zh"><hr/><p><b>Chinese</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ActorDefinition DAK.Persona.DataManager</b></p><a name="zh-DAK.Persona.DataManager"> </a><a name="zh-hcDAK.Persona.DataManager"> </a><table class="grid"><tr><td><b>Actor: DataManager </b></td><td>Health Data Manager and Analyst</td><td>Type: person </td></tr><tr><td colspan="3"><div><p>https://www.who.int/publications/i/item/9789240081949</p>
+</div></td></tr></table></div><div xml:lang="ru" lang="ru"><hr/><p><b>Russian</b></p><hr/><p class="res-header-id"><b>Сгенерированный нарратив: ActorDefinition DAK.Persona.DataManager</b></p><a name="ru-DAK.Persona.DataManager"> </a><a name="ru-hcDAK.Persona.DataManager"> </a><table class="grid"><tr><td><b>Актер: DataManager </b></td><td>Health Data Manager and Analyst</td><td>Тип: person </td></tr><tr><td colspan="3"><div><p>https://www.who.int/publications/i/item/9789240081949</p>
+</div></td></tr></table></div><div xml:lang="es" lang="es"><hr/><p><b>Spanish</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ActorDefinition DAK.Persona.DataManager</b></p><a name="es-DAK.Persona.DataManager"> </a><a name="es-hcDAK.Persona.DataManager"> </a><table class="grid"><tr><td><b>Actor: DataManager </b></td><td>Health Data Manager and Analyst</td><td>Type: person </td></tr><tr><td colspan="3"><div><p>https://www.who.int/publications/i/item/9789240081949</p>
+</div></td></tr></table></div></div>
+  </text>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.url">
+    <valueUri value="http://smart.who.int/base/ActorDefinition/DAK.Persona.DataManager"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.version">
+    <valueString value="1.0.0"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.name">
+    <valueString value="DataManager"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.title">
+    <valueString value="Health Data Manager and Analyst"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.status">
+    <valueCode value="draft"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.experimental">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.date">
+    <valueDateTime value="2026-08-27T08:35:55+00:00"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.publisher">
+    <valueString value="WHO"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.contact">
+    <valueContactDetail>
+      <name value="WHO"/>
+      <telecom>
+        <system value="url"/>
+        <value value="http://who.int"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.description">
+    <valueMarkdown value="A professional who manages, analyses, and disseminates health data to support&#xA;evidence-based decision-making. This corresponds to the 'Data services' user&#xA;group in CDISAH v2, providing crosscutting functionality across the health system.&#xA;&#xA;Data managers use DHIs to:&#xA;- Create data collection forms and manage data acquisition (4.1.1)&#xA;- Store and aggregate health data (4.1.2)&#xA;- Synthesise and visualise data for reporting and dashboards (4.1.3)&#xA;- Apply automated analytics and predictive modelling including AI/ML (4.1.4)&#xA;- Parse, de-duplicate, and curate coded datasets and terminologies (4.2)&#xA;- Classify disease codes and causes of mortality (4.2.3)&#xA;- Map geographic locations of facilities, events, populations, and providers (4.3)&#xA;- Enable point-to-point data integration and standards-compliant interoperability (4.4)&#xA;- Maintain data governance including authentication, privacy, and consent (4.5)&#xA;&#xA;**ISCO-08**: 2120 (Mathematicians, actuaries and statisticians), 2521 (Database&#xA;designers and administrators), 2523 (Computer network professionals), 3120&#xA;(Computer network and systems technicians).&#xA;&#xA;**Examples**: Biostatistician, epidemiologist, health informatician, data analyst,&#xA;DHIS2 administrator, GIS specialist, interoperability engineer, terminology manager."/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.jurisdiction"/>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.type">
+    <valueCode value="person"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.documentation">
+    <valueMarkdown value="https://www.who.int/publications/i/item/9789240081949"/>
+  </extension>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/fhir-types"/>
+      <code value="ActorDefinition"/>
+    </coding>
+  </code>
+</Basic>

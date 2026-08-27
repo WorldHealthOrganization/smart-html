@@ -1,0 +1,84 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/base/Basic/SGAuthoring.Persona.BusinessAnalyst> a fhir:Basic ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "SGAuthoring.Persona.BusinessAnalyst"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ActorDefinition SGAuthoring.Persona.BusinessAnalyst</b></p><a name=\"SGAuthoring.Persona.BusinessAnalyst\"> </a><a name=\"hcSGAuthoring.Persona.BusinessAnalyst\"> </a><table class=\"grid\"><tr><td><b>Actor: BusinessAnalyst </b></td><td>Business Analyst</td><td>Type: person </td></tr><tr><td colspan=\"3\"/></tr></table></div><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : ActorDefinition SGAuthoring.Persona.BusinessAnalyst</b></p><a name=\"fr-SGAuthoring.Persona.BusinessAnalyst\"> </a><a name=\"fr-hcSGAuthoring.Persona.BusinessAnalyst\"> </a><table class=\"grid\"><tr><td><b>Acteur : BusinessAnalyst </b></td><td>Business Analyst</td><td>Type : person </td></tr><tr><td colspan=\"3\"/></tr></table></div><div xml:lang=\"ar\" lang=\"ar\"><hr/><p><b>Arabic</b></p><hr/><p class=\"res-header-id\"><b>السرد المُنشأ: ActorDefinition SGAuthoring.Persona.BusinessAnalyst</b></p><a name=\"ar-SGAuthoring.Persona.BusinessAnalyst\"> </a><a name=\"ar-hcSGAuthoring.Persona.BusinessAnalyst\"> </a><table class=\"grid\"><tr><td><b>الفاعل: BusinessAnalyst </b></td><td>Business Analyst</td><td>اكتب: person </td></tr><tr><td colspan=\"3\"/></tr></table></div><div xml:lang=\"zh\" lang=\"zh\"><hr/><p><b>Chinese</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ActorDefinition SGAuthoring.Persona.BusinessAnalyst</b></p><a name=\"zh-SGAuthoring.Persona.BusinessAnalyst\"> </a><a name=\"zh-hcSGAuthoring.Persona.BusinessAnalyst\"> </a><table class=\"grid\"><tr><td><b>Actor: BusinessAnalyst </b></td><td>Business Analyst</td><td>Type: person </td></tr><tr><td colspan=\"3\"/></tr></table></div><div xml:lang=\"ru\" lang=\"ru\"><hr/><p><b>Russian</b></p><hr/><p class=\"res-header-id\"><b>Сгенерированный нарратив: ActorDefinition SGAuthoring.Persona.BusinessAnalyst</b></p><a name=\"ru-SGAuthoring.Persona.BusinessAnalyst\"> </a><a name=\"ru-hcSGAuthoring.Persona.BusinessAnalyst\"> </a><table class=\"grid\"><tr><td><b>Актер: BusinessAnalyst </b></td><td>Business Analyst</td><td>Тип: person </td></tr><tr><td colspan=\"3\"/></tr></table></div><div xml:lang=\"es\" lang=\"es\"><hr/><p><b>Spanish</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ActorDefinition SGAuthoring.Persona.BusinessAnalyst</b></p><a name=\"es-SGAuthoring.Persona.BusinessAnalyst\"> </a><a name=\"es-hcSGAuthoring.Persona.BusinessAnalyst\"> </a><table class=\"grid\"><tr><td><b>Actor: BusinessAnalyst </b></td><td>Business Analyst</td><td>Type: person </td></tr><tr><td colspan=\"3\"/></tr></table></div></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.url" ] ;
+     fhir:Extension.valueUri [ fhir:value "http://smart.who.int/base/ActorDefinition/SGAuthoring.Persona.BusinessAnalyst" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.version" ] ;
+     fhir:Extension.valueString [ fhir:value "1.0.0" ]
+  ], [
+     fhir:index 2 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.name" ] ;
+     fhir:Extension.valueString [ fhir:value "BusinessAnalyst" ]
+  ], [
+     fhir:index 3 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.title" ] ;
+     fhir:Extension.valueString [ fhir:value "Business Analyst" ]
+  ], [
+     fhir:index 4 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.status" ] ;
+     fhir:Extension.valueCode [ fhir:value "draft" ]
+  ], [
+     fhir:index 5 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.experimental" ] ;
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ], [
+     fhir:index 6 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.date" ] ;
+     fhir:Extension.valueDateTime [ fhir:value "2026-08-27T08:31:36+00:00"^^xsd:dateTime ]
+  ], [
+     fhir:index 7 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.publisher" ] ;
+     fhir:Extension.valueString [ fhir:value "WHO" ]
+  ], [
+     fhir:index 8 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.contact" ] ;
+     fhir:Extension.valueContactDetail [
+       fhir:ContactDetail.name [ fhir:value "WHO" ] ;
+       fhir:ContactDetail.telecom [
+         fhir:index 0 ;
+         fhir:ContactPoint.system [ fhir:value "url" ] ;
+         fhir:ContactPoint.value [ fhir:value "http://who.int" ]
+       ]
+     ]
+  ], [
+     fhir:index 9 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.description" ] ;
+     fhir:Extension.valueMarkdown [ fhir:value "A digital health informatician specializing in business analysis who authors\nL2 DAK components. Business analysts translate clinical guidelines and\nnormative products into structured DAK artifacts including business processes,\ndata dictionaries, decision-support logic, and requirements.\n\nKey activities:\n- Review L1 source documents and extract structured content\n- Author generic personas based on task-shifting guidelines\n- Create user scenario narratives\n- Design BPMN 2.0 business process diagrams\n- Define core data elements and data dictionary\n- Develop decision-support logic tables (DMN standard)\n- Develop scheduling logic tables\n- Define indicators and performance metrics\n- Capture functional and non-functional requirements\n- Streamline content across DAK components for consistency\n\n**Source**: IG Starter Kit, L2 DAK Authoring, Section 2.1 \"Fill in DAK components\";\nCommunity of Practice page" ]
+  ], [
+     fhir:index 10 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.jurisdiction" ]
+  ], [
+     fhir:index 11 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.type" ] ;
+     fhir:Extension.valueCode [ fhir:value "person" ]
+  ] ;
+  fhir:Basic.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/fhir-types" ] ;
+       fhir:Coding.code [ fhir:value "ActorDefinition" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://smart.who.int/base/Basic/SGAuthoring.Persona.BusinessAnalyst.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

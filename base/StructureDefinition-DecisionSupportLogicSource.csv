@@ -1,0 +1,12 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"DecisionSupportLogicSource","DecisionSupportLogicSource","","","",0,*,"","","","null {[]} {[]}
+","Decision Support Logic Source","Source reference for Decision Support Logic - exactly one of the following must be provided:
+- url (url data type): URL to retrieve DecisionSupportLogic definition from input/ or external source
+- canonical (canonical data type): Canonical URI pointing to the DecisionSupportLogic definition
+- instance: Inline DecisionSupportLogic instance data","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"DecisionSupportLogicSource.url","DecisionSupportLogicSource.url","","","",0,1,"","","","url {[]} {[]}
+","URL","URL to retrieve DecisionSupportLogic definition from input/ or external source","","","","","","","","","",,,,,"",,,,"DecisionSupportLogicSource.url",0,1,"",""
+"DecisionSupportLogicSource.canonical","DecisionSupportLogicSource.canonical","","","",0,1,"","","","canonical {[]} {[CanonicalType[http://smart.who.int/base/StructureDefinition/DecisionSupportLogic]]}
+","Canonical","Canonical URI pointing to the DecisionSupportLogic definition","","","","","","","","","",,,,,"",,,,"DecisionSupportLogicSource.canonical",0,1,"",""
+"DecisionSupportLogicSource.instance","DecisionSupportLogicSource.instance","","","",0,1,"","","","http://smart.who.int/base/StructureDefinition/DecisionSupportLogic {[]} {[]}
+","Instance","Inline DecisionSupportLogic instance data","","","","","","","","","",,,,,"",,,,"DecisionSupportLogicSource.instance",0,1,"",""

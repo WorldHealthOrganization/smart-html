@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Smart Guidelines Documentation Section - TTL Representation - SMART Base v0.2.0</title>
+    <title>Smart Guidelines Documentation Section - TTL Representation - SMART Base v1.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -44,8 +44,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5.29"}
-    h3,h4,h5,h6{--heading-prefix:"5.29"}</style>
+    <style type="text/css">h2{--heading-prefix:"9.144"}
+    h3,h4,h5,h6{--heading-prefix:"9.144"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
 
       <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
@@ -69,6 +69,22 @@
   <li>
     <a href="index.html">Home</a>
   </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Authoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="authoring-process.html">Process</a>
+      </li>
+      <li>
+        <a href="authoring-personas.html">Personas</a>
+      </li>
+      <li>
+        <a href="authoring-skills.html">Skills</a>
+      </li>
+    </ul>
+  </li>
   <li>
     <a href="downloads.html">Downloads</a>
   </li>
@@ -79,6 +95,9 @@
     <ul class="dropdown-menu">
       <li>
         <a href="artifacts.html">Artifact Index</a>
+      </li>
+      <li>
+        <a href="dak-api.html">DAK API</a>
       </li>
     </ul>
   </li>
@@ -110,6 +129,8 @@
         <!-- Placeholder for child template header declarations -->
 <div id="project-nav">
     <a id="who-logo" no-external="true" href="index.html">
+      
+<img height="50" style="margin:7px" alt="Welcome on standards website" src="assets/images/h-logo-blue.svg"/>
         
     </a>
 </div>
@@ -119,10 +140,10 @@
 </div> 
 
 
-        <div id="ig-status" class="ig-status-draft">
+        <div id="ig-status" class="ig-status-active">
           <p><span style="font-size:12pt;font-weight:bold">SMART Base</span>
             <br/>
-            <span style="display:inline-block;">0.2.0 - ci-build
+            <span style="display:inline-block;">1.0.0 - release
 
 
             </span>
@@ -150,7 +171,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the SMART Base (v0.2.0: Releases Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://smart.who.int/base/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">This page is part of the SMART Base (v1.0.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://smart.who.int/base/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -205,7 +226,7 @@
         
           Active
           
-            as of 2025-04-02
+            as of 2026-08-27
           
         
       </td>
@@ -221,12 +242,53 @@
 
 
 
-  <div style="position: relative;">
-    <button class="btn-copy" style="position: absolute; top: 10px; right: 20px; z-index: 10;"
-            title="Click to copy ttl"
-            data-clipboard-target="#format-content"></button>
-    <pre class="rdf" style="white-space: pre; overflow-x: auto;"><code id="format-content" class="language-turtle" data-src="ValueSet-DocumentationSection.ttl"></code></pre>
-  </div>
+  <pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden"><code class="language-turtle">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+&lt;http://hl7.org/fhir/ValueSet/DocumentationSection&gt; a fhir:ValueSet ;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R4/resource.html#ValueSet.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;DocumentationSection&quot;] ;
+  <a href="http://hl7.org/fhir/R4/domainresource.html#ValueSet.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ] ;
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;div xml:lang=\&quot;en\&quot; lang=\&quot;en\&quot;&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;English&lt;/b&gt;&lt;/p&gt;&lt;hr/&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet DocumentationSection&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;DocumentationSection\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcDocumentationSection\&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include all codes defined in &lt;code&gt;http://smart.who.int/base/CodeSystem/DocumentationSection&lt;/code&gt;&lt;span title=\&quot;Version is not explicitly stated. No matching Code System found\&quot;&gt; version Not Stated (use latest from terminology server)&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div xml:lang=\&quot;fr\&quot; lang=\&quot;fr\&quot;&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;French&lt;/b&gt;&lt;/p&gt;&lt;hr/&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : EnsembleValeurs DocumentationSection&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;fr-DocumentationSection\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;fr-hcDocumentationSection\&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include tous les codes définis dans &lt;code&gt;http://smart.who.int/base/CodeSystem/DocumentationSection&lt;/code&gt;&lt;span title=\&quot;La version n'est pas explicitement indiquée. Aucun Système de codes (Code System) correspondant trouvé\&quot;&gt; version non précisé(e) (utilise la dernière version provenant du serveur de terminologie)&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div xml:lang=\&quot;ar\&quot; lang=\&quot;ar\&quot;&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;Arabic&lt;/b&gt;&lt;/p&gt;&lt;hr/&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;السرد المُنشأ: ValueSet DocumentationSection&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ar-DocumentationSection\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;ar-hcDocumentationSection\&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include جميع الرموز المحددة في &lt;code&gt;http://smart.who.int/base/CodeSystem/DocumentationSection&lt;/code&gt;&lt;span title=\&quot;Version is not explicitly stated. No matching Code System found\&quot;&gt; الإصدار Not Stated (use latest from terminology server)&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div xml:lang=\&quot;zh\&quot; lang=\&quot;zh\&quot;&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;Chinese&lt;/b&gt;&lt;/p&gt;&lt;hr/&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: 取值集合 DocumentationSection&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;zh-DocumentationSection\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;zh-hcDocumentationSection\&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include all codes defined in &lt;code&gt;http://smart.who.int/base/CodeSystem/DocumentationSection&lt;/code&gt;&lt;span title=\&quot;Version is not explicitly stated. No matching Code System found\&quot;&gt; version Not Stated (use latest from terminology server)&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div xml:lang=\&quot;ru\&quot; lang=\&quot;ru\&quot;&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;Russian&lt;/b&gt;&lt;/p&gt;&lt;hr/&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Сгенерированный нарратив: ValueSet DocumentationSection&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ru-DocumentationSection\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;ru-hcDocumentationSection\&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include все коды, определенные в &lt;code&gt;http://smart.who.int/base/CodeSystem/DocumentationSection&lt;/code&gt;&lt;span title=\&quot;Version is not explicitly stated. No matching Code System found\&quot;&gt; версия Not Stated (use latest from terminology server)&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div xml:lang=\&quot;es\&quot; lang=\&quot;es\&quot;&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;Spanish&lt;/b&gt;&lt;/p&gt;&lt;hr/&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ConjuntoValores / ConjuntoDeValores DocumentationSection&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;es-DocumentationSection\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;es-hcDocumentationSection\&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include all codes defined in &lt;code&gt;http://smart.who.int/base/CodeSystem/DocumentationSection&lt;/code&gt;&lt;span title=\&quot;Version is not explicitly stated. No matching Code System found\&quot;&gt; version Not Stated (use latest from terminology server)&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&quot;
+  ] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">fhir:ValueSet.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://smart.who.int/base/ValueSet/DocumentationSection&quot;] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">fhir:ValueSet.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;1.0.0&quot;] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">fhir:ValueSet.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;DocumentationSection&quot;] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">fhir:ValueSet.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Smart Guidelines Documentation Section&quot;] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">fhir:ValueSet.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">fhir:ValueSet.experimental</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2026-08-27T08:35:55+00:00&quot;^^xsd:dateTime] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">fhir:ValueSet.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;WHO&quot;] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">fhir:ValueSet.contact</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;WHO&quot; ] ;
+     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;url&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;http://who.int&quot; ]
+     ]
+  ] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">fhir:ValueSet.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;Value Set for Smart Guidelines Documentation Section to autogenerate documentation from artifacts&quot;] ;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">fhir:ValueSet.compose</a> [
+     <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">fhir:ValueSet.compose.include</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
+       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">fhir:ValueSet.compose.include.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://smart.who.int/base/CodeSystem/DocumentationSection&quot; ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+&lt;http://hl7.org/fhir/ValueSet/DocumentationSection.ttl&gt; a owl:Ontology ;
+  owl:imports fhir:fhir.ttl ;
+  owl:versionIRI &lt;http://build.fhir.org/ValueSet/DocumentationSection.ttl&gt; .
+
+</code></pre>
 
 
 
@@ -251,7 +313,7 @@
 
 <div class="inner-wrapper">
   <p>
-    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.base#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Apr 2, 2025 12:10+0200">2025-04-02</span>
+    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.base#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 27, 2026 08:35+0000">2026-08-27</span>
     <br/>
     <span style="color: var(--footer-highlight-text-color)">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -279,7 +341,6 @@
 <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
 <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
 <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
-    <script type="text/javascript" src="assets/js/format-loader.js"> </script>
 <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
 <!-- Analytics Below
 ================================================== -->

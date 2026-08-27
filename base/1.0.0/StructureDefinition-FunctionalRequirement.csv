@@ -1,0 +1,15 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"FunctionalRequirement","FunctionalRequirement","","","",0,*,"","","","null {[]} {[]}
+","Functional Requirement (DAK)","Logical Model for representing functional requirement from a DAK","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"FunctionalRequirement.id","FunctionalRequirement.id","","","",1,1,"","","","id {[]} {[]}
+","Requirement ID","An identifier or code for the requirement","","","","","","","","","",,,,,"",,,,"FunctionalRequirement.id",1,1,"",""
+"FunctionalRequirement.activity","FunctionalRequirement.activity","","","",1,1,"","","","markdown {[]} {[]}
+","Activity","Description of the activity being performed","","","","","","","","","",,,,,"",,,,"FunctionalRequirement.activity",1,1,"",""
+"FunctionalRequirement.actor","FunctionalRequirement.actor","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://smart.who.int/base/StructureDefinition/SGActor]]}
+","Actor","The actor(s) that should fulfill the requirement","","","","","","","","","",,,,,"",,,,"FunctionalRequirement.actor",0,*,"",""
+"FunctionalRequirement.capability[x]","FunctionalRequirement.capability[x]","","","",0,1,"","","","markdown {[]} {[]}
+Coding {[]} {[]}","Capability","Capability achieved by an actor fulfilling the requirement (I want)","","","","","","","","","",,,,,"",,,,"FunctionalRequirement.capability[x]",0,1,"",""
+"FunctionalRequirement.benefit[x]","FunctionalRequirement.benefit[x]","","","",0,1,"","","","markdown {[]} {[]}
+Coding {[]} {[]}","Benefit","Benefit to an actor fulfilling the requirement (so that)","","","","","","","","","",,,,,"",,,,"FunctionalRequirement.benefit[x]",0,1,"",""
+"FunctionalRequirement.classification","FunctionalRequirement.classification","","","",0,*,"","","","Coding {[]} {[]}
+","Classification","Classification of the identifier","","","","","","","","","",,,,,"",,,,"FunctionalRequirement.classification",0,*,"",""

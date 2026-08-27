@@ -1,0 +1,13 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"GenericPersona","GenericPersona","","","",0,*,"","","","null {[]} {[]}
+","Generic Persona (DAK)","Logical Model for representing Generic Personas from a DAK. Depiction of the human and system actors. Human actors are end users, supervisors and related stakeholders who would be interacting with the digital system or involved in the clinical care, public health or health system pathway.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"GenericPersona.title","GenericPersona.title","","","",1,1,"","","","string {[]} {[]}
+","Title","Title of the persona","","","","","","","","","",,,,,"",,,,"GenericPersona.title",1,1,"",""
+"GenericPersona.id","GenericPersona.id","","","",1,1,"","","","id {[]} {[]}
+","Persona ID","Identifier for the persona","","","","","","","","","",,,,,"",,,,"GenericPersona.id",1,1,"",""
+"GenericPersona.description[x]","GenericPersona.description[x]","","","",1,1,"","","","string {[]} {[]}
+uri {[]} {[]}","Description","Description of the persona - either Markdown content or a URI to a Markdown file (absolute or relative to repository root)","","","","","","","","","",,,,,"",,,,"GenericPersona.description[x]",1,1,"",""
+"GenericPersona.otherNames","GenericPersona.otherNames","","","",0,*,"","","","string {[]} {[]}
+","Other Names/Examples","Other names or examples for the persona","","","","","","","","","",,,,,"",,,,"GenericPersona.otherNames",0,*,"",""
+"GenericPersona.iscoCode","GenericPersona.iscoCode","","","",0,*,"","","","code {[]} {[]}
+","ISCO Code","ISCO-08 codes for occupation classification","","","","","","","","","",,"extensible","","http://smart.who.int/base/ValueSet/ISCO08ValueSet","",,,,"GenericPersona.iscoCode",0,*,"",""

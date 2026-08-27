@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>International Standard Classification of Occupations 2008 - SMART Base v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+    <link href="assets/css/fa-all.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/who.css" rel="stylesheet"/>
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"9.151"}
+    h3,h4,h5,h6{--heading-prefix:"9.151"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+
+      <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+        <div id="stripe"> </div>
+        <div class="container">  <!-- container -->
+          <!-- HEADER CONTENT -->
+  
+          <nav class="navbar navbar-inverse">
+            <!--status-bar-->
+            <div class="container">
+              <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+              </button>
+              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+              <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Authoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="authoring-process.html">Process</a>
+      </li>
+      <li>
+        <a href="authoring-personas.html">Personas</a>
+      </li>
+      <li>
+        <a href="authoring-skills.html">Skills</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Indices
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Artifact Index</a>
+      </li>
+      <li>
+        <a href="dak-api.html">DAK API</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+              </div>  <!-- /.nav-collapse -->
+
+              <div class="sf_colsIn col-md-8  navbar-right-container" data-sf-element="LanguageSelectorSearch" data-placeholder-label="Language Selector and Search" style="display: flex; justify-content: flex-end; align-items: center;">
+                <!-- This div will be pushed to the right -->
+                <div class="language-selector" style="margin-left: auto; background-color: #00477d; color: white;">
+                  <i class="fa fa-language fa-lg"></i>
+                  <label for="language-selector"> </label>
+                  <select onChange="openLink(value)" id="language-selector" name="language-selector">
+                    <option disabled selected>Select language</option>
+                    <option value="en" class="selected">English</option>
+                  </select>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+                <!-- Search Content -->
+              </div>
+            </div>  <!-- /.container -->
+          </nav>  <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+        </div>  <!-- /container -->
+      </div>  <!-- /segment-navbar -->
+      
+
+      <div class="container" style=" justify-content: space-between; align-items: left;">
+
+        <!-- Placeholder for child template header declarations -->
+<div id="project-nav">
+    <a id="who-logo" no-external="true" href="index.html">
+      
+<img height="50" style="margin:7px" alt="Welcome on standards website" src="assets/images/h-logo-blue.svg"/>
+        
+    </a>
+</div>
+
+ <div id="family-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir">  </a>
+</div> 
+
+
+        <div id="ig-status" class="ig-status-active">
+          <p><span style="font-size:12pt;font-weight:bold">SMART Base</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>International Standard Classification of Occupations 2008</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART Base (v1.0.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a data-no-external="true" href="http://smart.who.int/base/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-ISCO08.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-ISCO08.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-ISCO08.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: International Standard Classification of Occupations 2008
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://www.ilo.org/public/english/bureau/stat/isco/isco08/<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://www.ilo.org/public/english/bureau/stat/isco/isco08/"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.0.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://www.ilo.org/public/english/bureau/stat/isco/isco08/|1.0.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2026-08-27
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">ISCO08</span></td>
+    </tr>
+
+
+
+
+    <tr>
+      <td colspan="5"><p><em>Copyright/Legal</em>: © International Labour Organization 2008</p>
+</td>
+    </tr>
+
+  </table>
+
+<p>
+<p>ISCO-08 codes from the International Labour Organization official classification</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-ISCO08ValueSet.html">ISCO-08 Value Set</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="ISCO08"> </a><a name="hcISCO08"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p>
+<table class="grid" data-fhir="generated"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>Type</b></td><td><b>Description</b></td></tr>
+<tr><td>definition</td>
+<td>definition</td>
+<td>string</td>
+<td>Definition of the ISCO-08 code</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://www.ilo.org/public/english/bureau/stat/isco/isco08/</code> defines the following codes:</p>
+<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>definition</b></td></tr>
+<tr><td style="white-space:nowrap">0<a name="ISCO08-0"> </a></td>
+<td>Armed Forces Occupations</td>
+<td>Armed forces occupations include all jobs held by members of the armed forces.</td></tr>
+<tr><td style="white-space:nowrap">1<a name="ISCO08-1"> </a></td>
+<td>Managers</td>
+<td>Managers plan, direct, coordinate and evaluate the overall activities of enterprises, governments and other organizations, or of organizational units within them, and formulate and review their policies, laws, rules and regulations.</td></tr>
+<tr><td style="white-space:nowrap">2<a name="ISCO08-2"> </a></td>
+<td>Professionals</td>
+<td>Professionals increase the existing stock of knowledge; apply scientific or artistic concepts and theories; teach about the foregoing in a systematic manner; or engage in any combination of these activities.</td></tr>
+<tr><td style="white-space:nowrap">3<a name="ISCO08-3"> </a></td>
+<td>Technicians and Associate Professionals</td>
+<td>Technicians and associate professionals perform mostly technical and related tasks connected with research and the application of scientific or artistic concepts and operational methods, and government or business regulations.</td></tr>
+<tr><td style="white-space:nowrap">4<a name="ISCO08-4"> </a></td>
+<td>Clerical Support Workers</td>
+<td>Clerical support workers record, organise, store, compute and retrieve information, and perform a number of clerical duties.</td></tr>
+<tr><td style="white-space:nowrap">5<a name="ISCO08-5"> </a></td>
+<td>Service and Sales Workers</td>
+<td>Service and sales workers provide personal and protective services related to travel, housekeeping, catering, personal care, protection against fire and unlawful acts; or demonstrate and sell goods in wholesale or retail shops and similar establishments.</td></tr>
+<tr><td style="white-space:nowrap">6<a name="ISCO08-6"> </a></td>
+<td>Skilled Agricultural, Forestry and Fishery Workers</td>
+<td>Skilled agricultural, forestry and fishery workers grow and harvest field or tree and shrub crops, gather wild fruits and plants, breed, tend or hunt animals, produce a variety of animal husbandry products, cultivate, conserve and exploit forests, breed or catch fish, cultivate or gather other forms of aquatic life.</td></tr>
+<tr><td style="white-space:nowrap">7<a name="ISCO08-7"> </a></td>
+<td>Craft and Related Trades Workers</td>
+<td>Craft and related trades workers apply specific knowledge and skills to construct and maintain buildings, form metal, erect metal structures, set machine tools, and fit, maintain and repair machinery, equipment or tools.</td></tr>
+<tr><td style="white-space:nowrap">8<a name="ISCO08-8"> </a></td>
+<td>Plant and Machine Operators and Assemblers</td>
+<td>Plant and machine operators and assemblers operate and monitor industrial and agricultural machinery and equipment on the spot or by remote control, drive and operate trains, motor vehicles and mobile machinery and equipment, or assemble products from component parts.</td></tr>
+<tr><td style="white-space:nowrap">9<a name="ISCO08-9"> </a></td>
+<td>Elementary Occupations</td>
+<td>Elementary occupations involve the performance of simple and routine tasks which may require the use of hand-held tools and considerable physical effort.</td></tr>
+<tr><td style="white-space:nowrap">11<a name="ISCO08-11"> </a></td>
+<td>Chief Executives, Senior Officials and Legislators</td>
+<td>Chief executives, senior officials and legislators formulate government policy, exercise governmental functions, direct the activities of enterprises and organizations, and act as representatives of the people.</td></tr>
+<tr><td style="white-space:nowrap">12<a name="ISCO08-12"> </a></td>
+<td>Administrative and Commercial Managers</td>
+<td>Administrative and commercial managers plan, direct, coordinate and evaluate the overall activities of enterprises, governments and other organizations.</td></tr>
+<tr><td style="white-space:nowrap">13<a name="ISCO08-13"> </a></td>
+<td>Production and Specialised Services Managers</td>
+<td>Production and specialised services managers plan, direct, coordinate and evaluate the activities of production and specialised service operations.</td></tr>
+<tr><td style="white-space:nowrap">14<a name="ISCO08-14"> </a></td>
+<td>Hospitality, Retail and Other Services Managers</td>
+<td>Hospitality, retail and other services managers plan, direct, coordinate and evaluate the activities of hospitality, retail and other service operations.</td></tr>
+<tr><td style="white-space:nowrap">21<a name="ISCO08-21"> </a></td>
+<td>Science and Engineering Professionals</td>
+<td>Science and engineering professionals conduct research, improve or develop concepts, theories and operational methods, and apply knowledge of the physical sciences, mathematics, engineering and technology.</td></tr>
+<tr><td style="white-space:nowrap">22<a name="ISCO08-22"> </a></td>
+<td>Health Professionals</td>
+<td>Health professionals conduct research, improve or develop concepts, theories and operational methods, and apply knowledge of medicine, nursing, dentistry, pharmacy and health promotion to diagnose, treat and prevent illness, disease, injury and other physical and mental impairments in humans.</td></tr>
+<tr><td style="white-space:nowrap">23<a name="ISCO08-23"> </a></td>
+<td>Teaching Professionals</td>
+<td>Teaching professionals plan, direct and undertake the teaching of children, students and adults at different educational levels.</td></tr>
+<tr><td style="white-space:nowrap">24<a name="ISCO08-24"> </a></td>
+<td>Business and Administration Professionals</td>
+<td>Business and administration professionals plan, organize, direct and coordinate the activities of business and administration.</td></tr>
+<tr><td style="white-space:nowrap">25<a name="ISCO08-25"> </a></td>
+<td>Information and Communications Technology Professionals</td>
+<td>Information and communications technology professionals conduct research, plan, design, develop, implement, manage and maintain information and communications technology systems.</td></tr>
+<tr><td style="white-space:nowrap">26<a name="ISCO08-26"> </a></td>
+<td>Legal, Social and Cultural Professionals</td>
+<td>Legal, social and cultural professionals conduct research, develop concepts and methodologies in legal, social and cultural fields, and apply these concepts and techniques.</td></tr>
+<tr><td style="white-space:nowrap">31<a name="ISCO08-31"> </a></td>
+<td>Science and Engineering Associate Professionals</td>
+<td>Science and engineering associate professionals perform technical tasks connected with research and the application of concepts and operational methods in the physical sciences, earth sciences, engineering and technology.</td></tr>
+<tr><td style="white-space:nowrap">32<a name="ISCO08-32"> </a></td>
+<td>Health Associate Professionals</td>
+<td>Health associate professionals perform technical and practical tasks to support the diagnosis, treatment and prevention of illness, disease, injury and other physical and mental impairments in humans, and to assist health professionals.</td></tr>
+<tr><td style="white-space:nowrap">33<a name="ISCO08-33"> </a></td>
+<td>Business and Administration Associate Professionals</td>
+<td>Business and administration associate professionals perform technical tasks related to the practical application of concepts and operational methods in business and administration.</td></tr>
+<tr><td style="white-space:nowrap">34<a name="ISCO08-34"> </a></td>
+<td>Legal, Social, Cultural and Related Associate Professionals</td>
+<td>Legal, social, cultural and related associate professionals perform technical tasks related to the practical application of concepts and operational methods related to law, social work, culture, sports and religion.</td></tr>
+<tr><td style="white-space:nowrap">35<a name="ISCO08-35"> </a></td>
+<td>Information and Communications Technicians</td>
+<td>Information and communications technicians install, maintain and control information and communications technology systems.</td></tr>
+<tr><td style="white-space:nowrap">41<a name="ISCO08-41"> </a></td>
+<td>General and Keyboard Clerks</td>
+<td>General and keyboard clerks record, organize, store, compute and retrieve information, and perform clerical duties.</td></tr>
+<tr><td style="white-space:nowrap">42<a name="ISCO08-42"> </a></td>
+<td>Customer Services Clerks</td>
+<td>Customer services clerks deal directly with clients concerning money-handling operations, travel arrangements, requests for information and appointments.</td></tr>
+<tr><td style="white-space:nowrap">43<a name="ISCO08-43"> </a></td>
+<td>Numerical and Material Recording Clerks</td>
+<td>Numerical and material recording clerks record and retrieve numerical data and information.</td></tr>
+<tr><td style="white-space:nowrap">44<a name="ISCO08-44"> </a></td>
+<td>Other Clerical Support Workers</td>
+<td>Other clerical support workers perform clerical tasks not elsewhere classified.</td></tr>
+<tr><td style="white-space:nowrap">51<a name="ISCO08-51"> </a></td>
+<td>Personal Service Workers</td>
+<td>Personal service workers provide personal services related to travel, housekeeping, catering and personal care.</td></tr>
+<tr><td style="white-space:nowrap">52<a name="ISCO08-52"> </a></td>
+<td>Sales Workers</td>
+<td>Sales workers sell goods in wholesale and retail establishments and provide sales-related services.</td></tr>
+<tr><td style="white-space:nowrap">53<a name="ISCO08-53"> </a></td>
+<td>Personal Care Workers</td>
+<td>Personal care workers provide care and support to people in need of care due to age, illness, injury, disability or other conditions.</td></tr>
+<tr><td style="white-space:nowrap">54<a name="ISCO08-54"> </a></td>
+<td>Protective Services Workers</td>
+<td>Protective services workers provide protection against fire and unlawful acts.</td></tr>
+<tr><td style="white-space:nowrap">61<a name="ISCO08-61"> </a></td>
+<td>Market-oriented Skilled Agricultural Workers</td>
+<td>Market-oriented skilled agricultural workers grow and harvest field or tree and shrub crops, gather wild fruits and plants, breed, tend or hunt animals, and produce a variety of animal husbandry products, primarily for sale or delivery to purchasers.</td></tr>
+<tr><td style="white-space:nowrap">62<a name="ISCO08-62"> </a></td>
+<td>Market-oriented Skilled Forestry, Fishery and Hunting Workers</td>
+<td>Market-oriented skilled forestry, fishery and hunting workers cultivate, conserve and exploit forests, breed or catch fish, hunt wild animals, primarily for sale or delivery to purchasers.</td></tr>
+<tr><td style="white-space:nowrap">63<a name="ISCO08-63"> </a></td>
+<td>Subsistence Farmers, Fishers, Hunters and Gatherers</td>
+<td>Subsistence farmers, fishers, hunters and gatherers grow and harvest field or tree and shrub crops, tend animals, catch fish, gather wild fruits and plants or hunt animals principally for own consumption and that of their households.</td></tr>
+<tr><td style="white-space:nowrap">71<a name="ISCO08-71"> </a></td>
+<td>Building and Related Trades Workers, Excluding Electricians</td>
+<td>Building and related trades workers, excluding electricians, construct, maintain and repair buildings and other structures using traditional and modern building techniques and materials.</td></tr>
+<tr><td style="white-space:nowrap">72<a name="ISCO08-72"> </a></td>
+<td>Metal, Machinery and Related Trades Workers</td>
+<td>Metal, machinery and related trades workers form, shape, assemble, maintain and repair metal constructions, machinery, tools and related equipment.</td></tr>
+<tr><td style="white-space:nowrap">73<a name="ISCO08-73"> </a></td>
+<td>Handicraft and Printing Workers</td>
+<td>Handicraft and printing workers plan, design and make handicrafts and printing products.</td></tr>
+<tr><td style="white-space:nowrap">74<a name="ISCO08-74"> </a></td>
+<td>Electrical and Electronic Trades Workers</td>
+<td>Electrical and electronic trades workers fit, install, repair and maintain electrical and electronic equipment.</td></tr>
+<tr><td style="white-space:nowrap">75<a name="ISCO08-75"> </a></td>
+<td>Food Processing, Wood Working, Garment and Other Craft and Related Trades Workers</td>
+<td>Food processing, wood working, garment and other craft and related trades workers process food, work with wood, make garments and perform other craft activities.</td></tr>
+<tr><td style="white-space:nowrap">81<a name="ISCO08-81"> </a></td>
+<td>Stationary Plant and Machine Operators</td>
+<td>Stationary plant and machine operators operate and monitor large industrial machinery and equipment.</td></tr>
+<tr><td style="white-space:nowrap">82<a name="ISCO08-82"> </a></td>
+<td>Assemblers</td>
+<td>Assemblers assemble finished products from component parts.</td></tr>
+<tr><td style="white-space:nowrap">83<a name="ISCO08-83"> </a></td>
+<td>Drivers and Mobile Plant Operators</td>
+<td>Drivers and mobile plant operators drive motor vehicles and operate mobile machinery and equipment.</td></tr>
+<tr><td style="white-space:nowrap">91<a name="ISCO08-91"> </a></td>
+<td>Cleaners and Helpers</td>
+<td>Cleaners and helpers clean and maintain premises and equipment, and provide various support services.</td></tr>
+<tr><td style="white-space:nowrap">92<a name="ISCO08-92"> </a></td>
+<td>Agricultural, Forestry and Fishery Labourers</td>
+<td>Agricultural, forestry and fishery labourers perform simple and routine tasks related to agriculture, forestry and fishery.</td></tr>
+<tr><td style="white-space:nowrap">93<a name="ISCO08-93"> </a></td>
+<td>Labourers in Mining, Construction, Manufacturing and Transport</td>
+<td>Labourers in mining, construction, manufacturing and transport perform simple and routine tasks related to mining, construction, manufacturing and transport.</td></tr>
+<tr><td style="white-space:nowrap">94<a name="ISCO08-94"> </a></td>
+<td>Food Preparation Assistants</td>
+<td>Food preparation assistants perform simple tasks related to food preparation and service.</td></tr>
+<tr><td style="white-space:nowrap">95<a name="ISCO08-95"> </a></td>
+<td>Street and Related Sales and Service Workers</td>
+<td>Street and related sales and service workers provide various goods and services in streets and other public places.</td></tr>
+<tr><td style="white-space:nowrap">96<a name="ISCO08-96"> </a></td>
+<td>Refuse Workers and Other Elementary Workers</td>
+<td>Refuse workers and other elementary workers collect and dispose of refuse and perform other elementary tasks.</td></tr>
+<tr><td style="white-space:nowrap">111<a name="ISCO08-111"> </a></td>
+<td>Legislators and Senior Officials</td>
+<td>Legislators and senior officials formulate government policy, laws, and regulations; oversee their implementation; and represent the people as elected representatives.</td></tr>
+<tr><td style="white-space:nowrap">112<a name="ISCO08-112"> </a></td>
+<td>Managing Directors and Chief Executives</td>
+<td>Managing directors and chief executives plan, direct, coordinate and evaluate the overall activities of enterprises, governments and other organizations.</td></tr>
+<tr><td style="white-space:nowrap">121<a name="ISCO08-121"> </a></td>
+<td>Business Services and Administration Managers</td>
+<td>Business services and administration managers plan, direct, coordinate and evaluate business services and administration activities.</td></tr>
+<tr><td style="white-space:nowrap">122<a name="ISCO08-122"> </a></td>
+<td>Sales, Marketing and Development Managers</td>
+<td>Sales, marketing and development managers plan, direct, coordinate and evaluate the sales, marketing and development activities of enterprises and organizations.</td></tr>
+<tr><td style="white-space:nowrap">211<a name="ISCO08-211"> </a></td>
+<td>Physical and Earth Science Professionals</td>
+<td>Physical and earth science professionals conduct research and improve or develop concepts, theories and operational methods in the physical and earth sciences.</td></tr>
+<tr><td style="white-space:nowrap">212<a name="ISCO08-212"> </a></td>
+<td>Mathematicians, Actuaries and Statisticians</td>
+<td>Mathematicians, actuaries and statisticians conduct research and improve or develop mathematical, actuarial and statistical theories, concepts and methods.</td></tr>
+<tr><td style="white-space:nowrap">213<a name="ISCO08-213"> </a></td>
+<td>Life Science Professionals</td>
+<td>Life science professionals conduct research and improve or develop concepts, theories and operational methods in the life sciences.</td></tr>
+<tr><td style="white-space:nowrap">214<a name="ISCO08-214"> </a></td>
+<td>Engineering Professionals (excluding Electrotechnology)</td>
+<td>Engineering professionals (excluding electrotechnology) research, design, develop and improve materials, products, machines, installations and processes.</td></tr>
+<tr><td style="white-space:nowrap">215<a name="ISCO08-215"> </a></td>
+<td>Electrotechnology Engineers</td>
+<td>Electrotechnology engineers research, design, develop and improve electrical and electronic systems, machines, installations and products.</td></tr>
+<tr><td style="white-space:nowrap">216<a name="ISCO08-216"> </a></td>
+<td>Architects, Planners, Surveyors and Designers</td>
+<td>Architects, planners, surveyors and designers plan and design landscapes, buildings, infrastructure, interiors and objects.</td></tr>
+<tr><td style="white-space:nowrap">221<a name="ISCO08-221"> </a></td>
+<td>Medical Doctors</td>
+<td>Medical doctors study, diagnose, treat and prevent illness, disease, injury and other physical and mental impairments in humans through the application of the principles and procedures of modern medicine.</td></tr>
+<tr><td style="white-space:nowrap">222<a name="ISCO08-222"> </a></td>
+<td>Nursing and Midwifery Professionals</td>
+<td>Nursing and midwifery professionals plan, manage, provide and evaluate nursing and midwifery care services for patients and the community.</td></tr>
+<tr><td style="white-space:nowrap">223<a name="ISCO08-223"> </a></td>
+<td>Traditional and Complementary Medicine Professionals</td>
+<td>Traditional and complementary medicine professionals plan, manage, provide and evaluate traditional and complementary health care and treatment.</td></tr>
+<tr><td style="white-space:nowrap">224<a name="ISCO08-224"> </a></td>
+<td>Paramedical Practitioners</td>
+<td>Paramedical practitioners provide technical support to medical doctors, nursing and midwifery professionals and other health professionals.</td></tr>
+<tr><td style="white-space:nowrap">225<a name="ISCO08-225"> </a></td>
+<td>Veterinarians</td>
+<td>Veterinarians diagnose, treat and prevent illness, injury and dysfunction in animals.</td></tr>
+<tr><td style="white-space:nowrap">226<a name="ISCO08-226"> </a></td>
+<td>Other Health Professionals</td>
+<td>Other health professionals plan, manage, provide and evaluate health care and treatment not elsewhere classified.</td></tr>
+<tr><td style="white-space:nowrap">231<a name="ISCO08-231"> </a></td>
+<td>University and Higher Education Teachers</td>
+<td>University and higher education teachers prepare and deliver lectures and conduct tutorials in one or more subjects within a prescribed course of study at a university or other higher education institution.</td></tr>
+<tr><td style="white-space:nowrap">232<a name="ISCO08-232"> </a></td>
+<td>Vocational Education Teachers</td>
+<td>Vocational education teachers organize and provide instruction to students in one or more subjects at technical and vocational education levels.</td></tr>
+<tr><td style="white-space:nowrap">233<a name="ISCO08-233"> </a></td>
+<td>Secondary Education Teachers</td>
+<td>Secondary education teachers organize and provide instruction to students in one or more subjects at secondary education level.</td></tr>
+<tr><td style="white-space:nowrap">234<a name="ISCO08-234"> </a></td>
+<td>Primary School and Early Childhood Teachers</td>
+<td>Primary school and early childhood teachers organize and provide instruction designed to give students a sound basic education in reading, writing and mathematics and an elementary understanding of other subjects.</td></tr>
+<tr><td style="white-space:nowrap">235<a name="ISCO08-235"> </a></td>
+<td>Other Teaching Professionals</td>
+<td>Other teaching professionals provide non-formal education for adults and young people outside the formal education system and other teaching services.</td></tr>
+<tr><td style="white-space:nowrap">311<a name="ISCO08-311"> </a></td>
+<td>Physical and Engineering Science Technicians</td>
+<td>Physical and engineering science technicians perform technical tasks to support physical and engineering science professionals in their research and in the practical application of their knowledge and techniques.</td></tr>
+<tr><td style="white-space:nowrap">312<a name="ISCO08-312"> </a></td>
+<td>Mining, Manufacturing and Construction Supervisors</td>
+<td>Mining, manufacturing and construction supervisors coordinate and supervise the activities of workers in the fields of mining, manufacturing and construction.</td></tr>
+<tr><td style="white-space:nowrap">313<a name="ISCO08-313"> </a></td>
+<td>Process Control Technicians</td>
+<td>Process control technicians operate sophisticated equipment to monitor and control industrial production processes.</td></tr>
+<tr><td style="white-space:nowrap">314<a name="ISCO08-314"> </a></td>
+<td>Life Science Technicians and Related Associate Professionals</td>
+<td>Life science technicians and related associate professionals perform technical tasks to support life science professionals in their research activities and in the practical application of their knowledge and techniques.</td></tr>
+<tr><td style="white-space:nowrap">315<a name="ISCO08-315"> </a></td>
+<td>Ship and Aircraft Controllers and Technicians</td>
+<td>Ship and aircraft controllers and technicians control ship and aircraft movements and perform technical tasks related to the operation of ships and aircraft.</td></tr>
+<tr><td style="white-space:nowrap">321<a name="ISCO08-321"> </a></td>
+<td>Medical and Pharmaceutical Technicians</td>
+<td>Medical and pharmaceutical technicians perform technical tasks to support medical doctors and other health professionals in diagnosing, treating and preventing illness, disease, injury and other physical and mental impairments in humans.</td></tr>
+<tr><td style="white-space:nowrap">322<a name="ISCO08-322"> </a></td>
+<td>Nursing and Midwifery Associate Professionals</td>
+<td>Nursing and midwifery associate professionals provide basic nursing and midwifery care, treatment and support services under the guidance of nursing and midwifery professionals and medical doctors.</td></tr>
+<tr><td style="white-space:nowrap">323<a name="ISCO08-323"> </a></td>
+<td>Traditional and Complementary Medicine Associate Professionals</td>
+<td>Traditional and complementary medicine associate professionals provide traditional and complementary health care, treatment and support services under the guidance of traditional and complementary medicine professionals.</td></tr>
+<tr><td style="white-space:nowrap">324<a name="ISCO08-324"> </a></td>
+<td>Veterinary Technicians and Assistants</td>
+<td>Veterinary technicians and assistants provide technical and practical support to veterinarians in their professional duties.</td></tr>
+<tr><td style="white-space:nowrap">325<a name="ISCO08-325"> </a></td>
+<td>Other Health Associate Professionals</td>
+<td>Other health associate professionals perform technical and practical tasks to support health professionals in areas not elsewhere classified.</td></tr>
+<tr><td style="white-space:nowrap">411<a name="ISCO08-411"> </a></td>
+<td>General Office Clerks</td>
+<td>General office clerks perform a range of clerical and administrative tasks in connection with money-handling operations, travel arrangements, requests for information, and appointments.</td></tr>
+<tr><td style="white-space:nowrap">412<a name="ISCO08-412"> </a></td>
+<td>Secretaries (general)</td>
+<td>Secretaries (general) perform a variety of administrative and clerical tasks in connection with the day-to-day running of an office or organization.</td></tr>
+<tr><td style="white-space:nowrap">413<a name="ISCO08-413"> </a></td>
+<td>Keyboard Operators</td>
+<td>Keyboard operators enter, update and retrieve electronic data and information using computer keyboards and other data entry devices.</td></tr>
+<tr><td style="white-space:nowrap">511<a name="ISCO08-511"> </a></td>
+<td>Travel Attendants, Conductors and Guides</td>
+<td>Travel attendants, conductors and guides provide personal services to ensure the safety and comfort of passengers on aircraft, ships, trains, buses and other vehicles.</td></tr>
+<tr><td style="white-space:nowrap">512<a name="ISCO08-512"> </a></td>
+<td>Cooks</td>
+<td>Cooks prepare and cook food in restaurants, cafeterias, hospitals and other establishments.</td></tr>
+<tr><td style="white-space:nowrap">513<a name="ISCO08-513"> </a></td>
+<td>Waiters and Bartenders</td>
+<td>Waiters and bartenders serve food and beverages in restaurants, bars, cafeterias and other eating and drinking establishments.</td></tr>
+<tr><td style="white-space:nowrap">514<a name="ISCO08-514"> </a></td>
+<td>Hairdressers, Beauticians and Related Workers</td>
+<td>Hairdressers, beauticians and related workers provide hairdressing, beauty treatment and related personal services.</td></tr>
+<tr><td style="white-space:nowrap">515<a name="ISCO08-515"> </a></td>
+<td>Building and Housekeeping Supervisors</td>
+<td>Building and housekeeping supervisors coordinate and supervise the activities of building caretakers and housekeeping staff.</td></tr>
+<tr><td style="white-space:nowrap">516<a name="ISCO08-516"> </a></td>
+<td>Other Personal Services Workers</td>
+<td>Other personal services workers provide personal services not elsewhere classified.</td></tr>
+<tr><td style="white-space:nowrap">711<a name="ISCO08-711"> </a></td>
+<td>Building Frame and Related Trades Workers</td>
+<td>Building frame and related trades workers construct, erect, install, maintain and repair building frames and related structures made of wood, steel, concrete and other materials.</td></tr>
+<tr><td style="white-space:nowrap">712<a name="ISCO08-712"> </a></td>
+<td>Building Finishers and Related Trades Workers</td>
+<td>Building finishers and related trades workers apply finishes to building interiors and exteriors and install fixtures and fittings.</td></tr>
+<tr><td style="white-space:nowrap">713<a name="ISCO08-713"> </a></td>
+<td>Painters, Building Structure Cleaners and Related Trades Workers</td>
+<td>Painters, building structure cleaners and related trades workers paint buildings and other structures, and clean exterior surfaces of buildings and other structures.</td></tr>
+<tr><td style="white-space:nowrap">811<a name="ISCO08-811"> </a></td>
+<td>Mining and Mineral Processing Plant Operators</td>
+<td>Mining and mineral processing plant operators operate and monitor machinery and equipment used to extract solid minerals from the earth and to process mined materials.</td></tr>
+<tr><td style="white-space:nowrap">812<a name="ISCO08-812"> </a></td>
+<td>Metal Processing and Finishing Plant Operators</td>
+<td>Metal processing and finishing plant operators operate and monitor machinery and equipment to process and finish metal products.</td></tr>
+<tr><td style="white-space:nowrap">813<a name="ISCO08-813"> </a></td>
+<td>Chemical and Photographic Products Plant and Machine Operators</td>
+<td>Chemical and photographic products plant and machine operators operate and monitor machinery and equipment to produce chemical and photographic products.</td></tr>
+<tr><td style="white-space:nowrap">911<a name="ISCO08-911"> </a></td>
+<td>Domestic, Hotel and Office Cleaners and Helpers</td>
+<td>Domestic, hotel and office cleaners and helpers clean and maintain private households, hotels, offices and other commercial and industrial establishments.</td></tr>
+<tr><td style="white-space:nowrap">912<a name="ISCO08-912"> </a></td>
+<td>Vehicle, Window, Laundry and Other Hand Cleaning Workers</td>
+<td>Vehicle, window, laundry and other hand cleaning workers wash or dry-clean textiles, fur and leather products, clean vehicles, windows and other surfaces by hand.</td></tr>
+<tr><td style="white-space:nowrap">913<a name="ISCO08-913"> </a></td>
+<td>Helpers in Food Preparation</td>
+<td>Helpers in food preparation assist in the preparation of food and beverages for immediate consumption.</td></tr>
+<tr><td style="white-space:nowrap">1111<a name="ISCO08-1111"> </a></td>
+<td>Legislators</td>
+<td>Legislators research, draft, debate and vote on the enactment of laws and policy; represent the electorate and perform related tasks.</td></tr>
+<tr><td style="white-space:nowrap">1112<a name="ISCO08-1112"> </a></td>
+<td>Senior Government Officials</td>
+<td>Senior government officials formulate and administer government policy and regulations; ensure their implementation and advise government; and represent government in negotiations and at official functions.</td></tr>
+<tr><td style="white-space:nowrap">1113<a name="ISCO08-1113"> </a></td>
+<td>Traditional Chiefs and Heads of Villages</td>
+<td>Traditional chiefs and heads of villages lead and represent communities according to traditional custom and practice; act as custodians of traditional culture and values.</td></tr>
+<tr><td style="white-space:nowrap">1114<a name="ISCO08-1114"> </a></td>
+<td>Senior Officials of Special-Interest Organizations</td>
+<td>Senior officials of special-interest organizations formulate and administer the policies and programs of special-interest organizations.</td></tr>
+<tr><td style="white-space:nowrap">1120<a name="ISCO08-1120"> </a></td>
+<td>Managing Directors and Chief Executives</td>
+<td>Managing directors and chief executives plan, direct, coordinate and evaluate the overall activities of enterprises, governments and other organizations.</td></tr>
+<tr><td style="white-space:nowrap">1211<a name="ISCO08-1211"> </a></td>
+<td>Finance Managers</td>
+<td>Finance managers plan, direct and coordinate financial activities and services within an organization.</td></tr>
+<tr><td style="white-space:nowrap">1212<a name="ISCO08-1212"> </a></td>
+<td>Human Resource Managers</td>
+<td>Human resource managers plan, direct and coordinate human resource management activities within an organization.</td></tr>
+<tr><td style="white-space:nowrap">1213<a name="ISCO08-1213"> </a></td>
+<td>Policy and Planning Managers</td>
+<td>Policy and planning managers plan, direct and coordinate policy development and strategic planning activities within an organization.</td></tr>
+<tr><td style="white-space:nowrap">1219<a name="ISCO08-1219"> </a></td>
+<td>Business Services and Administration Managers Not Elsewhere Classified</td>
+<td>This unit group covers Business Services and Administration Managers not elsewhere classified in Minor Group 121 Business Services and Administration Managers.</td></tr>
+<tr><td style="white-space:nowrap">1221<a name="ISCO08-1221"> </a></td>
+<td>Sales and Marketing Managers</td>
+<td>Sales and marketing managers plan, direct and coordinate sales and marketing activities.</td></tr>
+<tr><td style="white-space:nowrap">1222<a name="ISCO08-1222"> </a></td>
+<td>Advertising and Public Relations Managers</td>
+<td>Advertising and public relations managers plan, direct and coordinate advertising and public relations activities.</td></tr>
+<tr><td style="white-space:nowrap">1223<a name="ISCO08-1223"> </a></td>
+<td>Research and Development Managers</td>
+<td>Research and development managers plan, direct and coordinate research and development activities of an enterprise or organization.</td></tr>
+<tr><td style="white-space:nowrap">2111<a name="ISCO08-2111"> </a></td>
+<td>Physicists and Astronomers</td>
+<td>Physicists and astronomers conduct research and improve or develop concepts, theories and operational methods in physics and astronomy.</td></tr>
+<tr><td style="white-space:nowrap">2112<a name="ISCO08-2112"> </a></td>
+<td>Meteorologists</td>
+<td>Meteorologists study and forecast weather and atmospheric conditions.</td></tr>
+<tr><td style="white-space:nowrap">2113<a name="ISCO08-2113"> </a></td>
+<td>Chemists</td>
+<td>Chemists conduct research and improve or develop concepts, theories and operational methods in chemistry.</td></tr>
+<tr><td style="white-space:nowrap">2114<a name="ISCO08-2114"> </a></td>
+<td>Geologists and Geophysicists</td>
+<td>Geologists and geophysicists conduct research on the composition, structure and other physical aspects of the Earth.</td></tr>
+<tr><td style="white-space:nowrap">2120<a name="ISCO08-2120"> </a></td>
+<td>Mathematicians, Actuaries and Statisticians</td>
+<td>Mathematicians, actuaries and statisticians conduct research and improve or develop mathematical, actuarial and statistical theories, concepts and methods.</td></tr>
+<tr><td style="white-space:nowrap">2131<a name="ISCO08-2131"> </a></td>
+<td>Biologists, Botanists, Zoologists and Related Professionals</td>
+<td>Biologists, botanists, zoologists and related professionals study living organisms and their interactions with each other and with the environment.</td></tr>
+<tr><td style="white-space:nowrap">2132<a name="ISCO08-2132"> </a></td>
+<td>Farming, Forestry and Fisheries Advisers</td>
+<td>Farming, forestry and fisheries advisers study and develop techniques for increasing productivity of farms, forests and fisheries.</td></tr>
+<tr><td style="white-space:nowrap">2133<a name="ISCO08-2133"> </a></td>
+<td>Environmental Protection Professionals</td>
+<td>Environmental protection professionals study and assess the effects of human activities on the environment and develop plans and solutions to prevent or solve environmental problems.</td></tr>
+<tr><td style="white-space:nowrap">2141<a name="ISCO08-2141"> </a></td>
+<td>Industrial and Production Engineers</td>
+<td>Industrial and production engineers design, organize and improve industrial production systems and processes.</td></tr>
+<tr><td style="white-space:nowrap">2142<a name="ISCO08-2142"> </a></td>
+<td>Civil Engineers</td>
+<td>Civil engineers design, plan and organize the construction and maintenance of buildings, roads, bridges and other civil engineering structures.</td></tr>
+<tr><td style="white-space:nowrap">2143<a name="ISCO08-2143"> </a></td>
+<td>Environmental Engineers</td>
+<td>Environmental engineers apply principles of engineering, soil science, biology and chemistry to develop solutions to environmental problems.</td></tr>
+<tr><td style="white-space:nowrap">2144<a name="ISCO08-2144"> </a></td>
+<td>Mechanical Engineers</td>
+<td>Mechanical engineers design, develop, test and oversee the production of mechanical devices, systems and processes.</td></tr>
+<tr><td style="white-space:nowrap">2145<a name="ISCO08-2145"> </a></td>
+<td>Chemical Engineers</td>
+<td>Chemical engineers design, develop and oversee industrial processes that involve the transformation of raw materials into useful products.</td></tr>
+<tr><td style="white-space:nowrap">2146<a name="ISCO08-2146"> </a></td>
+<td>Mining Engineers, Metallurgists and Related Professionals</td>
+<td>Mining engineers, metallurgists and related professionals design and develop techniques and equipment for extracting, treating and processing metals and minerals.</td></tr>
+<tr><td style="white-space:nowrap">2149<a name="ISCO08-2149"> </a></td>
+<td>Engineering Professionals Not Elsewhere Classified</td>
+<td>This unit group covers engineering professionals not elsewhere classified in Minor Group 214.</td></tr>
+<tr><td style="white-space:nowrap">2151<a name="ISCO08-2151"> </a></td>
+<td>Electrical Engineers</td>
+<td>Electrical engineers design, develop and supervise the installation, operation and maintenance of electrical systems for power generation, transmission and distribution.</td></tr>
+<tr><td style="white-space:nowrap">2152<a name="ISCO08-2152"> </a></td>
+<td>Electronics Engineers</td>
+<td>Electronics engineers design, develop and supervise the installation, operation and maintenance of electronic systems and equipment.</td></tr>
+<tr><td style="white-space:nowrap">2153<a name="ISCO08-2153"> </a></td>
+<td>Telecommunications Engineers</td>
+<td>Telecommunications engineers design, develop and supervise the installation, operation and maintenance of telecommunications systems and equipment.</td></tr>
+<tr><td style="white-space:nowrap">2161<a name="ISCO08-2161"> </a></td>
+<td>Building Architects</td>
+<td>Building architects plan and design buildings and advise on the construction, renovation and restoration of buildings.</td></tr>
+<tr><td style="white-space:nowrap">2162<a name="ISCO08-2162"> </a></td>
+<td>Landscape Architects</td>
+<td>Landscape architects plan and design the use of available space for parks, recreational facilities, highways, airports and other properties.</td></tr>
+<tr><td style="white-space:nowrap">2163<a name="ISCO08-2163"> </a></td>
+<td>Product and Garment Designers</td>
+<td>Product and garment designers design and develop manufactured products and garments.</td></tr>
+<tr><td style="white-space:nowrap">2164<a name="ISCO08-2164"> </a></td>
+<td>Town and Traffic Planners</td>
+<td>Town and traffic planners develop plans and policies for the use of land and the growth and renewal of urban, rural and regional areas.</td></tr>
+<tr><td style="white-space:nowrap">2165<a name="ISCO08-2165"> </a></td>
+<td>Cartographers and Surveyors</td>
+<td>Cartographers and surveyors collect, analyze, interpret and map geographic information.</td></tr>
+<tr><td style="white-space:nowrap">2166<a name="ISCO08-2166"> </a></td>
+<td>Graphic and Multimedia Designers</td>
+<td>Graphic and multimedia designers design and develop graphic and multimedia material for use in publications, displays, advertising material, film and television productions, games and websites.</td></tr>
+<tr><td style="white-space:nowrap">2211<a name="ISCO08-2211"> </a></td>
+<td>Generalist Medical Practitioners</td>
+<td>Generalist medical practitioners diagnose, treat and prevent illness, disease, injury and other physical and mental impairments in humans.</td></tr>
+<tr><td style="white-space:nowrap">2212<a name="ISCO08-2212"> </a></td>
+<td>Specialist Medical Practitioners</td>
+<td>Specialist medical practitioners diagnose, treat and prevent illness, disease, injury and other physical and mental impairments in humans, using specialized knowledge and skills in a particular area of medicine.</td></tr>
+<tr><td style="white-space:nowrap">2221<a name="ISCO08-2221"> </a></td>
+<td>Nursing Professionals</td>
+<td>Nursing professionals provide treatment, support and care services for people who are in need of nursing care due to the effects of ageing, injury, illness or other physical or mental impairment, or potential risks to health.</td></tr>
+<tr><td style="white-space:nowrap">2222<a name="ISCO08-2222"> </a></td>
+<td>Midwifery Professionals</td>
+<td>Midwifery professionals plan, manage, provide and evaluate midwifery care services before, during and after pregnancy and childbirth.</td></tr>
+<tr><td style="white-space:nowrap">2230<a name="ISCO08-2230"> </a></td>
+<td>Traditional and Complementary Medicine Professionals</td>
+<td>Traditional and complementary medicine professionals plan, manage, provide and evaluate traditional and complementary health care and treatment.</td></tr>
+<tr><td style="white-space:nowrap">2240<a name="ISCO08-2240"> </a></td>
+<td>Paramedical Practitioners</td>
+<td>Paramedical practitioners provide technical support to medical doctors, nursing and midwifery professionals and other health professionals.</td></tr>
+<tr><td style="white-space:nowrap">2250<a name="ISCO08-2250"> </a></td>
+<td>Veterinarians</td>
+<td>Veterinarians diagnose, treat and prevent illness, injury and dysfunction in animals.</td></tr>
+<tr><td style="white-space:nowrap">2261<a name="ISCO08-2261"> </a></td>
+<td>Dentists</td>
+<td>Dentists diagnose, treat and prevent diseases, injuries and other impairments of teeth, mouth, jaws and associated tissues.</td></tr>
+<tr><td style="white-space:nowrap">2262<a name="ISCO08-2262"> </a></td>
+<td>Pharmacists</td>
+<td>Pharmacists prepare and dispense medicinal drugs and pharmaceutical preparations.</td></tr>
+<tr><td style="white-space:nowrap">2263<a name="ISCO08-2263"> </a></td>
+<td>Environmental and Occupational Health and Hygiene Professionals</td>
+<td>Environmental and occupational health and hygiene professionals assess, plan and implement programs to identify, prevent and control environmental factors that may affect human health.</td></tr>
+<tr><td style="white-space:nowrap">2264<a name="ISCO08-2264"> </a></td>
+<td>Physiotherapists</td>
+<td>Physiotherapists assess, plan and implement rehabilitative programs to improve or restore human motor functions, maximize movement ability, relieve pain syndromes, and treat or prevent physical challenges.</td></tr>
+<tr><td style="white-space:nowrap">2265<a name="ISCO08-2265"> </a></td>
+<td>Dietitians and Nutritionists</td>
+<td>Dietitians and nutritionists plan and conduct food and nutrition programs to assist in the promotion of health and control of disease.</td></tr>
+<tr><td style="white-space:nowrap">2266<a name="ISCO08-2266"> </a></td>
+<td>Audiologists and Speech Therapists</td>
+<td>Audiologists and speech therapists develop, plan and implement programs for the treatment of speech, language, voice, communication and swallowing disorders.</td></tr>
+<tr><td style="white-space:nowrap">2267<a name="ISCO08-2267"> </a></td>
+<td>Optometrists and Ophthalmic Opticians</td>
+<td>Optometrists and ophthalmic opticians test eyes and vision, diagnose vision problems and eye diseases, and design, fit, dispense and repair corrective lenses and frames.</td></tr>
+<tr><td style="white-space:nowrap">2269<a name="ISCO08-2269"> </a></td>
+<td>Health Professionals Not Elsewhere Classified</td>
+<td>This unit group covers health professionals not elsewhere classified in Minor Group 226.</td></tr>
+<tr><td style="white-space:nowrap">3111<a name="ISCO08-3111"> </a></td>
+<td>Chemical and Physical Science Technicians</td>
+<td>Chemical and physical science technicians conduct tests and experiments, and provide technical support to physical and earth science professionals.</td></tr>
+<tr><td style="white-space:nowrap">3112<a name="ISCO08-3112"> </a></td>
+<td>Civil Engineering Technicians</td>
+<td>Civil engineering technicians provide technical support and services to civil engineers in the design, construction, operation and maintenance of civil engineering structures and systems.</td></tr>
+<tr><td style="white-space:nowrap">3113<a name="ISCO08-3113"> </a></td>
+<td>Electrical Engineering Technicians</td>
+<td>Electrical engineering technicians provide technical support and services to electrical engineers in the design, development, installation, operation and maintenance of electrical systems and equipment.</td></tr>
+<tr><td style="white-space:nowrap">3114<a name="ISCO08-3114"> </a></td>
+<td>Electronics Engineering Technicians</td>
+<td>Electronics engineering technicians provide technical support and services to electronics engineers in the design, development, installation, operation and maintenance of electronic systems and equipment.</td></tr>
+<tr><td style="white-space:nowrap">3115<a name="ISCO08-3115"> </a></td>
+<td>Mechanical Engineering Technicians</td>
+<td>Mechanical engineering technicians provide technical support and services to mechanical engineers in the design, development, production and testing of mechanical machinery and equipment.</td></tr>
+<tr><td style="white-space:nowrap">3116<a name="ISCO08-3116"> </a></td>
+<td>Chemical Engineering Technicians</td>
+<td>Chemical engineering technicians provide technical support and services to chemical engineers and assist in chemical research, development and production.</td></tr>
+<tr><td style="white-space:nowrap">3117<a name="ISCO08-3117"> </a></td>
+<td>Mining and Metallurgical Technicians</td>
+<td>Mining and metallurgical technicians provide technical support to mining engineers and metallurgists and assist in the development, testing and operation of mining and metallurgical processes and equipment.</td></tr>
+<tr><td style="white-space:nowrap">3118<a name="ISCO08-3118"> </a></td>
+<td>Draughtspersons</td>
+<td>Draughtspersons prepare detailed technical drawings, plans and diagrams based on sketches and specifications prepared by engineers, architects and designers.</td></tr>
+<tr><td style="white-space:nowrap">3119<a name="ISCO08-3119"> </a></td>
+<td>Physical and Engineering Science Technicians Not Elsewhere Classified</td>
+<td>This unit group covers physical and engineering science technicians not elsewhere classified in Minor Group 311.</td></tr>
+<tr><td style="white-space:nowrap">4110<a name="ISCO08-4110"> </a></td>
+<td>General Office Clerks</td>
+<td>General office clerks perform a range of clerical and administrative tasks in connection with money-handling operations, travel arrangements, requests for information, and appointments.</td></tr>
+<tr><td style="white-space:nowrap">4120<a name="ISCO08-4120"> </a></td>
+<td>Secretaries (general)</td>
+<td>Secretaries (general) perform a variety of administrative and clerical tasks in connection with the day-to-day running of an office or organization.</td></tr>
+<tr><td style="white-space:nowrap">4131<a name="ISCO08-4131"> </a></td>
+<td>Typists and Word Processing Operators</td>
+<td>Typists and word processing operators use typewriters, personal computers or word processing equipment to transcribe and type correspondence, reports, manuscripts and other documents.</td></tr>
+<tr><td style="white-space:nowrap">4132<a name="ISCO08-4132"> </a></td>
+<td>Data Entry Clerks</td>
+<td>Data entry clerks enter coded, statistical, financial and other numerical data into electronic equipment using keyboards or optical scanning devices.</td></tr>
+<tr><td style="white-space:nowrap">5111<a name="ISCO08-5111"> </a></td>
+<td>Travel Attendants and Travel Stewards</td>
+<td>Travel attendants and travel stewards provide personal services to ensure the safety and comfort of passengers on aircraft, ships, trains, buses and other vehicles.</td></tr>
+<tr><td style="white-space:nowrap">5112<a name="ISCO08-5112"> </a></td>
+<td>Transport Conductors</td>
+<td>Transport conductors collect fares and tickets, control access to transport vehicles, and ensure order and safety in public transport operations.</td></tr>
+<tr><td style="white-space:nowrap">5113<a name="ISCO08-5113"> </a></td>
+<td>Travel Guides</td>
+<td>Travel guides organize and conduct tours for individuals and groups within and between cities, regional areas and countries.</td></tr>
+<tr><td style="white-space:nowrap">6111<a name="ISCO08-6111"> </a></td>
+<td>Field Crop and Vegetable Growers</td>
+<td>Field crop and vegetable growers plan, organize and perform farming operations to grow and harvest field crops and vegetables.</td></tr>
+<tr><td style="white-space:nowrap">6112<a name="ISCO08-6112"> </a></td>
+<td>Tree and Shrub Crop Growers</td>
+<td>Tree and shrub crop growers plan, organize and perform farming operations to grow and harvest tree and shrub crops.</td></tr>
+<tr><td style="white-space:nowrap">6113<a name="ISCO08-6113"> </a></td>
+<td>Gardeners, Horticultural and Nursery Growers</td>
+<td>Gardeners, horticultural and nursery growers grow and care for plants in gardens and commercial nurseries.</td></tr>
+<tr><td style="white-space:nowrap">6114<a name="ISCO08-6114"> </a></td>
+<td>Mixed Crop Growers</td>
+<td>Mixed crop growers plan, organize and perform farming operations to grow and harvest a variety of field crops, vegetables and tree and shrub crops.</td></tr>
+<tr><td style="white-space:nowrap">7111<a name="ISCO08-7111"> </a></td>
+<td>House Builders</td>
+<td>House builders construct, maintain and repair houses and similar small buildings using either traditional or modern building techniques and materials.</td></tr>
+<tr><td style="white-space:nowrap">7112<a name="ISCO08-7112"> </a></td>
+<td>Bricklayers and Related Workers</td>
+<td>Bricklayers and related workers lay bricks, concrete blocks, stone and similar materials to construct or repair walls, foundations, partitions, arches and related structures.</td></tr>
+<tr><td style="white-space:nowrap">7113<a name="ISCO08-7113"> </a></td>
+<td>Stonemasons, Stone Cutters, Splitters and Carvers</td>
+<td>Stonemasons, stone cutters, splitters and carvers cut, shape, dress and carve stone for building, ornamental, monumental and other purposes.</td></tr>
+<tr><td style="white-space:nowrap">7114<a name="ISCO08-7114"> </a></td>
+<td>Concrete Placers, Concrete Finishers and Related Workers</td>
+<td>Concrete placers, concrete finishers and related workers place and finish concrete for foundations, floors, roads and other structures.</td></tr>
+<tr><td style="white-space:nowrap">8111<a name="ISCO08-8111"> </a></td>
+<td>Miners and Quarriers</td>
+<td>Miners and quarriers extract solid minerals from underground or surface mines and quarries.</td></tr>
+<tr><td style="white-space:nowrap">8112<a name="ISCO08-8112"> </a></td>
+<td>Mineral and Stone Processing Plant Operators</td>
+<td>Mineral and stone processing plant operators operate and monitor machinery to crush, grind, mix and treat extracted minerals and stone.</td></tr>
+<tr><td style="white-space:nowrap">8113<a name="ISCO08-8113"> </a></td>
+<td>Well Drillers and Borers and Related Workers</td>
+<td>Well drillers and borers and related workers operate and monitor machinery to drill wells and boreholes for the extraction of crude oil, natural gas, water and other liquids or gases, or for other purposes.</td></tr>
+<tr><td style="white-space:nowrap">9111<a name="ISCO08-9111"> </a></td>
+<td>Domestic Cleaners and Helpers</td>
+<td>Domestic cleaners and helpers sweep or vacuum, wash and polish, make beds, and undertake other domestic duties in private households.</td></tr>
+<tr><td style="white-space:nowrap">9112<a name="ISCO08-9112"> </a></td>
+<td>Cleaners and Helpers in Offices, Hotels and Other Establishments</td>
+<td>Cleaners and helpers in offices, hotels and other establishments clean and maintain offices, hotels and other commercial and industrial establishments.</td></tr>
+<tr><td style="white-space:nowrap">9211<a name="ISCO08-9211"> </a></td>
+<td>Crop Farm Labourers</td>
+<td>Crop farm labourers perform simple and routine tasks in support of agricultural activities such as planting, tending and harvesting crops.</td></tr>
+<tr><td style="white-space:nowrap">9212<a name="ISCO08-9212"> </a></td>
+<td>Livestock Farm Labourers</td>
+<td>Livestock farm labourers perform simple and routine tasks in support of animal husbandry activities.</td></tr>
+<tr><td style="white-space:nowrap">9213<a name="ISCO08-9213"> </a></td>
+<td>Mixed Crop and Livestock Farm Labourers</td>
+<td>Mixed crop and livestock farm labourers perform simple and routine tasks in support of mixed farming activities involving both crops and livestock.</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-content -->
+
+<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
+<a name="bottom"> </a>
+<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+<div class="container">  <!-- container -->
+
+<div class="inner-wrapper">
+  <p>
+    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.base#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 27, 2026 08:31+0000">2026-08-27</span>
+    <br/>
+    <span style="color: var(--footer-highlight-text-color)">
+                Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+| <a style="color: #81BEF7" target="_blank" href="http://smart.who.int/base/history.html">Version History</a> | <a style="color: #81BEF7" rel="license" href="license.html">License</a>
+    </span>
+  </p>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-footer -->
+
+<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+<div class="container">  <!-- container -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+<script type="text/javascript" src="assets/js/respond.min.js"> </script>
+<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+<script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+<!-- Analytics Below
+================================================== -->
+
+
+
+

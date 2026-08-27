@@ -1,0 +1,11 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"UserScenario","UserScenario","","","",0,*,"","","","null {[]} {[]}
+","User Scenario (DAK)","Logical Model for representing User Scenarios from a DAK. Narratives that describe how the different personas may interact with each other.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"UserScenario.title","UserScenario.title","","","",1,1,"","","","string {[]} {[]}
+","Title","Title of the user scenario","","","","","","","","","",,,,,"",,,,"UserScenario.title",1,1,"",""
+"UserScenario.id","UserScenario.id","","","",1,1,"","","","id {[]} {[]}
+","Scenario ID","An identifier for the user scenario","","","","","","","","","",,,,,"",,,,"UserScenario.id",1,1,"",""
+"UserScenario.description[x]","UserScenario.description[x]","","","",1,1,"","","","string {[]} {[]}
+uri {[]} {[]}","Description","Description of the scenario - either Markdown content or a URI to a Markdown file (absolute or relative to repository root, like input/pagecontent/scenario-XYZ.md)","","","","","","","","","",,,,,"",,,,"UserScenario.description[x]",1,1,"",""
+"UserScenario.personas","UserScenario.personas","","","",0,*,"","","","id {[]} {[]}
+","Personas","References to persona IDs that participate in this scenario","","","","","","","","","",,,,,"",,,,"UserScenario.personas",0,*,"",""

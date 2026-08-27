@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "40d85090-fd27-471b-b3b7-93a57d71b484-27",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/40d85090-fd27-471b-b3b7-93a57d71b484-27",
+  "name" : "IntersectionSNOMEDCTMedicationCodesAndSNOMEDCTMedicationCodes",
+  "title" : "Intersection of SNOMED CT Medication Codes And SNOMED CT Medication Codes",
+  "status" : "draft",
+  "date" : "2026-08-27T08:33:42+00:00",
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "410942007"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "373873005"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "106181007"
+      }]
+    }]
+  }
+}

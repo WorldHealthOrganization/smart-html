@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>SMART Guidelines Authoring Skills ValueSet - SMART Base v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+    <link href="assets/css/fa-all.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/who.css" rel="stylesheet"/>
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"9.142"}
+    h3,h4,h5,h6{--heading-prefix:"9.142"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+
+      <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+        <div id="stripe"> </div>
+        <div class="container">  <!-- container -->
+          <!-- HEADER CONTENT -->
+  
+          <nav class="navbar navbar-inverse">
+            <!--status-bar-->
+            <div class="container">
+              <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+              </button>
+              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+              <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Authoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="authoring-process.html">Process</a>
+      </li>
+      <li>
+        <a href="authoring-personas.html">Personas</a>
+      </li>
+      <li>
+        <a href="authoring-skills.html">Skills</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Indices
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Artifact Index</a>
+      </li>
+      <li>
+        <a href="dak-api.html">DAK API</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+              </div>  <!-- /.nav-collapse -->
+
+              <div class="sf_colsIn col-md-8  navbar-right-container" data-sf-element="LanguageSelectorSearch" data-placeholder-label="Language Selector and Search" style="display: flex; justify-content: flex-end; align-items: center;">
+                <!-- This div will be pushed to the right -->
+                <div class="language-selector" style="margin-left: auto; background-color: #00477d; color: white;">
+                  <i class="fa fa-language fa-lg"></i>
+                  <label for="language-selector"> </label>
+                  <select onChange="openLink(value)" id="language-selector" name="language-selector">
+                    <option disabled selected>Select language</option>
+                    <option value="en" class="selected">English</option>
+                  </select>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+                <!-- Search Content -->
+              </div>
+            </div>  <!-- /.container -->
+          </nav>  <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+        </div>  <!-- /container -->
+      </div>  <!-- /segment-navbar -->
+      
+
+      <div class="container" style=" justify-content: space-between; align-items: left;">
+
+        <!-- Placeholder for child template header declarations -->
+<div id="project-nav">
+    <a id="who-logo" no-external="true" href="index.html">
+      
+<img height="50" style="margin:7px" alt="Welcome on standards website" src="assets/images/h-logo-blue.svg"/>
+        
+    </a>
+</div>
+
+ <div id="family-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir">  </a>
+</div> 
+
+
+        <div id="ig-status" class="ig-status-active">
+          <p><span style="font-size:12pt;font-weight:bold">SMART Base</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>SMART Guidelines Authoring Skills ValueSet</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the SMART Base (v1.0.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a data-no-external="true" href="http://smart.who.int/base/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-SGAuthoringSkillsVS.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-SGAuthoringSkillsVS.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-SGAuthoringSkillsVS.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: SMART Guidelines Authoring Skills ValueSet
+(Experimental)
+  </h2>
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://smart.who.int/base/ValueSet/SGAuthoringSkillsVS<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://smart.who.int/base/ValueSet/SGAuthoringSkillsVS"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.0.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://smart.who.int/base/ValueSet/SGAuthoringSkillsVS|1.0.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2026-08-27
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">SGAuthoringSkillsVS</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>ValueSet for all SMART Guidelines authoring skill capabilities</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<p>This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)</p>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="SGAuthoringSkillsVS"> </a><a name="hcSGAuthoringSkillsVS"> </a>
+<ul><li>Include all codes defined in <a href="CodeSystem-SGAuthoringSkills.html"><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;1.0.0</span></li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"/><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on <a href="CodeSystem-SGAuthoringSkills.html">codesystem SMART Guidelines Authoring Skills v1.0.0 (CodeSystem)</a><span class="copy-text-inline"><button data-clipboard-text="http://smart.who.int/base/CodeSystem/SGAuthoringSkills|1.0.0" title="Click to Copy URL" class="btn-copy"> </button></span></p><p>This value set contains 42 concepts</p><table class="codes" data-fhir="generated"><tr><td><b>System</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-review-l1-guidelines"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-review-l1-guidelines">can-review-l1-guidelines</a></td><td>Can review L1 guidelines</td><td>Ability to review WHO L1 narrative guidelines and normative products for accuracy and completeness</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-review-l1-guidelines&quot;, &quot;display&quot;: &quot;Can review L1 guidelines&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-review-l1-guidelines&quot;&gt;&lt;display value=&quot;Can review L1 guidelines&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-interpret-clinical-recommendations"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-interpret-clinical-recommendations">can-interpret-clinical-recommendations</a></td><td>Can interpret clinical recommendations</td><td>Ability to interpret clinical recommendations from L1 source documents</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-interpret-clinical-recommendations&quot;, &quot;display&quot;: &quot;Can interpret clinical recommendations&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-interpret-clinical-recommendations&quot;&gt;&lt;display value=&quot;Can interpret clinical recommendations&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-identify-health-interventions"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-identify-health-interventions">can-identify-health-interventions</a></td><td>Can identify health interventions</td><td>Ability to identify and catalogue health interventions from WHO UHC menu and guidelines</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-identify-health-interventions&quot;, &quot;display&quot;: &quot;Can identify health interventions&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-identify-health-interventions&quot;&gt;&lt;display value=&quot;Can identify health interventions&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-author-personas"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-author-personas">can-author-personas</a></td><td>Can author personas</td><td>Ability to define generic personas based on task-shifting guidelines and ground-truthing</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-author-personas&quot;, &quot;display&quot;: &quot;Can author personas&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-author-personas&quot;&gt;&lt;display value=&quot;Can author personas&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-author-user-scenarios"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-author-user-scenarios">can-author-user-scenarios</a></td><td>Can author user scenarios</td><td>Ability to create user scenario narratives depicting typical workflows</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-author-user-scenarios&quot;, &quot;display&quot;: &quot;Can author user scenarios&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-author-user-scenarios&quot;&gt;&lt;display value=&quot;Can author user scenarios&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-author-business-processes"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-author-business-processes">can-author-business-processes</a></td><td>Can author business processes</td><td>Ability to create BPMN 2.0 business process diagrams for DAK workflows</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-author-business-processes&quot;, &quot;display&quot;: &quot;Can author business processes&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-author-business-processes&quot;&gt;&lt;display value=&quot;Can author business processes&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-author-data-dictionary"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-author-data-dictionary">can-author-data-dictionary</a></td><td>Can author data dictionary</td><td>Ability to define core data elements and map to standard terminologies</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-author-data-dictionary&quot;, &quot;display&quot;: &quot;Can author data dictionary&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-author-data-dictionary&quot;&gt;&lt;display value=&quot;Can author data dictionary&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-author-decision-logic"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-author-decision-logic">can-author-decision-logic</a></td><td>Can author decision-support logic</td><td>Ability to develop decision-support logic tables following DMN standard</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-author-decision-logic&quot;, &quot;display&quot;: &quot;Can author decision-support logic&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-author-decision-logic&quot;&gt;&lt;display value=&quot;Can author decision-support logic&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-author-scheduling-logic"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-author-scheduling-logic">can-author-scheduling-logic</a></td><td>Can author scheduling logic</td><td>Ability to develop scheduling logic tables following DMN standard</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-author-scheduling-logic&quot;, &quot;display&quot;: &quot;Can author scheduling logic&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-author-scheduling-logic&quot;&gt;&lt;display value=&quot;Can author scheduling logic&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-author-indicators"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-author-indicators">can-author-indicators</a></td><td>Can author indicators</td><td>Ability to define indicators and performance metrics with numerator/denominator specifications</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-author-indicators&quot;, &quot;display&quot;: &quot;Can author indicators&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-author-indicators&quot;&gt;&lt;display value=&quot;Can author indicators&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-author-functional-requirements"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-author-functional-requirements">can-author-functional-requirements</a></td><td>Can author functional requirements</td><td>Ability to define high-level functional and non-functional requirements</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-author-functional-requirements&quot;, &quot;display&quot;: &quot;Can author functional requirements&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-author-functional-requirements&quot;&gt;&lt;display value=&quot;Can author functional requirements&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-validate-dak-content"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-validate-dak-content">can-validate-dak-content</a></td><td>Can validate DAK content</td><td>Ability to review and validate DAK components against L1 source documents</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-validate-dak-content&quot;, &quot;display&quot;: &quot;Can validate DAK content&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-validate-dak-content&quot;&gt;&lt;display value=&quot;Can validate DAK content&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-author-logical-models"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-author-logical-models">can-author-logical-models</a></td><td>Can author logical models</td><td>Ability to create FHIR logical models from L2 data dictionaries</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-author-logical-models&quot;, &quot;display&quot;: &quot;Can author logical models&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-author-logical-models&quot;&gt;&lt;display value=&quot;Can author logical models&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-author-fhir-profiles"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-author-fhir-profiles">can-author-fhir-profiles</a></td><td>Can author FHIR profiles</td><td>Ability to create FHIR StructureDefinitions and profiles</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-author-fhir-profiles&quot;, &quot;display&quot;: &quot;Can author FHIR profiles&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-author-fhir-profiles&quot;&gt;&lt;display value=&quot;Can author FHIR profiles&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-author-questionnaires"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-author-questionnaires">can-author-questionnaires</a></td><td>Can author questionnaires</td><td>Ability to create FHIR Questionnaire resources from L2 forms</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-author-questionnaires&quot;, &quot;display&quot;: &quot;Can author questionnaires&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-author-questionnaires&quot;&gt;&lt;display value=&quot;Can author questionnaires&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-author-cql"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-author-cql">can-author-cql</a></td><td>Can author CQL</td><td>Ability to write Clinical Quality Language for decision logic, scheduling, and indicators</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-author-cql&quot;, &quot;display&quot;: &quot;Can author CQL&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-author-cql&quot;&gt;&lt;display value=&quot;Can author CQL&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-author-structure-maps"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-author-structure-maps">can-author-structure-maps</a></td><td>Can author structure maps</td><td>Ability to create FHIR StructureMaps for data extraction</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-author-structure-maps&quot;, &quot;display&quot;: &quot;Can author structure maps&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-author-structure-maps&quot;&gt;&lt;display value=&quot;Can author structure maps&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-author-plan-definitions"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-author-plan-definitions">can-author-plan-definitions</a></td><td>Can author plan definitions</td><td>Ability to create FHIR PlanDefinitions for business processes and decision tables</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-author-plan-definitions&quot;, &quot;display&quot;: &quot;Can author plan definitions&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-author-plan-definitions&quot;&gt;&lt;display value=&quot;Can author plan definitions&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-author-actor-definitions"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-author-actor-definitions">can-author-actor-definitions</a></td><td>Can author actor definitions</td><td>Ability to create FHIR ActorDefinitions from L2 personas</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-author-actor-definitions&quot;, &quot;display&quot;: &quot;Can author actor definitions&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-author-actor-definitions&quot;&gt;&lt;display value=&quot;Can author actor definitions&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-author-example-scenarios"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-author-example-scenarios">can-author-example-scenarios</a></td><td>Can author example scenarios</td><td>Ability to create ExampleScenario resources from L2 user scenarios</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-author-example-scenarios&quot;, &quot;display&quot;: &quot;Can author example scenarios&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-author-example-scenarios&quot;&gt;&lt;display value=&quot;Can author example scenarios&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-author-measures"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-author-measures">can-author-measures</a></td><td>Can author measures</td><td>Ability to create FHIR Measure resources from L2 indicators</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-author-measures&quot;, &quot;display&quot;: &quot;Can author measures&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-author-measures&quot;&gt;&lt;display value=&quot;Can author measures&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-author-fhir-requirements"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-author-fhir-requirements">can-author-fhir-requirements</a></td><td>Can author FHIR requirements</td><td>Ability to create FHIR Requirements resources from L2 requirements</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-author-fhir-requirements&quot;, &quot;display&quot;: &quot;Can author FHIR requirements&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-author-fhir-requirements&quot;&gt;&lt;display value=&quot;Can author FHIR requirements&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-author-test-cases"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-author-test-cases">can-author-test-cases</a></td><td>Can author test cases</td><td>Ability to create TestPlan, TestScript, and example instances for validation</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-author-test-cases&quot;, &quot;display&quot;: &quot;Can author test cases&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-author-test-cases&quot;&gt;&lt;display value=&quot;Can author test cases&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-review-terminology"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-review-terminology">can-review-terminology</a></td><td>Can review terminology</td><td>Ability to review and validate terminology bindings, code systems, and value sets</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-review-terminology&quot;, &quot;display&quot;: &quot;Can review terminology&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-review-terminology&quot;&gt;&lt;display value=&quot;Can review terminology&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-map-concepts"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-map-concepts">can-map-concepts</a></td><td>Can map concepts</td><td>Ability to map data elements to WHO Commons dictionary, ICD-11, SNOMED CT, LOINC</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-map-concepts&quot;, &quot;display&quot;: &quot;Can map concepts&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-map-concepts&quot;&gt;&lt;display value=&quot;Can map concepts&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-author-code-systems"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-author-code-systems">can-author-code-systems</a></td><td>Can author code systems</td><td>Ability to create and maintain FHIR CodeSystem resources</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-author-code-systems&quot;, &quot;display&quot;: &quot;Can author code systems&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-author-code-systems&quot;&gt;&lt;display value=&quot;Can author code systems&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-author-value-sets"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-author-value-sets">can-author-value-sets</a></td><td>Can author value sets</td><td>Ability to create and maintain FHIR ValueSet resources</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-author-value-sets&quot;, &quot;display&quot;: &quot;Can author value sets&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-author-value-sets&quot;&gt;&lt;display value=&quot;Can author value sets&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-author-concept-maps"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-author-concept-maps">can-author-concept-maps</a></td><td>Can author concept maps</td><td>Ability to create FHIR ConceptMap resources for cross-terminology mappings</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-author-concept-maps&quot;, &quot;display&quot;: &quot;Can author concept maps&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-author-concept-maps&quot;&gt;&lt;display value=&quot;Can author concept maps&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-run-qa-checks"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-run-qa-checks">can-run-qa-checks</a></td><td>Can run QA checks</td><td>Ability to run and interpret IG Publisher QA validation reports</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-run-qa-checks&quot;, &quot;display&quot;: &quot;Can run QA checks&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-run-qa-checks&quot;&gt;&lt;display value=&quot;Can run QA checks&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-review-checklist"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-review-checklist">can-review-checklist</a></td><td>Can review checklist</td><td>Ability to review SMART Guidelines publication checklist across L1-L4 layers</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-review-checklist&quot;, &quot;display&quot;: &quot;Can review checklist&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-review-checklist&quot;&gt;&lt;display value=&quot;Can review checklist&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-validate-artifact-conformance"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-validate-artifact-conformance">can-validate-artifact-conformance</a></td><td>Can validate artifact conformance</td><td>Ability to verify conformance to Shareable, Publishable, Computable, and Executable profiles</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-validate-artifact-conformance&quot;, &quot;display&quot;: &quot;Can validate artifact conformance&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-validate-artifact-conformance&quot;&gt;&lt;display value=&quot;Can validate artifact conformance&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-validate-l3-functionality"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-validate-l3-functionality">can-validate-l3-functionality</a></td><td>Can validate L3 functionality</td><td>Ability to test StructureMap extraction, CQL execution, and measure calculation</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-validate-l3-functionality&quot;, &quot;display&quot;: &quot;Can validate L3 functionality&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-validate-l3-functionality&quot;&gt;&lt;display value=&quot;Can validate L3 functionality&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-configure-ig"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-configure-ig">can-configure-ig</a></td><td>Can configure IG</td><td>Ability to set up and configure a FHIR Implementation Guide (sushi-config, canonical URL, packages)</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-configure-ig&quot;, &quot;display&quot;: &quot;Can configure IG&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-configure-ig&quot;&gt;&lt;display value=&quot;Can configure IG&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-build-ig"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-build-ig">can-build-ig</a></td><td>Can build IG</td><td>Ability to run the FHIR IG Publisher build process</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-build-ig&quot;, &quot;display&quot;: &quot;Can build IG&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-build-ig&quot;&gt;&lt;display value=&quot;Can build IG&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-manage-releases"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-manage-releases">can-manage-releases</a></td><td>Can manage releases</td><td>Ability to manage versioning, publication-request.json, release tags, and publication workflow</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-manage-releases&quot;, &quot;display&quot;: &quot;Can manage releases&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-manage-releases&quot;&gt;&lt;display value=&quot;Can manage releases&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-manage-governance"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-manage-governance">can-manage-governance</a></td><td>Can manage governance</td><td>Ability to manage cross-IG governance for shared artifacts (commons personas, terminology, libraries)</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-manage-governance&quot;, &quot;display&quot;: &quot;Can manage governance&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-manage-governance&quot;&gt;&lt;display value=&quot;Can manage governance&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-translate-content"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-translate-content">can-translate-content</a></td><td>Can translate content</td><td>Ability to translate IG content across UN languages</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-translate-content&quot;, &quot;display&quot;: &quot;Can translate content&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-translate-content&quot;&gt;&lt;display value=&quot;Can translate content&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-review-translations"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-review-translations">can-review-translations</a></td><td>Can review translations</td><td>Ability to review translated content for accuracy and completeness</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-review-translations&quot;, &quot;display&quot;: &quot;Can review translations&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-review-translations&quot;&gt;&lt;display value=&quot;Can review translations&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-review-and-approve-content"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-review-and-approve-content">can-review-and-approve-content</a></td><td>Can review and approve content</td><td>Ability to review and formally approve SMART Guidelines content at decision gates</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-review-and-approve-content&quot;, &quot;display&quot;: &quot;Can review and approve content&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-review-and-approve-content&quot;&gt;&lt;display value=&quot;Can review and approve content&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-scope-dak"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-scope-dak">can-scope-dak</a></td><td>Can scope DAK</td><td>Ability to define DAK scope, identify source documents, and establish development process</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-scope-dak&quot;, &quot;display&quot;: &quot;Can scope DAK&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-scope-dak&quot;&gt;&lt;display value=&quot;Can scope DAK&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-manage-stakeholders"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-manage-stakeholders">can-manage-stakeholders</a></td><td>Can manage stakeholders</td><td>Ability to engage SMEs, coordinate consultations, and manage RASCI matrix</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-manage-stakeholders&quot;, &quot;display&quot;: &quot;Can manage stakeholders&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-manage-stakeholders&quot;&gt;&lt;display value=&quot;Can manage stakeholders&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://smart.who.int/base/CodeSystem/SGAuthoringSkills-can-plan-iterations"> </a><code>http://smart.who.int/base/CodeSystem/SGAuthoringSkills</code></td><td style="white-space:nowrap">  <a href="CodeSystem-SGAuthoringSkills.html#SGAuthoringSkills-can-plan-iterations">can-plan-iterations</a></td><td>Can plan iterations</td><td>Ability to plan sprint iterations, maintain backlog, and facilitate retrospectives</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;can-plan-iterations&quot;, &quot;display&quot;: &quot;Can plan iterations&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/base/CodeSystem/SGAuthoringSkills&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;can-plan-iterations&quot;&gt;&lt;display value=&quot;Can plan iterations&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+</div><div class="dak-api-content">
+<h2>API Information</h2>
+<div class="card"><div class="card-body">
+<h5>SMART Guidelines Authoring Skills ValueSet Schema API</h5>
+<p>JSON Schema for SMART Guidelines Authoring Skills ValueSet ValueSet codes. Generated from FHIR expansions using IRI format.</p>
+<p><strong>Version:</strong> 1.0.0</p>
+</div></div>
+<h2>Endpoints</h2>
+<div class="endpoint-card">
+<h3><span class='badge badge-get'>GET</span> /ValueSet-SGAuthoringSkillsVS.schema.json</h3>
+<h4>JSON Schema definition for the enumeration ValueSet-SGAuthoringSkillsVS</h4>
+<p>This endpoint serves the JSON Schema definition for the enumeration ValueSet-SGAuthoringSkillsVS.</p>
+</div>
+<h2>Schema Definition</h2>
+<div class="schema-card">
+<h3>ValueSet-SGAuthoringSkillsVS</h3>
+<p><strong>Description:</strong> JSON Schema for SMART Guidelines Authoring Skills ValueSet ValueSet codes. Generated from FHIR expansions using IRI format.</p>
+<p><strong>Type:</strong> string</p>
+<details class='schema-details'><summary>Full Schema (JSON)</summary>
+<pre><code class='language-json'>
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/base/ValueSet-SGAuthoringSkillsVS.schema.json",
+  "title": "SMART Guidelines Authoring Skills ValueSet Schema",
+  "description": "JSON Schema for SMART Guidelines Authoring Skills ValueSet ValueSet codes. Generated from FHIR expansions using IRI format.",
+  "type": "string",
+  "enum": [
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-review-l1-guidelines",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-interpret-clinical-recommendations",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-identify-health-interventions",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-author-personas",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-author-user-scenarios",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-author-business-processes",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-author-data-dictionary",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-author-decision-logic",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-author-scheduling-logic",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-author-indicators",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-author-functional-requirements",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-validate-dak-content",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-author-logical-models",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-author-fhir-profiles",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-author-questionnaires",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-author-cql",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-author-structure-maps",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-author-plan-definitions",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-author-actor-definitions",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-author-example-scenarios",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-author-measures",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-author-fhir-requirements",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-author-test-cases",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-review-terminology",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-map-concepts",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-author-code-systems",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-author-value-sets",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-author-concept-maps",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-run-qa-checks",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-review-checklist",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-validate-artifact-conformance",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-validate-l3-functionality",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-configure-ig",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-build-ig",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-manage-releases",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-manage-governance",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-translate-content",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-review-translations",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-review-and-approve-content",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-scope-dak",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-manage-stakeholders",
+    "http://smart.who.int/base/CodeSystem/SGAuthoringSkills#can-plan-iterations"
+  ],
+  "narrative": "This schema validates IRI-formatted codes for the SMART Guidelines Authoring Skills ValueSet ValueSet. Each enum value includes the system URI in the format {systemuri}#{code} to match JSON-LD enumeration IRIs. Display values are available at http://smart.who.int/base/ValueSet-SGAuthoringSkillsVS.displays.json. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+  "fhir:displays": "http://smart.who.int/base/ValueSet-SGAuthoringSkillsVS.displays.json",
+  "fhir:valueSet": "http://smart.who.int/base/ValueSet/SGAuthoringSkillsVS",
+  "fhir:version": "1.0.0",
+  "fhir:expansionTimestamp": "2026-08-27T08:34:37.927947"
+}
+</code></pre></details>
+</div>
+</div>
+
+<style>
+.dak-api-content { margin: 1rem 0; }
+.card, .schema-card, .endpoint-card { background:#f8f9fa; border:1px solid #dee2e6; border-radius:0.375rem; padding:1rem; margin:1rem 0; }
+.badge-get { background-color:#28a745; }
+.badge-post { background-color:#007bff; }
+.badge-put { background-color:#ffc107; color:#212529; }
+.badge-delete { background-color:#dc3545; }
+.badge-patch { background-color:#6f42c1; }
+.schema-details { margin:1rem 0; border:1px solid #dee2e6; border-radius:4px; }
+.schema-details summary { background:#f8f9fa; padding:0.75rem; cursor:pointer; border-bottom:1px solid #dee2e6; font-weight:500; }
+.schema-details pre { margin:1rem; background:#f8f9fa; border:1px solid #e9ecef; border-radius:4px; padding:1rem; overflow-x:auto; }
+</style>
+<p><em>This documentation is automatically generated from the OpenAPI specification.</em></p>
+  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-content -->
+
+<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
+<a name="bottom"> </a>
+<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+<div class="container">  <!-- container -->
+
+<div class="inner-wrapper">
+  <p>
+    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.base#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 27, 2026 08:31+0000">2026-08-27</span>
+    <br/>
+    <span style="color: var(--footer-highlight-text-color)">
+                Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+| <a style="color: #81BEF7" target="_blank" href="http://smart.who.int/base/history.html">Version History</a> | <a style="color: #81BEF7" rel="license" href="license.html">License</a>
+    </span>
+  </p>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-footer -->
+
+<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+<div class="container">  <!-- container -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+<script type="text/javascript" src="assets/js/respond.min.js"> </script>
+<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+<script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+<!-- Analytics Below
+================================================== -->
+
+
+
+

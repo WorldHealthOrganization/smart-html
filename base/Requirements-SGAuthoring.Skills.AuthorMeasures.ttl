@@ -1,0 +1,190 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/base/Basic/SGAuthoring.Skills.AuthorMeasures> a fhir:Basic ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "SGAuthoring.Skills.AuthorMeasures"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://smart.who.int/base/StructureDefinition/SGRequirements" ;
+       fhir:index 0 ;
+       fhir:link <http://smart.who.int/base/StructureDefinition/SGRequirements>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Requirements SGAuthoring.Skills.AuthorMeasures</b></p><a name=\"SGAuthoring.Skills.AuthorMeasures\"> </a><a name=\"hcSGAuthoring.Skills.AuthorMeasures\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-SGRequirements.html\">SMART Guidelines Requirements</a></p></div><p>These requirements apply to the actor <a href=\"ActorDefinition-SGAuthoring.Persona.FHIRModeller.html\">FHIR Modeller</a></p><table class=\"grid\"><tr><td><b><a name=\"MEAS-01\"> </a></b>Create Measure resources</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can create FHIR Measure resources with population criteria referencing CQL indicator logic.</p>\n</div></td></tr><tr><td><b><a name=\"MEAS-02\"> </a></b>Define numerator and denominator</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can define numerator and denominator populations using CQL expressions.</p>\n</div></td></tr><tr><td><b><a name=\"MEAS-03\"> </a></b>Apply DSS specification</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHOULD\">SHOULD</a></td><td><div><p>Can define measures according to the Data Sharing Specification (DSS) described in the IHE White Paper for mADX.</p>\n</div></td></tr></table></div><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : Requirements SGAuthoring.Skills.AuthorMeasures</b></p><a name=\"fr-SGAuthoring.Skills.AuthorMeasures\"> </a><a name=\"fr-hcSGAuthoring.Skills.AuthorMeasures\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-SGRequirements.html\">SMART Guidelines Requirements</a></p></div><p>Ces exigences s'appliquent à l'acteur <a href=\"ActorDefinition-SGAuthoring.Persona.FHIRModeller.html\">FHIR Modeller</a></p><table class=\"grid\"><tr><td><b><a name=\"fr-MEAS-01\"> </a></b>Create Measure resources</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can create FHIR Measure resources with population criteria referencing CQL indicator logic.</p>\n</div></td></tr><tr><td><b><a name=\"fr-MEAS-02\"> </a></b>Define numerator and denominator</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can define numerator and denominator populations using CQL expressions.</p>\n</div></td></tr><tr><td><b><a name=\"fr-MEAS-03\"> </a></b>Apply DSS specification</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHOULD\">SHOULD</a></td><td><div><p>Can define measures according to the Data Sharing Specification (DSS) described in the IHE White Paper for mADX.</p>\n</div></td></tr></table></div><div xml:lang=\"ar\" lang=\"ar\"><hr/><p><b>Arabic</b></p><hr/><p class=\"res-header-id\"><b>السرد المُنشأ: Requirements SGAuthoring.Skills.AuthorMeasures</b></p><a name=\"ar-SGAuthoring.Skills.AuthorMeasures\"> </a><a name=\"ar-hcSGAuthoring.Skills.AuthorMeasures\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">الملف الشخصي: <a href=\"StructureDefinition-SGRequirements.html\">SMART Guidelines Requirements</a></p></div><p>تنطبق هذه المتطلبات على الممثل <a href=\"ActorDefinition-SGAuthoring.Persona.FHIRModeller.html\">FHIR Modeller</a></p><table class=\"grid\"><tr><td><b><a name=\"ar-MEAS-01\"> </a></b>Create Measure resources</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can create FHIR Measure resources with population criteria referencing CQL indicator logic.</p>\n</div></td></tr><tr><td><b><a name=\"ar-MEAS-02\"> </a></b>Define numerator and denominator</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can define numerator and denominator populations using CQL expressions.</p>\n</div></td></tr><tr><td><b><a name=\"ar-MEAS-03\"> </a></b>Apply DSS specification</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHOULD\">SHOULD</a></td><td><div><p>Can define measures according to the Data Sharing Specification (DSS) described in the IHE White Paper for mADX.</p>\n</div></td></tr></table></div><div xml:lang=\"zh\" lang=\"zh\"><hr/><p><b>Chinese</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Requirements SGAuthoring.Skills.AuthorMeasures</b></p><a name=\"zh-SGAuthoring.Skills.AuthorMeasures\"> </a><a name=\"zh-hcSGAuthoring.Skills.AuthorMeasures\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-SGRequirements.html\">SMART Guidelines Requirements</a></p></div><p>These requirements apply to the actor <a href=\"ActorDefinition-SGAuthoring.Persona.FHIRModeller.html\">FHIR Modeller</a></p><table class=\"grid\"><tr><td><b><a name=\"zh-MEAS-01\"> </a></b>Create Measure resources</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can create FHIR Measure resources with population criteria referencing CQL indicator logic.</p>\n</div></td></tr><tr><td><b><a name=\"zh-MEAS-02\"> </a></b>Define numerator and denominator</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can define numerator and denominator populations using CQL expressions.</p>\n</div></td></tr><tr><td><b><a name=\"zh-MEAS-03\"> </a></b>Apply DSS specification</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHOULD\">SHOULD</a></td><td><div><p>Can define measures according to the Data Sharing Specification (DSS) described in the IHE White Paper for mADX.</p>\n</div></td></tr></table></div><div xml:lang=\"ru\" lang=\"ru\"><hr/><p><b>Russian</b></p><hr/><p class=\"res-header-id\"><b>Сгенерированный нарратив: Requirements SGAuthoring.Skills.AuthorMeasures</b></p><a name=\"ru-SGAuthoring.Skills.AuthorMeasures\"> </a><a name=\"ru-hcSGAuthoring.Skills.AuthorMeasures\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Профиль: <a href=\"StructureDefinition-SGRequirements.html\">SMART Guidelines Requirements</a></p></div><p>Эти требования распространяются и на актера <a href=\"ActorDefinition-SGAuthoring.Persona.FHIRModeller.html\">FHIR Modeller</a></p><table class=\"grid\"><tr><td><b><a name=\"ru-MEAS-01\"> </a></b>Create Measure resources</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can create FHIR Measure resources with population criteria referencing CQL indicator logic.</p>\n</div></td></tr><tr><td><b><a name=\"ru-MEAS-02\"> </a></b>Define numerator and denominator</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can define numerator and denominator populations using CQL expressions.</p>\n</div></td></tr><tr><td><b><a name=\"ru-MEAS-03\"> </a></b>Apply DSS specification</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHOULD\">SHOULD</a></td><td><div><p>Can define measures according to the Data Sharing Specification (DSS) described in the IHE White Paper for mADX.</p>\n</div></td></tr></table></div><div xml:lang=\"es\" lang=\"es\"><hr/><p><b>Spanish</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Requirements SGAuthoring.Skills.AuthorMeasures</b></p><a name=\"es-SGAuthoring.Skills.AuthorMeasures\"> </a><a name=\"es-hcSGAuthoring.Skills.AuthorMeasures\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-SGRequirements.html\">SMART Guidelines Requirements</a></p></div><p>These requirements apply to the actor <a href=\"ActorDefinition-SGAuthoring.Persona.FHIRModeller.html\">FHIR Modeller</a></p><table class=\"grid\"><tr><td><b><a name=\"es-MEAS-01\"> </a></b>Create Measure resources</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can create FHIR Measure resources with population criteria referencing CQL indicator logic.</p>\n</div></td></tr><tr><td><b><a name=\"es-MEAS-02\"> </a></b>Define numerator and denominator</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHALL\">SHALL</a></td><td><div><p>Can define numerator and denominator populations using CQL expressions.</p>\n</div></td></tr><tr><td><b><a name=\"es-MEAS-03\"> </a></b>Apply DSS specification</td><td><a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-conformance-expectation.html#conformance-expectation-SHOULD\">SHOULD</a></td><td><div><p>Can define measures according to the Data Sharing Specification (DSS) described in the IHE White Paper for mADX.</p>\n</div></td></tr></table></div></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://smart.who.int/base/StructureDefinition/SGTask" ] ;
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "http://smart.who.int/base/CodeSystem/SGTasks" ] ;
+       fhir:Coding.code [ fhir:value "userTask" ] ;
+       fhir:Coding.display [ fhir:value "User Task" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://smart.who.int/base/StructureDefinition/SGTask" ] ;
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "http://smart.who.int/base/CodeSystem/SGTasks" ] ;
+       fhir:Coding.code [ fhir:value "userTask" ] ;
+       fhir:Coding.display [ fhir:value "User Task" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Extension.url [ fhir:value "http://smart.who.int/base/StructureDefinition/SGTask" ] ;
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "http://smart.who.int/base/CodeSystem/SGTasks" ] ;
+       fhir:Coding.code [ fhir:value "userTask" ] ;
+       fhir:Coding.display [ fhir:value "User Task" ]
+     ]
+  ], [
+     fhir:index 3 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://smart.who.int/base/StructureDefinition/SGString" ] ;
+       fhir:Extension.valueString [ fhir:value "create FHIR Measure resources from L2 indicators" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://smart.who.int/base/StructureDefinition/SGString" ] ;
+       fhir:Extension.valueString [ fhir:value "indicator calculations are computable and aligned with the Data Sharing Specification" ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://smart.who.int/base/StructureDefinition/SGUserStory" ]
+  ], [
+     fhir:index 4 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.url" ] ;
+     fhir:Extension.valueUri [ fhir:value "http://smart.who.int/base/Requirements/SGAuthoring.Skills.AuthorMeasures" ]
+  ], [
+     fhir:index 5 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.version" ] ;
+     fhir:Extension.valueString [ fhir:value "1.0.0" ]
+  ], [
+     fhir:index 6 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.name" ] ;
+     fhir:Extension.valueString [ fhir:value "SkillAuthorMeasures" ]
+  ], [
+     fhir:index 7 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.title" ] ;
+     fhir:Extension.valueString [ fhir:value "Can author measures" ]
+  ], [
+     fhir:index 8 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.status" ] ;
+     fhir:Extension.valueCode [ fhir:value "draft" ]
+  ], [
+     fhir:index 9 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.experimental" ] ;
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ], [
+     fhir:index 10 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.date" ] ;
+     fhir:Extension.valueDateTime [ fhir:value "2026-08-27T08:35:55+00:00"^^xsd:dateTime ]
+  ], [
+     fhir:index 11 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.publisher" ] ;
+     fhir:Extension.valueString [ fhir:value "WHO" ]
+  ], [
+     fhir:index 12 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.contact" ] ;
+     fhir:Extension.valueContactDetail [
+       fhir:ContactDetail.name [ fhir:value "WHO" ] ;
+       fhir:ContactDetail.telecom [
+         fhir:index 0 ;
+         fhir:ContactPoint.system [ fhir:value "url" ] ;
+         fhir:ContactPoint.value [ fhir:value "http://who.int" ]
+       ]
+     ]
+  ], [
+     fhir:index 13 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.description" ] ;
+     fhir:Extension.valueMarkdown [ fhir:value "Capability to create FHIR Measure resources from L2 indicators." ]
+  ], [
+     fhir:index 14 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.jurisdiction" ]
+  ], [
+     fhir:index 15 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.actor" ] ;
+     fhir:Extension.valueCanonical [
+       fhir:value "http://smart.who.int/base/ActorDefinition/SGAuthoring.Persona.FHIRModeller" ;
+       fhir:link <http://smart.who.int/base/ActorDefinition/SGAuthoring.Persona.FHIRModeller>
+     ]
+  ], [
+     fhir:index 16 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key" ] ;
+       fhir:Extension.valueId [ fhir:value "MEAS-01" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.label" ] ;
+       fhir:Extension.valueString [ fhir:value "Create Measure resources" ]
+     ], [
+       fhir:index 2 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance" ] ;
+       fhir:Extension.valueCode [ fhir:value "SHALL" ]
+     ], [
+       fhir:index 3 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "Can create FHIR Measure resources with population criteria referencing CQL indicator logic." ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ], [
+     fhir:index 17 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key" ] ;
+       fhir:Extension.valueId [ fhir:value "MEAS-02" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.label" ] ;
+       fhir:Extension.valueString [ fhir:value "Define numerator and denominator" ]
+     ], [
+       fhir:index 2 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance" ] ;
+       fhir:Extension.valueCode [ fhir:value "SHALL" ]
+     ], [
+       fhir:index 3 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "Can define numerator and denominator populations using CQL expressions." ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ], [
+     fhir:index 18 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.key" ] ;
+       fhir:Extension.valueId [ fhir:value "MEAS-03" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.label" ] ;
+       fhir:Extension.valueString [ fhir:value "Apply DSS specification" ]
+     ], [
+       fhir:index 2 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.conformance" ] ;
+       fhir:Extension.valueCode [ fhir:value "SHOULD" ]
+     ], [
+       fhir:index 3 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "Can define measures according to the Data Sharing Specification (DSS) described in the IHE White Paper for mADX." ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ] ;
+  fhir:Basic.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/fhir-types" ] ;
+       fhir:Coding.code [ fhir:value "Requirements" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://smart.who.int/base/Basic/SGAuthoring.Skills.AuthorMeasures.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

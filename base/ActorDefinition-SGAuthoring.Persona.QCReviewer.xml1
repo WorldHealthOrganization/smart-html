@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="SGAuthoring.Persona.QCReviewer"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ActorDefinition SGAuthoring.Persona.QCReviewer</b></p><a name="SGAuthoring.Persona.QCReviewer"> </a><a name="hcSGAuthoring.Persona.QCReviewer"> </a><table class="grid"><tr><td><b>Actor: QCReviewer </b></td><td>Quality Control Reviewer</td><td>Type: person </td></tr><tr><td colspan="3"/></tr></table></div><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><p class="res-header-id"><b>Narratif généré : ActorDefinition SGAuthoring.Persona.QCReviewer</b></p><a name="fr-SGAuthoring.Persona.QCReviewer"> </a><a name="fr-hcSGAuthoring.Persona.QCReviewer"> </a><table class="grid"><tr><td><b>Acteur : QCReviewer </b></td><td>Quality Control Reviewer</td><td>Type : person </td></tr><tr><td colspan="3"/></tr></table></div><div xml:lang="ar" lang="ar"><hr/><p><b>Arabic</b></p><hr/><p class="res-header-id"><b>السرد المُنشأ: ActorDefinition SGAuthoring.Persona.QCReviewer</b></p><a name="ar-SGAuthoring.Persona.QCReviewer"> </a><a name="ar-hcSGAuthoring.Persona.QCReviewer"> </a><table class="grid"><tr><td><b>الفاعل: QCReviewer </b></td><td>Quality Control Reviewer</td><td>اكتب: person </td></tr><tr><td colspan="3"/></tr></table></div><div xml:lang="zh" lang="zh"><hr/><p><b>Chinese</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ActorDefinition SGAuthoring.Persona.QCReviewer</b></p><a name="zh-SGAuthoring.Persona.QCReviewer"> </a><a name="zh-hcSGAuthoring.Persona.QCReviewer"> </a><table class="grid"><tr><td><b>Actor: QCReviewer </b></td><td>Quality Control Reviewer</td><td>Type: person </td></tr><tr><td colspan="3"/></tr></table></div><div xml:lang="ru" lang="ru"><hr/><p><b>Russian</b></p><hr/><p class="res-header-id"><b>Сгенерированный нарратив: ActorDefinition SGAuthoring.Persona.QCReviewer</b></p><a name="ru-SGAuthoring.Persona.QCReviewer"> </a><a name="ru-hcSGAuthoring.Persona.QCReviewer"> </a><table class="grid"><tr><td><b>Актер: QCReviewer </b></td><td>Quality Control Reviewer</td><td>Тип: person </td></tr><tr><td colspan="3"/></tr></table></div><div xml:lang="es" lang="es"><hr/><p><b>Spanish</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ActorDefinition SGAuthoring.Persona.QCReviewer</b></p><a name="es-SGAuthoring.Persona.QCReviewer"> </a><a name="es-hcSGAuthoring.Persona.QCReviewer"> </a><table class="grid"><tr><td><b>Actor: QCReviewer </b></td><td>Quality Control Reviewer</td><td>Type: person </td></tr><tr><td colspan="3"/></tr></table></div></div>
+  </text>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.url">
+    <valueUri value="http://smart.who.int/base/ActorDefinition/SGAuthoring.Persona.QCReviewer"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.version">
+    <valueString value="1.0.0"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.name">
+    <valueString value="QCReviewer"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.title">
+    <valueString value="Quality Control Reviewer"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.status">
+    <valueCode value="draft"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.experimental">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.date">
+    <valueDateTime value="2026-08-27T08:35:55+00:00"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.publisher">
+    <valueString value="WHO"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.contact">
+    <valueContactDetail>
+      <name value="WHO"/>
+      <telecom>
+        <system value="url"/>
+        <value value="http://who.int"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.description">
+    <valueMarkdown value="A quality assurance specialist responsible for reviewing SMART Guidelines&#xA;Implementation Guides for publication readiness. QC Reviewers use the&#xA;publication checklist across L1-L4 layers, interpret QA validation reports,&#xA;and verify artifact conformance and cross-component consistency.&#xA;&#xA;Key activities:&#xA;- Run and interpret IG Publisher QA reports (qa.html)&#xA;- Review publication checklist across L1, L2, L3, L4, and Global sections&#xA;- Verify conformance to Shareable, Publishable, Computable, Executable profiles&#xA;- Validate StructureMap extraction produces expected output&#xA;- Verify CQL execution and measure calculations&#xA;- Check cross-component consistency (personas, data elements, processes)&#xA;- Validate all artifacts have required title, description, and mappings&#xA;- Confirm naming conventions and reference resolution&#xA;- Review change log completeness and versioning compliance&#xA;&#xA;**Source**: IG Starter Kit, QA Check page, Checklist page, Validating IG page"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.jurisdiction"/>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.type">
+    <valueCode value="person"/>
+  </extension>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/fhir-types"/>
+      <code value="ActorDefinition"/>
+    </coding>
+  </code>
+</Basic>
