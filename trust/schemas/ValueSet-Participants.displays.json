@@ -80,9 +80,6 @@
     "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#IDN": {
       "en": "IDN"
     },
-    "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#IRL": {
-      "en": "IRL"
-    },
     "http://smart.who.int/refmart/CodeSystems/REF_COUNTRY#LVA": {
       "en": "LVA"
     },
@@ -142,6 +139,6 @@
     }
   },
   "fhir:valueSet": "http://smart.who.int/trust/ValueSet/Participants",
-  "fhir:version": "1.7.0",
-  "fhir:expansionTimestamp": "2026-07-30T12:01:34.781468"
+  "fhir:version": "1.7.1",
+  "fhir:expansionTimestamp": "2026-08-27T05:56:07.288861"
 }

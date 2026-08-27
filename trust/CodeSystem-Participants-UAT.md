@@ -1,4 +1,4 @@
-# WHO GDHCN Trust Network Participant - UAT - WHO SMART Trust v1.7.0
+# WHO GDHCN Trust Network Participant - UAT - WHO SMART Trust v1.7.1
 
 * [**Table of Contents**](toc.md)
 * [**Indices**](indices.md)
@@ -9,15 +9,15 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://smart.who.int/trust/CodeSystems/Participants-UAT | *Version*:1.7.0 |
-| Draft as of 2026-07-30 | *Computable Name*:Participants-UAT |
+| *Official URL*:http://smart.who.int/trust/CodeSystems/Participants-UAT | *Version*:1.7.1 |
+| Draft as of 2026-08-27 | *Computable Name*:Participants-UAT |
 
  
 CodeSystem for GDHCN Trust Network Participants for User Acceptance Testing environment 
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [Participants-UAT](ValueSet-Participants-UAT.md)
+* [WHO GDHCN Trust Network Participant - UAT](ValueSet-Participants-UAT.md)
 
 
 
@@ -28,12 +28,12 @@ CodeSystem for GDHCN Trust Network Participants for User Acceptance Testing envi
   "resourceType" : "CodeSystem",
   "id" : "Participants-UAT",
   "url" : "http://smart.who.int/trust/CodeSystems/Participants-UAT",
-  "version" : "1.7.0",
+  "version" : "1.7.1",
   "name" : "Participants-UAT",
   "title" : "WHO GDHCN Trust Network Participant - UAT",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-07-30T11:57:48+00:00",
+  "date" : "2026-08-27T05:52:17+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",
@@ -51,14 +51,18 @@ CodeSystem for GDHCN Trust Network Participants for User Acceptance Testing envi
   }],
   "caseSensitive" : false,
   "content" : "complete",
-  "count" : 13,
+  "count" : 14,
   "concept" : [{
+    "code" : "IOM",
+    "display" : "IOM"
+  },
+  {
     "code" : "WHO",
     "display" : "UAT Participant WHO"
   },
   {
     "code" : "XXA",
-    "display" : "UAT Participant XXA"
+    "display" : "Geneva"
   },
   {
     "code" : "XXB",
@@ -77,16 +81,24 @@ CodeSystem for GDHCN Trust Network Participants for User Acceptance Testing envi
     "display" : "UAT Participant XXO"
   },
   {
+    "code" : "XXQ",
+    "display" : "Test Locality"
+  },
+  {
     "code" : "XXS",
-    "display" : "UAT Participant XXS"
+    "display" : "Test Locality"
+  },
+  {
+    "code" : "XXT",
+    "display" : "Geneva"
   },
   {
     "code" : "XXU",
-    "display" : "UAT Participant XXU"
+    "display" : "Geneva"
   },
   {
     "code" : "XXV",
-    "display" : "UAT Participant XXV"
+    "display" : "test city"
   },
   {
     "code" : "XXX",
@@ -94,15 +106,7 @@ CodeSystem for GDHCN Trust Network Participants for User Acceptance Testing envi
   },
   {
     "code" : "XYK",
-    "display" : "UAT Participant XYK"
-  },
-  {
-    "code" : "IOM",
-    "display" : "UAT Participant IOM"
-  },
-  {
-    "code" : "XXQ",
-    "display" : "UAT Participant XXQ"
+    "display" : "INDIA"
   }]
 }
 

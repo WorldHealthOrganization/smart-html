@@ -191,6 +191,9 @@
     "http://smart.who.int/trust/CodeSystems/Participants-UAT#XXS": {
       "en": "XXS"
     },
+    "http://smart.who.int/trust/CodeSystems/Participants-UAT#XXT": {
+      "en": "XXT"
+    },
     "http://smart.who.int/trust/CodeSystems/Participants-UAT#XXU": {
       "en": "XXU"
     },
@@ -205,6 +208,6 @@
     }
   },
   "fhir:valueSet": "http://smart.who.int/trust/ValueSet/Participants-UAT",
-  "fhir:version": "1.7.0",
-  "fhir:expansionTimestamp": "2026-07-30T12:01:34.781242"
+  "fhir:version": "1.7.1",
+  "fhir:expansionTimestamp": "2026-08-27T05:56:07.289454"
 }

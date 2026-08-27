@@ -10,12 +10,12 @@
 </div></div>
   </text>
   <url value="http://smart.who.int/trust/ImplementationGuide/smart.who.int.trust"/>
-  <version value="1.7.0"/>
+  <version value="1.7.1"/>
   <name value="Trust"/>
   <title value="WHO SMART Trust"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2026-07-30T11:57:48+00:00"/>
+  <date value="2026-08-27T05:52:17+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -241,6 +241,16 @@
         <valueString value="Organization"/>
       </extension>
       <reference>
+        <reference value="Organization/GDHCNParticipant-ARE-DEV"/>
+      </reference>
+      <name value="GDHCNParticipant-ARE-DEV"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
         <reference value="Organization/GDHCNParticipant-ARG-DEV"/>
       </reference>
       <name value="GDHCNParticipant-ARG-DEV"/>
@@ -334,6 +344,16 @@
         <reference value="Organization/GDHCNParticipant-BLZ-DEV"/>
       </reference>
       <name value="GDHCNParticipant-BLZ-DEV"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/GDHCNParticipant-BOL-DEV"/>
+      </reference>
+      <name value="GDHCNParticipant-BOL-DEV"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -691,9 +711,9 @@
         <valueString value="Organization"/>
       </extension>
       <reference>
-        <reference value="Organization/GDHCNParticipant-IOM-UAT"/>
+        <reference value="Organization/GDHCNParticipant-IOM-DEV"/>
       </reference>
-      <name value="GDHCNParticipant-IOM-UAT"/>
+      <name value="GDHCNParticipant-IOM-DEV"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -701,9 +721,9 @@
         <valueString value="Organization"/>
       </extension>
       <reference>
-        <reference value="Organization/GDHCNParticipant-IRL"/>
+        <reference value="Organization/GDHCNParticipant-IOM-UAT"/>
       </reference>
-      <name value="GDHCNParticipant-IRL"/>
+      <name value="GDHCNParticipant-IOM-UAT"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -724,6 +744,16 @@
         <reference value="Organization/GDHCNParticipant-ISL"/>
       </reference>
       <name value="GDHCNParticipant-ISL"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/GDHCNParticipant-JAM-DEV"/>
+      </reference>
+      <name value="GDHCNParticipant-JAM-DEV"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -834,6 +864,16 @@
         <reference value="Organization/GDHCNParticipant-MYS-UAT"/>
       </reference>
       <name value="GDHCNParticipant-MYS-UAT"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/GDHCNParticipant-NIC-DEV"/>
+      </reference>
+      <name value="GDHCNParticipant-NIC-DEV"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -1221,6 +1261,16 @@
         <valueString value="Organization"/>
       </extension>
       <reference>
+        <reference value="Organization/GDHCNParticipant-TTO-DEV"/>
+      </reference>
+      <name value="GDHCNParticipant-TTO-DEV"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
         <reference value="Organization/GDHCNParticipant-TUR"/>
       </reference>
       <name value="GDHCNParticipant-TUR"/>
@@ -1471,6 +1521,16 @@
         <valueString value="Organization"/>
       </extension>
       <reference>
+        <reference value="Organization/GDHCNParticipant-XXN-DEV"/>
+      </reference>
+      <name value="GDHCNParticipant-XXN-DEV"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
         <reference value="Organization/GDHCNParticipant-XXO-DEV"/>
       </reference>
       <name value="GDHCNParticipant-XXO-DEV"/>
@@ -1501,6 +1561,16 @@
         <valueString value="Organization"/>
       </extension>
       <reference>
+        <reference value="Organization/GDHCNParticipant-XXQ-DEV"/>
+      </reference>
+      <name value="GDHCNParticipant-XXQ-DEV"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
         <reference value="Organization/GDHCNParticipant-XXQ-UAT"/>
       </reference>
       <name value="GDHCNParticipant-XXQ-UAT"/>
@@ -1514,6 +1584,26 @@
         <reference value="Organization/GDHCNParticipant-XXS-UAT"/>
       </reference>
       <name value="GDHCNParticipant-XXS-UAT"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/GDHCNParticipant-XXT-DEV"/>
+      </reference>
+      <name value="GDHCNParticipant-XXT-DEV"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/GDHCNParticipant-XXT-UAT"/>
+      </reference>
+      <name value="GDHCNParticipant-XXT-UAT"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -1554,6 +1644,16 @@
         <reference value="Organization/GDHCNParticipant-XXV-UAT"/>
       </reference>
       <name value="GDHCNParticipant-XXV-UAT"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/GDHCNParticipant-XXW-DEV"/>
+      </reference>
+      <name value="GDHCNParticipant-XXW-DEV"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -1749,6 +1849,37 @@
         <reference value="Endpoint/GDHCNParticipantDID-AND-UAT-SCA"/>
       </reference>
       <name value="GDHCNParticipantDID-AND-UAT-SCA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-ARE-DEV-All"/>
+      </reference>
+      <name value="GDHCNParticipantDID-ARE-DEV-All"/>
+      <description value="United Arab Emirates Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:ARE&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/ARE/did.json"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-ARE-DEV-DSC"/>
+      </reference>
+      <name value="GDHCNParticipantDID-ARE-DEV-DSC"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-ARE-DEV-SCA"/>
+      </reference>
+      <name value="GDHCNParticipantDID-ARE-DEV-SCA"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -2059,6 +2190,37 @@
         <reference value="Endpoint/GDHCNParticipantDID-BLZ-DEV-SCA"/>
       </reference>
       <name value="GDHCNParticipantDID-BLZ-DEV-SCA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-BOL-DEV-All"/>
+      </reference>
+      <name value="GDHCNParticipantDID-BOL-DEV-All"/>
+      <description value="Bolivia (Plurinational State of) Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:BOL&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/BOL/did.json"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-BOL-DEV-DSC"/>
+      </reference>
+      <name value="GDHCNParticipantDID-BOL-DEV-DSC"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-BOL-DEV-SCA"/>
+      </reference>
+      <name value="GDHCNParticipantDID-BOL-DEV-SCA"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -3151,10 +3313,41 @@
         <valueString value="Endpoint"/>
       </extension>
       <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-IOM-DEV-All"/>
+      </reference>
+      <name value="GDHCNParticipantDID-IOM-DEV-All"/>
+      <description value="TEST Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:IOM&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/IOM/did.json"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-IOM-DEV-DSC"/>
+      </reference>
+      <name value="GDHCNParticipantDID-IOM-DEV-DSC"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-IOM-DEV-SCA"/>
+      </reference>
+      <name value="GDHCNParticipantDID-IOM-DEV-SCA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
         <reference value="Endpoint/GDHCNParticipantDID-IOM-UAT-All"/>
       </reference>
       <name value="GDHCNParticipantDID-IOM-UAT-All"/>
-      <description value="UAT Participant IOM Trustlist (DID v2) - UAT - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:IOM&#xA;resolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/IOM/did.json"/>
+      <description value="IOM Trustlist (DID v2) - UAT - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:IOM&#xA;resolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/IOM/did.json"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -3175,37 +3368,6 @@
         <reference value="Endpoint/GDHCNParticipantDID-IOM-UAT-SCA"/>
       </reference>
       <name value="GDHCNParticipantDID-IOM-UAT-SCA"/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Endpoint"/>
-      </extension>
-      <reference>
-        <reference value="Endpoint/GDHCNParticipantDID-IRL-All"/>
-      </reference>
-      <name value="GDHCNParticipantDID-IRL-All"/>
-      <description value="Ireland Trustlist (DID v2) - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:IRL&#xA;resolvable at https://tng-cdn.who.int/v2/trustlist/-/IRL/did.json"/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Endpoint"/>
-      </extension>
-      <reference>
-        <reference value="Endpoint/GDHCNParticipantDID-IRL-DSC"/>
-      </reference>
-      <name value="GDHCNParticipantDID-IRL-DSC"/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Endpoint"/>
-      </extension>
-      <reference>
-        <reference value="Endpoint/GDHCNParticipantDID-IRL-SCA"/>
-      </reference>
-      <name value="GDHCNParticipantDID-IRL-SCA"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -3268,6 +3430,37 @@
         <reference value="Endpoint/GDHCNParticipantDID-ISL-SCA"/>
       </reference>
       <name value="GDHCNParticipantDID-ISL-SCA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-JAM-DEV-All"/>
+      </reference>
+      <name value="GDHCNParticipantDID-JAM-DEV-All"/>
+      <description value="Jamaica Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:JAM&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/JAM/did.json"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-JAM-DEV-DSC"/>
+      </reference>
+      <name value="GDHCNParticipantDID-JAM-DEV-DSC"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-JAM-DEV-SCA"/>
+      </reference>
+      <name value="GDHCNParticipantDID-JAM-DEV-SCA"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -3609,6 +3802,37 @@
         <reference value="Endpoint/GDHCNParticipantDID-MYS-UAT-SCA"/>
       </reference>
       <name value="GDHCNParticipantDID-MYS-UAT-SCA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-NIC-DEV-All"/>
+      </reference>
+      <name value="GDHCNParticipantDID-NIC-DEV-All"/>
+      <description value="Nicaragua Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:NIC&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/NIC/did.json"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-NIC-DEV-DSC"/>
+      </reference>
+      <name value="GDHCNParticipantDID-NIC-DEV-DSC"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-NIC-DEV-SCA"/>
+      </reference>
+      <name value="GDHCNParticipantDID-NIC-DEV-SCA"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -4794,6 +5018,37 @@
         <valueString value="Endpoint"/>
       </extension>
       <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-TTO-DEV-All"/>
+      </reference>
+      <name value="GDHCNParticipantDID-TTO-DEV-All"/>
+      <description value="Trinidad and Tobago Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:TTO&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/TTO/did.json"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-TTO-DEV-DSC"/>
+      </reference>
+      <name value="GDHCNParticipantDID-TTO-DEV-DSC"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-TTO-DEV-SCA"/>
+      </reference>
+      <name value="GDHCNParticipantDID-TTO-DEV-SCA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
         <reference value="Endpoint/GDHCNParticipantDID-TUR-All"/>
       </reference>
       <name value="GDHCNParticipantDID-TUR-All"/>
@@ -5044,7 +5299,7 @@
         <reference value="Endpoint/GDHCNParticipantDID-XCL-DEV-All"/>
       </reference>
       <name value="GDHCNParticipantDID-XCL-DEV-All"/>
-      <description value="DEV Participant XCL Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XCL&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XCL/did.json"/>
+      <description value="California Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XCL&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XCL/did.json"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -5075,7 +5330,7 @@
         <reference value="Endpoint/GDHCNParticipantDID-XML-DEV-All"/>
       </reference>
       <name value="GDHCNParticipantDID-XML-DEV-All"/>
-      <description value="DEV Participant XML Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XML&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XML/did.json"/>
+      <description value="GDHCN entomo Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XML&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XML/did.json"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -5106,7 +5361,7 @@
         <reference value="Endpoint/GDHCNParticipantDID-XXA-DEV-All"/>
       </reference>
       <name value="GDHCNParticipantDID-XXA-DEV-All"/>
-      <description value="DEV Participant XXA Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXA&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXA/did.json"/>
+      <description value="Geneva Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXA&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXA/did.json"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -5137,7 +5392,7 @@
         <reference value="Endpoint/GDHCNParticipantDID-XXA-UAT-All"/>
       </reference>
       <name value="GDHCNParticipantDID-XXA-UAT-All"/>
-      <description value="UAT Participant XXA Trustlist (DID v2) - UAT - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXA&#xA;resolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXA/did.json"/>
+      <description value="Geneva Trustlist (DID v2) - UAT - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXA&#xA;resolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXA/did.json"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -5168,7 +5423,7 @@
         <reference value="Endpoint/GDHCNParticipantDID-XXB-DEV-All"/>
       </reference>
       <name value="GDHCNParticipantDID-XXB-DEV-All"/>
-      <description value="DEV Participant XXB Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXB&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXB/did.json"/>
+      <description value="TEST Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXB&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXB/did.json"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -5230,7 +5485,7 @@
         <reference value="Endpoint/GDHCNParticipantDID-XXC-DEV-All"/>
       </reference>
       <name value="GDHCNParticipantDID-XXC-DEV-All"/>
-      <description value="DEV Participant XXC Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXC&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXC/did.json"/>
+      <description value="TEST Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXC&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXC/did.json"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -5292,7 +5547,7 @@
         <reference value="Endpoint/GDHCNParticipantDID-XXD-DEV-All"/>
       </reference>
       <name value="GDHCNParticipantDID-XXD-DEV-All"/>
-      <description value="DEV Participant XXD Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXD&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXD/did.json"/>
+      <description value="CENS XD Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXD&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXD/did.json"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -5354,7 +5609,7 @@
         <reference value="Endpoint/GDHCNParticipantDID-XXE-DEV-All"/>
       </reference>
       <name value="GDHCNParticipantDID-XXE-DEV-All"/>
-      <description value="DEV Participant XXE Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXE&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXE/did.json"/>
+      <description value="Geneva XE Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXE&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXE/did.json"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -5385,7 +5640,7 @@
         <reference value="Endpoint/GDHCNParticipantDID-XXF-DEV-All"/>
       </reference>
       <name value="GDHCNParticipantDID-XXF-DEV-All"/>
-      <description value="DEV Participant XXF Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXF&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXF/did.json"/>
+      <description value="Test Locality XF Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXF&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXF/did.json"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -5416,7 +5671,7 @@
         <reference value="Endpoint/GDHCNParticipantDID-XXG-DEV-All"/>
       </reference>
       <name value="GDHCNParticipantDID-XXG-DEV-All"/>
-      <description value="DEV Participant XXG Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXG&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXG/did.json"/>
+      <description value="Geneva Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXG&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXG/did.json"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -5447,7 +5702,7 @@
         <reference value="Endpoint/GDHCNParticipantDID-XXH-DEV-All"/>
       </reference>
       <name value="GDHCNParticipantDID-XXH-DEV-All"/>
-      <description value="DEV Participant XXH Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXH&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXH/did.json"/>
+      <description value="Geneva Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXH&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXH/did.json"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -5478,7 +5733,7 @@
         <reference value="Endpoint/GDHCNParticipantDID-XXI-DEV-All"/>
       </reference>
       <name value="GDHCNParticipantDID-XXI-DEV-All"/>
-      <description value="DEV Participant XXI Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXI&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXI/did.json"/>
+      <description value="California Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXI&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXI/did.json"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -5540,7 +5795,7 @@
         <reference value="Endpoint/GDHCNParticipantDID-XXK-DEV-All"/>
       </reference>
       <name value="GDHCNParticipantDID-XXK-DEV-All"/>
-      <description value="DEV Participant XXK Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXK&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXK/did.json"/>
+      <description value="Rengo Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXK&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXK/did.json"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -5561,6 +5816,37 @@
         <reference value="Endpoint/GDHCNParticipantDID-XXK-DEV-SCA"/>
       </reference>
       <name value="GDHCNParticipantDID-XXK-DEV-SCA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-XXN-DEV-All"/>
+      </reference>
+      <name value="GDHCNParticipantDID-XXN-DEV-All"/>
+      <description value="DEV Participant XXN Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXN&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXN/did.json"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-XXN-DEV-DSC"/>
+      </reference>
+      <name value="GDHCNParticipantDID-XXN-DEV-DSC"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-XXN-DEV-SCA"/>
+      </reference>
+      <name value="GDHCNParticipantDID-XXN-DEV-SCA"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -5633,7 +5919,7 @@
         <reference value="Endpoint/GDHCNParticipantDID-XXP-DEV-All"/>
       </reference>
       <name value="GDHCNParticipantDID-XXP-DEV-All"/>
-      <description value="DEV Participant XXP Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXP&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXP/did.json"/>
+      <description value="Geneva Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXP&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXP/did.json"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -5661,10 +5947,41 @@
         <valueString value="Endpoint"/>
       </extension>
       <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-XXQ-DEV-All"/>
+      </reference>
+      <name value="GDHCNParticipantDID-XXQ-DEV-All"/>
+      <description value="Test Locality Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXQ&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXQ/did.json"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-XXQ-DEV-DSC"/>
+      </reference>
+      <name value="GDHCNParticipantDID-XXQ-DEV-DSC"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-XXQ-DEV-SCA"/>
+      </reference>
+      <name value="GDHCNParticipantDID-XXQ-DEV-SCA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
         <reference value="Endpoint/GDHCNParticipantDID-XXQ-UAT-All"/>
       </reference>
       <name value="GDHCNParticipantDID-XXQ-UAT-All"/>
-      <description value="UAT Participant XXQ Trustlist (DID v2) - UAT - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXQ&#xA;resolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXQ/did.json"/>
+      <description value="Test Locality Trustlist (DID v2) - UAT - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXQ&#xA;resolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXQ/did.json"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -5695,7 +6012,7 @@
         <reference value="Endpoint/GDHCNParticipantDID-XXS-UAT-All"/>
       </reference>
       <name value="GDHCNParticipantDID-XXS-UAT-All"/>
-      <description value="UAT Participant XXS Trustlist (DID v2) - UAT - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXS&#xA;resolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXS/did.json"/>
+      <description value="Test Locality Trustlist (DID v2) - UAT - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXS&#xA;resolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXS/did.json"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -5723,10 +6040,72 @@
         <valueString value="Endpoint"/>
       </extension>
       <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-XXT-DEV-All"/>
+      </reference>
+      <name value="GDHCNParticipantDID-XXT-DEV-All"/>
+      <description value="Geneva Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXT&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXT/did.json"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-XXT-DEV-DSC"/>
+      </reference>
+      <name value="GDHCNParticipantDID-XXT-DEV-DSC"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-XXT-DEV-SCA"/>
+      </reference>
+      <name value="GDHCNParticipantDID-XXT-DEV-SCA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-XXT-UAT-All"/>
+      </reference>
+      <name value="GDHCNParticipantDID-XXT-UAT-All"/>
+      <description value="Geneva Trustlist (DID v2) - UAT - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXT&#xA;resolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXT/did.json"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-XXT-UAT-DSC"/>
+      </reference>
+      <name value="GDHCNParticipantDID-XXT-UAT-DSC"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-XXT-UAT-SCA"/>
+      </reference>
+      <name value="GDHCNParticipantDID-XXT-UAT-SCA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
         <reference value="Endpoint/GDHCNParticipantDID-XXU-DEV-All"/>
       </reference>
       <name value="GDHCNParticipantDID-XXU-DEV-All"/>
-      <description value="DEV Participant XXU Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXU&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXU/did.json"/>
+      <description value="Geneva Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXU&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXU/did.json"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -5757,7 +6136,7 @@
         <reference value="Endpoint/GDHCNParticipantDID-XXU-UAT-All"/>
       </reference>
       <name value="GDHCNParticipantDID-XXU-UAT-All"/>
-      <description value="UAT Participant XXU Trustlist (DID v2) - UAT - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXU&#xA;resolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXU/did.json"/>
+      <description value="Geneva Trustlist (DID v2) - UAT - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXU&#xA;resolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXU/did.json"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -5788,7 +6167,7 @@
         <reference value="Endpoint/GDHCNParticipantDID-XXV-DEV-All"/>
       </reference>
       <name value="GDHCNParticipantDID-XXV-DEV-All"/>
-      <description value="DEV Participant XXV Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXV&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXV/did.json"/>
+      <description value="test city Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXV&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXV/did.json"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -5819,7 +6198,7 @@
         <reference value="Endpoint/GDHCNParticipantDID-XXV-UAT-All"/>
       </reference>
       <name value="GDHCNParticipantDID-XXV-UAT-All"/>
-      <description value="UAT Participant XXV Trustlist (DID v2) - UAT - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXV&#xA;resolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXV/did.json"/>
+      <description value="test city Trustlist (DID v2) - UAT - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXV&#xA;resolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XXV/did.json"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -5847,10 +6226,41 @@
         <valueString value="Endpoint"/>
       </extension>
       <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-XXW-DEV-All"/>
+      </reference>
+      <name value="GDHCNParticipantDID-XXW-DEV-All"/>
+      <description value="Test Locality Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXW&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXW/did.json"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-XXW-DEV-DSC"/>
+      </reference>
+      <name value="GDHCNParticipantDID-XXW-DEV-DSC"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-XXW-DEV-SCA"/>
+      </reference>
+      <name value="GDHCNParticipantDID-XXW-DEV-SCA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
         <reference value="Endpoint/GDHCNParticipantDID-XXX-DEV-All"/>
       </reference>
       <name value="GDHCNParticipantDID-XXX-DEV-All"/>
-      <description value="DEV Participant XXX Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXX&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXX/did.json"/>
+      <description value="Warrandyte Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXX&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXX/did.json"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -5912,7 +6322,7 @@
         <reference value="Endpoint/GDHCNParticipantDID-XYK-DEV-All"/>
       </reference>
       <name value="GDHCNParticipantDID-XYK-DEV-All"/>
-      <description value="DEV Participant XYK Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XYK&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XYK/did.json"/>
+      <description value="Test Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XYK&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XYK/did.json"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -5943,7 +6353,7 @@
         <reference value="Endpoint/GDHCNParticipantDID-XYK-UAT-All"/>
       </reference>
       <name value="GDHCNParticipantDID-XYK-UAT-All"/>
-      <description value="UAT Participant XYK Trustlist (DID v2) - UAT - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XYK&#xA;resolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XYK/did.json"/>
+      <description value="INDIA Trustlist (DID v2) - UAT - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XYK&#xA;resolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XYK/did.json"/>
       <isExample value="false"/>
     </resource>
     <resource>

@@ -11,7 +11,7 @@
   },
   "@id": "http://smart.who.int/trust/ValueSet-Participants-UAT.jsonld",
   "@type": "http://www.w3.org/ns/prov#Entity",
-  "generatedAt": "2026-07-30T12:01:34.902945Z",
+  "generatedAt": "2026-08-27T05:56:07.418935Z",
   "@graph": [
     {
       "id": "http://smart.who.int/trust/ValueSet-Participants-UAT.jsonld#ALB",
@@ -323,6 +323,12 @@
       "id": "http://smart.who.int/trust/ValueSet-Participants-UAT.jsonld#XXS",
       "name": "XXS",
       "fhir:code": "XXS",
+      "fhir:CodeSystem": "http://smart.who.int/trust/CodeSystems/Participants-UAT"
+    },
+    {
+      "id": "http://smart.who.int/trust/ValueSet-Participants-UAT.jsonld#XXT",
+      "name": "XXT",
+      "fhir:code": "XXT",
       "fhir:CodeSystem": "http://smart.who.int/trust/CodeSystems/Participants-UAT"
     },
     {

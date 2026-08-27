@@ -1,4 +1,4 @@
-# Retrieve HL7 FHIR compatible business rules - WHO SMART Trust v1.7.0
+# Retrieve HL7 FHIR compatible business rules - WHO SMART Trust v1.7.1
 
 * [**Table of Contents**](toc.md)
 * [**Indices**](indices.md)
@@ -9,8 +9,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://smart.who.int/trust/Requirements/RetrieveBusinessRulesFHIR | *Version*:1.7.0 |
-| Active as of 2026-07-30 | *Computable Name*:Retrieve FHIR Business Rules |
+| *Official URL*:http://smart.who.int/trust/Requirements/RetrieveBusinessRulesFHIR | *Version*:1.7.1 |
+| Active as of 2026-08-27 | *Computable Name*:Retrieve FHIR Business Rules |
 
  
 Retrieve business rules from a distribution point using HL7 FHIR standards 
@@ -46,12 +46,12 @@ Retrieve business rules from a distribution point using HL7 FHIR standards
     }
   }],
   "url" : "http://smart.who.int/trust/Requirements/RetrieveBusinessRulesFHIR",
-  "version" : "1.7.0",
+  "version" : "1.7.1",
   "name" : "Retrieve FHIR Business Rules",
   "title" : "Retrieve HL7 FHIR compatible business rules",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-30T11:57:48+00:00",
+  "date" : "2026-08-27T05:52:17+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

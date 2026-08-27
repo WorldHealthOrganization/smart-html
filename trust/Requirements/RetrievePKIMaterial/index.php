@@ -7,19 +7,19 @@ function Redirect($url)
 
 $accept = $_SERVER['HTTP_ACCEPT'];
 if (strpos($accept, 'application/json+fhir') !== false)
-  Redirect('http://smart.who.int/trust/v1.7.0/Requirements-RetrievePKIMaterial.json2');
+  Redirect('https://smart.who.int/trust/v1.7.1/Requirements-RetrievePKIMaterial.json2');
 elseif (strpos($accept, 'application/fhir+json') !== false)
-  Redirect('http://smart.who.int/trust/v1.7.0/Requirements-RetrievePKIMaterial.json1');
+  Redirect('https://smart.who.int/trust/v1.7.1/Requirements-RetrievePKIMaterial.json1');
 elseif (strpos($accept, 'json') !== false)
-  Redirect('http://smart.who.int/trust/v1.7.0/Requirements-RetrievePKIMaterial.json');
+  Redirect('https://smart.who.int/trust/v1.7.1/Requirements-RetrievePKIMaterial.json');
 elseif (strpos($accept, 'application/xml+fhir') !== false)
-  Redirect('http://smart.who.int/trust/v1.7.0/Requirements-RetrievePKIMaterial.xml2');
+  Redirect('https://smart.who.int/trust/v1.7.1/Requirements-RetrievePKIMaterial.xml2');
 elseif (strpos($accept, 'application/fhir+xml') !== false)
-  Redirect('http://smart.who.int/trust/v1.7.0/Requirements-RetrievePKIMaterial.xml1');
+  Redirect('https://smart.who.int/trust/v1.7.1/Requirements-RetrievePKIMaterial.xml1');
 elseif (strpos($accept, 'html') !== false)
-  Redirect('http://smart.who.int/trust/v1.7.0/Requirements-RetrievePKIMaterial.html');
+  Redirect('https://smart.who.int/trust/v1.7.1/Requirements-RetrievePKIMaterial.html');
 else 
-  Redirect('http://smart.who.int/trust/v1.7.0/Requirements-RetrievePKIMaterial.xml');
+  Redirect('https://smart.who.int/trust/v1.7.1/Requirements-RetrievePKIMaterial.xml');
 ?>
     
 You should not be seeing this page. If you do, PHP has failed badly.

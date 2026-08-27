@@ -1,4 +1,4 @@
-# Distribute CertLogic business rules - WHO SMART Trust v1.7.0
+# Distribute CertLogic business rules - WHO SMART Trust v1.7.1
 
 * [**Table of Contents**](toc.md)
 * [**Indices**](indices.md)
@@ -9,8 +9,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://smart.who.int/trust/Requirements/DistributeBusinessRulesCertLogic | *Version*:1.7.0 |
-| Active as of 2026-07-30 | *Computable Name*:Distribute CertLogic Business Rules |
+| *Official URL*:http://smart.who.int/trust/Requirements/DistributeBusinessRulesCertLogic | *Version*:1.7.1 |
+| Active as of 2026-08-27 | *Computable Name*:Distribute CertLogic Business Rules |
 
  
 Make received CertLoigc business rules available through a distrubution point to a Receiver 
@@ -46,12 +46,12 @@ Make received CertLoigc business rules available through a distrubution point to
     }
   }],
   "url" : "http://smart.who.int/trust/Requirements/DistributeBusinessRulesCertLogic",
-  "version" : "1.7.0",
+  "version" : "1.7.1",
   "name" : "Distribute CertLogic Business Rules",
   "title" : "Distribute CertLogic business rules",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-30T11:57:48+00:00",
+  "date" : "2026-08-27T05:52:17+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

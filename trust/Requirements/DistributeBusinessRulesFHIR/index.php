@@ -7,19 +7,19 @@ function Redirect($url)
 
 $accept = $_SERVER['HTTP_ACCEPT'];
 if (strpos($accept, 'application/json+fhir') !== false)
-  Redirect('http://smart.who.int/trust/v1.7.0/Requirements-DistributeBusinessRulesFHIR.json2');
+  Redirect('https://smart.who.int/trust/v1.7.1/Requirements-DistributeBusinessRulesFHIR.json2');
 elseif (strpos($accept, 'application/fhir+json') !== false)
-  Redirect('http://smart.who.int/trust/v1.7.0/Requirements-DistributeBusinessRulesFHIR.json1');
+  Redirect('https://smart.who.int/trust/v1.7.1/Requirements-DistributeBusinessRulesFHIR.json1');
 elseif (strpos($accept, 'json') !== false)
-  Redirect('http://smart.who.int/trust/v1.7.0/Requirements-DistributeBusinessRulesFHIR.json');
+  Redirect('https://smart.who.int/trust/v1.7.1/Requirements-DistributeBusinessRulesFHIR.json');
 elseif (strpos($accept, 'application/xml+fhir') !== false)
-  Redirect('http://smart.who.int/trust/v1.7.0/Requirements-DistributeBusinessRulesFHIR.xml2');
+  Redirect('https://smart.who.int/trust/v1.7.1/Requirements-DistributeBusinessRulesFHIR.xml2');
 elseif (strpos($accept, 'application/fhir+xml') !== false)
-  Redirect('http://smart.who.int/trust/v1.7.0/Requirements-DistributeBusinessRulesFHIR.xml1');
+  Redirect('https://smart.who.int/trust/v1.7.1/Requirements-DistributeBusinessRulesFHIR.xml1');
 elseif (strpos($accept, 'html') !== false)
-  Redirect('http://smart.who.int/trust/v1.7.0/Requirements-DistributeBusinessRulesFHIR.html');
+  Redirect('https://smart.who.int/trust/v1.7.1/Requirements-DistributeBusinessRulesFHIR.html');
 else 
-  Redirect('http://smart.who.int/trust/v1.7.0/Requirements-DistributeBusinessRulesFHIR.xml');
+  Redirect('https://smart.who.int/trust/v1.7.1/Requirements-DistributeBusinessRulesFHIR.xml');
 ?>
     
 You should not be seeing this page. If you do, PHP has failed badly.

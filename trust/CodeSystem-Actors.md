@@ -1,4 +1,4 @@
-# WHO GDHCN Trust Actors CodeSystem - WHO SMART Trust v1.7.0
+# WHO GDHCN Trust Actors CodeSystem - WHO SMART Trust v1.7.1
 
 * [**Table of Contents**](toc.md)
 * [**Indices**](indices.md)
@@ -9,15 +9,15 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://smart.who.int/trust/CodeSystem/Actors | *Version*:1.7.0 |
-| Active as of 2026-07-30 | *Computable Name*:Actors |
+| *Official URL*:http://smart.who.int/trust/CodeSystem/Actors | *Version*:1.7.1 |
+| Active as of 2026-08-27 | *Computable Name*:Actors |
 
  
 CodeSystem for SMART Trust actors that has usage codes for verification keys published to the Trust Network as defined by the [certificate governance](concepts_certificate_governance.md) 
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [Actors](ValueSet-Actors.md)
+* [WHO GDHCN Actor ValueSet of actor codes](ValueSet-Actors.md)
 
 
 
@@ -28,12 +28,12 @@ CodeSystem for SMART Trust actors that has usage codes for verification keys pub
   "resourceType" : "CodeSystem",
   "id" : "Actors",
   "url" : "http://smart.who.int/trust/CodeSystem/Actors",
-  "version" : "1.7.0",
+  "version" : "1.7.1",
   "name" : "Actors",
   "title" : "WHO GDHCN Trust Actors CodeSystem",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-30T11:57:48+00:00",
+  "date" : "2026-08-27T05:52:17+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

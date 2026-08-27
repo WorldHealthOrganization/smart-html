@@ -15,12 +15,12 @@
     }
   }],
   "url" : "http://smart.who.int/trust/Requirements/DistributePKIMaterialDID",
-  "version" : "1.7.0",
+  "version" : "1.7.1",
   "name" : "Distribute Public Keys as DID",
   "title" : "Distribute PKI material as DID",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-30T11:57:48+00:00",
+  "date" : "2026-08-27T05:52:17+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

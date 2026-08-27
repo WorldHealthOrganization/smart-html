@@ -14,12 +14,12 @@
     </valueReference>
   </extension>
   <url value="http://smart.who.int/trust/Requirements/ReceivePKUMaterialAPI"/>
-  <version value="1.7.0"/>
+  <version value="1.7.1"/>
   <name value="Receive Public Keys via API"/>
   <title value="Receive PKI material via API"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2026-07-30T11:57:48+00:00"/>
+  <date value="2026-08-27T05:52:17+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>

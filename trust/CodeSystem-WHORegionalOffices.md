@@ -1,4 +1,4 @@
-# WHO Regional Offices CodeSystem - WHO SMART Trust v1.7.0
+# WHO Regional Offices CodeSystem - WHO SMART Trust v1.7.1
 
 * [**Table of Contents**](toc.md)
 * [**Indices**](indices.md)
@@ -9,15 +9,15 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://smart.who.int/trust/CodeSystem/WHORegionalOffices | *Version*:1.7.0 |
-| Active as of 2026-07-30 | *Computable Name*:WHORegionalOffices |
+| *Official URL*:http://smart.who.int/trust/CodeSystem/WHORegionalOffices | *Version*:1.7.1 |
+| Active as of 2026-08-27 | *Computable Name*:WHORegionalOffices |
 
  
 CodeSystem for WHO Regional Offices 
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [WHORegionalOffices](ValueSet-WHORegionalOffices.md)
+* [WHO Regional Offices](ValueSet-WHORegionalOffices.md)
 
 
 
@@ -28,12 +28,12 @@ CodeSystem for WHO Regional Offices
   "resourceType" : "CodeSystem",
   "id" : "WHORegionalOffices",
   "url" : "http://smart.who.int/trust/CodeSystem/WHORegionalOffices",
-  "version" : "1.7.0",
+  "version" : "1.7.1",
   "name" : "WHORegionalOffices",
   "title" : "WHO Regional Offices CodeSystem",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-30T11:57:48+00:00",
+  "date" : "2026-08-27T05:52:17+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

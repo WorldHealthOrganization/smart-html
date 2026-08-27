@@ -11,7 +11,7 @@
   },
   "@id": "http://smart.who.int/trust/ValueSet-Actors.jsonld",
   "@type": "http://www.w3.org/ns/prov#Entity",
-  "generatedAt": "2026-07-30T12:01:34.902106Z",
+  "generatedAt": "2026-08-27T05:56:07.421240Z",
   "@graph": [
     {
       "id": "http://smart.who.int/trust/ValueSet-Actors.jsonld#credential-holder",
