@@ -1,4 +1,4 @@
-# Retrieve PKI material via API - WHO SMART Trust v1.7.1
+# Retrieve PKI material via API - WHO SMART Trust v1.7.2
 
 * [**Table of Contents**](toc.md)
 * [**Indices**](indices.md)
@@ -9,8 +9,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://smart.who.int/trust/Requirements/RetrievePKIMaterialAPI | *Version*:1.7.1 |
-| Active as of 2026-08-27 | *Computable Name*:Retrieve Public Keys via API |
+| *Official URL*:http://smart.who.int/trust/Requirements/RetrievePKIMaterialAPI | *Version*:1.7.2 |
+| Active as of 2026-09-03 | *Computable Name*:Retrieve Public Keys via API |
 
  
 Retrieve PKI material from a distribution point via API 
@@ -46,12 +46,12 @@ Retrieve PKI material from a distribution point via API
     }
   }],
   "url" : "http://smart.who.int/trust/Requirements/RetrievePKIMaterialAPI",
-  "version" : "1.7.1",
+  "version" : "1.7.2",
   "name" : "Retrieve Public Keys via API",
   "title" : "Retrieve PKI material via API",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-08-27T05:52:17+00:00",
+  "date" : "2026-09-03T12:39:37+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

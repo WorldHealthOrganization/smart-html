@@ -1,4 +1,4 @@
-# WHO GDHCN Trust Network Participant - UAT - WHO SMART Trust v1.7.1
+# WHO GDHCN Trust Network Participant - UAT - WHO SMART Trust v1.7.2
 
 * [**Table of Contents**](toc.md)
 * [**Indices**](indices.md)
@@ -9,8 +9,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://smart.who.int/trust/ValueSet/Participants-UAT | *Version*:1.7.1 |
-| Active as of 2026-08-27 | *Computable Name*:Participants-UAT |
+| *Official URL*:http://smart.who.int/trust/ValueSet/Participants-UAT | *Version*:1.7.2 |
+| Active as of 2026-09-03 | *Computable Name*:Participants-UAT |
 
  
 ValueSet of GDHCN Trust Network Participants for User Acceptance Testing environment 
@@ -73,12 +73,12 @@ This endpoint serves the JSON Schema definition for the enumeration ValueSet-Par
   "resourceType" : "ValueSet",
   "id" : "Participants-UAT",
   "url" : "http://smart.who.int/trust/ValueSet/Participants-UAT",
-  "version" : "1.7.1",
+  "version" : "1.7.2",
   "name" : "Participants-UAT",
   "title" : "WHO GDHCN Trust Network Participant - UAT",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-08-27T05:52:17+00:00",
+  "date" : "2026-09-03T12:39:37+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

@@ -66,14 +66,14 @@
     "ci-build" : "http://worldhealthorganization.github.io/smart-trust",
     "version-count" : 11,
     "latest" : {
-      "version" : "1.7.1",
+      "version" : "1.7.2",
       "date" : "2026-08-27",
-      "path" : "http://smart.who.int/trust/v1.7.1"
+      "path" : "http://smart.who.int/trust/v1.7.2"
     },
     "milestone" : {
-      "version" : "1.7.1",
+      "version" : "1.7.2",
       "date" : "2026-08-27",
-      "path" : "http://smart.who.int/trust/v1.7.1"
+      "path" : "http://smart.who.int/trust/v1.7.2"
     }
   },
     {

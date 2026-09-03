@@ -1,4 +1,4 @@
-# WHO GDHCN Payload Types - WHO SMART Trust v1.7.1
+# WHO GDHCN Payload Types - WHO SMART Trust v1.7.2
 
 * [**Table of Contents**](toc.md)
 * [**Indices**](indices.md)
@@ -9,8 +9,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://smart.who.int/trust/ValueSet/PayloadTypes | *Version*:1.7.1 |
-| Active as of 2026-08-27 | *Computable Name*:PayloadTypes |
+| *Official URL*:http://smart.who.int/trust/ValueSet/PayloadTypes | *Version*:1.7.2 |
+| Active as of 2026-09-03 | *Computable Name*:PayloadTypes |
 
  
 ValueSet of GDHCN Trust Network Payload Types 
@@ -73,12 +73,12 @@ This endpoint serves the JSON Schema definition for the enumeration ValueSet-Pay
   "resourceType" : "ValueSet",
   "id" : "PayloadTypes",
   "url" : "http://smart.who.int/trust/ValueSet/PayloadTypes",
-  "version" : "1.7.1",
+  "version" : "1.7.2",
   "name" : "PayloadTypes",
   "title" : "WHO GDHCN Payload Types",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-08-27T05:52:17+00:00",
+  "date" : "2026-09-03T12:39:37+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

@@ -55,6 +55,6 @@
     }
   },
   "fhir:valueSet": "http://smart.who.int/trust/ValueSet/KeyUsage-UAT",
-  "fhir:version": "1.7.1",
-  "fhir:expansionTimestamp": "2026-08-27T05:56:07.290851"
+  "fhir:version": "1.7.2",
+  "fhir:expansionTimestamp": "2026-09-03T12:43:44.082692"
 }

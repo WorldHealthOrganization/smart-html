@@ -1,4 +1,4 @@
-# Distribute PKI material - WHO SMART Trust v1.7.1
+# Distribute PKI material - WHO SMART Trust v1.7.2
 
 * [**Table of Contents**](toc.md)
 * [**Indices**](indices.md)
@@ -9,8 +9,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://smart.who.int/trust/Requirements/DistributePKIMaterial | *Version*:1.7.1 |
-| Active as of 2026-08-27 | *Computable Name*:Distribute Public Keys |
+| *Official URL*:http://smart.who.int/trust/Requirements/DistributePKIMaterial | *Version*:1.7.2 |
+| Active as of 2026-09-03 | *Computable Name*:Distribute Public Keys |
 
  
 Make received trust material available through a distrubution point to a Trust Network Participant 
@@ -40,12 +40,12 @@ Make received trust material available through a distrubution point to a Trust N
     "profile" : ["http://smart.who.int/base/StructureDefinition/SGRequirements"]
   },
   "url" : "http://smart.who.int/trust/Requirements/DistributePKIMaterial",
-  "version" : "1.7.1",
+  "version" : "1.7.2",
   "name" : "Distribute Public Keys",
   "title" : "Distribute PKI material",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-08-27T05:52:17+00:00",
+  "date" : "2026-09-03T12:39:37+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

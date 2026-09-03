@@ -1,4 +1,4 @@
-# Health Certificate - WHO SMART Trust v1.7.1
+# Health Certificate - WHO SMART Trust v1.7.2
 
 * [**Table of Contents**](toc.md)
 * [**Indices**](indices.md)
@@ -9,8 +9,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://smart.who.int/trust/StructureDefinition/HCert | *Version*:1.7.1 |
-| Active as of 2026-08-27 | *Computable Name*:HCert |
+| *Official URL*:http://smart.who.int/trust/StructureDefinition/HCert | *Version*:1.7.2 |
+| Active as of 2026-09-03 | *Computable Name*:HCert |
 
  
 Logical Model for the HCERT 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-HCert.csv), [Excel](
   "resourceType" : "StructureDefinition",
   "id" : "HCert",
   "url" : "http://smart.who.int/trust/StructureDefinition/HCert",
-  "version" : "1.7.1",
+  "version" : "1.7.2",
   "name" : "HCert",
   "title" : "Health Certificate",
   "status" : "active",
-  "date" : "2026-08-27T05:52:17+00:00",
+  "date" : "2026-09-03T12:39:37+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

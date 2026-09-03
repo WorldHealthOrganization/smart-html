@@ -10,6 +10,17 @@
     <language>en</language>
     <ttl>600</ttl>
     <item>
+      <title>Trust version 1.7.2</title>
+      <description>1.7.2 release</description>
+      <link>http://smart.who.int/trust/v1.7.2/index.html</link>
+      <guid isPermaLink="true">http://smart.who.int/trust/v1.7.2/index.html</guid>
+      <dc:creator>WHO</dc:creator>
+      <fhir:version>5.0.0</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Thu, 03 Sep 2026 12:32:37 +0000</pubDate>
+      <fhir:details>Publication run at 03/09/2026 by runner using Version 2.3.3 (Git# 08d4edaaca6e). Built 2026-08-27T00:36:51.914Z (7 days old) source id Unknown (todo)</fhir:details>
+    </item>
+    <item>
       <title>Trust version 1.7.1</title>
       <description>1.7.1 release</description>
       <link>http://smart.who.int/trust/v1.7.1/index.html</link>

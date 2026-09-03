@@ -1,4 +1,4 @@
-# WHO GDHCN Trust Domains - DEV - WHO SMART Trust v1.7.1
+# WHO GDHCN Trust Domains - DEV - WHO SMART Trust v1.7.2
 
 * [**Table of Contents**](toc.md)
 * [**Indices**](indices.md)
@@ -9,8 +9,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://smart.who.int/trust/ValueSet/Domains-DEV | *Version*:1.7.1 |
-| Draft as of 2026-08-27 | *Computable Name*:Domains-DEV |
+| *Official URL*:http://smart.who.int/trust/ValueSet/Domains-DEV | *Version*:1.7.2 |
+| Draft as of 2026-09-03 | *Computable Name*:Domains-DEV |
 
  
 ValueSet of WHO GDHCN Trust Domains for Development environment 
@@ -73,12 +73,12 @@ This endpoint serves the JSON Schema definition for the enumeration ValueSet-Dom
   "resourceType" : "ValueSet",
   "id" : "Domains-DEV",
   "url" : "http://smart.who.int/trust/ValueSet/Domains-DEV",
-  "version" : "1.7.1",
+  "version" : "1.7.2",
   "name" : "Domains-DEV",
   "title" : "WHO GDHCN Trust Domains - DEV",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-08-27T05:52:17+00:00",
+  "date" : "2026-09-03T12:39:37+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",
