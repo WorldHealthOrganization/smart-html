@@ -398,6 +398,25 @@
       "date" : "2026-07-09",
       "path" : "http://smart.who.int/ph4h/0.9.9"
     }
+  },
+  {
+    "path" : "base-clinical/package-list.json",
+    "package-id" : "smart.who.int.base-clinical",
+    "title" : "SMART Base Clinical",
+    "canonical" : "http://smart.who.int/base-clinical",
+    "category" : "base",
+    "ci-build" : "http://worldhealthorganization.github.io/smart-base-clinical",
+    "version-count" : 1,
+    "latest" : {
+      "version" : "1.0.0",
+      "date" : "2026-09-04",
+      "path" : "http://smart.who.int/base-clinical/1.0.0"
+    },
+    "milestone" : {
+      "version" : "1.0.0",
+      "date" : "2026-09-04",
+      "path" : "http://smart.who.int/base-clinical/1.0.0"
+    }
   }
   ]
 }

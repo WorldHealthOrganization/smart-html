@@ -10,6 +10,17 @@
     <language>en</language>
     <ttl>600</ttl>
     <item>
+      <title>SMART Base Clinical version 1.0.0</title>
+      <description>1.0.0 release</description>
+      <link>http://smart.who.int/base-clinical/1.0.0/index.html</link>
+      <guid isPermaLink="true">http://smart.who.int/base-clinical/1.0.0/index.html</guid>
+      <dc:creator>WHO</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Fri, 04 Sep 2026 05:49:22 +0000</pubDate>
+      <fhir:details>Publication run at 04/09/2026 by runner using Version 2.3.3 (Git# 08d4edaaca6e). Built 2026-08-27T00:36:51.914Z (8 days old) source id Unknown (todo)</fhir:details>
+    </item>
+    <item>
       <title>Trust version 1.7.2</title>
       <description>1.7.2 release</description>
       <link>http://smart.who.int/trust/v1.7.2/index.html</link>
