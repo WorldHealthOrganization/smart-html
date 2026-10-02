@@ -326,102 +326,12 @@
 
 
 
-  <pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden"><code class="language-turtle">
-@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
-@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
-@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
-
-# - resource -------------------------------------------------------------------
-
-&lt;http://hl7.org/fhir/ValueSet/IMMZD18SHPV2DosesVS&gt; a fhir:ValueSet ;
-  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/resource.html#ValueSet.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;IMMZD18SHPV2DosesVS&quot;] ;
-  <a href="http://hl7.org/fhir/R4/domainresource.html#ValueSet.text">fhir:DomainResource.text</a> [
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ] ;
-     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet IMMZD18SHPV2DosesVS&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;IMMZD18SHPV2DosesVS\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcIMMZD18SHPV2DosesVS\&quot;&gt; &lt;/a&gt;&lt;p&gt;This value set expansion contains 5 concepts.&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;System&lt;/b&gt;&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name=\&quot;IMMZD18SHPV2DosesVS-http://smart.who.int/immunizations/CodeSystem/IMMZDAK-Child's|20birth|20when|20client's|20biological|20sex|20is|20female-34\&quot;&gt; &lt;/a&gt;&lt;code&gt;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&lt;/code&gt;&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;  &lt;a href=\&quot;CodeSystem-IMMZDAK.html#IMMZDAK-Child.39sbirthwhenclient.39sbiologicalsexisfemale-34\&quot;&gt;Child's birth when client's biological sex is female-34&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Child's birth when client's biological sex is female&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Child's birth AND \&quot;Sex\&quot; = \&quot;Female\&quot;&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name=\&quot;IMMZD18SHPV2DosesVS-http://smart.who.int/immunizations/CodeSystem/IMMZDAK-First|20HPV|20dose|20from|20the|20primary|20series|20was|20administered-112\&quot;&gt; &lt;/a&gt;&lt;code&gt;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&lt;/code&gt;&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;  &lt;a href=\&quot;CodeSystem-IMMZDAK.html#IMMZDAK-FirstHPVdosefromtheprimaryserieswasadministered-112\&quot;&gt;First HPV dose from the primary series was administered-112&lt;/a&gt;&lt;/td&gt;&lt;td&gt;First HPV dose from the primary series was administered&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Count of vaccines administered (where \&quot;Vaccine type\&quot; = \&quot;HPV vaccines\&quot; and \&quot;Type of dose\&quot; = \&quot;Primary series\&quot;) = 1&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name=\&quot;IMMZD18SHPV2DosesVS-http://smart.who.int/immunizations/CodeSystem/IMMZDAK-Second|20HPV|20dose|20from|20the|20primary|20series|20was|20administered-112\&quot;&gt; &lt;/a&gt;&lt;code&gt;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&lt;/code&gt;&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;  &lt;a href=\&quot;CodeSystem-IMMZDAK.html#IMMZDAK-SecondHPVdosefromtheprimaryserieswasadministered-112\&quot;&gt;Second HPV dose from the primary series was administered-112&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Second HPV dose from the primary series was administered&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Count of vaccines administered (where \&quot;Vaccine type\&quot; = \&quot;HPV vaccines\&quot; and \&quot;Type of dose\&quot; = \&quot;Primary series\&quot;) = 2&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name=\&quot;IMMZD18SHPV2DosesVS-http://smart.who.int/immunizations/CodeSystem/IMMZDAK-Second|20HPV|20dose|20from|20the|20primary|20series|20was|20administered|20and|20client's|20HIV|20status|20is|20positive|20or|20client|20is|20immunocompromised-178\&quot;&gt; &lt;/a&gt;&lt;code&gt;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&lt;/code&gt;&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;  &lt;a href=\&quot;CodeSystem-IMMZDAK.html#IMMZDAK-SecondHPVdosefromtheprimaryserieswasadministeredandclient.39sHIVstatusispositiveorclientisimmunocompromised-178\&quot;&gt;Second HPV dose from the primary series was administered and client's HIV status is positive or client is immunocompromised-178&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Second HPV dose from the primary series was administered and client's HIV status is positive or client is immunocompromised&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Count of vaccines administered (where \&quot;Vaccine type\&quot; = \&quot;HPV vaccines\&quot; and \&quot;Type of dose\&quot; = \&quot;Primary series\&quot;) = 2 AND (\&quot;HIV status\&quot; = \&quot;HIV-positive\&quot; OR \&quot;Immunocompromised\&quot; = TRUE)&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name=\&quot;IMMZD18SHPV2DosesVS-http://smart.who.int/immunizations/CodeSystem/IMMZDAK-Third|20HPV|20dose|20from|20the|20primary|20series|20was|20administered-112\&quot;&gt; &lt;/a&gt;&lt;code&gt;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&lt;/code&gt;&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;  &lt;a href=\&quot;CodeSystem-IMMZDAK.html#IMMZDAK-ThirdHPVdosefromtheprimaryserieswasadministered-112\&quot;&gt;Third HPV dose from the primary series was administered-112&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Third HPV dose from the primary series was administered&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Count of vaccines administered (where \&quot;Vaccine type\&quot; = \&quot;HPV vaccines\&quot; and \&quot;Type of dose\&quot; = \&quot;Primary series\&quot;) = 3&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
-  ] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">fhir:ValueSet.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://smart.who.int/immunizations/ValueSet/IMMZD18SHPV2DosesVS&quot;] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">fhir:ValueSet.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;1.0.0&quot;] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">fhir:ValueSet.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;IMMZD18SHPV2DosesVS&quot;] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">fhir:ValueSet.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;IMMZD18SHPV2Doses ValueSet for Decision Table&quot;] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">fhir:ValueSet.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2026-10-02T09:52:12+00:00&quot;^^xsd:dateTime] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">fhir:ValueSet.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;WHO&quot;] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">fhir:ValueSet.contact</a> [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
-     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;WHO&quot; ] ;
-     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;url&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;http://who.int&quot; ]
-     ]
-  ] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">fhir:ValueSet.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;ValueSet IMMZD18SHPV2Doses for IMMZ.D18.S.HPV.2-dose schedule.\nBusiness rule: Determine if the client is due for a human papillomavirus (HPV) vaccination according to the national immunization schedule\nTrigger: IMMZ.D2 Determine required vaccination(s) if any\nTable: 2-dose schedule&quot;] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">fhir:ValueSet.compose</a> [
-     <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">fhir:ValueSet.compose.include</a> [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">fhir:ValueSet.compose.include.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">fhir:ValueSet.compose.include.concept</a> [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Child's birth when client's biological sex is female-34&quot; ] ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Child's birth when client's biological sex is female&quot; ]
-       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;First HPV dose from the primary series was administered-112&quot; ] ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;First HPV dose from the primary series was administered&quot; ]
-       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2 ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Second HPV dose from the primary series was administered-112&quot; ] ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Second HPV dose from the primary series was administered&quot; ]
-       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 3 ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Second HPV dose from the primary series was administered and client's HIV status is positive or client is immunocompromised-178&quot; ] ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Second HPV dose from the primary series was administered and client's HIV status is positive or client is immunocompromised&quot; ]
-       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 4 ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Third HPV dose from the primary series was administered-112&quot; ] ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Third HPV dose from the primary series was administered&quot; ]
-       ]
-     ]
-  ] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion">fhir:ValueSet.expansion</a> [
-     <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.timestamp">fhir:ValueSet.expansion.timestamp</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2025-09-29T20:59:26.458Z&quot;^^xsd:dateTime ] ;
-     <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains">fhir:ValueSet.expansion.contains</a> [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">fhir:ValueSet.expansion.contains.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">fhir:ValueSet.expansion.contains.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Child's birth when client's biological sex is female-34&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">fhir:ValueSet.expansion.contains.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Child's birth when client's biological sex is female&quot; ]
-     ], [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">fhir:ValueSet.expansion.contains.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">fhir:ValueSet.expansion.contains.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;First HPV dose from the primary series was administered-112&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">fhir:ValueSet.expansion.contains.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;First HPV dose from the primary series was administered&quot; ]
-     ], [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2 ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">fhir:ValueSet.expansion.contains.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">fhir:ValueSet.expansion.contains.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Second HPV dose from the primary series was administered-112&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">fhir:ValueSet.expansion.contains.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Second HPV dose from the primary series was administered&quot; ]
-     ], [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 3 ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">fhir:ValueSet.expansion.contains.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">fhir:ValueSet.expansion.contains.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Second HPV dose from the primary series was administered and client's HIV status is positive or client is immunocompromised-178&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">fhir:ValueSet.expansion.contains.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Second HPV dose from the primary series was administered and client's HIV status is positive or client is immunocompromised&quot; ]
-     ], [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 4 ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">fhir:ValueSet.expansion.contains.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">fhir:ValueSet.expansion.contains.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Third HPV dose from the primary series was administered-112&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">fhir:ValueSet.expansion.contains.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Third HPV dose from the primary series was administered&quot; ]
-     ]
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-&lt;http://hl7.org/fhir/ValueSet/IMMZD18SHPV2DosesVS.ttl&gt; a owl:Ontology ;
-  owl:imports fhir:fhir.ttl ;
-  owl:versionIRI &lt;http://build.fhir.org/ValueSet/IMMZD18SHPV2DosesVS.ttl&gt; .
-
-</code></pre>
+  <div style="position: relative;">
+    <button class="btn-copy" style="position: absolute; top: 10px; right: 20px; z-index: 10;"
+            title="Click to copy ttl"
+            data-clipboard-target="#format-content"></button>
+    <pre class="rdf" style="white-space: pre; overflow-x: auto;"><code id="format-content" class="language-turtle" data-src="ValueSet-IMMZD18SHPV2DosesVS.ttl"></code></pre>
+  </div>
 
 
 
@@ -474,6 +384,7 @@
 <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
 <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
 <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+<script type="text/javascript" src="assets/js/format-loader.js"> </script>
 <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
 <!-- Analytics Below
 ================================================== -->
