@@ -326,129 +326,12 @@
 
 
 
-  <pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden"><code class="language-turtle">
-@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
-@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
-@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
-
-# - resource -------------------------------------------------------------------
-
-&lt;http://hl7.org/fhir/ValueSet/IMMZD18SCholeraWCRBSVaccine3DosesVS&gt; a fhir:ValueSet ;
-  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/resource.html#ValueSet.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;IMMZD18SCholeraWCRBSVaccine3DosesVS&quot;] ;
-  <a href="http://hl7.org/fhir/R4/domainresource.html#ValueSet.text">fhir:DomainResource.text</a> [
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ] ;
-     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet IMMZD18SCholeraWCRBSVaccine3DosesVS&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;IMMZD18SCholeraWCRBSVaccine3DosesVS\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcIMMZD18SCholeraWCRBSVaccine3DosesVS\&quot;&gt; &lt;/a&gt;&lt;p&gt;This value set expansion contains 8 concepts.&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;System&lt;/b&gt;&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name=\&quot;IMMZD18SCholeraWCRBSVaccine3DosesVS-http://smart.who.int/immunizations/CodeSystem/IMMZDAK-Child's|20birth-792\&quot;&gt; &lt;/a&gt;&lt;code&gt;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&lt;/code&gt;&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;  &lt;a href=\&quot;CodeSystem-IMMZDAK.html#IMMZDAK-Child.39sbirth-792\&quot;&gt;Child's birth-792&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Child's birth&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Count of vaccines administered (where \&quot;Vaccine type\&quot; = \&quot;Cholera vaccines\&quot;) = 0 AND (2 years ≤ Today's date − \&quot;Date of birth\&quot; ≤ 5 years)\nOR Primary series interrupted for 6 or more weeks\n\&quot;Completed the primary vaccination series\&quot; (where \&quot;Vaccine type\&quot; = \&quot;Cholera vaccines\&quot;) = FALSE AND Today's date − latest \&quot;Date and time of vaccination\&quot; (where \&quot;Vaccine type\&quot; = \&quot;Cholera vaccines\&quot;) ≥ 6 weeks AND (2 years ≤ Today's date − \&quot;Date of birth\&quot; ≤ 5 years)\nOR more than 6 months have passed since completion of primary vaccination series\n\&quot;Completed the primary vaccination series\&quot; (where \&quot;Vaccine type\&quot; = \&quot;Cholera vaccines\&quot;) = TRUE AND Today's date − latest \&quot;Date and time of vaccination\&quot; (where \&quot;Vaccine type\&quot; = \&quot;Cholera vaccines\&quot;) &amp;gt; 6 months AND (2 years ≤ Today's date − \&quot;Date of birth\&quot; ≤ 5 years)&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name=\&quot;IMMZD18SCholeraWCRBSVaccine3DosesVS-http://smart.who.int/immunizations/CodeSystem/IMMZDAK-First|20cholera|20dose|20was|20administered-68\&quot;&gt; &lt;/a&gt;&lt;code&gt;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&lt;/code&gt;&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;  &lt;a href=\&quot;CodeSystem-IMMZDAK.html#IMMZDAK-Firstcholeradosewasadministered-68\&quot;&gt;First cholera dose was administered-68&lt;/a&gt;&lt;/td&gt;&lt;td&gt;First cholera dose was administered&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Latest \&quot;Dose number\&quot; (where \&quot;Vaccine type\&quot; = \&quot;Cholera vaccines\&quot;) = 1&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name=\&quot;IMMZD18SCholeraWCRBSVaccine3DosesVS-http://smart.who.int/immunizations/CodeSystem/IMMZDAK-First|20cholera|20dose|20was|20administered-125\&quot;&gt; &lt;/a&gt;&lt;code&gt;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&lt;/code&gt;&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;  &lt;a href=\&quot;CodeSystem-IMMZDAK.html#IMMZDAK-Firstcholeradosewasadministered-125\&quot;&gt;First cholera dose was administered-125&lt;/a&gt;&lt;/td&gt;&lt;td&gt;First cholera dose was administered&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Latest \&quot;Dose number\&quot; (where \&quot;Vaccine type\&quot; = \&quot;Cholera vaccines\&quot;) = 1 AND (2 years ≤ Today's date − \&quot;Date of birth\&quot; ≤ 5 years)&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name=\&quot;IMMZD18SCholeraWCRBSVaccine3DosesVS-http://smart.who.int/immunizations/CodeSystem/IMMZDAK-Second|20cholera|20dose|20was|20administered-68\&quot;&gt; &lt;/a&gt;&lt;code&gt;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&lt;/code&gt;&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;  &lt;a href=\&quot;CodeSystem-IMMZDAK.html#IMMZDAK-Secondcholeradosewasadministered-68\&quot;&gt;Second cholera dose was administered-68&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Second cholera dose was administered&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Latest \&quot;Dose number\&quot; (where \&quot;Vaccine type\&quot; = \&quot;Cholera vaccines\&quot;) = 2&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name=\&quot;IMMZD18SCholeraWCRBSVaccine3DosesVS-http://smart.who.int/immunizations/CodeSystem/IMMZDAK-Second|20cholera|20dose|20was|20administered-125\&quot;&gt; &lt;/a&gt;&lt;code&gt;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&lt;/code&gt;&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;  &lt;a href=\&quot;CodeSystem-IMMZDAK.html#IMMZDAK-Secondcholeradosewasadministered-125\&quot;&gt;Second cholera dose was administered-125&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Second cholera dose was administered&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Latest \&quot;Dose number\&quot; (where \&quot;Vaccine type\&quot; = \&quot;Cholera vaccines\&quot;) = 2 AND (2 years ≤ Today's date − \&quot;Date of birth\&quot; ≤ 5 years)&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name=\&quot;IMMZD18SCholeraWCRBSVaccine3DosesVS-http://smart.who.int/immunizations/CodeSystem/IMMZDAK-Three|20doses|20from|20primary|20series|20were|20administered.|20The|20primary|20series|20has|20been|20completed-93\&quot;&gt; &lt;/a&gt;&lt;code&gt;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&lt;/code&gt;&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;  &lt;a href=\&quot;CodeSystem-IMMZDAK.html#IMMZDAK-Threedosesfromprimaryserieswereadministered.46Theprimaryserieshasbeencompleted-93\&quot;&gt;Three doses from primary series were administered. The primary series has been completed-93&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Three doses from primary series were administered. The primary series has been completed&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;\&quot;Completed the primary vaccination series\&quot; (where \&quot;Vaccine type\&quot; = \&quot;Cholera vaccines\&quot;) = TRUE&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name=\&quot;IMMZD18SCholeraWCRBSVaccine3DosesVS-http://smart.who.int/immunizations/CodeSystem/IMMZDAK-Primary|20series|20for|20cholera|20has|20been|20completed|20and|20latest|20cholera|20dose|20was|20administered|20approximately|20less|20than|206|20months|20ago-295\&quot;&gt; &lt;/a&gt;&lt;code&gt;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&lt;/code&gt;&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;  &lt;a href=\&quot;CodeSystem-IMMZDAK.html#IMMZDAK-Primaryseriesforcholerahasbeencompletedandlatestcholeradosewasadministeredapproximatelylessthan6monthsago-295\&quot;&gt;Primary series for cholera has been completed and latest cholera dose was administered approximately less than 6 months ago-295&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Primary series for cholera has been completed and latest cholera dose was administered approximately less than 6 months ago&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;\&quot;Completed the primary vaccination series\&quot; (where \&quot;Vaccine type\&quot; = \&quot;Cholera vaccines\&quot;) = TRUE AND Today's date − latest \&quot;Date and time of vaccination\&quot; (where \&quot;Vaccine type\&quot; = \&quot;Cholera vaccines\&quot;) ≤ 6 months ± Member States defined interval AND (2 years ≤ Today's date − \&quot;Date of birth\&quot; ≤ 5 years)&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name=\&quot;IMMZD18SCholeraWCRBSVaccine3DosesVS-http://smart.who.int/immunizations/CodeSystem/IMMZDAK-Booster|20dose|20was|20administered|20approximately|20less|20than|206|20months|20ago-176\&quot;&gt; &lt;/a&gt;&lt;code&gt;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&lt;/code&gt;&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;  &lt;a href=\&quot;CodeSystem-IMMZDAK.html#IMMZDAK-Boosterdosewasadministeredapproximatelylessthan6monthsago-176\&quot;&gt;Booster dose was administered approximately less than 6 months ago-176&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Booster dose was administered approximately less than 6 months ago&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Today's date − latest \&quot;Date and time of vaccination\&quot; (where \&quot;Vaccine type\&quot; = \&quot;Cholera vaccines\&quot; AND \&quot;Type of dose\&quot; = \&quot;Booster dose\&quot;) ≤ 6 months ± Member States defined interval&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
-  ] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">fhir:ValueSet.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://smart.who.int/immunizations/ValueSet/IMMZD18SCholeraWCRBSVaccine3DosesVS&quot;] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">fhir:ValueSet.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;1.0.0&quot;] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">fhir:ValueSet.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;IMMZD18SCholeraWCRBSVaccine3DosesVS&quot;] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">fhir:ValueSet.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;IMMZD18SCholeraWCRBSVaccine3Doses ValueSet for Decision Table&quot;] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">fhir:ValueSet.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2026-10-01T12:12:05+00:00&quot;^^xsd:dateTime] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">fhir:ValueSet.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;WHO&quot;] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">fhir:ValueSet.contact</a> [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
-     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;WHO&quot; ] ;
-     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;url&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;http://who.int&quot; ]
-     ]
-  ] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">fhir:ValueSet.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;ValueSet IMMZD18SCholeraWCRBSVaccine3Doses for IMMZ.D18.S.Cholera.WC-rBS vaccine 3-dose schedule.\nBusiness rule: Determine if the client is due for a cholera vaccination according to the national immunization schedule\nTrigger: IMMZ.D2 Determine required vaccination(s) if any\nTable: Whole cell-recombinant B subunit (WC-rBS) vaccine (Dukoral), 3-dose schedule for clients aged 2–5 years&quot;] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">fhir:ValueSet.compose</a> [
-     <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">fhir:ValueSet.compose.include</a> [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">fhir:ValueSet.compose.include.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">fhir:ValueSet.compose.include.concept</a> [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Child's birth-792&quot; ] ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Child's birth&quot; ]
-       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;First cholera dose was administered-68&quot; ] ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;First cholera dose was administered&quot; ]
-       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2 ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;First cholera dose was administered-125&quot; ] ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;First cholera dose was administered&quot; ]
-       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 3 ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Second cholera dose was administered-68&quot; ] ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Second cholera dose was administered&quot; ]
-       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 4 ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Second cholera dose was administered-125&quot; ] ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Second cholera dose was administered&quot; ]
-       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 5 ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Three doses from primary series were administered. The primary series has been completed-93&quot; ] ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Three doses from primary series were administered. The primary series has been completed&quot; ]
-       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 6 ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Primary series for cholera has been completed and latest cholera dose was administered approximately less than 6 months ago-295&quot; ] ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Primary series for cholera has been completed and latest cholera dose was administered approximately less than 6 months ago&quot; ]
-       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 7 ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Booster dose was administered approximately less than 6 months ago-176&quot; ] ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Booster dose was administered approximately less than 6 months ago&quot; ]
-       ]
-     ]
-  ] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion">fhir:ValueSet.expansion</a> [
-     <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.timestamp">fhir:ValueSet.expansion.timestamp</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2025-09-29T20:59:26.458Z&quot;^^xsd:dateTime ] ;
-     <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains">fhir:ValueSet.expansion.contains</a> [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">fhir:ValueSet.expansion.contains.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">fhir:ValueSet.expansion.contains.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Child's birth-792&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">fhir:ValueSet.expansion.contains.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Child's birth&quot; ]
-     ], [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">fhir:ValueSet.expansion.contains.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">fhir:ValueSet.expansion.contains.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;First cholera dose was administered-68&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">fhir:ValueSet.expansion.contains.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;First cholera dose was administered&quot; ]
-     ], [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2 ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">fhir:ValueSet.expansion.contains.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">fhir:ValueSet.expansion.contains.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;First cholera dose was administered-125&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">fhir:ValueSet.expansion.contains.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;First cholera dose was administered&quot; ]
-     ], [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 3 ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">fhir:ValueSet.expansion.contains.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">fhir:ValueSet.expansion.contains.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Second cholera dose was administered-68&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">fhir:ValueSet.expansion.contains.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Second cholera dose was administered&quot; ]
-     ], [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 4 ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">fhir:ValueSet.expansion.contains.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">fhir:ValueSet.expansion.contains.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Second cholera dose was administered-125&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">fhir:ValueSet.expansion.contains.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Second cholera dose was administered&quot; ]
-     ], [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 5 ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">fhir:ValueSet.expansion.contains.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">fhir:ValueSet.expansion.contains.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Three doses from primary series were administered. The primary series has been completed-93&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">fhir:ValueSet.expansion.contains.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Three doses from primary series were administered. The primary series has been completed&quot; ]
-     ], [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 6 ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">fhir:ValueSet.expansion.contains.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">fhir:ValueSet.expansion.contains.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Primary series for cholera has been completed and latest cholera dose was administered approximately less than 6 months ago-295&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">fhir:ValueSet.expansion.contains.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Primary series for cholera has been completed and latest cholera dose was administered approximately less than 6 months ago&quot; ]
-     ], [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 7 ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">fhir:ValueSet.expansion.contains.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">fhir:ValueSet.expansion.contains.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Booster dose was administered approximately less than 6 months ago-176&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">fhir:ValueSet.expansion.contains.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Booster dose was administered approximately less than 6 months ago&quot; ]
-     ]
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-&lt;http://hl7.org/fhir/ValueSet/IMMZD18SCholeraWCRBSVaccine3DosesVS.ttl&gt; a owl:Ontology ;
-  owl:imports fhir:fhir.ttl ;
-  owl:versionIRI &lt;http://build.fhir.org/ValueSet/IMMZD18SCholeraWCRBSVaccine3DosesVS.ttl&gt; .
-
-</code></pre>
+  <div style="position: relative;">
+    <button class="btn-copy" style="position: absolute; top: 10px; right: 20px; z-index: 10;"
+            title="Click to copy ttl"
+            data-clipboard-target="#format-content"></button>
+    <pre class="rdf" style="white-space: pre; overflow-x: auto;"><code id="format-content" class="language-turtle" data-src="ValueSet-IMMZD18SCholeraWCRBSVaccine3DosesVS.ttl"></code></pre>
+  </div>
 
 
 
@@ -501,6 +384,7 @@
 <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
 <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
 <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+<script type="text/javascript" src="assets/js/format-loader.js"> </script>
 <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
 <!-- Analytics Below
 ================================================== -->

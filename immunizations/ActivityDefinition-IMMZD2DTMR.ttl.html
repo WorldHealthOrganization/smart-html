@@ -326,73 +326,12 @@
 
 
 
-  <pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden"><code class="language-turtle">
-@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
-@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
-@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
-
-# - resource -------------------------------------------------------------------
-
-&lt;http://hl7.org/fhir/ActivityDefinition/IMMZD2DTMR&gt; a fhir:ActivityDefinition ;
-  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/resource.html#ActivityDefinition.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;IMMZD2DTMR&quot;] ;
-  <a href="http://hl7.org/fhir/R4/resource.html#ActivityDefinition.meta">fhir:Resource.meta</a> [
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-immunizationactivity|2.0.0&quot; ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-immunizationactivity|2.0.0&gt;
-     ]
-  ] ;
-  <a href="http://hl7.org/fhir/R4/domainresource.html#ActivityDefinition.text">fhir:DomainResource.text</a> [
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;extensions&quot; ] ;
-     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\n&lt;div&gt;\n    &lt;table class=\&quot;grid dict\&quot;&gt;\n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Title: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;IMMZD2DTMR&lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Id: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;IMMZD2DTMR&lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Version: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;1.0.0&lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Status: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;draft&lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Date (date last changed): &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;2025-10-27&lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Publisher (steward): &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;WHO&lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Description: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;&lt;div&gt;&lt;p&gt;Provide immunization&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Knowledge Capability: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;\n                \n                    computable\n                \n            &lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n        \n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Kind: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;MedicationRequest&lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Profile: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-immunizationrequest&lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Intent: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;proposal&lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;doNotPerform: &lt;/b&gt;&lt;/th&gt;\n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;false&lt;/td&gt;\n        &lt;/tr&gt;\n        \n\n        \n        &lt;tr&gt;\n            &lt;th scope=\&quot;row\&quot;&gt;&lt;b&gt;Product: &lt;/b&gt;&lt;/th&gt;\n            \n            &lt;td style=\&quot;padding-left: 4px;\&quot;&gt;\n                \n                \n                \n                &lt;p&gt;&lt;b&gt;system: &lt;/b&gt;&lt;span&gt;&lt;a href=\&quot;CodeSystem-IMMZ.Z.html\&quot;&gt;http://smart.who.int/immunizations/CodeSystem/IMMZ.Z&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;\n                \n                \n                &lt;p&gt;&lt;b&gt;code: &lt;/b&gt;&lt;span&gt;DE0&lt;/span&gt;&lt;/p&gt;\n                \n                \n                \n                \n                \n            &lt;/td&gt;\n            \n            \n        &lt;/tr&gt;\n        \n\n        \n\n        \n\n        \n    &lt;/table&gt;\n&lt;/div&gt;\n&lt;/div&gt;&quot;
-  ] ;
-  <a href="http://hl7.org/fhir/R4/domainresource.html#ActivityDefinition.extension">fhir:DomainResource.extension</a> [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
-     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability&quot; ] ;
-     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueCode</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;computable&quot; ]
-  ] ;
-  <a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition.url">fhir:ActivityDefinition.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://smart.who.int/immunizations/ActivityDefinition/IMMZD2DTMR&quot;] ;
-  <a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition.version">fhir:ActivityDefinition.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;1.0.0&quot;] ;
-  <a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition.name">fhir:ActivityDefinition.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;IMMZD2DTMedicationRequest&quot;] ;
-  <a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition.title">fhir:ActivityDefinition.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;IMMZD2DTMR&quot;] ;
-  <a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition.status">fhir:ActivityDefinition.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;draft&quot;] ;
-  <a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition.experimental">fhir:ActivityDefinition.experimental</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean] ;
-  <a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition.date">fhir:ActivityDefinition.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2025-10-27&quot;^^xsd:date] ;
-  <a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition.publisher">fhir:ActivityDefinition.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;WHO&quot;] ;
-  <a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition.contact">fhir:ActivityDefinition.contact</a> [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
-     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;WHO&quot; ] ;
-     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;url&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;http://who.int&quot; ]
-     ]
-  ] ;
-  <a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition.description">fhir:ActivityDefinition.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;Provide immunization&quot;] ;
-  <a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition.kind">fhir:ActivityDefinition.kind</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;MedicationRequest&quot;] ;
-  <a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition.profile">fhir:ActivityDefinition.profile</a> [
-     <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-immunizationrequest&quot; ;
-     <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-immunizationrequest&gt;
-  ] ;
-  <a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition.intent">fhir:ActivityDefinition.intent</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;proposal&quot;] ;
-  <a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition.doNotPerform">fhir:ActivityDefinition.doNotPerform</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean] ;
-  <a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition.product_x_">fhir:ActivityDefinition.productCodeableConcept</a> [
-     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://smart.who.int/immunizations/CodeSystem/IMMZ.Z&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;DE0&quot; ]
-     ]
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-&lt;http://hl7.org/fhir/ActivityDefinition/IMMZD2DTMR.ttl&gt; a owl:Ontology ;
-  owl:imports fhir:fhir.ttl ;
-  owl:versionIRI &lt;http://build.fhir.org/ActivityDefinition/IMMZD2DTMR.ttl&gt; .
-
-</code></pre>
+  <div style="position: relative;">
+    <button class="btn-copy" style="position: absolute; top: 10px; right: 20px; z-index: 10;"
+            title="Click to copy ttl"
+            data-clipboard-target="#format-content"></button>
+    <pre class="rdf" style="white-space: pre; overflow-x: auto;"><code id="format-content" class="language-turtle" data-src="ActivityDefinition-IMMZD2DTMR.ttl"></code></pre>
+  </div>
 
 
 
@@ -445,6 +384,7 @@
 <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
 <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
 <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+<script type="text/javascript" src="assets/js/format-loader.js"> </script>
 <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
 <!-- Analytics Below
 ================================================== -->
