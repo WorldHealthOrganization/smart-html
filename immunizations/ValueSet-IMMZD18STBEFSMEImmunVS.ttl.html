@@ -326,111 +326,12 @@
 
 
 
-  <pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden"><code class="language-turtle">
-@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
-@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
-@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
-
-# - resource -------------------------------------------------------------------
-
-&lt;http://hl7.org/fhir/ValueSet/IMMZD18STBEFSMEImmunVS&gt; a fhir:ValueSet ;
-  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/resource.html#ValueSet.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;IMMZD18STBEFSMEImmunVS&quot;] ;
-  <a href="http://hl7.org/fhir/R4/domainresource.html#ValueSet.text">fhir:DomainResource.text</a> [
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ] ;
-     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet IMMZD18STBEFSMEImmunVS&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;IMMZD18STBEFSMEImmunVS\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcIMMZD18STBEFSMEImmunVS\&quot;&gt; &lt;/a&gt;&lt;p&gt;This value set expansion contains 6 concepts.&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;System&lt;/b&gt;&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name=\&quot;IMMZD18STBEFSMEImmunVS-http://smart.who.int/immunizations/CodeSystem/IMMZDAK-Child's|20birth-0\&quot;&gt; &lt;/a&gt;&lt;code&gt;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&lt;/code&gt;&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;  &lt;a href=\&quot;CodeSystem-IMMZDAK.html#IMMZDAK-Child.39sbirth-0\&quot;&gt;Child's birth-0&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Child's birth&lt;/td&gt;&lt;td&gt;&lt;div/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name=\&quot;IMMZD18STBEFSMEImmunVS-http://smart.who.int/immunizations/CodeSystem/IMMZDAK-First|20TBE|20dose|20from|20the|20primary|20series|20was|20administered-112\&quot;&gt; &lt;/a&gt;&lt;code&gt;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&lt;/code&gt;&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;  &lt;a href=\&quot;CodeSystem-IMMZDAK.html#IMMZDAK-FirstTBEdosefromtheprimaryserieswasadministered-112\&quot;&gt;First TBE dose from the primary series was administered-112&lt;/a&gt;&lt;/td&gt;&lt;td&gt;First TBE dose from the primary series was administered&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Count of vaccines administered (where \&quot;Vaccine type\&quot; = \&quot;TBE vaccines\&quot; and \&quot;Type of dose\&quot; = \&quot;Primary series\&quot;) = 1&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name=\&quot;IMMZD18STBEFSMEImmunVS-http://smart.who.int/immunizations/CodeSystem/IMMZDAK-Second|20TBE|20dose|20from|20the|20primary|20series|20was|20administered-112\&quot;&gt; &lt;/a&gt;&lt;code&gt;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&lt;/code&gt;&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;  &lt;a href=\&quot;CodeSystem-IMMZDAK.html#IMMZDAK-SecondTBEdosefromtheprimaryserieswasadministered-112\&quot;&gt;Second TBE dose from the primary series was administered-112&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Second TBE dose from the primary series was administered&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Count of vaccines administered (where \&quot;Vaccine type\&quot; = \&quot;TBE vaccines\&quot; and \&quot;Type of dose\&quot; = \&quot;Primary series\&quot;) = 2&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name=\&quot;IMMZD18STBEFSMEImmunVS-http://smart.who.int/immunizations/CodeSystem/IMMZDAK-Third|20TBE|20dose|20from|20the|20primary|20series|20was|20administered.|20The|20primary|20series|20has|20been|20completed-89\&quot;&gt; &lt;/a&gt;&lt;code&gt;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&lt;/code&gt;&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;  &lt;a href=\&quot;CodeSystem-IMMZDAK.html#IMMZDAK-ThirdTBEdosefromtheprimaryserieswasadministered.46Theprimaryserieshasbeencompleted-89\&quot;&gt;Third TBE dose from the primary series was administered. The primary series has been completed-89&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Third TBE dose from the primary series was administered. The primary series has been completed&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;\&quot;Completed the primary vaccination series\&quot; = TRUE (where \&quot;Vaccine type\&quot; = \&quot;TBE vaccines\&quot;)&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name=\&quot;IMMZD18STBEFSMEImmunVS-http://smart.who.int/immunizations/CodeSystem/IMMZDAK-The|20primary|20series|20has|20been|20completed-89\&quot;&gt; &lt;/a&gt;&lt;code&gt;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&lt;/code&gt;&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;  &lt;a href=\&quot;CodeSystem-IMMZDAK.html#IMMZDAK-Theprimaryserieshasbeencompleted-89\&quot;&gt;The primary series has been completed-89&lt;/a&gt;&lt;/td&gt;&lt;td&gt;The primary series has been completed&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;\&quot;Completed the primary vaccination series\&quot; = TRUE (where \&quot;Vaccine type\&quot; = \&quot;TBE vaccines\&quot;)&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a name=\&quot;IMMZD18STBEFSMEImmunVS-http://smart.who.int/immunizations/CodeSystem/IMMZDAK-TBE|20booster|20dose|20was|20administered-110\&quot;&gt; &lt;/a&gt;&lt;code&gt;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&lt;/code&gt;&lt;/td&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;  &lt;a href=\&quot;CodeSystem-IMMZDAK.html#IMMZDAK-TBEboosterdosewasadministered-110\&quot;&gt;TBE booster dose was administered-110&lt;/a&gt;&lt;/td&gt;&lt;td&gt;TBE booster dose was administered&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Count of vaccines administered (where \&quot;Vaccine type\&quot; = \&quot;TBE vaccines\&quot; and \&quot;Type of dose\&quot; = \&quot;Booster dose\&quot;) = 1&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
-  ] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">fhir:ValueSet.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://smart.who.int/immunizations/ValueSet/IMMZD18STBEFSMEImmunVS&quot;] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">fhir:ValueSet.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;1.0.0&quot;] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">fhir:ValueSet.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;IMMZD18STBEFSMEImmunVS&quot;] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">fhir:ValueSet.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;IMMZD18STBEFSMEImmun ValueSet for Decision Table&quot;] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">fhir:ValueSet.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2026-10-02T09:52:12+00:00&quot;^^xsd:dateTime] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">fhir:ValueSet.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;WHO&quot;] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">fhir:ValueSet.contact</a> [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
-     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;WHO&quot; ] ;
-     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;url&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;http://who.int&quot; ]
-     ]
-  ] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">fhir:ValueSet.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;ValueSet IMMZD18STBEFSMEImmun for IMMZ.D18.S.TBE.FSME-Immun schedule.\nBusiness rule: Determine if the client is due for a tick-borne encephalitis (TBE) vaccination according to the national immunization schedule\nTrigger: IMMZ.D2 Determine required vaccination(s) if any\nTable: FSME-Immun, 3-dose schedule&quot;] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">fhir:ValueSet.compose</a> [
-     <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">fhir:ValueSet.compose.include</a> [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">fhir:ValueSet.compose.include.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">fhir:ValueSet.compose.include.concept</a> [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Child's birth-0&quot; ] ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Child's birth&quot; ]
-       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;First TBE dose from the primary series was administered-112&quot; ] ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;First TBE dose from the primary series was administered&quot; ]
-       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2 ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Second TBE dose from the primary series was administered-112&quot; ] ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Second TBE dose from the primary series was administered&quot; ]
-       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 3 ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Third TBE dose from the primary series was administered. The primary series has been completed-89&quot; ] ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Third TBE dose from the primary series was administered. The primary series has been completed&quot; ]
-       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 4 ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;The primary series has been completed-89&quot; ] ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;The primary series has been completed&quot; ]
-       ], [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 5 ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;TBE booster dose was administered-110&quot; ] ;
-         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;TBE booster dose was administered&quot; ]
-       ]
-     ]
-  ] ;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion">fhir:ValueSet.expansion</a> [
-     <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.timestamp">fhir:ValueSet.expansion.timestamp</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2025-09-29T20:59:26.458Z&quot;^^xsd:dateTime ] ;
-     <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains">fhir:ValueSet.expansion.contains</a> [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0 ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">fhir:ValueSet.expansion.contains.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">fhir:ValueSet.expansion.contains.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Child's birth-0&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">fhir:ValueSet.expansion.contains.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Child's birth&quot; ]
-     ], [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1 ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">fhir:ValueSet.expansion.contains.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">fhir:ValueSet.expansion.contains.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;First TBE dose from the primary series was administered-112&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">fhir:ValueSet.expansion.contains.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;First TBE dose from the primary series was administered&quot; ]
-     ], [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2 ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">fhir:ValueSet.expansion.contains.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">fhir:ValueSet.expansion.contains.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Second TBE dose from the primary series was administered-112&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">fhir:ValueSet.expansion.contains.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Second TBE dose from the primary series was administered&quot; ]
-     ], [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 3 ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">fhir:ValueSet.expansion.contains.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">fhir:ValueSet.expansion.contains.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Third TBE dose from the primary series was administered. The primary series has been completed-89&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">fhir:ValueSet.expansion.contains.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Third TBE dose from the primary series was administered. The primary series has been completed&quot; ]
-     ], [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 4 ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">fhir:ValueSet.expansion.contains.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">fhir:ValueSet.expansion.contains.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;The primary series has been completed-89&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">fhir:ValueSet.expansion.contains.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;The primary series has been completed&quot; ]
-     ], [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 5 ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.system">fhir:ValueSet.expansion.contains.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://smart.who.int/immunizations/CodeSystem/IMMZDAK&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.code">fhir:ValueSet.expansion.contains.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;TBE booster dose was administered-110&quot; ] ;
-       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.expansion.contains.display">fhir:ValueSet.expansion.contains.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;TBE booster dose was administered&quot; ]
-     ]
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-&lt;http://hl7.org/fhir/ValueSet/IMMZD18STBEFSMEImmunVS.ttl&gt; a owl:Ontology ;
-  owl:imports fhir:fhir.ttl ;
-  owl:versionIRI &lt;http://build.fhir.org/ValueSet/IMMZD18STBEFSMEImmunVS.ttl&gt; .
-
-</code></pre>
+  <div style="position: relative;">
+    <button class="btn-copy" style="position: absolute; top: 10px; right: 20px; z-index: 10;"
+            title="Click to copy ttl"
+            data-clipboard-target="#format-content"></button>
+    <pre class="rdf" style="white-space: pre; overflow-x: auto;"><code id="format-content" class="language-turtle" data-src="ValueSet-IMMZD18STBEFSMEImmunVS.ttl"></code></pre>
+  </div>
 
 
 
@@ -483,6 +384,7 @@
 <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
 <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
 <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+<script type="text/javascript" src="assets/js/format-loader.js"> </script>
 <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
 <!-- Analytics Below
 ================================================== -->
