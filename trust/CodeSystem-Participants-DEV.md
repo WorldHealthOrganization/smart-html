@@ -1,4 +1,4 @@
-# WHO GDHCN Trust Network Participant - DEV - WHO SMART Trust v1.7.2
+# WHO GDHCN Trust Network Participant - DEV - WHO SMART Trust v1.7.3
 
 * [**Table of Contents**](toc.md)
 * [**Indices**](indices.md)
@@ -9,8 +9,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://smart.who.int/trust/CodeSystems/Participants-DEV | *Version*:1.7.2 |
-| Draft as of 2026-09-03 | *Computable Name*:Participants-DEV |
+| *Official URL*:http://smart.who.int/trust/CodeSystems/Participants-DEV | *Version*:1.7.3 |
+| Active as of 2026-10-02 | *Computable Name*:Participants-DEV |
 
  
 CodeSystem for GDHCN Trust Network Participants for Development environment 
@@ -28,12 +28,12 @@ CodeSystem for GDHCN Trust Network Participants for Development environment
   "resourceType" : "CodeSystem",
   "id" : "Participants-DEV",
   "url" : "http://smart.who.int/trust/CodeSystems/Participants-DEV",
-  "version" : "1.7.2",
+  "version" : "1.7.3",
   "name" : "Participants-DEV",
   "title" : "WHO GDHCN Trust Network Participant - DEV",
-  "status" : "draft",
+  "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-03T12:39:37+00:00",
+  "date" : "2026-10-02T10:11:10+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",
@@ -138,7 +138,7 @@ CodeSystem for GDHCN Trust Network Participants for Development environment
   },
   {
     "code" : "XXV",
-    "display" : "test city"
+    "display" : "TEST CITY"
   },
   {
     "code" : "XXW",

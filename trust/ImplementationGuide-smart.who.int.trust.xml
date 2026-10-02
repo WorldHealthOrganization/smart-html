@@ -10,12 +10,12 @@
 </div></div>
   </text>
   <url value="http://smart.who.int/trust/ImplementationGuide/smart.who.int.trust"/>
-  <version value="1.7.2"/>
+  <version value="1.7.3"/>
   <name value="Trust"/>
   <title value="WHO SMART Trust"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
-  <date value="2026-09-03T12:39:37+00:00"/>
+  <date value="2026-10-02T10:11:10+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -40,7 +40,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r5"/>
-    <version value="7.3.0"/>
+    <version value="7.4.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_uv_extensions_r5">
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
@@ -724,6 +724,16 @@
         <reference value="Organization/GDHCNParticipant-IOM-UAT"/>
       </reference>
       <name value="GDHCNParticipant-IOM-UAT"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/GDHCNParticipant-IRL"/>
+      </reference>
+      <name value="GDHCNParticipant-IRL"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -3368,6 +3378,37 @@
         <reference value="Endpoint/GDHCNParticipantDID-IOM-UAT-SCA"/>
       </reference>
       <name value="GDHCNParticipantDID-IOM-UAT-SCA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-IRL-All"/>
+      </reference>
+      <name value="GDHCNParticipantDID-IRL-All"/>
+      <description value="Ireland Trustlist (DID v2) - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:IRL&#xA;resolvable at https://tng-cdn.who.int/v2/trustlist/-/IRL/did.json"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-IRL-DSC"/>
+      </reference>
+      <name value="GDHCNParticipantDID-IRL-DSC"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Endpoint"/>
+      </extension>
+      <reference>
+        <reference value="Endpoint/GDHCNParticipantDID-IRL-SCA"/>
+      </reference>
+      <name value="GDHCNParticipantDID-IRL-SCA"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -6167,7 +6208,7 @@
         <reference value="Endpoint/GDHCNParticipantDID-XXV-DEV-All"/>
       </reference>
       <name value="GDHCNParticipantDID-XXV-DEV-All"/>
-      <description value="test city Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXV&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXV/did.json"/>
+      <description value="TEST CITY Trustlist (DID v2) - DEV - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XXV&#xA;resolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXV/did.json"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -6353,7 +6394,7 @@
         <reference value="Endpoint/GDHCNParticipantDID-XYK-UAT-All"/>
       </reference>
       <name value="GDHCNParticipantDID-XYK-UAT-All"/>
-      <description value="INDIA Trustlist (DID v2) - UAT - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XYK&#xA;resolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XYK/did.json"/>
+      <description value="India Trustlist (DID v2) - UAT - All keys&#xA;did:web:tng-cdn.who.int:v2:trustlist:-:XYK&#xA;resolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XYK/did.json"/>
       <isExample value="false"/>
     </resource>
     <resource>

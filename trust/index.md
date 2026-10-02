@@ -1,4 +1,4 @@
-# Home - WHO SMART Trust v1.7.2
+# Home - WHO SMART Trust v1.7.3
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://smart.who.int/trust/ImplementationGuide/smart.who.int.trust | *Version*:1.7.2 |
-| Draft as of 2026-09-03 | *Computable Name*:Trust |
+| *Official URL*:http://smart.who.int/trust/ImplementationGuide/smart.who.int.trust | *Version*:1.7.3 |
+| Active as of 2026-10-02 | *Computable Name*:Trust |
 
 ### Summary
 
@@ -114,12 +114,12 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
     "profile" : ["http://smart.who.int/base/StructureDefinition/SGImplementationGuide"]
   },
   "url" : "http://smart.who.int/trust/ImplementationGuide/smart.who.int.trust",
-  "version" : "1.7.2",
+  "version" : "1.7.3",
   "name" : "Trust",
   "title" : "WHO SMART Trust",
-  "status" : "draft",
+  "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-03T12:39:37+00:00",
+  "date" : "2026-10-02T10:11:10+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",
@@ -146,7 +146,7 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r5",
-    "version" : "7.3.0"
+    "version" : "7.4.0"
   },
   {
     "id" : "hl7_fhir_uv_extensions_r5",
@@ -1157,6 +1157,21 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
         "reference" : "Organization/GDHCNParticipant-IOM-UAT"
       },
       "name" : "GDHCNParticipant-IOM-UAT",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-GDHCNParticipant-IRL.html"
+      }],
+      "reference" : {
+        "reference" : "Organization/GDHCNParticipant-IRL"
+      },
+      "name" : "GDHCNParticipant-IRL",
       "isExample" : false
     },
     {
@@ -5096,6 +5111,52 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
         "reference" : "Endpoint/GDHCNParticipantDID-IOM-UAT-SCA"
       },
       "name" : "GDHCNParticipantDID-IOM-UAT-SCA",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-IRL-All.html"
+      }],
+      "reference" : {
+        "reference" : "Endpoint/GDHCNParticipantDID-IRL-All"
+      },
+      "name" : "GDHCNParticipantDID-IRL-All",
+      "description" : "Ireland Trustlist (DID v2) - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:IRL\nresolvable at https://tng-cdn.who.int/v2/trustlist/-/IRL/did.json",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-IRL-DSC.html"
+      }],
+      "reference" : {
+        "reference" : "Endpoint/GDHCNParticipantDID-IRL-DSC"
+      },
+      "name" : "GDHCNParticipantDID-IRL-DSC",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Endpoint"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Endpoint-GDHCNParticipantDID-IRL-SCA.html"
+      }],
+      "reference" : {
+        "reference" : "Endpoint/GDHCNParticipantDID-IRL-SCA"
+      },
+      "name" : "GDHCNParticipantDID-IRL-SCA",
       "isExample" : false
     },
     {
@@ -9250,7 +9311,7 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
         "reference" : "Endpoint/GDHCNParticipantDID-XXV-DEV-All"
       },
       "name" : "GDHCNParticipantDID-XXV-DEV-All",
-      "description" : "test city Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXV\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXV/did.json",
+      "description" : "TEST CITY Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXV\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXV/did.json",
       "isExample" : false
     },
     {
@@ -9526,7 +9587,7 @@ WHO also hosts weekly calls on authoring and implementing WHO SMART Guidelines w
         "reference" : "Endpoint/GDHCNParticipantDID-XYK-UAT-All"
       },
       "name" : "GDHCNParticipantDID-XYK-UAT-All",
-      "description" : "INDIA Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XYK\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XYK/did.json",
+      "description" : "India Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XYK\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XYK/did.json",
       "isExample" : false
     },
     {

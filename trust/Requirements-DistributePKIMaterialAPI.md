@@ -1,4 +1,4 @@
-# Distribute PKI material via API - WHO SMART Trust v1.7.2
+# Distribute PKI material via API - WHO SMART Trust v1.7.3
 
 * [**Table of Contents**](toc.md)
 * [**Indices**](indices.md)
@@ -9,8 +9,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://smart.who.int/trust/Requirements/DistributePKIMaterialAPI | *Version*:1.7.2 |
-| Active as of 2026-09-03 | *Computable Name*:Distribute Public Keys via API |
+| *Official URL*:http://smart.who.int/trust/Requirements/DistributePKIMaterialAPI | *Version*:1.7.3 |
+| Active as of 2026-10-02 | *Computable Name*:Distribute Public Keys via API |
 
  
 Make received trust material available through a distrubution point to a Trust Network Participant via API 
@@ -46,12 +46,12 @@ Make received trust material available through a distrubution point to a Trust N
     }
   }],
   "url" : "http://smart.who.int/trust/Requirements/DistributePKIMaterialAPI",
-  "version" : "1.7.2",
+  "version" : "1.7.3",
   "name" : "Distribute Public Keys via API",
   "title" : "Distribute PKI material via API",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-03T12:39:37+00:00",
+  "date" : "2026-10-02T10:11:10+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",

@@ -20,12 +20,12 @@
      fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide smart.who.int.trust</b></p><a name=\"smart.who.int.trust\"> </a><a name=\"hcsmart.who.int.trust\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"file://C:\\work\\ImplementationGuides\\ig-release\\who\\smart-base\\output/StructureDefinition-SGImplementationGuide.html\">SMART Guidelines ImplementationGuide</a></p></div><h2>Trust</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/trust/ImplementationGuide/smart.who.int.trust</pre><div><p>SMART Trust Implementation Guide</p>\n</div></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [ fhir:v "http://smart.who.int/trust/ImplementationGuide/smart.who.int.trust"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.7.2"] ; # 
+  fhir:version [ fhir:v "1.7.3"] ; # 
   fhir:name [ fhir:v "Trust"] ; # 
   fhir:title [ fhir:v "WHO SMART Trust"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-09-03T12:39:37+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-10-02T10:11:10+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "WHO"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "WHO" ] ;
@@ -58,7 +58,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r5" ] ;
-     fhir:version [ fhir:v "7.3.0" ]
+     fhir:version [ fhir:v "7.4.0" ]
   ] [
      fhir:id [ fhir:v "hl7_fhir_uv_extensions_r5" ] ;
      fhir:uri [
@@ -1021,6 +1021,20 @@
          fhir:reference [ fhir:v "Organization/GDHCNParticipant-IOM-UAT" ]
        ] ;
        fhir:name [ fhir:v "GDHCNParticipant-IOM-UAT" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Organization"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/trust/Organization/GDHCNParticipant-IRL> ;
+         fhir:reference [ fhir:v "Organization/GDHCNParticipant-IRL" ]
+       ] ;
+       fhir:name [ fhir:v "GDHCNParticipant-IRL" ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
@@ -4701,6 +4715,49 @@
          fhir:reference [ fhir:v "Endpoint/GDHCNParticipantDID-IOM-UAT-SCA" ]
        ] ;
        fhir:name [ fhir:v "GDHCNParticipantDID-IOM-UAT-SCA" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Endpoint"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/trust/Endpoint/GDHCNParticipantDID-IRL-All> ;
+         fhir:reference [ fhir:v "Endpoint/GDHCNParticipantDID-IRL-All" ]
+       ] ;
+       fhir:name [ fhir:v "GDHCNParticipantDID-IRL-All" ] ;
+       fhir:description [ fhir:v "Ireland Trustlist (DID v2) - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:IRL\nresolvable at https://tng-cdn.who.int/v2/trustlist/-/IRL/did.json" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Endpoint"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/trust/Endpoint/GDHCNParticipantDID-IRL-DSC> ;
+         fhir:reference [ fhir:v "Endpoint/GDHCNParticipantDID-IRL-DSC" ]
+       ] ;
+       fhir:name [ fhir:v "GDHCNParticipantDID-IRL-DSC" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Endpoint"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/trust/Endpoint/GDHCNParticipantDID-IRL-SCA> ;
+         fhir:reference [ fhir:v "Endpoint/GDHCNParticipantDID-IRL-SCA" ]
+       ] ;
+       fhir:name [ fhir:v "GDHCNParticipantDID-IRL-SCA" ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
@@ -8584,7 +8641,7 @@
          fhir:reference [ fhir:v "Endpoint/GDHCNParticipantDID-XXV-DEV-All" ]
        ] ;
        fhir:name [ fhir:v "GDHCNParticipantDID-XXV-DEV-All" ] ;
-       fhir:description [ fhir:v "test city Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXV\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXV/did.json" ] ;
+       fhir:description [ fhir:v "TEST CITY Trustlist (DID v2) - DEV - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XXV\nresolvable at https://tng-cdn-dev.who.int/v2/trustlist/-/XXV/did.json" ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
@@ -8842,7 +8899,7 @@
          fhir:reference [ fhir:v "Endpoint/GDHCNParticipantDID-XYK-UAT-All" ]
        ] ;
        fhir:name [ fhir:v "GDHCNParticipantDID-XYK-UAT-All" ] ;
-       fhir:description [ fhir:v "INDIA Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XYK\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XYK/did.json" ] ;
+       fhir:description [ fhir:v "India Trustlist (DID v2) - UAT - All keys\ndid:web:tng-cdn.who.int:v2:trustlist:-:XYK\nresolvable at https://tng-cdn-uat.who.int/v2/trustlist/-/XYK/did.json" ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [

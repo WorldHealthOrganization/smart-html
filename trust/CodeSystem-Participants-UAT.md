@@ -1,4 +1,4 @@
-# WHO GDHCN Trust Network Participant - UAT - WHO SMART Trust v1.7.2
+# WHO GDHCN Trust Network Participant - UAT - WHO SMART Trust v1.7.3
 
 * [**Table of Contents**](toc.md)
 * [**Indices**](indices.md)
@@ -9,8 +9,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://smart.who.int/trust/CodeSystems/Participants-UAT | *Version*:1.7.2 |
-| Draft as of 2026-09-03 | *Computable Name*:Participants-UAT |
+| *Official URL*:http://smart.who.int/trust/CodeSystems/Participants-UAT | *Version*:1.7.3 |
+| Active as of 2026-10-02 | *Computable Name*:Participants-UAT |
 
  
 CodeSystem for GDHCN Trust Network Participants for User Acceptance Testing environment 
@@ -28,12 +28,12 @@ CodeSystem for GDHCN Trust Network Participants for User Acceptance Testing envi
   "resourceType" : "CodeSystem",
   "id" : "Participants-UAT",
   "url" : "http://smart.who.int/trust/CodeSystems/Participants-UAT",
-  "version" : "1.7.2",
+  "version" : "1.7.3",
   "name" : "Participants-UAT",
   "title" : "WHO GDHCN Trust Network Participant - UAT",
-  "status" : "draft",
+  "status" : "active",
   "experimental" : true,
-  "date" : "2026-09-03T12:39:37+00:00",
+  "date" : "2026-10-02T10:11:10+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",
@@ -106,7 +106,7 @@ CodeSystem for GDHCN Trust Network Participants for User Acceptance Testing envi
   },
   {
     "code" : "XYK",
-    "display" : "INDIA"
+    "display" : "India"
   }]
 }
 
