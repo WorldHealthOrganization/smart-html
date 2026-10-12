@@ -4,11 +4,33 @@
     <description>Packages published by the World Health Organization SMART Guidelines</description>
     <link>https://smart.who.int/package-feed.xml</link>
     <generator>HL7, Inc FHIR Publication tooling</generator>
-    <lastBuildDate>Thu, 03 Oct 2024 05:49:46 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 12:00:00 +0000</lastBuildDate>
     <atom:link href="https://smart.who.int/package-feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 03 Oct 2024 05:49:46 +0200</pubDate>
+    <pubDate>Mon, 12 Oct 2026 12:00:00 +0000</pubDate>
     <language>en</language>
     <ttl>600</ttl>
+    <item>
+      <title>Immunizations version 1.0.0</title>
+      <description>1.0.0 release</description>
+      <link>http://smart.who.int/immunizations/v1.0.0/index.html</link>
+      <guid isPermaLink="true">http://smart.who.int/immunizations/v1.0.0/index.html</guid>
+      <dc:creator>WHO</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Fri, 02 Oct 2026 09:40:20 +0000</pubDate>
+      <fhir:details>Publication run at 02/10/2026. Feed entry added after the fact (omitted from release commit dec63d1d44)</fhir:details>
+    </item>
+    <item>
+      <title>SMART Base Clinical version 1.0.1</title>
+      <description>1.0.1 release</description>
+      <link>http://smart.who.int/base-clinical/1.0.1/index.html</link>
+      <guid isPermaLink="true">http://smart.who.int/base-clinical/1.0.1/index.html</guid>
+      <dc:creator>WHO</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Fri, 02 Oct 2026 08:08:22 +0000</pubDate>
+      <fhir:details>Publication run at 02/10/2026. Feed entry added after the fact (omitted from release commit dec63d1d44)</fhir:details>
+    </item>
     <item>
       <title>SMART Base Clinical version 1.0.0</title>
       <description>1.0.0 release</description>

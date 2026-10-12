@@ -15,6 +15,15 @@
     "date" : "2026-10-02",
     "current" : true,
     "desc" : "1.0.1 release"
+  },
+  {
+    "version" : "1.0.0",
+    "path" : "http://smart.who.int/base-clinical/1.0.0",
+    "status" : "release",
+    "sequence" : "Releases",
+    "fhirversion" : "4.0.1",
+    "date" : "2026-09-04",
+    "desc" : "1.0.0 release"
   }],
   "package-id" : "smart.who.int.base-clinical",
   "canonical" : "http://smart.who.int/base-clinical",
