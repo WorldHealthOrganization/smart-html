@@ -67,9 +67,15 @@ def raw_file_for(page_path, text, fmt):
     return os.path.basename(page_path)[:-len('.html')]
 
 
-def new_block(fmt, src):
+def line_ending_at(text, pos):
+    """Line ending of the line containing pos, so inserted lines match the file."""
+    end = text.find(b'\n', pos)
+    return b'\r\n' if end > 0 and text[end - 1:end] == b'\r' else b'\n'
+
+
+def new_block(fmt, src, nl):
     pre_class, lang, label = FORMATS[fmt]
-    return (
+    return nl.join((
         '<div style="position: relative;">\n'
         '    <button class="btn-copy" style="position: absolute; top: 10px; right: 20px; z-index: 10;"\n'
         f'            title="Click to copy {label}"\n'
@@ -77,7 +83,7 @@ def new_block(fmt, src):
         f'    <pre class="{pre_class}" style="white-space: pre; overflow-x: auto;">'
         f'<code id="format-content" class="language-{lang}" data-src="{src}"></code></pre>\n'
         '  </div>'
-    ).encode()
+    ).encode().split(b'\n'))
 
 
 def ensure_loader_tag(text):
@@ -90,7 +96,8 @@ def ensure_loader_tag(text):
         return text, None
     tag = (m.group(1) + b'<script type="text/javascript" src="' + m.group(2)
            + b'assets/js/format-loader.js"> </script>')
-    return text[:m.end()] + b'\n' + tag + text[m.end():], m.group(2).decode()
+    nl = line_ending_at(text, m.start())
+    return text[:m.end()] + nl + tag + text[m.end():], m.group(2).decode()
 
 
 def slim_page(path, dry_run, stats, loaders):
@@ -113,7 +120,9 @@ def slim_page(path, dry_run, stats, loaders):
             stats['skip_nosrc'] += 1
             print(f"  skip (missing {src}): {path}")
             return
-        new = BLOCK_RE.sub(lambda _: new_block(fmt, src), text, count=1)
+        m = BLOCK_RE.search(text)
+        nl = line_ending_at(text, m.start())
+        new = text[:m.start()] + new_block(fmt, src, nl) + text[m.end():]
         stats['converted'] += 1
 
     new, prefix = ensure_loader_tag(new)
