@@ -64,16 +64,16 @@
     "canonical" : "http://smart.who.int/trust",
     "category" : "base",
     "ci-build" : "http://worldhealthorganization.github.io/smart-trust",
-    "version-count" : 11,
+    "version-count" : 14,
     "latest" : {
-      "version" : "1.7.2",
-      "date" : "2026-08-27",
-      "path" : "http://smart.who.int/trust/v1.7.2"
+      "version" : "1.7.4",
+      "date" : "2026-10-12",
+      "path" : "http://smart.who.int/trust/v1.7.4"
     },
     "milestone" : {
-      "version" : "1.7.2",
-      "date" : "2026-08-27",
-      "path" : "http://smart.who.int/trust/v1.7.2"
+      "version" : "1.7.4",
+      "date" : "2026-10-12",
+      "path" : "http://smart.who.int/trust/v1.7.4"
     }
   },
     {
@@ -406,16 +406,35 @@
     "canonical" : "http://smart.who.int/base-clinical",
     "category" : "base",
     "ci-build" : "http://worldhealthorganization.github.io/smart-base-clinical",
+    "version-count" : 2,
+    "latest" : {
+      "version" : "1.0.1",
+      "date" : "2026-10-02",
+      "path" : "http://smart.who.int/base-clinical/1.0.1"
+    },
+    "milestone" : {
+      "version" : "1.0.1",
+      "date" : "2026-10-02",
+      "path" : "http://smart.who.int/base-clinical/1.0.1"
+    }
+  },
+  {
+    "path" : "immunizations/package-list.json",
+    "package-id" : "smart.who.int.immunizations",
+    "title" : "Immunizations",
+    "canonical" : "http://smart.who.int/immunizations",
+    "category" : "base",
+    "ci-build" : "http://worldhealthorganization.github.io/smart-immunizations",
     "version-count" : 1,
     "latest" : {
       "version" : "1.0.0",
-      "date" : "2026-09-04",
-      "path" : "http://smart.who.int/base-clinical/1.0.0"
+      "date" : "2026-10-02",
+      "path" : "http://smart.who.int/immunizations/v1.0.0"
     },
     "milestone" : {
       "version" : "1.0.0",
-      "date" : "2026-09-04",
-      "path" : "http://smart.who.int/base-clinical/1.0.0"
+      "date" : "2026-10-02",
+      "path" : "http://smart.who.int/immunizations/v1.0.0"
     }
   }
   ]
